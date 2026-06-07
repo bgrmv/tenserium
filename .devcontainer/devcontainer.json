@@ -11,6 +11,7 @@
     "vscode": {
       "extensions": [
         "angular.ng-template",
+        "anthropic.claude-code",
         "dbaeumer.vscode-eslint",
         "esbenp.prettier-vscode",
         "editorconfig.editorconfig",
