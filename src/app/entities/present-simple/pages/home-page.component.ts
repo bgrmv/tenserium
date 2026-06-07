@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 import {
   provideRoutes,
   RouterModule,
@@ -20,6 +20,7 @@ import {
     <router-outlet />
   `,
   styles: ``,
+  changeDetection: ChangeDetectionStrategy.Eager,
   providers: [
     provideRoutes([
       {

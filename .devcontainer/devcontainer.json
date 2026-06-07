@@ -1,15 +1,21 @@
 {
   "name": "Tenserium",
-  "image": "mcr.microsoft.com/devcontainers/javascript-node:22",
-  "postCreateCommand": "npm install -g pnpm @angular/cli && pnpm install",
-  "forwardPorts": [4000],
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:24",
+  "mounts": [
+    "source=tenserium-pnpm-store,target=/pnpm-store,type=volume"
+  ],
+  "postCreateCommand": "corepack enable && corepack install && pnpm config set store-dir /pnpm-store && pnpm install",
+  "forwardPorts": [4200],
   "customizations": {
     "vscode": {
       "extensions": [
         "angular.ng-template",
         "dbaeumer.vscode-eslint",
         "esbenp.prettier-vscode"
-      ]
+      ],
+      "settings": {
+        "terminal.integrated.defaultProfile.linux": "bash"
+      }
     }
   }
 }
