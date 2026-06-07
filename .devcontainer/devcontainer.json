@@ -1,6 +1,7 @@
 {
   "name": "Tenserium",
   "image": "mcr.microsoft.com/devcontainers/javascript-node:24",
+  "runArgs": ["--name", "tenserium"],
   "mounts": [
     "source=tenserium-pnpm-store,target=/pnpm-store,type=volume"
   ],
@@ -11,10 +12,18 @@
       "extensions": [
         "angular.ng-template",
         "dbaeumer.vscode-eslint",
-        "esbenp.prettier-vscode"
+        "esbenp.prettier-vscode",
+        "editorconfig.editorconfig",
+        "vitest.explorer",
+        "github.vscode-github-actions",
+        "lokalise.i18n-ally",
+        "usernamehw.errorlens",
+        "streetsidesoftware.code-spell-checker",
+        "humao.rest-client"
       ],
       "settings": {
-        "terminal.integrated.defaultProfile.linux": "bash"
+        "terminal.integrated.defaultProfile.linux": "bash",
+        "typescript.tsdk": "node_modules/typescript/lib"
       }
     }
   }
