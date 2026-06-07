@@ -1,10 +1,5 @@
 import { Component, ChangeDetectionStrategy } from '@angular/core';
-import {
-  provideRoutes,
-  RouterModule,
-  RouterOutlet,
-  Routes,
-} from '@angular/router';
+import { RouterModule, RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-present-simple-page',
@@ -21,14 +16,5 @@ import {
   `,
   styles: ``,
   changeDetection: ChangeDetectionStrategy.Eager,
-  providers: [
-    provideRoutes([
-      {
-        path: 'learn',
-        loadComponent: () =>
-          import('./learn-page.component').then((m) => m.LearnPageComponent),
-      },
-    ] as Routes),
-  ],
 })
 export class HomePageComponent {}
