@@ -35,6 +35,9 @@ jobs:
 
       - run: pnpm run build
 
+      - name: Add 404.html for SPA routing
+        run: cp dist/tenserium/browser/index.html dist/tenserium/browser/404.html
+
       - uses: actions/configure-pages@v5
 
       - uses: actions/upload-pages-artifact@v3

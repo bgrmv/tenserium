@@ -31,7 +31,8 @@
 
 ## 1. CI/CD (GitHub Pages остаётся)
 
-> Netlify и Supabase — в Phase 9. Сейчас только чистый пайплайн.
+> Netlify и Supabase — в Phase 8. Сейчас только чистый пайплайн.
+> SSR отключён — GitHub Pages статический. SSR вернём в Phase 8 при переходе на Netlify.
 
 - [x] Удалить или переписать `.github/workflows/node.js.yml`
 - [x] Создать `.github/workflows/ci.yml`
@@ -39,6 +40,8 @@
   - [x] Кэшировать `pnpm store` для скорости
 - [x] Создать `.github/workflows/deploy.yml`
   - [x] Push в `main` → deploy на GitHub Pages
+  - [x] `404.html` = копия `index.html` (SPA-роутинг на GitHub Pages)
+- [x] Убрать `server`/`prerender`/`ssr` из `angular.json` до Phase 8
 - [x] *(Опционально, не блокирует)* `.devcontainer/devcontainer.json` (Node 22, pnpm, Angular CLI)
 
 ---
