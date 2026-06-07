@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { PresentSimpleCardComponent } from '@entities/present-simple';
 
 @Component({
-  selector: '',
+  selector: 'app-home-page',
   imports: [
     // TODO fix path
     PresentSimpleCardComponent,

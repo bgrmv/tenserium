@@ -1,0 +1,15 @@
+{
+  "name": "Tenserium",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:22",
+  "postCreateCommand": "npm install -g pnpm @angular/cli && pnpm install",
+  "forwardPorts": [4000],
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "angular.ng-template",
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode"
+      ]
+    }
+  }
+}

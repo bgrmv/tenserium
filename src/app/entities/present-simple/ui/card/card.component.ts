@@ -1,5 +1,5 @@
-import { Component, inject } from '@angular/core';
-import { Router, RouterLink } from '@angular/router';
+import { Component } from '@angular/core';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-present-simple-card',
@@ -8,10 +8,4 @@ import { Router, RouterLink } from '@angular/router';
   styleUrl: './card.component.css',
   providers: [],
 })
-export class CardComponent {
-  private readonly router = inject(Router);
-
-  navigateToLearnPage() {
-    this.router.navigate(['/', 'present-simple', 'learn']);
-  }
-}
+export class CardComponent {}
