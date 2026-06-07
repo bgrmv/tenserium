@@ -46,26 +46,25 @@
 
 ---
 
-## 2. Angular 19 → 22
+## 2. Angular 19 → 22 ✅
 
 > Делать сейчас — пока кода мало. Каждая версия — отдельный коммит.
 
-- [ ] **19 → 20**
-  - [ ] `ng update @angular/core@20 @angular/cli@20`
-  - [ ] Добавить `provideExperimentalZonelessChangeDetection()` в `app.config.ts`
-  - [ ] Убрать `zone.js` из `polyfills`
-  - [ ] Проверить SSR build
-- [ ] **20 → 21**
-  - [ ] `ng update @angular/core@21 @angular/cli@21`
-  - [ ] Проверить breaking changes в SSR
-- [ ] **21 → 22**
-  - [ ] `ng update @angular/core@22 @angular/cli@22`
-  - [ ] Обновить `tsconfig.json`: target ES2025
-  - [ ] Переключить на `resource()` API для async-запросов
-  - [ ] Удалить `zone.js` из `package.json` и `angular.json`
-- [ ] После миграции
-  - [ ] Заменить Karma на Vitest
-  - [ ] `ng build --configuration production` — убедиться что нет ошибок
+- [x] **19 → 20**
+  - [x] `ng update @angular/core@20 @angular/cli@20`
+  - [x] Добавить `provideZonelessChangeDetection()` в `app.config.ts`
+  - [x] Убрать `zone.js` из `polyfills`
+- [x] **20 → 21**
+  - [x] `ng update @angular/core@21 @angular/cli@21`
+- [x] **21 → 22**
+  - [x] `ng update @angular/core@22 @angular/cli@22`
+  - [x] Обновить `tsconfig.json`: target ES2025
+  - [x] Удалить `zone.js` из `package.json` и `angular.json`
+  - [x] Переключить на `@angular/build` (esbuild/Vite), убрать `@angular-devkit/build-angular`
+- [x] После миграции
+  - [x] Заменить Karma на Vitest
+  - [x] `ng build --configuration production` — нет ошибок
+  - [x] Обновить devcontainer: Node 24, порт 4200, pnpm store volume
 
 ---
 

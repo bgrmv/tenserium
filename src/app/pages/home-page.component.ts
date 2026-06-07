@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { PresentSimpleCardComponent } from '@entities/present-simple';
 
 @Component({
@@ -40,6 +40,7 @@ import { PresentSimpleCardComponent } from '@entities/present-simple';
       <div id="future-perfect-continuous">Future Perfect Continuous</div>
     </div>
   `,
+  changeDetection: ChangeDetectionStrategy.Eager,
   styles: `
     .container {
       height: 97vh;

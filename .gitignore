@@ -43,3 +43,4 @@ Thumbs.db
 
 # Claude assistant memory (personal, not project docs)
 .claude/memory/
+.pnpm-store/
