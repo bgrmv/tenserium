@@ -2,7 +2,7 @@ name: Deploy
 
 on:
   push:
-    branches: [main, fix/deploy-base-href]
+    branches: [main]
   workflow_dispatch:
 
 permissions:
