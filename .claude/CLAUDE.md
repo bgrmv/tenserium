@@ -1,0 +1,138 @@
+# Tenserium — Project Context for Claude
+
+## What is this
+
+Speed-based interactive trainer for English tenses. Players see a sentence or Russian context description and press F1–F12 to identify the tense as fast as possible. Primary audience: Russian speakers. Primary platform: web desktop (hotkey-first), mobile planned.
+
+Full product spec: [`docs/description.md`](../docs/description.md)
+
+---
+
+## Approved Tech Stack
+
+| Layer | Choice | Reason |
+|-------|--------|--------|
+| Framework | Angular 22 (upgrade from 19) | Already installed; SSR enabled |
+| Change detection | Zoneless + Signals | Angular 22 stable |
+| Hosting | Netlify | SSR support via Edge Functions; GitHub Pages has no SSR |
+| Database | Supabase (PostgreSQL) | Auth + Realtime + REST in one; SQL > NoSQL for this schema |
+| Backend logic | Supabase Edge Functions (Deno) | Score validation, matchmaking, daily challenge cron |
+| Package manager | pnpm | Already in use |
+
+---
+
+## Architecture: FSD + CQRS
+
+Feature-Sliced Design layers (top → bottom, imports go downward only):
+
+```
+src/
+├── app/        — routing, providers, shell layouts
+├── pages/      — thin route-level components
+├── widgets/    — self-contained UI blocks (question-card, score-bar, squad-board)
+├── features/   — user interactions (answer-input, auth, report-error, daily-share)
+├── entities/   — business objects (tense, question, session, user, match, learn)
+└── shared/     — ui kit, utils, api client, config, types
+```
+
+CQRS via Angular Signal Stores (no NgRx):
+- **Commands** — methods that mutate state (`submitAnswer`, `nextQuestion`)
+- **Queries** — `computed()` signals that derive read-only views (`currentStreak`, `score`, `isComplete`)
+
+Domain stores: `GameSessionStore`, `UserStore`, `LearnStore`, `MatchStore`, `DailyStore`
+
+---
+
+## Key Domain Facts
+
+- **12 tenses**: 3 time periods × 4 aspects (Simple / Continuous / Perfect / Perfect Continuous)
+- **Hotkeys**: F1–F12 mapped to tenses in order; configurable by user
+- **Scoring**: base (100 × difficulty) + speed bonus (linear decay) + streak multiplier (cap ×5)
+- **Modes**: Normal (open, all tenses) and Rank (gated, matchmaking, squad battles up to 4 players)
+- **Squad battle**: all players see the same question simultaneously, answer independently; first correct = most points; wrong = 500ms lock
+- **Rank tiers**: Rookie → Scholar → Expert → Master → Grandmaster; soft season reset
+- **Bots**: scripted bots fill empty squad slots (random delay 800–4000ms, configurable accuracy)
+- **Anonymous play**: progress in localStorage; Rank mode and leaderboards require account
+- **Content language**: Russian for prompts and UI (first release); English toggle planned
+
+---
+
+## Supabase Schema (primary tables)
+
+```
+users           — profile, rank_tier, is_premium, daily_rank_matches
+questions       — id, tense_id, type (sentence|context), prompt, difficulty (1|2|3)
+sessions        — id, user_id, mode, score, duration_ms, created_at
+session_answers — session_id, question_id, is_correct, response_ms
+daily_challenge — date (PK), question_ids[]
+error_reports   — id, question_id, user_id, description, created_at
+matches         — id, player_ids[], state, scores, created_at
+feedback        — id, category, description, email, created_at
+```
+
+---
+
+## Storage Strategy
+
+**Browser API first — Supabase in Phase 8.**
+
+All state uses `shared/api/storage.service.ts` — never call `localStorage` directly.
+When Phase 8 arrives, swap the implementation; the rest of the code is unchanged.
+
+| Phases | Storage |
+|--------|---------|
+| 1–7 (CI/CD, Angular, FSD, Game Engine, Onboarding, Learn, Daily) | Browser API (localStorage) |
+| 8 (Accounts) | Supabase Auth + DB introduced |
+| 9–15 (Rank, Leaderboards, Monetization…) | Supabase fully |
+
+---
+
+## Phase Priority (do not skip ahead)
+
+| # | Phase | Done when |
+|---|-------|-----------|
+| 1 | CI/CD: GitHub Actions → GitHub Pages | PR checks pass, deploy works |
+| 2 | Angular 19 → 22 | Zoneless, no zone.js |
+| 3 | FSD refactor | Folder structure matches spec above |
+| 4 | Game Engine + Normal Mode | Playable end-to-end, mobile-responsive |
+| 5 | Onboarding | First-launch demo + 5-question sample |
+| 6 | Learn pages (priority tenses: Simple family + Present/Past Continuous + Present Perfect) | 6 tenses have grammar content |
+| 7 | Daily Challenge (date-seeded, client-side) | Fixed daily set + share card, no backend |
+| 8 | Netlify + Supabase + Auth + Cloud Sync | App deploys on Netlify, DB connected, localStorage migrated |
+| 9 | Rank Mode + Squad Battle | Tiers, matchmaking, bots, real-time |
+| 10 | Leaderboards + Stats | Global/weekly/friends tabs |
+| 11 | Monetization | Stripe, premium flag, ad banners |
+| 12 | Text Analysis Mode | NLP highlight + inline explanations |
+| 13 | PWA | Service worker, offline learn pages |
+| 14 | Visual polish | Color system, micro-animations, timer bar |
+| 15 | Sound design | Web Audio API, 7 events, sound packs |
+| — | Content track (parallel) | All 12 tenses: 20+10 questions, all learn pages |
+
+---
+
+## Developer TODO
+
+Live task list with прогрессом: [`docs/plan.md`](../docs/plan.md)
+Check it before starting any work to understand current status and what's next.
+
+---
+
+## Current State
+
+- Angular 19.1.6 + SSR (Express, port 4000)
+- Learn page: **Present Simple only** (full content)
+- Home grid: all 12 tense slots (scaffolded, mostly empty)
+- Exam page: scaffolded, no game logic
+- No backend, no auth, no database connected
+- Deployed to GitHub Pages via official `actions/deploy-pages` (Pages source set to GitHub Actions)
+- **Phase 1 complete**: CI (`ci.yml` — lint+build on PR) + deploy (`deploy.yml` — push to main) workflows live; ESLint configured with Angular-recommended rules; devcontainer added
+
+---
+
+## Conventions
+
+- No comments unless the WHY is non-obvious
+- No NgRx — use Angular Signal Stores only
+- Imports strictly follow FSD layer order (lint-enforced)
+- Dark theme first
+- Russian UI strings in i18n-ready format from day one (even if not wired to i18n yet)
