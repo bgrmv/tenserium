@@ -32,7 +32,7 @@ jobs:
 
       - run: pnpm install --frozen-lockfile
 
-      - run: pnpm run build -- --base-href /tenserium/
+      - run: pnpm run build
 
       - uses: actions/configure-pages@v5
 
