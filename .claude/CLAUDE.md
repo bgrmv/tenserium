@@ -50,8 +50,12 @@ Domain stores: `GameSessionStore`, `UserStore`, `LearnStore`, `MatchStore`, `Dai
 - **Scoring**: base (100 × difficulty) + speed bonus (linear decay) + streak multiplier (cap ×5)
 - **Modes**: Normal (open, all tenses) and Rank (gated, matchmaking, squad battles up to 4 players)
 - **Squad battle**: all players see the same question simultaneously, answer independently; first correct = most points; wrong = 500ms lock
-- **Rank tiers**: Rookie → Scholar → Expert → Master → Grandmaster; soft season reset
-- **Bots**: scripted bots fill empty squad slots (random delay 800–4000ms, configurable accuracy)
+- **Leagues (CEFR)**: Elementary (A1–A2 / IELTS 3–4 / TOEFL 32–45) → Intermediate (B1–B2 / IELTS 5–7 / TOEFL 46–94) → Advanced (C1–C2 / IELTS 7.5–9 / TOEFL 95–120)
+- **Divisions**: CEFR level + Roman numeral sub-division (A1-IV … C2-I) = 24 steps total; soft season reset to bottom sub-div of current CEFR level
+- **Display preference**: user picks which score system shows next to division badge (IELTS / TOEFL / Cambridge / none); canonical mapping in `shared/config/cefr.config.ts`; helpers in `shared/lib/cefr.ts`
+- **Ticket format by league**: Elementary = 1 sentence / 1 key; Intermediate = 2–3 sentences; Advanced = 4–5-sentence narrative, player submits a key-combo chain (e.g. F1·F3·F5·F1), answered sentences shown as coloured dots separated by ·
+- **Combo rule**: combo freezes at the error, all earned combo points kept, −ticketBase deducted for wrong answer, multiplier resets to 1; next correct starts a new combo
+- **Bots**: scripted bots fill empty squad slots (accuracy/delay scaled per league)
 - **Anonymous play**: progress in localStorage; Rank mode and leaderboards require account
 - **Content language**: Russian for prompts and UI (first release); English toggle planned
 
@@ -60,13 +64,14 @@ Domain stores: `GameSessionStore`, `UserStore`, `LearnStore`, `MatchStore`, `Dai
 ## Supabase Schema (primary tables)
 
 ```
-users           — profile, rank_tier, is_premium, daily_rank_matches
-questions       — id, tense_id, type (sentence|context), prompt, difficulty (1|2|3)
+users           — profile, league, rank_tier, rank_points, is_premium, daily_rank_matches
+questions       — id, tense_id, type (sentence|context), prompt, difficulty (1|2|3), league
 sessions        — id, user_id, mode, score, duration_ms, created_at
 session_answers — session_id, question_id, is_correct, response_ms
 daily_challenge — date (PK), question_ids[]
 error_reports   — id, question_id, user_id, description, created_at
-matches         — id, player_ids[], state, scores, created_at
+matches         — id, player_ids[], league, state, scores, created_at
+match_answers   — match_id, player_id, ticket_idx, sentence_idx, tense_id, is_correct, response_ms, points
 feedback        — id, category, description, email, created_at
 ```
 
