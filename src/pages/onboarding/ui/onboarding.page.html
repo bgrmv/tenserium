@@ -1,0 +1,147 @@
+@switch (step()) {
+  @case ('demo') {
+    <div class="ob-screen demo">
+      <div class="ob-header">
+        <app-logo [size]="32" />
+        <span class="ob-brand">Tenserium</span>
+        <button class="ob-skip" type="button" (click)="skip()">Пропустить</button>
+      </div>
+
+      <div class="ob-hero">
+        <h1 class="ob-title">Определяй время — нажимай клавишу</h1>
+        <p class="ob-sub">
+          Видишь предложение → вспоминаешь грамматическое время → жмёшь F1–F12.
+          Чем быстрее — тем больше очков.
+        </p>
+      </div>
+
+      <div class="demo-area">
+        <app-question-card
+          [prompt]="DEMO_QUESTION.prompt"
+          [remainingMs]="12000"
+          [fraction]="1"
+          [result]="demoResult()"
+          [revealName]="demoResult() !== 'none' ? 'Present Simple' : null"
+          [revealColor]="demoRevealColor()"
+          [revealSentence]="demoResult() !== 'none' ? DEMO_QUESTION.sentence : null"
+        />
+
+        @if (!demoAnswered()) {
+          <div class="demo-hint">
+            <span class="hint-key">F1</span>
+            <span>Present Simple — нажми клавишу или кликни кнопку ниже</span>
+          </div>
+        }
+
+        <app-answer-grid
+          [hintId]="demoResult() === 'none' ? 'present-simple' : null"
+          [revealId]="demoResult() !== 'none' ? 'present-simple' : null"
+          [pickedId]="demoPicked()"
+          [disabled]="demoResult() !== 'none'"
+          (answer)="onDemoAnswer($event)"
+        />
+
+        @if (demoAnswered()) {
+          <div class="demo-explained">
+            @if (demoPicked() === 'present-simple') {
+              <app-icon name="check" [size]="18" />
+              <span>Верно! <b>She drinks</b> — постоянное действие → Present Simple (F1)</span>
+            } @else {
+              <app-icon name="check" [size]="18" />
+              <span>Правильный ответ — <b>Present Simple (F1)</b>: постоянное, регулярное действие</span>
+            }
+          </div>
+
+          <button class="ob-cta" type="button" (click)="startGame()">
+            <app-icon name="play" [size]="16" />
+            Начать тренировку (5 вопросов)
+          </button>
+        }
+      </div>
+    </div>
+  }
+
+  @case ('game') {
+    <div class="ob-screen game">
+      @if (isLoading()) {
+        <div class="ob-loading">Загрузка вопросов…</div>
+      } @else {
+        <div class="game-top">
+          <div class="game-progress">
+            <span class="prog-label">Вопрос {{ progress().index + 1 }} / {{ progress().total }}</span>
+            <div class="prog-bar">
+              <div
+                class="prog-fill"
+                [style.width.%]="((progress().index) / progress().total) * 100"
+              ></div>
+            </div>
+          </div>
+          <app-score-bar [score]="score()" [combo]="combo()" />
+          <button class="ob-skip" type="button" (click)="skip()">Пропустить</button>
+        </div>
+
+        @if (question(); as q) {
+          <app-question-card
+            [prompt]="q.prompt"
+            [remainingMs]="remainingMs()"
+            [fraction]="fraction()"
+            [result]="result()"
+            [revealName]="revealName()"
+            [revealColor]="revealColor()"
+            [revealSentence]="result() !== 'none' ? q.sentence : null"
+            [gainedPoints]="gained()"
+          />
+        }
+
+        <app-answer-grid
+          [revealId]="revealId()"
+          [pickedId]="pickedId()"
+          [disabled]="result() !== 'none'"
+          (answer)="onAnswer($event)"
+        />
+      }
+    </div>
+  }
+
+  @case ('save-prompt') {
+    <div class="ob-screen save-prompt">
+      <div class="sp-card">
+        <div class="sp-icon">
+          <app-icon name="trophy" [size]="40" />
+        </div>
+
+        <h2 class="sp-title">Тренировка завершена!</h2>
+
+        <div class="sp-stats">
+          <div class="sp-stat">
+            <span class="sp-stat-val">{{ score() }}</span>
+            <span class="sp-stat-lbl">очков</span>
+          </div>
+          <div class="sp-stat">
+            <span class="sp-stat-val">{{ inferredLevel() }}</span>
+            <span class="sp-stat-lbl">уровень</span>
+          </div>
+        </div>
+
+        <div class="sp-divider"></div>
+
+        <h3 class="sp-save-title">Сохрани прогресс</h3>
+        <p class="sp-save-sub">
+          Создай аккаунт — очки и статистика не потеряются при следующем открытии.
+        </p>
+
+        <div class="sp-actions">
+          <button class="ob-cta primary" type="button" (click)="createAccount()">
+            <app-icon name="shield" [size]="16" />
+            Создать аккаунт
+            <span class="sp-soon">скоро</span>
+          </button>
+          <button class="ob-cta secondary" type="button" (click)="continueWithout()">
+            <app-icon name="arrow-right" [size]="16" />
+            Продолжить без аккаунта
+          </button>
+        </div>
+      </div>
+    </div>
+  }
+}

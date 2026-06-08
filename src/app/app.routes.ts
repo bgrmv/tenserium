@@ -38,6 +38,12 @@ export const ROUTES: Routes = [
       import('@pages/game').then((m) => m.GamePageComponent),
   },
   {
+    path: 'onboarding',
+    title: 'Welcome | Tenserium',
+    loadComponent: () =>
+      import('@pages/onboarding').then((m) => m.OnboardingPageComponent),
+  },
+  {
     path: '**',
     redirectTo: '/home',
   },

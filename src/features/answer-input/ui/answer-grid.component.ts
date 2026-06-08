@@ -31,6 +31,7 @@ export class AnswerGridComponent {
   readonly lockedIds = input<readonly TenseId[]>([]);
   readonly revealId = input<TenseId | null>(null);
   readonly pickedId = input<TenseId | null>(null);
+  readonly hintId = input<TenseId | null>(null);
   readonly disabled = input(false);
 
   readonly answer = output<TenseId>();
@@ -60,7 +61,7 @@ export class AnswerGridComponent {
   protected stateClass(id: TenseId, locked: boolean): string {
     if (locked) return 'is-locked';
     const reveal = this.revealId();
-    if (!reveal) return '';
+    if (!reveal) return id === this.hintId() ? 'is-hint' : '';
     if (id === reveal) return 'is-correct';
     if (id === this.pickedId()) return 'is-wrong';
     return 'is-dim';
