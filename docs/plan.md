@@ -90,7 +90,7 @@
   - [x] `present-simple/ui/card` → `entities/tense/ui/tense-card/`
   - [x] Barrel `index.ts` в каждом slice
 - [x] Создать `shared/config/tenses.config.ts` — 12 времён (id, hotkey F1–F12, order) + `TenseId` тип
-- [ ] Создать `shared/types/` — `Question`, `Session`, `UserProfile` (Phase 4)
+- [x] Создать `shared/types/` — `Question`, `Session`, `UserProfile` (Phase 4)
 
 ---
 
