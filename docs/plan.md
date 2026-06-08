@@ -26,6 +26,7 @@
 - [x] Present Simple: learn-страница (правила, примеры, FAQ)
 - [x] Present Simple: card-компонент с SVG-схемой
 - [x] Exam-страница — скаффолд (без логики)
+- [x] Спецификация: доменная архитектура (domain-*.md, game-modes.md, storage-schema.md)
 
 ---
 
