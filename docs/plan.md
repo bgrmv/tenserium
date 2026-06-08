@@ -68,27 +68,29 @@
 
 ---
 
-## 3. FSD-рефакторинг
+## 3. FSD-рефакторинг ✅
 
-- [ ] Создать структуру папок согласно FSD
+- [x] Создать структуру папок согласно FSD
   ```
   src/
-  ├── app/
-  ├── pages/
-  ├── widgets/
-  ├── features/
-  ├── entities/
-  └── shared/
+  ├── app/        — роутинг, провайдеры, shell
+  ├── pages/      — pages/home/, pages/present-simple/
+  ├── widgets/    — пусто (gitkeep)
+  ├── features/   — пусто (gitkeep)
+  ├── entities/   — entities/tense/ (tense-card)
+  └── shared/     — config/tenses.config.ts, index.ts
   ```
-- [ ] Обновить `tsconfig.json` — path aliases для каждого слоя
-  - [ ] `@app/*`, `@pages/*`, `@widgets/*`, `@features/*`, `@entities/*`, `@shared/*`
-- [ ] Настроить ESLint-правила на запрет импортов между слоями
-- [ ] Перенести существующий код в FSD-структуру
-  - [ ] `home-page.component` → `pages/home/`
-  - [ ] `present-simple/` → `entities/learn/` + `entities/tense/`
-  - [ ] Exam-скаффолд → `pages/game/`
-- [ ] Создать `shared/config/tenses.config.ts` — массив 12 времён (id, hotkey F1–F12, color, order)
-- [ ] Создать `shared/types/` — глобальные типы (`TenseId`, `Question`, `Session`, `UserProfile`)
+- [x] Обновить `tsconfig.json` — path aliases для каждого слоя
+  - [x] `@app/*`, `@pages/*`, `@widgets/*`, `@features/*`, `@entities/*`, `@shared/*`
+- [x] Настроить ESLint-правила на запрет импортов между слоями
+  - [x] `@typescript-eslint/no-restricted-imports` per-layer (value запрещён вверх, `import type` разрешён)
+- [x] Перенести существующий код в FSD-структуру
+  - [x] `home-page.component` → `pages/home/ui/home.page.ts`
+  - [x] `present-simple/pages/*` → `pages/present-simple/ui/` (shell + learn + exam)
+  - [x] `present-simple/ui/card` → `entities/tense/ui/tense-card/`
+  - [x] Barrel `index.ts` в каждом slice
+- [x] Создать `shared/config/tenses.config.ts` — 12 времён (id, hotkey F1–F12, order) + `TenseId` тип
+- [x] Создать `shared/types/` — `Question`, `Session`, `UserProfile` (Phase 4)
 
 ---
 
@@ -246,13 +248,16 @@
 
 - [ ] Инициализировать Supabase CLI: `supabase init`
 - [ ] Создать первую миграцию `supabase/migrations/001_init_schema.sql`
-  - [ ] `users` (id, nickname, is_premium, rank_tier, daily_rank_matches, created_at)
+  - [ ] `users` (id, nickname, is_premium, league, rank_tier, rank_points, daily_rank_matches, created_at)
+    - `league`: elementary | intermediate | advanced
+    - `rank_tier`: iron | bronze | silver | gold | platinum (внутри лиги)
   - [ ] `questions` (id, tense_id, type, prompt, difficulty, created_at)
   - [ ] `sessions` (id, user_id, mode, score, duration_ms, created_at)
   - [ ] `session_answers` (session_id, question_id, is_correct, response_ms)
   - [ ] `daily_challenge` (date PK, question_ids[])
   - [ ] `error_reports` (id, question_id, user_id, description, created_at)
-  - [ ] `matches` (id, player_ids[], state, scores, created_at)
+  - [ ] `matches` (id, player_ids[], league, state, scores, created_at)
+  - [ ] `match_answers` (match_id, player_id, ticket_idx, sentence_idx, tense_id, is_correct, response_ms, points)
   - [ ] `feedback` (id, category, description, email, created_at)
   - [ ] Materialized view `leaderboard`
 - [ ] Row Level Security на всех таблицах
@@ -279,31 +284,134 @@
 
 ## 9. Rank Mode
 
-- [ ] **Система рангов**
-  - [ ] Тиры: Rookie → Scholar → Expert → Master → Grandmaster
-  - [ ] Прогресс-бар внутри тира (0–100 очков)
-  - [ ] Demotion: 3 поражения подряд на нижней границе = понижение
-  - [ ] Сезонный soft-reset (раз в 3 месяца) → до середины тира
+### Лиги (CEFR-привязка)
+
+> Три лиги определяют пул времён, сложность вопросов и формат тикета.
+> Переход вверх — по набранным ранговым очкам; вниз — при серийных поражениях.
+
+| Лига | CEFR | IELTS | TOEFL iBT | Пул времён | Формат тикета |
+|------|------|-------|-----------|------------|---------------|
+| **Elementary** | A1–A2 | 3.0–4.0 | 32–45 | Present Simple, Past Simple | 1 предложение, короткое |
+| **Intermediate** | B1–B2 | 5.0–7.0 | 46–94 | + Future Simple, Present/Past Continuous, Present Perfect | 2–3 предложения |
+| **Advanced** | C1–C2 | 7.5–9.0 | 95–120 | Все 12 времён | 4–5 предложений, нарратив |
+
+**Начальный уровень** определяется по первым 10 вопросам онбординга → автоматическое
+размещение. Игрок может вручную понизить стартовую лигу перед первым матчем.
+
+---
+
+### Тикет-формат по лигам
+
+#### Elementary
+- 1 предложение: `Did I play?` / `Do I play?`
+- 1 ответ → 1 клавиша (F1–F12)
+- Ранговые очки за тикет: **2 pts base**
+
+#### Intermediate
+- 2–3 предложения с 2 временами
+- Игрок отвечает последовательно на каждое предложение
+- Ранговые очки за тикет: **4–6 pts base** (зависит от difficulty)
+
+#### Advanced
+- 4–5 предложений в единой нарративной цепочке
+- Несколько времён; игрок нажимает клавиши по порядку → цепочка `F1 · F3 · F5 · F1`
+- Пройденные предложения разделены `·` и подсвечиваются зелёным/красным
+- Ранговые очки за тикет: **8–15 pts base**
+
+---
+
+### Система очков
+
+```
+ticketBase  = leagueBase × difficulty      // 2 / 4–6 / 8–15
+speedBonus  = linear decay 0–50% за windowMs (8 000 ms)
+posBonus    = первый правильный ответ → +50%, последний → 0%
+comboMul    = min(comboLength, 5)          // множитель серии правильных ответов
+```
+
+**Правила начисления за тикет:**
+- Каждый верный ответ в цепочке: `+( ticketBase × speedBonus × posBonus × comboMul )`
+- Неверный ответ: `−ticketBase` за данный вопрос (без speed/combo бонуса)
+- Ошибка **не обнуляет** набранные ранее очки за тикет — комбо замораживается до ошибки,
+  после которой новое комбо начинается с нуля. Снятие всей комбо-цепочки за одну ошибку
+  было бы непропорционально жестоким на Advanced-уровне (5 предложений).
+- Wrong answer → 500 ms lock (нельзя ответить на следующее предложение)
+- Timeout (нет ответа за windowMs) → 0 очков, без штрафа, без lock
+
+**Итог по комбо (принятое решение):**
+> Комбо считается до ошибки. Ошибка фиксирует заработанные очки, снимает `−ticketBase`
+> и сбрасывает множитель в 1. Новая серия стартует со следующего верного ответа.
+> Удалять всё комбо не стоит — это наказывает игрока дважды и отбивает желание
+> пробовать длинные нарративные тикеты.
+
+---
+
+### Структура лиг и дивизионов
+
+```
+League        CEFR   Дивизионы (низ → верх)
+──────────────────────────────────────────────────────
+Elementary    A1     A1-IV  A1-III  A1-II  A1-I
+              A2     A2-IV  A2-III  A2-II  A2-I
+Intermediate  B1     B1-IV  B1-III  B1-II  B1-I
+              B2     B2-IV  B2-III  B2-II  B2-I
+Advanced      C1     C1-IV  C1-III  C1-II  C1-I
+              C2     C2-IV  C2-III  C2-II  C2-I
+```
+
+6 CEFR-уровней × 4 суб-дивизиона = **24 ступени**.
+Реализовано в `shared/config/cefr.config.ts`, хелперы в `shared/lib/cefr.ts`.
+
+- [ ] **Прогрессия** внутри дивизиона: 0–100 ранговых очков → advance на 1 ступень
+- [ ] **Понижение (demotion)**: 3 потери подряд в дивизионе `-IV` → drop на 1 ступень (минимум A1-IV)
+- [ ] **Переход в следующую лигу**: достичь A2-I → B1-IV, B2-I → C1-IV
+- [ ] **Сезонный soft-reset** раз в 3 месяца → до нижнего суб-дивизиона текущего CEFR-уровня
+- [ ] **Разблокировка времён** по CEFR (не по очкам):
+  - A1: Present Simple, Past Simple
+  - A2: + Future Simple, Present Continuous
+  - B1: + Past Continuous, Present Perfect
+  - B2: + Past Perfect, Future Continuous, Present Perfect Continuous
+  - C1: + Past Perfect Continuous, Future Perfect
+  - C2: Future Perfect Continuous (все 12)
+- [ ] **Эквиваленты и настройка отображения**
+  - [ ] `shared/config/cefr.config.ts` ✅ — типизированный маппинг CEFR ↔ IELTS ↔ TOEFL ↔ Cambridge
+  - [ ] `shared/lib/cefr.ts` ✅ — `getEquivalent()`, `getSubDivLabel()`, `getNextPosition()`
+  - [ ] `shared/ui/division-badge/` — компонент: `B2-III · ~IELTS 6.0` (настраиваемый)
+  - [ ] `entities/user/user.store.ts` — сигнал `scoreDisplayPreference: 'ielts'|'toefl'|'cambridge'|'none'`
+  - [ ] `pages/equivalents/` — маршрут `/equivalents`: полная таблица с подсветкой текущей строки
+  - [ ] `app/app.routes.ts` — добавить маршрут `/equivalents`
 - [ ] **Разблокировка времён**
-  - [ ] Стартовый пул: Present Simple + Past Simple
-  - [ ] Каждые 50 ранговых очков: +1 время
-  - [ ] UI: locked-overlay на карточках нераскрытых времён
-- [ ] **Matchmaking**
-  - [ ] При поиске: запись в `match_queue` с rank_tier
-  - [ ] Edge Function (polling 2 сек): группировать ±1 тир → создать матч
-  - [ ] Таймаут 15 сек → заполнить ботами
+  - [ ] Elementary: только Present Simple + Past Simple
+  - [ ] Intermediate: +4 времени (Future Simple, Present/Past Continuous, Present Perfect)
+  - [ ] Advanced: все 12 времён
+  - [ ] UI: locked-overlay на ячейках нераскрытых времён
+
+---
+
+### Matchmaking
+
+- [ ] При поиске: запись в `match_queue` с `{ league, tier, user_id }`
+- [ ] Edge Function (polling 2 сек): группировать ±1 тир в пределах лиги → создать матч
+- [ ] Таймаут 15 сек → заполнить ботами
 - [ ] **Scripted Bots**
   - [ ] `is_bot: true` в `match_players`
-  - [ ] `randomDelay(800, 4000)` + configurable accuracy
-- [ ] **Squad Battle** (Supabase Realtime)
-  - [ ] Канал `match:{match_id}`
-  - [ ] Broadcast `{ playerId, tenseId, responseMs }`
-  - [ ] Edge Function валидирует и рассчитывает очки
-  - [ ] Wrong answer → 500ms lock
-  - [ ] 15 вопросов → result screen с позицией
+  - [ ] Elementary: `randomDelay(1200, 3500)`, accuracy 70%
+  - [ ] Intermediate: `randomDelay(900, 3000)`, accuracy 78%
+  - [ ] Advanced: `randomDelay(800, 2500)`, accuracy 85%
+
+---
+
+### Squad Battle (Supabase Realtime)
+
+- [ ] Канал `match:{match_id}`
+- [ ] Broadcast `{ playerId, sentenceIdx, tenseId, responseMs }`
+- [ ] Edge Function валидирует и рассчитывает очки (с учётом posBonus — кто первый ответил)
+- [ ] Цепочка ответов на тикет видна всем: `F1 · F3 · ?` (незавершённые — серые)
+- [ ] 15 тикетов → result screen с итоговыми позициями
 - [ ] **`widgets/squad-board/`**
-  - [ ] 4 аватар-слота, ник, текущий счёт
-  - [ ] Анимация при правильном ответе
+  - [ ] 4 аватар-слота, ник, текущий счёт, текущий тир
+  - [ ] Анимация при правильном ответе / красная вспышка при ошибке
+  - [ ] Цепочка ответов текущего тикета под каждым игроком
 
 ---
 
