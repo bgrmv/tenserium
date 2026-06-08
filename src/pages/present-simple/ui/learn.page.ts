@@ -10,14 +10,8 @@ import { Component, ChangeDetectionStrategy } from '@angular/core';
     <ul>
       <li>Used for general facts, habits, and routines.</li>
       <li>Formed with the base verb (+s/es for third-person singular).</li>
-      <li>
-        Negative form: "do/does not + base verb" (e.g., He does not like
-        coffee.)
-      </li>
-      <li>
-        Question form: "Do/Does + subject + base verb" (e.g., Does she play
-        tennis?)
-      </li>
+      <li>Negative form: "do/does not + base verb" (e.g., He does not like coffee.)</li>
+      <li>Question form: "Do/Does + subject + base verb" (e.g., Does she play tennis?)</li>
     </ul>
 
     <h2>Examples</h2>
@@ -52,12 +46,10 @@ import { Component, ChangeDetectionStrategy } from '@angular/core';
       <p>Use "do not" (don't) or "does not" (doesn't) before the base verb.</p>
 
       <h3>What should I keep in mind?</h3>
-      <p>
-        Remember to add -s/-es for third-person singular subjects (he, she, it).
-      </p>
+      <p>Remember to add -s/-es for third-person singular subjects (he, she, it).</p>
     </div>
   `,
-  changeDetection: ChangeDetectionStrategy.Eager,
+  changeDetection: ChangeDetectionStrategy.OnPush,
   styles: ``,
 })
-export class LearnPageComponent {}
+export class PresentSimpleLearnPageComponent {}

@@ -1,5 +1,4 @@
 import { Routes } from '@angular/router';
-import { HomePageComponent } from './pages/home-page.component';
 
 export const ROUTES: Routes = [
   {
@@ -9,20 +8,21 @@ export const ROUTES: Routes = [
   },
   {
     path: 'home',
-    component: HomePageComponent,
+    loadComponent: () =>
+      import('@pages/home').then((m) => m.HomePageComponent),
   },
   {
     path: 'present-simple',
     loadComponent: () =>
-      import('@entities/present-simple').then(
-        (m) => m.PresentSimplePageComponent,
+      import('@pages/present-simple').then(
+        (m) => m.PresentSimpleShellPageComponent,
       ),
     children: [
       {
         path: 'learn',
         title: 'Present Simple | Learn',
         loadComponent: () =>
-          import('@entities/present-simple').then(
+          import('@pages/present-simple').then(
             (m) => m.PresentSimpleLearnPageComponent,
           ),
       },
@@ -30,7 +30,7 @@ export const ROUTES: Routes = [
         path: 'exam',
         title: 'Present Simple | Exam',
         loadComponent: () =>
-          import('@entities/present-simple').then(
+          import('@pages/present-simple').then(
             (m) => m.PresentSimpleExamPageComponent,
           ),
       },

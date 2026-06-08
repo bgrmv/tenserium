@@ -1,9 +1,9 @@
 import { Component, ChangeDetectionStrategy } from '@angular/core';
-import { RouterModule, RouterOutlet } from '@angular/router';
+import { RouterLink, RouterOutlet } from '@angular/router';
 
 @Component({
-  selector: 'app-present-simple-page',
-  imports: [RouterModule, RouterOutlet],
+  selector: 'app-present-simple-shell',
+  imports: [RouterLink, RouterOutlet],
   template: `
     <ul>
       <li><a [routerLink]="['/', 'home']">Home</a></li>
@@ -15,6 +15,6 @@ import { RouterModule, RouterOutlet } from '@angular/router';
     <router-outlet />
   `,
   styles: ``,
-  changeDetection: ChangeDetectionStrategy.Eager,
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class HomePageComponent {}
+export class PresentSimpleShellPageComponent {}
