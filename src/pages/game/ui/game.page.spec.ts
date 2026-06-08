@@ -7,7 +7,7 @@ import { QuestionRepository } from '@entities/question';
 import { StorageService } from '@shared/api/storage.service';
 import { provideRouter } from '@angular/router';
 import { provideLocationMocks } from '@angular/common/testing';
-import type { Question } from '@shared/types';
+import type { Question, TenseId } from '@shared/types';
 
 describe('GamePageComponent', () => {
   let component: GamePageComponent;
@@ -18,11 +18,11 @@ describe('GamePageComponent', () => {
   // Helper to create a minimal test question
   function makeQuestion(
     id: string,
-    answer: string = 'present-simple',
+    answer: TenseId = 'present-simple',
   ): Question {
     return {
       id,
-      answer: answer as any,
+      answer,
       type: 'sentence',
       prompt: `Question ${id}`,
       sentence: {
@@ -334,7 +334,7 @@ describe('GamePageComponent', () => {
       sessionStore.nextQuestion();
       expect(sessionStore.currentStreak()).toBe(2);
 
-      sessionStore.submitAnswer('wrong-id' as any);
+      sessionStore.submitAnswer('wrong-id' as TenseId);
       sessionStore.nextQuestion();
       expect(sessionStore.currentStreak()).toBe(0);
     });
@@ -442,7 +442,7 @@ describe('GamePageComponent', () => {
 
       sessionStore.nextQuestion();
 
-      sessionStore.submitAnswer('wrong-id' as any);
+      sessionStore.submitAnswer('wrong-id' as TenseId);
       expect(sessionStore.score()).toBe(correctScore);
     });
   });

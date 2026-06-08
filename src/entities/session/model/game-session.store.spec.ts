@@ -1,7 +1,7 @@
 import { TestBed } from '@angular/core/testing';
 import { GameSessionStore } from './game-session.store';
 import { StorageService } from '@shared/api/storage.service';
-import type { Question, SessionConfig } from '@shared/types';
+import type { Question, SessionConfig, TenseId } from '@shared/types';
 
 describe('GameSessionStore', () => {
   let store: GameSessionStore;
@@ -16,11 +16,11 @@ describe('GameSessionStore', () => {
   // Helper to create a minimal test question
   function makeQuestion(
     id: string,
-    answer: string = 'present-simple',
+    answer: TenseId = 'present-simple',
   ): Question {
     return {
       id,
-      answer: answer as any,
+      answer,
       type: 'sentence',
       prompt: `Question ${id}`,
       sentence: {
@@ -313,7 +313,7 @@ describe('GameSessionStore', () => {
       expect(store.currentStreak()).toBe(3);
 
       // W: reset
-      store.submitAnswer('wrong-id' as any);
+      store.submitAnswer('wrong-id' as TenseId);
       store.nextQuestion();
       expect(store.currentStreak()).toBe(0);
 
@@ -332,7 +332,7 @@ describe('GameSessionStore', () => {
       store.nextQuestion();
 
       // Wrong
-      store.submitAnswer('wrong' as any);
+      store.submitAnswer('wrong' as TenseId);
       store.nextQuestion();
 
       // Second streak: C, C, C
