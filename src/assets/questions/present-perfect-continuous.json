@@ -1,0 +1,28 @@
+[
+  {
+    "id": "present-perfect-continuous-01",
+    "answer": "present-perfect-continuous",
+    "type": "context",
+    "prompt": "Действие из прошлого, длящееся до сих пор; акцент на длительности",
+    "promptEn": "An action started in the past, still going, stressing duration",
+    "sentence": {
+      "pre": "She ",
+      "verb": "has been working",
+      "post": " for three hours."
+    },
+    "difficulty": 3
+  },
+  {
+    "id": "present-perfect-continuous-02",
+    "answer": "present-perfect-continuous",
+    "type": "context",
+    "prompt": "Недавнее длительное действие, объясняющее настоящий результат",
+    "promptEn": "Recent ongoing activity that explains a present result",
+    "sentence": {
+      "pre": "I'm soaked — it ",
+      "verb": "has been raining",
+      "post": "."
+    },
+    "difficulty": 3
+  }
+]

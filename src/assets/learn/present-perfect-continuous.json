@@ -1,0 +1,41 @@
+{
+  "tenseId": "present-perfect-continuous",
+  "formula": [
+    "have/has been",
+    "V-ing"
+  ],
+  "usage": [
+    {
+      "icon": "clock",
+      "text": "Started in past, still going"
+    },
+    {
+      "icon": "repeat",
+      "text": "Duration of recent activity"
+    }
+  ],
+  "examples": [
+    {
+      "pre": "She ",
+      "verb": "has been working",
+      "post": " for hours."
+    },
+    {
+      "pre": "It ",
+      "verb": "has been raining",
+      "post": " all day."
+    },
+    {
+      "pre": "I'm tired — I ",
+      "verb": "have been running",
+      "post": "."
+    }
+  ],
+  "markers": [
+    "for",
+    "since",
+    "all day",
+    "lately",
+    "recently"
+  ]
+}

@@ -1,0 +1,33 @@
+<div class="stage">
+  <div class="timer-wrap">
+    <div class="timer-num" [class.low]="remainingMs() < 3000">
+      {{ seconds }}<span>s</span>
+    </div>
+    <div class="timer-bar">
+      <div
+        class="timer-fill"
+        [style.width.%]="fraction() * 100"
+        [style.background]="remainingMs() < 3000 ? 'var(--danger)' : 'linear-gradient(90deg, var(--accent-2), var(--accent))'"
+      ></div>
+    </div>
+  </div>
+
+  <div class="prompt-card" [class]="'r-' + result()">
+    <div class="prompt-quote">"{{ prompt() }}"</div>
+
+    @if (result() !== 'none' && revealName()) {
+      <div class="reveal">
+        <span class="reveal-label" [style.color]="revealColor()">{{ revealName() }}</span>
+        @if (revealSentence(); as s) {
+          <span class="reveal-sentence">
+            {{ s.pre }}<b [style.color]="revealColor()">{{ s.verb }}</b>{{ s.post }}
+          </span>
+        }
+      </div>
+    }
+
+    @if (result() === 'correct' && gainedPoints() !== null) {
+      <div class="points-pop">+{{ gainedPoints() }}</div>
+    }
+  </div>
+</div>

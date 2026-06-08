@@ -1,0 +1,15 @@
+[
+  {
+    "id": "past-perfect-continuous-01",
+    "answer": "past-perfect-continuous",
+    "type": "context",
+    "prompt": "Длительное действие, шедшее до другого момента в прошлом",
+    "promptEn": "A continuous action ongoing before another past moment",
+    "sentence": {
+      "pre": "They ",
+      "verb": "had been driving",
+      "post": " for hours before the stop."
+    },
+    "difficulty": 3
+  }
+]

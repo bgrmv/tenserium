@@ -1,0 +1,45 @@
+{
+  "tenseId": "future-simple",
+  "formula": [
+    "will",
+    "V"
+  ],
+  "usage": [
+    {
+      "icon": "bolt",
+      "text": "Spontaneous decisions"
+    },
+    {
+      "icon": "globe",
+      "text": "Predictions"
+    },
+    {
+      "icon": "check",
+      "text": "Promises & offers"
+    }
+  ],
+  "examples": [
+    {
+      "pre": "I ",
+      "verb": "will call",
+      "post": " you later."
+    },
+    {
+      "pre": "It ",
+      "verb": "will rain",
+      "post": " tomorrow."
+    },
+    {
+      "pre": "She ",
+      "verb": "will help",
+      "post": " you."
+    }
+  ],
+  "markers": [
+    "tomorrow",
+    "next week",
+    "soon",
+    "later",
+    "I think"
+  ]
+}

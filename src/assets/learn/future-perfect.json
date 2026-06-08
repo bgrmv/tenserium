@@ -1,0 +1,40 @@
+{
+  "tenseId": "future-perfect",
+  "formula": [
+    "will have",
+    "V3"
+  ],
+  "usage": [
+    {
+      "icon": "check",
+      "text": "Completed before a future point"
+    },
+    {
+      "icon": "calendar",
+      "text": "Deadlines & milestones"
+    }
+  ],
+  "examples": [
+    {
+      "pre": "By 2030 he ",
+      "verb": "will have graduated",
+      "post": "."
+    },
+    {
+      "pre": "She ",
+      "verb": "will have finished",
+      "post": " by then."
+    },
+    {
+      "pre": "We ",
+      "verb": "will have left",
+      "post": " by noon."
+    }
+  ],
+  "markers": [
+    "by then",
+    "by 2030",
+    "by the time",
+    "in two years"
+  ]
+}

@@ -1,0 +1,73 @@
+@if (status() === 'summary') {
+  <div class="game results">
+    <app-session-summary
+      [title]="cfg().title"
+      [tag]="cfg().tag"
+      [score]="score()"
+      [accuracy]="summaryProps().accuracy"
+      [correct]="summaryProps().correct"
+      [total]="summaryProps().total"
+      [bestStreak]="summaryProps().bestStreak"
+      [forfeited]="forfeited()"
+      [board]="cfg().bots ? leaderboard() : null"
+      [place]="place()"
+      (again)="playAgain()"
+      (exit)="exit()"
+    />
+  </div>
+} @else if (isLoading()) {
+  <div class="game loading">Loading question bank…</div>
+} @else {
+  <div class="game">
+    <div class="top">
+      <div class="hud-left">
+        @if (cfg().bots) {
+          <app-squad-board [players]="leaderboard()" [total]="cfg().total" />
+        }
+      </div>
+
+      <div class="hud-mid">
+        <div class="title-row">
+          <app-icon name="zap" [size]="16" stroke="none" />
+          <span class="title">{{ cfg().title }}</span>
+          <span class="tag">{{ cfg().tag }}</span>
+        </div>
+        <div class="counter">Question {{ progress().index + 1 }} / {{ progress().total }}</div>
+      </div>
+
+      <div class="hud-right">
+        <app-score-bar [score]="score()" [combo]="combo()" />
+        <button type="button" class="end" (click)="endSession()" title="End session (zero points)">
+          End session
+        </button>
+      </div>
+    </div>
+
+    @if (question(); as q) {
+      <app-question-card
+        [prompt]="q.prompt"
+        [remainingMs]="remainingMs()"
+        [fraction]="fraction()"
+        [result]="result()"
+        [revealName]="revealName()"
+        [revealColor]="revealColor()"
+        [revealSentence]="result() !== 'none' ? q.sentence : null"
+        [gainedPoints]="gained()"
+      />
+    }
+
+    <app-answer-grid
+      [palette]="palette()"
+      [columns]="4"
+      [lockedIds]="lockedIds()"
+      [revealId]="revealId()"
+      [pickedId]="pickedId()"
+      [disabled]="result() !== 'none'"
+      (answer)="onAnswer($event)"
+    />
+
+    @if (toast(); as t) {
+      <div class="toast"><app-icon name="zap" [size]="14" stroke="none" /> {{ t }}</div>
+    }
+  </div>
+}

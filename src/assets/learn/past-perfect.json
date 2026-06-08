@@ -1,0 +1,40 @@
+{
+  "tenseId": "past-perfect",
+  "formula": [
+    "had",
+    "V3"
+  ],
+  "usage": [
+    {
+      "icon": "check",
+      "text": "Completed before another past event"
+    },
+    {
+      "icon": "clock",
+      "text": "The earlier of two past actions"
+    }
+  ],
+  "examples": [
+    {
+      "pre": "The train ",
+      "verb": "had left",
+      "post": " before we arrived."
+    },
+    {
+      "pre": "She ",
+      "verb": "had finished",
+      "post": " by noon."
+    },
+    {
+      "pre": "They ",
+      "verb": "had gone",
+      "post": " when I called."
+    }
+  ],
+  "markers": [
+    "before",
+    "after",
+    "by the time",
+    "already"
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "tenseId": "future-perfect-continuous",
+  "formula": [
+    "will have been",
+    "V-ing"
+  ],
+  "usage": [
+    {
+      "icon": "clock",
+      "text": "Duration up to a future point"
+    },
+    {
+      "icon": "calendar",
+      "text": "Emphasis on how long"
+    }
+  ],
+  "examples": [
+    {
+      "pre": "By June she ",
+      "verb": "will have been working",
+      "post": " here a year."
+    },
+    {
+      "pre": "We ",
+      "verb": "will have been driving",
+      "post": " for ten hours."
+    }
+  ],
+  "markers": [
+    "by",
+    "for",
+    "by then",
+    "by the time"
+  ]
+}

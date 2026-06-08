@@ -1,0 +1,52 @@
+.stage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  padding: 10px 0;
+}
+.timer-wrap { width: min(640px, 80%); text-align: center; }
+.timer-num { font-family: var(--mono); font-size: clamp(36px, 6vh, 50px); font-weight: 600; line-height: 1; color: var(--accent); transition: color 0.2s; }
+.timer-num span { font-size: 20px; color: var(--muted); }
+.timer-num.low { color: var(--danger); }
+.timer-bar { height: 7px; border-radius: 8px; background: var(--bg-2); overflow: hidden; margin-top: 10px; }
+.timer-fill { height: 100%; border-radius: 8px; transition: width 0.08s linear; }
+
+.prompt-card {
+  width: min(720px, 88%);
+  background: var(--bg-1);
+  border: 1px solid var(--line-2);
+  border-radius: 18px;
+  padding: clamp(16px, 3vh, 26px) 34px;
+  text-align: center;
+  position: relative;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+.prompt-card.r-correct { border-color: var(--accent-2); box-shadow: 0 0 0 1px var(--accent-2), 0 0 40px oklch(0.76 0.15 158 / 0.18); }
+.prompt-card.r-wrong,
+.prompt-card.r-timeout { border-color: var(--danger); box-shadow: 0 0 0 1px var(--danger), 0 0 40px oklch(0.66 0.2 24 / 0.16); }
+
+.prompt-quote { font-family: var(--display); font-size: clamp(20px, 3.2vh, 26px); font-weight: 500; line-height: 1.35; text-wrap: balance; }
+.reveal { margin-top: 14px; padding-top: 12px; border-top: 1px solid var(--line); animation: fade 0.3s ease; }
+.reveal-label { display: block; font-size: 12px; font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase; margin-bottom: 4px; }
+.reveal-sentence { font-size: 15px; color: var(--dim); }
+.reveal-sentence b { font-weight: 700; }
+
+.points-pop {
+  position: absolute;
+  top: -14px;
+  right: 22px;
+  font-family: var(--mono);
+  font-weight: 700;
+  font-size: 22px;
+  color: var(--accent-2);
+  animation: rise 1s ease forwards;
+}
+
+@keyframes fade { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+@keyframes rise {
+  0% { opacity: 0; transform: translateY(8px); }
+  20% { opacity: 1; }
+  100% { opacity: 0; transform: translateY(-26px); }
+}

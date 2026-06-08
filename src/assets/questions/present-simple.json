@@ -1,0 +1,28 @@
+[
+  {
+    "id": "present-simple-01",
+    "answer": "present-simple",
+    "type": "context",
+    "prompt": "Повторяющееся действие или общая истина",
+    "promptEn": "A repeated habit or routine that is generally true",
+    "sentence": {
+      "pre": "She ",
+      "verb": "works",
+      "post": " every morning."
+    },
+    "difficulty": 1
+  },
+  {
+    "id": "present-simple-02",
+    "answer": "present-simple",
+    "type": "context",
+    "prompt": "Научный факт, верный всегда",
+    "promptEn": "A scientific fact that is always true",
+    "sentence": {
+      "pre": "Water ",
+      "verb": "boils",
+      "post": " at 100 degrees."
+    },
+    "difficulty": 1
+  }
+]

@@ -1,0 +1,28 @@
+[
+  {
+    "id": "past-continuous-01",
+    "answer": "past-continuous",
+    "type": "context",
+    "prompt": "Длительное действие в прошлом, прерванное другим",
+    "promptEn": "An action in progress in the past, interrupted by another",
+    "sentence": {
+      "pre": "I ",
+      "verb": "was cooking",
+      "post": " when the phone rang."
+    },
+    "difficulty": 2
+  },
+  {
+    "id": "past-continuous-02",
+    "answer": "past-continuous",
+    "type": "context",
+    "prompt": "Два длительных действия в один момент прошлого",
+    "promptEn": "Two actions both in progress at the same past time",
+    "sentence": {
+      "pre": "She ",
+      "verb": "was reading",
+      "post": " while I cooked."
+    },
+    "difficulty": 2
+  }
+]

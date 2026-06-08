@@ -1,0 +1,45 @@
+{
+  "tenseId": "past-simple",
+  "formula": [
+    "V2",
+    "V-ed"
+  ],
+  "usage": [
+    {
+      "icon": "check",
+      "text": "Completed past actions"
+    },
+    {
+      "icon": "clock",
+      "text": "Actions at a specific past time"
+    },
+    {
+      "icon": "repeat",
+      "text": "Past habits"
+    }
+  ],
+  "examples": [
+    {
+      "pre": "They ",
+      "verb": "visited",
+      "post": " Rome in 2019."
+    },
+    {
+      "pre": "She ",
+      "verb": "worked",
+      "post": " here last year."
+    },
+    {
+      "pre": "He ",
+      "verb": "called",
+      "post": " me yesterday."
+    }
+  ],
+  "markers": [
+    "yesterday",
+    "ago",
+    "last week",
+    "in 2019",
+    "then"
+  ]
+}

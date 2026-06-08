@@ -1,0 +1,21 @@
+.card { background: var(--bg-1); border: 1px solid var(--bg-2); border-radius: var(--r); padding: 24px; display: flex; flex-direction: column; gap: 20px; max-width: 480px; width: 100%; }
+.head { display: flex; align-items: center; justify-content: space-between; }
+.place { display: flex; align-items: center; gap: 12px; }
+.place-num { font-size: 22px; font-weight: 700; }
+.place-sub { font-size: 12px; color: var(--muted); margin-top: 2px; }
+.exit { background: none; border: none; color: var(--muted); cursor: pointer; font-size: 16px; padding: 4px 8px; border-radius: 6px; }
+.exit:hover { color: var(--fg); background: var(--bg-2); }
+.score { font-family: var(--mono); font-size: 48px; font-weight: 700; line-height: 1; }
+.score span { font-size: 20px; color: var(--muted); }
+.stats { display: flex; gap: 24px; }
+.stats div { display: flex; flex-direction: column; gap: 2px; }
+.stats b { font-size: 20px; font-weight: 700; }
+.stats span { font-size: 11px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.06em; }
+.board { display: flex; flex-direction: column; gap: 6px; }
+.row { display: flex; align-items: center; gap: 10px; padding: 8px 10px; border-radius: 8px; }
+.row.is-you { background: var(--bg-2); }
+.rr-place { width: 16px; font-size: 12px; color: var(--muted); }
+.rr-name { flex: 1; font-size: 14px; }
+.rr-score { font-family: var(--mono); font-size: 14px; }
+.actions { display: flex; gap: 10px; }
+.btn-primary, .btn-ghost { flex: 1; }

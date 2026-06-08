@@ -1,0 +1,28 @@
+[
+  {
+    "id": "future-perfect-01",
+    "answer": "future-perfect",
+    "type": "context",
+    "prompt": "Действие, которое завершится до момента в будущем",
+    "promptEn": "An action that will be finished before a point in the future",
+    "sentence": {
+      "pre": "By 2030 he ",
+      "verb": "will have graduated",
+      "post": "."
+    },
+    "difficulty": 3
+  },
+  {
+    "id": "future-perfect-02",
+    "answer": "future-perfect",
+    "type": "context",
+    "prompt": "Завершённое до будущего дедлайна",
+    "promptEn": "Something completed before a future deadline",
+    "sentence": {
+      "pre": "I ",
+      "verb": "will have finished",
+      "post": " by noon."
+    },
+    "difficulty": 3
+  }
+]

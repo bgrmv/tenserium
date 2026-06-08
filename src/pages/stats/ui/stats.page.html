@@ -1,0 +1,52 @@
+<div class="stats">
+  <div class="head">
+    <h1>Your progress</h1>
+    <p>Seven runs this week · {{ profile().streakDays }}-day streak going.</p>
+  </div>
+
+  <div class="grid">
+    <div class="card">
+      <div class="card-h"><span>Rank</span></div>
+      <div class="rank-body">
+        <app-rank-shield metal="#d9b44a" [size]="48" />
+        <div class="rank-info">
+          <div class="rank-name">{{ profile().rankTier }}</div>
+          <div class="muted">{{ rank().intoTier }} / {{ rank().tierSize }} to next tier</div>
+          <app-progress-bar [value]="rank().intoTier" [max]="rank().tierSize" [height]="6" />
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-h"><span>Accuracy by aspect</span></div>
+      <div class="acc-rows">
+        @for (row of aspectRows(); track row.aspect) {
+          <div class="acc-row">
+            <span class="acc-name">{{ row.label }}</span>
+            <app-progress-bar [value]="row.accuracy" [max]="1" [height]="8" [color]="row.color" />
+            <span class="acc-pct">{{ (row.accuracy * 100).toFixed(0) }}%</span>
+          </div>
+        }
+      </div>
+      <button type="button" class="btn-ghost sm" (click)="train()">
+        Train weakest <app-icon name="arrow-right" [size]="14" />
+      </button>
+    </div>
+
+    <div class="card">
+      <div class="card-h"><span>This week</span></div>
+      <div class="week">
+        @for (d of week; track $index) {
+          <div class="day">
+            <span class="cell" [class.on]="$index < 6"></span>
+            <span class="lbl">{{ d }}</span>
+          </div>
+        }
+      </div>
+      <div class="week-stats">
+        <div><b>142</b><span>questions</span></div>
+        <div><b>91%</b><span>accuracy</span></div>
+      </div>
+    </div>
+  </div>
+</div>

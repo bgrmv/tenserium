@@ -1,0 +1,8 @@
+:host { display: block; background: var(--bg-1); border: 1px solid var(--line); border-radius: 14px; padding: 12px; width: 270px; }
+.title { display: flex; align-items: center; gap: 6px; font-size: 11px; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); margin-bottom: 10px; }
+.row { display: flex; align-items: center; gap: 9px; padding: 5px 0; }
+.place { font-family: var(--mono); font-size: 12px; color: var(--muted); width: 14px; text-align: center; }
+.prog { flex: 1; min-width: 0; }
+.name { font-size: 12px; font-weight: 500; margin-bottom: 4px; }
+.row.is-you .name { color: var(--accent); }
+.score { font-family: var(--mono); font-size: 13px; font-weight: 600; min-width: 42px; text-align: right; }

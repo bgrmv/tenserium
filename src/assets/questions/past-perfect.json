@@ -1,0 +1,28 @@
+[
+  {
+    "id": "past-perfect-01",
+    "answer": "past-perfect",
+    "type": "context",
+    "prompt": "Действие, завершённое до другого события в прошлом",
+    "promptEn": "An action completed before another event in the past",
+    "sentence": {
+      "pre": "The train ",
+      "verb": "had left",
+      "post": " before we arrived."
+    },
+    "difficulty": 3
+  },
+  {
+    "id": "past-perfect-02",
+    "answer": "past-perfect",
+    "type": "context",
+    "prompt": "Более раннее из двух прошлых действий",
+    "promptEn": "The earlier of two past actions, to show the sequence",
+    "sentence": {
+      "pre": "She ",
+      "verb": "had eaten",
+      "post": " before they came."
+    },
+    "difficulty": 3
+  }
+]

@@ -1,0 +1,28 @@
+[
+  {
+    "id": "present-continuous-01",
+    "answer": "present-continuous",
+    "type": "context",
+    "prompt": "Действие, происходящее прямо сейчас",
+    "promptEn": "An action happening right now, at this very moment",
+    "sentence": {
+      "pre": "Be quiet — the baby ",
+      "verb": "is sleeping",
+      "post": "."
+    },
+    "difficulty": 1
+  },
+  {
+    "id": "present-continuous-02",
+    "answer": "present-continuous",
+    "type": "context",
+    "prompt": "Запланированная договорённость на ближайшее будущее",
+    "promptEn": "A fixed personal arrangement in the near future",
+    "sentence": {
+      "pre": "We ",
+      "verb": "are flying",
+      "post": " to Paris on Friday."
+    },
+    "difficulty": 2
+  }
+]
