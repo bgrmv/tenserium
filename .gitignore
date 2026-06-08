@@ -46,3 +46,7 @@ Thumbs.db
 .claude/settings.local.json
 .claude/memory/
 .pnpm-store/
+
+# Playwright
+/playwright-report/
+/test-results/

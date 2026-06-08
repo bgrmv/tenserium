@@ -60,6 +60,15 @@
 }
 .ans.is-dim { opacity: 0.35; }
 
+.ans.is-hint {
+  box-shadow: 0 0 0 2px var(--c), 0 0 18px color-mix(in oklab, var(--c) 50%, transparent);
+  animation: hint-pulse 1.3s ease-in-out infinite;
+}
+@keyframes hint-pulse {
+  0%, 100% { box-shadow: 0 0 0 2px var(--c), 0 0 12px color-mix(in oklab, var(--c) 40%, transparent); }
+  50% { box-shadow: 0 0 0 3px var(--c), 0 0 30px color-mix(in oklab, var(--c) 65%, transparent); }
+}
+
 @keyframes ans-pulse {
   0% { transform: scale(1); }
   40% { transform: scale(1.035); }

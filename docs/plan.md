@@ -243,19 +243,25 @@
 
 ---
 
-## 6. Онбординг
+## 6. Онбординг ✅
 
 > РАНЬШЕ, чем Learn-страницы — без онбординга непонятно что не так с UX.
 
-- [ ] Флаг `hasSeenOnboarding` через `StorageService`
-- [ ] При первом открытии: demo-карточка вопроса
-  - [ ] Анимированный highlight F-клавиш (или on-screen кнопок на mobile)
-  - [ ] Пример правильного ответа (зелёный flash)
-- [ ] После demo → 5 вопросов Normal Mode без настройки (Present + Past Simple)
-- [ ] После 5 вопросов: модалка «Сохрани прогресс»
-  - [ ] Кнопки: «Создать аккаунт» / «Продолжить без аккаунта»
-  - [ ] Не блокирует дальнейшую игру
-- [ ] Inferred level: по первым ответам выбирать соотношение easy/medium/hard
+- [x] Флаг `hasSeenOnboarding` через `StorageService`
+- [x] При первом открытии: demo-карточка вопроса
+  - [x] Анимированный highlight F-клавиш (или on-screen кнопок на mobile) — `is-hint` pulse на AnswerGridComponent
+  - [x] Пример правильного ответа (зелёный flash)
+- [x] После demo → 5 вопросов Normal Mode без настройки (Present + Past Simple)
+- [x] После 5 вопросов: модалка «Сохрани прогресс»
+  - [x] Кнопки: «Создать аккаунт» / «Продолжить без аккаунта»
+  - [x] Не блокирует дальнейшую игру (аккаунт = Phase 8, пока = continueWithout)
+- [x] Inferred level: по точности 5 вопросов → «Начинающий / Средний / Продвинутый» (отображается в save-prompt)
+
+**Unit tests** (`onboarding.page.spec.ts` — 52 tests, `answer-grid.component.spec.ts` — 8 tests):
+- Initial state, demo step (correct/wrong/guard/flash timing), game step (answer/timeout/progression/score/streak), inferredLevel (6 cases), save-prompt (markOnboardingSeen + navigate), computed signals
+
+**E2E tests** (`e2e/onboarding-flow.spec.ts` — 14 scenarios):
+- Demo renders, F1 keyboard, correct/wrong flash, explained section, CTA, progress 1/5, full 5-question run, save-prompt card + level, continue-without navigates to /home, home redirects first-time visitors
 
 ---
 
