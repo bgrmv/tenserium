@@ -24,5 +24,70 @@
       "post": " while I cooked."
     },
     "difficulty": 2
+  },
+  {
+    "id": "past-continuous-03",
+    "answer": "past-continuous",
+    "type": "sentence",
+    "prompt": "Фоновое действие в определённый момент прошлого",
+    "promptEn": "A background action at a specific moment in the past",
+    "sentence": {
+      "pre": "When you called, I ",
+      "verb": "was taking",
+      "post": " a shower."
+    },
+    "difficulty": 2
+  },
+  {
+    "id": "past-continuous-04",
+    "answer": "past-continuous",
+    "type": "sentence",
+    "prompt": "Длительное действие в течение всего периода в прошлом",
+    "promptEn": "An action lasting throughout a period in the past",
+    "sentence": {
+      "pre": "All morning, they ",
+      "verb": "were working",
+      "post": " in the garden."
+    },
+    "difficulty": 2
+  },
+  {
+    "id": "past-continuous-05",
+    "answer": "past-continuous",
+    "type": "context",
+    "prompt": "Описание сцены или ситуации в конкретный момент прошлого",
+    "promptEn": "Describing a scene at a specific moment in the past",
+    "sentence": {
+      "pre": "When we arrived, everyone ",
+      "verb": "was dancing",
+      "post": " and having fun."
+    },
+    "difficulty": 2
+  },
+  {
+    "id": "past-continuous-06",
+    "answer": "past-continuous",
+    "type": "sentence",
+    "prompt": "Процесс, который развивался в определённый период",
+    "promptEn": "A process that was developing during a specific period",
+    "sentence": {
+      "pre": "The situation ",
+      "verb": "was becoming",
+      "post": " more complicated."
+    },
+    "difficulty": 3
+  },
+  {
+    "id": "past-continuous-07",
+    "answer": "past-continuous",
+    "type": "context",
+    "prompt": "Повторяющееся действие в прошлый период",
+    "promptEn": "A repeated action during a past period",
+    "sentence": {
+      "pre": "During my childhood, I ",
+      "verb": "was constantly reading",
+      "post": " books."
+    },
+    "difficulty": 3
   }
 ]

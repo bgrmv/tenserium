@@ -3,12 +3,12 @@
     "id": "future-simple-01",
     "answer": "future-simple",
     "type": "context",
-    "prompt": "Спонтанное решение в момент речи",
-    "promptEn": "A spontaneous decision made at the moment of speaking",
+    "prompt": "Спонтанное решение или предсказание в момент говорения",
+    "promptEn": "A spontaneous decision or prediction at the moment of speaking",
     "sentence": {
-      "pre": "Fine — I ",
-      "verb": "will call",
-      "post": " them now."
+      "pre": "I think it ",
+      "verb": "will rain",
+      "post": " tomorrow."
     },
     "difficulty": 1
   },
@@ -16,13 +16,117 @@
     "id": "future-simple-02",
     "answer": "future-simple",
     "type": "context",
-    "prompt": "Предсказание о вероятном будущем",
-    "promptEn": "A prediction about what will probably happen",
+    "prompt": "Действие, которое произойдёт в будущем",
+    "promptEn": "An action that will happen in the future",
     "sentence": {
-      "pre": "I think it ",
-      "verb": "will rain",
-      "post": " later."
+      "pre": "She ",
+      "verb": "will graduate",
+      "post": " next year."
     },
     "difficulty": 1
+  },
+  {
+    "id": "future-simple-03",
+    "answer": "future-simple",
+    "type": "sentence",
+    "prompt": "Обещание или намерение на будущее",
+    "promptEn": "A promise or intention for the future",
+    "sentence": {
+      "pre": "I promise I ",
+      "verb": "will call",
+      "post": " you tomorrow."
+    },
+    "difficulty": 1
+  },
+  {
+    "id": "future-simple-04",
+    "answer": "future-simple",
+    "type": "sentence",
+    "prompt": "Долгосрочное будущее событие или состояние",
+    "promptEn": "A long-term future event or state",
+    "sentence": {
+      "pre": "In 2050, most people ",
+      "verb": "will live",
+      "post": " in cities."
+    },
+    "difficulty": 1
+  },
+  {
+    "id": "future-simple-05",
+    "answer": "future-simple",
+    "type": "context",
+    "prompt": "Предложение помощи или согласие сделать что-то",
+    "promptEn": "An offer to help or agreement to do something",
+    "sentence": {
+      "pre": "Don't worry, I ",
+      "verb": "will help",
+      "post": " you with that."
+    },
+    "difficulty": 1
+  },
+  {
+    "id": "future-simple-06",
+    "answer": "future-simple",
+    "type": "sentence",
+    "prompt": "Условное будущее действие",
+    "promptEn": "A conditional future action",
+    "sentence": {
+      "pre": "If you study hard, you ",
+      "verb": "will pass",
+      "post": " the exam."
+    },
+    "difficulty": 2
+  },
+  {
+    "id": "future-simple-07",
+    "answer": "future-simple",
+    "type": "context",
+    "prompt": "Общее предсказание или ожидание",
+    "promptEn": "A general prediction or expectation",
+    "sentence": {
+      "pre": "Technology ",
+      "verb": "will change",
+      "post": " our lives significantly."
+    },
+    "difficulty": 2
+  },
+  {
+    "id": "future-simple-08",
+    "answer": "future-simple",
+    "type": "sentence",
+    "prompt": "Будущее действие, которое уже было спланировано",
+    "promptEn": "A future action that has been planned",
+    "sentence": {
+      "pre": "We ",
+      "verb": "will travel",
+      "post": " to Japan next summer."
+    },
+    "difficulty": 2
+  },
+  {
+    "id": "future-simple-09",
+    "answer": "future-simple",
+    "type": "context",
+    "prompt": "Неизбежное будущее событие",
+    "promptEn": "An inevitable future event",
+    "sentence": {
+      "pre": "The sun ",
+      "verb": "will set",
+      "post": " this evening at 8 PM."
+    },
+    "difficulty": 2
+  },
+  {
+    "id": "future-simple-10",
+    "answer": "future-simple",
+    "type": "sentence",
+    "prompt": "Угроза или предупреждение о будущем",
+    "promptEn": "A threat or warning about the future",
+    "sentence": {
+      "pre": "If you don't leave now, you ",
+      "verb": "will be",
+      "post": " late for school."
+    },
+    "difficulty": 2
   }
 ]

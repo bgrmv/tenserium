@@ -24,5 +24,57 @@
       "post": " by noon."
     },
     "difficulty": 3
+  },
+  {
+    "id": "future-perfect-03",
+    "answer": "future-perfect",
+    "type": "sentence",
+    "prompt": "Количество времени, потраченное на действие к определённому моменту",
+    "promptEn": "Duration of an action by a certain future point",
+    "sentence": {
+      "pre": "By next year, I ",
+      "verb": "will have lived",
+      "post": " here for ten years."
+    },
+    "difficulty": 3
+  },
+  {
+    "id": "future-perfect-04",
+    "answer": "future-perfect",
+    "type": "sentence",
+    "prompt": "Результат к определённому времени в будущем",
+    "promptEn": "A result that will be accomplished by a future time",
+    "sentence": {
+      "pre": "Before the meeting, we ",
+      "verb": "will have prepared",
+      "post": " all the documents."
+    },
+    "difficulty": 3
+  },
+  {
+    "id": "future-perfect-05",
+    "answer": "future-perfect",
+    "type": "context",
+    "prompt": "Количество раз, которое что-то произойдёт к моменту в будущем",
+    "promptEn": "How many times something will have happened by a future point",
+    "sentence": {
+      "pre": "By the end of the year, I ",
+      "verb": "will have visited",
+      "post": " five countries."
+    },
+    "difficulty": 3
+  },
+  {
+    "id": "future-perfect-06",
+    "answer": "future-perfect",
+    "type": "sentence",
+    "prompt": "Действие, которое надо завершить до определённого момента",
+    "promptEn": "Something that must be done before a specific time",
+    "sentence": {
+      "pre": "You must call before 5 pm; otherwise, I ",
+      "verb": "will have left",
+      "post": " the office."
+    },
+    "difficulty": 3
   }
 ]

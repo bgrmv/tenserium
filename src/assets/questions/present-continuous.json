@@ -23,6 +23,84 @@
       "verb": "are flying",
       "post": " to Paris on Friday."
     },
+    "difficulty": 1
+  },
+  {
+    "id": "present-continuous-03",
+    "answer": "present-continuous",
+    "type": "sentence",
+    "prompt": "Текущий процесс, длящийся в момент говорения",
+    "promptEn": "A process ongoing at the moment of speaking",
+    "sentence": {
+      "pre": "I ",
+      "verb": "am writing",
+      "post": " an email right now."
+    },
+    "difficulty": 1
+  },
+  {
+    "id": "present-continuous-04",
+    "answer": "present-continuous",
+    "type": "sentence",
+    "prompt": "Временный процесс, длящийся в эту неделю/месяц",
+    "promptEn": "A temporary action happening this week or month",
+    "sentence": {
+      "pre": "She ",
+      "verb": "is studying",
+      "post": " for her exams this month."
+    },
+    "difficulty": 1
+  },
+  {
+    "id": "present-continuous-05",
+    "answer": "present-continuous",
+    "type": "context",
+    "prompt": "Прогрессирующее изменение или тенденция",
+    "promptEn": "A progressive change or trend",
+    "sentence": {
+      "pre": "The world population ",
+      "verb": "is growing",
+      "post": " rapidly."
+    },
+    "difficulty": 2
+  },
+  {
+    "id": "present-continuous-06",
+    "answer": "present-continuous",
+    "type": "sentence",
+    "prompt": "Повторяющееся раздражающее действие в настоящий период",
+    "promptEn": "A repeated annoying action during this period",
+    "sentence": {
+      "pre": "You ",
+      "verb": "are always complaining",
+      "post": " about everything!"
+    },
+    "difficulty": 2
+  },
+  {
+    "id": "present-continuous-07",
+    "answer": "present-continuous",
+    "type": "context",
+    "prompt": "Описание сцены или ситуации в момент наблюдения",
+    "promptEn": "Describing a scene or situation as it unfolds",
+    "sentence": {
+      "pre": "Look! The children ",
+      "verb": "are playing",
+      "post": " in the park."
+    },
+    "difficulty": 2
+  },
+  {
+    "id": "present-continuous-08",
+    "answer": "present-continuous",
+    "type": "sentence",
+    "prompt": "Запланированное событие в ближайшем будущем",
+    "promptEn": "A planned event in the near future",
+    "sentence": {
+      "pre": "They ",
+      "verb": "are getting married",
+      "post": " next month."
+    },
     "difficulty": 2
   }
 ]

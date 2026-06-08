@@ -24,5 +24,57 @@
       "post": " dinner."
     },
     "difficulty": 2
+  },
+  {
+    "id": "future-continuous-03",
+    "answer": "future-continuous",
+    "type": "sentence",
+    "prompt": "Фоновое действие в определённый момент в будущем",
+    "promptEn": "A background action at a specific future moment",
+    "sentence": {
+      "pre": "When you arrive, I ",
+      "verb": "will be cooking",
+      "post": " dinner."
+    },
+    "difficulty": 2
+  },
+  {
+    "id": "future-continuous-04",
+    "answer": "future-continuous",
+    "type": "sentence",
+    "prompt": "Длительное действие, которое будет происходить в определённый период",
+    "promptEn": "A long action happening during a specific period",
+    "sentence": {
+      "pre": "Next week, I ",
+      "verb": "will be studying",
+      "post": " for my exams."
+    },
+    "difficulty": 2
+  },
+  {
+    "id": "future-continuous-05",
+    "answer": "future-continuous",
+    "type": "context",
+    "prompt": "Два действия, которые будут происходить одновременно в будущем",
+    "promptEn": "Two actions happening at the same time in the future",
+    "sentence": {
+      "pre": "While you're working, I ",
+      "verb": "will be relaxing",
+      "post": " on the beach."
+    },
+    "difficulty": 3
+  },
+  {
+    "id": "future-continuous-06",
+    "answer": "future-continuous",
+    "type": "sentence",
+    "prompt": "Прерывание запланированного действия в будущем",
+    "promptEn": "An expected future action likely to be interrupted",
+    "sentence": {
+      "pre": "I'm sure the children ",
+      "verb": "will be playing",
+      "post": " when we get there."
+    },
+    "difficulty": 3
   }
 ]
