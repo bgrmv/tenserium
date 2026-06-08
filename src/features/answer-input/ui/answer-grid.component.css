@@ -1,0 +1,67 @@
+.answer-grid {
+  display: grid;
+  gap: 10px;
+  width: min(900px, 96%);
+  margin: 0 auto;
+}
+.answer-grid.cols-3 { grid-template-columns: repeat(3, 1fr); }
+.answer-grid.cols-4 { grid-template-columns: repeat(4, 1fr); }
+
+.ans {
+  --c: var(--accent);
+  position: relative;
+  text-align: left;
+  border-radius: 13px;
+  padding: 11px 14px;
+  background: color-mix(in oklab, var(--c) 13%, var(--bg-1));
+  border: 1px solid color-mix(in oklab, var(--c) 35%, transparent);
+  display: flex;
+  flex-direction: column;
+  gap: clamp(6px, 1.4vh, 12px);
+  min-height: clamp(54px, 9vh, 72px);
+  justify-content: space-between;
+  cursor: pointer;
+  color: var(--text);
+  transition: transform 0.12s, box-shadow 0.16s, background 0.16s, opacity 0.16s;
+  overflow: hidden;
+}
+.ans:not(:disabled):hover {
+  transform: translateY(-2px);
+  background: color-mix(in oklab, var(--c) 24%, var(--bg-1));
+  box-shadow: 0 8px 22px color-mix(in oklab, var(--c) 30%, transparent);
+}
+.ans-key {
+  position: absolute;
+  top: 11px;
+  right: 13px;
+  font-family: var(--mono);
+  font-size: 11px;
+  font-weight: 600;
+  opacity: 0.8;
+  color: color-mix(in oklab, var(--c) 70%, white);
+}
+.ans-bar { width: 28px; height: 4px; border-radius: 4px; background: var(--c); box-shadow: 0 0 10px var(--c); }
+.ans-name { font-size: 14px; font-weight: 600; letter-spacing: -0.01em; }
+
+.ans.is-locked { background: var(--bg-1); border-color: var(--line); opacity: 0.5; cursor: not-allowed; }
+.ans.is-locked .ans-name { color: var(--muted); }
+.ans-lock { color: var(--muted); }
+
+.ans.is-correct {
+  background: color-mix(in oklab, var(--accent-2) 30%, var(--bg-1));
+  border-color: var(--accent-2);
+  box-shadow: 0 0 0 2px var(--accent-2), 0 0 26px oklch(0.76 0.15 158 / 0.35);
+  animation: ans-pulse 0.4s ease;
+}
+.ans.is-wrong {
+  background: color-mix(in oklab, var(--danger) 28%, var(--bg-1));
+  border-color: var(--danger);
+  box-shadow: 0 0 0 2px var(--danger);
+}
+.ans.is-dim { opacity: 0.35; }
+
+@keyframes ans-pulse {
+  0% { transform: scale(1); }
+  40% { transform: scale(1.035); }
+  100% { transform: scale(1); }
+}

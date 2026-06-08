@@ -1,0 +1,49 @@
+<div class="app">
+  <nav class="rail">
+    <a class="rail-logo" routerLink="/home" aria-label="Home"><app-logo [size]="24" /></a>
+    <div class="rail-items">
+      <a class="rail-btn" routerLink="/home" routerLinkActive="is-active" title="Trainer" aria-label="Trainer">
+        <app-icon name="trainer" [size]="20" />
+      </a>
+      <a class="rail-btn" routerLink="/learn" routerLinkActive="is-active" title="Learn" aria-label="Learn">
+        <app-icon name="learn" [size]="20" />
+      </a>
+      <a class="rail-btn" routerLink="/stats" routerLinkActive="is-active" title="Stats" aria-label="Stats">
+        <app-icon name="stats" [size]="20" />
+      </a>
+    </div>
+    <button type="button" class="rail-btn foot" title="Sign out" aria-label="Sign out">
+      <app-icon name="logout" [size]="19" />
+    </button>
+  </nav>
+
+  <div class="body">
+    <header class="topbar">
+      <a class="brand" routerLink="/home">
+        <app-logo [size]="22" />
+        <span class="brand-name">Tenserium</span>
+      </a>
+      <nav class="topnav">
+        <a routerLink="/home" routerLinkActive="is-active">Trainer</a>
+        <a routerLink="/learn" routerLinkActive="is-active">Learn</a>
+        <a routerLink="/stats" routerLinkActive="is-active">Stats</a>
+      </nav>
+      <div class="right">
+        <button type="button" class="icon-chip" aria-label="Notifications">
+          <app-icon name="bell" [size]="18" /><span class="dot"></span>
+        </button>
+        <div class="profile-chip">
+          <div class="meta">
+            <span class="rank"><app-rank-shield [metal]="tierMetal()" [size]="15" />{{ profile().rankTier }}</span>
+            <span class="streak"><app-icon name="flame" [size]="11" stroke="var(--warm)" />{{ profile().streakDays }}d</span>
+          </div>
+          <app-avatar [name]="profile().nickname" [hue]="210" [size]="34" />
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <router-outlet />
+    </main>
+  </div>
+</div>

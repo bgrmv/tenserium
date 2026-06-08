@@ -1,0 +1,47 @@
+{
+  "tenseId": "present-perfect",
+  "formula": [
+    "have/has",
+    "V3"
+  ],
+  "usage": [
+    {
+      "icon": "check",
+      "text": "Past action, present result"
+    },
+    {
+      "icon": "globe",
+      "text": "Life experience (time unspecified)"
+    },
+    {
+      "icon": "clock",
+      "text": "Unfinished time period"
+    }
+  ],
+  "examples": [
+    {
+      "pre": "I ",
+      "verb": "have lost",
+      "post": " my keys."
+    },
+    {
+      "pre": "She ",
+      "verb": "has been",
+      "post": " to Japan twice."
+    },
+    {
+      "pre": "We ",
+      "verb": "have lived",
+      "post": " here for years."
+    }
+  ],
+  "markers": [
+    "just",
+    "already",
+    "yet",
+    "ever",
+    "never",
+    "since",
+    "for"
+  ]
+}

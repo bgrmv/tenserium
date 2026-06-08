@@ -1,0 +1,45 @@
+{
+  "tenseId": "present-simple",
+  "formula": [
+    "V",
+    "V-s"
+  ],
+  "usage": [
+    {
+      "icon": "repeat",
+      "text": "Habits & routines"
+    },
+    {
+      "icon": "globe",
+      "text": "General facts & truths"
+    },
+    {
+      "icon": "calendar",
+      "text": "Fixed schedules"
+    }
+  ],
+  "examples": [
+    {
+      "pre": "She ",
+      "verb": "works",
+      "post": " every day."
+    },
+    {
+      "pre": "Water ",
+      "verb": "boils",
+      "post": " at 100°C."
+    },
+    {
+      "pre": "The train ",
+      "verb": "leaves",
+      "post": " at nine."
+    }
+  ],
+  "markers": [
+    "always",
+    "usually",
+    "often",
+    "every day",
+    "never"
+  ]
+}

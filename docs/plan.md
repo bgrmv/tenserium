@@ -94,7 +94,67 @@
 
 ---
 
-## 4. Game Engine + Normal Mode (Browser API)
+## 4. Перенос дизайн-системы (design/tenserium-angular → Tenserium/) ✅
+
+> Reference-реализация создана в `design/tenserium-angular/`. Этот этап переносит
+> её целиком в production-проект и разблокирует Phase 5.
+
+### Глобальные стили и шрифты
+- [x] `src/index.html` — Google Fonts: Space Grotesk, IBM Plex Sans, IBM Plex Mono
+- [x] `src/styles.css` — CSS custom properties (oklch-цвета, типографика, border-radius, кнопки, скролл)
+- [x] `src/shared/config/tense-colors.ts` — `tenseColor()`, `tenseCssVars()`, `colorVarRef()`
+- [x] `src/shared/config/rank.config.ts` — `RANK_TIERS`, `rankProgress()`, `rankTier()`
+- [x] Расширить `src/shared/config/tenses.config.ts` — добавить `getTense()`, `tensesByTime()`, `hotkeyToTense()`
+
+### Ассеты
+- [x] `src/assets/questions/{tense-id}.json` — 12 JSON банков вопросов (из design/assets/questions/)
+- [x] `src/assets/learn/{tense-id}.json` — 12 JSON с грамматическим контентом (из design/assets/learn/)
+
+### Shared API / Lib / UI
+- [x] `shared/api/storage.service.ts` — localStorage-seam с префиксом 'tenserium:'
+- [x] `shared/lib/scoring.ts` — `calcPoints()` + unit-тесты
+- [x] `shared/lib/game-timer.ts` — rAF-based сигнальный countdown
+- [x] `shared/lib/hotkeys.service.ts` — F1–F12 Observable (+ digit-fallback для mobile)
+- [x] `shared/ui/icon/` — `IconComponent` + 20 SVG-путей
+- [x] `shared/ui/avatar/` — `AvatarComponent` с initials и градиентом
+- [x] `shared/ui/progress-bar/` — `ProgressBarComponent`
+- [x] `shared/ui/rank-shield/` — `RankShieldComponent`
+- [x] `shared/ui/logo/` — `LogoComponent` (lightning bolt)
+
+### Entities
+- [x] `entities/session/model/game-session.store.ts` — CQRS сигнал-стор сессии
+- [x] `entities/user/model/user.store.ts` — профиль + ранговые очки через StorageService
+- [x] `entities/question/api/question.repository.ts` — lazy-fetch через Angular `resource()`
+- [x] `entities/learn/api/learn.repository.ts` — контент learn-страниц
+- [x] `entities/match/model/match.store.ts` — скриптованные боты для Squad Battle
+
+### Features
+- [x] `features/answer-input/ui/answer-grid.component.ts` — 3×4 грид с hotkeys + lock-state
+- [x] `features/session-config/ui/session-config.component.ts` — форма настройки сессии
+- [x] `features/report-error/ui/report-error.component.ts` — модалка репорта ошибки
+
+### Widgets
+- [x] `widgets/app-shell/ui/app-shell.component.ts` — rail (64px) + topbar (60px) + router-outlet
+- [x] `widgets/mode-card/ui/mode-card.component.ts` — карточка режима с tense-swatches
+- [x] `widgets/question-card/ui/question-card.component.ts` — prompt + timer bar + reveal
+- [x] `widgets/score-bar/ui/score-bar.component.ts` — combo × множитель + счёт + прогресс
+- [x] `widgets/session-summary/ui/session-summary.component.ts` — итоговый экран (результаты + лидерборд)
+- [x] `widgets/squad-board/ui/squad-board.component.ts` — Live HUD 4 игроков
+
+### Pages
+- [x] `pages/home/` — переписать под дизайн (mode cards, daily block, profile card)
+- [x] `pages/game/ui/game.page.ts` + `pages/game/model/mode-config.ts` — полный игровой цикл
+- [x] `pages/learn/ui/learn.page.ts` — общая (не только present-simple; sidebar + 12 тем)
+- [x] `pages/stats/ui/stats.page.ts` — ранг, точность по аспектам, активность
+
+### App root
+- [x] `app/app.component.ts` — инжектировать `tenseCssVars('aspect')` в `:root` при старте
+- [x] `app/app.routes.ts` — маршруты: `/home`, `/game` (query: mode), `/learn`, `/stats`
+- [x] Удалить `pages/present-simple/` — заменено общей learn-страницей
+
+---
+
+## 5. Game Engine + Normal Mode (Browser API)
 
 > Цель: игра работает end-to-end, прогресс в localStorage.
 > Mobile-responsive с самого начала — не болтать потом на готовый layout.
@@ -168,7 +228,7 @@
 
 ---
 
-## 5. Онбординг
+## 6. Онбординг
 
 > РАНЬШЕ, чем Learn-страницы — без онбординга непонятно что не так с UX.
 
@@ -184,7 +244,7 @@
 
 ---
 
-## 6. Learn-страницы (приоритетные)
+## 7. Learn-страницы (приоритетные)
 
 > Не все 12 сразу. Сначала "Simple" family + самые частые.
 
@@ -215,7 +275,7 @@
 
 ---
 
-## 7. Daily Challenge (Browser API, date-seeded)
+## 8. Daily Challenge (Browser API, date-seeded)
 
 > Не нужен cron-сервер. Детерминированный сид по дате даёт всем одинаковый набор.
 
@@ -231,7 +291,7 @@
 
 ---
 
-## 8. Backend: Netlify + Supabase + Auth
+## 9. Backend: Netlify + Supabase + Auth
 
 > Суpabase появляется здесь, не раньше. GitHub Pages → Netlify.
 
@@ -282,7 +342,7 @@
 
 ---
 
-## 9. Rank Mode
+## 10. Rank Mode
 
 ### Лиги (CEFR-привязка)
 
@@ -415,7 +475,7 @@ Advanced      C1     C1-IV  C1-III  C1-II  C1-I
 
 ---
 
-## 10. Лидерборды + Статистика
+## 11. Лидерборды + Статистика
 
 - [ ] **Лидерборды** (`pages/leaderboard/`)
   - [ ] Маршрут `/leaderboard`
@@ -431,7 +491,7 @@ Advanced      C1     C1-IV  C1-III  C1-II  C1-I
 
 ---
 
-## 11. Монетизация
+## 12. Монетизация
 
 - [ ] Premium-флаг `users.is_premium` в UserStore
 - [ ] `features/premium-gate/` — guard для premium-функций
@@ -450,7 +510,7 @@ Advanced      C1     C1-IV  C1-III  C1-II  C1-I
 
 ---
 
-## 12. Text Analysis Mode
+## 13. Text Analysis Mode
 
 > Полностью клиентский — мог бы быть раньше, но сфокусируемся на core сначала.
 
@@ -464,7 +524,7 @@ Advanced      C1     C1-IV  C1-III  C1-II  C1-I
 
 ---
 
-## 13. PWA + Service Worker
+## 14. PWA + Service Worker
 
 - [ ] `@angular/service-worker`
 - [ ] `manifest.webmanifest` (icon, name, theme color)
@@ -473,7 +533,7 @@ Advanced      C1     C1-IV  C1-III  C1-II  C1-I
 
 ---
 
-## 14. Визуальная полировка
+## 15. Визуальная полировка
 
 - [ ] **Цветовая система**
   - [ ] 12 accent colors, CSS Custom Properties: `--tense-{id}: #...`
@@ -488,7 +548,7 @@ Advanced      C1     C1-IV  C1-III  C1-II  C1-I
 
 ---
 
-## 15. Звуковой дизайн
+## 16. Звуковой дизайн
 
 - [ ] `shared/lib/sound.service.ts` (Web Audio API, `AudioContext`)
 - [ ] Аудиофайлы (.ogg / .webm): question-appear, correct, wrong, streak-2, streak-3+, session-complete, daily-complete

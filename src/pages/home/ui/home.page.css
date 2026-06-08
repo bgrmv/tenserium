@@ -1,0 +1,51 @@
+.dash {
+  display: grid;
+  grid-template-columns: 1fr 320px;
+  grid-template-areas: 'hello hello' 'main rail';
+  align-items: start;
+  gap: 0 26px;
+  padding: 32px 36px;
+  max-width: 1320px;
+  margin: 0 auto;
+}
+.hello { grid-area: hello; }
+.main { grid-area: main; }
+.rail { grid-area: rail; }
+.hello h1 { font-family: var(--display); font-size: 30px; font-weight: 600; margin: 0 0 6px; letter-spacing: -0.02em; }
+.hello p { margin: 0 0 26px; color: var(--muted); font-size: 15px; }
+
+.mode-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+
+.daily {
+  margin-top: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(90deg, oklch(0.8 0.13 62 / 0.1), transparent);
+  border: 1px solid var(--line);
+  border-left: 3px solid var(--warm);
+  border-radius: 14px;
+  padding: 16px 20px;
+}
+.daily-left { display: flex; align-items: center; gap: 14px; }
+.daily-badge { width: 40px; height: 40px; border-radius: 11px; display: grid; place-items: center; background: oklch(0.8 0.13 62 / 0.14); }
+.daily-title { font-weight: 600; font-size: 15px; }
+.daily-sub { font-size: 12.5px; color: var(--muted); margin-top: 2px; }
+
+.rail-card { background: var(--bg-1); border: 1px solid var(--line); border-radius: 16px; padding: 18px; }
+.profile-card { text-align: center; display: flex; flex-direction: column; align-items: center; }
+.pc-name { font-family: var(--display); font-weight: 600; font-size: 17px; margin-top: 12px; }
+.pc-rank { display: flex; align-items: center; gap: 5px; font-size: 13px; color: var(--warm); margin-top: 3px; text-transform: capitalize; }
+.pc-bar { width: 100%; margin: 16px 0 6px; }
+.pc-stats { display: flex; gap: 6px; margin-top: 16px; width: 100%; }
+.pc-stats > div { flex: 1; background: var(--bg-2); border-radius: 10px; padding: 10px 6px; display: flex; flex-direction: column; gap: 2px; }
+.pc-stats b { font-family: var(--mono); font-size: 16px; }
+.pc-stats span { font-size: 10px; color: var(--muted); }
+
+@media (max-width: 1080px) {
+  .dash { grid-template-columns: 1fr; grid-template-areas: 'hello' 'main' 'rail'; }
+  .rail { margin-top: 16px; }
+}
+@media (max-width: 860px) {
+  .mode-grid { grid-template-columns: 1fr; }
+}

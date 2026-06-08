@@ -1,0 +1,35 @@
+{
+  "tenseId": "past-perfect-continuous",
+  "formula": [
+    "had been",
+    "V-ing"
+  ],
+  "usage": [
+    {
+      "icon": "clock",
+      "text": "Ongoing before a past moment"
+    },
+    {
+      "icon": "repeat",
+      "text": "Duration up to a past point"
+    }
+  ],
+  "examples": [
+    {
+      "pre": "She ",
+      "verb": "had been working",
+      "post": " for hours before the break."
+    },
+    {
+      "pre": "They ",
+      "verb": "had been waiting",
+      "post": " since noon."
+    }
+  ],
+  "markers": [
+    "for",
+    "since",
+    "before",
+    "by the time"
+  ]
+}

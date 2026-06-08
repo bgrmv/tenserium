@@ -1,0 +1,42 @@
+<div class="card">
+  <div class="head">
+    <div class="place">
+      <app-rank-shield [metal]="metal()" [size]="40" />
+      <div>
+        <div class="place-num">{{ placeLabel() }}</div>
+        <div class="place-sub">
+          {{ forfeited() ? 'Session ended early · no points' : title() + ' · ' + tag() }}
+        </div>
+      </div>
+    </div>
+    <button type="button" class="exit" (click)="exit.emit()">✕</button>
+  </div>
+
+  <div class="score">{{ (forfeited() ? 0 : score()).toLocaleString() }}<span> pts</span></div>
+
+  <div class="stats">
+    <div><b>{{ forfeited() ? 0 : accuracyPct() }}%</b><span>accuracy</span></div>
+    <div><b>{{ correct() }}/{{ total() }}</b><span>correct</span></div>
+    <div><b>{{ bestStreak() }}×</b><span>best combo</span></div>
+  </div>
+
+  @if (board(); as players) {
+    <div class="board">
+      @for (p of players; track p.id; let i = $index) {
+        <div class="row" [class.is-you]="p.id === 'you'">
+          <span class="rr-place">{{ i + 1 }}</span>
+          <app-avatar [name]="p.name" [hue]="p.avatarHue" [size]="28" [you]="p.id === 'you'" />
+          <span class="rr-name">{{ p.name }}</span>
+          <span class="rr-score">{{ p.score.toLocaleString() }}</span>
+        </div>
+      }
+    </div>
+  }
+
+  <div class="actions">
+    <button type="button" class="btn-primary" (click)="again.emit()">
+      <app-icon name="play" [size]="15" stroke="none" /> Play again
+    </button>
+    <button type="button" class="btn-ghost" (click)="exit.emit()">Back to Trainer</button>
+  </div>
+</div>

@@ -1,0 +1,46 @@
+<div class="dash">
+  <div class="hello">
+    <h1>Good evening, {{ firstName() }}.</h1>
+    <p>Pick a mode and warm up. Your streak is on the line.</p>
+  </div>
+
+  <div class="main">
+    <div class="mode-grid">
+      <app-mode-card kind="normal" [palette]="palette()" (playMode)="start($event)" />
+      <app-mode-card
+        kind="rank"
+        [palette]="palette()"
+        [rank]="rank()"
+        (playMode)="start($event)"
+        (squad)="start('squad')"
+      />
+    </div>
+
+    <div class="daily">
+      <div class="daily-left">
+        <div class="daily-badge"><app-icon name="flame" [size]="18" stroke="var(--warm)" /></div>
+        <div>
+          <div class="daily-title">Daily Challenge</div>
+          <div class="daily-sub">10 questions · Perfect tenses focus · 2× points</div>
+        </div>
+      </div>
+      <button type="button" class="btn-primary sm" (click)="start('daily')">Accept</button>
+    </div>
+  </div>
+
+  <aside class="rail">
+    <div class="rail-card profile-card">
+      <app-avatar [name]="profile().nickname" [hue]="210" [size]="56" ring="var(--accent)" />
+      <div class="pc-name">{{ profile().nickname }}</div>
+      <div class="pc-rank"><app-rank-shield metal="#d9b44a" [size]="16" /> {{ profile().rankTier }}</div>
+      <div class="pc-bar">
+        <app-progress-bar [value]="rank().intoTier" [max]="rank().tierSize" [height]="6" />
+      </div>
+      <div class="pc-stats">
+        <div><b>{{ profile().streakDays }}</b><span>day streak</span></div>
+        <div><b>91%</b><span>accuracy</span></div>
+        <div><b>4.1s</b><span>avg speed</span></div>
+      </div>
+    </div>
+  </aside>
+</div>

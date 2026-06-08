@@ -1,0 +1,20 @@
+<div class="answer-grid" [class.cols-3]="columns() === 3" [class.cols-4]="columns() === 4">
+  @for (cell of cells(); track cell.tense.id) {
+    <button
+      type="button"
+      class="ans"
+      [class]="stateClass(cell.tense.id, cell.locked)"
+      [style.--c]="cell.color"
+      [disabled]="cell.locked || disabled()"
+      (click)="pick(cell.tense.id)"
+    >
+      <span class="ans-key">{{ cell.tense.hotkey }}</span>
+      @if (cell.locked) {
+        <span class="ans-lock"><app-icon name="lock" [size]="20" /></span>
+      } @else {
+        <span class="ans-bar"></span>
+      }
+      <span class="ans-name">{{ cell.tense.name }}</span>
+    </button>
+  }
+</div>

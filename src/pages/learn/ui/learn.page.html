@@ -1,0 +1,86 @@
+<div class="learn">
+  <aside class="list">
+    <div class="list-title">All 12 tenses</div>
+    @for (group of groups(); track group.time) {
+      <div class="group">
+        <div class="group-label">{{ group.time }}</div>
+        @for (t of group.tenses; track t.id) {
+          <button
+            type="button"
+            class="item"
+            [class.is-active]="t.active"
+            [style.--c]="t.color"
+            (click)="select(t.id)"
+          >
+            <span class="dot"></span>
+            <span class="item-name">{{ t.name }}</span>
+            <span class="item-key">{{ t.hotkey }}</span>
+          </button>
+        }
+      </div>
+    }
+  </aside>
+
+  <section class="detail">
+    <div class="eyebrow" [style.color]="activeColor()">
+      <span class="dot" [style.--c]="activeColor()"></span> {{ active().aspect }} · {{ active().time }}
+    </div>
+    <h1 class="title" [style.color]="activeColor()">{{ active().name }}</h1>
+
+    @if (content.isLoading()) {
+      <div class="muted">Loading…</div>
+    } @else if (content.value(); as c) {
+      <div class="cols">
+        <div class="col-main">
+          <div class="block">
+            <div class="block-h">Grammar</div>
+            <div class="formula">
+              @for (f of c.formula; track $index) {
+                <span class="chip" [style.--c]="activeColor()">{{ f }}</span>
+              }
+            </div>
+          </div>
+
+          <div class="block">
+            <div class="block-h">Usage</div>
+            <div class="usage">
+              @for (u of c.usage; track $index) {
+                <div class="usage-item">
+                  <span class="usage-ic" [style.color]="activeColor()" [style.border-color]="'color-mix(in oklab, ' + activeColor() + ' 40%, transparent)'">
+                    <app-icon [name]="$any(u.icon)" [size]="16" />
+                  </span>
+                  <span>{{ u.text }}</span>
+                </div>
+              }
+            </div>
+          </div>
+
+          <div class="block">
+            <div class="block-h">Examples</div>
+            <ul class="examples">
+              @for (e of c.examples; track $index) {
+                <li>{{ e.pre }}<b [style.color]="activeColor()">{{ e.verb }}</b>{{ e.post }}</li>
+              }
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-side">
+          <div class="block side">
+            <div class="block-h">Time markers</div>
+            <div class="markers">
+              @for (m of c.markers; track m) {
+                <span class="marker" [style.--c]="activeColor()">{{ m }}</span>
+              }
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <button type="button" class="btn-train" [style.--c]="activeColor()" (click)="train()">
+        <app-icon name="play" [size]="16" stroke="none" /> Train {{ active().name }}
+        <app-icon name="arrow-right" [size]="16" />
+      </button>
+    }
+  </section>
+</div>

@@ -1,0 +1,28 @@
+[
+  {
+    "id": "present-perfect-01",
+    "answer": "present-perfect",
+    "type": "context",
+    "prompt": "Прошлое действие с результатом, важным сейчас",
+    "promptEn": "A past action whose result clearly matters right now",
+    "sentence": {
+      "pre": "I can't get in — I ",
+      "verb": "have lost",
+      "post": " my keys."
+    },
+    "difficulty": 2
+  },
+  {
+    "id": "present-perfect-02",
+    "answer": "present-perfect",
+    "type": "context",
+    "prompt": "Жизненный опыт без указания точного времени",
+    "promptEn": "A life experience where the exact time is not stated",
+    "sentence": {
+      "pre": "She ",
+      "verb": "has visited",
+      "post": " Japan twice."
+    },
+    "difficulty": 2
+  }
+]

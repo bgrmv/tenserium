@@ -1,5 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { TenseCardComponent } from './tense-card.component';
+import { provideRouter } from '@angular/router';
 
 describe('TenseCardComponent', () => {
   let component: TenseCardComponent;
@@ -8,6 +9,7 @@ describe('TenseCardComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       imports: [TenseCardComponent],
+      providers: [provideRouter([])],
     }).compileComponents();
 
     fixture = TestBed.createComponent(TenseCardComponent);

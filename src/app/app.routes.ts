@@ -7,33 +7,38 @@ export const ROUTES: Routes = [
     pathMatch: 'full',
   },
   {
-    path: 'home',
+    path: '',
     loadComponent: () =>
-      import('@pages/home').then((m) => m.HomePageComponent),
-  },
-  {
-    path: 'present-simple',
-    loadComponent: () =>
-      import('@pages/present-simple').then(
-        (m) => m.PresentSimpleShellPageComponent,
-      ),
+      import('@widgets/app-shell').then((m) => m.AppShellComponent),
     children: [
       {
-        path: 'learn',
-        title: 'Present Simple | Learn',
+        path: 'home',
+        title: 'Tenserium',
         loadComponent: () =>
-          import('@pages/present-simple').then(
-            (m) => m.PresentSimpleLearnPageComponent,
-          ),
+          import('@pages/home').then((m) => m.HomePageComponent),
       },
       {
-        path: 'exam',
-        title: 'Present Simple | Exam',
+        path: 'learn',
+        title: 'Learn | Tenserium',
         loadComponent: () =>
-          import('@pages/present-simple').then(
-            (m) => m.PresentSimpleExamPageComponent,
-          ),
+          import('@pages/learn').then((m) => m.LearnPageComponent),
+      },
+      {
+        path: 'stats',
+        title: 'Stats | Tenserium',
+        loadComponent: () =>
+          import('@pages/stats').then((m) => m.StatsPageComponent),
       },
     ],
+  },
+  {
+    path: 'game',
+    title: 'Game | Tenserium',
+    loadComponent: () =>
+      import('@pages/game').then((m) => m.GamePageComponent),
+  },
+  {
+    path: '**',
+    redirectTo: '/home',
   },
 ];

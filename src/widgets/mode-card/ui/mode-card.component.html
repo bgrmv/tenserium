@@ -1,0 +1,51 @@
+<div class="mode-card" [class.mode-rank]="isRank()">
+  <div class="head">
+    <div>
+      <div class="kicker">{{ isRank() ? 'Competitive' : 'Free play' }}</div>
+      <h2 class="title">{{ isRank() ? 'Rank Mode' : 'Normal Mode' }}</h2>
+    </div>
+    @if (isRank()) {
+      <app-rank-shield metal="#c08457" [size]="34" />
+    } @else {
+      <button type="button" class="gear" title="Configure tense pool"><app-icon name="gear" [size]="18" /></button>
+    }
+  </div>
+
+  <p class="desc">
+    @if (isRank()) {
+      Race the clock against three rivals. Unlock harder tenses as you climb and bank points toward your next rank.
+    } @else {
+      All 12 tenses unlocked. Pick your pool, take your time, and build accuracy with zero pressure.
+    }
+  </p>
+
+  @if (isRank()) {
+    @if (rank(); as r) {
+      <div class="rank-progress">
+        <div class="rp-top">
+          <span class="rp-name">{{ r.tier | titlecase }}</span>
+          <span class="rp-next">{{ r.intoTier }} / {{ r.tierSize }} to next</span>
+        </div>
+        <app-progress-bar [value]="r.intoTier" [max]="r.tierSize" [height]="8" color="var(--accent-2)" [glow]="true" />
+      </div>
+    }
+  } @else {
+    <div class="swatches">
+      @for (c of swatches(); track $index) {
+        <span class="swatch" [style.background]="c"></span>
+      }
+    </div>
+  }
+
+  <div class="actions">
+    <button type="button" class="btn-primary" [class.btn-rank]="isRank()" (click)="playMode.emit(isRank() ? 'rank' : 'normal')">
+      <app-icon name="play" [size]="16" stroke="none" />
+      {{ isRank() ? 'Start ranked run' : 'Start' }}
+    </button>
+    @if (isRank()) {
+      <button type="button" class="btn-squad" (click)="squad.emit()">
+        <app-icon name="squad" [size]="16" /> Squad Battle <span class="players">4P</span>
+      </button>
+    }
+  </div>
+</div>

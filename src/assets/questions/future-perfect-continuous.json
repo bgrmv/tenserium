@@ -1,0 +1,15 @@
+[
+  {
+    "id": "future-perfect-continuous-01",
+    "answer": "future-perfect-continuous",
+    "type": "context",
+    "prompt": "Сколько времени продлится действие к моменту в будущем",
+    "promptEn": "How long an action will have continued up to a future point",
+    "sentence": {
+      "pre": "By June she ",
+      "verb": "will have been living",
+      "post": " here a year."
+    },
+    "difficulty": 3
+  }
+]

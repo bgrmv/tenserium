@@ -1,0 +1,45 @@
+{
+  "tenseId": "present-continuous",
+  "formula": [
+    "am/is/are",
+    "V-ing"
+  ],
+  "usage": [
+    {
+      "icon": "clock",
+      "text": "Happening right now"
+    },
+    {
+      "icon": "repeat",
+      "text": "Temporary situations"
+    },
+    {
+      "icon": "calendar",
+      "text": "Fixed future arrangements"
+    }
+  ],
+  "examples": [
+    {
+      "pre": "She ",
+      "verb": "is working",
+      "post": " right now."
+    },
+    {
+      "pre": "We ",
+      "verb": "are leaving",
+      "post": " on Friday."
+    },
+    {
+      "pre": "They ",
+      "verb": "are staying",
+      "post": " with us."
+    }
+  ],
+  "markers": [
+    "now",
+    "right now",
+    "at the moment",
+    "currently",
+    "Look!"
+  ]
+}

@@ -1,0 +1,10 @@
+:host { display: flex; align-items: flex-start; justify-content: flex-end; gap: 16px; }
+.cap { font-size: 10px; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); }
+.combo-box, .score-box { text-align: right; }
+.combo-val { font-family: var(--mono); font-size: 30px; font-weight: 600; line-height: 1; color: var(--dim); transition: 0.2s; }
+.combo-val span { font-size: 16px; color: var(--muted); }
+.combo-val.hot { color: var(--warm); text-shadow: 0 0 16px oklch(0.8 0.13 62 / 0.5); }
+.ticks { display: flex; gap: 3px; justify-content: flex-end; margin-top: 6px; min-height: 14px; }
+.tick { width: 14px; height: 14px; border-radius: 4px; background: var(--accent-2); display: grid; place-items: center; animation: tick-pop 0.25s ease; }
+.score-val { font-family: var(--mono); font-size: 26px; font-weight: 600; line-height: 1.1; }
+@keyframes tick-pop { from { transform: scale(0); } to { transform: scale(1); } }

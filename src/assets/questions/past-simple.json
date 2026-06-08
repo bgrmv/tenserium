@@ -1,0 +1,28 @@
+[
+  {
+    "id": "past-simple-01",
+    "answer": "past-simple",
+    "type": "context",
+    "prompt": "Завершённое действие в конкретный момент прошлого",
+    "promptEn": "A completed action at a specific, finished past time",
+    "sentence": {
+      "pre": "They ",
+      "verb": "arrived",
+      "post": " an hour ago."
+    },
+    "difficulty": 1
+  },
+  {
+    "id": "past-simple-02",
+    "answer": "past-simple",
+    "type": "context",
+    "prompt": "Однократное завершённое событие в прошлом",
+    "promptEn": "A single finished event in the past",
+    "sentence": {
+      "pre": "He ",
+      "verb": "bought",
+      "post": " a car in 2019."
+    },
+    "difficulty": 1
+  }
+]

@@ -1,0 +1,34 @@
+<div class="config">
+  <div class="config-block">
+    <div class="config-label">Session length</div>
+    <div class="seg">
+      @for (n of lengths; track n) {
+        <button
+          type="button"
+          class="seg-btn"
+          [class.is-on]="model().length === n"
+          (click)="setLength(n)"
+        >
+          {{ n }}
+          <span class="seg-cap">{{ n === 10 ? 'Quick' : n === 20 ? 'Standard' : 'Marathon' }}</span>
+        </button>
+      }
+    </div>
+  </div>
+
+  <div class="config-block">
+    <div class="config-label">Tense families</div>
+    <div class="aspect-toggles">
+      @for (aspect of aspectOrder; track aspect) {
+        <label class="toggle">
+          <input type="checkbox" [control]="settings.aspects[aspect]" />
+          <span class="toggle-name">{{ aspectLabel[aspect] }}</span>
+        </label>
+      }
+    </div>
+  </div>
+
+  <button type="button" class="btn-primary" [disabled]="!canStart()" (click)="onStart()">
+    Start session
+  </button>
+</div>

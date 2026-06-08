@@ -1,0 +1,28 @@
+[
+  {
+    "id": "future-continuous-01",
+    "answer": "future-continuous",
+    "type": "context",
+    "prompt": "Действие в процессе в конкретный момент будущего",
+    "promptEn": "An action that will be in progress at a specific future time",
+    "sentence": {
+      "pre": "This time tomorrow I ",
+      "verb": "will be flying",
+      "post": " home."
+    },
+    "difficulty": 2
+  },
+  {
+    "id": "future-continuous-02",
+    "answer": "future-continuous",
+    "type": "context",
+    "prompt": "Ожидаемое длительное действие в будущем",
+    "promptEn": "Something expected to be ongoing at a future moment",
+    "sentence": {
+      "pre": "At 8 pm they ",
+      "verb": "will be having",
+      "post": " dinner."
+    },
+    "difficulty": 2
+  }
+]

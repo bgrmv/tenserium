@@ -1,0 +1,44 @@
+{
+  "tenseId": "past-continuous",
+  "formula": [
+    "was/were",
+    "V-ing"
+  ],
+  "usage": [
+    {
+      "icon": "clock",
+      "text": "In progress in the past"
+    },
+    {
+      "icon": "bolt",
+      "text": "Interrupted action"
+    },
+    {
+      "icon": "repeat",
+      "text": "Two parallel past actions"
+    }
+  ],
+  "examples": [
+    {
+      "pre": "I ",
+      "verb": "was sleeping",
+      "post": " when he called."
+    },
+    {
+      "pre": "She ",
+      "verb": "was working",
+      "post": " at 6 pm."
+    },
+    {
+      "pre": "They ",
+      "verb": "were waiting",
+      "post": " for hours."
+    }
+  ],
+  "markers": [
+    "while",
+    "when",
+    "at that moment",
+    "all day"
+  ]
+}

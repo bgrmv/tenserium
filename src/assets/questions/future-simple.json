@@ -1,0 +1,28 @@
+[
+  {
+    "id": "future-simple-01",
+    "answer": "future-simple",
+    "type": "context",
+    "prompt": "Спонтанное решение в момент речи",
+    "promptEn": "A spontaneous decision made at the moment of speaking",
+    "sentence": {
+      "pre": "Fine — I ",
+      "verb": "will call",
+      "post": " them now."
+    },
+    "difficulty": 1
+  },
+  {
+    "id": "future-simple-02",
+    "answer": "future-simple",
+    "type": "context",
+    "prompt": "Предсказание о вероятном будущем",
+    "promptEn": "A prediction about what will probably happen",
+    "sentence": {
+      "pre": "I think it ",
+      "verb": "will rain",
+      "post": " later."
+    },
+    "difficulty": 1
+  }
+]

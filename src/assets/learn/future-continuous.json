@@ -1,0 +1,39 @@
+{
+  "tenseId": "future-continuous",
+  "formula": [
+    "will be",
+    "V-ing"
+  ],
+  "usage": [
+    {
+      "icon": "clock",
+      "text": "In progress at a future time"
+    },
+    {
+      "icon": "calendar",
+      "text": "Expected ongoing events"
+    }
+  ],
+  "examples": [
+    {
+      "pre": "This time tomorrow I ",
+      "verb": "will be flying",
+      "post": "."
+    },
+    {
+      "pre": "She ",
+      "verb": "will be working",
+      "post": " at six."
+    },
+    {
+      "pre": "We ",
+      "verb": "will be waiting",
+      "post": " outside."
+    }
+  ],
+  "markers": [
+    "this time tomorrow",
+    "at 6 pm",
+    "all day tomorrow"
+  ]
+}
