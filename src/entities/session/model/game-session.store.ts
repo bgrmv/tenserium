@@ -82,7 +82,7 @@ export class GameSessionStore {
   }));
 
   readonly isComplete = computed(
-    () => this._deck().length > 0 && this._index() >= this._deck().length,
+    () => this._status() === 'summary',
   );
 
   readonly lastAnswer = computed<AnswerRecord | null>(

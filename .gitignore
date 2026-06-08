@@ -41,6 +41,8 @@ testem.log
 .DS_Store
 Thumbs.db
 
-# Claude assistant memory (personal, not project docs)
+# Claude assistant — local IDE config and personal memory
+.claude/settings.json
+.claude/settings.local.json
 .claude/memory/
 .pnpm-store/

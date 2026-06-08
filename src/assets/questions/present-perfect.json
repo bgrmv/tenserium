@@ -24,5 +24,83 @@
       "post": " Japan twice."
     },
     "difficulty": 2
+  },
+  {
+    "id": "present-perfect-03",
+    "answer": "present-perfect",
+    "type": "sentence",
+    "prompt": "Действие, которое началось в прошлом и продолжается до сих пор",
+    "promptEn": "An action that started in the past and still continues",
+    "sentence": {
+      "pre": "I ",
+      "verb": "have worked",
+      "post": " here for five years."
+    },
+    "difficulty": 2
+  },
+  {
+    "id": "present-perfect-04",
+    "answer": "present-perfect",
+    "type": "sentence",
+    "prompt": "Недавнее действие с неуказанным временем",
+    "promptEn": "A recent action with no time mentioned",
+    "sentence": {
+      "pre": "I just ",
+      "verb": "have finished",
+      "post": " my homework."
+    },
+    "difficulty": 2
+  },
+  {
+    "id": "present-perfect-05",
+    "answer": "present-perfect",
+    "type": "context",
+    "prompt": "Число раз, которое что-то происходило",
+    "promptEn": "The number of times something has happened",
+    "sentence": {
+      "pre": "How many times ",
+      "verb": "have you been",
+      "post": " to this restaurant?"
+    },
+    "difficulty": 2
+  },
+  {
+    "id": "present-perfect-06",
+    "answer": "present-perfect",
+    "type": "sentence",
+    "prompt": "Наличие опыта или умения в жизни",
+    "promptEn": "Having experience or ability in life",
+    "sentence": {
+      "pre": "I ",
+      "verb": "have never tried",
+      "post": " sushi before."
+    },
+    "difficulty": 3
+  },
+  {
+    "id": "present-perfect-07",
+    "answer": "present-perfect",
+    "type": "context",
+    "prompt": "Многократное действие, которое произошло в прошлом",
+    "promptEn": "A repeated action that has happened in the past",
+    "sentence": {
+      "pre": "We ",
+      "verb": "have discussed",
+      "post": " this issue many times."
+    },
+    "difficulty": 3
+  },
+  {
+    "id": "present-perfect-08",
+    "answer": "present-perfect",
+    "type": "sentence",
+    "prompt": "Изменение состояния от прошлого к настоящему",
+    "promptEn": "A change from past to present",
+    "sentence": {
+      "pre": "The situation ",
+      "verb": "has improved",
+      "post": " significantly."
+    },
+    "difficulty": 3
   }
 ]

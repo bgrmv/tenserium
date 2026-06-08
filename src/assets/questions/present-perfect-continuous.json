@@ -24,5 +24,57 @@
       "post": "."
     },
     "difficulty": 3
+  },
+  {
+    "id": "present-perfect-continuous-03",
+    "answer": "present-perfect-continuous",
+    "type": "sentence",
+    "prompt": "Продолжающееся действие с видимыми результатами сейчас",
+    "promptEn": "An ongoing action with visible results right now",
+    "sentence": {
+      "pre": "They look tired because they ",
+      "verb": "have been studying",
+      "post": " all night."
+    },
+    "difficulty": 3
+  },
+  {
+    "id": "present-perfect-continuous-04",
+    "answer": "present-perfect-continuous",
+    "type": "sentence",
+    "prompt": "Временное состояние, которое длится некоторое время",
+    "promptEn": "A temporary condition lasting for some time",
+    "sentence": {
+      "pre": "I ",
+      "verb": "have been living",
+      "post": " in this house since childhood."
+    },
+    "difficulty": 3
+  },
+  {
+    "id": "present-perfect-continuous-05",
+    "answer": "present-perfect-continuous",
+    "type": "context",
+    "prompt": "Повторяющееся действие, которое продолжается в настоящий период",
+    "promptEn": "A repeated action that continues in the current period",
+    "sentence": {
+      "pre": "He ",
+      "verb": "has been calling",
+      "post": " me all day."
+    },
+    "difficulty": 3
+  },
+  {
+    "id": "present-perfect-continuous-06",
+    "answer": "present-perfect-continuous",
+    "type": "sentence",
+    "prompt": "Процесс, который начался в прошлом и развивается до сих пор",
+    "promptEn": "A process that began in the past and is still developing",
+    "sentence": {
+      "pre": "The company ",
+      "verb": "has been growing",
+      "post": " steadily for years."
+    },
+    "difficulty": 3
   }
 ]

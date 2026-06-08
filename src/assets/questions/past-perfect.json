@@ -24,5 +24,57 @@
       "post": " before they came."
     },
     "difficulty": 3
+  },
+  {
+    "id": "past-perfect-03",
+    "answer": "past-perfect",
+    "type": "sentence",
+    "prompt": "Следствие в прошлом предыдущего действия",
+    "promptEn": "A result in the past of a previous past action",
+    "sentence": {
+      "pre": "I couldn't get in because I ",
+      "verb": "had forgotten",
+      "post": " my key."
+    },
+    "difficulty": 3
+  },
+  {
+    "id": "past-perfect-04",
+    "answer": "past-perfect",
+    "type": "sentence",
+    "prompt": "Опыт к определённому моменту в прошлом",
+    "promptEn": "Experience by a certain point in the past",
+    "sentence": {
+      "pre": "By the time I graduated, I ",
+      "verb": "had worked",
+      "post": " on many projects."
+    },
+    "difficulty": 3
+  },
+  {
+    "id": "past-perfect-05",
+    "answer": "past-perfect",
+    "type": "context",
+    "prompt": "Неожиданное событие на основе предыдущего",
+    "promptEn": "Unexpected result of a prior past action",
+    "sentence": {
+      "pre": "They ",
+      "verb": "had planned",
+      "post": " the trip, but it was cancelled."
+    },
+    "difficulty": 3
+  },
+  {
+    "id": "past-perfect-06",
+    "answer": "past-perfect",
+    "type": "sentence",
+    "prompt": "Описание предыстории события в прошлом",
+    "promptEn": "Backstory of an event in the past",
+    "sentence": {
+      "pre": "When the accident happened, he ",
+      "verb": "had been driving",
+      "post": " for ten hours."
+    },
+    "difficulty": 3
   }
 ]

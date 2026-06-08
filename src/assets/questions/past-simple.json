@@ -4,7 +4,7 @@
     "answer": "past-simple",
     "type": "context",
     "prompt": "Завершённое действие в конкретный момент прошлого",
-    "promptEn": "A completed action at a specific, finished past time",
+    "promptEn": "A completed action at a specific past time",
     "sentence": {
       "pre": "They ",
       "verb": "arrived",
@@ -24,5 +24,109 @@
       "post": " a car in 2019."
     },
     "difficulty": 1
+  },
+  {
+    "id": "past-simple-03",
+    "answer": "past-simple",
+    "type": "sentence",
+    "prompt": "Действие, которое произошло и закончилось в конкретное время",
+    "promptEn": "An action that happened and finished at a specific time",
+    "sentence": {
+      "pre": "She ",
+      "verb": "graduated",
+      "post": " last summer."
+    },
+    "difficulty": 1
+  },
+  {
+    "id": "past-simple-04",
+    "answer": "past-simple",
+    "type": "sentence",
+    "prompt": "Серия действий, которые произошли одно за другим",
+    "promptEn": "A series of completed actions in sequence",
+    "sentence": {
+      "pre": "I ",
+      "verb": "woke",
+      "post": " up, had breakfast, and went to work."
+    },
+    "difficulty": 1
+  },
+  {
+    "id": "past-simple-05",
+    "answer": "past-simple",
+    "type": "context",
+    "prompt": "Историческое событие или факт в прошлом",
+    "promptEn": "A historical event or past fact",
+    "sentence": {
+      "pre": "The Berlin Wall ",
+      "verb": "fell",
+      "post": " in 1989."
+    },
+    "difficulty": 1
+  },
+  {
+    "id": "past-simple-06",
+    "answer": "past-simple",
+    "type": "sentence",
+    "prompt": "Действие, которое прерывалось другим действием",
+    "promptEn": "A past action interrupted by another",
+    "sentence": {
+      "pre": "We ",
+      "verb": "were watching",
+      "post": " TV when the power went out."
+    },
+    "difficulty": 2
+  },
+  {
+    "id": "past-simple-07",
+    "answer": "past-simple",
+    "type": "context",
+    "prompt": "Привычка или повторяющееся действие в прошлом",
+    "promptEn": "A habit or repeated action in the past",
+    "sentence": {
+      "pre": "When I was a child, I ",
+      "verb": "played",
+      "post": " football every day."
+    },
+    "difficulty": 2
+  },
+  {
+    "id": "past-simple-08",
+    "answer": "past-simple",
+    "type": "sentence",
+    "prompt": "Неожиданное или неожидаемое событие в прошлом",
+    "promptEn": "An unexpected event in the past",
+    "sentence": {
+      "pre": "Suddenly, the door ",
+      "verb": "opened",
+      "post": " and my best friend walked in."
+    },
+    "difficulty": 2
+  },
+  {
+    "id": "past-simple-09",
+    "answer": "past-simple",
+    "type": "context",
+    "prompt": "Описание прошлого состояния или положения",
+    "promptEn": "Describing a past state or situation",
+    "sentence": {
+      "pre": "Last winter, it ",
+      "verb": "was",
+      "post": " extremely cold."
+    },
+    "difficulty": 2
+  },
+  {
+    "id": "past-simple-10",
+    "answer": "past-simple",
+    "type": "sentence",
+    "prompt": "Причинно-следственная связь в прошлом",
+    "promptEn": "A cause and effect in the past",
+    "sentence": {
+      "pre": "Because I forgot my keys, I ",
+      "verb": "had",
+      "post": " to wait for an hour."
+    },
+    "difficulty": 2
   }
 ]

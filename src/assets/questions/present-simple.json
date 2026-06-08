@@ -3,8 +3,8 @@
     "id": "present-simple-01",
     "answer": "present-simple",
     "type": "context",
-    "prompt": "Повторяющееся действие или общая истина",
-    "promptEn": "A repeated habit or routine that is generally true",
+    "prompt": "Повторяющееся действие или привычка",
+    "promptEn": "A repeated habit or routine",
     "sentence": {
       "pre": "She ",
       "verb": "works",
@@ -16,7 +16,7 @@
     "id": "present-simple-02",
     "answer": "present-simple",
     "type": "context",
-    "prompt": "Научный факт, верный всегда",
+    "prompt": "Научный факт или универсальная истина",
     "promptEn": "A scientific fact that is always true",
     "sentence": {
       "pre": "Water ",
@@ -24,5 +24,109 @@
       "post": " at 100 degrees."
     },
     "difficulty": 1
+  },
+  {
+    "id": "present-simple-03",
+    "answer": "present-simple",
+    "type": "sentence",
+    "prompt": "Регулярное действие в настоящем",
+    "promptEn": "Regular action in the present",
+    "sentence": {
+      "pre": "I ",
+      "verb": "drink",
+      "post": " coffee every day."
+    },
+    "difficulty": 1
+  },
+  {
+    "id": "present-simple-04",
+    "answer": "present-simple",
+    "type": "sentence",
+    "prompt": "Состояние, которое продолжается обычно",
+    "promptEn": "A state that typically continues",
+    "sentence": {
+      "pre": "He ",
+      "verb": "likes",
+      "post": " reading books."
+    },
+    "difficulty": 1
+  },
+  {
+    "id": "present-simple-05",
+    "answer": "present-simple",
+    "type": "context",
+    "prompt": "Действие, которое происходит регулярно по расписанию",
+    "promptEn": "An action that happens regularly according to schedule",
+    "sentence": {
+      "pre": "The train ",
+      "verb": "leaves",
+      "post": " at 8 AM."
+    },
+    "difficulty": 1
+  },
+  {
+    "id": "present-simple-06",
+    "answer": "present-simple",
+    "type": "sentence",
+    "prompt": "Общее состояние или характеристика",
+    "promptEn": "A general state or characteristic",
+    "sentence": {
+      "pre": "They ",
+      "verb": "live",
+      "post": " in London."
+    },
+    "difficulty": 1
+  },
+  {
+    "id": "present-simple-07",
+    "answer": "present-simple",
+    "type": "context",
+    "prompt": "Действие, которое повторяется через определённые промежутки",
+    "promptEn": "An action that repeats at intervals",
+    "sentence": {
+      "pre": "We ",
+      "verb": "meet",
+      "post": " every Friday."
+    },
+    "difficulty": 2
+  },
+  {
+    "id": "present-simple-08",
+    "answer": "present-simple",
+    "type": "sentence",
+    "prompt": "Состояние чувства или мнения",
+    "promptEn": "A feeling or opinion state",
+    "sentence": {
+      "pre": "She ",
+      "verb": "believes",
+      "post": " in sustainable living."
+    },
+    "difficulty": 2
+  },
+  {
+    "id": "present-simple-09",
+    "answer": "present-simple",
+    "type": "context",
+    "prompt": "Описание профессии или постоянной роли",
+    "promptEn": "Describing a profession or permanent role",
+    "sentence": {
+      "pre": "My father ",
+      "verb": "works",
+      "post": " as an engineer."
+    },
+    "difficulty": 2
+  },
+  {
+    "id": "present-simple-10",
+    "answer": "present-simple",
+    "type": "sentence",
+    "prompt": "Описание способности или умения",
+    "promptEn": "Describing an ability or skill",
+    "sentence": {
+      "pre": "I ",
+      "verb": "speak",
+      "post": " three languages."
+    },
+    "difficulty": 2
   }
 ]

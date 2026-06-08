@@ -11,5 +11,57 @@
       "post": " here a year."
     },
     "difficulty": 3
+  },
+  {
+    "id": "future-perfect-continuous-02",
+    "answer": "future-perfect-continuous",
+    "type": "sentence",
+    "prompt": "Длительность действия в определённый момент будущего",
+    "promptEn": "The duration of an action at a specific future moment",
+    "sentence": {
+      "pre": "By the time you arrive, I ",
+      "verb": "will have been waiting",
+      "post": " for two hours."
+    },
+    "difficulty": 3
+  },
+  {
+    "id": "future-perfect-continuous-03",
+    "answer": "future-perfect-continuous",
+    "type": "context",
+    "prompt": "Ожидаемая длительность работы/процесса к определённому времени",
+    "promptEn": "Expected duration of work or process by a future time",
+    "sentence": {
+      "pre": "By next year, they ",
+      "verb": "will have been building",
+      "post": " the bridge for two years."
+    },
+    "difficulty": 3
+  },
+  {
+    "id": "future-perfect-continuous-04",
+    "answer": "future-perfect-continuous",
+    "type": "sentence",
+    "prompt": "Сколько времени прошло при наступлении будущего события",
+    "promptEn": "How much time will have passed when a future event occurs",
+    "sentence": {
+      "pre": "When she retires, she ",
+      "verb": "will have been teaching",
+      "post": " for forty years."
+    },
+    "difficulty": 3
+  },
+  {
+    "id": "future-perfect-continuous-05",
+    "answer": "future-perfect-continuous",
+    "type": "context",
+    "prompt": "Временной промежуток к определённому моменту в будущем",
+    "promptEn": "The time span by a certain future moment",
+    "sentence": {
+      "pre": "By the time we meet, I ",
+      "verb": "will have been studying",
+      "post": " this subject for six months."
+    },
+    "difficulty": 3
   }
 ]

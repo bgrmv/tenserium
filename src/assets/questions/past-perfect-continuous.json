@@ -11,5 +11,57 @@
       "post": " for hours before the stop."
     },
     "difficulty": 3
+  },
+  {
+    "id": "past-perfect-continuous-02",
+    "answer": "past-perfect-continuous",
+    "type": "sentence",
+    "prompt": "Результат длительного действия, объясняющий прошлое событие",
+    "promptEn": "A result of a long action that explains a past event",
+    "sentence": {
+      "pre": "He was exhausted because he ",
+      "verb": "had been working",
+      "post": " without a break."
+    },
+    "difficulty": 3
+  },
+  {
+    "id": "past-perfect-continuous-03",
+    "answer": "past-perfect-continuous",
+    "type": "context",
+    "prompt": "Процесс, длившийся до определённого момента в прошлом",
+    "promptEn": "A process that was going on until a point in the past",
+    "sentence": {
+      "pre": "Before the rain, it ",
+      "verb": "had been snowing",
+      "post": " for two days."
+    },
+    "difficulty": 3
+  },
+  {
+    "id": "past-perfect-continuous-04",
+    "answer": "past-perfect-continuous",
+    "type": "sentence",
+    "prompt": "Привычка или повторяющееся действие в определённый период прошлого",
+    "promptEn": "A habit or repeated action during a past period",
+    "sentence": {
+      "pre": "During his childhood, he ",
+      "verb": "had been playing",
+      "post": " the piano for years."
+    },
+    "difficulty": 3
+  },
+  {
+    "id": "past-perfect-continuous-05",
+    "answer": "past-perfect-continuous",
+    "type": "context",
+    "prompt": "Длительность действия, объясняющая положение к моменту в прошлом",
+    "promptEn": "Duration of an action explaining a situation in the past",
+    "sentence": {
+      "pre": "When the fire started, it ",
+      "verb": "had been burning",
+      "post": " undetected for hours."
+    },
+    "difficulty": 3
   }
 ]
