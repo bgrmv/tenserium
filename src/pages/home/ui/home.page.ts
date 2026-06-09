@@ -31,6 +31,12 @@ export class HomePageComponent {
   protected readonly rank = this.user.rank;
   protected readonly firstName = computed(() => this.profile().nickname.split(' ')[0]);
 
+  constructor() {
+    if (!this.user.profile().hasSeenOnboarding) {
+      void this.router.navigate(['/onboarding']);
+    }
+  }
+
   protected start(mode: SessionMode): void {
     void this.router.navigate(['/game'], { queryParams: { mode } });
   }

@@ -22,7 +22,7 @@ export default defineConfig({
   ],
 
   webServer: {
-    command: 'pnpm start -- --port 4201',
+    command: 'pnpm exec ng serve --port 4201',
     url: 'http://localhost:4201',
     reuseExistingServer: !process.env.CI,
   },
