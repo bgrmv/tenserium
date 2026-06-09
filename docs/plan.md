@@ -298,19 +298,19 @@
 
 ---
 
-## 8. Daily Challenge (Browser API, date-seeded)
+## 8. Daily Challenge (Browser API, date-seeded) ✅
 
 > Не нужен cron-сервер. Детерминированный сид по дате даёт всем одинаковый набор.
 
-- [ ] Алгоритм: `seed = YYYY-MM-DD` → seeded random → выбрать 15 вопросов из банка
-- [ ] Одна попытка в день — трекинг через `StorageService` (дата последнего прохождения)
-- [ ] Маршрут `/daily` — те же компоненты что Normal mode
-- [ ] **Стрик**
-  - [ ] Трекинг последовательных дней с завершённым Daily (localStorage)
-  - [ ] Flame-индикатор в nav-bar
-- [ ] **Шаринг** (`features/daily-share/`)
-  - [ ] HTML Canvas → PNG result card (дата, emoji-паттерн, счёт, ссылка)
-  - [ ] Web Share API + clipboard fallback
+- [x] Алгоритм: `seed = YYYY-MM-DD` → seeded random (LCG) → выбрать 15 вопросов из банка
+- [x] Одна попытка в день — трекинг через `StorageService` (дата последнего прохождения)
+- [x] Маршрут `/daily` — те же компоненты что Normal mode
+- [x] **Стрик**
+  - [x] Трекинг последовательных дней с завершённым Daily (localStorage, `DailyStore`)
+  - [x] Flame-индикатор в nav-bar (badge с числом дней)
+- [x] **Шаринг** (`features/daily-share/`)
+  - [x] HTML Canvas → PNG result card (дата, emoji-паттерн, счёт, ссылка)
+  - [x] Web Share API + clipboard fallback
 
 ---
 

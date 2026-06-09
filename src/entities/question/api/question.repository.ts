@@ -3,6 +3,7 @@ import { HttpClient } from '@angular/common/http';
 import { firstValueFrom } from 'rxjs';
 import type { Question, SessionConfig, TenseId } from '@shared/types';
 import { getTense } from '@shared/config/tenses.config';
+import { seededRandom, seededShuffle } from '@shared/lib/seeded-random';
 
 /**
  * Loads and serves the question bank. Banks are split per tense
@@ -49,6 +50,35 @@ export class QuestionRepository {
       const pick = candidates[Math.floor(Math.random() * candidates.length)];
       deck.push(pick);
       prev = pick.answer;
+    }
+    return deck;
+  }
+
+  /**
+   * Deterministic deck for a given date string ('YYYY-MM-DD').
+   * Every player with the same seed gets the same 15 questions in the same order.
+   */
+  buildDailyDeck(dateStr: string, total = 15): Question[] {
+    const all = this.questions.value() ?? [];
+    if (all.length === 0) return [];
+    const rng = seededRandom(dateStr);
+    const shuffled = seededShuffle(all, rng);
+    // Ensure no two consecutive same-tense questions
+    const deck: Question[] = [];
+    let prev: TenseId | null = null;
+    for (const q of shuffled) {
+      if (deck.length >= total) break;
+      if (q.answer !== prev) {
+        deck.push(q);
+        prev = q.answer;
+      }
+    }
+    // If we fell short (edge case: all shuffled items had same tense), top up
+    if (deck.length < total) {
+      for (const q of shuffled) {
+        if (deck.length >= total) break;
+        if (!deck.includes(q)) deck.push(q);
+      }
     }
     return deck;
   }
