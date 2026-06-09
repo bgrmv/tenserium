@@ -144,10 +144,7 @@ Check it before starting any work to understand current status and what's next.
 
 ### Next: Phase 8 — Daily Challenge (Browser API, date-seeded)
 
-Learn content status:
-- ✅ Priority 1: Present Simple, Past Simple, Future Simple
-- ✅ Priority 2: Present Continuous, Past Continuous, Present Perfect
-- ⬜ Priority 3 (content track): Future Continuous, Future Perfect, Past Perfect, Present Perfect Continuous, Past Perfect Continuous, Future Perfect Continuous
+Learn content status: **all 12 tenses complete** (formula, structure, usage, examples, markers, FAQ)
 
 ---
 

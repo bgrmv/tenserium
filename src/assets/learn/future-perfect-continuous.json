@@ -1,35 +1,75 @@
 {
   "tenseId": "future-perfect-continuous",
   "formula": [
-    "will have been",
-    "V-ing"
+    "will have been + V-ing",
+    "won't have been + V-ing",
+    "Will … have been + V-ing?"
   ],
+  "structure": {
+    "affirmative": "Subject + will have been + V-ing — I will have been working. / She will have been sleeping.",
+    "negative": "Subject + won't have been + V-ing — I won't have been working. / She won't have been sleeping.",
+    "question": "Will + Subject + have been + V-ing? — Will you have been working? / Will she have been sleeping?"
+  },
   "usage": [
     {
       "icon": "clock",
-      "text": "Duration up to a future point"
+      "text": "Duration of an ongoing activity up to a specific future point"
     },
     {
       "icon": "calendar",
-      "text": "Emphasis on how long"
+      "text": "Emphasising how long something will have continued"
+    },
+    {
+      "icon": "repeat",
+      "text": "Explaining a future result through its cause (process)"
+    },
+    {
+      "icon": "bolt",
+      "text": "Milestones of effort or time"
     }
   ],
   "examples": [
     {
       "pre": "By June she ",
       "verb": "will have been working",
-      "post": " here a year."
+      "post": " here for a year."
     },
     {
-      "pre": "We ",
-      "verb": "will have been driving",
+      "pre": "When we land, we ",
+      "verb": "will have been flying",
       "post": " for ten hours."
+    },
+    {
+      "pre": "By next month I ",
+      "verb": "will have been learning",
+      "post": " Spanish for three years."
+    },
+    {
+      "pre": "He'll be tired — he ",
+      "verb": "will have been driving",
+      "post": " all night."
     }
   ],
   "markers": [
     "by",
-    "for",
     "by then",
-    "by the time"
+    "by the time",
+    "for",
+    "when",
+    "in two years"
+  ],
+  "faq": [
+    {
+      "q": "What's the difference between Future Perfect and Future Perfect Continuous?",
+      "a": "Future Perfect ('will have finished') emphasises that an action will be completed. Future Perfect Continuous ('will have been working') emphasises the duration of the ongoing process: 'By Friday I will have worked 40 hours' (total result) vs 'By Friday I will have been working 40 hours straight' (continuous effort)."
+    },
+    {
+      "q": "Is this tense common in everyday speech?",
+      "a": "It's one of the rarest tenses in spoken English and is mainly used for deliberate emphasis on duration. More common in written or formal contexts, but useful in sentences like 'By the time he retires, he will have been teaching for 30 years.'"
+    },
+    {
+      "q": "Can I always replace it with Future Perfect?",
+      "a": "Often yes, but the meaning shifts slightly. 'I will have lived here for 10 years' (neutral fact) vs 'I will have been living here for 10 years' (emphasises the ongoing process and continuity). For stative verbs, always use Future Perfect: 'I will have known her for a decade'."
+    }
   ]
 }

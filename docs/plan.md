@@ -282,13 +282,13 @@
   - [x] Present Continuous
   - [x] Past Continuous
   - [x] Present Perfect
-- [ ] Контент (приоритет 3 — отдельный трек, не блокирует)
-  - [ ] Future Continuous
-  - [ ] Future Perfect
-  - [ ] Past Perfect
-  - [ ] Present Perfect Continuous
-  - [ ] Past Perfect Continuous
-  - [ ] Future Perfect Continuous
+- [x] Контент (приоритет 3 — отдельный трек, не блокирует)
+  - [x] Future Continuous
+  - [x] Future Perfect
+  - [x] Past Perfect
+  - [x] Present Perfect Continuous
+  - [x] Past Perfect Continuous
+  - [x] Future Perfect Continuous
 - [x] На экране wrong-answer: кнопка «Study {tense name}» → `/learn/{tense-id}`
 - [x] После Learn: кнопка «Train» → `/game`
 - [x] `features/report-error/` — кнопка на каждом вопросе и learn-странице
@@ -587,5 +587,5 @@ Advanced      C1     C1-IV  C1-III  C1-II  C1-I
 
 - [ ] Довести до 20+10 вопросов: Present Simple, Past Simple, Future Simple
 - [ ] По 15 вопросов на каждое из оставшихся 9 времён
-- [ ] Learn-страницы приоритет 3 (Future Continuous, Perfect, Perfect Continuous)
+- [x] Learn-страницы приоритет 3 (Future Continuous, Perfect, Perfect Continuous — все 6 времён)
 - [ ] Daily Challenge cron (Supabase Edge Function — серверный генератор для честности, заменяет date-seed после Phase 8)

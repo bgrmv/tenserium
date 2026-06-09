@@ -1,35 +1,75 @@
 {
   "tenseId": "past-perfect-continuous",
   "formula": [
-    "had been",
-    "V-ing"
+    "had been + V-ing",
+    "hadn't been + V-ing",
+    "Had … been + V-ing?"
   ],
+  "structure": {
+    "affirmative": "Subject + had been + V-ing — I had been working. / She had been sleeping.",
+    "negative": "Subject + hadn't been + V-ing — I hadn't been working. / She hadn't been sleeping.",
+    "question": "Had + Subject + been + V-ing? — Had you been working? / Had she been sleeping?"
+  },
   "usage": [
     {
       "icon": "clock",
-      "text": "Ongoing before a past moment"
+      "text": "Activity in progress up to (and causing) a past event"
     },
     {
       "icon": "repeat",
-      "text": "Duration up to a past point"
+      "text": "Emphasising duration before a past moment"
+    },
+    {
+      "icon": "check",
+      "text": "Past evidence explaining a visible past result"
+    },
+    {
+      "icon": "bolt",
+      "text": "Unreal past conditions with duration (if … had been doing)"
     }
   ],
   "examples": [
     {
       "pre": "She ",
       "verb": "had been working",
-      "post": " for hours before the break."
+      "post": " for six hours when she finally took a break."
+    },
+    {
+      "pre": "He was exhausted — he ",
+      "verb": "had been running",
+      "post": " all morning."
     },
     {
       "pre": "They ",
       "verb": "had been waiting",
-      "post": " since noon."
+      "post": " for two hours before the bus came."
+    },
+    {
+      "pre": "How long ",
+      "verb": "had she been studying",
+      "post": " before the exam?"
     }
   ],
   "markers": [
     "for",
     "since",
     "before",
-    "by the time"
+    "by the time",
+    "all morning",
+    "when"
+  ],
+  "faq": [
+    {
+      "q": "What's the difference between Past Perfect and Past Perfect Continuous?",
+      "a": "Past Perfect ('she had worked') focuses on completion of the action before a past moment. Past Perfect Continuous ('she had been working') emphasises the ongoing process and duration: 'She had been working all night' — the continuous effort, not just the fact it was done."
+    },
+    {
+      "q": "Is this tense really used in everyday speech?",
+      "a": "It's more common in written narratives and formal speech, but it does appear naturally when telling stories: 'I was tired because I had been travelling all day.' It adds texture to past descriptions."
+    },
+    {
+      "q": "Can stative verbs be used in Past Perfect Continuous?",
+      "a": "No — the same rule applies as for all continuous forms. Stative verbs (know, love, own) don't take -ing. Use Past Perfect instead: 'She had known him for years', not 'She had been knowing him'."
+    }
   ]
 }

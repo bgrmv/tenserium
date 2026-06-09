@@ -1,40 +1,75 @@
 {
   "tenseId": "future-perfect",
   "formula": [
-    "will have",
-    "V3"
+    "will have + V3",
+    "won't have + V3",
+    "Will … have + V3?"
   ],
+  "structure": {
+    "affirmative": "Subject + will have + V3 — I will have finished. / She will have arrived.",
+    "negative": "Subject + won't have + V3 — I won't have finished. / She won't have arrived.",
+    "question": "Will + Subject + have + V3? — Will you have finished? / Will she have arrived?"
+  },
   "usage": [
     {
       "icon": "check",
-      "text": "Completed before a future point"
+      "text": "Action completed before a specific future moment"
     },
     {
       "icon": "calendar",
-      "text": "Deadlines & milestones"
+      "text": "Deadlines and milestones (by Tuesday, by 2030)"
+    },
+    {
+      "icon": "clock",
+      "text": "Duration that will be complete at a future point"
+    },
+    {
+      "icon": "bolt",
+      "text": "Assumption about something already done"
     }
   ],
   "examples": [
     {
-      "pre": "By 2030 he ",
-      "verb": "will have graduated",
-      "post": "."
+      "pre": "By Friday I ",
+      "verb": "will have finished",
+      "post": " the report."
     },
     {
       "pre": "She ",
-      "verb": "will have finished",
-      "post": " by then."
+      "verb": "will have left",
+      "post": " by the time you arrive."
     },
     {
-      "pre": "We ",
-      "verb": "will have left",
-      "post": " by noon."
+      "pre": "By 2030 he ",
+      "verb": "will have graduated",
+      "post": " from university."
+    },
+    {
+      "pre": "Don't call at noon — she ",
+      "verb": "will have gone",
+      "post": " to lunch."
     }
   ],
   "markers": [
     "by then",
+    "by Friday",
     "by 2030",
     "by the time",
+    "before",
     "in two years"
+  ],
+  "faq": [
+    {
+      "q": "What's the difference between Future Perfect and Future Simple?",
+      "a": "Future Simple ('will finish') just states that something will happen. Future Perfect ('will have finished') stresses that it will be completed before a given future moment: 'By 6 pm I will have finished' — done before 6 pm, not at 6 pm."
+    },
+    {
+      "q": "Does Future Perfect replace 'when' in time clauses?",
+      "a": "In a 'when/by the time' time clause itself, use Present Perfect, not Future Perfect: 'When she has arrived, we will start.' Future Perfect goes in the main clause: 'By the time she arrives, I will have cooked dinner.'"
+    },
+    {
+      "q": "What is V3 (past participle)?",
+      "a": "The third form of the verb. Regular: finish→finished. Irregular: go→gone, write→written, leave→left. Same form as in Present Perfect and Past Perfect."
+    }
   ]
 }

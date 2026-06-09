@@ -1,39 +1,76 @@
 {
   "tenseId": "future-continuous",
   "formula": [
-    "will be",
-    "V-ing"
+    "will be + V-ing",
+    "won't be + V-ing",
+    "Will … be + V-ing?"
   ],
+  "structure": {
+    "affirmative": "Subject + will be + V-ing — I will be working. / She will be sleeping.",
+    "negative": "Subject + won't be + V-ing — I won't be working. / She won't be sleeping.",
+    "question": "Will + Subject + be + V-ing? — Will you be working? / Will she be sleeping?"
+  },
   "usage": [
     {
       "icon": "clock",
-      "text": "In progress at a future time"
+      "text": "Action in progress at a specific future moment"
+    },
+    {
+      "icon": "repeat",
+      "text": "Two parallel future actions (while)"
     },
     {
       "icon": "calendar",
-      "text": "Expected ongoing events"
+      "text": "Polite enquiry about someone's plans"
+    },
+    {
+      "icon": "bolt",
+      "text": "Expected or predictable future event"
     }
   ],
   "examples": [
     {
-      "pre": "This time tomorrow I ",
-      "verb": "will be flying",
-      "post": "."
+      "pre": "At 9 pm I ",
+      "verb": "will be watching",
+      "post": " the match."
     },
     {
-      "pre": "She ",
-      "verb": "will be working",
-      "post": " at six."
+      "pre": "While you sleep, I ",
+      "verb": "will be driving",
+      "post": " to the airport."
     },
     {
-      "pre": "We ",
-      "verb": "will be waiting",
-      "post": " outside."
+      "pre": "This time next week we ",
+      "verb": "will be lying",
+      "post": " on the beach."
+    },
+    {
+      "pre": "Will you ",
+      "verb": "be using",
+      "post": " the car tomorrow?"
     }
   ],
   "markers": [
-    "this time tomorrow",
-    "at 6 pm",
+    "at this time tomorrow",
+    "this time next week",
+    "at 9 pm tonight",
+    "while",
+    "when",
+    "in an hour",
     "all day tomorrow"
+  ],
+  "faq": [
+    {
+      "q": "What's the difference between Future Simple and Future Continuous?",
+      "a": "'Will work' = a decision or prediction (the action as a whole). 'Will be working' = the action in progress at a specific future moment: 'At noon I will be working' means you are already mid-task at noon."
+    },
+    {
+      "q": "Can I use Future Continuous for polite questions?",
+      "a": "Yes — 'Will you be using the printer?' sounds softer than 'Will you use the printer?' It implies asking about existing plans rather than making a demand."
+    },
+    {
+      "q": "Does Future Continuous work with stative verbs?",
+      "a": "No. Stative verbs (know, love, belong, seem) don't have continuous forms. Use Future Simple: 'I will know the answer', not 'I will be knowing'."
+    }
   ]
 }

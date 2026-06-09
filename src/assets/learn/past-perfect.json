@@ -1,17 +1,31 @@
 {
   "tenseId": "past-perfect",
   "formula": [
-    "had",
-    "V3"
+    "had + V3",
+    "hadn't + V3",
+    "Had … V3?"
   ],
+  "structure": {
+    "affirmative": "Subject + had + V3 — I had finished. / She had arrived.",
+    "negative": "Subject + hadn't + V3 — I hadn't finished. / She hadn't arrived.",
+    "question": "Had + Subject + V3? — Had you finished? / Had she arrived?"
+  },
   "usage": [
     {
       "icon": "check",
-      "text": "Completed before another past event"
+      "text": "Action completed before another past action"
     },
     {
       "icon": "clock",
-      "text": "The earlier of two past actions"
+      "text": "The earlier of two past events (the 'past of the past')"
+    },
+    {
+      "icon": "repeat",
+      "text": "Reported speech and indirect thought"
+    },
+    {
+      "icon": "bolt",
+      "text": "Unreal past conditions (if … had done)"
     }
   ],
   "examples": [
@@ -22,19 +36,42 @@
     },
     {
       "pre": "She ",
-      "verb": "had finished",
-      "post": " by noon."
+      "verb": "had never seen",
+      "post": " snow before that winter."
     },
     {
-      "pre": "They ",
-      "verb": "had gone",
-      "post": " when I called."
+      "pre": "He told me he ",
+      "verb": "had already eaten",
+      "post": "."
+    },
+    {
+      "pre": "If I ",
+      "verb": "had known",
+      "post": ", I would have called."
     }
   ],
   "markers": [
     "before",
     "after",
     "by the time",
-    "already"
+    "already",
+    "just",
+    "never",
+    "when",
+    "once"
+  ],
+  "faq": [
+    {
+      "q": "What's the difference between Past Simple and Past Perfect?",
+      "a": "Past Simple tells what happened. Past Perfect tells what had happened earlier. Compare: 'I ate and then she arrived' (sequence clear) vs 'She arrived. I had already eaten' (Past Perfect emphasises the earlier completion)."
+    },
+    {
+      "q": "Do I always need Past Perfect when two events happen in the past?",
+      "a": "Not always. If 'before' or 'after' already makes the sequence clear, Past Simple alone is fine: 'I left before she arrived.' But when the sequence is less obvious or for emphasis, Past Perfect is needed: 'She looked upset. Something bad had happened.'"
+    },
+    {
+      "q": "Is 'had had' correct English?",
+      "a": "Yes. The first 'had' is the auxiliary of Past Perfect; the second is the main verb 'have' in its past participle form: 'He had had a bad day.' Perfectly grammatical, though it can sound awkward — use 'He'd had' in informal speech."
+    }
   ]
 }
