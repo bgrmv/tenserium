@@ -1,9 +1,15 @@
 {
   "tenseId": "past-simple",
   "formula": [
-    "V2",
-    "V-ed"
+    "V2 / V-ed",
+    "didn't + V1",
+    "Did … V1?"
   ],
+  "structure": {
+    "affirmative": "Subject + V2/V-ed — She worked. / He went.",
+    "negative": "Subject + didn't + V1 — She didn't work. / He didn't go.",
+    "question": "Did + Subject + V1? — Did she work? / Did he go?"
+  },
   "usage": [
     {
       "icon": "check",
@@ -15,7 +21,11 @@
     },
     {
       "icon": "repeat",
-      "text": "Past habits"
+      "text": "Past habits (used to)"
+    },
+    {
+      "icon": "list",
+      "text": "Sequence of past events"
     }
   ],
   "examples": [
@@ -26,13 +36,18 @@
     },
     {
       "pre": "She ",
-      "verb": "worked",
-      "post": " here last year."
+      "verb": "didn't come",
+      "post": " to the party."
     },
     {
       "pre": "He ",
       "verb": "called",
       "post": " me yesterday."
+    },
+    {
+      "pre": "We ",
+      "verb": "lived",
+      "post": " in Paris for two years."
     }
   ],
   "markers": [
@@ -40,6 +55,23 @@
     "ago",
     "last week",
     "in 2019",
-    "then"
+    "then",
+    "in the past",
+    "when I was…",
+    "at that time"
+  ],
+  "faq": [
+    {
+      "q": "How do I form V2 for irregular verbs?",
+      "a": "Irregular verbs must be memorised: go→went, see→saw, have→had, come→came. Use a verb table when unsure."
+    },
+    {
+      "q": "When do I use Past Simple vs Past Continuous?",
+      "a": "Past Simple = a completed action. Past Continuous = an ongoing action interrupted by Past Simple: 'I was reading when she called'."
+    },
+    {
+      "q": "Can Past Simple describe repeated habits?",
+      "a": "Yes: 'She walked to school every day' (past habit). For emphasis, use 'used to': 'She used to walk to school'."
+    }
   ]
 }

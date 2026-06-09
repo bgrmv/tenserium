@@ -1,21 +1,31 @@
 {
   "tenseId": "future-simple",
   "formula": [
-    "will",
-    "V"
+    "will + V1",
+    "won't + V1",
+    "Will … V1?"
   ],
+  "structure": {
+    "affirmative": "Subject + will + V1 — I will call. / She will help.",
+    "negative": "Subject + won't + V1 — I won't call. / She won't come.",
+    "question": "Will + Subject + V1? — Will you call? / Will she come?"
+  },
   "usage": [
     {
       "icon": "bolt",
-      "text": "Spontaneous decisions"
+      "text": "Spontaneous decisions made at the moment"
     },
     {
       "icon": "globe",
-      "text": "Predictions"
+      "text": "Predictions about the future"
     },
     {
       "icon": "check",
-      "text": "Promises & offers"
+      "text": "Promises and offers"
+    },
+    {
+      "icon": "clock",
+      "text": "Future facts (scientific or universal)"
     }
   ],
   "examples": [
@@ -27,12 +37,17 @@
     {
       "pre": "It ",
       "verb": "will rain",
-      "post": " tomorrow."
+      "post": " tomorrow, I think."
     },
     {
       "pre": "She ",
-      "verb": "will help",
-      "post": " you."
+      "verb": "won't be",
+      "post": " at home."
+    },
+    {
+      "pre": "— The phone is ringing! — I ",
+      "verb": "'ll get",
+      "post": " it."
     }
   ],
   "markers": [
@@ -40,6 +55,23 @@
     "next week",
     "soon",
     "later",
-    "I think"
+    "I think",
+    "I'm sure",
+    "probably",
+    "maybe"
+  ],
+  "faq": [
+    {
+      "q": "What's the difference between 'will' and 'going to'?",
+      "a": "'Will' = spontaneous decision or prediction without evidence. 'Going to' = plan already made or prediction based on present evidence: 'Look at those clouds — it's going to rain'."
+    },
+    {
+      "q": "Can I use 'shall' instead of 'will'?",
+      "a": "'Shall' is formal/old-fashioned and mainly used with I/We in offers and suggestions: 'Shall I open the window?' In modern English 'will' is standard for all persons."
+    },
+    {
+      "q": "Does 'will' always refer to the future?",
+      "a": "Not always. 'Will' can express a general truth or habit: 'Ice will melt at 0°C'. But in everyday speech it almost always means future."
+    }
   ]
 }

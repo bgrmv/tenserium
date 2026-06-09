@@ -14,12 +14,25 @@ export interface LearnExample {
   readonly post: string;
 }
 
+export interface TenseStructure {
+  readonly affirmative: string;
+  readonly negative: string;
+  readonly question: string;
+}
+
+export interface FaqItem {
+  readonly q: string;
+  readonly a: string;
+}
+
 export interface LearnContent {
   readonly tenseId: TenseId;
   readonly formula: readonly string[];
+  readonly structure?: TenseStructure;
   readonly usage: readonly UsageNote[];
   readonly examples: readonly LearnExample[];
   readonly markers: readonly string[];
+  readonly faq?: readonly FaqItem[];
 }
 
 /**

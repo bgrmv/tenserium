@@ -1,41 +1,76 @@
 {
   "tenseId": "present-perfect-continuous",
   "formula": [
-    "have/has been",
-    "V-ing"
+    "have/has been + V-ing",
+    "haven't/hasn't been + V-ing",
+    "Have/Has … been + V-ing?"
   ],
+  "structure": {
+    "affirmative": "Subject + have/has been + V-ing — I have been working. / She has been sleeping.",
+    "negative": "Subject + haven't/hasn't been + V-ing — I haven't been working. / She hasn't been sleeping.",
+    "question": "Have/Has + Subject + been + V-ing? — Have you been working? / Has she been sleeping?"
+  },
   "usage": [
     {
       "icon": "clock",
-      "text": "Started in past, still going"
+      "text": "Activity started in the past and still continuing now"
     },
     {
       "icon": "repeat",
-      "text": "Duration of recent activity"
+      "text": "Repeated activity over a period leading to the present"
+    },
+    {
+      "icon": "check",
+      "text": "Recent activity explaining a visible present result"
+    },
+    {
+      "icon": "bolt",
+      "text": "Emphasising duration (how long)"
     }
   ],
   "examples": [
     {
+      "pre": "I ",
+      "verb": "have been waiting",
+      "post": " for an hour."
+    },
+    {
       "pre": "She ",
-      "verb": "has been working",
-      "post": " for hours."
+      "verb": "has been studying",
+      "post": " all morning — her eyes are tired."
     },
     {
       "pre": "It ",
       "verb": "has been raining",
-      "post": " all day."
+      "post": " since Tuesday."
     },
     {
-      "pre": "I'm tired — I ",
-      "verb": "have been running",
-      "post": "."
+      "pre": "How long have you ",
+      "verb": "been learning",
+      "post": " English?"
     }
   ],
   "markers": [
     "for",
     "since",
     "all day",
+    "all morning",
     "lately",
-    "recently"
+    "recently",
+    "how long"
+  ],
+  "faq": [
+    {
+      "q": "What's the difference between Present Perfect and Present Perfect Continuous?",
+      "a": "Present Perfect ('I have read the book') focuses on the completed result. Present Perfect Continuous ('I have been reading') focuses on the activity and its duration, often with the activity still ongoing: 'I've been reading for two hours' (and I may still be reading)."
+    },
+    {
+      "q": "Can Present Perfect Continuous replace Present Perfect with 'for/since'?",
+      "a": "Often yes, for action verbs: 'I have lived here for ten years' and 'I have been living here for ten years' are both correct. The continuous version emphasises ongoing process; the simple version is more neutral."
+    },
+    {
+      "q": "Why can't I use stative verbs in this tense?",
+      "a": "Stative verbs (know, own, love, believe) describe a state, not an activity, so they don't have continuous forms. Use Present Perfect instead: 'I have known her for years', not 'I have been knowing her'."
+    }
   ]
 }

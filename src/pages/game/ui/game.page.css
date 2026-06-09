@@ -42,6 +42,15 @@
 
 app-question-card { flex: 1 0 auto; display: flex; align-items: center; justify-content: center; }
 
+.q-actions { display: flex; align-items: center; justify-content: center; gap: 10px; min-height: 42px; margin: 4px 0; }
+.btn-study { display: inline-flex; align-items: center; gap: 8px; padding: 10px 18px; border-radius: 11px; border: 1px solid color-mix(in oklab, #60a5fa 50%, transparent); background: color-mix(in oklab, #60a5fa 12%, transparent); color: #60a5fa; font-size: 14px; font-weight: 600; cursor: pointer; transition: 0.14s; animation: fade-in 0.15s ease; }
+.btn-study:hover { background: color-mix(in oklab, #60a5fa 20%, transparent); }
+.btn-flag { display: grid; place-items: center; width: 36px; height: 36px; border-radius: 9px; border: 1px solid var(--line); background: none; color: var(--muted); cursor: pointer; transition: 0.14s; }
+.btn-flag:hover:not(:disabled) { color: var(--dim); border-color: var(--line-2); background: var(--bg-2); }
+.btn-flag:disabled { opacity: 0.4; cursor: default; }
+
+@keyframes fade-in { from { opacity: 0; transform: translateY(4px); } to { opacity: 1; transform: none; } }
+
 .toast {
   position: fixed;
   bottom: 26px;

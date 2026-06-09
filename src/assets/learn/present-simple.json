@@ -1,21 +1,32 @@
 {
   "tenseId": "present-simple",
   "formula": [
-    "V",
-    "V-s"
+    "V1",
+    "V1 + -s/-es",
+    "don't/doesn't + V1",
+    "Do/Does … V1?"
   ],
+  "structure": {
+    "affirmative": "Subject + V1 (+ -s/-es for he/she/it) — She works. / They work.",
+    "negative": "Subject + don't/doesn't + V1 — She doesn't work. / They don't work.",
+    "question": "Do/Does + Subject + V1? — Does she work? / Do they work?"
+  },
   "usage": [
     {
       "icon": "repeat",
-      "text": "Habits & routines"
+      "text": "Habits and routines"
     },
     {
       "icon": "globe",
-      "text": "General facts & truths"
+      "text": "General facts and truths"
     },
     {
       "icon": "calendar",
-      "text": "Fixed schedules"
+      "text": "Fixed schedules (timetables)"
+    },
+    {
+      "icon": "clock",
+      "text": "Permanent states"
     }
   ],
   "examples": [
@@ -33,13 +44,34 @@
       "pre": "The train ",
       "verb": "leaves",
       "post": " at nine."
+    },
+    {
+      "pre": "He ",
+      "verb": "doesn't eat",
+      "post": " meat."
     }
   ],
   "markers": [
     "always",
     "usually",
     "often",
+    "sometimes",
+    "never",
     "every day",
-    "never"
+    "on Mondays"
+  ],
+  "faq": [
+    {
+      "q": "When do I add -s/-es?",
+      "a": "Add -s/-es only after He / She / It: 'She works'. Use the base form for I / You / We / They: 'They work'."
+    },
+    {
+      "q": "Is 'I am going to…' Present Simple?",
+      "a": "No, 'am going to' is a future construction. Present Simple is used for future only with timetables: 'The bus leaves at 8'."
+    },
+    {
+      "q": "Does 'I live in Moscow' describe a habit or a fact?",
+      "a": "It's a permanent state — use Present Simple. Habits (repeated actions) and states (unchanging facts) both use Present Simple."
+    }
   ]
 }

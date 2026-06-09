@@ -1,0 +1,119 @@
+<div class="detail">
+  <div class="eyebrow" [style.color]="color()">
+    <span class="dot" [style.--c]="color()"></span>
+    {{ tense().aspect }} · {{ tense().time }}
+  </div>
+  <h1 class="title" [style.color]="color()">{{ tense().name }}</h1>
+
+  @if (content.isLoading()) {
+    <div class="muted">Loading…</div>
+  } @else if (content.value(); as c) {
+    <div class="cols">
+      <div class="col-main">
+
+        <div class="block">
+          <div class="block-h">Grammar</div>
+          <div class="formula">
+            @for (f of c.formula; track $index) {
+              <span class="chip" [style.--c]="color()">{{ f }}</span>
+            }
+          </div>
+        </div>
+
+        @if (c.structure) {
+          <div class="block">
+            <div class="block-h">Structure</div>
+            <div class="structure">
+              <div class="struct-row">
+                <span class="struct-label struct-aff">+</span>
+                <span class="struct-text">{{ c.structure.affirmative }}</span>
+              </div>
+              <div class="struct-row">
+                <span class="struct-label struct-neg">−</span>
+                <span class="struct-text">{{ c.structure.negative }}</span>
+              </div>
+              <div class="struct-row">
+                <span class="struct-label struct-q">?</span>
+                <span class="struct-text">{{ c.structure.question }}</span>
+              </div>
+            </div>
+          </div>
+        }
+
+        <div class="block">
+          <div class="block-h">Usage</div>
+          <div class="usage">
+            @for (u of c.usage; track $index) {
+              <div class="usage-item">
+                <span class="usage-ic" [style.color]="color()" [style.border-color]="'color-mix(in oklab, ' + color() + ' 40%, transparent)'">
+                  <app-icon [name]="$any(u.icon)" [size]="16" />
+                </span>
+                <span>{{ u.text }}</span>
+              </div>
+            }
+          </div>
+        </div>
+
+        <div class="block">
+          <div class="block-h">Examples</div>
+          <ul class="examples">
+            @for (e of c.examples; track $index) {
+              <li>{{ e.pre }}<b [style.color]="color()">{{ e.verb }}</b>{{ e.post }}</li>
+            }
+          </ul>
+        </div>
+
+        @if (c.faq && c.faq.length) {
+          <div class="block">
+            <div class="block-h">FAQ</div>
+            <div class="faq">
+              @for (item of c.faq; track $index) {
+                <details class="faq-item">
+                  <summary class="faq-q" [style.--c]="color()">{{ item.q }}</summary>
+                  <p class="faq-a">{{ item.a }}</p>
+                </details>
+              }
+            </div>
+          </div>
+        }
+
+      </div>
+
+      <div class="col-side">
+        <div class="block side">
+          <div class="block-h">Time markers</div>
+          <div class="markers">
+            @for (m of c.markers; track m) {
+              <span class="marker" [style.--c]="color()">{{ m }}</span>
+            }
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="actions">
+      <button type="button" class="btn-train" [style.--c]="color()" (click)="trainClick.emit()">
+        <app-icon name="play" [size]="16" stroke="none" /> Train {{ tense().name }}
+        <app-icon name="arrow-right" [size]="16" />
+      </button>
+      <button type="button" class="btn-report" (click)="reportClick.emit()">
+        <app-icon name="flag" [size]="14" /> Report error
+      </button>
+    </div>
+  }
+
+  <nav class="nav">
+    @if (prevId(); as id) {
+      <a class="nav-btn" [routerLink]="['/learn', id]">
+        <app-icon name="arrow-left" [size]="16" /> {{ prevName() }}
+      </a>
+    } @else {
+      <span></span>
+    }
+    @if (nextId(); as id) {
+      <a class="nav-btn nav-btn-next" [routerLink]="['/learn', id]">
+        {{ nextName() }} <app-icon name="arrow-right" [size]="16" />
+      </a>
+    }
+  </nav>
+</div>

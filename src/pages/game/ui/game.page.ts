@@ -19,6 +19,7 @@ import { tenseColor } from '@shared/config/tense-colors';
 import type { PaletteMode } from '@shared/config/tense-colors';
 import type { SessionMode, TenseId } from '@shared/types';
 import { AnswerGridComponent } from '@features/answer-input';
+import { ReportErrorComponent } from '@features/report-error';
 import { QuestionCardComponent, type ResultState } from '@widgets/question-card';
 import { ScoreBarComponent } from '@widgets/score-bar';
 import { SquadBoardComponent } from '@widgets/squad-board';
@@ -36,6 +37,7 @@ const BOT_TICK_MS = 200;
   changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [
     AnswerGridComponent,
+    ReportErrorComponent,
     QuestionCardComponent,
     ScoreBarComponent,
     SquadBoardComponent,
@@ -63,6 +65,7 @@ export class GamePageComponent {
   protected readonly revealId = signal<TenseId | null>(null);
   protected readonly gained = signal<number | null>(null);
   protected readonly toast = signal<string | null>(null);
+  protected readonly showReport = signal(false);
   private readonly unlocked = signal(false);
 
   protected readonly status = this.store.status;
@@ -218,6 +221,18 @@ export class GamePageComponent {
       this.user.awardRankPoints(Math.round(this.store.score() / 12));
     }
     if (cfg.bots) this.match.syncPlayer(this.store.score(), this.progress().total);
+  }
+
+  protected studyTense(id: TenseId): void {
+    this.store.reset();
+    if (this.botInterval) clearInterval(this.botInterval);
+    void this.router.navigate(['/learn', id]);
+  }
+
+  protected onReportSent(): void {
+    this.showReport.set(false);
+    this.toast.set('Thanks for the report!');
+    setTimeout(() => this.toast.set(null), 2600);
   }
 
   private maybeUnlock(): void {

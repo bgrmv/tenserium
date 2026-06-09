@@ -59,11 +59,11 @@
   - [x] `ng update @angular/core@21 @angular/cli@21`
 - [x] **21 → 22**
   - [x] `ng update @angular/core@22 @angular/cli@22`
-  - [x] Обновить `tsconfig.json`: target ES2025
+  - [x] Обновить `tsconfig.json`: target ESNext (TS 6 не поддерживает `es2025` как named target)
   - [x] Удалить `zone.js` из `package.json` и `angular.json`
   - [x] Переключить на `@angular/build` (esbuild/Vite), убрать `@angular-devkit/build-angular`
 - [x] После миграции
-  - [x] Заменить Karma на Vitest
+  - [x] Заменить Karma на Vitest; `vitest/globals` в `tsconfig.spec.json`, спеки исключены из `tsconfig.json`
   - [x] `ng build --configuration production` — нет ошибок
   - [x] Обновить devcontainer: Node 24, порт 4200, pnpm store volume
 
@@ -265,34 +265,36 @@
 
 ---
 
-## 7. Learn-страницы (приоритетные)
+## 7. Learn-страницы (приоритетные) ✅
 
 > Не все 12 сразу. Сначала "Simple" family + самые частые.
 
-- [ ] Единый шаблонный компонент `entities/learn/learn-page/` с `@Input() tenseId`
-  - [ ] Секции: правило, структура (Aff/Neg/Q), time markers, примеры, контекст, FAQ
-  - [ ] Навигация: ← предыдущее / следующее →
-- [ ] Контент (приоритет 1 — блокирует Phase 8)
+- [x] Единый шаблонный компонент `entities/learn/ui/learn-detail/` с `input.required<TenseId>()`
+  - [x] Секции: правило (formula chips), структура (Aff/Neg/Q), time markers, примеры, FAQ
+  - [x] Навигация: ← предыдущее / следующее → (routerLink)
+  - [x] Outputs: `trainClick`, `reportClick`
+  - [x] 22 UI-теста (`learn-detail.component.spec.ts`)
+- [x] Контент (приоритет 1)
   - [x] Present Simple
-  - [ ] Past Simple
-  - [ ] Future Simple
-- [ ] Контент (приоритет 2 — до Phase 9)
-  - [ ] Present Continuous
-  - [ ] Past Continuous
-  - [ ] Present Perfect
-- [ ] Контент (приоритет 3 — отдельный трек, не блокирует)
-  - [ ] Future Continuous
-  - [ ] Future Perfect
-  - [ ] Past Perfect
-  - [ ] Present Perfect Continuous
-  - [ ] Past Perfect Continuous
-  - [ ] Future Perfect Continuous
-- [ ] На экране wrong-answer: кнопка «Учить это время» → `/learn/{tense-id}`
-- [ ] После Learn: кнопка «Вернуться к игре»
-- [ ] `features/report-error/` — кнопка на каждом вопросе и learn-странице
-  - [ ] Модалка с textarea
-  - [ ] Сохранять в `StorageService` (localStorage-очередь) — POST в Supabase в Phase 9
-  - [ ] Toast-подтверждение
+  - [x] Past Simple
+  - [x] Future Simple
+- [x] Контент (приоритет 2)
+  - [x] Present Continuous
+  - [x] Past Continuous
+  - [x] Present Perfect
+- [x] Контент (приоритет 3 — отдельный трек, не блокирует)
+  - [x] Future Continuous
+  - [x] Future Perfect
+  - [x] Past Perfect
+  - [x] Present Perfect Continuous
+  - [x] Past Perfect Continuous
+  - [x] Future Perfect Continuous
+- [x] На экране wrong-answer: кнопка «Study {tense name}» → `/learn/{tense-id}`
+- [x] После Learn: кнопка «Train» → `/game`
+- [x] `features/report-error/` — кнопка на каждом вопросе и learn-странице
+  - [x] Модалка с textarea (signal-based, без `@angular/forms`)
+  - [x] Сохранять в `StorageService` (localStorage-очередь) — POST в Supabase в Phase 9
+  - [x] Toast-подтверждение
 
 ---
 
@@ -585,5 +587,5 @@ Advanced      C1     C1-IV  C1-III  C1-II  C1-I
 
 - [ ] Довести до 20+10 вопросов: Present Simple, Past Simple, Future Simple
 - [ ] По 15 вопросов на каждое из оставшихся 9 времён
-- [ ] Learn-страницы приоритет 3 (Future Continuous, Perfect, Perfect Continuous)
+- [x] Learn-страницы приоритет 3 (Future Continuous, Perfect, Perfect Continuous — все 6 времён)
 - [ ] Daily Challenge cron (Supabase Edge Function — серверный генератор для честности, заменяет date-seed после Phase 8)

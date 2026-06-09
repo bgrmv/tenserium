@@ -2,8 +2,9 @@ import { ChangeDetectionStrategy, Component, computed, input } from '@angular/co
 
 export type IconName =
   | 'trainer' | 'learn' | 'stats' | 'logout' | 'bell' | 'gear' | 'lock'
-  | 'play' | 'flame' | 'shield' | 'trophy' | 'arrow-right' | 'zap'
-  | 'check' | 'clock' | 'bolt' | 'repeat' | 'globe' | 'calendar' | 'squad';
+  | 'play' | 'flame' | 'shield' | 'trophy' | 'arrow-right' | 'arrow-left' | 'zap'
+  | 'check' | 'clock' | 'bolt' | 'repeat' | 'globe' | 'calendar' | 'squad'
+  | 'flag' | 'list';
 
 const PATHS: Record<IconName, string> = {
   trainer: 'M6 12a6 6 0 0 1 12 0 M9 12h6 M12 9v6 M3 12h2 M19 12h2',
@@ -18,6 +19,9 @@ const PATHS: Record<IconName, string> = {
   shield: 'M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z',
   trophy: 'M7 4h10v4a5 5 0 0 1-10 0z M7 6H4v1a3 3 0 0 0 3 3 M17 6h3v1a3 3 0 0 1-3 3 M9 16h6 M12 12v4 M8 20h8',
   'arrow-right': 'M5 12h14 M13 6l6 6-6 6',
+  'arrow-left': 'M19 12H5 M11 18l-6-6 6-6',
+  flag: 'M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z M4 22v-7',
+  list: 'M8 6h13 M8 12h13 M8 18h13 M3 6h.01 M3 12h.01 M3 18h.01',
   zap: 'M13 3 5 14h5l-1 7 8-11h-5z',
   check: 'M5 12l4 4 10-10',
   clock: 'M12 3a9 9 0 1 0 0 18 9 9 0 0 0 0-18 M12 7v5l3 3',

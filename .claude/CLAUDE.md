@@ -94,24 +94,24 @@ When Phase 8 arrives, swap the implementation; the rest of the code is unchanged
 
 ## Phase Priority (do not skip ahead)
 
-| # | Phase | Done when |
-|---|-------|-----------|
-| 1 | CI/CD: GitHub Actions → GitHub Pages | PR checks pass, deploy works |
-| 2 | Angular 19 → 22 | Zoneless, no zone.js |
-| 3 | FSD refactor | Folder structure matches spec above |
-| 4 | Game Engine + Normal Mode | Playable end-to-end, mobile-responsive |
-| 5 | Onboarding | First-launch demo + 5-question sample |
-| 6 | Learn pages (priority tenses: Simple family + Present/Past Continuous + Present Perfect) | 6 tenses have grammar content |
-| 7 | Daily Challenge (date-seeded, client-side) | Fixed daily set + share card, no backend |
-| 8 | Netlify + Supabase + Auth + Cloud Sync | App deploys on Netlify, DB connected, localStorage migrated |
-| 9 | Rank Mode + Squad Battle | Tiers, matchmaking, bots, real-time |
-| 10 | Leaderboards + Stats | Global/weekly/friends tabs |
-| 11 | Monetization | Stripe, premium flag, ad banners |
-| 12 | Text Analysis Mode | NLP highlight + inline explanations |
-| 13 | PWA | Service worker, offline learn pages |
-| 14 | Visual polish | Color system, micro-animations, timer bar |
-| 15 | Sound design | Web Audio API, 7 events, sound packs |
-| — | Content track (parallel) | All 12 tenses: 20+10 questions, all learn pages |
+| # | Phase | Done when | Status |
+|---|-------|-----------|--------|
+| 1 | CI/CD: GitHub Actions → GitHub Pages | PR checks pass, deploy works | ✅ |
+| 2 | Angular 19 → 22 | Zoneless, no zone.js | ✅ |
+| 3 | FSD refactor | Folder structure matches spec above | ✅ |
+| 4 | Game Engine + Normal Mode | Playable end-to-end, mobile-responsive | ✅ |
+| 5 | Onboarding | First-launch demo + 5-question sample | ✅ |
+| 6 | Learn pages (priority tenses: Simple family + Present/Past Continuous + Present Perfect) | 6 tenses have grammar content | ✅ |
+| 7 | Daily Challenge (date-seeded, client-side) | Fixed daily set + share card, no backend | ⬜ |
+| 8 | Netlify + Supabase + Auth + Cloud Sync | App deploys on Netlify, DB connected, localStorage migrated | ⬜ |
+| 9 | Rank Mode + Squad Battle | Tiers, matchmaking, bots, real-time | ⬜ |
+| 10 | Leaderboards + Stats | Global/weekly/friends tabs | ⬜ |
+| 11 | Monetization | Stripe, premium flag, ad banners | ⬜ |
+| 12 | Text Analysis Mode | NLP highlight + inline explanations | ⬜ |
+| 13 | PWA | Service worker, offline learn pages | ⬜ |
+| 14 | Visual polish | Color system, micro-animations, timer bar | ⬜ |
+| 15 | Sound design | Web Audio API, 7 events, sound packs | ⬜ |
+| — | Content track (parallel) | All 12 tenses: 20+10 questions, all learn pages | 🔄 |
 
 ---
 
@@ -124,13 +124,47 @@ Check it before starting any work to understand current status and what's next.
 
 ## Current State
 
-- Angular 19.1.6 + SSR (Express, port 4000)
-- Learn page: **Present Simple only** (full content)
-- Home grid: all 12 tense slots (scaffolded, mostly empty)
-- Exam page: scaffolded, no game logic
-- No backend, no auth, no database connected
-- Deployed to GitHub Pages via official `actions/deploy-pages` (Pages source set to GitHub Actions)
-- **Phase 1 complete**: CI (`ci.yml` — lint+build on PR) + deploy (`deploy.yml` — push to main) workflows live; ESLint configured with Angular-recommended rules; devcontainer added
+- **Angular 22** + Zoneless + Signals (no zone.js); esbuild/Vite via `@angular/build`
+- **TypeScript 6.0.3**, target `ESNext`; Vitest runner via `@angular/build:unit-test`
+- **177 tests passing** (Vitest); `vitest/globals` scoped to `tsconfig.spec.json`
+- No backend, no auth, no database — all storage via `StorageService` (localStorage)
+- Deployed to GitHub Pages via `actions/deploy-pages`; SSR disabled until Phase 8 (Netlify)
+
+### Phases complete
+
+| # | Phase | Notes |
+|---|-------|-------|
+| 1 | CI/CD | `ci.yml` (lint+build on PR) + `deploy.yml` (push → Pages) |
+| 2 | Angular 19 → 22 | Zoneless, no zone.js, esbuild |
+| 3 | FSD refactor | Path aliases, ESLint layer rules |
+| 4 | Design system + Game Engine | Full game loop, 87 questions, scoring, hotkeys |
+| 5 | Tests | 90 unit tests for game engine + normal mode |
+| 6 | Onboarding | Demo + 5-question sample + save-prompt; 66 tests |
+| 7 | Learn pages | `LearnDetailComponent`, 5 priority tenses with content, report-error modal, "Study this tense" button on wrong answer |
+
+### Next: Phase 8 — Daily Challenge (Browser API, date-seeded)
+
+Learn content status: **all 12 tenses complete** (formula, structure, usage, examples, markers, FAQ)
+
+---
+
+## Git Workflow
+
+**Before starting any task**, create a branch from `main` using the appropriate prefix:
+
+| Prefix | When to use |
+|--------|-------------|
+| `feat/` | New feature or user-visible capability |
+| `fix/` | Bug fix |
+| `refactor/` | Code restructure with no behaviour change |
+| `chore/` | Tooling, deps, config, CI, docs |
+| `test/` | Adding or fixing tests only |
+| `perf/` | Performance improvement |
+
+Branch name format: `<prefix>/<short-kebab-description>`
+Examples: `feat/phase-7-daily-challenge`, `fix/hotkey-f12-missing`, `chore/update-angular-22`
+
+Never commit directly to `main`.
 
 ---
 

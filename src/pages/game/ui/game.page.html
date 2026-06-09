@@ -54,6 +54,25 @@
         [revealSentence]="result() !== 'none' ? q.sentence : null"
         [gainedPoints]="gained()"
       />
+
+      <div class="q-actions">
+        @if (result() === 'wrong' || result() === 'timeout') {
+          @if (revealId(); as id) {
+            <button type="button" class="btn-study" (click)="studyTense(id)">
+              <app-icon name="learn" [size]="15" /> Study {{ revealName() }}
+            </button>
+          }
+        }
+        <button
+          type="button"
+          class="btn-flag"
+          [disabled]="result() !== 'none'"
+          (click)="showReport.set(true)"
+          title="Report an error in this question"
+        >
+          <app-icon name="flag" [size]="14" />
+        </button>
+      </div>
     }
 
     <app-answer-grid
@@ -70,4 +89,13 @@
       <div class="toast"><app-icon name="zap" [size]="14" stroke="none" /> {{ t }}</div>
     }
   </div>
+
+  @if (showReport() && question(); as q) {
+    <app-report-error
+      [questionId]="q.id"
+      [tenseId]="q.answer"
+      (dismiss)="showReport.set(false)"
+      (sent)="onReportSent()"
+    />
+  }
 }
