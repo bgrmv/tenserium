@@ -193,5 +193,135 @@
       "post": " the food."
     },
     "difficulty": 3
+  },
+  {
+    "id": "future-continuous-16",
+    "answer": "future-continuous",
+    "type": "sentence",
+    "prompt": "Отрицание длящегося действия в будущий момент",
+    "promptEn": "Negating an ongoing action at a future moment",
+    "sentence": {
+      "pre": "I ",
+      "verb": "won't be using",
+      "post": " the car tomorrow — you can borrow it."
+    },
+    "difficulty": 2
+  },
+  {
+    "id": "future-continuous-17",
+    "answer": "future-continuous",
+    "type": "context",
+    "prompt": "Вопрос о действии в конкретный момент будущего",
+    "promptEn": "A question about what someone will be doing at a future moment",
+    "sentence": {
+      "pre": "Will you ",
+      "verb": "be attending",
+      "post": " the conference next week?"
+    },
+    "difficulty": 2
+  },
+  {
+    "id": "future-continuous-18",
+    "answer": "future-continuous",
+    "type": "sentence",
+    "prompt": "Длящееся действие во время поездки или перелёта",
+    "promptEn": "An ongoing action during a journey or flight",
+    "sentence": {
+      "pre": "For the next eight hours, we ",
+      "verb": "will be flying",
+      "post": " over the Pacific Ocean."
+    },
+    "difficulty": 2
+  },
+  {
+    "id": "future-continuous-19",
+    "answer": "future-continuous",
+    "type": "context",
+    "prompt": "Действие в процессе в момент прибытия другого человека",
+    "promptEn": "An action in progress at the moment someone else arrives",
+    "sentence": {
+      "pre": "Don't knock — she ",
+      "verb": "will be sleeping",
+      "post": " when you get there at noon."
+    },
+    "difficulty": 3
+  },
+  {
+    "id": "future-continuous-20",
+    "answer": "future-continuous",
+    "type": "sentence",
+    "prompt": "Предположение о чьей-то деятельности прямо сейчас",
+    "promptEn": "An assumption about what someone is probably doing right now",
+    "sentence": {
+      "pre": "At this hour, he ",
+      "verb": "will be sitting",
+      "post": " in traffic on his way home."
+    },
+    "difficulty": 3
+  },
+  {
+    "id": "future-continuous-21",
+    "answer": "future-continuous",
+    "type": "context",
+    "prompt": "Длящаяся деятельность в течение всего будущего периода",
+    "promptEn": "An ongoing activity throughout an entire future period",
+    "sentence": {
+      "pre": "All next week, the engineers ",
+      "verb": "will be testing",
+      "post": " the new system."
+    },
+    "difficulty": 2
+  },
+  {
+    "id": "future-continuous-22",
+    "answer": "future-continuous",
+    "type": "sentence",
+    "prompt": "Два параллельных действия в будущем с 'while'",
+    "promptEn": "Two parallel future actions with 'while'",
+    "sentence": {
+      "pre": "While you ",
+      "verb": "will be presenting",
+      "post": ", I'll be setting up the demo."
+    },
+    "difficulty": 3
+  },
+  {
+    "id": "future-continuous-23",
+    "answer": "future-continuous",
+    "type": "context",
+    "prompt": "Длящееся действие как прерываемый фон для другого события",
+    "promptEn": "An ongoing action serving as background for another future event",
+    "sentence": {
+      "pre": "I ",
+      "verb": "will be working",
+      "post": " from home all day, so call me any time."
+    },
+    "difficulty": 3
+  },
+  {
+    "id": "future-continuous-24",
+    "answer": "future-continuous",
+    "type": "sentence",
+    "prompt": "Действие, которое начнётся до указанного момента и продолжится после",
+    "promptEn": "An action that will have started before a stated time and continue after",
+    "sentence": {
+      "pre": "By the time you finish reading this, I ",
+      "verb": "will be boarding",
+      "post": " my flight."
+    },
+    "difficulty": 3
+  },
+  {
+    "id": "future-continuous-25",
+    "answer": "future-continuous",
+    "type": "context",
+    "prompt": "Операция или процедура, которая будет проходить в момент события",
+    "promptEn": "An operation or procedure that will be underway at the time of an event",
+    "sentence": {
+      "pre": "Don't disturb him — he ",
+      "verb": "will be operating",
+      "post": " all morning."
+    },
+    "difficulty": 3
   }
 ]

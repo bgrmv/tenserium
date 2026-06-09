@@ -193,5 +193,135 @@
       "post": " when the fire alarm went off."
     },
     "difficulty": 3
+  },
+  {
+    "id": "past-continuous-16",
+    "answer": "past-continuous",
+    "type": "sentence",
+    "prompt": "Отрицание длящегося действия в момент события",
+    "promptEn": "Negating an ongoing action at the moment of an event",
+    "sentence": {
+      "pre": "Nobody ",
+      "verb": "was listening",
+      "post": " when the teacher explained the rule."
+    },
+    "difficulty": 2
+  },
+  {
+    "id": "past-continuous-17",
+    "answer": "past-continuous",
+    "type": "context",
+    "prompt": "Вопрос о действии в конкретный момент прошлого",
+    "promptEn": "A question about an action at a specific past moment",
+    "sentence": {
+      "pre": "What ",
+      "verb": "were you doing",
+      "post": " when the earthquake struck?"
+    },
+    "difficulty": 2
+  },
+  {
+    "id": "past-continuous-18",
+    "answer": "past-continuous",
+    "type": "sentence",
+    "prompt": "Фоновые длительные действия нескольких людей в одно время",
+    "promptEn": "Background ongoing actions of several people at the same time",
+    "sentence": {
+      "pre": "While some guests ",
+      "verb": "were talking",
+      "post": ", others were dancing in the garden."
+    },
+    "difficulty": 2
+  },
+  {
+    "id": "past-continuous-19",
+    "answer": "past-continuous",
+    "type": "context",
+    "prompt": "Действие, которое постепенно ухудшалось в определённый период",
+    "promptEn": "A situation that was gradually getting worse during a past period",
+    "sentence": {
+      "pre": "By the end of the project, the team's morale ",
+      "verb": "was falling",
+      "post": " rapidly."
+    },
+    "difficulty": 3
+  },
+  {
+    "id": "past-continuous-20",
+    "answer": "past-continuous",
+    "type": "sentence",
+    "prompt": "Деятельность, которая шла в прошлом, когда кто-то пришёл",
+    "promptEn": "An activity in progress in the past when someone arrived",
+    "sentence": {
+      "pre": "When the guests arrived, I ",
+      "verb": "was still getting",
+      "post": " dressed."
+    },
+    "difficulty": 2
+  },
+  {
+    "id": "past-continuous-21",
+    "answer": "past-continuous",
+    "type": "context",
+    "prompt": "Описание обстановки в начале истории или отрывка",
+    "promptEn": "Setting the atmosphere at the opening of a story or passage",
+    "sentence": {
+      "pre": "The fire ",
+      "verb": "was crackling",
+      "post": " and the wind was howling outside."
+    },
+    "difficulty": 3
+  },
+  {
+    "id": "past-continuous-22",
+    "answer": "past-continuous",
+    "type": "sentence",
+    "prompt": "Длящееся действие, внезапно прерванное разовым событием",
+    "promptEn": "An ongoing action suddenly cut short by a one-off event",
+    "sentence": {
+      "pre": "She ",
+      "verb": "was giving",
+      "post": " a speech when the microphone cut out."
+    },
+    "difficulty": 2
+  },
+  {
+    "id": "past-continuous-23",
+    "answer": "past-continuous",
+    "type": "context",
+    "prompt": "Незаметная деятельность в фоне, пока происходило важное событие",
+    "promptEn": "A background activity while an important event was unfolding",
+    "sentence": {
+      "pre": "The children ",
+      "verb": "were playing",
+      "post": " upstairs while the adults discussed the situation below."
+    },
+    "difficulty": 3
+  },
+  {
+    "id": "past-continuous-24",
+    "answer": "past-continuous",
+    "type": "sentence",
+    "prompt": "Непреднамеренное открытие во время длящегося действия",
+    "promptEn": "An accidental discovery made during an ongoing action",
+    "sentence": {
+      "pre": "While I ",
+      "verb": "was searching",
+      "post": " for my passport, I found the missing letter."
+    },
+    "difficulty": 3
+  },
+  {
+    "id": "past-continuous-25",
+    "answer": "past-continuous",
+    "type": "context",
+    "prompt": "Повторяющееся раздражающее поведение в прошлый период",
+    "promptEn": "Repeatedly irritating behaviour during a past period",
+    "sentence": {
+      "pre": "He ",
+      "verb": "was always interrupting",
+      "post": " people in meetings."
+    },
+    "difficulty": 3
   }
 ]

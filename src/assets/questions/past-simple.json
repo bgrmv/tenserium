@@ -258,5 +258,135 @@
       "post": " the answer, I would tell you."
     },
     "difficulty": 3
+  },
+  {
+    "id": "past-simple-21",
+    "answer": "past-simple",
+    "type": "context",
+    "prompt": "Историческое событие в конкретном году далёкого прошлого",
+    "promptEn": "A historical event in a specific year of the distant past",
+    "sentence": {
+      "pre": "The Wright brothers ",
+      "verb": "made",
+      "post": " their first powered flight in 1903."
+    },
+    "difficulty": 1
+  },
+  {
+    "id": "past-simple-22",
+    "answer": "past-simple",
+    "type": "sentence",
+    "prompt": "Вопрос о прошлом событии с вопросительным словом",
+    "promptEn": "A wh-question about a past event",
+    "sentence": {
+      "pre": "What time ",
+      "verb": "did",
+      "post": " the meeting start?"
+    },
+    "difficulty": 2
+  },
+  {
+    "id": "past-simple-23",
+    "answer": "past-simple",
+    "type": "context",
+    "prompt": "Короткая журналистская фраза о произошедшем событии",
+    "promptEn": "A short journalistic phrase about a past event",
+    "sentence": {
+      "pre": "The prime minister ",
+      "verb": "resigned",
+      "post": " late last night."
+    },
+    "difficulty": 2
+  },
+  {
+    "id": "past-simple-24",
+    "answer": "past-simple",
+    "type": "sentence",
+    "prompt": "Нарративная последовательность в художественном тексте",
+    "promptEn": "A narrative sequence in a fictional text",
+    "sentence": {
+      "pre": "She ",
+      "verb": "opened",
+      "post": " the door, stepped inside, and looked around the empty room."
+    },
+    "difficulty": 2
+  },
+  {
+    "id": "past-simple-25",
+    "answer": "past-simple",
+    "type": "context",
+    "prompt": "Отрицание факта в прошлом с объяснением",
+    "promptEn": "Denying a past fact with an explanation",
+    "sentence": {
+      "pre": "I ",
+      "verb": "didn't hear",
+      "post": " the alarm because I was wearing headphones."
+    },
+    "difficulty": 2
+  },
+  {
+    "id": "past-simple-26",
+    "answer": "past-simple",
+    "type": "sentence",
+    "prompt": "Прошедшее открытие или внезапное осознание",
+    "promptEn": "A past discovery or sudden realisation",
+    "sentence": {
+      "pre": "At that moment, she ",
+      "verb": "realised",
+      "post": " she had made the wrong choice."
+    },
+    "difficulty": 3
+  },
+  {
+    "id": "past-simple-27",
+    "answer": "past-simple",
+    "type": "context",
+    "prompt": "Прошлое состояние внешности или самочувствия",
+    "promptEn": "A past state of appearance or physical condition",
+    "sentence": {
+      "pre": "When I last saw him, he ",
+      "verb": "looked",
+      "post": " pale and exhausted."
+    },
+    "difficulty": 2
+  },
+  {
+    "id": "past-simple-28",
+    "answer": "past-simple",
+    "type": "sentence",
+    "prompt": "Мгновенное прошлое действие, изменившее ситуацию",
+    "promptEn": "A sudden past action that changed the situation",
+    "sentence": {
+      "pre": "He ",
+      "verb": "dropped",
+      "post": " his phone, and the screen cracked."
+    },
+    "difficulty": 2
+  },
+  {
+    "id": "past-simple-29",
+    "answer": "past-simple",
+    "type": "context",
+    "prompt": "Прошлое действие, упомянутое как основание для текущего решения",
+    "promptEn": "A past action cited as the basis for a current decision",
+    "sentence": {
+      "pre": "I ",
+      "verb": "studied",
+      "post": " engineering, so they hired me for the project."
+    },
+    "difficulty": 3
+  },
+  {
+    "id": "past-simple-30",
+    "answer": "past-simple",
+    "type": "sentence",
+    "prompt": "Повторяющееся действие в прошлом с указанием частоты",
+    "promptEn": "A repeated past action with a stated frequency",
+    "sentence": {
+      "pre": "Every summer we ",
+      "verb": "rented",
+      "post": " a cottage by the lake."
+    },
+    "difficulty": 2
   }
 ]

@@ -193,5 +193,135 @@
       "post": " there as a child."
     },
     "difficulty": 3
+  },
+  {
+    "id": "past-perfect-16",
+    "answer": "past-perfect",
+    "type": "sentence",
+    "prompt": "Отрицание: то, чего ещё не было сделано к прошлому моменту",
+    "promptEn": "Negation: something not yet done by a past moment",
+    "sentence": {
+      "pre": "She ",
+      "verb": "hadn't slept",
+      "post": " properly for days before the final exam."
+    },
+    "difficulty": 3
+  },
+  {
+    "id": "past-perfect-17",
+    "answer": "past-perfect",
+    "type": "context",
+    "prompt": "Вопрос о предшествующем действии в косвенной речи",
+    "promptEn": "A question about a preceding action in reported speech",
+    "sentence": {
+      "pre": "They asked whether anyone ",
+      "verb": "had seen",
+      "post": " the missing keys."
+    },
+    "difficulty": 3
+  },
+  {
+    "id": "past-perfect-18",
+    "answer": "past-perfect",
+    "type": "sentence",
+    "prompt": "Действие, совершённое прежде, чем что-то стало известно",
+    "promptEn": "An action completed before something became known",
+    "sentence": {
+      "pre": "By the time the authorities arrived, the witnesses ",
+      "verb": "had left",
+      "post": " the scene."
+    },
+    "difficulty": 3
+  },
+  {
+    "id": "past-perfect-19",
+    "answer": "past-perfect",
+    "type": "context",
+    "prompt": "Сожаление или желание о прошлом (wish + past perfect)",
+    "promptEn": "Regret or wish about the past (wish + past perfect)",
+    "sentence": {
+      "pre": "I wish I ",
+      "verb": "had taken",
+      "post": " her advice — everything would have been different."
+    },
+    "difficulty": 3
+  },
+  {
+    "id": "past-perfect-20",
+    "answer": "past-perfect",
+    "type": "sentence",
+    "prompt": "Едва завершённое действие, когда произошло следующее",
+    "promptEn": "Barely completed action when the next event happened",
+    "sentence": {
+      "pre": "Hardly ",
+      "verb": "had",
+      "post": " she sat down when the phone rang again."
+    },
+    "difficulty": 3
+  },
+  {
+    "id": "past-perfect-21",
+    "answer": "past-perfect",
+    "type": "context",
+    "prompt": "Прошлое действие с 'after', обозначающее завершение до другого",
+    "promptEn": "A past action with 'after', showing completion before another",
+    "sentence": {
+      "pre": "After he ",
+      "verb": "had submitted",
+      "post": " the application, he felt a huge sense of relief."
+    },
+    "difficulty": 3
+  },
+  {
+    "id": "past-perfect-22",
+    "answer": "past-perfect",
+    "type": "sentence",
+    "prompt": "Страдательный залог: то, что было сделано к определённому прошлому моменту",
+    "promptEn": "Passive: something that had been done by a past moment",
+    "sentence": {
+      "pre": "By the time we arrived, all the tickets ",
+      "verb": "had been sold",
+      "post": " out."
+    },
+    "difficulty": 3
+  },
+  {
+    "id": "past-perfect-23",
+    "answer": "past-perfect",
+    "type": "context",
+    "prompt": "Необходимое предварительное условие перед основным событием",
+    "promptEn": "A prerequisite that needed to be met before a main event",
+    "sentence": {
+      "pre": "Once they ",
+      "verb": "had signed",
+      "post": " the contract, the work could begin."
+    },
+    "difficulty": 3
+  },
+  {
+    "id": "past-perfect-24",
+    "answer": "past-perfect",
+    "type": "sentence",
+    "prompt": "Описание состояния здоровья, образования или положения до события",
+    "promptEn": "Describing health, education or status before an event",
+    "sentence": {
+      "pre": "Before the accident, he ",
+      "verb": "had never been",
+      "post": " to hospital in his life."
+    },
+    "difficulty": 3
+  },
+  {
+    "id": "past-perfect-25",
+    "answer": "past-perfect",
+    "type": "context",
+    "prompt": "Автобиографический факт, существовавший до поворотного момента",
+    "promptEn": "An autobiographical fact that existed before a turning point",
+    "sentence": {
+      "pre": "Before she moved to Paris, she ",
+      "verb": "had never spoken",
+      "post": " French outside a classroom."
+    },
+    "difficulty": 3
   }
 ]

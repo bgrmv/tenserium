@@ -193,5 +193,135 @@
       "post": " a helmet."
     },
     "difficulty": 3
+  },
+  {
+    "id": "past-perfect-continuous-16",
+    "answer": "past-perfect-continuous",
+    "type": "sentence",
+    "prompt": "Видимый признак в прошлом, указывавший на предшествующую деятельность",
+    "promptEn": "A visible sign in the past pointing to a prior activity",
+    "sentence": {
+      "pre": "Her eyes were red — she ",
+      "verb": "had been crying",
+      "post": " for a long time."
+    },
+    "difficulty": 3
+  },
+  {
+    "id": "past-perfect-continuous-17",
+    "answer": "past-perfect-continuous",
+    "type": "context",
+    "prompt": "Длительность ожидания до наступления события",
+    "promptEn": "Duration of waiting before an event finally occurred",
+    "sentence": {
+      "pre": "I finally got the job, but I ",
+      "verb": "had been applying",
+      "post": " for positions for over a year."
+    },
+    "difficulty": 3
+  },
+  {
+    "id": "past-perfect-continuous-18",
+    "answer": "past-perfect-continuous",
+    "type": "sentence",
+    "prompt": "Процесс, шедший до его обнаружения или раскрытия",
+    "promptEn": "A process that had been going on before it was discovered",
+    "sentence": {
+      "pre": "The pipe ",
+      "verb": "had been leaking",
+      "post": " for weeks before anyone noticed."
+    },
+    "difficulty": 3
+  },
+  {
+    "id": "past-perfect-continuous-19",
+    "answer": "past-perfect-continuous",
+    "type": "context",
+    "prompt": "Подготовительная работа до объявления или результата",
+    "promptEn": "Preparatory work done before an announcement or result",
+    "sentence": {
+      "pre": "The scientists ",
+      "verb": "had been conducting",
+      "post": " the study for five years before publishing their findings."
+    },
+    "difficulty": 3
+  },
+  {
+    "id": "past-perfect-continuous-20",
+    "answer": "past-perfect-continuous",
+    "type": "sentence",
+    "prompt": "Вопрос о длительности деятельности до прошлого момента",
+    "promptEn": "A question about how long an activity had been going on before a past moment",
+    "sentence": {
+      "pre": "How long ",
+      "verb": "had they been arguing",
+      "post": " before you arrived?"
+    },
+    "difficulty": 3
+  },
+  {
+    "id": "past-perfect-continuous-21",
+    "answer": "past-perfect-continuous",
+    "type": "context",
+    "prompt": "Деятельность, объясняющая уровень мастерства или знаний в прошлом",
+    "promptEn": "Activity explaining a level of skill or knowledge at a past time",
+    "sentence": {
+      "pre": "She spoke fluently because she ",
+      "verb": "had been practising",
+      "post": " with native speakers for years."
+    },
+    "difficulty": 3
+  },
+  {
+    "id": "past-perfect-continuous-22",
+    "answer": "past-perfect-continuous",
+    "type": "sentence",
+    "prompt": "Строительство или разработка до завершения или запуска",
+    "promptEn": "Construction or development before completion or launch",
+    "sentence": {
+      "pre": "Workers ",
+      "verb": "had been building",
+      "post": " the dam for three years before the floods hit."
+    },
+    "difficulty": 3
+  },
+  {
+    "id": "past-perfect-continuous-23",
+    "answer": "past-perfect-continuous",
+    "type": "context",
+    "prompt": "Третий кондиционал с акцентом на длительности предшествующего действия",
+    "promptEn": "Third conditional emphasising the duration of a prior action",
+    "sentence": {
+      "pre": "If they ",
+      "verb": "hadn't been ignoring",
+      "post": " the warnings, the accident could have been prevented."
+    },
+    "difficulty": 3
+  },
+  {
+    "id": "past-perfect-continuous-24",
+    "answer": "past-perfect-continuous",
+    "type": "sentence",
+    "prompt": "Постепенное ухудшение ситуации до кризиса в прошлом",
+    "promptEn": "Gradual deterioration of a situation leading up to a past crisis",
+    "sentence": {
+      "pre": "The economy ",
+      "verb": "had been declining",
+      "post": " for two years before the recession was officially declared."
+    },
+    "difficulty": 3
+  },
+  {
+    "id": "past-perfect-continuous-25",
+    "answer": "past-perfect-continuous",
+    "type": "context",
+    "prompt": "Незавершённое действие в прошлом, которое пришлось прервать",
+    "promptEn": "An unfinished past action that had to be interrupted",
+    "sentence": {
+      "pre": "She ",
+      "verb": "had been reading",
+      "post": " for an hour when she was called in for the interview."
+    },
+    "difficulty": 3
   }
 ]

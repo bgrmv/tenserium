@@ -193,5 +193,135 @@
       "post": " for over twelve hours."
     },
     "difficulty": 3
+  },
+  {
+    "id": "future-perfect-continuous-16",
+    "answer": "future-perfect-continuous",
+    "type": "sentence",
+    "prompt": "Отрицание: деятельность не будет длиться достаточно долго к дате",
+    "promptEn": "Negation: an activity won't have lasted long enough by a date",
+    "sentence": {
+      "pre": "By the exam date, I ",
+      "verb": "won't have been studying",
+      "post": " the subject long enough to pass."
+    },
+    "difficulty": 3
+  },
+  {
+    "id": "future-perfect-continuous-17",
+    "answer": "future-perfect-continuous",
+    "type": "context",
+    "prompt": "Вопрос о длительности деятельности к будущему моменту",
+    "promptEn": "A question about how long an activity will have lasted by a future moment",
+    "sentence": {
+      "pre": "How long ",
+      "verb": "will they have been negotiating",
+      "post": " by the time a deal is reached?"
+    },
+    "difficulty": 3
+  },
+  {
+    "id": "future-perfect-continuous-18",
+    "answer": "future-perfect-continuous",
+    "type": "sentence",
+    "prompt": "Длительность физических тренировок к соревнованию",
+    "promptEn": "Duration of physical training accumulated by a competition",
+    "sentence": {
+      "pre": "By race day, the athlete ",
+      "verb": "will have been training",
+      "post": " at altitude for eight weeks."
+    },
+    "difficulty": 3
+  },
+  {
+    "id": "future-perfect-continuous-19",
+    "answer": "future-perfect-continuous",
+    "type": "context",
+    "prompt": "Накопленная усталость учёного или исследователя к дате публикации",
+    "promptEn": "Accumulated fatigue of a researcher by the time of publication",
+    "sentence": {
+      "pre": "When the paper is published, the team ",
+      "verb": "will have been researching",
+      "post": " the topic for a decade."
+    },
+    "difficulty": 3
+  },
+  {
+    "id": "future-perfect-continuous-20",
+    "answer": "future-perfect-continuous",
+    "type": "sentence",
+    "prompt": "Продолжительность проживания в городе к переезду",
+    "promptEn": "Duration of living in a city by the time of moving away",
+    "sentence": {
+      "pre": "When we move, I ",
+      "verb": "will have been living",
+      "post": " in this neighbourhood for over a decade."
+    },
+    "difficulty": 3
+  },
+  {
+    "id": "future-perfect-continuous-21",
+    "answer": "future-perfect-continuous",
+    "type": "context",
+    "prompt": "Длительность переговоров или разработки к подписанию соглашения",
+    "promptEn": "Duration of negotiations or development by signing an agreement",
+    "sentence": {
+      "pre": "By the time the treaty is signed, diplomats ",
+      "verb": "will have been working",
+      "post": " on it for three years."
+    },
+    "difficulty": 3
+  },
+  {
+    "id": "future-perfect-continuous-22",
+    "answer": "future-perfect-continuous",
+    "type": "sentence",
+    "prompt": "Накопленная длительность пребывания в должности к юбилею",
+    "promptEn": "Accumulated duration in a position by an anniversary",
+    "sentence": {
+      "pre": "By his tenth work anniversary, he ",
+      "verb": "will have been managing",
+      "post": " the department for a full decade."
+    },
+    "difficulty": 3
+  },
+  {
+    "id": "future-perfect-continuous-23",
+    "answer": "future-perfect-continuous",
+    "type": "context",
+    "prompt": "Продолжительность медицинского лечения к выздоровлению",
+    "promptEn": "Duration of medical treatment by the time of recovery",
+    "sentence": {
+      "pre": "When she is finally discharged, she ",
+      "verb": "will have been receiving",
+      "post": " treatment for three months."
+    },
+    "difficulty": 3
+  },
+  {
+    "id": "future-perfect-continuous-24",
+    "answer": "future-perfect-continuous",
+    "type": "sentence",
+    "prompt": "Длительность программирования или разработки к релизу",
+    "promptEn": "Duration of coding or development by the time of release",
+    "sentence": {
+      "pre": "When the app ships, the developers ",
+      "verb": "will have been coding",
+      "post": " it nonstop for eighteen months."
+    },
+    "difficulty": 3
+  },
+  {
+    "id": "future-perfect-continuous-25",
+    "answer": "future-perfect-continuous",
+    "type": "context",
+    "prompt": "Накопленная длительность ожидания к прибытию помощи или результата",
+    "promptEn": "Accumulated waiting time by the arrival of help or a result",
+    "sentence": {
+      "pre": "By the time the rescue team arrives, the hikers ",
+      "verb": "will have been waiting",
+      "post": " in the cold for over thirty hours."
+    },
+    "difficulty": 3
   }
 ]

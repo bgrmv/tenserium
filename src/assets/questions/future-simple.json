@@ -258,5 +258,135 @@
       "post": " to other planets."
     },
     "difficulty": 3
+  },
+  {
+    "id": "future-simple-21",
+    "answer": "future-simple",
+    "type": "sentence",
+    "prompt": "Отрицательное предсказание или сомнение",
+    "promptEn": "A negative prediction or doubt about the future",
+    "sentence": {
+      "pre": "I don't think they ",
+      "verb": "will win",
+      "post": " the championship this year."
+    },
+    "difficulty": 2
+  },
+  {
+    "id": "future-simple-22",
+    "answer": "future-simple",
+    "type": "context",
+    "prompt": "Риторический вопрос о будущем с 'Will...?'",
+    "promptEn": "A rhetorical question about the future with 'Will...?'",
+    "sentence": {
+      "pre": "Will robots ever ",
+      "verb": "replace",
+      "post": " human workers completely?"
+    },
+    "difficulty": 2
+  },
+  {
+    "id": "future-simple-23",
+    "answer": "future-simple",
+    "type": "sentence",
+    "prompt": "Конструкция 'There will be' для обозначения существования в будущем",
+    "promptEn": "The 'There will be' structure for future existence",
+    "sentence": {
+      "pre": "There ",
+      "verb": "will be",
+      "post": " a short break after the third presentation."
+    },
+    "difficulty": 1
+  },
+  {
+    "id": "future-simple-24",
+    "answer": "future-simple",
+    "type": "context",
+    "prompt": "Официальное объявление о будущем событии",
+    "promptEn": "An official announcement about an upcoming event",
+    "sentence": {
+      "pre": "The ceremony ",
+      "verb": "will take place",
+      "post": " on the 15th of June."
+    },
+    "difficulty": 2
+  },
+  {
+    "id": "future-simple-25",
+    "answer": "future-simple",
+    "type": "sentence",
+    "prompt": "Надежда или ожидание положительного будущего результата",
+    "promptEn": "Hope or expectation of a positive future outcome",
+    "sentence": {
+      "pre": "I hope everything ",
+      "verb": "will be",
+      "post": " fine."
+    },
+    "difficulty": 2
+  },
+  {
+    "id": "future-simple-26",
+    "answer": "future-simple",
+    "type": "context",
+    "prompt": "Будущее действие в следствии текущего выбора или решения",
+    "promptEn": "A future action as a consequence of a current choice",
+    "sentence": {
+      "pre": "If you skip breakfast, you ",
+      "verb": "will feel",
+      "post": " tired by midday."
+    },
+    "difficulty": 2
+  },
+  {
+    "id": "future-simple-27",
+    "answer": "future-simple",
+    "type": "sentence",
+    "prompt": "Вероятное будущее с наречием 'probably' или 'certainly'",
+    "promptEn": "A likely future with the adverb 'probably' or 'certainly'",
+    "sentence": {
+      "pre": "She ",
+      "verb": "will probably get",
+      "post": " the job — she was the strongest candidate."
+    },
+    "difficulty": 3
+  },
+  {
+    "id": "future-simple-28",
+    "answer": "future-simple",
+    "type": "context",
+    "prompt": "Будущее действие в страдательном залоге",
+    "promptEn": "A future action expressed in the passive voice",
+    "sentence": {
+      "pre": "The results ",
+      "verb": "will be announced",
+      "post": " at the end of the week."
+    },
+    "difficulty": 3
+  },
+  {
+    "id": "future-simple-29",
+    "answer": "future-simple",
+    "type": "sentence",
+    "prompt": "Неизбежный или предопределённый будущий факт",
+    "promptEn": "An inevitable or predetermined future fact",
+    "sentence": {
+      "pre": "We ",
+      "verb": "will all die",
+      "post": " one day — that's a fact of life."
+    },
+    "difficulty": 3
+  },
+  {
+    "id": "future-simple-30",
+    "answer": "future-simple",
+    "type": "context",
+    "prompt": "Действие сразу после другого будущего события",
+    "promptEn": "An action that will happen right after another future event",
+    "sentence": {
+      "pre": "As soon as the match ends, I ",
+      "verb": "will call",
+      "post": " you with the score."
+    },
+    "difficulty": 3
   }
 ]

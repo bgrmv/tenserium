@@ -258,5 +258,135 @@
       "post": " offices in fifteen countries."
     },
     "difficulty": 3
+  },
+  {
+    "id": "present-simple-21",
+    "answer": "present-simple",
+    "type": "sentence",
+    "prompt": "Отрицание повседневной привычки",
+    "promptEn": "Negating an everyday habit",
+    "sentence": {
+      "pre": "He ",
+      "verb": "doesn't eat",
+      "post": " meat — he has been vegetarian for years."
+    },
+    "difficulty": 1
+  },
+  {
+    "id": "present-simple-22",
+    "answer": "present-simple",
+    "type": "context",
+    "prompt": "Вопрос о чьих-то обычных действиях или предпочтениях",
+    "promptEn": "A question about someone's regular actions or preferences",
+    "sentence": {
+      "pre": "Where ",
+      "verb": "do",
+      "post": " you usually have lunch?"
+    },
+    "difficulty": 1
+  },
+  {
+    "id": "present-simple-23",
+    "answer": "present-simple",
+    "type": "sentence",
+    "prompt": "Принадлежность предмета или явления к классу/группе",
+    "promptEn": "Something belonging to a category or group",
+    "sentence": {
+      "pre": "This word ",
+      "verb": "belongs",
+      "post": " to the category of stative verbs."
+    },
+    "difficulty": 2
+  },
+  {
+    "id": "present-simple-24",
+    "answer": "present-simple",
+    "type": "context",
+    "prompt": "Географический факт или постоянная истина о природе",
+    "promptEn": "A geographical fact or permanent natural truth",
+    "sentence": {
+      "pre": "The Amazon River ",
+      "verb": "flows",
+      "post": " into the Atlantic Ocean."
+    },
+    "difficulty": 2
+  },
+  {
+    "id": "present-simple-25",
+    "answer": "present-simple",
+    "type": "sentence",
+    "prompt": "Спортивный комментарий в реальном времени",
+    "promptEn": "Live sports commentary describing an instant action",
+    "sentence": {
+      "pre": "He ",
+      "verb": "shoots",
+      "post": " — and scores!"
+    },
+    "difficulty": 2
+  },
+  {
+    "id": "present-simple-26",
+    "answer": "present-simple",
+    "type": "context",
+    "prompt": "Глагол когнитивного состояния: знание или память",
+    "promptEn": "A cognitive state verb: knowing or remembering",
+    "sentence": {
+      "pre": "I ",
+      "verb": "remember",
+      "post": " the exact moment I heard that song for the first time."
+    },
+    "difficulty": 2
+  },
+  {
+    "id": "present-simple-27",
+    "answer": "present-simple",
+    "type": "sentence",
+    "prompt": "Характеристика человека через его поведение или отношение",
+    "promptEn": "Describing a person through their typical behaviour or attitude",
+    "sentence": {
+      "pre": "She always ",
+      "verb": "arrives",
+      "post": " early and never misses a deadline."
+    },
+    "difficulty": 2
+  },
+  {
+    "id": "present-simple-28",
+    "answer": "present-simple",
+    "type": "context",
+    "prompt": "Редкое или нечастое действие с наречием частоты",
+    "promptEn": "An infrequent action described with a frequency adverb",
+    "sentence": {
+      "pre": "We ",
+      "verb": "rarely see",
+      "post": " each other now that she has moved abroad."
+    },
+    "difficulty": 3
+  },
+  {
+    "id": "present-simple-29",
+    "answer": "present-simple",
+    "type": "sentence",
+    "prompt": "Сценическая ремарка или описание в скрипте",
+    "promptEn": "A stage direction or script description",
+    "sentence": {
+      "pre": "The detective ",
+      "verb": "picks up",
+      "post": " the envelope and tears it open."
+    },
+    "difficulty": 3
+  },
+  {
+    "id": "present-simple-30",
+    "answer": "present-simple",
+    "type": "context",
+    "prompt": "Условие в придаточном с 'before' или 'until'",
+    "promptEn": "A condition in a clause with 'before' or 'until'",
+    "sentence": {
+      "pre": "Don't leave until the doctor ",
+      "verb": "gives",
+      "post": " you the all-clear."
+    },
+    "difficulty": 3
   }
 ]

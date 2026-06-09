@@ -193,5 +193,135 @@
       "post": " his memoirs for the past two years."
     },
     "difficulty": 3
+  },
+  {
+    "id": "present-perfect-continuous-16",
+    "answer": "present-perfect-continuous",
+    "type": "sentence",
+    "prompt": "Отрицание: действие не было в процессе на протяжении периода",
+    "promptEn": "Negation: an action has not been ongoing throughout a period",
+    "sentence": {
+      "pre": "He ",
+      "verb": "hasn't been sleeping",
+      "post": " well this week — he looks terrible."
+    },
+    "difficulty": 3
+  },
+  {
+    "id": "present-perfect-continuous-17",
+    "answer": "present-perfect-continuous",
+    "type": "context",
+    "prompt": "Запах или внешний признак, указывающий на продолжавшееся действие",
+    "promptEn": "A smell or visible sign indicating a recent ongoing activity",
+    "sentence": {
+      "pre": "The kitchen smells of garlic — she ",
+      "verb": "has been cooking",
+      "post": " all afternoon."
+    },
+    "difficulty": 3
+  },
+  {
+    "id": "present-perfect-continuous-18",
+    "answer": "present-perfect-continuous",
+    "type": "sentence",
+    "prompt": "Переговоры или обсуждение, продолжающиеся в течение периода",
+    "promptEn": "Negotiations or discussions ongoing throughout a period",
+    "sentence": {
+      "pre": "The two sides ",
+      "verb": "have been talking",
+      "post": " for months without reaching an agreement."
+    },
+    "difficulty": 3
+  },
+  {
+    "id": "present-perfect-continuous-19",
+    "answer": "present-perfect-continuous",
+    "type": "context",
+    "prompt": "Текущая незавершённая деятельность команды или организации",
+    "promptEn": "An ongoing unfinished activity of a team or organisation",
+    "sentence": {
+      "pre": "Our team ",
+      "verb": "has been developing",
+      "post": " this feature for the last three sprints."
+    },
+    "difficulty": 3
+  },
+  {
+    "id": "present-perfect-continuous-20",
+    "answer": "present-perfect-continuous",
+    "type": "sentence",
+    "prompt": "Вопрос о продолжительности текущего занятия или состояния",
+    "promptEn": "A question about how long a current activity or state has lasted",
+    "sentence": {
+      "pre": "How long ",
+      "verb": "has she been learning",
+      "post": " Japanese?"
+    },
+    "difficulty": 3
+  },
+  {
+    "id": "present-perfect-continuous-21",
+    "answer": "present-perfect-continuous",
+    "type": "context",
+    "prompt": "Хроническое или длительное ухудшение состояния здоровья",
+    "promptEn": "A chronic or prolonged deterioration in health",
+    "sentence": {
+      "pre": "The doctor says she ",
+      "verb": "has been overworking",
+      "post": " and needs rest."
+    },
+    "difficulty": 3
+  },
+  {
+    "id": "present-perfect-continuous-22",
+    "answer": "present-perfect-continuous",
+    "type": "sentence",
+    "prompt": "Деятельность, ставшая источником усталости или стресса",
+    "promptEn": "An activity that has been a source of fatigue or stress",
+    "sentence": {
+      "pre": "I feel completely drained — I ",
+      "verb": "have been dealing with",
+      "post": " complaints all day."
+    },
+    "difficulty": 3
+  },
+  {
+    "id": "present-perfect-continuous-23",
+    "answer": "present-perfect-continuous",
+    "type": "context",
+    "prompt": "Продолжающееся обучение или тренировка с целью достичь результата",
+    "promptEn": "Ongoing training or practice aimed at achieving a goal",
+    "sentence": {
+      "pre": "She ",
+      "verb": "has been practising",
+      "post": " the piano eight hours a day for this competition."
+    },
+    "difficulty": 3
+  },
+  {
+    "id": "present-perfect-continuous-24",
+    "answer": "present-perfect-continuous",
+    "type": "sentence",
+    "prompt": "Тенденция или явление, нарастающее с течением времени",
+    "promptEn": "A trend or phenomenon that has been growing over time",
+    "sentence": {
+      "pre": "Temperatures around the world ",
+      "verb": "have been rising",
+      "post": " steadily since the industrial revolution."
+    },
+    "difficulty": 3
+  },
+  {
+    "id": "present-perfect-continuous-25",
+    "answer": "present-perfect-continuous",
+    "type": "context",
+    "prompt": "Неоднократные обращения или попытки, ещё не давшие результата",
+    "promptEn": "Repeated attempts or requests that have not yet yielded a result",
+    "sentence": {
+      "pre": "She ",
+      "verb": "has been applying",
+      "post": " for jobs for six months without success."
+    },
+    "difficulty": 3
   }
 ]

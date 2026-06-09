@@ -193,5 +193,135 @@
       "post": " from him since last year."
     },
     "difficulty": 3
+  },
+  {
+    "id": "present-perfect-16",
+    "answer": "present-perfect",
+    "type": "context",
+    "prompt": "Опыт посещения места, выраженный через 'have been to'",
+    "promptEn": "Experience of visiting a place expressed with 'have been to'",
+    "sentence": {
+      "pre": "I ",
+      "verb": "have been to",
+      "post": " New York three times."
+    },
+    "difficulty": 2
+  },
+  {
+    "id": "present-perfect-17",
+    "answer": "present-perfect",
+    "type": "sentence",
+    "prompt": "Накопленные данные или сохранённые ресурсы к сегодняшнему дню",
+    "promptEn": "Accumulated data or saved resources up to today",
+    "sentence": {
+      "pre": "Over the years, they ",
+      "verb": "have collected",
+      "post": " thousands of rare stamps."
+    },
+    "difficulty": 2
+  },
+  {
+    "id": "present-perfect-18",
+    "answer": "present-perfect",
+    "type": "context",
+    "prompt": "Недавнее действие с маркером 'recently'",
+    "promptEn": "A recent action with the marker 'recently'",
+    "sentence": {
+      "pre": "The company ",
+      "verb": "has recently launched",
+      "post": " a new product line."
+    },
+    "difficulty": 2
+  },
+  {
+    "id": "present-perfect-19",
+    "answer": "present-perfect",
+    "type": "sentence",
+    "prompt": "Достижение или прогресс к текущему моменту с 'so far'",
+    "promptEn": "Achievement or progress up to the current moment with 'so far'",
+    "sentence": {
+      "pre": "So far, we ",
+      "verb": "have raised",
+      "post": " half of the required amount."
+    },
+    "difficulty": 3
+  },
+  {
+    "id": "present-perfect-20",
+    "answer": "present-perfect",
+    "type": "context",
+    "prompt": "Страдательный залог: действие совершено, результат виден сейчас",
+    "promptEn": "Passive voice: action done, result visible now",
+    "sentence": {
+      "pre": "The road ",
+      "verb": "has been repaired",
+      "post": " — you can drive through again."
+    },
+    "difficulty": 3
+  },
+  {
+    "id": "present-perfect-21",
+    "answer": "present-perfect",
+    "type": "sentence",
+    "prompt": "Личное объявление об успехе или достижении",
+    "promptEn": "A personal announcement of a success or achievement",
+    "sentence": {
+      "pre": "I ",
+      "verb": "have finally got",
+      "post": " my driving licence!"
+    },
+    "difficulty": 2
+  },
+  {
+    "id": "present-perfect-22",
+    "answer": "present-perfect",
+    "type": "context",
+    "prompt": "Продолжительность отношений или знакомства с 'for'",
+    "promptEn": "Duration of a relationship or acquaintance using 'for'",
+    "sentence": {
+      "pre": "We ",
+      "verb": "have known",
+      "post": " each other for over twenty years."
+    },
+    "difficulty": 2
+  },
+  {
+    "id": "present-perfect-23",
+    "answer": "present-perfect",
+    "type": "sentence",
+    "prompt": "Вопрос о наличии опыта с 'ever'",
+    "promptEn": "A question about personal experience using 'ever'",
+    "sentence": {
+      "pre": "Have you ever ",
+      "verb": "tried",
+      "post": " rock climbing?"
+    },
+    "difficulty": 2
+  },
+  {
+    "id": "present-perfect-24",
+    "answer": "present-perfect",
+    "type": "context",
+    "prompt": "Изменение ситуации с момента прошлого события",
+    "promptEn": "A change in situation since a past event",
+    "sentence": {
+      "pre": "Everything ",
+      "verb": "has changed",
+      "post": " since she left the company."
+    },
+    "difficulty": 3
+  },
+  {
+    "id": "present-perfect-25",
+    "answer": "present-perfect",
+    "type": "sentence",
+    "prompt": "Контраст с прошедшим простым: без указания времени vs. с указанием",
+    "promptEn": "Contrast with past simple: no time stated vs. time stated",
+    "sentence": {
+      "pre": "She ",
+      "verb": "has written",
+      "post": " four novels — her latest came out in 2023."
+    },
+    "difficulty": 3
   }
 ]

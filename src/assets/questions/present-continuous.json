@@ -193,5 +193,135 @@
       "post": " very strangely lately."
     },
     "difficulty": 3
+  },
+  {
+    "id": "present-continuous-16",
+    "answer": "present-continuous",
+    "type": "sentence",
+    "prompt": "Отрицание текущего действия в данный момент",
+    "promptEn": "Negating an action happening at this moment",
+    "sentence": {
+      "pre": "Don't call him now — he ",
+      "verb": "isn't working",
+      "post": ", he's sleeping."
+    },
+    "difficulty": 1
+  },
+  {
+    "id": "present-continuous-17",
+    "answer": "present-continuous",
+    "type": "context",
+    "prompt": "Вопрос о текущем действии собеседника",
+    "promptEn": "Asking what someone is doing at this moment",
+    "sentence": {
+      "pre": "What ",
+      "verb": "are you doing",
+      "post": " on Saturday evening?"
+    },
+    "difficulty": 1
+  },
+  {
+    "id": "present-continuous-18",
+    "answer": "present-continuous",
+    "type": "sentence",
+    "prompt": "Описание того, что видно на фото или видео",
+    "promptEn": "Describing what can be seen in a photo or video",
+    "sentence": {
+      "pre": "In this picture, the astronaut ",
+      "verb": "is floating",
+      "post": " above the Earth."
+    },
+    "difficulty": 2
+  },
+  {
+    "id": "present-continuous-19",
+    "answer": "present-continuous",
+    "type": "context",
+    "prompt": "Временная работа или жильё в данный период жизни",
+    "promptEn": "Temporary work or accommodation during this life period",
+    "sentence": {
+      "pre": "I ",
+      "verb": "am staying",
+      "post": " at my sister's place while my flat is being renovated."
+    },
+    "difficulty": 2
+  },
+  {
+    "id": "present-continuous-20",
+    "answer": "present-continuous",
+    "type": "sentence",
+    "prompt": "Нарастающее изменение в обществе или технологиях",
+    "promptEn": "A growing change in society or technology",
+    "sentence": {
+      "pre": "Electric vehicles ",
+      "verb": "are becoming",
+      "post": " increasingly popular."
+    },
+    "difficulty": 2
+  },
+  {
+    "id": "present-continuous-21",
+    "answer": "present-continuous",
+    "type": "context",
+    "prompt": "Действие, запланированное как личная встреча или визит",
+    "promptEn": "A planned personal meeting or visit",
+    "sentence": {
+      "pre": "Are you ",
+      "verb": "coming",
+      "post": " to the party on Friday?"
+    },
+    "difficulty": 2
+  },
+  {
+    "id": "present-continuous-22",
+    "answer": "present-continuous",
+    "type": "sentence",
+    "prompt": "Контраст с обычным поведением: временное vs. постоянное",
+    "promptEn": "Contrast with usual behaviour: temporary vs. permanent",
+    "sentence": {
+      "pre": "She usually works in the city, but this month she ",
+      "verb": "is working",
+      "post": " from home."
+    },
+    "difficulty": 3
+  },
+  {
+    "id": "present-continuous-23",
+    "answer": "present-continuous",
+    "type": "context",
+    "prompt": "Развивающееся ухудшение состояния или обстановки",
+    "promptEn": "A worsening condition or situation that is developing",
+    "sentence": {
+      "pre": "The traffic ",
+      "verb": "is getting",
+      "post": " worse every year."
+    },
+    "difficulty": 3
+  },
+  {
+    "id": "present-continuous-24",
+    "answer": "present-continuous",
+    "type": "sentence",
+    "prompt": "Процесс, происходящий прямо во время разговора",
+    "promptEn": "A process unfolding at the very moment of speaking",
+    "sentence": {
+      "pre": "Hurry up! The taxi ",
+      "verb": "is waiting",
+      "post": " outside."
+    },
+    "difficulty": 2
+  },
+  {
+    "id": "present-continuous-25",
+    "answer": "present-continuous",
+    "type": "context",
+    "prompt": "Многократно раздражающее поведение в этот период",
+    "promptEn": "Repeatedly irritating behaviour during this period",
+    "sentence": {
+      "pre": "They ",
+      "verb": "are constantly making",
+      "post": " noise during lectures."
+    },
+    "difficulty": 3
   }
 ]

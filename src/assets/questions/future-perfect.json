@@ -193,5 +193,135 @@
       "post": "."
     },
     "difficulty": 3
+  },
+  {
+    "id": "future-perfect-16",
+    "answer": "future-perfect",
+    "type": "sentence",
+    "prompt": "Отрицание: результат к сроку не будет достигнут",
+    "promptEn": "Negation: a result will not have been reached by a deadline",
+    "sentence": {
+      "pre": "I'm afraid I ",
+      "verb": "won't have finished",
+      "post": " the report by Monday."
+    },
+    "difficulty": 3
+  },
+  {
+    "id": "future-perfect-17",
+    "answer": "future-perfect",
+    "type": "context",
+    "prompt": "Вопрос о завершённости к конкретному сроку",
+    "promptEn": "A question about whether something will be done by a deadline",
+    "sentence": {
+      "pre": "Will the construction team ",
+      "verb": "have completed",
+      "post": " the repairs by next month?"
+    },
+    "difficulty": 3
+  },
+  {
+    "id": "future-perfect-18",
+    "answer": "future-perfect",
+    "type": "sentence",
+    "prompt": "Страдательный залог: что-то будет сделано к определённому времени",
+    "promptEn": "Passive voice: something will have been done by a set time",
+    "sentence": {
+      "pre": "All passengers ",
+      "verb": "will have been screened",
+      "post": " before the flight departs."
+    },
+    "difficulty": 3
+  },
+  {
+    "id": "future-perfect-19",
+    "answer": "future-perfect",
+    "type": "context",
+    "prompt": "Количество лет работы к моменту выхода на пенсию",
+    "promptEn": "Years of service accumulated by the time of retirement",
+    "sentence": {
+      "pre": "By the time he retires, he ",
+      "verb": "will have served",
+      "post": " the company for thirty years."
+    },
+    "difficulty": 3
+  },
+  {
+    "id": "future-perfect-20",
+    "answer": "future-perfect",
+    "type": "sentence",
+    "prompt": "Научный или технологический прогресс к определённому году",
+    "promptEn": "Scientific or technological progress by a certain year",
+    "sentence": {
+      "pre": "By 2040, doctors ",
+      "verb": "will have found",
+      "post": " a cure for several currently incurable diseases."
+    },
+    "difficulty": 3
+  },
+  {
+    "id": "future-perfect-21",
+    "answer": "future-perfect",
+    "type": "context",
+    "prompt": "Личный учебный или профессиональный рубеж к дате",
+    "promptEn": "A personal learning or professional milestone by a date",
+    "sentence": {
+      "pre": "By the end of the course, you ",
+      "verb": "will have learned",
+      "post": " over five hundred new words."
+    },
+    "difficulty": 3
+  },
+  {
+    "id": "future-perfect-22",
+    "answer": "future-perfect",
+    "type": "sentence",
+    "prompt": "Накопленный результат решений или усилий к дате",
+    "promptEn": "Accumulated result of decisions or efforts by a date",
+    "sentence": {
+      "pre": "If you save ten euros a day, by the end of the year you ",
+      "verb": "will have saved",
+      "post": " over three thousand euros."
+    },
+    "difficulty": 3
+  },
+  {
+    "id": "future-perfect-23",
+    "answer": "future-perfect",
+    "type": "context",
+    "prompt": "Строительство или инфраструктурный проект, завершённый к дате",
+    "promptEn": "A construction or infrastructure project completed by a date",
+    "sentence": {
+      "pre": "By 2026, the authorities ",
+      "verb": "will have opened",
+      "post": " four new metro stations."
+    },
+    "difficulty": 3
+  },
+  {
+    "id": "future-perfect-24",
+    "answer": "future-perfect",
+    "type": "sentence",
+    "prompt": "Завершённость действия к моменту встречи или разговора",
+    "promptEn": "Completion of an action by the time of a meeting or conversation",
+    "sentence": {
+      "pre": "By the time we sit down to discuss it, everyone ",
+      "verb": "will have read",
+      "post": " the proposal."
+    },
+    "difficulty": 3
+  },
+  {
+    "id": "future-perfect-25",
+    "answer": "future-perfect",
+    "type": "context",
+    "prompt": "Накопленный жизненный опыт или суммарное количество действий к возрасту",
+    "promptEn": "Accumulated life experience or total count of actions by a certain age",
+    "sentence": {
+      "pre": "By the age of eighty, the average person ",
+      "verb": "will have slept",
+      "post": " for nearly twenty-seven years."
+    },
+    "difficulty": 3
   }
 ]
