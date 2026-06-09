@@ -34,6 +34,12 @@ export const ROUTES: Routes = [
         loadComponent: () =>
           import('@pages/stats').then((m) => m.StatsPageComponent),
       },
+      {
+        path: 'daily',
+        title: 'Daily Challenge | Tenserium',
+        loadComponent: () =>
+          import('@pages/daily').then((m) => m.DailyPageComponent),
+      },
     ],
   },
   {

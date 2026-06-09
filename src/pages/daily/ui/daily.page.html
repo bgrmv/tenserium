@@ -1,0 +1,124 @@
+@if (isDoneToday() && todayResult(); as r) {
+  <div class="daily-wrap done">
+    <div class="done-header">
+      <app-icon name="flame" [size]="28" stroke="var(--warm)" />
+      <div>
+        <div class="done-title">Daily complete!</div>
+        <div class="done-sub">{{ today() }} · Streak: {{ streak() }} day{{ streak() === 1 ? '' : 's' }}</div>
+      </div>
+    </div>
+    <div class="done-stats">
+      <div class="stat"><span class="stat-val">{{ r.score }}</span><span class="stat-label">points</span></div>
+      <div class="stat"><span class="stat-val">{{ (r.accuracy * 100).toFixed(0) }}%</span><span class="stat-label">accuracy</span></div>
+      <div class="stat"><span class="stat-val">{{ r.correct }}/{{ r.total }}</span><span class="stat-label">correct</span></div>
+    </div>
+    <app-daily-share [result]="r" />
+    <button type="button" class="btn-exit" (click)="exit()">
+      <app-icon name="arrow-left" [size]="16" /> Back to home
+    </button>
+  </div>
+} @else if (status() === 'summary') {
+  <div class="daily-wrap results">
+    <app-session-summary
+      title="Daily Challenge"
+      tag="2× Points"
+      [score]="score()"
+      [accuracy]="summaryProps().accuracy"
+      [correct]="summaryProps().correct"
+      [total]="summaryProps().total"
+      [bestStreak]="summaryProps().bestStreak"
+      [forfeited]="forfeited()"
+      [board]="null"
+      [place]="1"
+      (again)="exit()"
+      (exit)="exit()"
+    />
+    @if (!forfeited() && todayResult(); as r) {
+      <app-daily-share [result]="r" />
+    }
+  </div>
+} @else if (isLoading()) {
+  <div class="daily-wrap loading">Loading daily questions…</div>
+} @else {
+  <div class="daily-wrap">
+    <div class="top">
+      <div class="hud-left">
+        <div class="streak-chip">
+          <app-icon name="flame" [size]="14" stroke="var(--warm)" />
+          <span>{{ streak() }}d streak</span>
+        </div>
+      </div>
+
+      <div class="hud-mid">
+        <div class="title-row">
+          <app-icon name="daily" [size]="16" />
+          <span class="title">Daily Challenge</span>
+          <span class="tag">2× Points</span>
+        </div>
+        <div class="counter">{{ today() }} · Question {{ progress().index + 1 }} / {{ progress().total }}</div>
+      </div>
+
+      <div class="hud-right">
+        <app-score-bar [score]="score()" [combo]="combo()" />
+        <button type="button" class="end" (click)="endSession()" title="End session (no daily credit)">
+          Give up
+        </button>
+      </div>
+    </div>
+
+    @if (question(); as q) {
+      <app-question-card
+        [prompt]="q.prompt"
+        [remainingMs]="remainingMs()"
+        [fraction]="fraction()"
+        [result]="result()"
+        [revealName]="revealName()"
+        [revealColor]="revealColor()"
+        [revealSentence]="result() !== 'none' ? q.sentence : null"
+        [gainedPoints]="gained()"
+      />
+
+      <div class="q-actions">
+        @if (result() === 'wrong' || result() === 'timeout') {
+          @if (revealId(); as id) {
+            <button type="button" class="btn-study" (click)="studyTense(id)">
+              <app-icon name="learn" [size]="15" /> Study {{ revealName() }}
+            </button>
+          }
+        }
+        <button
+          type="button"
+          class="btn-flag"
+          [disabled]="result() !== 'none'"
+          (click)="showReport.set(true)"
+          title="Report an error"
+        >
+          <app-icon name="flag" [size]="14" />
+        </button>
+      </div>
+    }
+
+    <app-answer-grid
+      palette="aspect"
+      [columns]="4"
+      [lockedIds]="[]"
+      [revealId]="revealId()"
+      [pickedId]="pickedId()"
+      [disabled]="result() !== 'none'"
+      (answer)="onAnswer($event)"
+    />
+
+    @if (toast(); as t) {
+      <div class="toast"><app-icon name="zap" [size]="14" stroke="none" /> {{ t }}</div>
+    }
+  </div>
+
+  @if (showReport() && question(); as q) {
+    <app-report-error
+      [questionId]="q.id"
+      [tenseId]="q.answer"
+      (dismiss)="showReport.set(false)"
+      (sent)="onReportSent()"
+    />
+  }
+}

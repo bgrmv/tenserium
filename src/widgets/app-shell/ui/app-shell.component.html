@@ -11,6 +11,15 @@
       <a class="rail-btn" routerLink="/stats" routerLinkActive="is-active" title="Stats" aria-label="Stats">
         <app-icon name="stats" [size]="20" />
       </a>
+      <a class="rail-btn daily-btn" routerLink="/daily" routerLinkActive="is-active" title="Daily Challenge" aria-label="Daily Challenge">
+        <app-icon name="flame" [size]="20" stroke="var(--warm)" />
+        @if (dailyStreak() > 0) {
+          <span class="streak-dot">{{ dailyStreak() }}</span>
+        }
+        @if (dailyDone()) {
+          <span class="done-dot"></span>
+        }
+      </a>
     </div>
     <button type="button" class="rail-btn foot" title="Sign out" aria-label="Sign out">
       <app-icon name="logout" [size]="19" />
@@ -27,6 +36,10 @@
         <a routerLink="/home" routerLinkActive="is-active">Trainer</a>
         <a routerLink="/learn" routerLinkActive="is-active">Learn</a>
         <a routerLink="/stats" routerLinkActive="is-active">Stats</a>
+        <a routerLink="/daily" routerLinkActive="is-active" class="daily-link">
+          <app-icon name="flame" [size]="14" stroke="var(--warm)" />Daily
+          @if (dailyDone()) { <span class="done-badge">✓</span> }
+        </a>
       </nav>
       <div class="right">
         <button type="button" class="icon-chip" aria-label="Notifications">

@@ -1,0 +1,17 @@
+<div class="share-card">
+  <canvas #canvas class="preview-canvas"></canvas>
+
+  <div class="emoji-pattern">{{ emojiPattern() }}</div>
+
+  <div class="actions">
+    @if (canShare()) {
+      <button type="button" class="btn-share" (click)="share()">
+        <app-icon name="share" [size]="16" /> Share result
+      </button>
+    }
+    <button type="button" class="btn-copy" (click)="copy()">
+      <app-icon [name]="copied() ? 'check' : 'copy'" [size]="16" />
+      {{ copied() ? 'Copied!' : 'Copy text' }}
+    </button>
+  </div>
+</div>

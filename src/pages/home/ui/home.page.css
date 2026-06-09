@@ -31,6 +31,10 @@
 .daily-badge { width: 40px; height: 40px; border-radius: 11px; display: grid; place-items: center; background: oklch(0.8 0.13 62 / 0.14); }
 .daily-title { font-weight: 600; font-size: 15px; }
 .daily-sub { font-size: 12.5px; color: var(--muted); margin-top: 2px; }
+.done-text { color: oklch(0.75 0.14 62); }
+.daily-done { background: linear-gradient(90deg, oklch(0.8 0.13 62 / 0.06), transparent); opacity: 0.9; }
+.btn-primary.sm.outline { background: none; border: 1px solid var(--line-2); color: var(--dim); }
+.btn-primary.sm.outline:hover { background: var(--bg-2); color: var(--text); }
 
 .rail-card { background: var(--bg-1); border: 1px solid var(--line); border-radius: 16px; padding: 18px; }
 .profile-card { text-align: center; display: flex; flex-direction: column; align-items: center; }

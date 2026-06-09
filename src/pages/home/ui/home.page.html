@@ -16,15 +16,23 @@
       />
     </div>
 
-    <div class="daily">
+    <div class="daily" [class.daily-done]="dailyDone()">
       <div class="daily-left">
         <div class="daily-badge"><app-icon name="flame" [size]="18" stroke="var(--warm)" /></div>
         <div>
           <div class="daily-title">Daily Challenge</div>
-          <div class="daily-sub">10 questions · Perfect tenses focus · 2× points</div>
+          @if (dailyDone()) {
+            <div class="daily-sub done-text">Completed today · Streak: {{ dailyStreak() }} day{{ dailyStreak() === 1 ? '' : 's' }} 🔥</div>
+          } @else {
+            <div class="daily-sub">15 questions · All tenses · 2× points</div>
+          }
         </div>
       </div>
-      <button type="button" class="btn-primary sm" (click)="start('daily')">Accept</button>
+      @if (dailyDone()) {
+        <a routerLink="/daily" class="btn-primary sm outline">View result</a>
+      } @else {
+        <a routerLink="/daily" class="btn-primary sm">Accept</a>
+      }
     </div>
   </div>
 

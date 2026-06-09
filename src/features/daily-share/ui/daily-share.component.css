@@ -1,0 +1,56 @@
+.share-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.preview-canvas {
+  width: 100%;
+  max-width: 480px;
+  height: auto;
+  border-radius: 12px;
+  border: 1px solid var(--line);
+}
+
+.emoji-pattern {
+  font-size: 20px;
+  letter-spacing: 2px;
+  word-break: break-all;
+  text-align: center;
+  max-width: 480px;
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.btn-share,
+.btn-copy {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 11px 22px;
+  border-radius: 11px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.14s;
+}
+
+.btn-share {
+  background: var(--accent);
+  color: #fff;
+  border: none;
+}
+.btn-share:hover { filter: brightness(1.1); }
+
+.btn-copy {
+  background: none;
+  border: 1px solid var(--line-2);
+  color: var(--dim);
+}
+.btn-copy:hover { background: var(--bg-2); color: var(--text); }

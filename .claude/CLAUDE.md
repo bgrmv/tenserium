@@ -128,7 +128,7 @@ Check it before starting any work to understand current status and what's next.
 - **TypeScript 6.0.3**, target `ESNext`; Vitest runner via `@angular/build:unit-test`
 - **177 tests passing** (Vitest); `vitest/globals` scoped to `tsconfig.spec.json`
 - No backend, no auth, no database — all storage via `StorageService` (localStorage)
-- Deployed to GitHub Pages via `actions/deploy-pages`; SSR disabled until Phase 8 (Netlify)
+- Deployed to GitHub Pages via `actions/deploy-pages`; SSR disabled until Phase 9 (Netlify)
 
 ### Phases complete
 
@@ -140,7 +140,10 @@ Check it before starting any work to understand current status and what's next.
 | 4 | Design system + Game Engine | Full game loop, 87 questions, scoring, hotkeys |
 | 5 | Tests | 90 unit tests for game engine + normal mode |
 | 6 | Onboarding | Demo + 5-question sample + save-prompt; 66 tests |
-| 7 | Learn pages | `LearnDetailComponent`, 5 priority tenses with content, report-error modal, "Study this tense" button on wrong answer |
+| 7 | Learn pages | `LearnDetailComponent`, all 12 tenses with content, report-error modal |
+| 8 | Daily Challenge | Date-seeded LCG deck, DailyStore streak, `/daily` page, Canvas share card |
+
+### Next: Phase 9 — Backend: Netlify + Supabase + Auth
 
 ### Next: Phase 8 — Daily Challenge (Browser API, date-seeded)
 

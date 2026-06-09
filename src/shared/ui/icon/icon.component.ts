@@ -4,7 +4,7 @@ export type IconName =
   | 'trainer' | 'learn' | 'stats' | 'logout' | 'bell' | 'gear' | 'lock'
   | 'play' | 'flame' | 'shield' | 'trophy' | 'arrow-right' | 'arrow-left' | 'zap'
   | 'check' | 'clock' | 'bolt' | 'repeat' | 'globe' | 'calendar' | 'squad'
-  | 'flag' | 'list';
+  | 'flag' | 'list' | 'share' | 'copy' | 'daily';
 
 const PATHS: Record<IconName, string> = {
   trainer: 'M6 12a6 6 0 0 1 12 0 M9 12h6 M12 9v6 M3 12h2 M19 12h2',
@@ -22,6 +22,9 @@ const PATHS: Record<IconName, string> = {
   'arrow-left': 'M19 12H5 M11 18l-6-6 6-6',
   flag: 'M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z M4 22v-7',
   list: 'M8 6h13 M8 12h13 M8 18h13 M3 6h.01 M3 12h.01 M3 18h.01',
+  share: 'M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8 M16 6l-4-4-4 4 M12 2v13',
+  copy: 'M8 4H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-2 M8 4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2H8z',
+  daily: 'M8 2v3 M16 2v3 M3 7h18 M5 4h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z M8 12h4 M8 16h8',
   zap: 'M13 3 5 14h5l-1 7 8-11h-5z',
   check: 'M5 12l4 4 10-10',
   clock: 'M12 3a9 9 0 1 0 0 18 9 9 0 0 0 0-18 M12 7v5l3 3',
