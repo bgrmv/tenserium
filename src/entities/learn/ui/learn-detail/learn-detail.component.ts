@@ -2,6 +2,7 @@ import {
   ChangeDetectionStrategy,
   Component,
   computed,
+  effect,
   inject,
   input,
   output,
@@ -31,10 +32,13 @@ export class LearnDetailComponent {
 
   protected readonly tense = computed(() => getTense(this.tenseId()));
   protected readonly color = computed(() => tenseColor(this.tense(), this.palette()));
-  protected readonly content = computed(() => {
-    this.repo.tenseId.set(this.tenseId());
-    return this.repo.content;
-  });
+  protected readonly content = this.repo.content;
+
+  constructor() {
+    effect(() => {
+      this.repo.tenseId.set(this.tenseId());
+    });
+  }
 
   protected readonly prevId = computed<TenseId | null>(() => {
     const order = this.tense().order;

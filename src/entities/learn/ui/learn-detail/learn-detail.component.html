@@ -5,9 +5,9 @@
   </div>
   <h1 class="title" [style.color]="color()">{{ tense().name }}</h1>
 
-  @if (content().isLoading()) {
+  @if (content.isLoading()) {
     <div class="muted">Loading…</div>
-  } @else if (content().value(); as c) {
+  } @else if (content.value(); as c) {
     <div class="cols">
       <div class="col-main">
 

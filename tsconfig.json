@@ -2,7 +2,6 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
-    "ignoreDeprecations": "6.0",
     "baseUrl": "./",
     "outDir": "./dist/out-tsc",
     "strict": true,
@@ -17,7 +16,7 @@
     "experimentalDecorators": true,
     "moduleResolution": "bundler",
     "importHelpers": true,
-    "target": "ES2025",
+    "target": "ESNext",
     "module": "ES2022",
     "useDefineForClassFields": false,
     "resolveJsonModule": true,
@@ -30,6 +29,7 @@
       "@shared/*": ["src/shared/*"]
     }
   },
+  "exclude": ["**/*.spec.ts"],
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,
     "strictInjectionParameters": true,
