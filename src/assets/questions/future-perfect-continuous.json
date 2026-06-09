@@ -16,8 +16,8 @@
     "id": "future-perfect-continuous-02",
     "answer": "future-perfect-continuous",
     "type": "sentence",
-    "prompt": "Длительность действия в определённый момент будущего",
-    "promptEn": "The duration of an action at a specific future moment",
+    "prompt": "Длительность ожидания к определённому моменту в будущем",
+    "promptEn": "The duration of waiting up to a specific future moment",
     "sentence": {
       "pre": "By the time you arrive, I ",
       "verb": "will have been waiting",
@@ -29,8 +29,8 @@
     "id": "future-perfect-continuous-03",
     "answer": "future-perfect-continuous",
     "type": "context",
-    "prompt": "Ожидаемая длительность работы/процесса к определённому времени",
-    "promptEn": "Expected duration of work or process by a future time",
+    "prompt": "Ожидаемая длительность работы или процесса к определённому времени",
+    "promptEn": "Expected duration of work or a process by a future time",
     "sentence": {
       "pre": "By next year, they ",
       "verb": "will have been building",
@@ -42,7 +42,7 @@
     "id": "future-perfect-continuous-04",
     "answer": "future-perfect-continuous",
     "type": "sentence",
-    "prompt": "Сколько времени прошло при наступлении будущего события",
+    "prompt": "Сколько времени пройдёт при наступлении будущего события",
     "promptEn": "How much time will have passed when a future event occurs",
     "sentence": {
       "pre": "When she retires, she ",
@@ -56,11 +56,141 @@
     "answer": "future-perfect-continuous",
     "type": "context",
     "prompt": "Временной промежуток к определённому моменту в будущем",
-    "promptEn": "The time span by a certain future moment",
+    "promptEn": "The time span accumulated by a certain future moment",
     "sentence": {
       "pre": "By the time we meet, I ",
       "verb": "will have been studying",
       "post": " this subject for six months."
+    },
+    "difficulty": 3
+  },
+  {
+    "id": "future-perfect-continuous-06",
+    "answer": "future-perfect-continuous",
+    "type": "sentence",
+    "prompt": "Длительность отношений или знакомства к определённой дате",
+    "promptEn": "Duration of a relationship or acquaintance by a certain date",
+    "sentence": {
+      "pre": "By this autumn, we ",
+      "verb": "will have been dating",
+      "post": " for three years."
+    },
+    "difficulty": 3
+  },
+  {
+    "id": "future-perfect-continuous-07",
+    "answer": "future-perfect-continuous",
+    "type": "context",
+    "prompt": "Накопленная усталость или истощение к будущему моменту",
+    "promptEn": "Accumulated tiredness or exhaustion by a future moment",
+    "sentence": {
+      "pre": "By Friday, I ",
+      "verb": "will have been working",
+      "post": " twelve-hour days all week."
+    },
+    "difficulty": 3
+  },
+  {
+    "id": "future-perfect-continuous-08",
+    "answer": "future-perfect-continuous",
+    "type": "sentence",
+    "prompt": "Вопрос о продолжительности деятельности к будущей дате",
+    "promptEn": "A question about the duration of activity by a future date",
+    "sentence": {
+      "pre": "How long ",
+      "verb": "will you have been working",
+      "post": " here by next January?"
+    },
+    "difficulty": 3
+  },
+  {
+    "id": "future-perfect-continuous-09",
+    "answer": "future-perfect-continuous",
+    "type": "context",
+    "prompt": "Профессиональный стаж к моменту выхода на пенсию или юбилею",
+    "promptEn": "Professional tenure by retirement or an anniversary",
+    "sentence": {
+      "pre": "By the time the company turns twenty, he ",
+      "verb": "will have been managing",
+      "post": " it for fifteen years."
+    },
+    "difficulty": 3
+  },
+  {
+    "id": "future-perfect-continuous-10",
+    "answer": "future-perfect-continuous",
+    "type": "sentence",
+    "prompt": "Отрицание: действие не будет длиться так долго к дате",
+    "promptEn": "Negation: an action won't have lasted that long by a date",
+    "sentence": {
+      "pre": "By then, I ",
+      "verb": "won't have been learning",
+      "post": " the language long enough to speak fluently."
+    },
+    "difficulty": 3
+  },
+  {
+    "id": "future-perfect-continuous-11",
+    "answer": "future-perfect-continuous",
+    "type": "context",
+    "prompt": "Продолжительность творческой или научной работы к дате публикации",
+    "promptEn": "Duration of creative or academic work by a publication date",
+    "sentence": {
+      "pre": "When the book comes out, the author ",
+      "verb": "will have been writing",
+      "post": " it for five years."
+    },
+    "difficulty": 3
+  },
+  {
+    "id": "future-perfect-continuous-12",
+    "answer": "future-perfect-continuous",
+    "type": "sentence",
+    "prompt": "Длительность тренировок или занятий к соревнованию или экзамену",
+    "promptEn": "Duration of training or practice by a competition or exam",
+    "sentence": {
+      "pre": "By the time of the final, the players ",
+      "verb": "will have been training",
+      "post": " together for six months."
+    },
+    "difficulty": 3
+  },
+  {
+    "id": "future-perfect-continuous-13",
+    "answer": "future-perfect-continuous",
+    "type": "context",
+    "prompt": "Технический процесс или оборудование, работающее в течение периода",
+    "promptEn": "A technical process or equipment running throughout a period",
+    "sentence": {
+      "pre": "By the end of the mission, the rover ",
+      "verb": "will have been operating",
+      "post": " on Mars for ten years."
+    },
+    "difficulty": 3
+  },
+  {
+    "id": "future-perfect-continuous-14",
+    "answer": "future-perfect-continuous",
+    "type": "sentence",
+    "prompt": "Ожидаемое накопление длительности к моменту события",
+    "promptEn": "Expected accumulation of duration by the time an event occurs",
+    "sentence": {
+      "pre": "When the semester ends, students ",
+      "verb": "will have been attending",
+      "post": " classes for four months."
+    },
+    "difficulty": 3
+  },
+  {
+    "id": "future-perfect-continuous-15",
+    "answer": "future-perfect-continuous",
+    "type": "context",
+    "prompt": "Накопленная продолжительность непрерывного путешествия или процесса",
+    "promptEn": "Accumulated duration of an uninterrupted journey or process",
+    "sentence": {
+      "pre": "By the time we reach the destination, we ",
+      "verb": "will have been driving",
+      "post": " for over twelve hours."
     },
     "difficulty": 3
   }

@@ -16,8 +16,8 @@
     "id": "past-perfect-continuous-02",
     "answer": "past-perfect-continuous",
     "type": "sentence",
-    "prompt": "Результат длительного действия, объясняющий прошлое событие",
-    "promptEn": "A result of a long action that explains a past event",
+    "prompt": "Результат длительного действия, объясняющий прошлое состояние",
+    "promptEn": "A result of prolonged action explaining a past state",
     "sentence": {
       "pre": "He was exhausted because he ",
       "verb": "had been working",
@@ -61,6 +61,136 @@
       "pre": "When the fire started, it ",
       "verb": "had been burning",
       "post": " undetected for hours."
+    },
+    "difficulty": 3
+  },
+  {
+    "id": "past-perfect-continuous-06",
+    "answer": "past-perfect-continuous",
+    "type": "sentence",
+    "prompt": "Видимый результат в прошлом от предшествующей длительной деятельности",
+    "promptEn": "A visible past result of a prior prolonged activity",
+    "sentence": {
+      "pre": "Her hands were sore because she ",
+      "verb": "had been typing",
+      "post": " all day."
+    },
+    "difficulty": 3
+  },
+  {
+    "id": "past-perfect-continuous-07",
+    "answer": "past-perfect-continuous",
+    "type": "context",
+    "prompt": "Длительная деятельность, объясняющая усталость в прошлом",
+    "promptEn": "Prolonged activity explaining fatigue at a past moment",
+    "sentence": {
+      "pre": "She fell asleep immediately because she ",
+      "verb": "had been travelling",
+      "post": " for twenty hours."
+    },
+    "difficulty": 3
+  },
+  {
+    "id": "past-perfect-continuous-08",
+    "answer": "past-perfect-continuous",
+    "type": "sentence",
+    "prompt": "Продолжительность деятельности к моменту прерывания в прошлом",
+    "promptEn": "Duration of an activity up to the moment it was interrupted",
+    "sentence": {
+      "pre": "By the time they stopped, they ",
+      "verb": "had been arguing",
+      "post": " for over an hour."
+    },
+    "difficulty": 3
+  },
+  {
+    "id": "past-perfect-continuous-09",
+    "answer": "past-perfect-continuous",
+    "type": "context",
+    "prompt": "Нереализованное условие в прошлом с акцентом на длительности",
+    "promptEn": "An unrealized past condition emphasizing the duration of effort",
+    "sentence": {
+      "pre": "If he ",
+      "verb": "had been training",
+      "post": " properly, he wouldn't have been injured."
+    },
+    "difficulty": 3
+  },
+  {
+    "id": "past-perfect-continuous-10",
+    "answer": "past-perfect-continuous",
+    "type": "sentence",
+    "prompt": "Процесс, который шёл в прошлом и был прерван другим событием",
+    "promptEn": "A process going on in the past and interrupted by another event",
+    "sentence": {
+      "pre": "We ",
+      "verb": "had been waiting",
+      "post": " for an hour when the bus finally came."
+    },
+    "difficulty": 3
+  },
+  {
+    "id": "past-perfect-continuous-11",
+    "answer": "past-perfect-continuous",
+    "type": "context",
+    "prompt": "Повторяющееся действие в прошлом, ставшее источником раздражения",
+    "promptEn": "A repeated past action that had become a source of irritation",
+    "sentence": {
+      "pre": "She was tired of him because he ",
+      "verb": "had been making",
+      "post": " the same mistake over and over."
+    },
+    "difficulty": 3
+  },
+  {
+    "id": "past-perfect-continuous-12",
+    "answer": "past-perfect-continuous",
+    "type": "sentence",
+    "prompt": "Длительность работы над проектом к моменту его завершения",
+    "promptEn": "Duration of work on a project up to the time it was completed",
+    "sentence": {
+      "pre": "When the app launched, the team ",
+      "verb": "had been developing",
+      "post": " it for three years."
+    },
+    "difficulty": 3
+  },
+  {
+    "id": "past-perfect-continuous-13",
+    "answer": "past-perfect-continuous",
+    "type": "context",
+    "prompt": "Скрытая длительная деятельность, вскрывшаяся в прошлом",
+    "promptEn": "A hidden prolonged activity that came to light in the past",
+    "sentence": {
+      "pre": "We discovered that someone ",
+      "verb": "had been using",
+      "post": " our account without permission."
+    },
+    "difficulty": 3
+  },
+  {
+    "id": "past-perfect-continuous-14",
+    "answer": "past-perfect-continuous",
+    "type": "sentence",
+    "prompt": "Ощущение или состояние в прошлом, накопившееся за период",
+    "promptEn": "A feeling or state in the past accumulated over a period",
+    "sentence": {
+      "pre": "He looked pale because he ",
+      "verb": "had been sleeping",
+      "post": " badly for weeks."
+    },
+    "difficulty": 3
+  },
+  {
+    "id": "past-perfect-continuous-15",
+    "answer": "past-perfect-continuous",
+    "type": "context",
+    "prompt": "Отрицание: действие, которого не было до события в прошлом",
+    "promptEn": "Negation: an action not in progress before a past event",
+    "sentence": {
+      "pre": "Before the accident, she ",
+      "verb": "hadn't been wearing",
+      "post": " a helmet."
     },
     "difficulty": 3
   }

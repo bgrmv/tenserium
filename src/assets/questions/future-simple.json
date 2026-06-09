@@ -68,8 +68,8 @@
     "id": "future-simple-06",
     "answer": "future-simple",
     "type": "sentence",
-    "prompt": "Условное будущее действие",
-    "promptEn": "A conditional future action",
+    "prompt": "Условное будущее действие (первый кондиционал)",
+    "promptEn": "A conditional future action (first conditional)",
     "sentence": {
       "pre": "If you study hard, you ",
       "verb": "will pass",
@@ -81,8 +81,8 @@
     "id": "future-simple-07",
     "answer": "future-simple",
     "type": "context",
-    "prompt": "Общее предсказание или ожидание",
-    "promptEn": "A general prediction or expectation",
+    "prompt": "Общее предсказание или ожидание о будущем",
+    "promptEn": "A general prediction or expectation about the future",
     "sentence": {
       "pre": "Technology ",
       "verb": "will change",
@@ -94,8 +94,8 @@
     "id": "future-simple-08",
     "answer": "future-simple",
     "type": "sentence",
-    "prompt": "Будущее действие, которое уже было спланировано",
-    "promptEn": "A future action that has been planned",
+    "prompt": "Будущее действие, которое ещё не было спланировано",
+    "promptEn": "A future action decided spontaneously",
     "sentence": {
       "pre": "We ",
       "verb": "will travel",
@@ -120,13 +120,143 @@
     "id": "future-simple-10",
     "answer": "future-simple",
     "type": "sentence",
-    "prompt": "Угроза или предупреждение о будущем",
-    "promptEn": "A threat or warning about the future",
+    "prompt": "Угроза или предупреждение о будущих последствиях",
+    "promptEn": "A threat or warning about future consequences",
     "sentence": {
       "pre": "If you don't leave now, you ",
       "verb": "will be",
       "post": " late for school."
     },
     "difficulty": 2
+  },
+  {
+    "id": "future-simple-11",
+    "answer": "future-simple",
+    "type": "sentence",
+    "prompt": "Категорический отказ что-либо делать",
+    "promptEn": "A categorical refusal to do something",
+    "sentence": {
+      "pre": "I ",
+      "verb": "won't apologise",
+      "post": " — I did nothing wrong."
+    },
+    "difficulty": 2
+  },
+  {
+    "id": "future-simple-12",
+    "answer": "future-simple",
+    "type": "context",
+    "prompt": "Прогноз или предсказание о климате или природе",
+    "promptEn": "A forecast or prediction about climate or nature",
+    "sentence": {
+      "pre": "Scientists say sea levels ",
+      "verb": "will rise",
+      "post": " by two metres this century."
+    },
+    "difficulty": 2
+  },
+  {
+    "id": "future-simple-13",
+    "answer": "future-simple",
+    "type": "sentence",
+    "prompt": "Условие с 'unless': что произойдёт без изменений",
+    "promptEn": "Conditional with 'unless': what happens if nothing changes",
+    "sentence": {
+      "pre": "Unless you hurry, you ",
+      "verb": "will miss",
+      "post": " the bus."
+    },
+    "difficulty": 2
+  },
+  {
+    "id": "future-simple-14",
+    "answer": "future-simple",
+    "type": "context",
+    "prompt": "Спонтанное предложение помочь в конкретной ситуации",
+    "promptEn": "A spontaneous offer to help in a specific situation",
+    "sentence": {
+      "pre": "That bag looks heavy — I ",
+      "verb": "will carry",
+      "post": " it for you."
+    },
+    "difficulty": 2
+  },
+  {
+    "id": "future-simple-15",
+    "answer": "future-simple",
+    "type": "sentence",
+    "prompt": "Уверенность в будущем результате",
+    "promptEn": "Confidence or certainty about a future outcome",
+    "sentence": {
+      "pre": "I'm sure you ",
+      "verb": "will do",
+      "post": " well in the interview."
+    },
+    "difficulty": 2
+  },
+  {
+    "id": "future-simple-16",
+    "answer": "future-simple",
+    "type": "context",
+    "prompt": "Страдательный залог о будущем событии",
+    "promptEn": "Passive voice about a future event",
+    "sentence": {
+      "pre": "The new bridge ",
+      "verb": "will be built",
+      "post": " by the end of the decade."
+    },
+    "difficulty": 3
+  },
+  {
+    "id": "future-simple-17",
+    "answer": "future-simple",
+    "type": "sentence",
+    "prompt": "Формальное утверждение о будущем в письме или документе",
+    "promptEn": "Formal statement about the future in a letter or document",
+    "sentence": {
+      "pre": "The committee ",
+      "verb": "will review",
+      "post": " all applications by the end of the month."
+    },
+    "difficulty": 3
+  },
+  {
+    "id": "future-simple-18",
+    "answer": "future-simple",
+    "type": "context",
+    "prompt": "Предсказание о будущем развитии событий в аналитическом тексте",
+    "promptEn": "A prediction about future developments in an analytical text",
+    "sentence": {
+      "pre": "Analysts believe the economy ",
+      "verb": "will recover",
+      "post": " fully within two years."
+    },
+    "difficulty": 3
+  },
+  {
+    "id": "future-simple-19",
+    "answer": "future-simple",
+    "type": "sentence",
+    "prompt": "Вопрос с 'will' о будущих планах или намерениях",
+    "promptEn": "A question with 'will' about future plans or intentions",
+    "sentence": {
+      "pre": "When ",
+      "verb": "will",
+      "post": " you finish the report?"
+    },
+    "difficulty": 2
+  },
+  {
+    "id": "future-simple-20",
+    "answer": "future-simple",
+    "type": "context",
+    "prompt": "Убеждение или уверенность в неизбежном развитии событий",
+    "promptEn": "Belief or certainty about how events will develop",
+    "sentence": {
+      "pre": "One day people ",
+      "verb": "will travel",
+      "post": " to other planets."
+    },
+    "difficulty": 3
   }
 ]

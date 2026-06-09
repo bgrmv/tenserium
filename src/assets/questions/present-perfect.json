@@ -42,11 +42,11 @@
     "id": "present-perfect-04",
     "answer": "present-perfect",
     "type": "sentence",
-    "prompt": "Недавнее действие с неуказанным временем",
-    "promptEn": "A recent action with no time mentioned",
+    "prompt": "Недавнее действие с маркером 'just'",
+    "promptEn": "A recent action with the marker 'just'",
     "sentence": {
-      "pre": "I just ",
-      "verb": "have finished",
+      "pre": "I ",
+      "verb": "have just finished",
       "post": " my homework."
     },
     "difficulty": 2
@@ -55,8 +55,8 @@
     "id": "present-perfect-05",
     "answer": "present-perfect",
     "type": "context",
-    "prompt": "Число раз, которое что-то происходило",
-    "promptEn": "The number of times something has happened",
+    "prompt": "Число раз, которое что-то происходило в жизни",
+    "promptEn": "The number of times something has happened in one's life",
     "sentence": {
       "pre": "How many times ",
       "verb": "have you been",
@@ -68,8 +68,8 @@
     "id": "present-perfect-06",
     "answer": "present-perfect",
     "type": "sentence",
-    "prompt": "Наличие опыта или умения в жизни",
-    "promptEn": "Having experience or ability in life",
+    "prompt": "Отсутствие опыта (never) в жизни до настоящего момента",
+    "promptEn": "Lack of experience (never) in life up to the present",
     "sentence": {
       "pre": "I ",
       "verb": "have never tried",
@@ -81,7 +81,7 @@
     "id": "present-perfect-07",
     "answer": "present-perfect",
     "type": "context",
-    "prompt": "Многократное действие, которое произошло в прошлом",
+    "prompt": "Многократное действие, которое происходило в прошлом",
     "promptEn": "A repeated action that has happened in the past",
     "sentence": {
       "pre": "We ",
@@ -95,11 +95,102 @@
     "answer": "present-perfect",
     "type": "sentence",
     "prompt": "Изменение состояния от прошлого к настоящему",
-    "promptEn": "A change from past to present",
+    "promptEn": "A change from past state to the present",
     "sentence": {
       "pre": "The situation ",
       "verb": "has improved",
       "post": " significantly."
+    },
+    "difficulty": 3
+  },
+  {
+    "id": "present-perfect-09",
+    "answer": "present-perfect",
+    "type": "sentence",
+    "prompt": "Действие, завершённое к настоящему с маркером 'already'",
+    "promptEn": "An action completed by now with the marker 'already'",
+    "sentence": {
+      "pre": "Don't tell me the ending — I ",
+      "verb": "have already seen",
+      "post": " this film."
+    },
+    "difficulty": 2
+  },
+  {
+    "id": "present-perfect-10",
+    "answer": "present-perfect",
+    "type": "context",
+    "prompt": "Вопрос о завершённости с маркером 'yet'",
+    "promptEn": "A question about completion using the marker 'yet'",
+    "sentence": {
+      "pre": "Have you ",
+      "verb": "packed",
+      "post": " your suitcase yet?"
+    },
+    "difficulty": 2
+  },
+  {
+    "id": "present-perfect-11",
+    "answer": "present-perfect",
+    "type": "sentence",
+    "prompt": "Продолжительность действия с предлогом 'since'",
+    "promptEn": "Duration of an action using 'since'",
+    "sentence": {
+      "pre": "She ",
+      "verb": "has lived",
+      "post": " here since 2015."
+    },
+    "difficulty": 2
+  },
+  {
+    "id": "present-perfect-12",
+    "answer": "present-perfect",
+    "type": "context",
+    "prompt": "Объявление о новости или событии",
+    "promptEn": "An announcement about recent news or an event",
+    "sentence": {
+      "pre": "Scientists ",
+      "verb": "have discovered",
+      "post": " a new species of deep-sea fish."
+    },
+    "difficulty": 3
+  },
+  {
+    "id": "present-perfect-13",
+    "answer": "present-perfect",
+    "type": "sentence",
+    "prompt": "Превосходная степень прилагательного в сочетании с 'ever'",
+    "promptEn": "A superlative adjective used together with 'ever'",
+    "sentence": {
+      "pre": "This is the best meal I ",
+      "verb": "have ever had",
+      "post": "."
+    },
+    "difficulty": 3
+  },
+  {
+    "id": "present-perfect-14",
+    "answer": "present-perfect",
+    "type": "context",
+    "prompt": "Видимый сейчас результат прошлого действия",
+    "promptEn": "A visible present result of a past action",
+    "sentence": {
+      "pre": "Look — someone ",
+      "verb": "has broken",
+      "post": " the window."
+    },
+    "difficulty": 3
+  },
+  {
+    "id": "present-perfect-15",
+    "answer": "present-perfect",
+    "type": "sentence",
+    "prompt": "Отрицание прошлого события без указания точного времени",
+    "promptEn": "Denying a past event without stating the exact time",
+    "sentence": {
+      "pre": "I ",
+      "verb": "haven't heard",
+      "post": " from him since last year."
     },
     "difficulty": 3
   }

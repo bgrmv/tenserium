@@ -42,8 +42,8 @@
     "id": "present-perfect-continuous-04",
     "answer": "present-perfect-continuous",
     "type": "sentence",
-    "prompt": "Временное состояние, которое длится некоторое время",
-    "promptEn": "A temporary condition lasting for some time",
+    "prompt": "Действие, которое началось давно и продолжается по сей день",
+    "promptEn": "An action started long ago and continuing to the present",
     "sentence": {
       "pre": "I ",
       "verb": "have been living",
@@ -56,7 +56,7 @@
     "answer": "present-perfect-continuous",
     "type": "context",
     "prompt": "Повторяющееся действие, которое продолжается в настоящий период",
-    "promptEn": "A repeated action that continues in the current period",
+    "promptEn": "A repeated action that continues throughout the current period",
     "sentence": {
       "pre": "He ",
       "verb": "has been calling",
@@ -74,6 +74,123 @@
       "pre": "The company ",
       "verb": "has been growing",
       "post": " steadily for years."
+    },
+    "difficulty": 3
+  },
+  {
+    "id": "present-perfect-continuous-07",
+    "answer": "present-perfect-continuous",
+    "type": "context",
+    "prompt": "Вопрос о продолжительности текущего действия",
+    "promptEn": "A question about how long a current action has been going on",
+    "sentence": {
+      "pre": "How long ",
+      "verb": "have you been waiting",
+      "post": "?"
+    },
+    "difficulty": 3
+  },
+  {
+    "id": "present-perfect-continuous-08",
+    "answer": "present-perfect-continuous",
+    "type": "sentence",
+    "prompt": "Физический признак или усталость как результат продолжительной работы",
+    "promptEn": "Physical sign or tiredness as a result of prolonged activity",
+    "sentence": {
+      "pre": "His eyes are red because he ",
+      "verb": "has been staring",
+      "post": " at a screen all day."
+    },
+    "difficulty": 3
+  },
+  {
+    "id": "present-perfect-continuous-09",
+    "answer": "present-perfect-continuous",
+    "type": "context",
+    "prompt": "Деятельность, продолжающаяся на протяжении последнего времени",
+    "promptEn": "An activity ongoing over the recent past period",
+    "sentence": {
+      "pre": "For the past week, she ",
+      "verb": "has been learning",
+      "post": " to drive."
+    },
+    "difficulty": 3
+  },
+  {
+    "id": "present-perfect-continuous-10",
+    "answer": "present-perfect-continuous",
+    "type": "sentence",
+    "prompt": "Жалоба на чьё-то повторяющееся поведение в последнее время",
+    "promptEn": "Complaint about someone's repeated behaviour lately",
+    "sentence": {
+      "pre": "You ",
+      "verb": "have been forgetting",
+      "post": " your homework every single day this week!"
+    },
+    "difficulty": 3
+  },
+  {
+    "id": "present-perfect-continuous-11",
+    "answer": "present-perfect-continuous",
+    "type": "context",
+    "prompt": "Незавершённое действие, результат которого ещё не достигнут",
+    "promptEn": "An unfinished action whose result has not yet been achieved",
+    "sentence": {
+      "pre": "I ",
+      "verb": "have been trying",
+      "post": " to fix this bug for hours."
+    },
+    "difficulty": 3
+  },
+  {
+    "id": "present-perfect-continuous-12",
+    "answer": "present-perfect-continuous",
+    "type": "sentence",
+    "prompt": "Продолжительное действие с маркером 'since' и точкой отсчёта",
+    "promptEn": "A continuous action with 'since' and a reference point",
+    "sentence": {
+      "pre": "They ",
+      "verb": "have been arguing",
+      "post": " since this morning."
+    },
+    "difficulty": 3
+  },
+  {
+    "id": "present-perfect-continuous-13",
+    "answer": "present-perfect-continuous",
+    "type": "context",
+    "prompt": "Постепенное изменение или развитие ситуации с течением времени",
+    "promptEn": "A gradual change or development over time",
+    "sentence": {
+      "pre": "The climate ",
+      "verb": "has been warming",
+      "post": " at an alarming rate."
+    },
+    "difficulty": 3
+  },
+  {
+    "id": "present-perfect-continuous-14",
+    "answer": "present-perfect-continuous",
+    "type": "sentence",
+    "prompt": "Недавняя деятельность, которая объясняет текущее состояние человека",
+    "promptEn": "Recent activity that explains a person's current state",
+    "sentence": {
+      "pre": "She smells of paint because she ",
+      "verb": "has been decorating",
+      "post": " her flat."
+    },
+    "difficulty": 3
+  },
+  {
+    "id": "present-perfect-continuous-15",
+    "answer": "present-perfect-continuous",
+    "type": "context",
+    "prompt": "Профессиональная или творческая деятельность, продолжающаяся в течение периода",
+    "promptEn": "Professional or creative work ongoing throughout a period",
+    "sentence": {
+      "pre": "He ",
+      "verb": "has been writing",
+      "post": " his memoirs for the past two years."
     },
     "difficulty": 3
   }

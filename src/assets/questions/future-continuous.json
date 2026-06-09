@@ -16,7 +16,7 @@
     "id": "future-continuous-02",
     "answer": "future-continuous",
     "type": "context",
-    "prompt": "Ожидаемое длительное действие в будущем",
+    "prompt": "Ожидаемое длительное действие в определённый момент будущего",
     "promptEn": "Something expected to be ongoing at a future moment",
     "sentence": {
       "pre": "At 8 pm they ",
@@ -43,7 +43,7 @@
     "answer": "future-continuous",
     "type": "sentence",
     "prompt": "Длительное действие, которое будет происходить в определённый период",
-    "promptEn": "A long action happening during a specific period",
+    "promptEn": "A long action happening during a specific future period",
     "sentence": {
       "pre": "Next week, I ",
       "verb": "will be studying",
@@ -68,12 +68,129 @@
     "id": "future-continuous-06",
     "answer": "future-continuous",
     "type": "sentence",
-    "prompt": "Прерывание запланированного действия в будущем",
+    "prompt": "Прерывание ожидаемого действия в будущем",
     "promptEn": "An expected future action likely to be interrupted",
     "sentence": {
       "pre": "I'm sure the children ",
       "verb": "will be playing",
       "post": " when we get there."
+    },
+    "difficulty": 3
+  },
+  {
+    "id": "future-continuous-07",
+    "answer": "future-continuous",
+    "type": "context",
+    "prompt": "Вопрос о планах другого человека (косвенный, вежливый)",
+    "promptEn": "A polite indirect question about someone's future plans",
+    "sentence": {
+      "pre": "Will you ",
+      "verb": "be using",
+      "post": " the car this weekend?"
+    },
+    "difficulty": 3
+  },
+  {
+    "id": "future-continuous-08",
+    "answer": "future-continuous",
+    "type": "sentence",
+    "prompt": "Длительное действие во время предстоящего события",
+    "promptEn": "An ongoing action during an upcoming event",
+    "sentence": {
+      "pre": "During the conference, I ",
+      "verb": "will be presenting",
+      "post": " our research findings."
+    },
+    "difficulty": 2
+  },
+  {
+    "id": "future-continuous-09",
+    "answer": "future-continuous",
+    "type": "context",
+    "prompt": "Ожидаемое действие в конкретный час в будущем",
+    "promptEn": "An expected action at a specific clock time in the future",
+    "sentence": {
+      "pre": "At this time next year, I ",
+      "verb": "will be living",
+      "post": " in a different country."
+    },
+    "difficulty": 3
+  },
+  {
+    "id": "future-continuous-10",
+    "answer": "future-continuous",
+    "type": "sentence",
+    "prompt": "Отрицание длящегося действия в будущем",
+    "promptEn": "Denying that an action will be ongoing in the future",
+    "sentence": {
+      "pre": "Don't come at noon — I ",
+      "verb": "will be sleeping",
+      "post": " after the night shift."
+    },
+    "difficulty": 3
+  },
+  {
+    "id": "future-continuous-11",
+    "answer": "future-continuous",
+    "type": "context",
+    "prompt": "Запланированная или рутинная деятельность в конкретный период будущего",
+    "promptEn": "A planned or routine activity in a specific future period",
+    "sentence": {
+      "pre": "This evening, the team ",
+      "verb": "will be practising",
+      "post": " for the championship."
+    },
+    "difficulty": 2
+  },
+  {
+    "id": "future-continuous-12",
+    "answer": "future-continuous",
+    "type": "sentence",
+    "prompt": "Переход от текущего события к действию в момент будущего",
+    "promptEn": "Transitioning from a current event to a future moment action",
+    "sentence": {
+      "pre": "By the time you read this, I ",
+      "verb": "will be sitting",
+      "post": " on a plane."
+    },
+    "difficulty": 3
+  },
+  {
+    "id": "future-continuous-13",
+    "answer": "future-continuous",
+    "type": "context",
+    "prompt": "Действие, которое естественным образом произойдёт по ходу событий",
+    "promptEn": "An action that will naturally happen in the course of events",
+    "sentence": {
+      "pre": "I ",
+      "verb": "will be passing",
+      "post": " the post office anyway — I'll mail it for you."
+    },
+    "difficulty": 3
+  },
+  {
+    "id": "future-continuous-14",
+    "answer": "future-continuous",
+    "type": "sentence",
+    "prompt": "Два параллельных действия в будущем",
+    "promptEn": "Two parallel actions happening simultaneously in the future",
+    "sentence": {
+      "pre": "While the doctor ",
+      "verb": "will be examining",
+      "post": " the patient, the nurse will prepare the equipment."
+    },
+    "difficulty": 3
+  },
+  {
+    "id": "future-continuous-15",
+    "answer": "future-continuous",
+    "type": "context",
+    "prompt": "Длящееся действие, которое будет продолжаться после момента в будущем",
+    "promptEn": "An ongoing action that will continue past a future moment",
+    "sentence": {
+      "pre": "When the guests arrive at seven, we ",
+      "verb": "will still be preparing",
+      "post": " the food."
     },
     "difficulty": 3
   }

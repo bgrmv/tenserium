@@ -42,7 +42,7 @@
     "id": "past-simple-04",
     "answer": "past-simple",
     "type": "sentence",
-    "prompt": "Серия действий, которые произошли одно за другим",
+    "prompt": "Серия завершённых действий, произошедших одно за другим",
     "promptEn": "A series of completed actions in sequence",
     "sentence": {
       "pre": "I ",
@@ -68,12 +68,12 @@
     "id": "past-simple-06",
     "answer": "past-simple",
     "type": "sentence",
-    "prompt": "Действие, которое прерывалось другим действием",
-    "promptEn": "A past action interrupted by another",
+    "prompt": "Внезапное действие, которое прервало длящееся в прошлом",
+    "promptEn": "A sudden action that interrupted an ongoing past action",
     "sentence": {
-      "pre": "We ",
-      "verb": "were watching",
-      "post": " TV when the power went out."
+      "pre": "We were watching TV when the power ",
+      "verb": "went",
+      "post": " out."
     },
     "difficulty": 2
   },
@@ -94,7 +94,7 @@
     "id": "past-simple-08",
     "answer": "past-simple",
     "type": "sentence",
-    "prompt": "Неожиданное или неожидаемое событие в прошлом",
+    "prompt": "Неожиданное или внезапное событие в прошлом",
     "promptEn": "An unexpected event in the past",
     "sentence": {
       "pre": "Suddenly, the door ",
@@ -128,5 +128,135 @@
       "post": " to wait for an hour."
     },
     "difficulty": 2
+  },
+  {
+    "id": "past-simple-11",
+    "answer": "past-simple",
+    "type": "context",
+    "prompt": "Завершённое действие с чётким указателем времени в прошлом",
+    "promptEn": "A completed action with a clear past time marker",
+    "sentence": {
+      "pre": "We ",
+      "verb": "moved",
+      "post": " to this city three years ago."
+    },
+    "difficulty": 1
+  },
+  {
+    "id": "past-simple-12",
+    "answer": "past-simple",
+    "type": "sentence",
+    "prompt": "Отрицание факта в прошлом",
+    "promptEn": "Denying that something happened in the past",
+    "sentence": {
+      "pre": "She ",
+      "verb": "didn't reply",
+      "post": " to my message yesterday."
+    },
+    "difficulty": 2
+  },
+  {
+    "id": "past-simple-13",
+    "answer": "past-simple",
+    "type": "context",
+    "prompt": "Биографический факт из жизни известного человека",
+    "promptEn": "A biographical fact about a well-known person",
+    "sentence": {
+      "pre": "Einstein ",
+      "verb": "developed",
+      "post": " the theory of relativity in the early 20th century."
+    },
+    "difficulty": 2
+  },
+  {
+    "id": "past-simple-14",
+    "answer": "past-simple",
+    "type": "sentence",
+    "prompt": "Последовательность двух завершённых действий в прошлом",
+    "promptEn": "A sequence of two completed past actions",
+    "sentence": {
+      "pre": "He ",
+      "verb": "locked",
+      "post": " the door and left the building."
+    },
+    "difficulty": 2
+  },
+  {
+    "id": "past-simple-15",
+    "answer": "past-simple",
+    "type": "context",
+    "prompt": "Ответ на вопрос о прошлом опыте с указанием времени",
+    "promptEn": "A past experience with a specific time reference",
+    "sentence": {
+      "pre": "I ",
+      "verb": "visited",
+      "post": " Rome last summer."
+    },
+    "difficulty": 1
+  },
+  {
+    "id": "past-simple-16",
+    "answer": "past-simple",
+    "type": "sentence",
+    "prompt": "Реакция или решение в конкретный момент прошлого",
+    "promptEn": "A reaction or decision at a specific past moment",
+    "sentence": {
+      "pre": "When she heard the news, she ",
+      "verb": "started",
+      "post": " crying."
+    },
+    "difficulty": 2
+  },
+  {
+    "id": "past-simple-17",
+    "answer": "past-simple",
+    "type": "context",
+    "prompt": "Событие в прошлом без явного указателя времени, но ясно завершённое",
+    "promptEn": "A past event without a time marker but clearly finished",
+    "sentence": {
+      "pre": "I never ",
+      "verb": "learned",
+      "post": " to play the guitar."
+    },
+    "difficulty": 3
+  },
+  {
+    "id": "past-simple-18",
+    "answer": "past-simple",
+    "type": "sentence",
+    "prompt": "Прошедшее действие в придаточном предложении с 'when'",
+    "promptEn": "A past action in a clause introduced by 'when'",
+    "sentence": {
+      "pre": "When I ",
+      "verb": "was",
+      "post": " young, life seemed much simpler."
+    },
+    "difficulty": 2
+  },
+  {
+    "id": "past-simple-19",
+    "answer": "past-simple",
+    "type": "context",
+    "prompt": "Вопрос о конкретном прошлом событии",
+    "promptEn": "A question about a specific past event",
+    "sentence": {
+      "pre": "Where ",
+      "verb": "did",
+      "post": " you meet your best friend?"
+    },
+    "difficulty": 2
+  },
+  {
+    "id": "past-simple-20",
+    "answer": "past-simple",
+    "type": "sentence",
+    "prompt": "Нереальное условие в прошлом (второй кондиционал — условная часть)",
+    "promptEn": "Unreal past condition (second conditional — if-clause)",
+    "sentence": {
+      "pre": "If I ",
+      "verb": "knew",
+      "post": " the answer, I would tell you."
+    },
+    "difficulty": 3
   }
 ]

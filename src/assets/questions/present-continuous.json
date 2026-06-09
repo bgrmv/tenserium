@@ -42,7 +42,7 @@
     "id": "present-continuous-04",
     "answer": "present-continuous",
     "type": "sentence",
-    "prompt": "Временный процесс, длящийся в эту неделю/месяц",
+    "prompt": "Временный процесс, длящийся в эту неделю или месяц",
     "promptEn": "A temporary action happening this week or month",
     "sentence": {
       "pre": "She ",
@@ -55,8 +55,8 @@
     "id": "present-continuous-05",
     "answer": "present-continuous",
     "type": "context",
-    "prompt": "Прогрессирующее изменение или тенденция",
-    "promptEn": "A progressive change or trend",
+    "prompt": "Прогрессирующее изменение или нарастающая тенденция",
+    "promptEn": "A progressive change or growing trend",
     "sentence": {
       "pre": "The world population ",
       "verb": "is growing",
@@ -68,8 +68,8 @@
     "id": "present-continuous-06",
     "answer": "present-continuous",
     "type": "sentence",
-    "prompt": "Повторяющееся раздражающее действие в настоящий период",
-    "promptEn": "A repeated annoying action during this period",
+    "prompt": "Раздражающее повторяющееся действие в настоящий период",
+    "promptEn": "An annoying habit during the current period",
     "sentence": {
       "pre": "You ",
       "verb": "are always complaining",
@@ -102,5 +102,96 @@
       "post": " next month."
     },
     "difficulty": 2
+  },
+  {
+    "id": "present-continuous-09",
+    "answer": "present-continuous",
+    "type": "context",
+    "prompt": "Временная ситуация, отличающаяся от обычной",
+    "promptEn": "A temporary situation different from the usual one",
+    "sentence": {
+      "pre": "He normally drives, but this week he ",
+      "verb": "is taking",
+      "post": " the bus."
+    },
+    "difficulty": 2
+  },
+  {
+    "id": "present-continuous-10",
+    "answer": "present-continuous",
+    "type": "sentence",
+    "prompt": "Текущее действие в ходе телефонного разговора",
+    "promptEn": "An action in progress during a phone conversation",
+    "sentence": {
+      "pre": "Sorry, I can't talk — I ",
+      "verb": "am having",
+      "post": " dinner."
+    },
+    "difficulty": 2
+  },
+  {
+    "id": "present-continuous-11",
+    "answer": "present-continuous",
+    "type": "context",
+    "prompt": "Тенденция или развитие в обществе или экономике",
+    "promptEn": "A trend or development in society or the economy",
+    "sentence": {
+      "pre": "More and more people ",
+      "verb": "are working",
+      "post": " remotely."
+    },
+    "difficulty": 2
+  },
+  {
+    "id": "present-continuous-12",
+    "answer": "present-continuous",
+    "type": "sentence",
+    "prompt": "Раздражающая привычка с наречием 'always' или 'constantly'",
+    "promptEn": "An irritating habit with 'always' or 'constantly'",
+    "sentence": {
+      "pre": "My brother ",
+      "verb": "is constantly interrupting",
+      "post": " me when I speak."
+    },
+    "difficulty": 3
+  },
+  {
+    "id": "present-continuous-13",
+    "answer": "present-continuous",
+    "type": "context",
+    "prompt": "Личная договорённость на конкретное время в будущем",
+    "promptEn": "A personal arrangement at a specific future time",
+    "sentence": {
+      "pre": "I ",
+      "verb": "am meeting",
+      "post": " the director at three o'clock tomorrow."
+    },
+    "difficulty": 3
+  },
+  {
+    "id": "present-continuous-14",
+    "answer": "present-continuous",
+    "type": "sentence",
+    "prompt": "Изменяющаяся ситуация, которая становится хуже или лучше",
+    "promptEn": "A changing situation that is getting better or worse",
+    "sentence": {
+      "pre": "The patient ",
+      "verb": "is improving",
+      "post": " steadily."
+    },
+    "difficulty": 3
+  },
+  {
+    "id": "present-continuous-15",
+    "answer": "present-continuous",
+    "type": "context",
+    "prompt": "Описание поведения человека в последнее время",
+    "promptEn": "Describing how someone has been behaving lately",
+    "sentence": {
+      "pre": "She ",
+      "verb": "is acting",
+      "post": " very strangely lately."
+    },
+    "difficulty": 3
   }
 ]

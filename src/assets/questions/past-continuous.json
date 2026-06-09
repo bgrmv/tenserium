@@ -89,5 +89,109 @@
       "post": " books."
     },
     "difficulty": 3
+  },
+  {
+    "id": "past-continuous-08",
+    "answer": "past-continuous",
+    "type": "sentence",
+    "prompt": "Объяснение прошлого состояния через длящееся действие",
+    "promptEn": "Explaining a past state through an ongoing action",
+    "sentence": {
+      "pre": "My hands were dirty because I ",
+      "verb": "was fixing",
+      "post": " the car."
+    },
+    "difficulty": 2
+  },
+  {
+    "id": "past-continuous-09",
+    "answer": "past-continuous",
+    "type": "context",
+    "prompt": "Два параллельных длящихся действия в прошлом",
+    "promptEn": "Two simultaneous ongoing actions in the past",
+    "sentence": {
+      "pre": "While the children ",
+      "verb": "were sleeping",
+      "post": ", the adults talked quietly."
+    },
+    "difficulty": 2
+  },
+  {
+    "id": "past-continuous-10",
+    "answer": "past-continuous",
+    "type": "sentence",
+    "prompt": "Действие, происходившее в конкретный час прошлого",
+    "promptEn": "An action occurring at a specific clock time in the past",
+    "sentence": {
+      "pre": "At midnight, she ",
+      "verb": "was still writing",
+      "post": " her essay."
+    },
+    "difficulty": 2
+  },
+  {
+    "id": "past-continuous-11",
+    "answer": "past-continuous",
+    "type": "context",
+    "prompt": "Вежливое или осторожное высказывание о прошлом намерении",
+    "promptEn": "A polite or tentative expression about a past intention",
+    "sentence": {
+      "pre": "I ",
+      "verb": "was wondering",
+      "post": " if you could help me."
+    },
+    "difficulty": 3
+  },
+  {
+    "id": "past-continuous-12",
+    "answer": "past-continuous",
+    "type": "sentence",
+    "prompt": "Создание атмосферы или обстановки в начале рассказа",
+    "promptEn": "Setting the scene at the beginning of a story",
+    "sentence": {
+      "pre": "The rain ",
+      "verb": "was falling",
+      "post": " and the streets were empty."
+    },
+    "difficulty": 3
+  },
+  {
+    "id": "past-continuous-13",
+    "answer": "past-continuous",
+    "type": "context",
+    "prompt": "Действие, которое было в процессе в момент обнаружения чего-либо",
+    "promptEn": "An action in progress at the moment of a discovery",
+    "sentence": {
+      "pre": "I found my old diary while I ",
+      "verb": "was cleaning",
+      "post": " the attic."
+    },
+    "difficulty": 3
+  },
+  {
+    "id": "past-continuous-14",
+    "answer": "past-continuous",
+    "type": "sentence",
+    "prompt": "Отрицание длящегося действия в прошлый момент",
+    "promptEn": "Negating an ongoing action at a past moment",
+    "sentence": {
+      "pre": "At the time of the accident, he ",
+      "verb": "wasn't paying",
+      "post": " attention."
+    },
+    "difficulty": 3
+  },
+  {
+    "id": "past-continuous-15",
+    "answer": "past-continuous",
+    "type": "context",
+    "prompt": "Действие, которое шло в момент неожиданного события",
+    "promptEn": "An action ongoing at the moment of an unexpected event",
+    "sentence": {
+      "pre": "I ",
+      "verb": "was just leaving",
+      "post": " when the fire alarm went off."
+    },
+    "difficulty": 3
   }
 ]

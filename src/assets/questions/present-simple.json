@@ -128,5 +128,135 @@
       "post": " three languages."
     },
     "difficulty": 2
+  },
+  {
+    "id": "present-simple-11",
+    "answer": "present-simple",
+    "type": "context",
+    "prompt": "Ментальное состояние или убеждение (глагол состояния)",
+    "promptEn": "A mental state or belief expressed by a stative verb",
+    "sentence": {
+      "pre": "I ",
+      "verb": "understand",
+      "post": " what you mean."
+    },
+    "difficulty": 2
+  },
+  {
+    "id": "present-simple-12",
+    "answer": "present-simple",
+    "type": "sentence",
+    "prompt": "Нулевое условие: закономерность или правило природы",
+    "promptEn": "Zero conditional: a natural law or rule",
+    "sentence": {
+      "pre": "If you heat ice, it ",
+      "verb": "melts",
+      "post": "."
+    },
+    "difficulty": 2
+  },
+  {
+    "id": "present-simple-13",
+    "answer": "present-simple",
+    "type": "context",
+    "prompt": "Исторический настоящий: события в нарративе или книге",
+    "promptEn": "Historical present: events described in a narrative",
+    "sentence": {
+      "pre": "Napoleon ",
+      "verb": "invades",
+      "post": " Russia in 1812."
+    },
+    "difficulty": 2
+  },
+  {
+    "id": "present-simple-14",
+    "answer": "present-simple",
+    "type": "sentence",
+    "prompt": "Инструкция или рецепт: последовательный шаг",
+    "promptEn": "Instruction or recipe: a sequential step",
+    "sentence": {
+      "pre": "First, you ",
+      "verb": "add",
+      "post": " flour and sugar to the bowl."
+    },
+    "difficulty": 2
+  },
+  {
+    "id": "present-simple-15",
+    "answer": "present-simple",
+    "type": "context",
+    "prompt": "Физическое ощущение или восприятие (глагол восприятия)",
+    "promptEn": "Physical sensation expressed by a perception verb",
+    "sentence": {
+      "pre": "Something ",
+      "verb": "smells",
+      "post": " wonderful in the kitchen."
+    },
+    "difficulty": 2
+  },
+  {
+    "id": "present-simple-16",
+    "answer": "present-simple",
+    "type": "sentence",
+    "prompt": "Желание или потребность (глагол состояния)",
+    "promptEn": "A wish or need expressed by a stative verb",
+    "sentence": {
+      "pre": "She ",
+      "verb": "wants",
+      "post": " to become a doctor."
+    },
+    "difficulty": 3
+  },
+  {
+    "id": "present-simple-17",
+    "answer": "present-simple",
+    "type": "context",
+    "prompt": "Будущее действие по официальному расписанию",
+    "promptEn": "A future event expressed through an official timetable",
+    "sentence": {
+      "pre": "The flight ",
+      "verb": "departs",
+      "post": " at 6:45 tomorrow morning."
+    },
+    "difficulty": 3
+  },
+  {
+    "id": "present-simple-18",
+    "answer": "present-simple",
+    "type": "sentence",
+    "prompt": "Условие в придаточном времени с союзом 'as soon as'",
+    "promptEn": "A condition in a time clause introduced by 'as soon as'",
+    "sentence": {
+      "pre": "I'll call you as soon as I ",
+      "verb": "get",
+      "post": " home."
+    },
+    "difficulty": 3
+  },
+  {
+    "id": "present-simple-19",
+    "answer": "present-simple",
+    "type": "context",
+    "prompt": "Академическое или научное утверждение об общем факте",
+    "promptEn": "An academic or scientific statement of general fact",
+    "sentence": {
+      "pre": "Plants ",
+      "verb": "convert",
+      "post": " sunlight into energy through photosynthesis."
+    },
+    "difficulty": 3
+  },
+  {
+    "id": "present-simple-20",
+    "answer": "present-simple",
+    "type": "sentence",
+    "prompt": "Выражение принадлежности (глагол состояния)",
+    "promptEn": "Expressing possession using a stative verb",
+    "sentence": {
+      "pre": "This company ",
+      "verb": "owns",
+      "post": " offices in fifteen countries."
+    },
+    "difficulty": 3
   }
 ]

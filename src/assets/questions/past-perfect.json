@@ -43,7 +43,7 @@
     "answer": "past-perfect",
     "type": "sentence",
     "prompt": "Опыт к определённому моменту в прошлом",
-    "promptEn": "Experience by a certain point in the past",
+    "promptEn": "Experience accumulated by a certain point in the past",
     "sentence": {
       "pre": "By the time I graduated, I ",
       "verb": "had worked",
@@ -55,8 +55,8 @@
     "id": "past-perfect-05",
     "answer": "past-perfect",
     "type": "context",
-    "prompt": "Неожиданное событие на основе предыдущего",
-    "promptEn": "Unexpected result of a prior past action",
+    "prompt": "Запланированное действие в прошлом, которое не реализовалось",
+    "promptEn": "A past plan that did not come to fruition",
     "sentence": {
       "pre": "They ",
       "verb": "had planned",
@@ -68,12 +68,129 @@
     "id": "past-perfect-06",
     "answer": "past-perfect",
     "type": "sentence",
-    "prompt": "Описание предыстории события в прошлом",
-    "promptEn": "Backstory of an event in the past",
+    "prompt": "Действие, уже завершённое к определённому моменту прошлого",
+    "promptEn": "An action already completed by a certain past moment",
     "sentence": {
-      "pre": "When the accident happened, he ",
-      "verb": "had been driving",
-      "post": " for ten hours."
+      "pre": "By the time they called, she ",
+      "verb": "had already left",
+      "post": " the office."
+    },
+    "difficulty": 3
+  },
+  {
+    "id": "past-perfect-07",
+    "answer": "past-perfect",
+    "type": "context",
+    "prompt": "Нереализованное условие в прошлом (третий кондиционал)",
+    "promptEn": "An unfulfilled condition in the past (third conditional)",
+    "sentence": {
+      "pre": "If she ",
+      "verb": "had studied",
+      "post": " harder, she would have passed."
+    },
+    "difficulty": 3
+  },
+  {
+    "id": "past-perfect-08",
+    "answer": "past-perfect",
+    "type": "sentence",
+    "prompt": "Несбывшееся ожидание или надежда в прошлом",
+    "promptEn": "An unfulfilled expectation or hope in the past",
+    "sentence": {
+      "pre": "I thought he ",
+      "verb": "had already finished",
+      "post": " the report."
+    },
+    "difficulty": 3
+  },
+  {
+    "id": "past-perfect-09",
+    "answer": "past-perfect",
+    "type": "context",
+    "prompt": "Косвенная речь: прошедший перфект в передаче слов",
+    "promptEn": "Reported speech: past perfect in indirect speech",
+    "sentence": {
+      "pre": "She told me she ",
+      "verb": "had never been",
+      "post": " abroad before."
+    },
+    "difficulty": 3
+  },
+  {
+    "id": "past-perfect-10",
+    "answer": "past-perfect",
+    "type": "sentence",
+    "prompt": "Неожиданное открытие о ранее произошедшем событии",
+    "promptEn": "A surprising discovery about a previously occurred event",
+    "sentence": {
+      "pre": "I realised I ",
+      "verb": "had met",
+      "post": " him before, at a conference in Berlin."
+    },
+    "difficulty": 3
+  },
+  {
+    "id": "past-perfect-11",
+    "answer": "past-perfect",
+    "type": "context",
+    "prompt": "Первый опыт чего-либо в прошлом",
+    "promptEn": "The first time something had ever happened in the past",
+    "sentence": {
+      "pre": "It was the first time I ",
+      "verb": "had seen",
+      "post": " the ocean."
+    },
+    "difficulty": 3
+  },
+  {
+    "id": "past-perfect-12",
+    "answer": "past-perfect",
+    "type": "sentence",
+    "prompt": "Действие, которое уже произошло до прибытия или начала чего-либо",
+    "promptEn": "An action that had already occurred before something began",
+    "sentence": {
+      "pre": "When the doctor arrived, the patient ",
+      "verb": "had recovered",
+      "post": " on his own."
+    },
+    "difficulty": 3
+  },
+  {
+    "id": "past-perfect-13",
+    "answer": "past-perfect",
+    "type": "context",
+    "prompt": "Отрицание: то, что ещё не случилось к моменту в прошлом",
+    "promptEn": "Negation: something not yet done by a past moment",
+    "sentence": {
+      "pre": "At that point, no one ",
+      "verb": "had heard",
+      "post": " about the disaster."
+    },
+    "difficulty": 3
+  },
+  {
+    "id": "past-perfect-14",
+    "answer": "past-perfect",
+    "type": "sentence",
+    "prompt": "Истечение срока или момента, после которого было поздно",
+    "promptEn": "A deadline that had passed, making something too late",
+    "sentence": {
+      "pre": "By the time I applied, the position ",
+      "verb": "had already been filled",
+      "post": "."
+    },
+    "difficulty": 3
+  },
+  {
+    "id": "past-perfect-15",
+    "answer": "past-perfect",
+    "type": "context",
+    "prompt": "Предыстория события: то, что произошло задолго до основного",
+    "promptEn": "Backstory: what happened long before the main event",
+    "sentence": {
+      "pre": "She recognised the building immediately — she ",
+      "verb": "had lived",
+      "post": " there as a child."
     },
     "difficulty": 3
   }

@@ -16,7 +16,7 @@
     "id": "future-perfect-02",
     "answer": "future-perfect",
     "type": "context",
-    "prompt": "Завершённое до будущего дедлайна",
+    "prompt": "Что-либо завершённое до будущего дедлайна",
     "promptEn": "Something completed before a future deadline",
     "sentence": {
       "pre": "I ",
@@ -29,8 +29,8 @@
     "id": "future-perfect-03",
     "answer": "future-perfect",
     "type": "sentence",
-    "prompt": "Количество времени, потраченное на действие к определённому моменту",
-    "promptEn": "Duration of an action by a certain future point",
+    "prompt": "Накопленная длительность к определённому моменту будущего",
+    "promptEn": "Duration of an action accumulated by a certain future point",
     "sentence": {
       "pre": "By next year, I ",
       "verb": "will have lived",
@@ -42,7 +42,7 @@
     "id": "future-perfect-04",
     "answer": "future-perfect",
     "type": "sentence",
-    "prompt": "Результат к определённому времени в будущем",
+    "prompt": "Результат, достигнутый к определённому времени в будущем",
     "promptEn": "A result that will be accomplished by a future time",
     "sentence": {
       "pre": "Before the meeting, we ",
@@ -74,6 +74,123 @@
       "pre": "You must call before 5 pm; otherwise, I ",
       "verb": "will have left",
       "post": " the office."
+    },
+    "difficulty": 3
+  },
+  {
+    "id": "future-perfect-07",
+    "answer": "future-perfect",
+    "type": "context",
+    "prompt": "Ожидаемое завершение действия к моменту другого события",
+    "promptEn": "Expected completion of an action by the time another event occurs",
+    "sentence": {
+      "pre": "By the time you wake up, I ",
+      "verb": "will have already left",
+      "post": "."
+    },
+    "difficulty": 3
+  },
+  {
+    "id": "future-perfect-08",
+    "answer": "future-perfect",
+    "type": "sentence",
+    "prompt": "Достижение или веха к конкретной дате в будущем",
+    "promptEn": "An achievement or milestone by a specific future date",
+    "sentence": {
+      "pre": "By her thirtieth birthday, she ",
+      "verb": "will have published",
+      "post": " two novels."
+    },
+    "difficulty": 3
+  },
+  {
+    "id": "future-perfect-09",
+    "answer": "future-perfect",
+    "type": "context",
+    "prompt": "Завершение дела до наступления события или срока",
+    "promptEn": "Completion of a task before an event or deadline arrives",
+    "sentence": {
+      "pre": "Don't worry — I ",
+      "verb": "will have fixed",
+      "post": " the car before your trip."
+    },
+    "difficulty": 3
+  },
+  {
+    "id": "future-perfect-10",
+    "answer": "future-perfect",
+    "type": "sentence",
+    "prompt": "Вопрос о завершении действия к определённому будущему моменту",
+    "promptEn": "A question about completion of an action by a future moment",
+    "sentence": {
+      "pre": "Will you ",
+      "verb": "have finished",
+      "post": " the project by Friday?"
+    },
+    "difficulty": 3
+  },
+  {
+    "id": "future-perfect-11",
+    "answer": "future-perfect",
+    "type": "context",
+    "prompt": "Отрицание: действие не будет завершено к сроку",
+    "promptEn": "Negation: an action will not be completed by a deadline",
+    "sentence": {
+      "pre": "At this rate, the team ",
+      "verb": "will not have met",
+      "post": " its target by December."
+    },
+    "difficulty": 3
+  },
+  {
+    "id": "future-perfect-12",
+    "answer": "future-perfect",
+    "type": "sentence",
+    "prompt": "Степень завершённости: большая часть работы сделана к сроку",
+    "promptEn": "Degree of completion: most work done by a deadline",
+    "sentence": {
+      "pre": "By the end of the week, we ",
+      "verb": "will have completed",
+      "post": " the first phase of the project."
+    },
+    "difficulty": 3
+  },
+  {
+    "id": "future-perfect-13",
+    "answer": "future-perfect",
+    "type": "context",
+    "prompt": "Личное обязательство завершить дело до встречи",
+    "promptEn": "A personal commitment to finish something before a meeting",
+    "sentence": {
+      "pre": "I promise I ",
+      "verb": "will have read",
+      "post": " the report before our call."
+    },
+    "difficulty": 3
+  },
+  {
+    "id": "future-perfect-14",
+    "answer": "future-perfect",
+    "type": "sentence",
+    "prompt": "Накопленный опыт к определённому возрасту или дате",
+    "promptEn": "Accumulated experience by a certain age or date",
+    "sentence": {
+      "pre": "By the time he is thirty, he ",
+      "verb": "will have worked",
+      "post": " in four different countries."
+    },
+    "difficulty": 3
+  },
+  {
+    "id": "future-perfect-15",
+    "answer": "future-perfect",
+    "type": "context",
+    "prompt": "Событие, которое завершится прежде, чем вы успеете что-то сделать",
+    "promptEn": "An event that will be over before you can do anything",
+    "sentence": {
+      "pre": "By the time the ambulance arrives, the situation ",
+      "verb": "will have changed",
+      "post": "."
     },
     "difficulty": 3
   }
