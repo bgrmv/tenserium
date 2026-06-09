@@ -1,23 +1,18 @@
 import {
   ChangeDetectionStrategy,
   Component,
+  computed,
   inject,
   input,
   output,
   signal,
 } from '@angular/core';
-import { Control, form, minLength, required } from '@angular/forms/signals';
 import { StorageService } from '@shared/api/storage.service';
 import type { TenseId } from '@shared/types';
-
-interface ReportModel {
-  description: string;
-}
 
 @Component({
   selector: 'app-report-error',
   changeDetection: ChangeDetectionStrategy.OnPush,
-  imports: [Control],
   template: `
     <div class="backdrop" role="button" tabindex="0" aria-label="Close" (click)="dismiss.emit()" (keydown.enter)="dismiss.emit()" (keydown.space)="dismiss.emit()"></div>
     <div class="modal" role="dialog" aria-label="Report an error">
@@ -25,7 +20,8 @@ interface ReportModel {
       <p class="sub">What's wrong with this question?</p>
       <textarea
         rows="4"
-        [control]="reportForm.description"
+        [value]="description()"
+        (input)="description.set($any($event.target).value)"
         placeholder="Describe the issue…"
       ></textarea>
       <div class="actions">
@@ -33,7 +29,7 @@ interface ReportModel {
         <button
           type="button"
           class="btn-primary"
-          [disabled]="reportForm().invalid()"
+          [disabled]="!isValid()"
           (click)="submit()"
         >
           Send report
@@ -52,19 +48,16 @@ export class ReportErrorComponent {
   readonly dismiss = output<void>();
   readonly sent = output<void>();
 
-  protected readonly model = signal<ReportModel>({ description: '' });
-  protected readonly reportForm = form(this.model, (path) => {
-    required(path.description);
-    minLength(path.description, 4);
-  });
+  protected readonly description = signal('');
+  protected readonly isValid = computed(() => this.description().trim().length >= 4);
 
   protected submit(): void {
-    if (this.reportForm().invalid()) return;
+    if (!this.isValid()) return;
     const queue = this.storage.load<unknown[]>('reports:queue', []);
     queue.push({
       questionId: this.questionId(),
       tenseId: this.tenseId(),
-      description: this.model().description,
+      description: this.description().trim(),
       at: Date.now(),
     });
     this.storage.save('reports:queue', queue);

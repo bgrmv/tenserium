@@ -1,38 +1,53 @@
 {
   "tenseId": "present-continuous",
   "formula": [
-    "am/is/are",
-    "V-ing"
+    "am/is/are + V-ing",
+    "am/is/are + not + V-ing",
+    "Am/Is/Are … V-ing?"
   ],
+  "structure": {
+    "affirmative": "Subject + am/is/are + V-ing — She is working. / They are leaving.",
+    "negative": "Subject + am/is/are + not + V-ing — She isn't working. / They aren't leaving.",
+    "question": "Am/Is/Are + Subject + V-ing? — Is she working? / Are they leaving?"
+  },
   "usage": [
     {
       "icon": "clock",
-      "text": "Happening right now"
+      "text": "Happening right now (at this moment)"
     },
     {
       "icon": "repeat",
-      "text": "Temporary situations"
+      "text": "Temporary situations (not permanent)"
     },
     {
       "icon": "calendar",
-      "text": "Fixed future arrangements"
+      "text": "Fixed future arrangements (personal plans)"
+    },
+    {
+      "icon": "bolt",
+      "text": "Changing or developing situations"
     }
   ],
   "examples": [
     {
       "pre": "She ",
       "verb": "is working",
-      "post": " right now."
+      "post": " right now — don't disturb her."
     },
     {
       "pre": "We ",
       "verb": "are leaving",
-      "post": " on Friday."
+      "post": " on Friday. (arranged)"
     },
     {
       "pre": "They ",
       "verb": "are staying",
-      "post": " with us."
+      "post": " with us this month."
+    },
+    {
+      "pre": "Prices ",
+      "verb": "are rising",
+      "post": " every year."
     }
   ],
   "markers": [
@@ -40,6 +55,23 @@
     "right now",
     "at the moment",
     "currently",
-    "Look!"
+    "Look!",
+    "Listen!",
+    "this week",
+    "these days"
+  ],
+  "faq": [
+    {
+      "q": "What are 'stative verbs' and why can't they use -ing?",
+      "a": "Stative verbs describe states, not actions: know, love, want, believe, own. We say 'I know' not 'I am knowing'. Some verbs (think, have) can be stative or dynamic depending on meaning."
+    },
+    {
+      "q": "What's the difference between 'She works' and 'She is working'?",
+      "a": "'She works' = her general job/habit. 'She is working' = she is busy right now (at this exact moment or this period)."
+    },
+    {
+      "q": "Can Present Continuous describe the future?",
+      "a": "Yes, for personal arrangements already planned: 'I'm meeting Tom tonight'. This is different from 'will' (spontaneous) or 'going to' (intended plan)."
+    }
   ]
 }

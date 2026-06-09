@@ -1,44 +1,75 @@
 {
   "tenseId": "past-continuous",
   "formula": [
-    "was/were",
-    "V-ing"
+    "was/were + V-ing",
+    "wasn't/weren't + V-ing",
+    "Was/Were … V-ing?"
   ],
+  "structure": {
+    "affirmative": "Subject + was/were + V-ing — She was reading. / They were playing.",
+    "negative": "Subject + wasn't/weren't + V-ing — She wasn't reading. / They weren't playing.",
+    "question": "Was/Were + Subject + V-ing? — Was she reading? / Were they playing?"
+  },
   "usage": [
     {
       "icon": "clock",
-      "text": "In progress in the past"
+      "text": "Action in progress at a specific past moment"
     },
     {
       "icon": "bolt",
-      "text": "Interrupted action"
+      "text": "Background action interrupted by Past Simple"
     },
     {
       "icon": "repeat",
-      "text": "Two parallel past actions"
+      "text": "Two parallel past actions (while)"
+    },
+    {
+      "icon": "calendar",
+      "text": "Setting the scene in a story or narrative"
     }
   ],
   "examples": [
     {
       "pre": "I ",
-      "verb": "was sleeping",
-      "post": " when he called."
+      "verb": "was reading",
+      "post": " when she called."
     },
     {
-      "pre": "She ",
-      "verb": "was working",
-      "post": " at 6 pm."
+      "pre": "At 8 pm they ",
+      "verb": "were having",
+      "post": " dinner."
     },
     {
-      "pre": "They ",
-      "verb": "were waiting",
-      "post": " for hours."
+      "pre": "While he ",
+      "verb": "was driving",
+      "post": ", she was sleeping."
+    },
+    {
+      "pre": "It ",
+      "verb": "was raining",
+      "post": " and the wind was howling."
     }
   ],
   "markers": [
     "while",
     "when",
     "at that moment",
-    "all day"
+    "at 8 pm yesterday",
+    "all day",
+    "all morning"
+  ],
+  "faq": [
+    {
+      "q": "When do I use 'was' vs 'were'?",
+      "a": "Use 'was' with I / He / She / It. Use 'were' with You / We / They: 'She was sleeping' / 'They were sleeping'."
+    },
+    {
+      "q": "What's the difference between Past Simple and Past Continuous?",
+      "a": "Past Simple = completed action ('She read the book'). Past Continuous = in-progress action ('She was reading when I arrived'). Past Continuous provides the background scene."
+    },
+    {
+      "q": "Can Past Continuous stand alone without Past Simple?",
+      "a": "Yes: 'At midnight I was still working' — no interruption needed. It describes the ongoing state at a past moment."
+    }
   ]
 }

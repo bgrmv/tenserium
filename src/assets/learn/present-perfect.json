@@ -1,13 +1,19 @@
 {
   "tenseId": "present-perfect",
   "formula": [
-    "have/has",
-    "V3"
+    "have/has + V3",
+    "haven't/hasn't + V3",
+    "Have/Has … V3?"
   ],
+  "structure": {
+    "affirmative": "Subject + have/has + V3 — I have finished. / She has arrived.",
+    "negative": "Subject + haven't/hasn't + V3 — I haven't finished. / She hasn't arrived.",
+    "question": "Have/Has + Subject + V3? — Have you finished? / Has she arrived?"
+  },
   "usage": [
     {
       "icon": "check",
-      "text": "Past action, present result"
+      "text": "Past action with a present result"
     },
     {
       "icon": "globe",
@@ -15,24 +21,33 @@
     },
     {
       "icon": "clock",
-      "text": "Unfinished time period"
+      "text": "Unfinished time period (today, this week)"
+    },
+    {
+      "icon": "bolt",
+      "text": "Recent actions (just, already, yet)"
     }
   ],
   "examples": [
     {
       "pre": "I ",
       "verb": "have lost",
-      "post": " my keys."
+      "post": " my keys. (result: I don't have them now)"
     },
     {
       "pre": "She ",
       "verb": "has been",
-      "post": " to Japan twice."
+      "post": " to Japan twice. (experience)"
     },
     {
       "pre": "We ",
-      "verb": "have lived",
-      "post": " here for years."
+      "verb": "have just finished",
+      "post": " lunch."
+    },
+    {
+      "pre": "Have you ",
+      "verb": "seen",
+      "post": " this film yet?"
     }
   ],
   "markers": [
@@ -42,6 +57,23 @@
     "ever",
     "never",
     "since",
-    "for"
+    "for",
+    "recently",
+    "today",
+    "this week"
+  ],
+  "faq": [
+    {
+      "q": "What's the difference between Present Perfect and Past Simple?",
+      "a": "Present Perfect = connects the past to the present (no specific time). Past Simple = a finished event at a known past time. Compare: 'I've seen that film' (experience, no date) vs 'I saw it yesterday' (specific time)."
+    },
+    {
+      "q": "When do I use 'for' vs 'since'?",
+      "a": "'For' + duration: 'I've lived here for three years'. 'Since' + starting point: 'I've lived here since 2021'."
+    },
+    {
+      "q": "What is V3 (past participle)?",
+      "a": "The third form of the verb. Regular: work→worked, play→played. Irregular: go→gone, see→seen, write→written. Always used after have/has in Present Perfect."
+    }
   ]
 }

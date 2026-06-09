@@ -19,6 +19,11 @@ export const ROUTES: Routes = [
       },
       {
         path: 'learn',
+        redirectTo: 'learn/present-simple',
+        pathMatch: 'full',
+      },
+      {
+        path: 'learn/:tenseId',
         title: 'Learn | Tenserium',
         loadComponent: () =>
           import('@pages/learn').then((m) => m.LearnPageComponent),
