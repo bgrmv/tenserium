@@ -12,9 +12,7 @@
     "publish": false
   },
   "github": {
-    "release": true,
-    "releaseName": "v${version}",
-    "tokenRef": "GITHUB_TOKEN"
+    "release": false
   },
   "plugins": {
     "@release-it/conventional-changelog": {

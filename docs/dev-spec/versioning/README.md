@@ -2,10 +2,11 @@
 
 Tenserium uses **[release-it](https://github.com/release-it/release-it)** with the
 **[@release-it/conventional-changelog](https://github.com/release-it/conventional-changelog)**
-plugin to automate version bumps, changelog generation, git tagging, and GitHub Releases.
+plugin to automate version bumps, changelog generation, and git tagging.
 
 Releases are **manual** — a developer runs the command locally, reviews what will happen,
-and confirms. Nothing is published to npm (the package is private).
+and confirms. Nothing is published to npm (the package is private). No GitHub Releases —
+a git tag + `CHANGELOG.md` is sufficient for a web app.
 
 ---
 
@@ -13,14 +14,6 @@ and confirms. Nothing is published to npm (the package is private).
 
 1. **Git working tree must be clean** — commit or stash everything before releasing.
 2. **Branch must track `origin/main`** — push and ensure upstream is set.
-3. **`GITHUB_TOKEN` env var must be set** — needed to create a GitHub Release.
-   - Option A (one-off): `export GITHUB_TOKEN=<your-pat>` in your shell.
-   - Option B (persistent): create `.env` in the project root (already in `.gitignore`):
-     ```
-     GITHUB_TOKEN=ghp_xxxxxxxxxxxxxxxxxxxx
-     ```
-     release-it loads `.env` automatically.
-   - Token needs `repo` scope (or `public_repo` for public repos).
 
 ---
 
@@ -54,7 +47,6 @@ What happens after you confirm:
 - `CHANGELOG.md` is prepended with the new section
 - Commit `chore: release vX.Y.Z` is created
 - Git tag `vX.Y.Z` is created and pushed to `origin`
-- GitHub Release is created at the repository Releases page
 
 ---
 
