@@ -1,327 +1,777 @@
 [
   {
     "id": "past-continuous-01",
-    "answer": "past-continuous",
-    "type": "context",
-    "prompt": "Длительное действие в прошлом, прерванное другим",
-    "promptEn": "An action in progress in the past, interrupted by another",
-    "sentence": {
-      "pre": "I ",
-      "verb": "was cooking",
-      "post": " when the phone rang."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Длительное действие в прошлом, прерванное другим",
+      "en": "An action in progress in the past, interrupted by another"
     },
-    "difficulty": 2
+    "tags": [
+      "past-continuous",
+      "context-clue",
+      "affirmative",
+      "continuous",
+      "difficulty-2"
+    ],
+    "difficulty": 2,
+    "rules": {
+      "ru": "«Was cooking … when … rang» — классическая конструкция прерванного действия: длящийся процесс (Past Continuous) прерывается мгновенным событием (Past Simple)."
+    },
+    "contextExamples": [
+      "He was driving home when he noticed the flat tyre.",
+      "They were having dinner when the doorbell rang."
+    ],
+    "sentences": [
+      {
+        "pre": "I ",
+        "verb": "was cooking",
+        "post": " when the phone rang.",
+        "answer": "past-continuous"
+      }
+    ]
   },
   {
     "id": "past-continuous-02",
-    "answer": "past-continuous",
-    "type": "context",
-    "prompt": "Два длительных действия в один момент прошлого",
-    "promptEn": "Two actions both in progress at the same past time",
-    "sentence": {
-      "pre": "She ",
-      "verb": "was reading",
-      "post": " while I cooked."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Два длительных действия в один момент прошлого",
+      "en": "Two actions both in progress at the same past time"
     },
-    "difficulty": 2
+    "tags": [
+      "past-continuous",
+      "context-clue",
+      "affirmative",
+      "continuous",
+      "difficulty-2"
+    ],
+    "difficulty": 2,
+    "rules": {
+      "ru": "«Was reading while» — союз «while» вводит одновременное фоновое действие; «was reading» подчёркивает, что оно шло параллельно другому."
+    },
+    "contextExamples": [
+      "He was listening to music while she wrote her essay.",
+      "The dog was sleeping while the children were playing outside."
+    ],
+    "sentences": [
+      {
+        "pre": "She ",
+        "verb": "was reading",
+        "post": " while I cooked.",
+        "answer": "past-continuous"
+      }
+    ]
   },
   {
     "id": "past-continuous-03",
-    "answer": "past-continuous",
-    "type": "sentence",
-    "prompt": "Фоновое действие в определённый момент прошлого",
-    "promptEn": "A background action at a specific moment in the past",
-    "sentence": {
-      "pre": "When you called, I ",
-      "verb": "was taking",
-      "post": " a shower."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Фоновое действие в определённый момент прошлого",
+      "en": "A background action at a specific moment in the past"
     },
-    "difficulty": 2
+    "tags": [
+      "past-continuous",
+      "sentence-analysis",
+      "affirmative",
+      "continuous",
+      "difficulty-2"
+    ],
+    "difficulty": 2,
+    "rules": {
+      "ru": "«When you called» — точечный прошлый момент; «was taking» описывает действие, уже шедшее в тот момент — типичная роль Past Continuous как фона."
+    },
+    "contextExamples": [
+      "When I arrived, she was already waiting at the entrance.",
+      "When the alarm went off, he was still sleeping."
+    ],
+    "sentences": [
+      {
+        "pre": "When you called, I ",
+        "verb": "was taking",
+        "post": " a shower.",
+        "answer": "past-continuous"
+      }
+    ]
   },
   {
     "id": "past-continuous-04",
-    "answer": "past-continuous",
-    "type": "sentence",
-    "prompt": "Длительное действие в течение всего периода в прошлом",
-    "promptEn": "An action lasting throughout a period in the past",
-    "sentence": {
-      "pre": "All morning, they ",
-      "verb": "were working",
-      "post": " in the garden."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Длительное действие в течение всего периода в прошлом",
+      "en": "An action lasting throughout a period in the past"
     },
-    "difficulty": 2
+    "tags": [
+      "past-continuous",
+      "sentence-analysis",
+      "affirmative",
+      "continuous",
+      "difficulty-2"
+    ],
+    "difficulty": 2,
+    "rules": {
+      "ru": "«All morning» — протяжённый период в прошлом; «were working» подчёркивает, что действие занимало весь этот промежуток без перерыва."
+    },
+    "contextExamples": [
+      "All afternoon, she was revising for her exam.",
+      "All evening, the band was rehearsing in the basement."
+    ],
+    "sentences": [
+      {
+        "pre": "All morning, they ",
+        "verb": "were working",
+        "post": " in the garden.",
+        "answer": "past-continuous"
+      }
+    ]
   },
   {
     "id": "past-continuous-05",
-    "answer": "past-continuous",
-    "type": "context",
-    "prompt": "Описание сцены или ситуации в конкретный момент прошлого",
-    "promptEn": "Describing a scene at a specific moment in the past",
-    "sentence": {
-      "pre": "When we arrived, everyone ",
-      "verb": "was dancing",
-      "post": " and having fun."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Описание сцены или ситуации в конкретный момент прошлого",
+      "en": "Describing a scene at a specific moment in the past"
     },
-    "difficulty": 2
+    "tags": [
+      "past-continuous",
+      "context-clue",
+      "affirmative",
+      "continuous",
+      "difficulty-2"
+    ],
+    "difficulty": 2,
+    "rules": {
+      "ru": "«Was dancing» описывает живую картину, застанную в момент прихода («when we arrived») — фоновый снимок происходящего через Past Continuous."
+    },
+    "contextExamples": [
+      "When we got to the stadium, the players were warming up on the pitch.",
+      "When I entered the office, everyone was staring at their screens."
+    ],
+    "sentences": [
+      {
+        "pre": "When we arrived, everyone ",
+        "verb": "was dancing",
+        "post": " and having fun.",
+        "answer": "past-continuous"
+      }
+    ]
   },
   {
     "id": "past-continuous-06",
-    "answer": "past-continuous",
-    "type": "sentence",
-    "prompt": "Процесс, который развивался в определённый период",
-    "promptEn": "A process that was developing during a specific period",
-    "sentence": {
-      "pre": "The situation ",
-      "verb": "was becoming",
-      "post": " more complicated."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Процесс, который развивался в определённый период",
+      "en": "A process that was developing during a specific period"
     },
-    "difficulty": 3
+    "tags": [
+      "past-continuous",
+      "sentence-analysis",
+      "affirmative",
+      "continuous",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«Was becoming» — глагол изменения состояния в Past Continuous передаёт постепенный процесс перехода, а не завершённый факт."
+    },
+    "contextExamples": [
+      "Prices were rising steadily throughout that period.",
+      "Her health was gradually improving after the surgery."
+    ],
+    "sentences": [
+      {
+        "pre": "The situation ",
+        "verb": "was becoming",
+        "post": " more complicated.",
+        "answer": "past-continuous"
+      }
+    ]
   },
   {
     "id": "past-continuous-07",
-    "answer": "past-continuous",
-    "type": "context",
-    "prompt": "Повторяющееся действие в прошлый период",
-    "promptEn": "A repeated action during a past period",
-    "sentence": {
-      "pre": "During my childhood, I ",
-      "verb": "was constantly reading",
-      "post": " books."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Повторяющееся действие в прошлый период",
+      "en": "A repeated action during a past period"
     },
-    "difficulty": 3
+    "tags": [
+      "past-continuous",
+      "context-clue",
+      "affirmative",
+      "continuous",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«Was constantly reading» — наречие «constantly» с Past Continuous выражает часто повторявшуюся, порой раздражающую привычку в прошлом периоде."
+    },
+    "contextExamples": [
+      "During that phase, she was always arriving late to practice.",
+      "When he worked there, he was continually staying past midnight."
+    ],
+    "sentences": [
+      {
+        "pre": "During my childhood, I ",
+        "verb": "was constantly reading",
+        "post": " books.",
+        "answer": "past-continuous"
+      }
+    ]
   },
   {
     "id": "past-continuous-08",
-    "answer": "past-continuous",
-    "type": "sentence",
-    "prompt": "Объяснение прошлого состояния через длящееся действие",
-    "promptEn": "Explaining a past state through an ongoing action",
-    "sentence": {
-      "pre": "My hands were dirty because I ",
-      "verb": "was fixing",
-      "post": " the car."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Объяснение прошлого состояния через длящееся действие",
+      "en": "Explaining a past state through an ongoing action"
     },
-    "difficulty": 2
+    "tags": [
+      "past-continuous",
+      "sentence-analysis",
+      "affirmative",
+      "continuous",
+      "difficulty-2"
+    ],
+    "difficulty": 2,
+    "rules": {
+      "ru": "«Was fixing» объясняет причину прошлого состояния; незавершённое фоновое действие (Past Continuous) обосновывает видимый результат."
+    },
+    "contextExamples": [
+      "She was out of breath because she was running to catch the train.",
+      "His voice was hoarse because he was talking on the phone all day."
+    ],
+    "sentences": [
+      {
+        "pre": "My hands were dirty because I ",
+        "verb": "was fixing",
+        "post": " the car.",
+        "answer": "past-continuous"
+      }
+    ]
   },
   {
     "id": "past-continuous-09",
-    "answer": "past-continuous",
-    "type": "context",
-    "prompt": "Два параллельных длящихся действия в прошлом",
-    "promptEn": "Two simultaneous ongoing actions in the past",
-    "sentence": {
-      "pre": "While the children ",
-      "verb": "were sleeping",
-      "post": ", the adults talked quietly."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Два параллельных длящихся действия в прошлом",
+      "en": "Two simultaneous ongoing actions in the past"
     },
-    "difficulty": 2
+    "tags": [
+      "past-continuous",
+      "context-clue",
+      "affirmative",
+      "continuous",
+      "difficulty-2"
+    ],
+    "difficulty": 2,
+    "rules": {
+      "ru": "«While … were sleeping» — длящееся фоновое действие, одновременное с другим; «while» + Past Continuous создаёт параллельный временной план."
+    },
+    "contextExamples": [
+      "While the boss was speaking, the team was taking notes.",
+      "While she was cooking, her husband was setting the table."
+    ],
+    "sentences": [
+      {
+        "pre": "While the children ",
+        "verb": "were sleeping",
+        "post": ", the adults talked quietly.",
+        "answer": "past-continuous"
+      }
+    ]
   },
   {
     "id": "past-continuous-10",
-    "answer": "past-continuous",
-    "type": "sentence",
-    "prompt": "Действие, происходившее в конкретный час прошлого",
-    "promptEn": "An action occurring at a specific clock time in the past",
-    "sentence": {
-      "pre": "At midnight, she ",
-      "verb": "was still writing",
-      "post": " her essay."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Действие, происходившее в конкретный час прошлого",
+      "en": "An action occurring at a specific clock time in the past"
     },
-    "difficulty": 2
+    "tags": [
+      "past-continuous",
+      "sentence-analysis",
+      "affirmative",
+      "continuous",
+      "difficulty-2"
+    ],
+    "difficulty": 2,
+    "rules": {
+      "ru": "«At midnight» — точный момент в прошлом; «was writing» показывает, что процесс шёл именно в тот момент и ещё не завершился."
+    },
+    "contextExamples": [
+      "At 7 pm yesterday, I was sitting in the waiting room.",
+      "At three in the morning, the neighbours were still playing music."
+    ],
+    "sentences": [
+      {
+        "pre": "At midnight, she ",
+        "verb": "was still writing",
+        "post": " her essay.",
+        "answer": "past-continuous"
+      }
+    ]
   },
   {
     "id": "past-continuous-11",
-    "answer": "past-continuous",
-    "type": "context",
-    "prompt": "Вежливое или осторожное высказывание о прошлом намерении",
-    "promptEn": "A polite or tentative expression about a past intention",
-    "sentence": {
-      "pre": "I ",
-      "verb": "was wondering",
-      "post": " if you could help me."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Вежливое или осторожное высказывание о прошлом намерении",
+      "en": "A polite or tentative expression about a past intention"
     },
-    "difficulty": 3
+    "tags": [
+      "past-continuous",
+      "context-clue",
+      "affirmative",
+      "continuous",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«Was wondering» — вежливый смягчённый запрос; Past Continuous делает высказывание менее прямым, снижая категоричность просьбы."
+    },
+    "contextExamples": [
+      "I was hoping you might be able to reschedule the meeting.",
+      "We were thinking you could join us for dinner tonight."
+    ],
+    "sentences": [
+      {
+        "pre": "I ",
+        "verb": "was wondering",
+        "post": " if you could help me.",
+        "answer": "past-continuous"
+      }
+    ]
   },
   {
     "id": "past-continuous-12",
-    "answer": "past-continuous",
-    "type": "sentence",
-    "prompt": "Создание атмосферы или обстановки в начале рассказа",
-    "promptEn": "Setting the scene at the beginning of a story",
-    "sentence": {
-      "pre": "The rain ",
-      "verb": "was falling",
-      "post": " and the streets were empty."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Создание атмосферы или обстановки в начале рассказа",
+      "en": "Setting the scene at the beginning of a story"
     },
-    "difficulty": 3
+    "tags": [
+      "past-continuous",
+      "sentence-analysis",
+      "affirmative",
+      "continuous",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«Was falling» — атмосферный фон в начале нарратива; Past Continuous рисует «живую картину» обстановки, на фоне которой произойдут события."
+    },
+    "contextExamples": [
+      "The sun was setting and the birds were returning to their nests.",
+      "Smoke was rising from the chimneys and children were running in the square."
+    ],
+    "sentences": [
+      {
+        "pre": "The rain ",
+        "verb": "was falling",
+        "post": " and the streets were empty.",
+        "answer": "past-continuous"
+      }
+    ]
   },
   {
     "id": "past-continuous-13",
-    "answer": "past-continuous",
-    "type": "context",
-    "prompt": "Действие, которое было в процессе в момент обнаружения чего-либо",
-    "promptEn": "An action in progress at the moment of a discovery",
-    "sentence": {
-      "pre": "I found my old diary while I ",
-      "verb": "was cleaning",
-      "post": " the attic."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Действие, которое было в процессе в момент обнаружения чего-либо",
+      "en": "An action in progress at the moment of a discovery"
     },
-    "difficulty": 3
+    "tags": [
+      "past-continuous",
+      "context-clue",
+      "affirmative",
+      "continuous",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«While I was cleaning» — длящийся фоновый процесс, во время которого произошло случайное открытие («found»); «while» + Past Continuous задаёт контекст."
+    },
+    "contextExamples": [
+      "She discovered an old photo while she was sorting through her grandmother's things.",
+      "He came across the missing key while he was tidying the drawer."
+    ],
+    "sentences": [
+      {
+        "pre": "I found my old diary while I ",
+        "verb": "was cleaning",
+        "post": " the attic.",
+        "answer": "past-continuous"
+      }
+    ]
   },
   {
     "id": "past-continuous-14",
-    "answer": "past-continuous",
-    "type": "sentence",
-    "prompt": "Отрицание длящегося действия в прошлый момент",
-    "promptEn": "Negating an ongoing action at a past moment",
-    "sentence": {
-      "pre": "At the time of the accident, he ",
-      "verb": "wasn't paying",
-      "post": " attention."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Отрицание длящегося действия в прошлый момент",
+      "en": "Negating an ongoing action at a past moment"
     },
-    "difficulty": 3
+    "tags": [
+      "past-continuous",
+      "sentence-analysis",
+      "negative",
+      "continuous",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«At the time of the accident» — конкретный прошлый момент; «wasn't paying» отрицает незавершённый длящийся процесс именно в тот момент."
+    },
+    "contextExamples": [
+      "At the time of the announcement, nobody was listening.",
+      "During the briefing, she wasn't taking notes."
+    ],
+    "sentences": [
+      {
+        "pre": "At the time of the accident, he ",
+        "verb": "wasn't paying",
+        "post": " attention.",
+        "answer": "past-continuous"
+      }
+    ]
   },
   {
     "id": "past-continuous-15",
-    "answer": "past-continuous",
-    "type": "context",
-    "prompt": "Действие, которое шло в момент неожиданного события",
-    "promptEn": "An action ongoing at the moment of an unexpected event",
-    "sentence": {
-      "pre": "I ",
-      "verb": "was just leaving",
-      "post": " when the fire alarm went off."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Действие, которое шло в момент неожиданного события",
+      "en": "An action ongoing at the moment of an unexpected event"
     },
-    "difficulty": 3
+    "tags": [
+      "past-continuous",
+      "context-clue",
+      "affirmative",
+      "continuous",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«Was just leaving … when … went off» — прерванное действие; частица «just» усиливает незавершённость момента в Past Continuous."
+    },
+    "contextExamples": [
+      "She was just falling asleep when her phone buzzed.",
+      "We were just sitting down to eat when the power cut out."
+    ],
+    "sentences": [
+      {
+        "pre": "I ",
+        "verb": "was just leaving",
+        "post": " when the fire alarm went off.",
+        "answer": "past-continuous"
+      }
+    ]
   },
   {
     "id": "past-continuous-16",
-    "answer": "past-continuous",
-    "type": "sentence",
-    "prompt": "Отрицание длящегося действия в момент события",
-    "promptEn": "Negating an ongoing action at the moment of an event",
-    "sentence": {
-      "pre": "Nobody ",
-      "verb": "was listening",
-      "post": " when the teacher explained the rule."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Отрицание длящегося действия в момент события",
+      "en": "Negating an ongoing action at the moment of an event"
     },
-    "difficulty": 2
+    "tags": [
+      "past-continuous",
+      "sentence-analysis",
+      "affirmative",
+      "continuous",
+      "difficulty-2"
+    ],
+    "difficulty": 2,
+    "rules": {
+      "ru": "«Was listening when» — фоновый процесс (или его отсутствие) в момент прерывающего события «explained»; классическая конструкция Past Continuous + when."
+    },
+    "contextExamples": [
+      "Nobody was paying attention when the announcement was made.",
+      "Everyone was staring at their phones when the manager walked in."
+    ],
+    "sentences": [
+      {
+        "pre": "Nobody ",
+        "verb": "was listening",
+        "post": " when the teacher explained the rule.",
+        "answer": "past-continuous"
+      }
+    ]
   },
   {
     "id": "past-continuous-17",
-    "answer": "past-continuous",
-    "type": "context",
-    "prompt": "Вопрос о действии в конкретный момент прошлого",
-    "promptEn": "A question about an action at a specific past moment",
-    "sentence": {
-      "pre": "What ",
-      "verb": "were you doing",
-      "post": " when the earthquake struck?"
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Вопрос о действии в конкретный момент прошлого",
+      "en": "A question about an action at a specific past moment"
     },
-    "difficulty": 2
+    "tags": [
+      "past-continuous",
+      "context-clue",
+      "question",
+      "continuous",
+      "difficulty-2"
+    ],
+    "difficulty": 2,
+    "rules": {
+      "ru": "«What were you doing when» — вопрос о длящемся фоновом действии в момент внезапного события; форма «were … doing» однозначно указывает на Past Continuous."
+    },
+    "contextExamples": [
+      "What were you doing when the news broke?",
+      "Where were they staying when the storm hit?"
+    ],
+    "sentences": [
+      {
+        "pre": "What ",
+        "verb": "were you doing",
+        "post": " when the earthquake struck?",
+        "answer": "past-continuous"
+      }
+    ]
   },
   {
     "id": "past-continuous-18",
-    "answer": "past-continuous",
-    "type": "sentence",
-    "prompt": "Фоновые длительные действия нескольких людей в одно время",
-    "promptEn": "Background ongoing actions of several people at the same time",
-    "sentence": {
-      "pre": "While some guests ",
-      "verb": "were talking",
-      "post": ", others were dancing in the garden."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Фоновые длительные действия нескольких людей в одно время",
+      "en": "Background ongoing actions of several people at the same time"
     },
-    "difficulty": 2
+    "tags": [
+      "past-continuous",
+      "sentence-analysis",
+      "affirmative",
+      "continuous",
+      "difficulty-2"
+    ],
+    "difficulty": 2,
+    "rules": {
+      "ru": "«While … were talking … were dancing» — два параллельных незавершённых действия разных людей в одно время; оба в Past Continuous."
+    },
+    "contextExamples": [
+      "While some passengers were reading, others were sleeping in their seats.",
+      "While the parents were cooking, the children were playing in the yard."
+    ],
+    "sentences": [
+      {
+        "pre": "While some guests ",
+        "verb": "were talking",
+        "post": ", others were dancing in the garden.",
+        "answer": "past-continuous"
+      }
+    ]
   },
   {
     "id": "past-continuous-19",
-    "answer": "past-continuous",
-    "type": "context",
-    "prompt": "Действие, которое постепенно ухудшалось в определённый период",
-    "promptEn": "A situation that was gradually getting worse during a past period",
-    "sentence": {
-      "pre": "By the end of the project, the team's morale ",
-      "verb": "was falling",
-      "post": " rapidly."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Действие, которое постепенно ухудшалось в определённый период",
+      "en": "A situation that was gradually getting worse during a past period"
     },
-    "difficulty": 3
+    "tags": [
+      "past-continuous",
+      "context-clue",
+      "affirmative",
+      "continuous",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«Was falling rapidly» — глагол изменения в Past Continuous описывает постепенный нарастающий процесс, а не единичный завершённый факт."
+    },
+    "contextExamples": [
+      "By the third week, the patient's condition was improving slowly.",
+      "As the deadline approached, the pressure was mounting on the whole team."
+    ],
+    "sentences": [
+      {
+        "pre": "By the end of the project, the team's morale ",
+        "verb": "was falling",
+        "post": " rapidly.",
+        "answer": "past-continuous"
+      }
+    ]
   },
   {
     "id": "past-continuous-20",
-    "answer": "past-continuous",
-    "type": "sentence",
-    "prompt": "Деятельность, которая шла в прошлом, когда кто-то пришёл",
-    "promptEn": "An activity in progress in the past when someone arrived",
-    "sentence": {
-      "pre": "When the guests arrived, I ",
-      "verb": "was still getting",
-      "post": " dressed."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Деятельность, которая шла в прошлом, когда кто-то пришёл",
+      "en": "An activity in progress in the past when someone arrived"
     },
-    "difficulty": 2
+    "tags": [
+      "past-continuous",
+      "sentence-analysis",
+      "affirmative",
+      "continuous",
+      "difficulty-2"
+    ],
+    "difficulty": 2,
+    "rules": {
+      "ru": "«Was still getting dressed» — «still» усиливает незавершённость процесса в момент прихода гостей; это типичный фон Past Continuous."
+    },
+    "contextExamples": [
+      "When my parents arrived, I was still cleaning up the apartment.",
+      "When the cab came, she was still looking for her keys."
+    ],
+    "sentences": [
+      {
+        "pre": "When the guests arrived, I ",
+        "verb": "was still getting",
+        "post": " dressed.",
+        "answer": "past-continuous"
+      }
+    ]
   },
   {
     "id": "past-continuous-21",
-    "answer": "past-continuous",
-    "type": "context",
-    "prompt": "Описание обстановки в начале истории или отрывка",
-    "promptEn": "Setting the atmosphere at the opening of a story or passage",
-    "sentence": {
-      "pre": "The fire ",
-      "verb": "was crackling",
-      "post": " and the wind was howling outside."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Описание обстановки в начале истории или отрывка",
+      "en": "Setting the atmosphere at the opening of a story or passage"
     },
-    "difficulty": 3
+    "tags": [
+      "past-continuous",
+      "context-clue",
+      "affirmative",
+      "continuous",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«Was crackling … was howling» — два одновременных фоновых природных явления; Past Continuous создаёт атмосферную картину в начале нарратива."
+    },
+    "contextExamples": [
+      "The leaves were rustling in the breeze and the river was murmuring below.",
+      "Snow was falling softly and the village streets were glowing under the lamplight."
+    ],
+    "sentences": [
+      {
+        "pre": "The fire ",
+        "verb": "was crackling",
+        "post": " and the wind was howling outside.",
+        "answer": "past-continuous"
+      }
+    ]
   },
   {
     "id": "past-continuous-22",
-    "answer": "past-continuous",
-    "type": "sentence",
-    "prompt": "Длящееся действие, внезапно прерванное разовым событием",
-    "promptEn": "An ongoing action suddenly cut short by a one-off event",
-    "sentence": {
-      "pre": "She ",
-      "verb": "was giving",
-      "post": " a speech when the microphone cut out."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Длящееся действие, внезапно прерванное разовым событием",
+      "en": "An ongoing action suddenly cut short by a one-off event"
     },
-    "difficulty": 2
+    "tags": [
+      "past-continuous",
+      "sentence-analysis",
+      "affirmative",
+      "continuous",
+      "difficulty-2"
+    ],
+    "difficulty": 2,
+    "rules": {
+      "ru": "«Was giving … when … cut out» — развёрнутое действие (Past Continuous) прерывается мгновенным событием (Past Simple); именно первое и нужно идентифицировать."
+    },
+    "contextExamples": [
+      "He was presenting his findings when the projector broke down.",
+      "They were crossing the bridge when the fog suddenly thickened."
+    ],
+    "sentences": [
+      {
+        "pre": "She ",
+        "verb": "was giving",
+        "post": " a speech when the microphone cut out.",
+        "answer": "past-continuous"
+      }
+    ]
   },
   {
     "id": "past-continuous-23",
-    "answer": "past-continuous",
-    "type": "context",
-    "prompt": "Незаметная деятельность в фоне, пока происходило важное событие",
-    "promptEn": "A background activity while an important event was unfolding",
-    "sentence": {
-      "pre": "The children ",
-      "verb": "were playing",
-      "post": " upstairs while the adults discussed the situation below."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Незаметная деятельность в фоне, пока происходило важное событие",
+      "en": "A background activity while an important event was unfolding"
     },
-    "difficulty": 3
+    "tags": [
+      "past-continuous",
+      "context-clue",
+      "affirmative",
+      "continuous",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«Were playing … while» — незаметный фоновый процесс, идущий параллельно главному событию; «while» + Past Continuous задаёт второй план сцены."
+    },
+    "contextExamples": [
+      "The cat was sleeping on the sofa while the family packed their bags.",
+      "The technician was repairing the wiring while the meeting went on upstairs."
+    ],
+    "sentences": [
+      {
+        "pre": "The children ",
+        "verb": "were playing",
+        "post": " upstairs while the adults discussed the situation below.",
+        "answer": "past-continuous"
+      }
+    ]
   },
   {
     "id": "past-continuous-24",
-    "answer": "past-continuous",
-    "type": "sentence",
-    "prompt": "Непреднамеренное открытие во время длящегося действия",
-    "promptEn": "An accidental discovery made during an ongoing action",
-    "sentence": {
-      "pre": "While I ",
-      "verb": "was searching",
-      "post": " for my passport, I found the missing letter."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Непреднамеренное открытие во время длящегося действия",
+      "en": "An accidental discovery made during an ongoing action"
     },
-    "difficulty": 3
+    "tags": [
+      "past-continuous",
+      "sentence-analysis",
+      "affirmative",
+      "continuous",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«While I was searching» — целенаправленный, но ещё незавершённый процесс; «while» + Past Continuous задаёт контекст случайного открытия."
+    },
+    "contextExamples": [
+      "While she was reorganising her bookshelf, she came across her childhood diary.",
+      "While they were renovating the kitchen, they discovered an old newspaper inside the wall."
+    ],
+    "sentences": [
+      {
+        "pre": "While I ",
+        "verb": "was searching",
+        "post": " for my passport, I found the missing letter.",
+        "answer": "past-continuous"
+      }
+    ]
   },
   {
     "id": "past-continuous-25",
-    "answer": "past-continuous",
-    "type": "context",
-    "prompt": "Повторяющееся раздражающее поведение в прошлый период",
-    "promptEn": "Repeatedly irritating behaviour during a past period",
-    "sentence": {
-      "pre": "He ",
-      "verb": "was always interrupting",
-      "post": " people in meetings."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Повторяющееся раздражающее поведение в прошлый период",
+      "en": "Repeatedly irritating behaviour during a past period"
     },
-    "difficulty": 3
+    "tags": [
+      "past-continuous",
+      "context-clue",
+      "affirmative",
+      "continuous",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«Was always interrupting» — «always» + Past Continuous выражает раздражающую повторяющуюся привычку в прошлом с оттенком критики."
+    },
+    "contextExamples": [
+      "She was constantly forgetting to lock the door when she left.",
+      "They were always arriving late and disrupting the whole group."
+    ],
+    "sentences": [
+      {
+        "pre": "He ",
+        "verb": "was always interrupting",
+        "post": " people in meetings.",
+        "answer": "past-continuous"
+      }
+    ]
   }
 ]

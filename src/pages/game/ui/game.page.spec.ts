@@ -22,14 +22,12 @@ describe('GamePageComponent', () => {
   ): Question {
     return {
       id,
-      answer,
-      type: 'sentence',
-      prompt: `Question ${id}`,
-      sentence: {
-        pre: 'I',
-        verb: 'play',
-        post: 'football',
-      },
+      mechanism: 'context',
+      prompt: { en: `Question ${id}`, ru: `Вопрос ${id}` },
+      sentences: [
+        { pre: 'I ', verb: 'play', post: ' football', answer },
+      ],
+      tags: ['present-simple', 'affirmative'],
       difficulty: 1,
     };
   }

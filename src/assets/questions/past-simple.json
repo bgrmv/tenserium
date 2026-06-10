@@ -1,392 +1,932 @@
 [
   {
     "id": "past-simple-01",
-    "answer": "past-simple",
-    "type": "context",
-    "prompt": "Завершённое действие в конкретный момент прошлого",
-    "promptEn": "A completed action at a specific past time",
-    "sentence": {
-      "pre": "They ",
-      "verb": "arrived",
-      "post": " an hour ago."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Завершённое действие в конкретный момент прошлого",
+      "en": "A completed action at a specific past time"
     },
-    "difficulty": 1
+    "tags": [
+      "past-simple",
+      "context-clue",
+      "affirmative",
+      "simple",
+      "difficulty-1"
+    ],
+    "difficulty": 1,
+    "rules": {
+      "ru": "Маркер «ago» указывает на завершённый момент в прошлом, отсчитанный от сейчас — это сигнал Past Simple."
+    },
+    "contextExamples": [
+      "The train left twenty minutes ago.",
+      "We finished the report two days ago."
+    ],
+    "sentences": [
+      {
+        "pre": "They ",
+        "verb": "arrived",
+        "post": " an hour ago.",
+        "answer": "past-simple"
+      }
+    ]
   },
   {
     "id": "past-simple-02",
-    "answer": "past-simple",
-    "type": "context",
-    "prompt": "Однократное завершённое событие в прошлом",
-    "promptEn": "A single finished event in the past",
-    "sentence": {
-      "pre": "He ",
-      "verb": "bought",
-      "post": " a car in 2019."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Однократное завершённое событие в прошлом",
+      "en": "A single finished event in the past"
     },
-    "difficulty": 1
+    "tags": [
+      "past-simple",
+      "context-clue",
+      "affirmative",
+      "simple",
+      "difficulty-1"
+    ],
+    "difficulty": 1,
+    "rules": {
+      "ru": "Конкретный год «in 2019» — закрытый отрезок прошлого, однозначно требующий Past Simple."
+    },
+    "contextExamples": [
+      "She started her own company in 2015.",
+      "They moved to London in 2020."
+    ],
+    "sentences": [
+      {
+        "pre": "He ",
+        "verb": "bought",
+        "post": " a car in 2019.",
+        "answer": "past-simple"
+      }
+    ]
   },
   {
     "id": "past-simple-03",
-    "answer": "past-simple",
-    "type": "sentence",
-    "prompt": "Действие, которое произошло и закончилось в конкретное время",
-    "promptEn": "An action that happened and finished at a specific time",
-    "sentence": {
-      "pre": "She ",
-      "verb": "graduated",
-      "post": " last summer."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Действие, которое произошло и закончилось в конкретное время",
+      "en": "An action that happened and finished at a specific time"
     },
-    "difficulty": 1
+    "tags": [
+      "past-simple",
+      "sentence-analysis",
+      "affirmative",
+      "simple",
+      "difficulty-1"
+    ],
+    "difficulty": 1,
+    "rules": {
+      "ru": "«Last summer» — завершённый период в прошлом; событие полностью закончилось, связи с настоящим нет."
+    },
+    "contextExamples": [
+      "He retired last spring.",
+      "We painted the house last autumn."
+    ],
+    "sentences": [
+      {
+        "pre": "She ",
+        "verb": "graduated",
+        "post": " last summer.",
+        "answer": "past-simple"
+      }
+    ]
   },
   {
     "id": "past-simple-04",
-    "answer": "past-simple",
-    "type": "sentence",
-    "prompt": "Серия завершённых действий, произошедших одно за другим",
-    "promptEn": "A series of completed actions in sequence",
-    "sentence": {
-      "pre": "I ",
-      "verb": "woke",
-      "post": " up, had breakfast, and went to work."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Серия завершённых действий, произошедших одно за другим",
+      "en": "A series of completed actions in sequence"
     },
-    "difficulty": 1
+    "tags": [
+      "past-simple",
+      "sentence-analysis",
+      "affirmative",
+      "simple",
+      "difficulty-1"
+    ],
+    "difficulty": 1,
+    "rules": {
+      "ru": "Три глагола в Past Simple (woke, had, went) перечисляют последовательные завершённые действия — каждое закончилось до начала следующего."
+    },
+    "contextExamples": [
+      "She entered the room, sat down, and opened her laptop.",
+      "He locked the car, crossed the street, and entered the café."
+    ],
+    "sentences": [
+      {
+        "pre": "I ",
+        "verb": "woke",
+        "post": " up, had breakfast, and went to work.",
+        "answer": "past-simple"
+      }
+    ]
   },
   {
     "id": "past-simple-05",
-    "answer": "past-simple",
-    "type": "context",
-    "prompt": "Историческое событие или факт в прошлом",
-    "promptEn": "A historical event or past fact",
-    "sentence": {
-      "pre": "The Berlin Wall ",
-      "verb": "fell",
-      "post": " in 1989."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Историческое событие или факт в прошлом",
+      "en": "A historical event or past fact"
     },
-    "difficulty": 1
+    "tags": [
+      "past-simple",
+      "context-clue",
+      "affirmative",
+      "simple",
+      "difficulty-1"
+    ],
+    "difficulty": 1,
+    "rules": {
+      "ru": "Исторический факт с конкретным годом «in 1989» — время закрыто, событие давно завершено, используется Past Simple."
+    },
+    "contextExamples": [
+      "Neil Armstrong walked on the Moon in 1969.",
+      "The Second World War ended in 1945."
+    ],
+    "sentences": [
+      {
+        "pre": "The Berlin Wall ",
+        "verb": "fell",
+        "post": " in 1989.",
+        "answer": "past-simple"
+      }
+    ]
   },
   {
     "id": "past-simple-06",
-    "answer": "past-simple",
-    "type": "sentence",
-    "prompt": "Внезапное действие, которое прервало длящееся в прошлом",
-    "promptEn": "A sudden action that interrupted an ongoing past action",
-    "sentence": {
-      "pre": "We were watching TV when the power ",
-      "verb": "went",
-      "post": " out."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Внезапное действие, которое прервало длящееся в прошлом",
+      "en": "A sudden action that interrupted an ongoing past action"
     },
-    "difficulty": 2
+    "tags": [
+      "past-simple",
+      "sentence-analysis",
+      "affirmative",
+      "simple",
+      "difficulty-2"
+    ],
+    "difficulty": 2,
+    "rules": {
+      "ru": "«Went out» — мгновенное прерывающее действие в конструкции «was doing WHEN smth happened»; прерывающий глагол всегда в Past Simple."
+    },
+    "contextExamples": [
+      "She was reading when a loud noise startled her.",
+      "They were playing football when it started to rain."
+    ],
+    "sentences": [
+      {
+        "pre": "We were watching TV when the power ",
+        "verb": "went",
+        "post": " out.",
+        "answer": "past-simple"
+      }
+    ]
   },
   {
     "id": "past-simple-07",
-    "answer": "past-simple",
-    "type": "context",
-    "prompt": "Привычка или повторяющееся действие в прошлом",
-    "promptEn": "A habit or repeated action in the past",
-    "sentence": {
-      "pre": "When I was a child, I ",
-      "verb": "played",
-      "post": " football every day."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Привычка или повторяющееся действие в прошлом",
+      "en": "A habit or repeated action in the past"
     },
-    "difficulty": 2
+    "tags": [
+      "past-simple",
+      "context-clue",
+      "affirmative",
+      "simple",
+      "difficulty-2"
+    ],
+    "difficulty": 2,
+    "rules": {
+      "ru": "«Every day» при контексте прошлого («when I was a child») указывает на повторяющуюся прошлую привычку — Past Simple."
+    },
+    "contextExamples": [
+      "As a teenager, she practised piano every evening.",
+      "When we lived in the countryside, we walked to school every morning."
+    ],
+    "sentences": [
+      {
+        "pre": "When I was a child, I ",
+        "verb": "played",
+        "post": " football every day.",
+        "answer": "past-simple"
+      }
+    ]
   },
   {
     "id": "past-simple-08",
-    "answer": "past-simple",
-    "type": "sentence",
-    "prompt": "Неожиданное или внезапное событие в прошлом",
-    "promptEn": "An unexpected event in the past",
-    "sentence": {
-      "pre": "Suddenly, the door ",
-      "verb": "opened",
-      "post": " and my best friend walked in."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Неожиданное или внезапное событие в прошлом",
+      "en": "An unexpected event in the past"
     },
-    "difficulty": 2
+    "tags": [
+      "past-simple",
+      "sentence-analysis",
+      "affirmative",
+      "simple",
+      "difficulty-2"
+    ],
+    "difficulty": 2,
+    "rules": {
+      "ru": "«Suddenly» сигнализирует о мгновенном, неожиданном действии — такие события передаются Past Simple, а не Continuous."
+    },
+    "contextExamples": [
+      "Suddenly, the lights went out and everyone gasped.",
+      "Without warning, the car skidded and hit the barrier."
+    ],
+    "sentences": [
+      {
+        "pre": "Suddenly, the door ",
+        "verb": "opened",
+        "post": " and my best friend walked in.",
+        "answer": "past-simple"
+      }
+    ]
   },
   {
     "id": "past-simple-09",
-    "answer": "past-simple",
-    "type": "context",
-    "prompt": "Описание прошлого состояния или положения",
-    "promptEn": "Describing a past state or situation",
-    "sentence": {
-      "pre": "Last winter, it ",
-      "verb": "was",
-      "post": " extremely cold."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Описание прошлого состояния или положения",
+      "en": "Describing a past state or situation"
     },
-    "difficulty": 2
+    "tags": [
+      "past-simple",
+      "context-clue",
+      "affirmative",
+      "simple",
+      "difficulty-2"
+    ],
+    "difficulty": 2,
+    "rules": {
+      "ru": "«Last winter» — закрытый временной отрезок в прошлом; глагол-состояние «was» в Past Simple описывает условие того периода."
+    },
+    "contextExamples": [
+      "Last year the rent was much lower in this area.",
+      "When she was a student, she was very shy."
+    ],
+    "sentences": [
+      {
+        "pre": "Last winter, it ",
+        "verb": "was",
+        "post": " extremely cold.",
+        "answer": "past-simple"
+      }
+    ]
   },
   {
     "id": "past-simple-10",
-    "answer": "past-simple",
-    "type": "sentence",
-    "prompt": "Причинно-следственная связь в прошлом",
-    "promptEn": "A cause and effect in the past",
-    "sentence": {
-      "pre": "Because I forgot my keys, I ",
-      "verb": "had",
-      "post": " to wait for an hour."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Причинно-следственная связь в прошлом",
+      "en": "A cause and effect in the past"
     },
-    "difficulty": 2
+    "tags": [
+      "past-simple",
+      "sentence-analysis",
+      "affirmative",
+      "simple",
+      "difficulty-2"
+    ],
+    "difficulty": 2,
+    "rules": {
+      "ru": "Оба события (forgot, had to wait) — завершённые прошлые факты в причинно-следственной связи; оба в Past Simple."
+    },
+    "contextExamples": [
+      "Because she missed the bus, she arrived late to the interview.",
+      "Since he lost his wallet, he had to borrow money from a colleague."
+    ],
+    "sentences": [
+      {
+        "pre": "Because I forgot my keys, I ",
+        "verb": "had",
+        "post": " to wait for an hour.",
+        "answer": "past-simple"
+      }
+    ]
   },
   {
     "id": "past-simple-11",
-    "answer": "past-simple",
-    "type": "context",
-    "prompt": "Завершённое действие с чётким указателем времени в прошлом",
-    "promptEn": "A completed action with a clear past time marker",
-    "sentence": {
-      "pre": "We ",
-      "verb": "moved",
-      "post": " to this city three years ago."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Завершённое действие с чётким указателем времени в прошлом",
+      "en": "A completed action with a clear past time marker"
     },
-    "difficulty": 1
+    "tags": [
+      "past-simple",
+      "context-clue",
+      "affirmative",
+      "simple",
+      "difficulty-1"
+    ],
+    "difficulty": 1,
+    "rules": {
+      "ru": "«Three years ago» — точный временной маркер, отсчитанный от сейчас назад; указывает на завершённое прошлое действие."
+    },
+    "contextExamples": [
+      "My parents got married thirty years ago.",
+      "She changed jobs six months ago."
+    ],
+    "sentences": [
+      {
+        "pre": "We ",
+        "verb": "moved",
+        "post": " to this city three years ago.",
+        "answer": "past-simple"
+      }
+    ]
   },
   {
     "id": "past-simple-12",
-    "answer": "past-simple",
-    "type": "sentence",
-    "prompt": "Отрицание факта в прошлом",
-    "promptEn": "Denying that something happened in the past",
-    "sentence": {
-      "pre": "She ",
-      "verb": "didn't reply",
-      "post": " to my message yesterday."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Отрицание факта в прошлом",
+      "en": "Denying that something happened in the past"
     },
-    "difficulty": 2
+    "tags": [
+      "past-simple",
+      "sentence-analysis",
+      "negative",
+      "simple",
+      "difficulty-2"
+    ],
+    "difficulty": 2,
+    "rules": {
+      "ru": "«Yesterday» — закрытый прошлый день; отрицание «didn't» + инфинитив — стандартная отрицательная форма Past Simple."
+    },
+    "contextExamples": [
+      "He didn't show up to the meeting this morning.",
+      "They didn't call us back last week."
+    ],
+    "sentences": [
+      {
+        "pre": "She ",
+        "verb": "didn't reply",
+        "post": " to my message yesterday.",
+        "answer": "past-simple"
+      }
+    ]
   },
   {
     "id": "past-simple-13",
-    "answer": "past-simple",
-    "type": "context",
-    "prompt": "Биографический факт из жизни известного человека",
-    "promptEn": "A biographical fact about a well-known person",
-    "sentence": {
-      "pre": "Einstein ",
-      "verb": "developed",
-      "post": " the theory of relativity in the early 20th century."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Биографический факт из жизни известного человека",
+      "en": "A biographical fact about a well-known person"
     },
-    "difficulty": 2
+    "tags": [
+      "past-simple",
+      "context-clue",
+      "affirmative",
+      "simple",
+      "difficulty-2"
+    ],
+    "difficulty": 2,
+    "rules": {
+      "ru": "Биографическое достижение относится к конкретному историческому периоду («in the early 20th century») — факт завершён и принадлежит прошлому."
+    },
+    "contextExamples": [
+      "Darwin published his theory of evolution in 1859.",
+      "Marie Curie won the Nobel Prize twice."
+    ],
+    "sentences": [
+      {
+        "pre": "Einstein ",
+        "verb": "developed",
+        "post": " the theory of relativity in the early 20th century.",
+        "answer": "past-simple"
+      }
+    ]
   },
   {
     "id": "past-simple-14",
-    "answer": "past-simple",
-    "type": "sentence",
-    "prompt": "Последовательность двух завершённых действий в прошлом",
-    "promptEn": "A sequence of two completed past actions",
-    "sentence": {
-      "pre": "He ",
-      "verb": "locked",
-      "post": " the door and left the building."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Последовательность двух завершённых действий в прошлом",
+      "en": "A sequence of two completed past actions"
     },
-    "difficulty": 2
+    "tags": [
+      "past-simple",
+      "sentence-analysis",
+      "affirmative",
+      "simple",
+      "difficulty-2"
+    ],
+    "difficulty": 2,
+    "rules": {
+      "ru": "«Locked … and left» — два глагола в Past Simple соединены «and», передавая последовательность мгновенных завершённых действий."
+    },
+    "contextExamples": [
+      "She grabbed her bag and ran to the station.",
+      "He signed the contract and handed it back."
+    ],
+    "sentences": [
+      {
+        "pre": "He ",
+        "verb": "locked",
+        "post": " the door and left the building.",
+        "answer": "past-simple"
+      }
+    ]
   },
   {
     "id": "past-simple-15",
-    "answer": "past-simple",
-    "type": "context",
-    "prompt": "Ответ на вопрос о прошлом опыте с указанием времени",
-    "promptEn": "A past experience with a specific time reference",
-    "sentence": {
-      "pre": "I ",
-      "verb": "visited",
-      "post": " Rome last summer."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Ответ на вопрос о прошлом опыте с указанием времени",
+      "en": "A past experience with a specific time reference"
     },
-    "difficulty": 1
+    "tags": [
+      "past-simple",
+      "context-clue",
+      "affirmative",
+      "simple",
+      "difficulty-1"
+    ],
+    "difficulty": 1,
+    "rules": {
+      "ru": "«Last summer» — конкретный завершённый период; опыт, привязанный ко времени, выражается Past Simple, а не Present Perfect."
+    },
+    "contextExamples": [
+      "We went to Paris last spring.",
+      "He attended a conference in Berlin last November."
+    ],
+    "sentences": [
+      {
+        "pre": "I ",
+        "verb": "visited",
+        "post": " Rome last summer.",
+        "answer": "past-simple"
+      }
+    ]
   },
   {
     "id": "past-simple-16",
-    "answer": "past-simple",
-    "type": "sentence",
-    "prompt": "Реакция или решение в конкретный момент прошлого",
-    "promptEn": "A reaction or decision at a specific past moment",
-    "sentence": {
-      "pre": "When she heard the news, she ",
-      "verb": "started",
-      "post": " crying."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Реакция или решение в конкретный момент прошлого",
+      "en": "A reaction or decision at a specific past moment"
     },
-    "difficulty": 2
+    "tags": [
+      "past-simple",
+      "sentence-analysis",
+      "affirmative",
+      "simple",
+      "difficulty-2"
+    ],
+    "difficulty": 2,
+    "rules": {
+      "ru": "«Started» — мгновенная реакция, triggered словом «when»; оба глагола (heard, started) в Past Simple показывают следующие друг за другом события."
+    },
+    "contextExamples": [
+      "When he got the offer, he accepted it immediately.",
+      "When they saw the score, they cheered."
+    ],
+    "sentences": [
+      {
+        "pre": "When she heard the news, she ",
+        "verb": "started",
+        "post": " crying.",
+        "answer": "past-simple"
+      }
+    ]
   },
   {
     "id": "past-simple-17",
-    "answer": "past-simple",
-    "type": "context",
-    "prompt": "Событие в прошлом без явного указателя времени, но ясно завершённое",
-    "promptEn": "A past event without a time marker but clearly finished",
-    "sentence": {
-      "pre": "I never ",
-      "verb": "learned",
-      "post": " to play the guitar."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Событие в прошлом без явного указателя времени, но ясно завершённое",
+      "en": "A past event without a time marker but clearly finished"
     },
-    "difficulty": 3
+    "tags": [
+      "past-simple",
+      "context-clue",
+      "affirmative",
+      "simple",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«Never learned» описывает факт всей прошлой жизни как завершённый период — нет связи с настоящим, поэтому Past Simple, а не Present Perfect."
+    },
+    "contextExamples": [
+      "She never visited her grandfather's hometown.",
+      "He never understood why they left so early."
+    ],
+    "sentences": [
+      {
+        "pre": "I never ",
+        "verb": "learned",
+        "post": " to play the guitar.",
+        "answer": "past-simple"
+      }
+    ]
   },
   {
     "id": "past-simple-18",
-    "answer": "past-simple",
-    "type": "sentence",
-    "prompt": "Прошедшее действие в придаточном предложении с 'when'",
-    "promptEn": "A past action in a clause introduced by 'when'",
-    "sentence": {
-      "pre": "When I ",
-      "verb": "was",
-      "post": " young, life seemed much simpler."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Прошедшее действие в придаточном предложении с 'when'",
+      "en": "A past action in a clause introduced by 'when'"
     },
-    "difficulty": 2
+    "tags": [
+      "past-simple",
+      "sentence-analysis",
+      "affirmative",
+      "simple",
+      "difficulty-2"
+    ],
+    "difficulty": 2,
+    "rules": {
+      "ru": "«Was young» — состояние в закрытом прошлом периоде жизни; глагол-состояние в Past Simple описывает условия того времени."
+    },
+    "contextExamples": [
+      "When she was a teenager, everything felt more intense.",
+      "When they were students, they had very little money."
+    ],
+    "sentences": [
+      {
+        "pre": "When I ",
+        "verb": "was",
+        "post": " young, life seemed much simpler.",
+        "answer": "past-simple"
+      }
+    ]
   },
   {
     "id": "past-simple-19",
-    "answer": "past-simple",
-    "type": "context",
-    "prompt": "Вопрос о конкретном прошлом событии",
-    "promptEn": "A question about a specific past event",
-    "sentence": {
-      "pre": "Where ",
-      "verb": "did",
-      "post": " you meet your best friend?"
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Вопрос о конкретном прошлом событии",
+      "en": "A question about a specific past event"
     },
-    "difficulty": 2
+    "tags": [
+      "past-simple",
+      "context-clue",
+      "question",
+      "simple",
+      "difficulty-2"
+    ],
+    "difficulty": 2,
+    "rules": {
+      "ru": "Вопрос о конкретном прошлом факте («where did you meet») использует вспомогательный «did» — маркер Past Simple в вопросах."
+    },
+    "contextExamples": [
+      "When did you first hear about this project?",
+      "How did they manage to fix the problem so quickly?"
+    ],
+    "sentences": [
+      {
+        "pre": "Where ",
+        "verb": "did",
+        "post": " you meet your best friend?",
+        "answer": "past-simple"
+      }
+    ]
   },
   {
     "id": "past-simple-20",
-    "answer": "past-simple",
-    "type": "sentence",
-    "prompt": "Нереальное условие в прошлом (второй кондиционал — условная часть)",
-    "promptEn": "Unreal past condition (second conditional — if-clause)",
-    "sentence": {
-      "pre": "If I ",
-      "verb": "knew",
-      "post": " the answer, I would tell you."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Нереальное условие в прошлом (второй кондиционал — условная часть)",
+      "en": "Unreal past condition (second conditional — if-clause)"
     },
-    "difficulty": 3
+    "tags": [
+      "past-simple",
+      "sentence-analysis",
+      "affirmative",
+      "simple",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "Структура «If + Past Simple … would» — второй кондиционал; «knew» — нереальное/гипотетическое условие в настоящем, не прошлое время."
+    },
+    "contextExamples": [
+      "If she had more time, she would travel more.",
+      "If we lived closer, we would visit them every week."
+    ],
+    "sentences": [
+      {
+        "pre": "If I ",
+        "verb": "knew",
+        "post": " the answer, I would tell you.",
+        "answer": "past-simple"
+      }
+    ]
   },
   {
     "id": "past-simple-21",
-    "answer": "past-simple",
-    "type": "context",
-    "prompt": "Историческое событие в конкретном году далёкого прошлого",
-    "promptEn": "A historical event in a specific year of the distant past",
-    "sentence": {
-      "pre": "The Wright brothers ",
-      "verb": "made",
-      "post": " their first powered flight in 1903."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Историческое событие в конкретном году далёкого прошлого",
+      "en": "A historical event in a specific year of the distant past"
     },
-    "difficulty": 1
+    "tags": [
+      "past-simple",
+      "context-clue",
+      "affirmative",
+      "simple",
+      "difficulty-1"
+    ],
+    "difficulty": 1,
+    "rules": {
+      "ru": "«In 1903» — конкретный исторический год, действие давно завершено; для исторических нарративов используется Past Simple."
+    },
+    "contextExamples": [
+      "Columbus reached the Americas in 1492.",
+      "Gagarin orbited the Earth in 1961."
+    ],
+    "sentences": [
+      {
+        "pre": "The Wright brothers ",
+        "verb": "made",
+        "post": " their first powered flight in 1903.",
+        "answer": "past-simple"
+      }
+    ]
   },
   {
     "id": "past-simple-22",
-    "answer": "past-simple",
-    "type": "sentence",
-    "prompt": "Вопрос о прошлом событии с вопросительным словом",
-    "promptEn": "A wh-question about a past event",
-    "sentence": {
-      "pre": "What time ",
-      "verb": "did",
-      "post": " the meeting start?"
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Вопрос о прошлом событии с вопросительным словом",
+      "en": "A wh-question about a past event"
     },
-    "difficulty": 2
+    "tags": [
+      "past-simple",
+      "sentence-analysis",
+      "question",
+      "simple",
+      "difficulty-2"
+    ],
+    "difficulty": 2,
+    "rules": {
+      "ru": "«What time did … start?» — вопрос о конкретном завершённом событии; «did» как вспомогательный глагол указывает на Past Simple."
+    },
+    "contextExamples": [
+      "What time did the concert finish?",
+      "When did the package arrive?"
+    ],
+    "sentences": [
+      {
+        "pre": "What time ",
+        "verb": "did",
+        "post": " the meeting start?",
+        "answer": "past-simple"
+      }
+    ]
   },
   {
     "id": "past-simple-23",
-    "answer": "past-simple",
-    "type": "context",
-    "prompt": "Короткая журналистская фраза о произошедшем событии",
-    "promptEn": "A short journalistic phrase about a past event",
-    "sentence": {
-      "pre": "The prime minister ",
-      "verb": "resigned",
-      "post": " late last night."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Короткая журналистская фраза о произошедшем событии",
+      "en": "A short journalistic phrase about a past event"
     },
-    "difficulty": 2
+    "tags": [
+      "past-simple",
+      "context-clue",
+      "affirmative",
+      "simple",
+      "difficulty-2"
+    ],
+    "difficulty": 2,
+    "rules": {
+      "ru": "«Late last night» — конкретный завершённый момент вчера; журналистский нарратив о завершённом событии использует Past Simple."
+    },
+    "contextExamples": [
+      "The CEO announced his departure early yesterday morning.",
+      "A fire broke out in the city centre late on Saturday."
+    ],
+    "sentences": [
+      {
+        "pre": "The prime minister ",
+        "verb": "resigned",
+        "post": " late last night.",
+        "answer": "past-simple"
+      }
+    ]
   },
   {
     "id": "past-simple-24",
-    "answer": "past-simple",
-    "type": "sentence",
-    "prompt": "Нарративная последовательность в художественном тексте",
-    "promptEn": "A narrative sequence in a fictional text",
-    "sentence": {
-      "pre": "She ",
-      "verb": "opened",
-      "post": " the door, stepped inside, and looked around the empty room."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Нарративная последовательность в художественном тексте",
+      "en": "A narrative sequence in a fictional text"
     },
-    "difficulty": 2
+    "tags": [
+      "past-simple",
+      "sentence-analysis",
+      "affirmative",
+      "simple",
+      "difficulty-2"
+    ],
+    "difficulty": 2,
+    "rules": {
+      "ru": "Три последовательных действия (opened, stepped, looked) в нарративе — каждое завершилось до следующего; типичная цепочка Past Simple в художественном тексте."
+    },
+    "contextExamples": [
+      "He walked to the window, pulled back the curtain, and stared into the darkness.",
+      "The detective entered the hall, removed his coat, and placed it on the chair."
+    ],
+    "sentences": [
+      {
+        "pre": "She ",
+        "verb": "opened",
+        "post": " the door, stepped inside, and looked around the empty room.",
+        "answer": "past-simple"
+      }
+    ]
   },
   {
     "id": "past-simple-25",
-    "answer": "past-simple",
-    "type": "context",
-    "prompt": "Отрицание факта в прошлом с объяснением",
-    "promptEn": "Denying a past fact with an explanation",
-    "sentence": {
-      "pre": "I ",
-      "verb": "didn't hear",
-      "post": " the alarm because I was wearing headphones."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Отрицание факта в прошлом с объяснением",
+      "en": "Denying a past fact with an explanation"
     },
-    "difficulty": 2
+    "tags": [
+      "past-simple",
+      "context-clue",
+      "negative",
+      "simple",
+      "difficulty-2"
+    ],
+    "difficulty": 2,
+    "rules": {
+      "ru": "«Didn't hear» — отрицание завершённого действия в Past Simple; объяснение через Past Continuous («was wearing») не меняет тенс главного глагола."
+    },
+    "contextExamples": [
+      "She didn't answer the door because she was in the shower.",
+      "He didn't notice the sign because he was talking on his phone."
+    ],
+    "sentences": [
+      {
+        "pre": "I ",
+        "verb": "didn't hear",
+        "post": " the alarm because I was wearing headphones.",
+        "answer": "past-simple"
+      }
+    ]
   },
   {
     "id": "past-simple-26",
-    "answer": "past-simple",
-    "type": "sentence",
-    "prompt": "Прошедшее открытие или внезапное осознание",
-    "promptEn": "A past discovery or sudden realisation",
-    "sentence": {
-      "pre": "At that moment, she ",
-      "verb": "realised",
-      "post": " she had made the wrong choice."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Прошедшее открытие или внезапное осознание",
+      "en": "A past discovery or sudden realisation"
     },
-    "difficulty": 3
+    "tags": [
+      "past-simple",
+      "sentence-analysis",
+      "affirmative",
+      "simple",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«Realised» — мгновенное ментальное событие («at that moment»); ментальные глаголы восприятия используются в Past Simple, а не в Continuous."
+    },
+    "contextExamples": [
+      "At that point, he understood why everyone had been so quiet.",
+      "Suddenly, she noticed that the front door was open."
+    ],
+    "sentences": [
+      {
+        "pre": "At that moment, she ",
+        "verb": "realised",
+        "post": " she had made the wrong choice.",
+        "answer": "past-simple"
+      }
+    ]
   },
   {
     "id": "past-simple-27",
-    "answer": "past-simple",
-    "type": "context",
-    "prompt": "Прошлое состояние внешности или самочувствия",
-    "promptEn": "A past state of appearance or physical condition",
-    "sentence": {
-      "pre": "When I last saw him, he ",
-      "verb": "looked",
-      "post": " pale and exhausted."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Прошлое состояние внешности или самочувствия",
+      "en": "A past state of appearance or physical condition"
     },
-    "difficulty": 2
+    "tags": [
+      "past-simple",
+      "context-clue",
+      "affirmative",
+      "simple",
+      "difficulty-2"
+    ],
+    "difficulty": 2,
+    "rules": {
+      "ru": "«Looked» — глагол состояния/восприятия внешности в Past Simple; состояния не используют Continuous, а «when I last saw» фиксирует конкретный момент."
+    },
+    "contextExamples": [
+      "When she came back from the trip, she seemed different somehow.",
+      "The house looked abandoned when we drove past it."
+    ],
+    "sentences": [
+      {
+        "pre": "When I last saw him, he ",
+        "verb": "looked",
+        "post": " pale and exhausted.",
+        "answer": "past-simple"
+      }
+    ]
   },
   {
     "id": "past-simple-28",
-    "answer": "past-simple",
-    "type": "sentence",
-    "prompt": "Мгновенное прошлое действие, изменившее ситуацию",
-    "promptEn": "A sudden past action that changed the situation",
-    "sentence": {
-      "pre": "He ",
-      "verb": "dropped",
-      "post": " his phone, and the screen cracked."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Мгновенное прошлое действие, изменившее ситуацию",
+      "en": "A sudden past action that changed the situation"
     },
-    "difficulty": 2
+    "tags": [
+      "past-simple",
+      "sentence-analysis",
+      "affirmative",
+      "simple",
+      "difficulty-2"
+    ],
+    "difficulty": 2,
+    "rules": {
+      "ru": "«Dropped … cracked» — мгновенное действие и его немедленное последствие; цепочка кратких завершённых событий передаётся Past Simple."
+    },
+    "contextExamples": [
+      "She tripped on the step and twisted her ankle.",
+      "The branch snapped and fell onto the path."
+    ],
+    "sentences": [
+      {
+        "pre": "He ",
+        "verb": "dropped",
+        "post": " his phone, and the screen cracked.",
+        "answer": "past-simple"
+      }
+    ]
   },
   {
     "id": "past-simple-29",
-    "answer": "past-simple",
-    "type": "context",
-    "prompt": "Прошлое действие, упомянутое как основание для текущего решения",
-    "promptEn": "A past action cited as the basis for a current decision",
-    "sentence": {
-      "pre": "I ",
-      "verb": "studied",
-      "post": " engineering, so they hired me for the project."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Прошлое действие, упомянутое как основание для текущего решения",
+      "en": "A past action cited as the basis for a current decision"
     },
-    "difficulty": 3
+    "tags": [
+      "past-simple",
+      "context-clue",
+      "affirmative",
+      "simple",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«Studied … hired» — два завершённых прошлых события в причинно-следственной связи без привязки к настоящему; оба в Past Simple."
+    },
+    "contextExamples": [
+      "She trained as an accountant, so the firm offered her the position.",
+      "He volunteered abroad, so they gave him the international role."
+    ],
+    "sentences": [
+      {
+        "pre": "I ",
+        "verb": "studied",
+        "post": " engineering, so they hired me for the project.",
+        "answer": "past-simple"
+      }
+    ]
   },
   {
     "id": "past-simple-30",
-    "answer": "past-simple",
-    "type": "sentence",
-    "prompt": "Повторяющееся действие в прошлом с указанием частоты",
-    "promptEn": "A repeated past action with a stated frequency",
-    "sentence": {
-      "pre": "Every summer we ",
-      "verb": "rented",
-      "post": " a cottage by the lake."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Повторяющееся действие в прошлом с указанием частоты",
+      "en": "A repeated past action with a stated frequency"
     },
-    "difficulty": 2
+    "tags": [
+      "past-simple",
+      "sentence-analysis",
+      "affirmative",
+      "simple",
+      "difficulty-2"
+    ],
+    "difficulty": 2,
+    "rules": {
+      "ru": "«Every summer» с глаголом в прошедшем времени («rented») — повторяющаяся прошлая привычка, которой больше нет; Past Simple для регулярных прошлых действий."
+    },
+    "contextExamples": [
+      "Every Christmas they visited her parents in the countryside.",
+      "Every Friday he brought flowers home for his wife."
+    ],
+    "sentences": [
+      {
+        "pre": "Every summer we ",
+        "verb": "rented",
+        "post": " a cottage by the lake.",
+        "answer": "past-simple"
+      }
+    ]
   }
 ]

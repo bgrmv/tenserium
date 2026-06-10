@@ -20,10 +20,12 @@ describe('OnboardingPageComponent', () => {
   function makeQuestion(id: string, answer: TenseId = 'present-simple'): Question {
     return {
       id,
-      answer,
-      type: 'sentence',
-      prompt: `Question ${id}`,
-      sentence: { pre: 'I', verb: 'play', post: 'football' },
+      mechanism: 'context',
+      prompt: { en: `Question ${id}`, ru: `Вопрос ${id}` },
+      sentences: [
+        { pre: 'I ', verb: 'play', post: ' football', answer },
+      ],
+      tags: ['present-simple', 'affirmative'],
       difficulty: 1,
     };
   }
@@ -93,7 +95,7 @@ describe('OnboardingPageComponent', () => {
     });
 
     it('should expose the demo question constant', () => {
-      expect(component['DEMO_QUESTION'].answer).toBe('present-simple');
+      expect(component['DEMO_QUESTION'].sentences[0].answer).toBe('present-simple');
     });
   });
 
@@ -406,7 +408,7 @@ describe('OnboardingPageComponent', () => {
       const deck = makeDeck(5);
       sessionStore.startSession(makeSessionConfig(), deck);
       for (let i = 0; i < 5; i++) {
-        const answer = i < correctCount ? deck[i].answer : ('wrong-id' as TenseId);
+        const answer = i < correctCount ? deck[i].sentences[0].answer : ('wrong-id' as TenseId);
         sessionStore.submitAnswer(answer);
         if (i < 4) sessionStore.nextQuestion();
       }

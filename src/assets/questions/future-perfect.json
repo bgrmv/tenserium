@@ -1,327 +1,777 @@
 [
   {
     "id": "future-perfect-01",
-    "answer": "future-perfect",
-    "type": "context",
-    "prompt": "Действие, которое завершится до момента в будущем",
-    "promptEn": "An action that will be finished before a point in the future",
-    "sentence": {
-      "pre": "By 2030 he ",
-      "verb": "will have graduated",
-      "post": "."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Действие, которое завершится до момента в будущем",
+      "en": "An action that will be finished before a point in the future"
     },
-    "difficulty": 3
+    "tags": [
+      "future-perfect",
+      "context-clue",
+      "affirmative",
+      "perfect",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«By 2030» — дедлайн в будущем, к которому действие (graduated) уже завершится. Предлог «by» + год требует Future Perfect."
+    },
+    "contextExamples": [
+      "By 2030, the company will have expanded into twenty new markets.",
+      "By 2030, scientists will have developed the first commercial fusion reactor."
+    ],
+    "sentences": [
+      {
+        "pre": "By 2030 he ",
+        "verb": "will have graduated",
+        "post": ".",
+        "answer": "future-perfect"
+      }
+    ]
   },
   {
     "id": "future-perfect-02",
-    "answer": "future-perfect",
-    "type": "context",
-    "prompt": "Что-либо завершённое до будущего дедлайна",
-    "promptEn": "Something completed before a future deadline",
-    "sentence": {
-      "pre": "I ",
-      "verb": "will have finished",
-      "post": " by noon."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Что-либо завершённое до будущего дедлайна",
+      "en": "Something completed before a future deadline"
     },
-    "difficulty": 3
+    "tags": [
+      "future-perfect",
+      "context-clue",
+      "affirmative",
+      "perfect",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«By noon» — конкретный момент времени в будущем, до которого завершится действие. Предлог «by» с временным дедлайном — главный сигнал Future Perfect."
+    },
+    "contextExamples": [
+      "She will have packed her bags by midnight.",
+      "The chef will have prepared all the dishes by seven o'clock."
+    ],
+    "sentences": [
+      {
+        "pre": "I ",
+        "verb": "will have finished",
+        "post": " by noon.",
+        "answer": "future-perfect"
+      }
+    ]
   },
   {
     "id": "future-perfect-03",
-    "answer": "future-perfect",
-    "type": "sentence",
-    "prompt": "Накопленная длительность к определённому моменту будущего",
-    "promptEn": "Duration of an action accumulated by a certain future point",
-    "sentence": {
-      "pre": "By next year, I ",
-      "verb": "will have lived",
-      "post": " here for ten years."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Накопленная длительность к определённому моменту будущего",
+      "en": "Duration of an action accumulated by a certain future point"
     },
-    "difficulty": 3
+    "tags": [
+      "future-perfect",
+      "sentence-analysis",
+      "affirmative",
+      "perfect",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«By next year» задаёт будущий дедлайн; «for ten years» указывает накопленную длительность к этому моменту. Комбинация «by + future point» + «for + duration» — классический паттерн Future Perfect."
+    },
+    "contextExamples": [
+      "By next spring, they will have owned this house for twenty years.",
+      "By the time she turns forty, she will have worked at the firm for fifteen years."
+    ],
+    "sentences": [
+      {
+        "pre": "By next year, I ",
+        "verb": "will have lived",
+        "post": " here for ten years.",
+        "answer": "future-perfect"
+      }
+    ]
   },
   {
     "id": "future-perfect-04",
-    "answer": "future-perfect",
-    "type": "sentence",
-    "prompt": "Результат, достигнутый к определённому времени в будущем",
-    "promptEn": "A result that will be accomplished by a future time",
-    "sentence": {
-      "pre": "Before the meeting, we ",
-      "verb": "will have prepared",
-      "post": " all the documents."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Результат, достигнутый к определённому времени в будущем",
+      "en": "A result that will be accomplished by a future time"
     },
-    "difficulty": 3
+    "tags": [
+      "future-perfect",
+      "sentence-analysis",
+      "affirmative",
+      "perfect",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«Before the meeting» — будущее событие, которое служит дедлайном. Действие «prepared» должно быть завершено до наступления этого события, что требует Future Perfect."
+    },
+    "contextExamples": [
+      "Before the concert starts, the band will have rehearsed every song twice.",
+      "Before you land, the ground crew will have cleared the runway."
+    ],
+    "sentences": [
+      {
+        "pre": "Before the meeting, we ",
+        "verb": "will have prepared",
+        "post": " all the documents.",
+        "answer": "future-perfect"
+      }
+    ]
   },
   {
     "id": "future-perfect-05",
-    "answer": "future-perfect",
-    "type": "context",
-    "prompt": "Количество раз, которое что-то произойдёт к моменту в будущем",
-    "promptEn": "How many times something will have happened by a future point",
-    "sentence": {
-      "pre": "By the end of the year, I ",
-      "verb": "will have visited",
-      "post": " five countries."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Количество раз, которое что-то произойдёт к моменту в будущем",
+      "en": "How many times something will have happened by a future point"
     },
-    "difficulty": 3
+    "tags": [
+      "future-perfect",
+      "context-clue",
+      "affirmative",
+      "perfect",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«By the end of the year» — дедлайн; «five countries» — итоговый счётчик к этому моменту. Future Perfect используется для подсчёта накопленного результата к будущей дате."
+    },
+    "contextExamples": [
+      "By the end of the tour, the band will have played thirty concerts.",
+      "By graduation, she will have taken twelve exams."
+    ],
+    "sentences": [
+      {
+        "pre": "By the end of the year, I ",
+        "verb": "will have visited",
+        "post": " five countries.",
+        "answer": "future-perfect"
+      }
+    ]
   },
   {
     "id": "future-perfect-06",
-    "answer": "future-perfect",
-    "type": "sentence",
-    "prompt": "Действие, которое надо завершить до определённого момента",
-    "promptEn": "Something that must be done before a specific time",
-    "sentence": {
-      "pre": "You must call before 5 pm; otherwise, I ",
-      "verb": "will have left",
-      "post": " the office."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Действие, которое надо завершить до определённого момента",
+      "en": "Something that must be done before a specific time"
     },
-    "difficulty": 3
+    "tags": [
+      "future-perfect",
+      "sentence-analysis",
+      "affirmative",
+      "perfect",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«Before 5 pm» — дедлайн, после которого действие «left» уже совершится. Конструкция «otherwise, will have + V3» описывает состояние завершённости к конкретному времени."
+    },
+    "contextExamples": [
+      "Hurry up, or the train will have departed before you reach the platform.",
+      "Come before nine; otherwise, the kitchen will have closed."
+    ],
+    "sentences": [
+      {
+        "pre": "You must call before 5 pm; otherwise, I ",
+        "verb": "will have left",
+        "post": " the office.",
+        "answer": "future-perfect"
+      }
+    ]
   },
   {
     "id": "future-perfect-07",
-    "answer": "future-perfect",
-    "type": "context",
-    "prompt": "Ожидаемое завершение действия к моменту другого события",
-    "promptEn": "Expected completion of an action by the time another event occurs",
-    "sentence": {
-      "pre": "By the time you wake up, I ",
-      "verb": "will have already left",
-      "post": "."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Ожидаемое завершение действия к моменту другого события",
+      "en": "Expected completion of an action by the time another event occurs"
     },
-    "difficulty": 3
+    "tags": [
+      "future-perfect",
+      "context-clue",
+      "affirmative",
+      "perfect",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«By the time you wake up» — момент другого будущего действия (wake up), который служит дедлайном. «Already» дополнительно подчёркивает завершённость первого действия к этому моменту."
+    },
+    "contextExamples": [
+      "By the time she reads this letter, he will have already boarded his flight.",
+      "By the time the guests arrive, we will have already set the table."
+    ],
+    "sentences": [
+      {
+        "pre": "By the time you wake up, I ",
+        "verb": "will have already left",
+        "post": ".",
+        "answer": "future-perfect"
+      }
+    ]
   },
   {
     "id": "future-perfect-08",
-    "answer": "future-perfect",
-    "type": "sentence",
-    "prompt": "Достижение или веха к конкретной дате в будущем",
-    "promptEn": "An achievement or milestone by a specific future date",
-    "sentence": {
-      "pre": "By her thirtieth birthday, she ",
-      "verb": "will have published",
-      "post": " two novels."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Достижение или веха к конкретной дате в будущем",
+      "en": "An achievement or milestone by a specific future date"
     },
-    "difficulty": 3
+    "tags": [
+      "future-perfect",
+      "sentence-analysis",
+      "affirmative",
+      "perfect",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«By her thirtieth birthday» — конкретная будущая дата-дедлайн. Смотрим назад из этой точки: к тому моменту «published two novels» — достигнутый результат. Это ретроспективный взгляд из будущего."
+    },
+    "contextExamples": [
+      "By his fortieth birthday, he will have climbed five of the world's highest peaks.",
+      "By the end of her career, the professor will have supervised over a hundred doctoral students."
+    ],
+    "sentences": [
+      {
+        "pre": "By her thirtieth birthday, she ",
+        "verb": "will have published",
+        "post": " two novels.",
+        "answer": "future-perfect"
+      }
+    ]
   },
   {
     "id": "future-perfect-09",
-    "answer": "future-perfect",
-    "type": "context",
-    "prompt": "Завершение дела до наступления события или срока",
-    "promptEn": "Completion of a task before an event or deadline arrives",
-    "sentence": {
-      "pre": "Don't worry — I ",
-      "verb": "will have fixed",
-      "post": " the car before your trip."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Завершение дела до наступления события или срока",
+      "en": "Completion of a task before an event or deadline arrives"
     },
-    "difficulty": 3
+    "tags": [
+      "future-perfect",
+      "context-clue",
+      "negative",
+      "perfect",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«Before your trip» — будущее событие, которое устанавливает дедлайн для завершения «fixed». Предлог «before» + будущее событие — сигнал, что действие должно быть выполнено к тому моменту."
+    },
+    "contextExamples": [
+      "I will have installed the updates before you start work tomorrow.",
+      "The plumber will have repaired the pipes before the tenants move in."
+    ],
+    "sentences": [
+      {
+        "pre": "Don't worry — I ",
+        "verb": "will have fixed",
+        "post": " the car before your trip.",
+        "answer": "future-perfect"
+      }
+    ]
   },
   {
     "id": "future-perfect-10",
-    "answer": "future-perfect",
-    "type": "sentence",
-    "prompt": "Вопрос о завершении действия к определённому будущему моменту",
-    "promptEn": "A question about completion of an action by a future moment",
-    "sentence": {
-      "pre": "Will you ",
-      "verb": "have finished",
-      "post": " the project by Friday?"
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Вопрос о завершении действия к определённому будущему моменту",
+      "en": "A question about completion of an action by a future moment"
     },
-    "difficulty": 3
+    "tags": [
+      "future-perfect",
+      "sentence-analysis",
+      "question",
+      "perfect",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "Вопрос начинается с «Will … have», а «by Friday» — дедлайн. Структура «Will + subject + have + V3 + by [time]» — вопросительная форма Future Perfect."
+    },
+    "contextExamples": [
+      "Will she have submitted her thesis by the deadline?",
+      "Will the team have resolved all the bugs by the product launch?"
+    ],
+    "sentences": [
+      {
+        "pre": "Will you ",
+        "verb": "have finished",
+        "post": " the project by Friday?",
+        "answer": "future-perfect"
+      }
+    ]
   },
   {
     "id": "future-perfect-11",
-    "answer": "future-perfect",
-    "type": "context",
-    "prompt": "Отрицание: действие не будет завершено к сроку",
-    "promptEn": "Negation: an action will not be completed by a deadline",
-    "sentence": {
-      "pre": "At this rate, the team ",
-      "verb": "will not have met",
-      "post": " its target by December."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Отрицание: действие не будет завершено к сроку",
+      "en": "Negation: an action will not be completed by a deadline"
     },
-    "difficulty": 3
+    "tags": [
+      "future-perfect",
+      "context-clue",
+      "negative",
+      "perfect",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«Will not have met» — отрицательная форма Future Perfect; «by December» — дедлайн. Конструкция «will not have + V3 + by [date]» означает, что результат к сроку НЕ будет достигнут."
+    },
+    "contextExamples": [
+      "At this pace, he will not have finished the manuscript by the publisher's deadline.",
+      "The construction crew will not have completed the bridge by the scheduled opening date."
+    ],
+    "sentences": [
+      {
+        "pre": "At this rate, the team ",
+        "verb": "will not have met",
+        "post": " its target by December.",
+        "answer": "future-perfect"
+      }
+    ]
   },
   {
     "id": "future-perfect-12",
-    "answer": "future-perfect",
-    "type": "sentence",
-    "prompt": "Степень завершённости: большая часть работы сделана к сроку",
-    "promptEn": "Degree of completion: most work done by a deadline",
-    "sentence": {
-      "pre": "By the end of the week, we ",
-      "verb": "will have completed",
-      "post": " the first phase of the project."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Степень завершённости: большая часть работы сделана к сроку",
+      "en": "Degree of completion: most work done by a deadline"
     },
-    "difficulty": 3
+    "tags": [
+      "future-perfect",
+      "sentence-analysis",
+      "affirmative",
+      "perfect",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«By the end of the week» — дедлайн, к которому «the first phase» будет полностью завершена. Акцент на итоговом результате к конкретному сроку — характерный признак Future Perfect."
+    },
+    "contextExamples": [
+      "By the end of the month, the team will have released three new features.",
+      "By the end of the semester, she will have covered all the required topics."
+    ],
+    "sentences": [
+      {
+        "pre": "By the end of the week, we ",
+        "verb": "will have completed",
+        "post": " the first phase of the project.",
+        "answer": "future-perfect"
+      }
+    ]
   },
   {
     "id": "future-perfect-13",
-    "answer": "future-perfect",
-    "type": "context",
-    "prompt": "Личное обязательство завершить дело до встречи",
-    "promptEn": "A personal commitment to finish something before a meeting",
-    "sentence": {
-      "pre": "I promise I ",
-      "verb": "will have read",
-      "post": " the report before our call."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Личное обязательство завершить дело до встречи",
+      "en": "A personal commitment to finish something before a meeting"
     },
-    "difficulty": 3
+    "tags": [
+      "future-perfect",
+      "context-clue",
+      "affirmative",
+      "perfect",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«Before our call» — будущее событие-дедлайн; «will have read» выражает обязательство завершить действие до этого момента. Future Perfect здесь передаёт уверенное обещание о завершённости."
+    },
+    "contextExamples": [
+      "Don't worry — I promise I will have finished the slides before the presentation.",
+      "She assures us she will have reviewed all the applications before the interview day."
+    ],
+    "sentences": [
+      {
+        "pre": "I promise I ",
+        "verb": "will have read",
+        "post": " the report before our call.",
+        "answer": "future-perfect"
+      }
+    ]
   },
   {
     "id": "future-perfect-14",
-    "answer": "future-perfect",
-    "type": "sentence",
-    "prompt": "Накопленный опыт к определённому возрасту или дате",
-    "promptEn": "Accumulated experience by a certain age or date",
-    "sentence": {
-      "pre": "By the time he is thirty, he ",
-      "verb": "will have worked",
-      "post": " in four different countries."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Накопленный опыт к определённому возрасту или дате",
+      "en": "Accumulated experience by a certain age or date"
     },
-    "difficulty": 3
+    "tags": [
+      "future-perfect",
+      "sentence-analysis",
+      "affirmative",
+      "perfect",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«By the time he is thirty» — будущий возрастной дедлайн, к которому накопится опыт. Смотрим на итог «four different countries» из будущей точки — ретроспективный взгляд, характерный для Future Perfect."
+    },
+    "contextExamples": [
+      "By the time she finishes university, she will have lived in three different cities.",
+      "By the time he retires, he will have managed over fifty large-scale projects."
+    ],
+    "sentences": [
+      {
+        "pre": "By the time he is thirty, he ",
+        "verb": "will have worked",
+        "post": " in four different countries.",
+        "answer": "future-perfect"
+      }
+    ]
   },
   {
     "id": "future-perfect-15",
-    "answer": "future-perfect",
-    "type": "context",
-    "prompt": "Событие, которое завершится прежде, чем вы успеете что-то сделать",
-    "promptEn": "An event that will be over before you can do anything",
-    "sentence": {
-      "pre": "By the time the ambulance arrives, the situation ",
-      "verb": "will have changed",
-      "post": "."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Событие, которое завершится прежде, чем вы успеете что-то сделать",
+      "en": "An event that will be over before you can do anything"
     },
-    "difficulty": 3
+    "tags": [
+      "future-perfect",
+      "context-clue",
+      "affirmative",
+      "perfect",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«By the time the ambulance arrives» — момент другого будущего действия (arrives), до которого «the situation» уже изменится. Последовательность двух будущих событий с акцентом на завершённость первого."
+    },
+    "contextExamples": [
+      "By the time the fire brigade arrives, the flames will have spread to the upper floor.",
+      "By the time you get here, the sale will have ended."
+    ],
+    "sentences": [
+      {
+        "pre": "By the time the ambulance arrives, the situation ",
+        "verb": "will have changed",
+        "post": ".",
+        "answer": "future-perfect"
+      }
+    ]
   },
   {
     "id": "future-perfect-16",
-    "answer": "future-perfect",
-    "type": "sentence",
-    "prompt": "Отрицание: результат к сроку не будет достигнут",
-    "promptEn": "Negation: a result will not have been reached by a deadline",
-    "sentence": {
-      "pre": "I'm afraid I ",
-      "verb": "won't have finished",
-      "post": " the report by Monday."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Отрицание: результат к сроку не будет достигнут",
+      "en": "Negation: a result will not have been reached by a deadline"
     },
-    "difficulty": 3
+    "tags": [
+      "future-perfect",
+      "sentence-analysis",
+      "negative",
+      "perfect",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«Won't have finished» — отрицательная форма Future Perfect (won't = will not); «by Monday» — дедлайн. Сочетание «won't have + V3 + by [day]» — надёжный сигнал отрицания Future Perfect."
+    },
+    "contextExamples": [
+      "I'm sorry, but I won't have reviewed your draft by tomorrow morning.",
+      "They won't have hired a replacement by the time he leaves."
+    ],
+    "sentences": [
+      {
+        "pre": "I'm afraid I ",
+        "verb": "won't have finished",
+        "post": " the report by Monday.",
+        "answer": "future-perfect"
+      }
+    ]
   },
   {
     "id": "future-perfect-17",
-    "answer": "future-perfect",
-    "type": "context",
-    "prompt": "Вопрос о завершённости к конкретному сроку",
-    "promptEn": "A question about whether something will be done by a deadline",
-    "sentence": {
-      "pre": "Will the construction team ",
-      "verb": "have completed",
-      "post": " the repairs by next month?"
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Вопрос о завершённости к конкретному сроку",
+      "en": "A question about whether something will be done by a deadline"
     },
-    "difficulty": 3
+    "tags": [
+      "future-perfect",
+      "context-clue",
+      "question",
+      "perfect",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«Will … have completed» — вопросительная инверсия Future Perfect; «by next month» — дедлайн. Вопрос строится по схеме «Will + subject + have + V3 + by [time]»."
+    },
+    "contextExamples": [
+      "Will the new software have been installed by the time we reopen the office?",
+      "Will the committee have reached a decision by Thursday's session?"
+    ],
+    "sentences": [
+      {
+        "pre": "Will the construction team ",
+        "verb": "have completed",
+        "post": " the repairs by next month?",
+        "answer": "future-perfect"
+      }
+    ]
   },
   {
     "id": "future-perfect-18",
-    "answer": "future-perfect",
-    "type": "sentence",
-    "prompt": "Страдательный залог: что-то будет сделано к определённому времени",
-    "promptEn": "Passive voice: something will have been done by a set time",
-    "sentence": {
-      "pre": "All passengers ",
-      "verb": "will have been screened",
-      "post": " before the flight departs."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Страдательный залог: что-то будет сделано к определённому времени",
+      "en": "Passive voice: something will have been done by a set time"
     },
-    "difficulty": 3
+    "tags": [
+      "future-perfect",
+      "sentence-analysis",
+      "affirmative",
+      "perfect",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«Will have been screened» — пассивная форма Future Perfect (will have been + V3). «Before the flight departs» — будущее событие-дедлайн. Структура пассива отличается от активного залога добавлением «been»."
+    },
+    "contextExamples": [
+      "By opening time, all the exhibits will have been installed.",
+      "The contracts will have been signed before the merger is announced."
+    ],
+    "sentences": [
+      {
+        "pre": "All passengers ",
+        "verb": "will have been screened",
+        "post": " before the flight departs.",
+        "answer": "future-perfect"
+      }
+    ]
   },
   {
     "id": "future-perfect-19",
-    "answer": "future-perfect",
-    "type": "context",
-    "prompt": "Количество лет работы к моменту выхода на пенсию",
-    "promptEn": "Years of service accumulated by the time of retirement",
-    "sentence": {
-      "pre": "By the time he retires, he ",
-      "verb": "will have served",
-      "post": " the company for thirty years."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Количество лет работы к моменту выхода на пенсию",
+      "en": "Years of service accumulated by the time of retirement"
     },
-    "difficulty": 3
+    "tags": [
+      "future-perfect",
+      "context-clue",
+      "affirmative",
+      "perfect",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«By the time he retires» — будущий дедлайн (момент выхода на пенсию); «for thirty years» — накопленный стаж к этому моменту. Комбинация «by the time + future event» + «for + duration» указывает на Future Perfect."
+    },
+    "contextExamples": [
+      "By the time she steps down, she will have led the organisation for two decades.",
+      "By the time he finishes his contract, he will have taught at this school for twelve years."
+    ],
+    "sentences": [
+      {
+        "pre": "By the time he retires, he ",
+        "verb": "will have served",
+        "post": " the company for thirty years.",
+        "answer": "future-perfect"
+      }
+    ]
   },
   {
     "id": "future-perfect-20",
-    "answer": "future-perfect",
-    "type": "sentence",
-    "prompt": "Научный или технологический прогресс к определённому году",
-    "promptEn": "Scientific or technological progress by a certain year",
-    "sentence": {
-      "pre": "By 2040, doctors ",
-      "verb": "will have found",
-      "post": " a cure for several currently incurable diseases."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Научный или технологический прогресс к определённому году",
+      "en": "Scientific or technological progress by a certain year"
     },
-    "difficulty": 3
+    "tags": [
+      "future-perfect",
+      "sentence-analysis",
+      "affirmative",
+      "perfect",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«By 2040» — конкретный год в будущем как дедлайн. Смотрим вперёд из настоящего и оцениваем результат (found a cure) как свершившийся факт к тому году — классический ретроспективный взгляд Future Perfect."
+    },
+    "contextExamples": [
+      "By 2050, engineers will have built the first permanent lunar base.",
+      "By 2035, electric vehicles will have replaced most combustion-engine cars on city roads."
+    ],
+    "sentences": [
+      {
+        "pre": "By 2040, doctors ",
+        "verb": "will have found",
+        "post": " a cure for several currently incurable diseases.",
+        "answer": "future-perfect"
+      }
+    ]
   },
   {
     "id": "future-perfect-21",
-    "answer": "future-perfect",
-    "type": "context",
-    "prompt": "Личный учебный или профессиональный рубеж к дате",
-    "promptEn": "A personal learning or professional milestone by a date",
-    "sentence": {
-      "pre": "By the end of the course, you ",
-      "verb": "will have learned",
-      "post": " over five hundred new words."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Личный учебный или профессиональный рубеж к дате",
+      "en": "A personal learning or professional milestone by a date"
     },
-    "difficulty": 3
+    "tags": [
+      "future-perfect",
+      "context-clue",
+      "affirmative",
+      "perfect",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«By the end of the course» — дедлайн завершения курса; «over five hundred new words» — итоговый накопленный результат к этому моменту. Future Perfect показывает предсказываемый итог обучения."
+    },
+    "contextExamples": [
+      "By the end of the programme, participants will have completed eight modules.",
+      "By the time you finish this book, you will have encountered all the key grammar structures."
+    ],
+    "sentences": [
+      {
+        "pre": "By the end of the course, you ",
+        "verb": "will have learned",
+        "post": " over five hundred new words.",
+        "answer": "future-perfect"
+      }
+    ]
   },
   {
     "id": "future-perfect-22",
-    "answer": "future-perfect",
-    "type": "sentence",
-    "prompt": "Накопленный результат решений или усилий к дате",
-    "promptEn": "Accumulated result of decisions or efforts by a date",
-    "sentence": {
-      "pre": "If you save ten euros a day, by the end of the year you ",
-      "verb": "will have saved",
-      "post": " over three thousand euros."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Накопленный результат решений или усилий к дате",
+      "en": "Accumulated result of decisions or efforts by a date"
     },
-    "difficulty": 3
+    "tags": [
+      "future-perfect",
+      "sentence-analysis",
+      "affirmative",
+      "perfect",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«By the end of the year» — дедлайн; «over three thousand euros» — накопленный итог регулярных действий к этому сроку. Future Perfect в условной конструкции (If … by …) подсчитывает будущий результат."
+    },
+    "contextExamples": [
+      "If you walk five kilometres daily, by the end of the month you will have covered over 150 kilometres.",
+      "If they keep this growth rate, by next quarter the company will have doubled its revenue."
+    ],
+    "sentences": [
+      {
+        "pre": "If you save ten euros a day, by the end of the year you ",
+        "verb": "will have saved",
+        "post": " over three thousand euros.",
+        "answer": "future-perfect"
+      }
+    ]
   },
   {
     "id": "future-perfect-23",
-    "answer": "future-perfect",
-    "type": "context",
-    "prompt": "Строительство или инфраструктурный проект, завершённый к дате",
-    "promptEn": "A construction or infrastructure project completed by a date",
-    "sentence": {
-      "pre": "By 2026, the authorities ",
-      "verb": "will have opened",
-      "post": " four new metro stations."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Строительство или инфраструктурный проект, завершённый к дате",
+      "en": "A construction or infrastructure project completed by a date"
     },
-    "difficulty": 3
+    "tags": [
+      "future-perfect",
+      "context-clue",
+      "affirmative",
+      "perfect",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«By 2026» — год-дедлайн; «four new metro stations» — конкретный счётчик завершённых объектов к этой дате. Future Perfect выражает предсказание о результате масштабного проекта к будущему году."
+    },
+    "contextExamples": [
+      "By 2027, the city council will have built three new hospitals.",
+      "By the end of the decade, the government will have upgraded all major motorways."
+    ],
+    "sentences": [
+      {
+        "pre": "By 2026, the authorities ",
+        "verb": "will have opened",
+        "post": " four new metro stations.",
+        "answer": "future-perfect"
+      }
+    ]
   },
   {
     "id": "future-perfect-24",
-    "answer": "future-perfect",
-    "type": "sentence",
-    "prompt": "Завершённость действия к моменту встречи или разговора",
-    "promptEn": "Completion of an action by the time of a meeting or conversation",
-    "sentence": {
-      "pre": "By the time we sit down to discuss it, everyone ",
-      "verb": "will have read",
-      "post": " the proposal."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Завершённость действия к моменту встречи или разговора",
+      "en": "Completion of an action by the time of a meeting or conversation"
     },
-    "difficulty": 3
+    "tags": [
+      "future-perfect",
+      "sentence-analysis",
+      "affirmative",
+      "perfect",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«By the time we sit down to discuss it» — момент будущего события (встречи), до которого действие (read) должно быть завершено. Первое действие предшествует второму — классическая последовательность Future Perfect."
+    },
+    "contextExamples": [
+      "By the time the panel convenes, all judges will have scored the submissions.",
+      "By the time we reconvene after lunch, the technical team will have set up the equipment."
+    ],
+    "sentences": [
+      {
+        "pre": "By the time we sit down to discuss it, everyone ",
+        "verb": "will have read",
+        "post": " the proposal.",
+        "answer": "future-perfect"
+      }
+    ]
   },
   {
     "id": "future-perfect-25",
-    "answer": "future-perfect",
-    "type": "context",
-    "prompt": "Накопленный жизненный опыт или суммарное количество действий к возрасту",
-    "promptEn": "Accumulated life experience or total count of actions by a certain age",
-    "sentence": {
-      "pre": "By the age of eighty, the average person ",
-      "verb": "will have slept",
-      "post": " for nearly twenty-seven years."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Накопленный жизненный опыт или суммарное количество действий к возрасту",
+      "en": "Accumulated life experience or total count of actions by a certain age"
     },
-    "difficulty": 3
+    "tags": [
+      "future-perfect",
+      "context-clue",
+      "affirmative",
+      "perfect",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«By the age of eighty» — возрастной дедлайн; «for nearly twenty-seven years» — суммарная накопленная длительность. Взгляд из будущей точки жизни на итоговый результат — типичный случай Future Perfect."
+    },
+    "contextExamples": [
+      "By the age of seventy, the average driver will have spent over three years behind the wheel.",
+      "By the time most people retire, they will have attended thousands of hours of meetings."
+    ],
+    "sentences": [
+      {
+        "pre": "By the age of eighty, the average person ",
+        "verb": "will have slept",
+        "post": " for nearly twenty-seven years.",
+        "answer": "future-perfect"
+      }
+    ]
   }
 ]

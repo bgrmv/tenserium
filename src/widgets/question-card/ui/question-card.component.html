@@ -20,8 +20,21 @@
         <span class="reveal-label" [style.color]="revealColor()">{{ revealName() }}</span>
         @if (revealSentence(); as s) {
           <span class="reveal-sentence">
-            {{ s.pre }}<b [style.color]="revealColor()">{{ s.verb }}</b>{{ s.post }}
+            <span class="tok-other">{{ s.pre }}</span><span class="tok-keyword" [style.color]="revealColor()">{{ s.verb }}</span><span class="tok-other">{{ s.post }}</span>
           </span>
+        }
+        @if (revealExplanation()) {
+          <p class="reveal-explanation">{{ revealExplanation() }}</p>
+        }
+        @if (revealRules()) {
+          <p class="reveal-rules">{{ revealRules() }}</p>
+        }
+        @if (revealExamples()?.length) {
+          <ul class="reveal-examples">
+            @for (ex of revealExamples()!; track $index) {
+              <li>{{ ex }}</li>
+            }
+          </ul>
         }
       </div>
     }

@@ -135,7 +135,7 @@ export class DailyPageComponent {
 
     this.answersLog.push(record.correct);
     this.pickedId.set(id);
-    this.revealId.set(this.question()?.answer ?? null);
+    this.revealId.set(this.question()?.sentences[0].answer ?? null);
     if (record.correct) {
       this.result.set('correct');
       this.gained.set(record.points);
@@ -150,7 +150,7 @@ export class DailyPageComponent {
     if (this.result() !== 'none') return;
     this.store.timeout();
     this.answersLog.push(false);
-    this.revealId.set(this.question()?.answer ?? null);
+    this.revealId.set(this.question()?.sentences[0].answer ?? null);
     this.result.set('timeout');
     this.scheduleNext(FLASH_WRONG_MS);
   }

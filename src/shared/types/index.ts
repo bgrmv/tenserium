@@ -4,22 +4,40 @@ import type { TenseId } from '@shared/config/tenses.config';
 export type { TenseId } from '@shared/config/tenses.config';
 export type { Aspect, TimePeriod, TenseConfig } from '@shared/config/tenses.config';
 
-export type QuestionType = 'sentence' | 'context';
 export type Difficulty = 1 | 2 | 3;
 
-export interface Sentence {
+export interface LocalizedString {
+  readonly en: string;
+  readonly ru?: string;
+}
+
+export type TaskMechanism = 'context' | 'match' | 'fill-in' | 'multiple-choice';
+
+export type League = 'elementary' | 'intermediate' | 'advanced';
+
+export interface SentenceDistractor {
+  readonly tenseId: TenseId;
+  readonly reason?: LocalizedString;
+}
+
+export interface QuestionSentence {
   readonly pre: string;
   readonly verb: string;
   readonly post: string;
+  readonly answer: TenseId;
+  readonly distractors?: readonly SentenceDistractor[];
 }
 
 export interface Question {
   readonly id: string;
-  readonly answer: TenseId;
-  readonly type: QuestionType;
-  readonly prompt: string;
-  readonly promptEn?: string;
-  readonly sentence: Sentence;
+  readonly league?: League;
+  readonly mechanism: TaskMechanism;
+  readonly prompt: LocalizedString;
+  readonly explanation?: LocalizedString;
+  readonly rules?: LocalizedString;
+  readonly contextExamples?: readonly string[];
+  readonly sentences: readonly QuestionSentence[];
+  readonly tags: readonly string[];
   readonly difficulty: Difficulty;
 }
 
@@ -69,6 +87,7 @@ export interface UserProfile {
   readonly isPremium: boolean;
   readonly hasSeenOnboarding: boolean;
   readonly scoreDisplayPreference: ScoreDisplayPreference;
+  readonly studyMode: boolean;
 }
 
 export interface Player {

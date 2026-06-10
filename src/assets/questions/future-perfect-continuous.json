@@ -1,327 +1,777 @@
 [
   {
     "id": "future-perfect-continuous-01",
-    "answer": "future-perfect-continuous",
-    "type": "context",
-    "prompt": "Сколько времени продлится действие к моменту в будущем",
-    "promptEn": "How long an action will have continued up to a future point",
-    "sentence": {
-      "pre": "By June she ",
-      "verb": "will have been living",
-      "post": " here a year."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Сколько времени продлится действие к моменту в будущем",
+      "en": "How long an action will have continued up to a future point"
     },
-    "difficulty": 3
+    "tags": [
+      "future-perfect-continuous",
+      "context-clue",
+      "affirmative",
+      "perfect-continuous",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«By June» — будущий дедлайн; «a year» — длительность непрерывного процесса (living) к этому моменту. Акцент на продолжающемся процессе вплоть до июня требует Future Perfect Continuous, а не просто Future Perfect."
+    },
+    "contextExamples": [
+      "By March, he will have been renting this apartment for two years.",
+      "By the anniversary date, they will have been running the café for a decade."
+    ],
+    "sentences": [
+      {
+        "pre": "By June she ",
+        "verb": "will have been living",
+        "post": " here a year.",
+        "answer": "future-perfect-continuous"
+      }
+    ]
   },
   {
     "id": "future-perfect-continuous-02",
-    "answer": "future-perfect-continuous",
-    "type": "sentence",
-    "prompt": "Длительность ожидания к определённому моменту в будущем",
-    "promptEn": "The duration of waiting up to a specific future moment",
-    "sentence": {
-      "pre": "By the time you arrive, I ",
-      "verb": "will have been waiting",
-      "post": " for two hours."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Длительность ожидания к определённому моменту в будущем",
+      "en": "The duration of waiting up to a specific future moment"
     },
-    "difficulty": 3
+    "tags": [
+      "future-perfect-continuous",
+      "sentence-analysis",
+      "affirmative",
+      "perfect-continuous",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«For two hours» — длительность непрерывного ожидания; «by the time you arrive» — будущий момент-дедлайн. Сочетание «will have been + -ing» + «for + period» подчёркивает сам процесс ожидания, а не его завершение."
+    },
+    "contextExamples": [
+      "By the time the doctor sees you, you will have been sitting in the waiting room for three hours.",
+      "By the time the bus comes, we will have been standing in the rain for forty minutes."
+    ],
+    "sentences": [
+      {
+        "pre": "By the time you arrive, I ",
+        "verb": "will have been waiting",
+        "post": " for two hours.",
+        "answer": "future-perfect-continuous"
+      }
+    ]
   },
   {
     "id": "future-perfect-continuous-03",
-    "answer": "future-perfect-continuous",
-    "type": "context",
-    "prompt": "Ожидаемая длительность работы или процесса к определённому времени",
-    "promptEn": "Expected duration of work or a process by a future time",
-    "sentence": {
-      "pre": "By next year, they ",
-      "verb": "will have been building",
-      "post": " the bridge for two years."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Ожидаемая длительность работы или процесса к определённому времени",
+      "en": "Expected duration of work or a process by a future time"
     },
-    "difficulty": 3
+    "tags": [
+      "future-perfect-continuous",
+      "context-clue",
+      "affirmative",
+      "perfect-continuous",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«By next year» — будущий дедлайн; «for two years» — накопленная длительность непрерывного строительства (building) к тому моменту. Глагол building (-ing форма) акцентирует текущий процесс, а не факт завершения."
+    },
+    "contextExamples": [
+      "By next summer, the contractors will have been renovating the stadium for eighteen months.",
+      "By the end of the decade, scientists will have been developing the vaccine for over five years."
+    ],
+    "sentences": [
+      {
+        "pre": "By next year, they ",
+        "verb": "will have been building",
+        "post": " the bridge for two years.",
+        "answer": "future-perfect-continuous"
+      }
+    ]
   },
   {
     "id": "future-perfect-continuous-04",
-    "answer": "future-perfect-continuous",
-    "type": "sentence",
-    "prompt": "Сколько времени пройдёт при наступлении будущего события",
-    "promptEn": "How much time will have passed when a future event occurs",
-    "sentence": {
-      "pre": "When she retires, she ",
-      "verb": "will have been teaching",
-      "post": " for forty years."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Сколько времени пройдёт при наступлении будущего события",
+      "en": "How much time will have passed when a future event occurs"
     },
-    "difficulty": 3
+    "tags": [
+      "future-perfect-continuous",
+      "sentence-analysis",
+      "affirmative",
+      "perfect-continuous",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«When she retires» — будущее событие-дедлайн; «for forty years» — суммарная продолжительность профессии teaching к тому моменту. Future Perfect Continuous подчёркивает непрерывность карьеры учителя."
+    },
+    "contextExamples": [
+      "When he finally publishes, he will have been writing the novel for seven years.",
+      "When the factory closes, the workers will have been producing cars there for over thirty years."
+    ],
+    "sentences": [
+      {
+        "pre": "When she retires, she ",
+        "verb": "will have been teaching",
+        "post": " for forty years.",
+        "answer": "future-perfect-continuous"
+      }
+    ]
   },
   {
     "id": "future-perfect-continuous-05",
-    "answer": "future-perfect-continuous",
-    "type": "context",
-    "prompt": "Временной промежуток к определённому моменту в будущем",
-    "promptEn": "The time span accumulated by a certain future moment",
-    "sentence": {
-      "pre": "By the time we meet, I ",
-      "verb": "will have been studying",
-      "post": " this subject for six months."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Временной промежуток к определённому моменту в будущем",
+      "en": "The time span accumulated by a certain future moment"
     },
-    "difficulty": 3
+    "tags": [
+      "future-perfect-continuous",
+      "context-clue",
+      "affirmative",
+      "perfect-continuous",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«For six months» — длительность непрерывного процесса изучения (studying); «by the time we meet» — будущий дедлайн. Процесс studying ещё продолжается вплоть до встречи — это сигнал Future Perfect Continuous."
+    },
+    "contextExamples": [
+      "By the time she takes the exam, she will have been preparing for it for three months.",
+      "By the time the internship ends, he will have been learning the trade for a full year."
+    ],
+    "sentences": [
+      {
+        "pre": "By the time we meet, I ",
+        "verb": "will have been studying",
+        "post": " this subject for six months.",
+        "answer": "future-perfect-continuous"
+      }
+    ]
   },
   {
     "id": "future-perfect-continuous-06",
-    "answer": "future-perfect-continuous",
-    "type": "sentence",
-    "prompt": "Длительность отношений или знакомства к определённой дате",
-    "promptEn": "Duration of a relationship or acquaintance by a certain date",
-    "sentence": {
-      "pre": "By this autumn, we ",
-      "verb": "will have been dating",
-      "post": " for three years."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Длительность отношений или знакомства к определённой дате",
+      "en": "Duration of a relationship or acquaintance by a certain date"
     },
-    "difficulty": 3
+    "tags": [
+      "future-perfect-continuous",
+      "sentence-analysis",
+      "affirmative",
+      "perfect-continuous",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«By this autumn» — будущий дедлайн; «for three years» — накопленная продолжительность отношений (dating). Глагол dating (-ing) подчёркивает, что процесс всё ещё длится к этому моменту."
+    },
+    "contextExamples": [
+      "By their wedding anniversary, they will have been together for ten years.",
+      "By next spring, the two companies will have been partnering for five years."
+    ],
+    "sentences": [
+      {
+        "pre": "By this autumn, we ",
+        "verb": "will have been dating",
+        "post": " for three years.",
+        "answer": "future-perfect-continuous"
+      }
+    ]
   },
   {
     "id": "future-perfect-continuous-07",
-    "answer": "future-perfect-continuous",
-    "type": "context",
-    "prompt": "Накопленная усталость или истощение к будущему моменту",
-    "promptEn": "Accumulated tiredness or exhaustion by a future moment",
-    "sentence": {
-      "pre": "By Friday, I ",
-      "verb": "will have been working",
-      "post": " twelve-hour days all week."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Накопленная усталость или истощение к будущему моменту",
+      "en": "Accumulated tiredness or exhaustion by a future moment"
     },
-    "difficulty": 3
+    "tags": [
+      "future-perfect-continuous",
+      "context-clue",
+      "affirmative",
+      "perfect-continuous",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«By Friday» — будущий дедлайн; «twelve-hour days all week» — описание интенсивного непрерывного процесса (working), накапливающегося к пятнице. Акцент именно на изматывающем процессе, а не на его итоге."
+    },
+    "contextExamples": [
+      "By Sunday evening, she will have been running the marathon training programme for four months.",
+      "By the end of the shift, the nurses will have been caring for patients for twelve hours straight."
+    ],
+    "sentences": [
+      {
+        "pre": "By Friday, I ",
+        "verb": "will have been working",
+        "post": " twelve-hour days all week.",
+        "answer": "future-perfect-continuous"
+      }
+    ]
   },
   {
     "id": "future-perfect-continuous-08",
-    "answer": "future-perfect-continuous",
-    "type": "sentence",
-    "prompt": "Вопрос о продолжительности деятельности к будущей дате",
-    "promptEn": "A question about the duration of activity by a future date",
-    "sentence": {
-      "pre": "How long ",
-      "verb": "will you have been working",
-      "post": " here by next January?"
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Вопрос о продолжительности деятельности к будущей дате",
+      "en": "A question about the duration of activity by a future date"
     },
-    "difficulty": 3
+    "tags": [
+      "future-perfect-continuous",
+      "sentence-analysis",
+      "question",
+      "perfect-continuous",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«How long» запрашивает продолжительность; «by next January» — будущий дедлайн. Вопросительная форма Future Perfect Continuous: «How long + will + subject + have been + -ing + by [time]»."
+    },
+    "contextExamples": [
+      "How long will she have been managing this project by the time it wraps up?",
+      "How long will they have been living abroad by next Christmas?"
+    ],
+    "sentences": [
+      {
+        "pre": "How long ",
+        "verb": "will you have been working",
+        "post": " here by next January?",
+        "answer": "future-perfect-continuous"
+      }
+    ]
   },
   {
     "id": "future-perfect-continuous-09",
-    "answer": "future-perfect-continuous",
-    "type": "context",
-    "prompt": "Профессиональный стаж к моменту выхода на пенсию или юбилею",
-    "promptEn": "Professional tenure by retirement or an anniversary",
-    "sentence": {
-      "pre": "By the time the company turns twenty, he ",
-      "verb": "will have been managing",
-      "post": " it for fifteen years."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Профессиональный стаж к моменту выхода на пенсию или юбилею",
+      "en": "Professional tenure by retirement or an anniversary"
     },
-    "difficulty": 3
+    "tags": [
+      "future-perfect-continuous",
+      "context-clue",
+      "affirmative",
+      "perfect-continuous",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«For fifteen years» — длительность непрерывного руководства (managing); «by the time the company turns twenty» — будущий юбилейный дедлайн. Акцент на протяжённости управления, а не на конечном результате."
+    },
+    "contextExamples": [
+      "By the time the institute celebrates its centenary, the director will have been leading it for thirty years.",
+      "By the time she receives her gold watch, she will have been serving the organisation for forty years."
+    ],
+    "sentences": [
+      {
+        "pre": "By the time the company turns twenty, he ",
+        "verb": "will have been managing",
+        "post": " it for fifteen years.",
+        "answer": "future-perfect-continuous"
+      }
+    ]
   },
   {
     "id": "future-perfect-continuous-10",
-    "answer": "future-perfect-continuous",
-    "type": "sentence",
-    "prompt": "Отрицание: действие не будет длиться так долго к дате",
-    "promptEn": "Negation: an action won't have lasted that long by a date",
-    "sentence": {
-      "pre": "By then, I ",
-      "verb": "won't have been learning",
-      "post": " the language long enough to speak fluently."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Отрицание: действие не будет длиться так долго к дате",
+      "en": "Negation: an action won't have lasted that long by a date"
     },
-    "difficulty": 3
+    "tags": [
+      "future-perfect-continuous",
+      "sentence-analysis",
+      "negative",
+      "perfect-continuous",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«Won't have been learning» — отрицательная форма Future Perfect Continuous; «long enough» указывает на недостаточную продолжительность процесса к будущему моменту «by then». Акцент именно на недостаточности времени процесса."
+    },
+    "contextExamples": [
+      "By the assessment date, he won't have been practising long enough to perform confidently.",
+      "By the time the season opens, the rookie won't have been training long enough to start."
+    ],
+    "sentences": [
+      {
+        "pre": "By then, I ",
+        "verb": "won't have been learning",
+        "post": " the language long enough to speak fluently.",
+        "answer": "future-perfect-continuous"
+      }
+    ]
   },
   {
     "id": "future-perfect-continuous-11",
-    "answer": "future-perfect-continuous",
-    "type": "context",
-    "prompt": "Продолжительность творческой или научной работы к дате публикации",
-    "promptEn": "Duration of creative or academic work by a publication date",
-    "sentence": {
-      "pre": "When the book comes out, the author ",
-      "verb": "will have been writing",
-      "post": " it for five years."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Продолжительность творческой или научной работы к дате публикации",
+      "en": "Duration of creative or academic work by a publication date"
     },
-    "difficulty": 3
+    "tags": [
+      "future-perfect-continuous",
+      "context-clue",
+      "affirmative",
+      "perfect-continuous",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«When the book comes out» — будущее событие-дедлайн (публикация); «for five years» — длительность непрерывного творческого процесса writing. Future Perfect Continuous подчёркивает протяжённость самого процесса написания."
+    },
+    "contextExamples": [
+      "When the album is released, the band will have been recording it for two years.",
+      "When the documentary premieres, the director will have been filming it for three years."
+    ],
+    "sentences": [
+      {
+        "pre": "When the book comes out, the author ",
+        "verb": "will have been writing",
+        "post": " it for five years.",
+        "answer": "future-perfect-continuous"
+      }
+    ]
   },
   {
     "id": "future-perfect-continuous-12",
-    "answer": "future-perfect-continuous",
-    "type": "sentence",
-    "prompt": "Длительность тренировок или занятий к соревнованию или экзамену",
-    "promptEn": "Duration of training or practice by a competition or exam",
-    "sentence": {
-      "pre": "By the time of the final, the players ",
-      "verb": "will have been training",
-      "post": " together for six months."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Длительность тренировок или занятий к соревнованию или экзамену",
+      "en": "Duration of training or practice by a competition or exam"
     },
-    "difficulty": 3
+    "tags": [
+      "future-perfect-continuous",
+      "sentence-analysis",
+      "affirmative",
+      "perfect-continuous",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«By the time of the final» — дедлайн (соревнование); «for six months» — продолжительность непрерывных тренировок (training together). Future Perfect Continuous акцентирует командный процесс подготовки, а не готовый результат."
+    },
+    "contextExamples": [
+      "By the time the championships begin, the gymnasts will have been practising their routines for a year.",
+      "By the date of the qualifying round, the swimmer will have been training at elite level for eight months."
+    ],
+    "sentences": [
+      {
+        "pre": "By the time of the final, the players ",
+        "verb": "will have been training",
+        "post": " together for six months.",
+        "answer": "future-perfect-continuous"
+      }
+    ]
   },
   {
     "id": "future-perfect-continuous-13",
-    "answer": "future-perfect-continuous",
-    "type": "context",
-    "prompt": "Технический процесс или оборудование, работающее в течение периода",
-    "promptEn": "A technical process or equipment running throughout a period",
-    "sentence": {
-      "pre": "By the end of the mission, the rover ",
-      "verb": "will have been operating",
-      "post": " on Mars for ten years."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Технический процесс или оборудование, работающее в течение периода",
+      "en": "A technical process or equipment running throughout a period"
     },
-    "difficulty": 3
+    "tags": [
+      "future-perfect-continuous",
+      "context-clue",
+      "affirmative",
+      "perfect-continuous",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«For ten years» — длительность непрерывной работы оборудования (operating); «by the end of the mission» — будущий дедлайн. Процесс operating подчёркивает работу в режиме реального времени на протяжении всего периода."
+    },
+    "contextExamples": [
+      "By the time the satellite is decommissioned, it will have been orbiting Earth for twenty years.",
+      "By the scheduled shutdown, the power plant will have been generating electricity for fifty years."
+    ],
+    "sentences": [
+      {
+        "pre": "By the end of the mission, the rover ",
+        "verb": "will have been operating",
+        "post": " on Mars for ten years.",
+        "answer": "future-perfect-continuous"
+      }
+    ]
   },
   {
     "id": "future-perfect-continuous-14",
-    "answer": "future-perfect-continuous",
-    "type": "sentence",
-    "prompt": "Ожидаемое накопление длительности к моменту события",
-    "promptEn": "Expected accumulation of duration by the time an event occurs",
-    "sentence": {
-      "pre": "When the semester ends, students ",
-      "verb": "will have been attending",
-      "post": " classes for four months."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Ожидаемое накопление длительности к моменту события",
+      "en": "Expected accumulation of duration by the time an event occurs"
     },
-    "difficulty": 3
+    "tags": [
+      "future-perfect-continuous",
+      "sentence-analysis",
+      "affirmative",
+      "perfect-continuous",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«When the semester ends» — будущее событие-дедлайн; «for four months» — продолжительность регулярного посещения (attending classes). Акцент на самом процессе посещения занятий на протяжении семестра."
+    },
+    "contextExamples": [
+      "When the conference wraps up, delegates will have been networking for three days.",
+      "When the project review takes place, the interns will have been contributing for two months."
+    ],
+    "sentences": [
+      {
+        "pre": "When the semester ends, students ",
+        "verb": "will have been attending",
+        "post": " classes for four months.",
+        "answer": "future-perfect-continuous"
+      }
+    ]
   },
   {
     "id": "future-perfect-continuous-15",
-    "answer": "future-perfect-continuous",
-    "type": "context",
-    "prompt": "Накопленная продолжительность непрерывного путешествия или процесса",
-    "promptEn": "Accumulated duration of an uninterrupted journey or process",
-    "sentence": {
-      "pre": "By the time we reach the destination, we ",
-      "verb": "will have been driving",
-      "post": " for over twelve hours."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Накопленная продолжительность непрерывного путешествия или процесса",
+      "en": "Accumulated duration of an uninterrupted journey or process"
     },
-    "difficulty": 3
+    "tags": [
+      "future-perfect-continuous",
+      "context-clue",
+      "affirmative",
+      "perfect-continuous",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«By the time we reach the destination» — будущий момент прибытия; «for over twelve hours» — продолжительность непрерывного вождения (driving). Слово «over» усиливает акцент на истощающей длительности процесса."
+    },
+    "contextExamples": [
+      "By the time the ship docks, the crew will have been sailing for three weeks.",
+      "By the time the cyclists finish, they will have been racing for over six hours."
+    ],
+    "sentences": [
+      {
+        "pre": "By the time we reach the destination, we ",
+        "verb": "will have been driving",
+        "post": " for over twelve hours.",
+        "answer": "future-perfect-continuous"
+      }
+    ]
   },
   {
     "id": "future-perfect-continuous-16",
-    "answer": "future-perfect-continuous",
-    "type": "sentence",
-    "prompt": "Отрицание: деятельность не будет длиться достаточно долго к дате",
-    "promptEn": "Negation: an activity won't have lasted long enough by a date",
-    "sentence": {
-      "pre": "By the exam date, I ",
-      "verb": "won't have been studying",
-      "post": " the subject long enough to pass."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Отрицание: деятельность не будет длиться достаточно долго к дате",
+      "en": "Negation: an activity won't have lasted long enough by a date"
     },
-    "difficulty": 3
+    "tags": [
+      "future-perfect-continuous",
+      "sentence-analysis",
+      "negative",
+      "perfect-continuous",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«Won't have been studying» — отрицание Future Perfect Continuous; «long enough» — оценка недостаточной продолжительности процесса к дедлайну «by the exam date». Фокус на недостаточной длительности, а не на отсутствии факта."
+    },
+    "contextExamples": [
+      "By the tournament, she won't have been practising long enough to compete at that level.",
+      "By the deadline, they won't have been collaborating long enough to produce a polished result."
+    ],
+    "sentences": [
+      {
+        "pre": "By the exam date, I ",
+        "verb": "won't have been studying",
+        "post": " the subject long enough to pass.",
+        "answer": "future-perfect-continuous"
+      }
+    ]
   },
   {
     "id": "future-perfect-continuous-17",
-    "answer": "future-perfect-continuous",
-    "type": "context",
-    "prompt": "Вопрос о длительности деятельности к будущему моменту",
-    "promptEn": "A question about how long an activity will have lasted by a future moment",
-    "sentence": {
-      "pre": "How long ",
-      "verb": "will they have been negotiating",
-      "post": " by the time a deal is reached?"
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Вопрос о длительности деятельности к будущему моменту",
+      "en": "A question about how long an activity will have lasted by a future moment"
     },
-    "difficulty": 3
+    "tags": [
+      "future-perfect-continuous",
+      "context-clue",
+      "question",
+      "perfect-continuous",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«How long» спрашивает о длительности; «by the time a deal is reached» — будущий дедлайн. Future Perfect Continuous в вопросе фокусируется на продолжительности процесса переговоров (negotiating), а не на факте соглашения."
+    },
+    "contextExamples": [
+      "How long will the engineers have been testing the system by the time it goes live?",
+      "How long will she have been waiting by the time her visa application is processed?"
+    ],
+    "sentences": [
+      {
+        "pre": "How long ",
+        "verb": "will they have been negotiating",
+        "post": " by the time a deal is reached?",
+        "answer": "future-perfect-continuous"
+      }
+    ]
   },
   {
     "id": "future-perfect-continuous-18",
-    "answer": "future-perfect-continuous",
-    "type": "sentence",
-    "prompt": "Длительность физических тренировок к соревнованию",
-    "promptEn": "Duration of physical training accumulated by a competition",
-    "sentence": {
-      "pre": "By race day, the athlete ",
-      "verb": "will have been training",
-      "post": " at altitude for eight weeks."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Длительность физических тренировок к соревнованию",
+      "en": "Duration of physical training accumulated by a competition"
     },
-    "difficulty": 3
+    "tags": [
+      "future-perfect-continuous",
+      "sentence-analysis",
+      "affirmative",
+      "perfect-continuous",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«By race day» — будущий дедлайн (день соревнования); «for eight weeks» — продолжительность специализированной подготовки (training at altitude). Акцент на непрерывном процессе тренировок, а не на финальном результате."
+    },
+    "contextExamples": [
+      "By the day of the marathon, she will have been following the training plan for sixteen weeks.",
+      "By the opening bell of the tournament, the boxer will have been sparring daily for three months."
+    ],
+    "sentences": [
+      {
+        "pre": "By race day, the athlete ",
+        "verb": "will have been training",
+        "post": " at altitude for eight weeks.",
+        "answer": "future-perfect-continuous"
+      }
+    ]
   },
   {
     "id": "future-perfect-continuous-19",
-    "answer": "future-perfect-continuous",
-    "type": "context",
-    "prompt": "Накопленная усталость учёного или исследователя к дате публикации",
-    "promptEn": "Accumulated fatigue of a researcher by the time of publication",
-    "sentence": {
-      "pre": "When the paper is published, the team ",
-      "verb": "will have been researching",
-      "post": " the topic for a decade."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Накопленная усталость учёного или исследователя к дате публикации",
+      "en": "Accumulated fatigue of a researcher by the time of publication"
     },
-    "difficulty": 3
+    "tags": [
+      "future-perfect-continuous",
+      "context-clue",
+      "affirmative",
+      "perfect-continuous",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«When the paper is published» — будущее событие-дедлайн; «for a decade» — десятилетняя продолжительность непрерывных исследований (researching). Future Perfect Continuous подчёркивает грандиозность самого научного процесса."
+    },
+    "contextExamples": [
+      "When the clinical trial concludes, the scientists will have been collecting data for five years.",
+      "When the expedition returns, the geologists will have been drilling core samples for eighteen months."
+    ],
+    "sentences": [
+      {
+        "pre": "When the paper is published, the team ",
+        "verb": "will have been researching",
+        "post": " the topic for a decade.",
+        "answer": "future-perfect-continuous"
+      }
+    ]
   },
   {
     "id": "future-perfect-continuous-20",
-    "answer": "future-perfect-continuous",
-    "type": "sentence",
-    "prompt": "Продолжительность проживания в городе к переезду",
-    "promptEn": "Duration of living in a city by the time of moving away",
-    "sentence": {
-      "pre": "When we move, I ",
-      "verb": "will have been living",
-      "post": " in this neighbourhood for over a decade."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Продолжительность проживания в городе к переезду",
+      "en": "Duration of living in a city by the time of moving away"
     },
-    "difficulty": 3
+    "tags": [
+      "future-perfect-continuous",
+      "sentence-analysis",
+      "affirmative",
+      "perfect-continuous",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«When we move» — будущее событие-дедлайн; «for over a decade» — продолжительность непрерывного проживания (living). «Over» подчёркивает протяжённость процесса. Future Perfect Continuous акцентирует сам образ жизни в этом районе."
+    },
+    "contextExamples": [
+      "When they emigrate, they will have been living in the same street for twenty years.",
+      "When she transfers to the new branch, she will have been commuting to this office for eight years."
+    ],
+    "sentences": [
+      {
+        "pre": "When we move, I ",
+        "verb": "will have been living",
+        "post": " in this neighbourhood for over a decade.",
+        "answer": "future-perfect-continuous"
+      }
+    ]
   },
   {
     "id": "future-perfect-continuous-21",
-    "answer": "future-perfect-continuous",
-    "type": "context",
-    "prompt": "Длительность переговоров или разработки к подписанию соглашения",
-    "promptEn": "Duration of negotiations or development by signing an agreement",
-    "sentence": {
-      "pre": "By the time the treaty is signed, diplomats ",
-      "verb": "will have been working",
-      "post": " on it for three years."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Длительность переговоров или разработки к подписанию соглашения",
+      "en": "Duration of negotiations or development by signing an agreement"
     },
-    "difficulty": 3
+    "tags": [
+      "future-perfect-continuous",
+      "context-clue",
+      "affirmative",
+      "perfect-continuous",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«By the time the treaty is signed» — будущее событие-дедлайн; «for three years» — длительность непрерывных дипломатических усилий (working on it). Акцент на самом процессе разработки договора, ведущем к его подписанию."
+    },
+    "contextExamples": [
+      "By the time the merger is finalised, lawyers will have been drafting the agreement for six months.",
+      "By the time the standards are adopted, the committee will have been deliberating for two years."
+    ],
+    "sentences": [
+      {
+        "pre": "By the time the treaty is signed, diplomats ",
+        "verb": "will have been working",
+        "post": " on it for three years.",
+        "answer": "future-perfect-continuous"
+      }
+    ]
   },
   {
     "id": "future-perfect-continuous-22",
-    "answer": "future-perfect-continuous",
-    "type": "sentence",
-    "prompt": "Накопленная длительность пребывания в должности к юбилею",
-    "promptEn": "Accumulated duration in a position by an anniversary",
-    "sentence": {
-      "pre": "By his tenth work anniversary, he ",
-      "verb": "will have been managing",
-      "post": " the department for a full decade."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Накопленная длительность пребывания в должности к юбилею",
+      "en": "Accumulated duration in a position by an anniversary"
     },
-    "difficulty": 3
+    "tags": [
+      "future-perfect-continuous",
+      "sentence-analysis",
+      "affirmative",
+      "perfect-continuous",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«By his tenth work anniversary» — конкретный будущий юбилейный дедлайн; «for a full decade» — продолжительность непрерывного руководства (managing). «Full» усиливает непрерывность всего десятилетия процесса."
+    },
+    "contextExamples": [
+      "By her twenty-fifth anniversary with the firm, she will have been advising clients for a quarter of a century.",
+      "By the time the founder steps down, he will have been steering the company for thirty years."
+    ],
+    "sentences": [
+      {
+        "pre": "By his tenth work anniversary, he ",
+        "verb": "will have been managing",
+        "post": " the department for a full decade.",
+        "answer": "future-perfect-continuous"
+      }
+    ]
   },
   {
     "id": "future-perfect-continuous-23",
-    "answer": "future-perfect-continuous",
-    "type": "context",
-    "prompt": "Продолжительность медицинского лечения к выздоровлению",
-    "promptEn": "Duration of medical treatment by the time of recovery",
-    "sentence": {
-      "pre": "When she is finally discharged, she ",
-      "verb": "will have been receiving",
-      "post": " treatment for three months."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Продолжительность медицинского лечения к выздоровлению",
+      "en": "Duration of medical treatment by the time of recovery"
     },
-    "difficulty": 3
+    "tags": [
+      "future-perfect-continuous",
+      "context-clue",
+      "affirmative",
+      "perfect-continuous",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«When she is finally discharged» — будущее событие-дедлайн (выписка); «for three months» — продолжительность непрерывного лечения (receiving treatment). Future Perfect Continuous описывает сам медицинский процесс вплоть до выздоровления."
+    },
+    "contextExamples": [
+      "When he is cleared to return to work, he will have been undergoing rehabilitation for four months.",
+      "When the patient is released, the medical team will have been monitoring her condition for six weeks."
+    ],
+    "sentences": [
+      {
+        "pre": "When she is finally discharged, she ",
+        "verb": "will have been receiving",
+        "post": " treatment for three months.",
+        "answer": "future-perfect-continuous"
+      }
+    ]
   },
   {
     "id": "future-perfect-continuous-24",
-    "answer": "future-perfect-continuous",
-    "type": "sentence",
-    "prompt": "Длительность программирования или разработки к релизу",
-    "promptEn": "Duration of coding or development by the time of release",
-    "sentence": {
-      "pre": "When the app ships, the developers ",
-      "verb": "will have been coding",
-      "post": " it nonstop for eighteen months."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Длительность программирования или разработки к релизу",
+      "en": "Duration of coding or development by the time of release"
     },
-    "difficulty": 3
+    "tags": [
+      "future-perfect-continuous",
+      "sentence-analysis",
+      "affirmative",
+      "perfect-continuous",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«When the app ships» — будущий релиз как дедлайн; «nonstop for eighteen months» — длительность и интенсивность непрерывного процесса разработки (coding). «Nonstop» подчёркивает непрерывность, характерную для Future Perfect Continuous."
+    },
+    "contextExamples": [
+      "When the game launches, the studio will have been developing it for four years.",
+      "When the platform goes live, the engineers will have been building the infrastructure for two years."
+    ],
+    "sentences": [
+      {
+        "pre": "When the app ships, the developers ",
+        "verb": "will have been coding",
+        "post": " it nonstop for eighteen months.",
+        "answer": "future-perfect-continuous"
+      }
+    ]
   },
   {
     "id": "future-perfect-continuous-25",
-    "answer": "future-perfect-continuous",
-    "type": "context",
-    "prompt": "Накопленная длительность ожидания к прибытию помощи или результата",
-    "promptEn": "Accumulated waiting time by the arrival of help or a result",
-    "sentence": {
-      "pre": "By the time the rescue team arrives, the hikers ",
-      "verb": "will have been waiting",
-      "post": " in the cold for over thirty hours."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Накопленная длительность ожидания к прибытию помощи или результата",
+      "en": "Accumulated waiting time by the arrival of help or a result"
     },
-    "difficulty": 3
+    "tags": [
+      "future-perfect-continuous",
+      "context-clue",
+      "affirmative",
+      "perfect-continuous",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«By the time the rescue team arrives» — будущий момент прибытия; «for over thirty hours» — продолжительность изматывающего ожидания (waiting in the cold). «In the cold» + «over thirty hours» передают накопленную тяжесть непрерывного процесса."
+    },
+    "contextExamples": [
+      "By the time the power is restored, residents will have been managing without electricity for two days.",
+      "By the time the relief supplies arrive, the villagers will have been surviving on emergency rations for a week."
+    ],
+    "sentences": [
+      {
+        "pre": "By the time the rescue team arrives, the hikers ",
+        "verb": "will have been waiting",
+        "post": " in the cold for over thirty hours.",
+        "answer": "future-perfect-continuous"
+      }
+    ]
   }
 ]

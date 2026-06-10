@@ -1,327 +1,777 @@
 [
   {
     "id": "future-continuous-01",
-    "answer": "future-continuous",
-    "type": "context",
-    "prompt": "Действие в процессе в конкретный момент будущего",
-    "promptEn": "An action that will be in progress at a specific future time",
-    "sentence": {
-      "pre": "This time tomorrow I ",
-      "verb": "will be flying",
-      "post": " home."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Действие в процессе в конкретный момент будущего",
+      "en": "An action that will be in progress at a specific future time"
     },
-    "difficulty": 2
+    "tags": [
+      "future-continuous",
+      "context-clue",
+      "affirmative",
+      "continuous",
+      "difficulty-2"
+    ],
+    "difficulty": 2,
+    "rules": {
+      "ru": "«This time tomorrow» — точка-якорь в будущем, в которую действие «flying» будет находиться в процессе; именно это требует Future Continuous, а не Future Simple."
+    },
+    "contextExamples": [
+      "This time next week, she will be sitting her final exams.",
+      "This time tomorrow, we will be driving through the mountains."
+    ],
+    "sentences": [
+      {
+        "pre": "This time tomorrow I ",
+        "verb": "will be flying",
+        "post": " home.",
+        "answer": "future-continuous"
+      }
+    ]
   },
   {
     "id": "future-continuous-02",
-    "answer": "future-continuous",
-    "type": "context",
-    "prompt": "Ожидаемое длительное действие в определённый момент будущего",
-    "promptEn": "Something expected to be ongoing at a future moment",
-    "sentence": {
-      "pre": "At 8 pm they ",
-      "verb": "will be having",
-      "post": " dinner."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Ожидаемое длительное действие в определённый момент будущего",
+      "en": "Something expected to be ongoing at a future moment"
     },
-    "difficulty": 2
+    "tags": [
+      "future-continuous",
+      "context-clue",
+      "affirmative",
+      "continuous",
+      "difficulty-2"
+    ],
+    "difficulty": 2,
+    "rules": {
+      "ru": "«At 8 pm» — конкретное время-точка в будущем; ужин — ожидаемое длящееся действие в этот момент, поэтому Future Continuous."
+    },
+    "contextExamples": [
+      "At noon tomorrow, the team will be attending a strategy meeting.",
+      "At midnight, the fireworks will be going off all over the city."
+    ],
+    "sentences": [
+      {
+        "pre": "At 8 pm they ",
+        "verb": "will be having",
+        "post": " dinner.",
+        "answer": "future-continuous"
+      }
+    ]
   },
   {
     "id": "future-continuous-03",
-    "answer": "future-continuous",
-    "type": "sentence",
-    "prompt": "Фоновое действие в определённый момент в будущем",
-    "promptEn": "A background action at a specific future moment",
-    "sentence": {
-      "pre": "When you arrive, I ",
-      "verb": "will be cooking",
-      "post": " dinner."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Фоновое действие в определённый момент в будущем",
+      "en": "A background action at a specific future moment"
     },
-    "difficulty": 2
+    "tags": [
+      "future-continuous",
+      "sentence-analysis",
+      "affirmative",
+      "continuous",
+      "difficulty-2"
+    ],
+    "difficulty": 2,
+    "rules": {
+      "ru": "«When you arrive» — момент, когда действие «cooking» уже будет в процессе; Future Continuous описывает фоновое длящееся действие, прерываемое другим событием."
+    },
+    "contextExamples": [
+      "When you call, I will be putting the kids to bed.",
+      "When he gets back, she will be waiting at the station."
+    ],
+    "sentences": [
+      {
+        "pre": "When you arrive, I ",
+        "verb": "will be cooking",
+        "post": " dinner.",
+        "answer": "future-continuous"
+      }
+    ]
   },
   {
     "id": "future-continuous-04",
-    "answer": "future-continuous",
-    "type": "sentence",
-    "prompt": "Длительное действие, которое будет происходить в определённый период",
-    "promptEn": "A long action happening during a specific future period",
-    "sentence": {
-      "pre": "Next week, I ",
-      "verb": "will be studying",
-      "post": " for my exams."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Длительное действие, которое будет происходить в определённый период",
+      "en": "A long action happening during a specific future period"
     },
-    "difficulty": 2
+    "tags": [
+      "future-continuous",
+      "sentence-analysis",
+      "affirmative",
+      "continuous",
+      "difficulty-2"
+    ],
+    "difficulty": 2,
+    "rules": {
+      "ru": "«Next week» — протяжённый период, в течение которого учёба будет идти как длящийся процесс; Future Continuous подчёркивает, что это занятие всего периода, а не разовое событие."
+    },
+    "contextExamples": [
+      "Next month, they will be renovating the office.",
+      "This summer, she will be interning at a law firm."
+    ],
+    "sentences": [
+      {
+        "pre": "Next week, I ",
+        "verb": "will be studying",
+        "post": " for my exams.",
+        "answer": "future-continuous"
+      }
+    ]
   },
   {
     "id": "future-continuous-05",
-    "answer": "future-continuous",
-    "type": "context",
-    "prompt": "Два действия, которые будут происходить одновременно в будущем",
-    "promptEn": "Two actions happening at the same time in the future",
-    "sentence": {
-      "pre": "While you're working, I ",
-      "verb": "will be relaxing",
-      "post": " on the beach."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Два действия, которые будут происходить одновременно в будущем",
+      "en": "Two actions happening at the same time in the future"
     },
-    "difficulty": 3
+    "tags": [
+      "future-continuous",
+      "context-clue",
+      "affirmative",
+      "continuous",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«While you're working» задаёт одновременный фон — оба действия параллельны в будущем; Future Continuous во главном передаёт действие, совпадающее по времени с придаточным."
+    },
+    "contextExamples": [
+      "While the others are sleeping, I will be finishing the report.",
+      "While you're at the gym, I'll be cooking a special dinner."
+    ],
+    "sentences": [
+      {
+        "pre": "While you're working, I ",
+        "verb": "will be relaxing",
+        "post": " on the beach.",
+        "answer": "future-continuous"
+      }
+    ]
   },
   {
     "id": "future-continuous-06",
-    "answer": "future-continuous",
-    "type": "sentence",
-    "prompt": "Прерывание ожидаемого действия в будущем",
-    "promptEn": "An expected future action likely to be interrupted",
-    "sentence": {
-      "pre": "I'm sure the children ",
-      "verb": "will be playing",
-      "post": " when we get there."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Прерывание ожидаемого действия в будущем",
+      "en": "An expected future action likely to be interrupted"
     },
-    "difficulty": 3
+    "tags": [
+      "future-continuous",
+      "sentence-analysis",
+      "affirmative",
+      "continuous",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«I'm sure… when we get there» — уверенность, что «playing» уже будет идти в момент прибытия; это стандартная схема «фоновое длящееся действие + прерывающий момент»."
+    },
+    "contextExamples": [
+      "I'm sure the dog will be barking when the postman arrives.",
+      "I expect she will still be talking on the phone when we knock."
+    ],
+    "sentences": [
+      {
+        "pre": "I'm sure the children ",
+        "verb": "will be playing",
+        "post": " when we get there.",
+        "answer": "future-continuous"
+      }
+    ]
   },
   {
     "id": "future-continuous-07",
-    "answer": "future-continuous",
-    "type": "context",
-    "prompt": "Вопрос о планах другого человека (косвенный, вежливый)",
-    "promptEn": "A polite indirect question about someone's future plans",
-    "sentence": {
-      "pre": "Will you ",
-      "verb": "be using",
-      "post": " the car this weekend?"
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Вопрос о планах другого человека (косвенный, вежливый)",
+      "en": "A polite indirect question about someone's future plans"
     },
-    "difficulty": 3
+    "tags": [
+      "future-continuous",
+      "context-clue",
+      "question",
+      "continuous",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«Will you be using…?» — вежливый косвенный запрос о планах; в отличие от «Will you use…?», он не подразумевает просьбы и не давит на собеседника."
+    },
+    "contextExamples": [
+      "Will you be needing the printer tomorrow morning?",
+      "Will they be staying for the whole conference?"
+    ],
+    "sentences": [
+      {
+        "pre": "Will you ",
+        "verb": "be using",
+        "post": " the car this weekend?",
+        "answer": "future-continuous"
+      }
+    ]
   },
   {
     "id": "future-continuous-08",
-    "answer": "future-continuous",
-    "type": "sentence",
-    "prompt": "Длительное действие во время предстоящего события",
-    "promptEn": "An ongoing action during an upcoming event",
-    "sentence": {
-      "pre": "During the conference, I ",
-      "verb": "will be presenting",
-      "post": " our research findings."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Длительное действие во время предстоящего события",
+      "en": "An ongoing action during an upcoming event"
     },
-    "difficulty": 2
+    "tags": [
+      "future-continuous",
+      "sentence-analysis",
+      "affirmative",
+      "continuous",
+      "difficulty-2"
+    ],
+    "difficulty": 2,
+    "rules": {
+      "ru": "«During the conference» — временной период-контейнер; «presenting» будет идти на протяжении этого события, что делает Future Continuous обязательным."
+    },
+    "contextExamples": [
+      "During the seminar, she will be demonstrating the new technique.",
+      "During the match, thousands of fans will be watching from the stands."
+    ],
+    "sentences": [
+      {
+        "pre": "During the conference, I ",
+        "verb": "will be presenting",
+        "post": " our research findings.",
+        "answer": "future-continuous"
+      }
+    ]
   },
   {
     "id": "future-continuous-09",
-    "answer": "future-continuous",
-    "type": "context",
-    "prompt": "Ожидаемое действие в конкретный час в будущем",
-    "promptEn": "An expected action at a specific clock time in the future",
-    "sentence": {
-      "pre": "At this time next year, I ",
-      "verb": "will be living",
-      "post": " in a different country."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Ожидаемое действие в конкретный час в будущем",
+      "en": "An expected action at a specific clock time in the future"
     },
-    "difficulty": 3
+    "tags": [
+      "future-continuous",
+      "context-clue",
+      "affirmative",
+      "continuous",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«At this time next year» — точка-якорь через год; проживание в другой стране будет находиться в процессе в этот момент, отсюда Future Continuous."
+    },
+    "contextExamples": [
+      "At this time next month, we will be celebrating our anniversary.",
+      "At this time next summer, she will be working at a hospital in Berlin."
+    ],
+    "sentences": [
+      {
+        "pre": "At this time next year, I ",
+        "verb": "will be living",
+        "post": " in a different country.",
+        "answer": "future-continuous"
+      }
+    ]
   },
   {
     "id": "future-continuous-10",
-    "answer": "future-continuous",
-    "type": "sentence",
-    "prompt": "Отрицание длящегося действия в будущем",
-    "promptEn": "Denying that an action will be ongoing in the future",
-    "sentence": {
-      "pre": "Don't come at noon — I ",
-      "verb": "will be sleeping",
-      "post": " after the night shift."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Отрицание длящегося действия в будущем",
+      "en": "Denying that an action will be ongoing in the future"
     },
-    "difficulty": 3
+    "tags": [
+      "future-continuous",
+      "sentence-analysis",
+      "negative",
+      "continuous",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«at noon» — точка-якорь, а «after the night shift» объясняет, почему сон будет идти как естественный ход событий; Future Continuous передаёт ожидаемое продолжающееся состояние."
+    },
+    "contextExamples": [
+      "Don't call before 9 — he will be commuting to work.",
+      "Don't schedule anything for Thursday morning — she will be recovering from surgery."
+    ],
+    "sentences": [
+      {
+        "pre": "Don't come at noon — I ",
+        "verb": "will be sleeping",
+        "post": " after the night shift.",
+        "answer": "future-continuous"
+      }
+    ]
   },
   {
     "id": "future-continuous-11",
-    "answer": "future-continuous",
-    "type": "context",
-    "prompt": "Запланированная или рутинная деятельность в конкретный период будущего",
-    "promptEn": "A planned or routine activity in a specific future period",
-    "sentence": {
-      "pre": "This evening, the team ",
-      "verb": "will be practising",
-      "post": " for the championship."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Запланированная или рутинная деятельность в конкретный период будущего",
+      "en": "A planned or routine activity in a specific future period"
     },
-    "difficulty": 2
+    "tags": [
+      "future-continuous",
+      "context-clue",
+      "affirmative",
+      "continuous",
+      "difficulty-2"
+    ],
+    "difficulty": 2,
+    "rules": {
+      "ru": "«This evening» — конкретный будущий период; тренировка — ожидаемая длящаяся деятельность в течение всего этого периода, что требует Future Continuous."
+    },
+    "contextExamples": [
+      "This afternoon, the surgeons will be operating on three patients.",
+      "Tomorrow morning, the crew will be installing the new equipment."
+    ],
+    "sentences": [
+      {
+        "pre": "This evening, the team ",
+        "verb": "will be practising",
+        "post": " for the championship.",
+        "answer": "future-continuous"
+      }
+    ]
   },
   {
     "id": "future-continuous-12",
-    "answer": "future-continuous",
-    "type": "sentence",
-    "prompt": "Переход от текущего события к действию в момент будущего",
-    "promptEn": "Transitioning from a current event to a future moment action",
-    "sentence": {
-      "pre": "By the time you read this, I ",
-      "verb": "will be sitting",
-      "post": " on a plane."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Переход от текущего события к действию в момент будущего",
+      "en": "Transitioning from a current event to a future moment action"
     },
-    "difficulty": 3
+    "tags": [
+      "future-continuous",
+      "sentence-analysis",
+      "affirmative",
+      "continuous",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«By the time you read this» — момент-якорь в будущем; «sitting on a plane» будет находиться в процессе в этот момент, что и требует Future Continuous."
+    },
+    "contextExamples": [
+      "By the time this message reaches you, I will be crossing the border.",
+      "By the time you wake up, she will be giving her speech on stage."
+    ],
+    "sentences": [
+      {
+        "pre": "By the time you read this, I ",
+        "verb": "will be sitting",
+        "post": " on a plane.",
+        "answer": "future-continuous"
+      }
+    ]
   },
   {
     "id": "future-continuous-13",
-    "answer": "future-continuous",
-    "type": "context",
-    "prompt": "Действие, которое естественным образом произойдёт по ходу событий",
-    "promptEn": "An action that will naturally happen in the course of events",
-    "sentence": {
-      "pre": "I ",
-      "verb": "will be passing",
-      "post": " the post office anyway — I'll mail it for you."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Действие, которое естественным образом произойдёт по ходу событий",
+      "en": "An action that will naturally happen in the course of events"
     },
-    "difficulty": 3
+    "tags": [
+      "future-continuous",
+      "context-clue",
+      "affirmative",
+      "continuous",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«anyway» подчёркивает, что прохождение мимо почты — часть естественного хода событий, не специальное намерение; Future Continuous передаёт действие как неизбежный фоновый процесс."
+    },
+    "contextExamples": [
+      "I will be going past the supermarket anyway — shall I pick something up?",
+      "She will be seeing the doctor tomorrow regardless — she can ask about it then."
+    ],
+    "sentences": [
+      {
+        "pre": "I ",
+        "verb": "will be passing",
+        "post": " the post office anyway — I'll mail it for you.",
+        "answer": "future-continuous"
+      }
+    ]
   },
   {
     "id": "future-continuous-14",
-    "answer": "future-continuous",
-    "type": "sentence",
-    "prompt": "Два параллельных действия в будущем",
-    "promptEn": "Two parallel actions happening simultaneously in the future",
-    "sentence": {
-      "pre": "While the doctor ",
-      "verb": "will be examining",
-      "post": " the patient, the nurse will prepare the equipment."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Два параллельных действия в будущем",
+      "en": "Two parallel actions happening simultaneously in the future"
     },
-    "difficulty": 3
+    "tags": [
+      "future-continuous",
+      "sentence-analysis",
+      "affirmative",
+      "continuous",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«While» с Future Continuous в придаточном обозначает длящееся фоновое действие «examining», одновременное с завершённым действием в главном предложении."
+    },
+    "contextExamples": [
+      "While the manager will be interviewing candidates, the assistant will take notes.",
+      "While the builders will be working on the roof, tenants must use the side entrance."
+    ],
+    "sentences": [
+      {
+        "pre": "While the doctor ",
+        "verb": "will be examining",
+        "post": " the patient, the nurse will prepare the equipment.",
+        "answer": "future-continuous"
+      }
+    ]
   },
   {
     "id": "future-continuous-15",
-    "answer": "future-continuous",
-    "type": "context",
-    "prompt": "Длящееся действие, которое будет продолжаться после момента в будущем",
-    "promptEn": "An ongoing action that will continue past a future moment",
-    "sentence": {
-      "pre": "When the guests arrive at seven, we ",
-      "verb": "will still be preparing",
-      "post": " the food."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Длящееся действие, которое будет продолжаться после момента в будущем",
+      "en": "An ongoing action that will continue past a future moment"
     },
-    "difficulty": 3
+    "tags": [
+      "future-continuous",
+      "context-clue",
+      "affirmative",
+      "continuous",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«still» + Future Continuous подчёркивает, что приготовление не закончится к моменту прихода гостей — действие продолжается через точку-якорь «at seven»."
+    },
+    "contextExamples": [
+      "When the flight lands, the ground crew will still be clearing the runway.",
+      "When the boss arrives, they will still be setting up the presentation."
+    ],
+    "sentences": [
+      {
+        "pre": "When the guests arrive at seven, we ",
+        "verb": "will still be preparing",
+        "post": " the food.",
+        "answer": "future-continuous"
+      }
+    ]
   },
   {
     "id": "future-continuous-16",
-    "answer": "future-continuous",
-    "type": "sentence",
-    "prompt": "Отрицание длящегося действия в будущий момент",
-    "promptEn": "Negating an ongoing action at a future moment",
-    "sentence": {
-      "pre": "I ",
-      "verb": "won't be using",
-      "post": " the car tomorrow — you can borrow it."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Отрицание длящегося действия в будущий момент",
+      "en": "Negating an ongoing action at a future moment"
     },
-    "difficulty": 2
+    "tags": [
+      "future-continuous",
+      "sentence-analysis",
+      "negative",
+      "continuous",
+      "difficulty-2"
+    ],
+    "difficulty": 2,
+    "rules": {
+      "ru": "«Won't be using» — отрицание Future Continuous: говорящий сообщает, что действие не будет происходить «tomorrow», тем самым предлагая ресурс собеседнику."
+    },
+    "contextExamples": [
+      "She won't be needing the laptop this week — you can use it.",
+      "They won't be staying at the villa this summer, so we can rent it."
+    ],
+    "sentences": [
+      {
+        "pre": "I ",
+        "verb": "won't be using",
+        "post": " the car tomorrow — you can borrow it.",
+        "answer": "future-continuous"
+      }
+    ]
   },
   {
     "id": "future-continuous-17",
-    "answer": "future-continuous",
-    "type": "context",
-    "prompt": "Вопрос о действии в конкретный момент будущего",
-    "promptEn": "A question about what someone will be doing at a future moment",
-    "sentence": {
-      "pre": "Will you ",
-      "verb": "be attending",
-      "post": " the conference next week?"
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Вопрос о действии в конкретный момент будущего",
+      "en": "A question about what someone will be doing at a future moment"
     },
-    "difficulty": 2
+    "tags": [
+      "future-continuous",
+      "context-clue",
+      "question",
+      "continuous",
+      "difficulty-2"
+    ],
+    "difficulty": 2,
+    "rules": {
+      "ru": "«Will you be attending…?» — вежливый вопрос о том, будет ли действие происходить в указанный период; менее прямолинеен, чем «Will you attend…?»"
+    },
+    "contextExamples": [
+      "Will you be joining us for lunch tomorrow?",
+      "Will she be presenting at the workshop next month?"
+    ],
+    "sentences": [
+      {
+        "pre": "Will you ",
+        "verb": "be attending",
+        "post": " the conference next week?",
+        "answer": "future-continuous"
+      }
+    ]
   },
   {
     "id": "future-continuous-18",
-    "answer": "future-continuous",
-    "type": "sentence",
-    "prompt": "Длящееся действие во время поездки или перелёта",
-    "promptEn": "An ongoing action during a journey or flight",
-    "sentence": {
-      "pre": "For the next eight hours, we ",
-      "verb": "will be flying",
-      "post": " over the Pacific Ocean."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Длящееся действие во время поездки или перелёта",
+      "en": "An ongoing action during a journey or flight"
     },
-    "difficulty": 2
+    "tags": [
+      "future-continuous",
+      "sentence-analysis",
+      "affirmative",
+      "continuous",
+      "difficulty-2"
+    ],
+    "difficulty": 2,
+    "rules": {
+      "ru": "«For the next eight hours» — чётко ограниченный период, в течение которого полёт будет длиться непрерывно; Future Continuous акцентирует протяжённость действия."
+    },
+    "contextExamples": [
+      "For the next three days, the rescue team will be searching the mountainside.",
+      "For the duration of the voyage, sailors will be taking turns on watch."
+    ],
+    "sentences": [
+      {
+        "pre": "For the next eight hours, we ",
+        "verb": "will be flying",
+        "post": " over the Pacific Ocean.",
+        "answer": "future-continuous"
+      }
+    ]
   },
   {
     "id": "future-continuous-19",
-    "answer": "future-continuous",
-    "type": "context",
-    "prompt": "Действие в процессе в момент прибытия другого человека",
-    "promptEn": "An action in progress at the moment someone else arrives",
-    "sentence": {
-      "pre": "Don't knock — she ",
-      "verb": "will be sleeping",
-      "post": " when you get there at noon."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Действие в процессе в момент прибытия другого человека",
+      "en": "An action in progress at the moment someone else arrives"
     },
-    "difficulty": 3
+    "tags": [
+      "future-continuous",
+      "context-clue",
+      "negative",
+      "continuous",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«when you get there at noon» — момент-якорь прибытия; «sleeping» будет находиться в процессе в этот момент как ожидаемое естественное состояние."
+    },
+    "contextExamples": [
+      "Ring ahead — they will be having lunch when you arrive.",
+      "Text first — he will be meditating when you show up at ten."
+    ],
+    "sentences": [
+      {
+        "pre": "Don't knock — she ",
+        "verb": "will be sleeping",
+        "post": " when you get there at noon.",
+        "answer": "future-continuous"
+      }
+    ]
   },
   {
     "id": "future-continuous-20",
-    "answer": "future-continuous",
-    "type": "sentence",
-    "prompt": "Предположение о чьей-то деятельности прямо сейчас",
-    "promptEn": "An assumption about what someone is probably doing right now",
-    "sentence": {
-      "pre": "At this hour, he ",
-      "verb": "will be sitting",
-      "post": " in traffic on his way home."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Предположение о чьей-то деятельности прямо сейчас",
+      "en": "An assumption about what someone is probably doing right now"
     },
-    "difficulty": 3
+    "tags": [
+      "future-continuous",
+      "sentence-analysis",
+      "affirmative",
+      "continuous",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«At this hour» — текущий момент, воспринимаемый как точка-якорь; Future Continuous используется для предположения о том, что кто-то сейчас находится в процессе действия."
+    },
+    "contextExamples": [
+      "At this hour, the kids will be getting ready for school.",
+      "Right now, she will probably be landing in New York."
+    ],
+    "sentences": [
+      {
+        "pre": "At this hour, he ",
+        "verb": "will be sitting",
+        "post": " in traffic on his way home.",
+        "answer": "future-continuous"
+      }
+    ]
   },
   {
     "id": "future-continuous-21",
-    "answer": "future-continuous",
-    "type": "context",
-    "prompt": "Длящаяся деятельность в течение всего будущего периода",
-    "promptEn": "An ongoing activity throughout an entire future period",
-    "sentence": {
-      "pre": "All next week, the engineers ",
-      "verb": "will be testing",
-      "post": " the new system."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Длящаяся деятельность в течение всего будущего периода",
+      "en": "An ongoing activity throughout an entire future period"
     },
-    "difficulty": 2
+    "tags": [
+      "future-continuous",
+      "context-clue",
+      "affirmative",
+      "continuous",
+      "difficulty-2"
+    ],
+    "difficulty": 2,
+    "rules": {
+      "ru": "«All next week» — весь период целиком; «testing» будет длиться на протяжении всей следующей недели, что подчёркивается Future Continuous."
+    },
+    "contextExamples": [
+      "All next month, the staff will be attending training sessions.",
+      "Throughout the summer, volunteers will be cleaning up the riverbank."
+    ],
+    "sentences": [
+      {
+        "pre": "All next week, the engineers ",
+        "verb": "will be testing",
+        "post": " the new system.",
+        "answer": "future-continuous"
+      }
+    ]
   },
   {
     "id": "future-continuous-22",
-    "answer": "future-continuous",
-    "type": "sentence",
-    "prompt": "Два параллельных действия в будущем с 'while'",
-    "promptEn": "Two parallel future actions with 'while'",
-    "sentence": {
-      "pre": "While you ",
-      "verb": "will be presenting",
-      "post": ", I'll be setting up the demo."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Два параллельных действия в будущем с 'while'",
+      "en": "Two parallel future actions with 'while'"
     },
-    "difficulty": 3
+    "tags": [
+      "future-continuous",
+      "sentence-analysis",
+      "affirmative",
+      "continuous",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "Оба глагола в форме Future Continuous — «will be presenting» и «I'll be setting up» — описывают два параллельных длящихся действия, происходящих одновременно в будущем."
+    },
+    "contextExamples": [
+      "While she will be negotiating the deal, her partner will be reviewing the contract.",
+      "While the band will be performing, the caterers will be serving dinner."
+    ],
+    "sentences": [
+      {
+        "pre": "While you ",
+        "verb": "will be presenting",
+        "post": ", I'll be setting up the demo.",
+        "answer": "future-continuous"
+      }
+    ]
   },
   {
     "id": "future-continuous-23",
-    "answer": "future-continuous",
-    "type": "context",
-    "prompt": "Длящееся действие как прерываемый фон для другого события",
-    "promptEn": "An ongoing action serving as background for another future event",
-    "sentence": {
-      "pre": "I ",
-      "verb": "will be working",
-      "post": " from home all day, so call me any time."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Длящееся действие как прерываемый фон для другого события",
+      "en": "An ongoing action serving as background for another future event"
     },
-    "difficulty": 3
+    "tags": [
+      "future-continuous",
+      "context-clue",
+      "affirmative",
+      "continuous",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«all day» — протяжённый период; работа дома будет идти как длящийся фон, что позволяет приглашать звонки в любое время — Future Continuous передаёт эту доступность."
+    },
+    "contextExamples": [
+      "I will be monitoring the system all evening, so alert me if anything goes wrong.",
+      "She will be available online all morning — feel free to message her."
+    ],
+    "sentences": [
+      {
+        "pre": "I ",
+        "verb": "will be working",
+        "post": " from home all day, so call me any time.",
+        "answer": "future-continuous"
+      }
+    ]
   },
   {
     "id": "future-continuous-24",
-    "answer": "future-continuous",
-    "type": "sentence",
-    "prompt": "Действие, которое начнётся до указанного момента и продолжится после",
-    "promptEn": "An action that will have started before a stated time and continue after",
-    "sentence": {
-      "pre": "By the time you finish reading this, I ",
-      "verb": "will be boarding",
-      "post": " my flight."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Действие, которое начнётся до указанного момента и продолжится после",
+      "en": "An action that will have started before a stated time and continue after"
     },
-    "difficulty": 3
+    "tags": [
+      "future-continuous",
+      "sentence-analysis",
+      "affirmative",
+      "continuous",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«By the time you finish reading this» — будущий момент-якорь; «boarding» будет в процессе в этот момент, и продолжится после него — это Future Continuous, а не Future Perfect."
+    },
+    "contextExamples": [
+      "By the time you arrive at the hotel, we will be waiting in the lobby.",
+      "By the time the ceremony ends, the guests will be lining up for photos."
+    ],
+    "sentences": [
+      {
+        "pre": "By the time you finish reading this, I ",
+        "verb": "will be boarding",
+        "post": " my flight.",
+        "answer": "future-continuous"
+      }
+    ]
   },
   {
     "id": "future-continuous-25",
-    "answer": "future-continuous",
-    "type": "context",
-    "prompt": "Операция или процедура, которая будет проходить в момент события",
-    "promptEn": "An operation or procedure that will be underway at the time of an event",
-    "sentence": {
-      "pre": "Don't disturb him — he ",
-      "verb": "will be operating",
-      "post": " all morning."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Операция или процедура, которая будет проходить в момент события",
+      "en": "An operation or procedure that will be underway at the time of an event"
     },
-    "difficulty": 3
+    "tags": [
+      "future-continuous",
+      "context-clue",
+      "negative",
+      "continuous",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«all morning» — весь утренний период; «operating» будет непрерывно происходить в течение всего этого времени как ожидаемый рабочий процесс."
+    },
+    "contextExamples": [
+      "Don't call the lab — the researchers will be running experiments all afternoon.",
+      "Don't schedule meetings before noon — she will be conducting interviews all morning."
+    ],
+    "sentences": [
+      {
+        "pre": "Don't disturb him — he ",
+        "verb": "will be operating",
+        "post": " all morning.",
+        "answer": "future-continuous"
+      }
+    ]
   }
 ]

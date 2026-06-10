@@ -1,327 +1,777 @@
 [
   {
     "id": "past-perfect-continuous-01",
-    "answer": "past-perfect-continuous",
-    "type": "context",
-    "prompt": "Длительное действие, шедшее до другого момента в прошлом",
-    "promptEn": "A continuous action ongoing before another past moment",
-    "sentence": {
-      "pre": "They ",
-      "verb": "had been driving",
-      "post": " for hours before the stop."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Длительное действие, шедшее до другого момента в прошлом",
+      "en": "A continuous action ongoing before another past moment"
     },
-    "difficulty": 3
+    "tags": [
+      "past-perfect-continuous",
+      "context-clue",
+      "affirmative",
+      "perfect-continuous",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«For hours» указывает на длительность; «before the stop» — прошлый момент-ориентир. Сочетание «for + период» + прошлый ориентир требует Past Perfect Continuous, чтобы подчеркнуть непрерывность процесса."
+    },
+    "contextExamples": [
+      "The children had been playing outside for hours before it got dark.",
+      "He had been running for forty minutes before he reached the finish line."
+    ],
+    "sentences": [
+      {
+        "pre": "They ",
+        "verb": "had been driving",
+        "post": " for hours before the stop.",
+        "answer": "past-perfect-continuous"
+      }
+    ]
   },
   {
     "id": "past-perfect-continuous-02",
-    "answer": "past-perfect-continuous",
-    "type": "sentence",
-    "prompt": "Результат длительного действия, объясняющий прошлое состояние",
-    "promptEn": "A result of prolonged action explaining a past state",
-    "sentence": {
-      "pre": "He was exhausted because he ",
-      "verb": "had been working",
-      "post": " without a break."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Результат длительного действия, объясняющий прошлое состояние",
+      "en": "A result of prolonged action explaining a past state"
     },
-    "difficulty": 3
+    "tags": [
+      "past-perfect-continuous",
+      "sentence-analysis",
+      "affirmative",
+      "perfect-continuous",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«Was exhausted» — видимый результат в прошлом; «because he had been working without a break» — длительный процесс как причина этого состояния. Причинно-следственная связь с акцентом на продолжительности требует Past Perfect Continuous."
+    },
+    "contextExamples": [
+      "Her voice was hoarse because she had been singing all evening.",
+      "The floor was wet because someone had been mopping it."
+    ],
+    "sentences": [
+      {
+        "pre": "He was exhausted because he ",
+        "verb": "had been working",
+        "post": " without a break.",
+        "answer": "past-perfect-continuous"
+      }
+    ]
   },
   {
     "id": "past-perfect-continuous-03",
-    "answer": "past-perfect-continuous",
-    "type": "context",
-    "prompt": "Процесс, длившийся до определённого момента в прошлом",
-    "promptEn": "A process that was going on until a point in the past",
-    "sentence": {
-      "pre": "Before the rain, it ",
-      "verb": "had been snowing",
-      "post": " for two days."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Процесс, длившийся до определённого момента в прошлом",
+      "en": "A process that was going on until a point in the past"
     },
-    "difficulty": 3
+    "tags": [
+      "past-perfect-continuous",
+      "context-clue",
+      "affirmative",
+      "perfect-continuous",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«For two days» — длительность процесса; «before the rain» — момент в прошлом, когда процесс прекратился. «For + период + before + прошлое событие» — классический сигнал Past Perfect Continuous."
+    },
+    "contextExamples": [
+      "Before the power cut, the machine had been running for six hours.",
+      "Before the ceasefire, the two sides had been fighting for weeks."
+    ],
+    "sentences": [
+      {
+        "pre": "Before the rain, it ",
+        "verb": "had been snowing",
+        "post": " for two days.",
+        "answer": "past-perfect-continuous"
+      }
+    ]
   },
   {
     "id": "past-perfect-continuous-04",
-    "answer": "past-perfect-continuous",
-    "type": "sentence",
-    "prompt": "Привычка или повторяющееся действие в определённый период прошлого",
-    "promptEn": "A habit or repeated action during a past period",
-    "sentence": {
-      "pre": "During his childhood, he ",
-      "verb": "had been playing",
-      "post": " the piano for years."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Привычка или повторяющееся действие в определённый период прошлого",
+      "en": "A habit or repeated action during a past period"
     },
-    "difficulty": 3
+    "tags": [
+      "past-perfect-continuous",
+      "sentence-analysis",
+      "affirmative",
+      "perfect-continuous",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«For years» — длительность регулярной деятельности; «during his childhood» — прошлый период-ориентир. Повторяющееся действие, продолжавшееся на протяжении значительного прошлого периода, передаётся Past Perfect Continuous."
+    },
+    "contextExamples": [
+      "During her university years, she had been volunteering at the shelter.",
+      "Throughout the project, they had been meeting every week."
+    ],
+    "sentences": [
+      {
+        "pre": "During his childhood, he ",
+        "verb": "had been playing",
+        "post": " the piano for years.",
+        "answer": "past-perfect-continuous"
+      }
+    ]
   },
   {
     "id": "past-perfect-continuous-05",
-    "answer": "past-perfect-continuous",
-    "type": "context",
-    "prompt": "Длительность действия, объясняющая положение к моменту в прошлом",
-    "promptEn": "Duration of an action explaining a situation in the past",
-    "sentence": {
-      "pre": "When the fire started, it ",
-      "verb": "had been burning",
-      "post": " undetected for hours."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Длительность действия, объясняющая положение к моменту в прошлом",
+      "en": "Duration of an action explaining a situation in the past"
     },
-    "difficulty": 3
+    "tags": [
+      "past-perfect-continuous",
+      "context-clue",
+      "affirmative",
+      "perfect-continuous",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«When the fire started» — прошлый ориентир; «had been burning… for hours» объясняет масштаб ситуации через длительность непрерывного процесса. «For hours» — ключевой маркер длительности."
+    },
+    "contextExamples": [
+      "When the inspection happened, the factory had been dumping waste for months.",
+      "When she noticed the smell, gas had been leaking for some time."
+    ],
+    "sentences": [
+      {
+        "pre": "When the fire started, it ",
+        "verb": "had been burning",
+        "post": " undetected for hours.",
+        "answer": "past-perfect-continuous"
+      }
+    ]
   },
   {
     "id": "past-perfect-continuous-06",
-    "answer": "past-perfect-continuous",
-    "type": "sentence",
-    "prompt": "Видимый результат в прошлом от предшествующей длительной деятельности",
-    "promptEn": "A visible past result of a prior prolonged activity",
-    "sentence": {
-      "pre": "Her hands were sore because she ",
-      "verb": "had been typing",
-      "post": " all day."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Видимый результат в прошлом от предшествующей длительной деятельности",
+      "en": "A visible past result of a prior prolonged activity"
     },
-    "difficulty": 3
+    "tags": [
+      "past-perfect-continuous",
+      "sentence-analysis",
+      "affirmative",
+      "perfect-continuous",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«Were sore» — видимое физическое состояние в прошлом; «because she had been typing all day» — длительный процесс как его причина. «All day» подчёркивает непрерывность деятельности."
+    },
+    "contextExamples": [
+      "His eyes were strained because he had been staring at the screen for hours.",
+      "Their clothes were muddy because they had been working in the garden all morning."
+    ],
+    "sentences": [
+      {
+        "pre": "Her hands were sore because she ",
+        "verb": "had been typing",
+        "post": " all day.",
+        "answer": "past-perfect-continuous"
+      }
+    ]
   },
   {
     "id": "past-perfect-continuous-07",
-    "answer": "past-perfect-continuous",
-    "type": "context",
-    "prompt": "Длительная деятельность, объясняющая усталость в прошлом",
-    "promptEn": "Prolonged activity explaining fatigue at a past moment",
-    "sentence": {
-      "pre": "She fell asleep immediately because she ",
-      "verb": "had been travelling",
-      "post": " for twenty hours."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Длительная деятельность, объясняющая усталость в прошлом",
+      "en": "Prolonged activity explaining fatigue at a past moment"
     },
-    "difficulty": 3
+    "tags": [
+      "past-perfect-continuous",
+      "context-clue",
+      "affirmative",
+      "perfect-continuous",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«Fell asleep immediately» — следствие; «because she had been travelling for twenty hours» — длительная причина. «For twenty hours» — конкретная продолжительность процесса, указывающая на Past Perfect Continuous."
+    },
+    "contextExamples": [
+      "He needed to rest because he had been carrying heavy boxes all afternoon.",
+      "They were relieved when it ended because they had been standing for over two hours."
+    ],
+    "sentences": [
+      {
+        "pre": "She fell asleep immediately because she ",
+        "verb": "had been travelling",
+        "post": " for twenty hours.",
+        "answer": "past-perfect-continuous"
+      }
+    ]
   },
   {
     "id": "past-perfect-continuous-08",
-    "answer": "past-perfect-continuous",
-    "type": "sentence",
-    "prompt": "Продолжительность деятельности к моменту прерывания в прошлом",
-    "promptEn": "Duration of an activity up to the moment it was interrupted",
-    "sentence": {
-      "pre": "By the time they stopped, they ",
-      "verb": "had been arguing",
-      "post": " for over an hour."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Продолжительность деятельности к моменту прерывания в прошлом",
+      "en": "Duration of an activity up to the moment it was interrupted"
     },
-    "difficulty": 3
+    "tags": [
+      "past-perfect-continuous",
+      "sentence-analysis",
+      "affirmative",
+      "perfect-continuous",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«By the time they stopped» — момент прекращения процесса; «for over an hour» — суммарная длительность до этого момента. «By the time» + «for + период» — двойной маркер Past Perfect Continuous."
+    },
+    "contextExamples": [
+      "By the time the concert ended, the band had been performing for three hours.",
+      "By the time we reached the summit, we had been climbing since dawn."
+    ],
+    "sentences": [
+      {
+        "pre": "By the time they stopped, they ",
+        "verb": "had been arguing",
+        "post": " for over an hour.",
+        "answer": "past-perfect-continuous"
+      }
+    ]
   },
   {
     "id": "past-perfect-continuous-09",
-    "answer": "past-perfect-continuous",
-    "type": "context",
-    "prompt": "Нереализованное условие в прошлом с акцентом на длительности",
-    "promptEn": "An unrealized past condition emphasizing the duration of effort",
-    "sentence": {
-      "pre": "If he ",
-      "verb": "had been training",
-      "post": " properly, he wouldn't have been injured."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Нереализованное условие в прошлом с акцентом на длительности",
+      "en": "An unrealized past condition emphasizing the duration of effort"
     },
-    "difficulty": 3
+    "tags": [
+      "past-perfect-continuous",
+      "context-clue",
+      "negative",
+      "perfect-continuous",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "Третий кондиционал с Past Perfect Continuous в if-клаузе: «had been training» подчёркивает, что нарушение было систематическим (процесс), а не разовым. Выбор PPC вместо PP акцентирует длительный характер условия."
+    },
+    "contextExamples": [
+      "If she had been following the diet, she would have felt better.",
+      "If they had been paying attention, they would have noticed the warning signs."
+    ],
+    "sentences": [
+      {
+        "pre": "If he ",
+        "verb": "had been training",
+        "post": " properly, he wouldn't have been injured.",
+        "answer": "past-perfect-continuous"
+      }
+    ]
   },
   {
     "id": "past-perfect-continuous-10",
-    "answer": "past-perfect-continuous",
-    "type": "sentence",
-    "prompt": "Процесс, который шёл в прошлом и был прерван другим событием",
-    "promptEn": "A process going on in the past and interrupted by another event",
-    "sentence": {
-      "pre": "We ",
-      "verb": "had been waiting",
-      "post": " for an hour when the bus finally came."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Процесс, который шёл в прошлом и был прерван другим событием",
+      "en": "A process going on in the past and interrupted by another event"
     },
-    "difficulty": 3
+    "tags": [
+      "past-perfect-continuous",
+      "sentence-analysis",
+      "affirmative",
+      "perfect-continuous",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«For an hour» — длительность непрерывного ожидания; «when the bus finally came» — прерывающее событие. Структура «had been -ing + for… when» — ключевой шаблон Past Perfect Continuous."
+    },
+    "contextExamples": [
+      "They had been rehearsing for two hours when the director called a break.",
+      "I had been reading for half an hour when the lights went out."
+    ],
+    "sentences": [
+      {
+        "pre": "We ",
+        "verb": "had been waiting",
+        "post": " for an hour when the bus finally came.",
+        "answer": "past-perfect-continuous"
+      }
+    ]
   },
   {
     "id": "past-perfect-continuous-11",
-    "answer": "past-perfect-continuous",
-    "type": "context",
-    "prompt": "Повторяющееся действие в прошлом, ставшее источником раздражения",
-    "promptEn": "A repeated past action that had become a source of irritation",
-    "sentence": {
-      "pre": "She was tired of him because he ",
-      "verb": "had been making",
-      "post": " the same mistake over and over."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Повторяющееся действие в прошлом, ставшее источником раздражения",
+      "en": "A repeated past action that had become a source of irritation"
     },
-    "difficulty": 3
+    "tags": [
+      "past-perfect-continuous",
+      "context-clue",
+      "affirmative",
+      "perfect-continuous",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«Over and over» — сигнал многократного повторения; «was tired of him because» — видимый эмоциональный результат. Повторяющийся процесс в прошлом, накопившийся до точки раздражения, выражается Past Perfect Continuous."
+    },
+    "contextExamples": [
+      "The manager was frustrated because the team had been missing deadlines repeatedly.",
+      "They complained because the neighbour had been playing loud music every night."
+    ],
+    "sentences": [
+      {
+        "pre": "She was tired of him because he ",
+        "verb": "had been making",
+        "post": " the same mistake over and over.",
+        "answer": "past-perfect-continuous"
+      }
+    ]
   },
   {
     "id": "past-perfect-continuous-12",
-    "answer": "past-perfect-continuous",
-    "type": "sentence",
-    "prompt": "Длительность работы над проектом к моменту его завершения",
-    "promptEn": "Duration of work on a project up to the time it was completed",
-    "sentence": {
-      "pre": "When the app launched, the team ",
-      "verb": "had been developing",
-      "post": " it for three years."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Длительность работы над проектом к моменту его завершения",
+      "en": "Duration of work on a project up to the time it was completed"
     },
-    "difficulty": 3
+    "tags": [
+      "past-perfect-continuous",
+      "sentence-analysis",
+      "affirmative",
+      "perfect-continuous",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«For three years» — длительность разработки; «when the app launched» — прошлый ориентир (завершение). Акцент на протяжённости процесса до результата — основной признак Past Perfect Continuous."
+    },
+    "contextExamples": [
+      "When the film finally came out, the director had been working on it for five years.",
+      "When the bridge opened, engineers had been designing it for a decade."
+    ],
+    "sentences": [
+      {
+        "pre": "When the app launched, the team ",
+        "verb": "had been developing",
+        "post": " it for three years.",
+        "answer": "past-perfect-continuous"
+      }
+    ]
   },
   {
     "id": "past-perfect-continuous-13",
-    "answer": "past-perfect-continuous",
-    "type": "context",
-    "prompt": "Скрытая длительная деятельность, вскрывшаяся в прошлом",
-    "promptEn": "A hidden prolonged activity that came to light in the past",
-    "sentence": {
-      "pre": "We discovered that someone ",
-      "verb": "had been using",
-      "post": " our account without permission."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Скрытая длительная деятельность, вскрывшаяся в прошлом",
+      "en": "A hidden prolonged activity that came to light in the past"
     },
-    "difficulty": 3
+    "tags": [
+      "past-perfect-continuous",
+      "context-clue",
+      "affirmative",
+      "perfect-continuous",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«Discovered» — момент раскрытия в прошлом; «had been using» — продолжавшийся тайный процесс вплоть до этого момента. Глагол обнаружения + длительный фоновый процесс — типичная конструкция для Past Perfect Continuous."
+    },
+    "contextExamples": [
+      "They found out that someone had been accessing the files remotely.",
+      "The investigation revealed that the officials had been accepting bribes for years."
+    ],
+    "sentences": [
+      {
+        "pre": "We discovered that someone ",
+        "verb": "had been using",
+        "post": " our account without permission.",
+        "answer": "past-perfect-continuous"
+      }
+    ]
   },
   {
     "id": "past-perfect-continuous-14",
-    "answer": "past-perfect-continuous",
-    "type": "sentence",
-    "prompt": "Ощущение или состояние в прошлом, накопившееся за период",
-    "promptEn": "A feeling or state in the past accumulated over a period",
-    "sentence": {
-      "pre": "He looked pale because he ",
-      "verb": "had been sleeping",
-      "post": " badly for weeks."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Ощущение или состояние в прошлом, накопившееся за период",
+      "en": "A feeling or state in the past accumulated over a period"
     },
-    "difficulty": 3
+    "tags": [
+      "past-perfect-continuous",
+      "sentence-analysis",
+      "affirmative",
+      "perfect-continuous",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«Looked pale» — видимый физический признак; «because he had been sleeping badly for weeks» — длительный процесс, накопивший этот эффект. «For weeks» — маркер продолжительности, требующий Past Perfect Continuous."
+    },
+    "contextExamples": [
+      "She seemed distracted because she had been worrying about the results for days.",
+      "His skin was dry because he had been spending long hours outdoors all month."
+    ],
+    "sentences": [
+      {
+        "pre": "He looked pale because he ",
+        "verb": "had been sleeping",
+        "post": " badly for weeks.",
+        "answer": "past-perfect-continuous"
+      }
+    ]
   },
   {
     "id": "past-perfect-continuous-15",
-    "answer": "past-perfect-continuous",
-    "type": "context",
-    "prompt": "Отрицание: действие, которого не было до события в прошлом",
-    "promptEn": "Negation: an action not in progress before a past event",
-    "sentence": {
-      "pre": "Before the accident, she ",
-      "verb": "hadn't been wearing",
-      "post": " a helmet."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Отрицание: действие, которого не было до события в прошлом",
+      "en": "Negation: an action not in progress before a past event"
     },
-    "difficulty": 3
+    "tags": [
+      "past-perfect-continuous",
+      "context-clue",
+      "negative",
+      "perfect-continuous",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«Hadn't been wearing» — отрицательный Past Perfect Continuous, отсутствие длительного действия до прошлого события («the accident»). «Before» — маркер прошлого ориентира; форма подчёркивает, что привычки/процесса не было вплоть до этого момента."
+    },
+    "contextExamples": [
+      "Before the warning, the workers hadn't been using protective equipment.",
+      "Before the diet started, she hadn't been exercising at all."
+    ],
+    "sentences": [
+      {
+        "pre": "Before the accident, she ",
+        "verb": "hadn't been wearing",
+        "post": " a helmet.",
+        "answer": "past-perfect-continuous"
+      }
+    ]
   },
   {
     "id": "past-perfect-continuous-16",
-    "answer": "past-perfect-continuous",
-    "type": "sentence",
-    "prompt": "Видимый признак в прошлом, указывавший на предшествующую деятельность",
-    "promptEn": "A visible sign in the past pointing to a prior activity",
-    "sentence": {
-      "pre": "Her eyes were red — she ",
-      "verb": "had been crying",
-      "post": " for a long time."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Видимый признак в прошлом, указывавший на предшествующую деятельность",
+      "en": "A visible sign in the past pointing to a prior activity"
     },
-    "difficulty": 3
+    "tags": [
+      "past-perfect-continuous",
+      "sentence-analysis",
+      "affirmative",
+      "perfect-continuous",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«Her eyes were red» — наблюдаемое прошлое свидетельство; тире вводит объяснение через длительный процесс «had been crying for a long time». Видимый признак + длительность = Past Perfect Continuous."
+    },
+    "contextExamples": [
+      "His shirt was soaked — he had been sweating in the heat for hours.",
+      "The kitchen smelled amazing — she had been baking all afternoon."
+    ],
+    "sentences": [
+      {
+        "pre": "Her eyes were red — she ",
+        "verb": "had been crying",
+        "post": " for a long time.",
+        "answer": "past-perfect-continuous"
+      }
+    ]
   },
   {
     "id": "past-perfect-continuous-17",
-    "answer": "past-perfect-continuous",
-    "type": "context",
-    "prompt": "Длительность ожидания до наступления события",
-    "promptEn": "Duration of waiting before an event finally occurred",
-    "sentence": {
-      "pre": "I finally got the job, but I ",
-      "verb": "had been applying",
-      "post": " for positions for over a year."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Длительность ожидания до наступления события",
+      "en": "Duration of waiting before an event finally occurred"
     },
-    "difficulty": 3
+    "tags": [
+      "past-perfect-continuous",
+      "context-clue",
+      "affirmative",
+      "perfect-continuous",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«Finally got the job» — прошлый результат-ориентир; «had been applying… for over a year» — длительный повторяющийся процесс, предшествовавший ему. «For over a year» — ключевой сигнал длительности."
+    },
+    "contextExamples": [
+      "She eventually passed the exam, but she had been preparing for months.",
+      "He found a buyer at last, but he had been trying to sell the house for two years."
+    ],
+    "sentences": [
+      {
+        "pre": "I finally got the job, but I ",
+        "verb": "had been applying",
+        "post": " for positions for over a year.",
+        "answer": "past-perfect-continuous"
+      }
+    ]
   },
   {
     "id": "past-perfect-continuous-18",
-    "answer": "past-perfect-continuous",
-    "type": "sentence",
-    "prompt": "Процесс, шедший до его обнаружения или раскрытия",
-    "promptEn": "A process that had been going on before it was discovered",
-    "sentence": {
-      "pre": "The pipe ",
-      "verb": "had been leaking",
-      "post": " for weeks before anyone noticed."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Процесс, шедший до его обнаружения или раскрытия",
+      "en": "A process that had been going on before it was discovered"
     },
-    "difficulty": 3
+    "tags": [
+      "past-perfect-continuous",
+      "sentence-analysis",
+      "affirmative",
+      "perfect-continuous",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«For weeks» — длительность скрытого процесса; «before anyone noticed» — прошлый ориентир обнаружения. Непрерывный фоновый процесс, продолжавшийся вплоть до момента раскрытия, требует Past Perfect Continuous."
+    },
+    "contextExamples": [
+      "The roof had been deteriorating for months before the landlord investigated.",
+      "The virus had been spreading through the network for days before IT detected it."
+    ],
+    "sentences": [
+      {
+        "pre": "The pipe ",
+        "verb": "had been leaking",
+        "post": " for weeks before anyone noticed.",
+        "answer": "past-perfect-continuous"
+      }
+    ]
   },
   {
     "id": "past-perfect-continuous-19",
-    "answer": "past-perfect-continuous",
-    "type": "context",
-    "prompt": "Подготовительная работа до объявления или результата",
-    "promptEn": "Preparatory work done before an announcement or result",
-    "sentence": {
-      "pre": "The scientists ",
-      "verb": "had been conducting",
-      "post": " the study for five years before publishing their findings."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Подготовительная работа до объявления или результата",
+      "en": "Preparatory work done before an announcement or result"
     },
-    "difficulty": 3
+    "tags": [
+      "past-perfect-continuous",
+      "context-clue",
+      "affirmative",
+      "perfect-continuous",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«For five years» — длительность подготовительного процесса; «before publishing their findings» — момент публикации-результата. Длительная предварительная работа, завершившаяся конкретным итогом, выражается Past Perfect Continuous."
+    },
+    "contextExamples": [
+      "The architect had been refining the design for months before presenting it to the client.",
+      "The athletes had been training intensively for two years before the championship."
+    ],
+    "sentences": [
+      {
+        "pre": "The scientists ",
+        "verb": "had been conducting",
+        "post": " the study for five years before publishing their findings.",
+        "answer": "past-perfect-continuous"
+      }
+    ]
   },
   {
     "id": "past-perfect-continuous-20",
-    "answer": "past-perfect-continuous",
-    "type": "sentence",
-    "prompt": "Вопрос о длительности деятельности до прошлого момента",
-    "promptEn": "A question about how long an activity had been going on before a past moment",
-    "sentence": {
-      "pre": "How long ",
-      "verb": "had they been arguing",
-      "post": " before you arrived?"
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Вопрос о длительности деятельности до прошлого момента",
+      "en": "A question about how long an activity had been going on before a past moment"
     },
-    "difficulty": 3
+    "tags": [
+      "past-perfect-continuous",
+      "sentence-analysis",
+      "question",
+      "perfect-continuous",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«How long» — вопрос о длительности; «before you arrived» — прошлый ориентир. Вопросительная форма «How long had… been -ing?» — прямой маркер Past Perfect Continuous для уточнения продолжительности процесса."
+    },
+    "contextExamples": [
+      "How long had the engine been making that noise before it broke down?",
+      "How long had she been waiting before the doctor finally called her in?"
+    ],
+    "sentences": [
+      {
+        "pre": "How long ",
+        "verb": "had they been arguing",
+        "post": " before you arrived?",
+        "answer": "past-perfect-continuous"
+      }
+    ]
   },
   {
     "id": "past-perfect-continuous-21",
-    "answer": "past-perfect-continuous",
-    "type": "context",
-    "prompt": "Деятельность, объясняющая уровень мастерства или знаний в прошлом",
-    "promptEn": "Activity explaining a level of skill or knowledge at a past time",
-    "sentence": {
-      "pre": "She spoke fluently because she ",
-      "verb": "had been practising",
-      "post": " with native speakers for years."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Деятельность, объясняющая уровень мастерства или знаний в прошлом",
+      "en": "Activity explaining a level of skill or knowledge at a past time"
     },
-    "difficulty": 3
+    "tags": [
+      "past-perfect-continuous",
+      "context-clue",
+      "affirmative",
+      "perfect-continuous",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«Spoke fluently» — прошлый наблюдаемый результат; «because she had been practising… for years» — длительный процесс как его причина. «For years» — маркер продолжительности тренировок, объясняющий достигнутое мастерство."
+    },
+    "contextExamples": [
+      "He played brilliantly because he had been taking lessons since childhood.",
+      "The team performed confidently because they had been drilling the routine for months."
+    ],
+    "sentences": [
+      {
+        "pre": "She spoke fluently because she ",
+        "verb": "had been practising",
+        "post": " with native speakers for years.",
+        "answer": "past-perfect-continuous"
+      }
+    ]
   },
   {
     "id": "past-perfect-continuous-22",
-    "answer": "past-perfect-continuous",
-    "type": "sentence",
-    "prompt": "Строительство или разработка до завершения или запуска",
-    "promptEn": "Construction or development before completion or launch",
-    "sentence": {
-      "pre": "Workers ",
-      "verb": "had been building",
-      "post": " the dam for three years before the floods hit."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Строительство или разработка до завершения или запуска",
+      "en": "Construction or development before completion or launch"
     },
-    "difficulty": 3
+    "tags": [
+      "past-perfect-continuous",
+      "sentence-analysis",
+      "affirmative",
+      "perfect-continuous",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«For three years» — длительность строительного процесса; «before the floods hit» — прошлое событие-ориентир, прервавшее работу. Незавершённый длительный процесс до прерывающего события — типичный случай Past Perfect Continuous."
+    },
+    "contextExamples": [
+      "Architects had been redesigning the square for two years before the project was cancelled.",
+      "Volunteers had been restoring the old theatre for months before it was declared unsafe."
+    ],
+    "sentences": [
+      {
+        "pre": "Workers ",
+        "verb": "had been building",
+        "post": " the dam for three years before the floods hit.",
+        "answer": "past-perfect-continuous"
+      }
+    ]
   },
   {
     "id": "past-perfect-continuous-23",
-    "answer": "past-perfect-continuous",
-    "type": "context",
-    "prompt": "Третий кондиционал с акцентом на длительности предшествующего действия",
-    "promptEn": "Third conditional emphasising the duration of a prior action",
-    "sentence": {
-      "pre": "If they ",
-      "verb": "hadn't been ignoring",
-      "post": " the warnings, the accident could have been prevented."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Третий кондиционал с акцентом на длительности предшествующего действия",
+      "en": "Third conditional emphasising the duration of a prior action"
     },
-    "difficulty": 3
+    "tags": [
+      "past-perfect-continuous",
+      "context-clue",
+      "negative",
+      "perfect-continuous",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "Третий кондиционал: «hadn't been ignoring» вместо «hadn't ignored» подчёркивает, что игнорирование было систематическим и длительным, а не однократным. Процессуальный характер нарушения требует Past Perfect Continuous."
+    },
+    "contextExamples": [
+      "If they hadn't been cutting corners, the structure would have held.",
+      "If he hadn't been speeding, he could have stopped in time."
+    ],
+    "sentences": [
+      {
+        "pre": "If they ",
+        "verb": "hadn't been ignoring",
+        "post": " the warnings, the accident could have been prevented.",
+        "answer": "past-perfect-continuous"
+      }
+    ]
   },
   {
     "id": "past-perfect-continuous-24",
-    "answer": "past-perfect-continuous",
-    "type": "sentence",
-    "prompt": "Постепенное ухудшение ситуации до кризиса в прошлом",
-    "promptEn": "Gradual deterioration of a situation leading up to a past crisis",
-    "sentence": {
-      "pre": "The economy ",
-      "verb": "had been declining",
-      "post": " for two years before the recession was officially declared."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Постепенное ухудшение ситуации до кризиса в прошлом",
+      "en": "Gradual deterioration of a situation leading up to a past crisis"
     },
-    "difficulty": 3
+    "tags": [
+      "past-perfect-continuous",
+      "sentence-analysis",
+      "affirmative",
+      "perfect-continuous",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«For two years» — длительность постепенного ухудшения; «before the recession was officially declared» — прошлый момент официального признания кризиса. Непрерывный процесс деградации до кризисного ориентира — сигнал Past Perfect Continuous."
+    },
+    "contextExamples": [
+      "The patient's condition had been worsening for days before the doctors intervened.",
+      "Relations between the two countries had been deteriorating for months before the talks collapsed."
+    ],
+    "sentences": [
+      {
+        "pre": "The economy ",
+        "verb": "had been declining",
+        "post": " for two years before the recession was officially declared.",
+        "answer": "past-perfect-continuous"
+      }
+    ]
   },
   {
     "id": "past-perfect-continuous-25",
-    "answer": "past-perfect-continuous",
-    "type": "context",
-    "prompt": "Незавершённое действие в прошлом, которое пришлось прервать",
-    "promptEn": "An unfinished past action that had to be interrupted",
-    "sentence": {
-      "pre": "She ",
-      "verb": "had been reading",
-      "post": " for an hour when she was called in for the interview."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Незавершённое действие в прошлом, которое пришлось прервать",
+      "en": "An unfinished past action that had to be interrupted"
     },
-    "difficulty": 3
+    "tags": [
+      "past-perfect-continuous",
+      "context-clue",
+      "affirmative",
+      "perfect-continuous",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«For an hour» — длительность незавершённого занятия; «when she was called in» — прерывающее прошлое событие. Структура «had been -ing + for… when» фиксирует процесс, прерванный внешним событием."
+    },
+    "contextExamples": [
+      "He had been writing the report for two hours when his computer crashed.",
+      "They had been discussing the proposal for some time when the manager walked in."
+    ],
+    "sentences": [
+      {
+        "pre": "She ",
+        "verb": "had been reading",
+        "post": " for an hour when she was called in for the interview.",
+        "answer": "past-perfect-continuous"
+      }
+    ]
   }
 ]

@@ -1,327 +1,777 @@
 [
   {
     "id": "present-perfect-continuous-01",
-    "answer": "present-perfect-continuous",
-    "type": "context",
-    "prompt": "Действие из прошлого, длящееся до сих пор; акцент на длительности",
-    "promptEn": "An action started in the past, still going, stressing duration",
-    "sentence": {
-      "pre": "She ",
-      "verb": "has been working",
-      "post": " for three hours."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Действие из прошлого, длящееся до сих пор; акцент на длительности",
+      "en": "An action started in the past, still going, stressing duration"
     },
-    "difficulty": 3
+    "tags": [
+      "present-perfect-continuous",
+      "context-clue",
+      "affirmative",
+      "perfect-continuous",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«For three hours» указывает на конкретную длительность продолжающегося действия. Конструкция «has been working» акцентирует именно процесс, который всё ещё идёт, а не результат."
+    },
+    "contextExamples": [
+      "He has been running for forty minutes without a break.",
+      "They have been waiting for the bus for over an hour."
+    ],
+    "sentences": [
+      {
+        "pre": "She ",
+        "verb": "has been working",
+        "post": " for three hours.",
+        "answer": "present-perfect-continuous"
+      }
+    ]
   },
   {
     "id": "present-perfect-continuous-02",
-    "answer": "present-perfect-continuous",
-    "type": "context",
-    "prompt": "Недавнее длительное действие, объясняющее настоящий результат",
-    "promptEn": "Recent ongoing activity that explains a present result",
-    "sentence": {
-      "pre": "I'm soaked — it ",
-      "verb": "has been raining",
-      "post": "."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Недавнее длительное действие, объясняющее настоящий результат",
+      "en": "Recent ongoing activity that explains a present result"
     },
-    "difficulty": 3
+    "tags": [
+      "present-perfect-continuous",
+      "context-clue",
+      "affirmative",
+      "perfect-continuous",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«I'm soaked» — физическое доказательство того, что происходило. «Has been raining» объясняет нынешнее состояние через недавнюю продолжительную активность, которая только что закончилась или ещё продолжается."
+    },
+    "contextExamples": [
+      "My hands are dirty — I have been gardening.",
+      "He is out of breath because he has been running."
+    ],
+    "sentences": [
+      {
+        "pre": "I'm soaked — it ",
+        "verb": "has been raining",
+        "post": ".",
+        "answer": "present-perfect-continuous"
+      }
+    ]
   },
   {
     "id": "present-perfect-continuous-03",
-    "answer": "present-perfect-continuous",
-    "type": "sentence",
-    "prompt": "Продолжающееся действие с видимыми результатами сейчас",
-    "promptEn": "An ongoing action with visible results right now",
-    "sentence": {
-      "pre": "They look tired because they ",
-      "verb": "have been studying",
-      "post": " all night."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Продолжающееся действие с видимыми результатами сейчас",
+      "en": "An ongoing action with visible results right now"
     },
-    "difficulty": 3
+    "tags": [
+      "present-perfect-continuous",
+      "sentence-analysis",
+      "affirmative",
+      "perfect-continuous",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«Look tired» — видимый признак усталости как следствие длительной активности. «Because they have been studying all night» напрямую связывает текущее состояние с непрерывным прошедшим процессом."
+    },
+    "contextExamples": [
+      "She looks pale because she has been feeling ill all week.",
+      "His voice is hoarse because he has been talking for hours."
+    ],
+    "sentences": [
+      {
+        "pre": "They look tired because they ",
+        "verb": "have been studying",
+        "post": " all night.",
+        "answer": "present-perfect-continuous"
+      }
+    ]
   },
   {
     "id": "present-perfect-continuous-04",
-    "answer": "present-perfect-continuous",
-    "type": "sentence",
-    "prompt": "Действие, которое началось давно и продолжается по сей день",
-    "promptEn": "An action started long ago and continuing to the present",
-    "sentence": {
-      "pre": "I ",
-      "verb": "have been living",
-      "post": " in this house since childhood."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Действие, которое началось давно и продолжается по сей день",
+      "en": "An action started long ago and continuing to the present"
     },
-    "difficulty": 3
+    "tags": [
+      "present-perfect-continuous",
+      "sentence-analysis",
+      "affirmative",
+      "perfect-continuous",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«Since childhood» — точка отсчёта в далёком прошлом, и действие «living» продолжается по сей день. «Have been living» подчёркивает непрерывность процесса, а не просто факт."
+    },
+    "contextExamples": [
+      "He has been playing the violin since the age of five.",
+      "She has been working at the same company since she graduated."
+    ],
+    "sentences": [
+      {
+        "pre": "I ",
+        "verb": "have been living",
+        "post": " in this house since childhood.",
+        "answer": "present-perfect-continuous"
+      }
+    ]
   },
   {
     "id": "present-perfect-continuous-05",
-    "answer": "present-perfect-continuous",
-    "type": "context",
-    "prompt": "Повторяющееся действие, которое продолжается в настоящий период",
-    "promptEn": "A repeated action that continues throughout the current period",
-    "sentence": {
-      "pre": "He ",
-      "verb": "has been calling",
-      "post": " me all day."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Повторяющееся действие, которое продолжается в настоящий период",
+      "en": "A repeated action that continues throughout the current period"
     },
-    "difficulty": 3
+    "tags": [
+      "present-perfect-continuous",
+      "context-clue",
+      "affirmative",
+      "perfect-continuous",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«All day» описывает открытый период сегодняшнего дня, в течение которого повторялось действие «calling». Present Perfect Continuous передаёт раздражение или удивление от повторяющегося паттерна."
+    },
+    "contextExamples": [
+      "The neighbours have been playing loud music all evening.",
+      "My phone has been ringing all morning."
+    ],
+    "sentences": [
+      {
+        "pre": "He ",
+        "verb": "has been calling",
+        "post": " me all day.",
+        "answer": "present-perfect-continuous"
+      }
+    ]
   },
   {
     "id": "present-perfect-continuous-06",
-    "answer": "present-perfect-continuous",
-    "type": "sentence",
-    "prompt": "Процесс, который начался в прошлом и развивается до сих пор",
-    "promptEn": "A process that began in the past and is still developing",
-    "sentence": {
-      "pre": "The company ",
-      "verb": "has been growing",
-      "post": " steadily for years."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Процесс, который начался в прошлом и развивается до сих пор",
+      "en": "A process that began in the past and is still developing"
     },
-    "difficulty": 3
+    "tags": [
+      "present-perfect-continuous",
+      "sentence-analysis",
+      "affirmative",
+      "perfect-continuous",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«For years» задаёт продолжительность, а «has been growing» делает акцент на непрерывном процессе роста, который ещё не завершён. Наречие «steadily» дополнительно подчёркивает постепенность."
+    },
+    "contextExamples": [
+      "The population of the city has been increasing for decades.",
+      "Her confidence has been growing steadily since she started the course."
+    ],
+    "sentences": [
+      {
+        "pre": "The company ",
+        "verb": "has been growing",
+        "post": " steadily for years.",
+        "answer": "present-perfect-continuous"
+      }
+    ]
   },
   {
     "id": "present-perfect-continuous-07",
-    "answer": "present-perfect-continuous",
-    "type": "context",
-    "prompt": "Вопрос о продолжительности текущего действия",
-    "promptEn": "A question about how long a current action has been going on",
-    "sentence": {
-      "pre": "How long ",
-      "verb": "have you been waiting",
-      "post": "?"
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Вопрос о продолжительности текущего действия",
+      "en": "A question about how long a current action has been going on"
     },
-    "difficulty": 3
+    "tags": [
+      "present-perfect-continuous",
+      "context-clue",
+      "question",
+      "perfect-continuous",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«How long … have … been» — стандартная вопросительная конструкция Present Perfect Continuous, спрашивающая о длительности текущего, ещё не завершённого действия."
+    },
+    "contextExamples": [
+      "How long have they been arguing?",
+      "How long has he been living abroad?"
+    ],
+    "sentences": [
+      {
+        "pre": "How long ",
+        "verb": "have you been waiting",
+        "post": "?",
+        "answer": "present-perfect-continuous"
+      }
+    ]
   },
   {
     "id": "present-perfect-continuous-08",
-    "answer": "present-perfect-continuous",
-    "type": "sentence",
-    "prompt": "Физический признак или усталость как результат продолжительной работы",
-    "promptEn": "Physical sign or tiredness as a result of prolonged activity",
-    "sentence": {
-      "pre": "His eyes are red because he ",
-      "verb": "has been staring",
-      "post": " at a screen all day."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Физический признак или усталость как результат продолжительной работы",
+      "en": "Physical sign or tiredness as a result of prolonged activity"
     },
-    "difficulty": 3
+    "tags": [
+      "present-perfect-continuous",
+      "sentence-analysis",
+      "affirmative",
+      "perfect-continuous",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«His eyes are red» — физический признак усталости прямо сейчас. «Has been staring at a screen all day» — причина: продолжительная активность за весь день, объясняющая нынешнее состояние."
+    },
+    "contextExamples": [
+      "Her fingers are sore because she has been typing for six hours.",
+      "He smells of sweat because he has been exercising all afternoon."
+    ],
+    "sentences": [
+      {
+        "pre": "His eyes are red because he ",
+        "verb": "has been staring",
+        "post": " at a screen all day.",
+        "answer": "present-perfect-continuous"
+      }
+    ]
   },
   {
     "id": "present-perfect-continuous-09",
-    "answer": "present-perfect-continuous",
-    "type": "context",
-    "prompt": "Деятельность, продолжающаяся на протяжении последнего времени",
-    "promptEn": "An activity ongoing over the recent past period",
-    "sentence": {
-      "pre": "For the past week, she ",
-      "verb": "has been learning",
-      "post": " to drive."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Деятельность, продолжающаяся на протяжении последнего времени",
+      "en": "An activity ongoing over the recent past period"
     },
-    "difficulty": 3
+    "tags": [
+      "present-perfect-continuous",
+      "context-clue",
+      "affirmative",
+      "perfect-continuous",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«For the past week» — период, который начался в прошлом и включает настоящий момент. «Has been learning» подчёркивает, что процесс обучения продолжается и ещё не завершён."
+    },
+    "contextExamples": [
+      "For the past month, he has been training for the marathon.",
+      "For the past few days, I have been feeling under the weather."
+    ],
+    "sentences": [
+      {
+        "pre": "For the past week, she ",
+        "verb": "has been learning",
+        "post": " to drive.",
+        "answer": "present-perfect-continuous"
+      }
+    ]
   },
   {
     "id": "present-perfect-continuous-10",
-    "answer": "present-perfect-continuous",
-    "type": "sentence",
-    "prompt": "Жалоба на чьё-то повторяющееся поведение в последнее время",
-    "promptEn": "Complaint about someone's repeated behaviour lately",
-    "sentence": {
-      "pre": "You ",
-      "verb": "have been forgetting",
-      "post": " your homework every single day this week!"
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Жалоба на чьё-то повторяющееся поведение в последнее время",
+      "en": "Complaint about someone's repeated behaviour lately"
     },
-    "difficulty": 3
+    "tags": [
+      "present-perfect-continuous",
+      "sentence-analysis",
+      "affirmative",
+      "perfect-continuous",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«Every single day this week» описывает повторяющийся паттерн в текущем незавершённом периоде. Восклицательный тон и Present Perfect Continuous выражают раздражение от многократного повторения."
+    },
+    "contextExamples": [
+      "She has been arriving late every morning this month.",
+      "He has been making the same mistake repeatedly this term."
+    ],
+    "sentences": [
+      {
+        "pre": "You ",
+        "verb": "have been forgetting",
+        "post": " your homework every single day this week!",
+        "answer": "present-perfect-continuous"
+      }
+    ]
   },
   {
     "id": "present-perfect-continuous-11",
-    "answer": "present-perfect-continuous",
-    "type": "context",
-    "prompt": "Незавершённое действие, результат которого ещё не достигнут",
-    "promptEn": "An unfinished action whose result has not yet been achieved",
-    "sentence": {
-      "pre": "I ",
-      "verb": "have been trying",
-      "post": " to fix this bug for hours."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Незавершённое действие, результат которого ещё не достигнут",
+      "en": "An unfinished action whose result has not yet been achieved"
     },
-    "difficulty": 3
+    "tags": [
+      "present-perfect-continuous",
+      "context-clue",
+      "affirmative",
+      "perfect-continuous",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«For hours» — длительность, «trying to fix» — незавершённое усилие. Глагол «trying» (а не «fixed») показывает, что цель ещё не достигнута; акцент на продолжающемся процессе."
+    },
+    "contextExamples": [
+      "She has been looking for her passport all morning.",
+      "They have been attempting to reach an agreement for weeks."
+    ],
+    "sentences": [
+      {
+        "pre": "I ",
+        "verb": "have been trying",
+        "post": " to fix this bug for hours.",
+        "answer": "present-perfect-continuous"
+      }
+    ]
   },
   {
     "id": "present-perfect-continuous-12",
-    "answer": "present-perfect-continuous",
-    "type": "sentence",
-    "prompt": "Продолжительное действие с маркером 'since' и точкой отсчёта",
-    "promptEn": "A continuous action with 'since' and a reference point",
-    "sentence": {
-      "pre": "They ",
-      "verb": "have been arguing",
-      "post": " since this morning."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Продолжительное действие с маркером 'since' и точкой отсчёта",
+      "en": "A continuous action with 'since' and a reference point"
     },
-    "difficulty": 3
+    "tags": [
+      "present-perfect-continuous",
+      "sentence-analysis",
+      "affirmative",
+      "perfect-continuous",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«Since this morning» — точка отсчёта в прошлом, от которой продолжается действие прямо сейчас. «Have been arguing» с «since» — сигнал непрерывного процесса, начатого в определённый момент."
+    },
+    "contextExamples": [
+      "She has been crying since she heard the news.",
+      "The printer has been making that noise since yesterday."
+    ],
+    "sentences": [
+      {
+        "pre": "They ",
+        "verb": "have been arguing",
+        "post": " since this morning.",
+        "answer": "present-perfect-continuous"
+      }
+    ]
   },
   {
     "id": "present-perfect-continuous-13",
-    "answer": "present-perfect-continuous",
-    "type": "context",
-    "prompt": "Постепенное изменение или развитие ситуации с течением времени",
-    "promptEn": "A gradual change or development over time",
-    "sentence": {
-      "pre": "The climate ",
-      "verb": "has been warming",
-      "post": " at an alarming rate."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Постепенное изменение или развитие ситуации с течением времени",
+      "en": "A gradual change or development over time"
     },
-    "difficulty": 3
+    "tags": [
+      "present-perfect-continuous",
+      "context-clue",
+      "affirmative",
+      "perfect-continuous",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«Has been warming» описывает постепенный, продолжающийся процесс без чёткой конечной точки. Отсутствие «for/since» не исключает Present Perfect Continuous, когда сам контекст указывает на длящийся процесс."
+    },
+    "contextExamples": [
+      "Sea levels have been rising for decades.",
+      "The ice caps have been melting at an unprecedented rate."
+    ],
+    "sentences": [
+      {
+        "pre": "The climate ",
+        "verb": "has been warming",
+        "post": " at an alarming rate.",
+        "answer": "present-perfect-continuous"
+      }
+    ]
   },
   {
     "id": "present-perfect-continuous-14",
-    "answer": "present-perfect-continuous",
-    "type": "sentence",
-    "prompt": "Недавняя деятельность, которая объясняет текущее состояние человека",
-    "promptEn": "Recent activity that explains a person's current state",
-    "sentence": {
-      "pre": "She smells of paint because she ",
-      "verb": "has been decorating",
-      "post": " her flat."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Недавняя деятельность, которая объясняет текущее состояние человека",
+      "en": "Recent activity that explains a person's current state"
     },
-    "difficulty": 3
+    "tags": [
+      "present-perfect-continuous",
+      "sentence-analysis",
+      "affirmative",
+      "perfect-continuous",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«Smells of paint» — сенсорное доказательство недавней деятельности. «Has been decorating» — причина текущего состояния: активность завершилась недавно, но её следы ощутимы прямо сейчас."
+    },
+    "contextExamples": [
+      "His clothes are covered in mud because he has been working in the garden.",
+      "She has flour on her apron because she has been baking all morning."
+    ],
+    "sentences": [
+      {
+        "pre": "She smells of paint because she ",
+        "verb": "has been decorating",
+        "post": " her flat.",
+        "answer": "present-perfect-continuous"
+      }
+    ]
   },
   {
     "id": "present-perfect-continuous-15",
-    "answer": "present-perfect-continuous",
-    "type": "context",
-    "prompt": "Профессиональная или творческая деятельность, продолжающаяся в течение периода",
-    "promptEn": "Professional or creative work ongoing throughout a period",
-    "sentence": {
-      "pre": "He ",
-      "verb": "has been writing",
-      "post": " his memoirs for the past two years."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Профессиональная или творческая деятельность, продолжающаяся в течение периода",
+      "en": "Professional or creative work ongoing throughout a period"
     },
-    "difficulty": 3
+    "tags": [
+      "present-perfect-continuous",
+      "context-clue",
+      "affirmative",
+      "perfect-continuous",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«For the past two years» — ограниченный период, включающий настоящий момент. «Has been writing» подчёркивает, что работа над мемуарами продолжается: книга ещё не закончена."
+    },
+    "contextExamples": [
+      "The architect has been designing the new bridge for eighteen months.",
+      "She has been composing the symphony for the past three years."
+    ],
+    "sentences": [
+      {
+        "pre": "He ",
+        "verb": "has been writing",
+        "post": " his memoirs for the past two years.",
+        "answer": "present-perfect-continuous"
+      }
+    ]
   },
   {
     "id": "present-perfect-continuous-16",
-    "answer": "present-perfect-continuous",
-    "type": "sentence",
-    "prompt": "Отрицание: действие не было в процессе на протяжении периода",
-    "promptEn": "Negation: an action has not been ongoing throughout a period",
-    "sentence": {
-      "pre": "He ",
-      "verb": "hasn't been sleeping",
-      "post": " well this week — he looks terrible."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Отрицание: действие не было в процессе на протяжении периода",
+      "en": "Negation: an action has not been ongoing throughout a period"
     },
-    "difficulty": 3
+    "tags": [
+      "present-perfect-continuous",
+      "sentence-analysis",
+      "negative",
+      "perfect-continuous",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«This week» — незавершённый текущий период. «Hasn't been sleeping» отрицает нормальный процесс в этот период, а «he looks terrible» — видимое следствие этого нарушения."
+    },
+    "contextExamples": [
+      "She hasn't been eating properly lately — she has lost a lot of weight.",
+      "I haven't been exercising this month and I feel sluggish."
+    ],
+    "sentences": [
+      {
+        "pre": "He ",
+        "verb": "hasn't been sleeping",
+        "post": " well this week — he looks terrible.",
+        "answer": "present-perfect-continuous"
+      }
+    ]
   },
   {
     "id": "present-perfect-continuous-17",
-    "answer": "present-perfect-continuous",
-    "type": "context",
-    "prompt": "Запах или внешний признак, указывающий на продолжавшееся действие",
-    "promptEn": "A smell or visible sign indicating a recent ongoing activity",
-    "sentence": {
-      "pre": "The kitchen smells of garlic — she ",
-      "verb": "has been cooking",
-      "post": " all afternoon."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Запах или внешний признак, указывающий на продолжавшееся действие",
+      "en": "A smell or visible sign indicating a recent ongoing activity"
     },
-    "difficulty": 3
+    "tags": [
+      "present-perfect-continuous",
+      "context-clue",
+      "affirmative",
+      "perfect-continuous",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«Smells of garlic» — обонятельный признак длительной деятельности. «Has been cooking all afternoon» объясняет запах: процесс длился весь послеполуденный период и только недавно завершился."
+    },
+    "contextExamples": [
+      "The garage smells of oil — he has been fixing his motorbike.",
+      "The room is full of smoke — someone has been burning candles all evening."
+    ],
+    "sentences": [
+      {
+        "pre": "The kitchen smells of garlic — she ",
+        "verb": "has been cooking",
+        "post": " all afternoon.",
+        "answer": "present-perfect-continuous"
+      }
+    ]
   },
   {
     "id": "present-perfect-continuous-18",
-    "answer": "present-perfect-continuous",
-    "type": "sentence",
-    "prompt": "Переговоры или обсуждение, продолжающиеся в течение периода",
-    "promptEn": "Negotiations or discussions ongoing throughout a period",
-    "sentence": {
-      "pre": "The two sides ",
-      "verb": "have been talking",
-      "post": " for months without reaching an agreement."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Переговоры или обсуждение, продолжающиеся в течение периода",
+      "en": "Negotiations or discussions ongoing throughout a period"
     },
-    "difficulty": 3
+    "tags": [
+      "present-perfect-continuous",
+      "sentence-analysis",
+      "affirmative",
+      "perfect-continuous",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«For months» — продолжительность, «without reaching an agreement» — незавершённость процесса. «Have been talking» подчёркивает, что переговоры продолжаются и цель пока не достигнута."
+    },
+    "contextExamples": [
+      "The lawyers have been negotiating the contract for weeks.",
+      "The committee has been debating the proposal for months."
+    ],
+    "sentences": [
+      {
+        "pre": "The two sides ",
+        "verb": "have been talking",
+        "post": " for months without reaching an agreement.",
+        "answer": "present-perfect-continuous"
+      }
+    ]
   },
   {
     "id": "present-perfect-continuous-19",
-    "answer": "present-perfect-continuous",
-    "type": "context",
-    "prompt": "Текущая незавершённая деятельность команды или организации",
-    "promptEn": "An ongoing unfinished activity of a team or organisation",
-    "sentence": {
-      "pre": "Our team ",
-      "verb": "has been developing",
-      "post": " this feature for the last three sprints."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Текущая незавершённая деятельность команды или организации",
+      "en": "An ongoing unfinished activity of a team or organisation"
     },
-    "difficulty": 3
+    "tags": [
+      "present-perfect-continuous",
+      "context-clue",
+      "affirmative",
+      "perfect-continuous",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«For the last three sprints» — конкретный период повторяющихся рабочих циклов. «Has been developing» показывает, что фича всё ещё в разработке: процесс продолжается без завершения."
+    },
+    "contextExamples": [
+      "The engineers have been testing the system for the last two weeks.",
+      "Our researchers have been investigating the problem for the past six months."
+    ],
+    "sentences": [
+      {
+        "pre": "Our team ",
+        "verb": "has been developing",
+        "post": " this feature for the last three sprints.",
+        "answer": "present-perfect-continuous"
+      }
+    ]
   },
   {
     "id": "present-perfect-continuous-20",
-    "answer": "present-perfect-continuous",
-    "type": "sentence",
-    "prompt": "Вопрос о продолжительности текущего занятия или состояния",
-    "promptEn": "A question about how long a current activity or state has lasted",
-    "sentence": {
-      "pre": "How long ",
-      "verb": "has she been learning",
-      "post": " Japanese?"
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Вопрос о продолжительности текущего занятия или состояния",
+      "en": "A question about how long a current activity or state has lasted"
     },
-    "difficulty": 3
+    "tags": [
+      "present-perfect-continuous",
+      "sentence-analysis",
+      "question",
+      "perfect-continuous",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«How long has … been …-ing» — канонический вопрос о длительности текущего, незавершённого действия. «Learning Japanese» подразумевает продолжающийся процесс без указания конца."
+    },
+    "contextExamples": [
+      "How long has he been taking piano lessons?",
+      "How long have you been feeling this way?"
+    ],
+    "sentences": [
+      {
+        "pre": "How long ",
+        "verb": "has she been learning",
+        "post": " Japanese?",
+        "answer": "present-perfect-continuous"
+      }
+    ]
   },
   {
     "id": "present-perfect-continuous-21",
-    "answer": "present-perfect-continuous",
-    "type": "context",
-    "prompt": "Хроническое или длительное ухудшение состояния здоровья",
-    "promptEn": "A chronic or prolonged deterioration in health",
-    "sentence": {
-      "pre": "The doctor says she ",
-      "verb": "has been overworking",
-      "post": " and needs rest."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Хроническое или длительное ухудшение состояния здоровья",
+      "en": "A chronic or prolonged deterioration in health"
     },
-    "difficulty": 3
+    "tags": [
+      "present-perfect-continuous",
+      "context-clue",
+      "affirmative",
+      "perfect-continuous",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«Has been overworking» — диагноз врача о длительной деятельности, которая привела к нынешнему состоянию здоровья. «Needs rest» — следствие, актуальное прямо сейчас."
+    },
+    "contextExamples": [
+      "The therapist says he has been under too much stress and must take a break.",
+      "Her trainer says she has been pushing herself too hard and risks injury."
+    ],
+    "sentences": [
+      {
+        "pre": "The doctor says she ",
+        "verb": "has been overworking",
+        "post": " and needs rest.",
+        "answer": "present-perfect-continuous"
+      }
+    ]
   },
   {
     "id": "present-perfect-continuous-22",
-    "answer": "present-perfect-continuous",
-    "type": "sentence",
-    "prompt": "Деятельность, ставшая источником усталости или стресса",
-    "promptEn": "An activity that has been a source of fatigue or stress",
-    "sentence": {
-      "pre": "I feel completely drained — I ",
-      "verb": "have been dealing with",
-      "post": " complaints all day."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Деятельность, ставшая источником усталости или стресса",
+      "en": "An activity that has been a source of fatigue or stress"
     },
-    "difficulty": 3
+    "tags": [
+      "present-perfect-continuous",
+      "sentence-analysis",
+      "affirmative",
+      "perfect-continuous",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«Feel completely drained» — эмоциональное истощение прямо сейчас. «Have been dealing with complaints all day» — причина: длительная стрессовая деятельность за весь день объясняет нынешнее состояние."
+    },
+    "contextExamples": [
+      "I'm exhausted — I have been attending back-to-back meetings all day.",
+      "She feels overwhelmed because she has been handling three projects at once."
+    ],
+    "sentences": [
+      {
+        "pre": "I feel completely drained — I ",
+        "verb": "have been dealing with",
+        "post": " complaints all day.",
+        "answer": "present-perfect-continuous"
+      }
+    ]
   },
   {
     "id": "present-perfect-continuous-23",
-    "answer": "present-perfect-continuous",
-    "type": "context",
-    "prompt": "Продолжающееся обучение или тренировка с целью достичь результата",
-    "promptEn": "Ongoing training or practice aimed at achieving a goal",
-    "sentence": {
-      "pre": "She ",
-      "verb": "has been practising",
-      "post": " the piano eight hours a day for this competition."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Продолжающееся обучение или тренировка с целью достичь результата",
+      "en": "Ongoing training or practice aimed at achieving a goal"
     },
-    "difficulty": 3
+    "tags": [
+      "present-perfect-continuous",
+      "context-clue",
+      "affirmative",
+      "perfect-continuous",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«Eight hours a day» — интенсивность повторяющейся деятельности, «for this competition» — текущая цель. «Has been practising» подчёркивает продолжающийся процесс подготовки, соревнование ещё впереди."
+    },
+    "contextExamples": [
+      "He has been training six days a week for the upcoming tournament.",
+      "The choir has been rehearsing every evening for the concert."
+    ],
+    "sentences": [
+      {
+        "pre": "She ",
+        "verb": "has been practising",
+        "post": " the piano eight hours a day for this competition.",
+        "answer": "present-perfect-continuous"
+      }
+    ]
   },
   {
     "id": "present-perfect-continuous-24",
-    "answer": "present-perfect-continuous",
-    "type": "sentence",
-    "prompt": "Тенденция или явление, нарастающее с течением времени",
-    "promptEn": "A trend or phenomenon that has been growing over time",
-    "sentence": {
-      "pre": "Temperatures around the world ",
-      "verb": "have been rising",
-      "post": " steadily since the industrial revolution."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Тенденция или явление, нарастающее с течением времени",
+      "en": "A trend or phenomenon that has been growing over time"
     },
-    "difficulty": 3
+    "tags": [
+      "present-perfect-continuous",
+      "sentence-analysis",
+      "affirmative",
+      "perfect-continuous",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«Since the industrial revolution» — историческая точка отсчёта; «have been rising steadily» — непрерывная тенденция, продолжающаяся по сей день. Акцент на процессе потепления, а не на конечном факте."
+    },
+    "contextExamples": [
+      "Deforestation rates have been increasing since the 1950s.",
+      "The gap between rich and poor has been widening for decades."
+    ],
+    "sentences": [
+      {
+        "pre": "Temperatures around the world ",
+        "verb": "have been rising",
+        "post": " steadily since the industrial revolution.",
+        "answer": "present-perfect-continuous"
+      }
+    ]
   },
   {
     "id": "present-perfect-continuous-25",
-    "answer": "present-perfect-continuous",
-    "type": "context",
-    "prompt": "Неоднократные обращения или попытки, ещё не давшие результата",
-    "promptEn": "Repeated attempts or requests that have not yet yielded a result",
-    "sentence": {
-      "pre": "She ",
-      "verb": "has been applying",
-      "post": " for jobs for six months without success."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Неоднократные обращения или попытки, ещё не давшие результата",
+      "en": "Repeated attempts or requests that have not yet yielded a result"
     },
-    "difficulty": 3
+    "tags": [
+      "present-perfect-continuous",
+      "context-clue",
+      "affirmative",
+      "perfect-continuous",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«For six months» — длительность повторяющихся попыток; «without success» — результат не достигнут. «Has been applying» акцентирует процесс многократных усилий, а не завершённый факт."
+    },
+    "contextExamples": [
+      "He has been looking for investors for a year without finding any.",
+      "I have been trying to get a refund for weeks but nobody responds."
+    ],
+    "sentences": [
+      {
+        "pre": "She ",
+        "verb": "has been applying",
+        "post": " for jobs for six months without success.",
+        "answer": "present-perfect-continuous"
+      }
+    ]
   }
 ]

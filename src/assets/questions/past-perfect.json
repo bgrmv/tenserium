@@ -1,327 +1,777 @@
 [
   {
     "id": "past-perfect-01",
-    "answer": "past-perfect",
-    "type": "context",
-    "prompt": "Действие, завершённое до другого события в прошлом",
-    "promptEn": "An action completed before another event in the past",
-    "sentence": {
-      "pre": "The train ",
-      "verb": "had left",
-      "post": " before we arrived."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Действие, завершённое до другого события в прошлом",
+      "en": "An action completed before another event in the past"
     },
-    "difficulty": 3
+    "tags": [
+      "past-perfect",
+      "context-clue",
+      "affirmative",
+      "perfect",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "Союз «before» указывает на два события в прошлом; «had left» — действие, завершившееся раньше «arrived». Первое из двух прошедших действий требует Past Perfect."
+    },
+    "contextExamples": [
+      "The show had started before they found their seats.",
+      "He had finished his homework before his mother came home."
+    ],
+    "sentences": [
+      {
+        "pre": "The train ",
+        "verb": "had left",
+        "post": " before we arrived.",
+        "answer": "past-perfect"
+      }
+    ]
   },
   {
     "id": "past-perfect-02",
-    "answer": "past-perfect",
-    "type": "context",
-    "prompt": "Более раннее из двух прошлых действий",
-    "promptEn": "The earlier of two past actions, to show the sequence",
-    "sentence": {
-      "pre": "She ",
-      "verb": "had eaten",
-      "post": " before they came."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Более раннее из двух прошлых действий",
+      "en": "The earlier of two past actions, to show the sequence"
     },
-    "difficulty": 3
+    "tags": [
+      "past-perfect",
+      "context-clue",
+      "affirmative",
+      "perfect",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«Before they came» задаёт точку отсчёта в прошлом; «had eaten» обозначает действие, уже завершённое к этому моменту. Более раннее из двух прошедших событий всегда принимает Past Perfect."
+    },
+    "contextExamples": [
+      "The guests had left before the storm began.",
+      "He had already packed his bag before she called."
+    ],
+    "sentences": [
+      {
+        "pre": "She ",
+        "verb": "had eaten",
+        "post": " before they came.",
+        "answer": "past-perfect"
+      }
+    ]
   },
   {
     "id": "past-perfect-03",
-    "answer": "past-perfect",
-    "type": "sentence",
-    "prompt": "Следствие в прошлом предыдущего действия",
-    "promptEn": "A result in the past of a previous past action",
-    "sentence": {
-      "pre": "I couldn't get in because I ",
-      "verb": "had forgotten",
-      "post": " my key."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Следствие в прошлом предыдущего действия",
+      "en": "A result in the past of a previous past action"
     },
-    "difficulty": 3
+    "tags": [
+      "past-perfect",
+      "sentence-analysis",
+      "negative",
+      "perfect",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "Союз «because» связывает следствие («couldn't get in») с причиной («had forgotten»). Причина произошла раньше следствия, поэтому она в Past Perfect."
+    },
+    "contextExamples": [
+      "She was upset because she had lost her wallet.",
+      "They missed the bus because they had taken the wrong route."
+    ],
+    "sentences": [
+      {
+        "pre": "I couldn't get in because I ",
+        "verb": "had forgotten",
+        "post": " my key.",
+        "answer": "past-perfect"
+      }
+    ]
   },
   {
     "id": "past-perfect-04",
-    "answer": "past-perfect",
-    "type": "sentence",
-    "prompt": "Опыт к определённому моменту в прошлом",
-    "promptEn": "Experience accumulated by a certain point in the past",
-    "sentence": {
-      "pre": "By the time I graduated, I ",
-      "verb": "had worked",
-      "post": " on many projects."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Опыт к определённому моменту в прошлом",
+      "en": "Experience accumulated by a certain point in the past"
     },
-    "difficulty": 3
+    "tags": [
+      "past-perfect",
+      "sentence-analysis",
+      "affirmative",
+      "perfect",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "Конструкция «by the time I graduated» задаёт момент в прошлом, к которому накопился опыт. «Had worked» показывает суммарный результат к этому моменту."
+    },
+    "contextExamples": [
+      "By the time he retired, he had visited over thirty countries.",
+      "By the time she turned eighteen, she had won several competitions."
+    ],
+    "sentences": [
+      {
+        "pre": "By the time I graduated, I ",
+        "verb": "had worked",
+        "post": " on many projects.",
+        "answer": "past-perfect"
+      }
+    ]
   },
   {
     "id": "past-perfect-05",
-    "answer": "past-perfect",
-    "type": "context",
-    "prompt": "Запланированное действие в прошлом, которое не реализовалось",
-    "promptEn": "A past plan that did not come to fruition",
-    "sentence": {
-      "pre": "They ",
-      "verb": "had planned",
-      "post": " the trip, but it was cancelled."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Запланированное действие в прошлом, которое не реализовалось",
+      "en": "A past plan that did not come to fruition"
     },
-    "difficulty": 3
+    "tags": [
+      "past-perfect",
+      "context-clue",
+      "affirmative",
+      "perfect",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«Had planned» относится к замыслу, возникшему до момента отмены («was cancelled»). Контраст «but» подчёркивает, что более раннее намерение не осуществилось."
+    },
+    "contextExamples": [
+      "She had booked the flight, but it was delayed indefinitely.",
+      "We had prepared everything, but the event was called off."
+    ],
+    "sentences": [
+      {
+        "pre": "They ",
+        "verb": "had planned",
+        "post": " the trip, but it was cancelled.",
+        "answer": "past-perfect"
+      }
+    ]
   },
   {
     "id": "past-perfect-06",
-    "answer": "past-perfect",
-    "type": "sentence",
-    "prompt": "Действие, уже завершённое к определённому моменту прошлого",
-    "promptEn": "An action already completed by a certain past moment",
-    "sentence": {
-      "pre": "By the time they called, she ",
-      "verb": "had already left",
-      "post": " the office."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Действие, уже завершённое к определённому моменту прошлого",
+      "en": "An action already completed by a certain past moment"
     },
-    "difficulty": 3
+    "tags": [
+      "past-perfect",
+      "sentence-analysis",
+      "affirmative",
+      "perfect",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«By the time they called» — прошлый момент-ориентир; «had already left» содержит «already», усиливающее идею завершённости до этого ориентира. Оба сигнала вместе однозначно указывают на Past Perfect."
+    },
+    "contextExamples": [
+      "By the time the ambulance arrived, the patient had already recovered.",
+      "By the time I reached the shop, it had already closed."
+    ],
+    "sentences": [
+      {
+        "pre": "By the time they called, she ",
+        "verb": "had already left",
+        "post": " the office.",
+        "answer": "past-perfect"
+      }
+    ]
   },
   {
     "id": "past-perfect-07",
-    "answer": "past-perfect",
-    "type": "context",
-    "prompt": "Нереализованное условие в прошлом (третий кондиционал)",
-    "promptEn": "An unfulfilled condition in the past (third conditional)",
-    "sentence": {
-      "pre": "If she ",
-      "verb": "had studied",
-      "post": " harder, she would have passed."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Нереализованное условие в прошлом (третий кондиционал)",
+      "en": "An unfulfilled condition in the past (third conditional)"
     },
-    "difficulty": 3
+    "tags": [
+      "past-perfect",
+      "context-clue",
+      "affirmative",
+      "perfect",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "Структура «If + Past Perfect, would have + V3» — это третий кондиционал: нереализованное условие в прошлом. «Had studied» в if-клаузе требует Past Perfect."
+    },
+    "contextExamples": [
+      "If he had arrived earlier, he would have caught the flight.",
+      "If they had read the instructions, they would have avoided the mistake."
+    ],
+    "sentences": [
+      {
+        "pre": "If she ",
+        "verb": "had studied",
+        "post": " harder, she would have passed.",
+        "answer": "past-perfect"
+      }
+    ]
   },
   {
     "id": "past-perfect-08",
-    "answer": "past-perfect",
-    "type": "sentence",
-    "prompt": "Несбывшееся ожидание или надежда в прошлом",
-    "promptEn": "An unfulfilled expectation or hope in the past",
-    "sentence": {
-      "pre": "I thought he ",
-      "verb": "had already finished",
-      "post": " the report."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Несбывшееся ожидание или надежда в прошлом",
+      "en": "An unfulfilled expectation or hope in the past"
     },
-    "difficulty": 3
+    "tags": [
+      "past-perfect",
+      "sentence-analysis",
+      "affirmative",
+      "perfect",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "Глагол «thought» (прошедшее время) вводит косвенную речь; содержимое мысли («had already finished») сдвигается в Past Perfect, так как описывает действие, предшествовавшее моменту мышления."
+    },
+    "contextExamples": [
+      "She assumed the meeting had already ended.",
+      "He believed the package had already been delivered."
+    ],
+    "sentences": [
+      {
+        "pre": "I thought he ",
+        "verb": "had already finished",
+        "post": " the report.",
+        "answer": "past-perfect"
+      }
+    ]
   },
   {
     "id": "past-perfect-09",
-    "answer": "past-perfect",
-    "type": "context",
-    "prompt": "Косвенная речь: прошедший перфект в передаче слов",
-    "promptEn": "Reported speech: past perfect in indirect speech",
-    "sentence": {
-      "pre": "She told me she ",
-      "verb": "had never been",
-      "post": " abroad before."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Косвенная речь: прошедший перфект в передаче слов",
+      "en": "Reported speech: past perfect in indirect speech"
     },
-    "difficulty": 3
+    "tags": [
+      "past-perfect",
+      "context-clue",
+      "affirmative",
+      "perfect",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«She told me» — вводный глагол в прошедшем времени запускает согласование времён. Present Perfect («has never been») сдвигается в Past Perfect при переводе в косвенную речь."
+    },
+    "contextExamples": [
+      "He said he had never tried sushi before.",
+      "They told us they had already spoken to the manager."
+    ],
+    "sentences": [
+      {
+        "pre": "She told me she ",
+        "verb": "had never been",
+        "post": " abroad before.",
+        "answer": "past-perfect"
+      }
+    ]
   },
   {
     "id": "past-perfect-10",
-    "answer": "past-perfect",
-    "type": "sentence",
-    "prompt": "Неожиданное открытие о ранее произошедшем событии",
-    "promptEn": "A surprising discovery about a previously occurred event",
-    "sentence": {
-      "pre": "I realised I ",
-      "verb": "had met",
-      "post": " him before, at a conference in Berlin."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Неожиданное открытие о ранее произошедшем событии",
+      "en": "A surprising discovery about a previously occurred event"
     },
-    "difficulty": 3
+    "tags": [
+      "past-perfect",
+      "sentence-analysis",
+      "affirmative",
+      "perfect",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«Realised» — момент осознания в прошлом; «had met… before» описывает встречу, произошедшую ещё раньше. Наречие «before» усиливает сигнал предшествования."
+    },
+    "contextExamples": [
+      "She suddenly remembered she had seen that film already.",
+      "He noticed that he had left his phone in the taxi."
+    ],
+    "sentences": [
+      {
+        "pre": "I realised I ",
+        "verb": "had met",
+        "post": " him before, at a conference in Berlin.",
+        "answer": "past-perfect"
+      }
+    ]
   },
   {
     "id": "past-perfect-11",
-    "answer": "past-perfect",
-    "type": "context",
-    "prompt": "Первый опыт чего-либо в прошлом",
-    "promptEn": "The first time something had ever happened in the past",
-    "sentence": {
-      "pre": "It was the first time I ",
-      "verb": "had seen",
-      "post": " the ocean."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Первый опыт чего-либо в прошлом",
+      "en": "The first time something had ever happened in the past"
     },
-    "difficulty": 3
+    "tags": [
+      "past-perfect",
+      "context-clue",
+      "affirmative",
+      "perfect",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "Шаблон «It was the first time + Past Perfect» — устойчивая конструкция для описания первого в жизни опыта к определённому прошлому моменту."
+    },
+    "contextExamples": [
+      "It was the first time he had driven on a motorway.",
+      "It was the first time they had tasted authentic Thai food."
+    ],
+    "sentences": [
+      {
+        "pre": "It was the first time I ",
+        "verb": "had seen",
+        "post": " the ocean.",
+        "answer": "past-perfect"
+      }
+    ]
   },
   {
     "id": "past-perfect-12",
-    "answer": "past-perfect",
-    "type": "sentence",
-    "prompt": "Действие, которое уже произошло до прибытия или начала чего-либо",
-    "promptEn": "An action that had already occurred before something began",
-    "sentence": {
-      "pre": "When the doctor arrived, the patient ",
-      "verb": "had recovered",
-      "post": " on his own."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Действие, которое уже произошло до прибытия или начала чего-либо",
+      "en": "An action that had already occurred before something began"
     },
-    "difficulty": 3
+    "tags": [
+      "past-perfect",
+      "sentence-analysis",
+      "affirmative",
+      "perfect",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«When the doctor arrived» — прошлый ориентир (Past Simple); «had recovered» — действие, завершившееся до его прихода. Два разных прошедших события требуют разных форм."
+    },
+    "contextExamples": [
+      "When the firefighters arrived, the blaze had already spread to the roof.",
+      "When I got to the party, most guests had already gone home."
+    ],
+    "sentences": [
+      {
+        "pre": "When the doctor arrived, the patient ",
+        "verb": "had recovered",
+        "post": " on his own.",
+        "answer": "past-perfect"
+      }
+    ]
   },
   {
     "id": "past-perfect-13",
-    "answer": "past-perfect",
-    "type": "context",
-    "prompt": "Отрицание: то, что ещё не случилось к моменту в прошлом",
-    "promptEn": "Negation: something not yet done by a past moment",
-    "sentence": {
-      "pre": "At that point, no one ",
-      "verb": "had heard",
-      "post": " about the disaster."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Отрицание: то, что ещё не случилось к моменту в прошлом",
+      "en": "Negation: something not yet done by a past moment"
     },
-    "difficulty": 3
+    "tags": [
+      "past-perfect",
+      "context-clue",
+      "affirmative",
+      "perfect",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«At that point» устанавливает прошлый момент-ориентир; «no one had heard» отрицает событие вплоть до этого момента. Отрицательный Past Perfect фиксирует информационный вакуум до точки в прошлом."
+    },
+    "contextExamples": [
+      "At that stage, nobody had confirmed the news.",
+      "Up to that moment, nothing unusual had happened."
+    ],
+    "sentences": [
+      {
+        "pre": "At that point, no one ",
+        "verb": "had heard",
+        "post": " about the disaster.",
+        "answer": "past-perfect"
+      }
+    ]
   },
   {
     "id": "past-perfect-14",
-    "answer": "past-perfect",
-    "type": "sentence",
-    "prompt": "Истечение срока или момента, после которого было поздно",
-    "promptEn": "A deadline that had passed, making something too late",
-    "sentence": {
-      "pre": "By the time I applied, the position ",
-      "verb": "had already been filled",
-      "post": "."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Истечение срока или момента, после которого было поздно",
+      "en": "A deadline that had passed, making something too late"
     },
-    "difficulty": 3
+    "tags": [
+      "past-perfect",
+      "sentence-analysis",
+      "affirmative",
+      "perfect",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "Пассивная конструкция «had already been filled» указывает на завершённый факт (вакансия занята) до прошлого действия «applied». «By the time» + Past Perfect — классический сигнал."
+    },
+    "contextExamples": [
+      "By the time we ordered, the special dish had already sold out.",
+      "By the time she registered, all the spots had already been taken."
+    ],
+    "sentences": [
+      {
+        "pre": "By the time I applied, the position ",
+        "verb": "had already been filled",
+        "post": ".",
+        "answer": "past-perfect"
+      }
+    ]
   },
   {
     "id": "past-perfect-15",
-    "answer": "past-perfect",
-    "type": "context",
-    "prompt": "Предыстория события: то, что произошло задолго до основного",
-    "promptEn": "Backstory: what happened long before the main event",
-    "sentence": {
-      "pre": "She recognised the building immediately — she ",
-      "verb": "had lived",
-      "post": " there as a child."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Предыстория события: то, что произошло задолго до основного",
+      "en": "Backstory: what happened long before the main event"
     },
-    "difficulty": 3
+    "tags": [
+      "past-perfect",
+      "context-clue",
+      "affirmative",
+      "perfect",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "Тире вводит пояснение-предысторию: «had lived there as a child» описывает состояние, существовавшее задолго до момента узнавания («recognised»). Past Perfect подчёркивает временну́ю дистанцию."
+    },
+    "contextExamples": [
+      "He knew the city well — he had grown up there.",
+      "She smiled at the old song — she had danced to it at her wedding."
+    ],
+    "sentences": [
+      {
+        "pre": "She recognised the building immediately — she ",
+        "verb": "had lived",
+        "post": " there as a child.",
+        "answer": "past-perfect"
+      }
+    ]
   },
   {
     "id": "past-perfect-16",
-    "answer": "past-perfect",
-    "type": "sentence",
-    "prompt": "Отрицание: то, чего ещё не было сделано к прошлому моменту",
-    "promptEn": "Negation: something not yet done by a past moment",
-    "sentence": {
-      "pre": "She ",
-      "verb": "hadn't slept",
-      "post": " properly for days before the final exam."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Отрицание: то, чего ещё не было сделано к прошлому моменту",
+      "en": "Negation: something not yet done by a past moment"
     },
-    "difficulty": 3
+    "tags": [
+      "past-perfect",
+      "sentence-analysis",
+      "negative",
+      "perfect",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«Hadn't slept… for days before the final exam» — отрицательный Past Perfect с «for days» показывает длительное отсутствие действия вплоть до прошлого ориентира («the final exam»)."
+    },
+    "contextExamples": [
+      "He hadn't eaten anything for hours before the interview.",
+      "They hadn't spoken to each other for weeks before that meeting."
+    ],
+    "sentences": [
+      {
+        "pre": "She ",
+        "verb": "hadn't slept",
+        "post": " properly for days before the final exam.",
+        "answer": "past-perfect"
+      }
+    ]
   },
   {
     "id": "past-perfect-17",
-    "answer": "past-perfect",
-    "type": "context",
-    "prompt": "Вопрос о предшествующем действии в косвенной речи",
-    "promptEn": "A question about a preceding action in reported speech",
-    "sentence": {
-      "pre": "They asked whether anyone ",
-      "verb": "had seen",
-      "post": " the missing keys."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Вопрос о предшествующем действии в косвенной речи",
+      "en": "A question about a preceding action in reported speech"
     },
-    "difficulty": 3
+    "tags": [
+      "past-perfect",
+      "context-clue",
+      "affirmative",
+      "perfect",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«Asked» — прошедшее время глагола сообщения; «whether anyone had seen» — косвенный вопрос с Past Perfect (сдвиг из Present Perfect при согласовании времён)."
+    },
+    "contextExamples": [
+      "She wondered whether he had received her message.",
+      "The teacher asked if anyone had completed the assignment."
+    ],
+    "sentences": [
+      {
+        "pre": "They asked whether anyone ",
+        "verb": "had seen",
+        "post": " the missing keys.",
+        "answer": "past-perfect"
+      }
+    ]
   },
   {
     "id": "past-perfect-18",
-    "answer": "past-perfect",
-    "type": "sentence",
-    "prompt": "Действие, совершённое прежде, чем что-то стало известно",
-    "promptEn": "An action completed before something became known",
-    "sentence": {
-      "pre": "By the time the authorities arrived, the witnesses ",
-      "verb": "had left",
-      "post": " the scene."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Действие, совершённое прежде, чем что-то стало известно",
+      "en": "An action completed before something became known"
     },
-    "difficulty": 3
+    "tags": [
+      "past-perfect",
+      "sentence-analysis",
+      "affirmative",
+      "perfect",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«By the time the authorities arrived» — прошлый ориентир; «had left the scene» — завершённый факт, предшествующий ему. Конструкция «by the time» всегда требует Past Perfect в соотносимом придаточном."
+    },
+    "contextExamples": [
+      "By the time the inspector arrived, the thieves had escaped.",
+      "By the time we got there, the crowd had already dispersed."
+    ],
+    "sentences": [
+      {
+        "pre": "By the time the authorities arrived, the witnesses ",
+        "verb": "had left",
+        "post": " the scene.",
+        "answer": "past-perfect"
+      }
+    ]
   },
   {
     "id": "past-perfect-19",
-    "answer": "past-perfect",
-    "type": "context",
-    "prompt": "Сожаление или желание о прошлом (wish + past perfect)",
-    "promptEn": "Regret or wish about the past (wish + past perfect)",
-    "sentence": {
-      "pre": "I wish I ",
-      "verb": "had taken",
-      "post": " her advice — everything would have been different."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Сожаление или желание о прошлом (wish + past perfect)",
+      "en": "Regret or wish about the past (wish + past perfect)"
     },
-    "difficulty": 3
+    "tags": [
+      "past-perfect",
+      "context-clue",
+      "affirmative",
+      "perfect",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«I wish + Past Perfect» — грамматическая конструкция для сожаления о прошлом. «Had taken» указывает на невыполненное прошлое действие, изменить которое уже невозможно."
+    },
+    "contextExamples": [
+      "I wish I had applied for that scholarship.",
+      "She wished she had told him the truth sooner."
+    ],
+    "sentences": [
+      {
+        "pre": "I wish I ",
+        "verb": "had taken",
+        "post": " her advice — everything would have been different.",
+        "answer": "past-perfect"
+      }
+    ]
   },
   {
     "id": "past-perfect-20",
-    "answer": "past-perfect",
-    "type": "sentence",
-    "prompt": "Едва завершённое действие, когда произошло следующее",
-    "promptEn": "Barely completed action when the next event happened",
-    "sentence": {
-      "pre": "Hardly ",
-      "verb": "had",
-      "post": " she sat down when the phone rang again."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Едва завершённое действие, когда произошло следующее",
+      "en": "Barely completed action when the next event happened"
     },
-    "difficulty": 3
+    "tags": [
+      "past-perfect",
+      "sentence-analysis",
+      "affirmative",
+      "perfect",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«Hardly… when» — инвертированная конструкция с Past Perfect; отрицательное наречие «hardly» в начале предложения вызывает инверсию «had she». Структура означает «едва успела… как»."
+    },
+    "contextExamples": [
+      "Hardly had he fallen asleep when the alarm went off.",
+      "Scarcely had they arrived when it started to rain."
+    ],
+    "sentences": [
+      {
+        "pre": "Hardly ",
+        "verb": "had",
+        "post": " she sat down when the phone rang again.",
+        "answer": "past-perfect"
+      }
+    ]
   },
   {
     "id": "past-perfect-21",
-    "answer": "past-perfect",
-    "type": "context",
-    "prompt": "Прошлое действие с 'after', обозначающее завершение до другого",
-    "promptEn": "A past action with 'after', showing completion before another",
-    "sentence": {
-      "pre": "After he ",
-      "verb": "had submitted",
-      "post": " the application, he felt a huge sense of relief."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Прошлое действие с 'after', обозначающее завершение до другого",
+      "en": "A past action with 'after', showing completion before another"
     },
-    "difficulty": 3
+    "tags": [
+      "past-perfect",
+      "context-clue",
+      "affirmative",
+      "perfect",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«After» указывает последовательность: «had submitted» — первое, завершённое действие; «felt» — второе. После «after» Past Perfect подчёркивает, что первое действие было полностью завершено."
+    },
+    "contextExamples": [
+      "After she had read the letter, she burst into tears.",
+      "After they had discussed the plan, everyone agreed to proceed."
+    ],
+    "sentences": [
+      {
+        "pre": "After he ",
+        "verb": "had submitted",
+        "post": " the application, he felt a huge sense of relief.",
+        "answer": "past-perfect"
+      }
+    ]
   },
   {
     "id": "past-perfect-22",
-    "answer": "past-perfect",
-    "type": "sentence",
-    "prompt": "Страдательный залог: то, что было сделано к определённому прошлому моменту",
-    "promptEn": "Passive: something that had been done by a past moment",
-    "sentence": {
-      "pre": "By the time we arrived, all the tickets ",
-      "verb": "had been sold",
-      "post": " out."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Страдательный залог: то, что было сделано к определённому прошлому моменту",
+      "en": "Passive: something that had been done by a past moment"
     },
-    "difficulty": 3
+    "tags": [
+      "past-perfect",
+      "sentence-analysis",
+      "affirmative",
+      "perfect",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "Пассивный Past Perfect «had been sold out» строится по схеме had + been + V3. «By the time we arrived» — ориентир; продажа завершилась до прибытия."
+    },
+    "contextExamples": [
+      "By the time the rescue team reached the site, the survivors had been found.",
+      "When we got to the library, all the copies had been borrowed."
+    ],
+    "sentences": [
+      {
+        "pre": "By the time we arrived, all the tickets ",
+        "verb": "had been sold",
+        "post": " out.",
+        "answer": "past-perfect"
+      }
+    ]
   },
   {
     "id": "past-perfect-23",
-    "answer": "past-perfect",
-    "type": "context",
-    "prompt": "Необходимое предварительное условие перед основным событием",
-    "promptEn": "A prerequisite that needed to be met before a main event",
-    "sentence": {
-      "pre": "Once they ",
-      "verb": "had signed",
-      "post": " the contract, the work could begin."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Необходимое предварительное условие перед основным событием",
+      "en": "A prerequisite that needed to be met before a main event"
     },
-    "difficulty": 3
+    "tags": [
+      "past-perfect",
+      "context-clue",
+      "affirmative",
+      "perfect",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«Once» означает «как только/после того как»; «had signed» — необходимое предварительное условие (подпись), без выполнения которого главное событие невозможно. «Once + Past Perfect» показывает обязательную завершённость условия."
+    },
+    "contextExamples": [
+      "Once he had passed the medical, he was cleared to travel.",
+      "Once she had confirmed the reservation, the hotel sent a receipt."
+    ],
+    "sentences": [
+      {
+        "pre": "Once they ",
+        "verb": "had signed",
+        "post": " the contract, the work could begin.",
+        "answer": "past-perfect"
+      }
+    ]
   },
   {
     "id": "past-perfect-24",
-    "answer": "past-perfect",
-    "type": "sentence",
-    "prompt": "Описание состояния здоровья, образования или положения до события",
-    "promptEn": "Describing health, education or status before an event",
-    "sentence": {
-      "pre": "Before the accident, he ",
-      "verb": "had never been",
-      "post": " to hospital in his life."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Описание состояния здоровья, образования или положения до события",
+      "en": "Describing health, education or status before an event"
     },
-    "difficulty": 3
+    "tags": [
+      "past-perfect",
+      "sentence-analysis",
+      "affirmative",
+      "perfect",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«Before the accident» + «had never been» — отрицательный опыт вплоть до прошлого ориентира. «Never» усиливает значение: ни разу за всю жизнь до этого момента."
+    },
+    "contextExamples": [
+      "Before the diagnosis, she had never missed a day of work.",
+      "Before joining the army, he had never left his home town."
+    ],
+    "sentences": [
+      {
+        "pre": "Before the accident, he ",
+        "verb": "had never been",
+        "post": " to hospital in his life.",
+        "answer": "past-perfect"
+      }
+    ]
   },
   {
     "id": "past-perfect-25",
-    "answer": "past-perfect",
-    "type": "context",
-    "prompt": "Автобиографический факт, существовавший до поворотного момента",
-    "promptEn": "An autobiographical fact that existed before a turning point",
-    "sentence": {
-      "pre": "Before she moved to Paris, she ",
-      "verb": "had never spoken",
-      "post": " French outside a classroom."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Автобиографический факт, существовавший до поворотного момента",
+      "en": "An autobiographical fact that existed before a turning point"
     },
-    "difficulty": 3
+    "tags": [
+      "past-perfect",
+      "context-clue",
+      "affirmative",
+      "perfect",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«Before she moved» — поворотный момент в прошлом; «had never spoken… outside a classroom» описывает ограниченный опыт вплоть до этого момента. «Before + Past Simple» + «never + Past Perfect» — двойной сигнал."
+    },
+    "contextExamples": [
+      "Before he started the course, he had never written code in his life.",
+      "Before they emigrated, they had never lived outside their home country."
+    ],
+    "sentences": [
+      {
+        "pre": "Before she moved to Paris, she ",
+        "verb": "had never spoken",
+        "post": " French outside a classroom.",
+        "answer": "past-perfect"
+      }
+    ]
   }
 ]

@@ -1,5 +1,5 @@
 import { ChangeDetectionStrategy, Component, input } from '@angular/core';
-import type { Sentence } from '@shared/types';
+import type { QuestionSentence } from '@shared/types';
 
 export type ResultState = 'none' | 'correct' | 'wrong' | 'timeout';
 
@@ -17,7 +17,10 @@ export class QuestionCardComponent {
 
   readonly revealName = input<string | null>(null);
   readonly revealColor = input('var(--accent)');
-  readonly revealSentence = input<Sentence | null>(null);
+  readonly revealSentence = input<QuestionSentence | null>(null);
+  readonly revealExplanation = input<string | null>(null);
+  readonly revealRules = input<string | null>(null);
+  readonly revealExamples = input<readonly string[] | null>(null);
 
   readonly gainedPoints = input<number | null>(null);
 
