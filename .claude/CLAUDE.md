@@ -88,7 +88,7 @@ When Phase 8 arrives, swap the implementation; the rest of the code is unchanged
 |--------|---------|
 | 1–7 (CI/CD, Angular, FSD, Game Engine, Onboarding, Learn, Daily) | Browser API (localStorage) |
 | 8 (Accounts) | Supabase Auth + DB introduced |
-| 9–15 (Rank, Leaderboards, Monetization…) | Supabase fully |
+| 9–16 (Rank, Leaderboards, Admin, Monetization…) | Supabase fully |
 
 ---
 
@@ -102,15 +102,16 @@ When Phase 8 arrives, swap the implementation; the rest of the code is unchanged
 | 4 | Game Engine + Normal Mode | Playable end-to-end, mobile-responsive | ✅ |
 | 5 | Onboarding | First-launch demo + 5-question sample | ✅ |
 | 6 | Learn pages (priority tenses: Simple family + Present/Past Continuous + Present Perfect) | 6 tenses have grammar content | ✅ |
-| 7 | Daily Challenge (date-seeded, client-side) | Fixed daily set + share card, no backend | ⬜ |
+| 7 | Daily Challenge (date-seeded, client-side) | Fixed daily set + share card, no backend | ✅ |
 | 8 | Netlify + Supabase + Auth + Cloud Sync | App deploys on Netlify, DB connected, localStorage migrated | ⬜ |
 | 9 | Rank Mode + Squad Battle | Tiers, matchmaking, bots, real-time | ⬜ |
 | 10 | Leaderboards + Stats | Global/weekly/friends tabs | ⬜ |
-| 11 | Monetization | Stripe, premium flag, ad banners | ⬜ |
-| 12 | Text Analysis Mode | NLP highlight + inline explanations | ⬜ |
-| 13 | PWA | Service worker, offline learn pages | ⬜ |
-| 14 | Visual polish | Color system, micro-animations, timer bar | ⬜ |
-| 15 | Sound design | Web Audio API, 7 events, sound packs | ⬜ |
+| 11 | Admin Panel | Users, live activity, analytics, content moderation, AI generation, error reports, account moderation, support | ⬜ |
+| 12 | Monetization | Stripe, premium flag, ad banners | ⬜ |
+| 13 | Text Analysis Mode | NLP highlight + inline explanations | ⬜ |
+| 14 | PWA | Service worker, offline learn pages | ⬜ |
+| 15 | Visual polish | Color system, micro-animations, timer bar | ⬜ |
+| 16 | Sound design | Web Audio API, 7 events, sound packs | ⬜ |
 | — | Content track (parallel) | All 12 tenses: 20+10 questions, all learn pages | 🔄 |
 
 ---
@@ -144,8 +145,6 @@ Check it before starting any work to understand current status and what's next.
 | 8 | Daily Challenge | Date-seeded LCG deck, DailyStore streak, `/daily` page, Canvas share card |
 
 ### Next: Phase 9 — Backend: Netlify + Supabase + Auth
-
-### Next: Phase 8 — Daily Challenge (Browser API, date-seeded)
 
 Learn content status: **all 12 tenses complete** (formula, structure, usage, examples, markers, FAQ)
 
