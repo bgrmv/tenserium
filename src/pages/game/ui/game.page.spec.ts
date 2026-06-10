@@ -8,6 +8,7 @@ import { StorageService } from '@shared/api/storage.service';
 import { provideRouter } from '@angular/router';
 import { provideLocationMocks } from '@angular/common/testing';
 import type { Question, TenseId } from '@shared/types';
+import { tokenizeSentence } from '@shared/lib/tokenize';
 
 describe('GamePageComponent', () => {
   let component: GamePageComponent;
@@ -25,7 +26,7 @@ describe('GamePageComponent', () => {
       mechanism: 'context',
       prompt: { en: `Question ${id}`, ru: `Вопрос ${id}` },
       sentences: [
-        { pre: 'I ', verb: 'play', post: ' football', answer },
+        { tokens: tokenizeSentence('I ', 'play', ' football'), answer },
       ],
       tags: ['present-simple', 'affirmative'],
       difficulty: 1,
@@ -442,6 +443,51 @@ describe('GamePageComponent', () => {
 
       sessionStore.submitAnswer('wrong-id' as TenseId);
       expect(sessionStore.score()).toBe(correctScore);
+    });
+  });
+
+  describe('Pause mode', () => {
+    let userStore: UserStore;
+
+    beforeEach(() => {
+      userStore = TestBed.inject(UserStore);
+      fixture.detectChanges();
+      sessionStore.startSession(
+        {
+          mode: 'normal',
+          tenses: ['present-simple'],
+          total: 3,
+          windowMs: 10_000,
+          modeMultiplier: 1,
+        },
+        makeDeck(3),
+      );
+    });
+
+    afterEach(() => {
+      if (userStore.pauseMode()) userStore.togglePauseMode();
+      vi.useRealTimers();
+    });
+
+    it('should not auto-advance when pauseMode is ON', () => {
+      vi.useFakeTimers();
+      userStore.togglePauseMode();
+
+      component['onAnswer']('present-simple');
+      expect(component['result']()).toBe('correct');
+
+      vi.advanceTimersByTime(2000);
+      expect(component['result']()).toBe('correct');
+    });
+
+    it('should auto-advance when pauseMode is OFF', () => {
+      vi.useFakeTimers();
+
+      component['onAnswer']('present-simple');
+      expect(component['result']()).toBe('correct');
+
+      vi.advanceTimersByTime(2000);
+      expect(component['result']()).toBe('none');
     });
   });
 

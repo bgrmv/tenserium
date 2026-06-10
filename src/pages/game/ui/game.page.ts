@@ -189,9 +189,9 @@ export class GamePageComponent {
     this.scheduleNext(FLASH_WRONG_MS);
   }
 
-  /** In study mode the panel replaces the auto-advance; user clicks Next instead. */
+  /** In study/pause mode the auto-advance is suppressed; user clicks Next instead. */
   private scheduleNext(delay: number): void {
-    if (this.user.studyMode()) return;
+    if (this.user.studyMode() || this.user.pauseMode()) return;
     setTimeout(() => this.advance(), delay);
   }
 

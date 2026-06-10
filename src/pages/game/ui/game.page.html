@@ -40,6 +40,15 @@
         <button
           type="button"
           class="btn-mode"
+          [class.is-study]="user.pauseMode()"
+          (click)="user.togglePauseMode()"
+          title="пауза перед следующим вопросом"
+        >
+          <app-icon name="clock" [size]="14" /> Пауза
+        </button>
+        <button
+          type="button"
+          class="btn-mode"
           [class.is-study]="user.studyMode()"
           (click)="user.toggleStudyMode()"
           title="Toggle Study / Exam mode"
@@ -69,9 +78,15 @@
         [revealRules]="result() !== 'none' ? (q.rules?.ru ?? q.rules?.en ?? null) : null"
         [revealExamples]="result() !== 'none' ? (q.contextExamples ?? null) : null"
         [gainedPoints]="gained()"
+        [autoAnnotation]="user.pauseMode()"
       />
 
       <div class="q-actions">
+        @if (user.pauseMode() && !user.studyMode() && result() !== 'none') {
+          <button type="button" class="btn-next-pause" (click)="onNextQuestion()">
+            Далее <app-icon name="arrow-right" [size]="15" />
+          </button>
+        }
         @if (!user.studyMode() && (result() === 'wrong' || result() === 'timeout')) {
           @if (revealId(); as id) {
             <button type="button" class="btn-study" (click)="studyTense(id)">
