@@ -8,6 +8,7 @@ import { UserStore } from '@entities/user';
 import { QuestionRepository } from '@entities/question';
 import { StorageService } from '@shared/api/storage.service';
 import type { Question, TenseId } from '@shared/types';
+import { tokenizeSentence } from '@shared/lib/tokenize';
 
 describe('OnboardingPageComponent', () => {
   let component: OnboardingPageComponent;
@@ -23,7 +24,7 @@ describe('OnboardingPageComponent', () => {
       mechanism: 'context',
       prompt: { en: `Question ${id}`, ru: `Вопрос ${id}` },
       sentences: [
-        { pre: 'I ', verb: 'play', post: ' football', answer },
+        { tokens: tokenizeSentence('I ', 'play', ' football'), answer },
       ],
       tags: ['present-simple', 'affirmative'],
       difficulty: 1,

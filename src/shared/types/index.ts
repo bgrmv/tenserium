@@ -20,12 +20,29 @@ export interface SentenceDistractor {
   readonly reason?: LocalizedString;
 }
 
+export type TokenType = 'word' | 'punct' | 'space';
+export type TokenRole = 'verb';
+
+export interface Token {
+  readonly type: TokenType;
+  readonly value: string;
+  readonly role?: TokenRole;
+  readonly translation?: LocalizedString;
+}
+
+export interface Annotation {
+  readonly from: number;
+  readonly to: number;
+  readonly note: LocalizedString;
+  readonly example?: string;
+  readonly translation?: LocalizedString;
+}
+
 export interface QuestionSentence {
-  readonly pre: string;
-  readonly verb: string;
-  readonly post: string;
+  readonly tokens: readonly Token[];
   readonly answer: TenseId;
   readonly distractors?: readonly SentenceDistractor[];
+  readonly annotations?: readonly Annotation[];
 }
 
 export interface Question {
@@ -88,6 +105,7 @@ export interface UserProfile {
   readonly hasSeenOnboarding: boolean;
   readonly scoreDisplayPreference: ScoreDisplayPreference;
   readonly studyMode: boolean;
+  readonly pauseMode: boolean;
 }
 
 export interface Player {

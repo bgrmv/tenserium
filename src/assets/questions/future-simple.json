@@ -23,10 +23,72 @@
     ],
     "sentences": [
       {
-        "pre": "I think it ",
-        "verb": "will rain",
-        "post": " tomorrow.",
-        "answer": "future-simple"
+        "answer": "future-simple",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "I"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "think",
+            "translation": {
+              "ru": "думать"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "it"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "will",
+            "role": "verb",
+            "translation": {
+              "ru": "---"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "rain",
+            "role": "verb",
+            "translation": {
+              "ru": "дождь"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "tomorrow",
+            "translation": {
+              "ru": "завтра"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
       }
     ]
   },
@@ -54,10 +116,67 @@
     ],
     "sentences": [
       {
-        "pre": "She ",
-        "verb": "will graduate",
-        "post": " next year.",
-        "answer": "future-simple"
+        "answer": "future-simple",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "She",
+            "translation": {
+              "ru": "Она"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "will",
+            "role": "verb",
+            "translation": {
+              "ru": "---"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "graduate",
+            "role": "verb",
+            "translation": {
+              "ru": "Цилиндр с делениями"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "next",
+            "translation": {
+              "ru": "след."
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "year",
+            "translation": {
+              "ru": "год"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
       }
     ]
   },
@@ -85,10 +204,83 @@
     ],
     "sentences": [
       {
-        "pre": "I promise I ",
-        "verb": "will call",
-        "post": " you tomorrow.",
-        "answer": "future-simple"
+        "answer": "future-simple",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "I"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "promise",
+            "translation": {
+              "ru": "обещать"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "I"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "will",
+            "role": "verb",
+            "translation": {
+              "ru": "---"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "call",
+            "role": "verb",
+            "translation": {
+              "ru": "звонок"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "you",
+            "translation": {
+              "ru": "вы"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "tomorrow",
+            "translation": {
+              "ru": "завтра"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
       }
     ]
   },
@@ -116,10 +308,101 @@
     ],
     "sentences": [
       {
-        "pre": "In 2050, most people ",
-        "verb": "will live",
-        "post": " in cities.",
-        "answer": "future-simple"
+        "answer": "future-simple",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "In",
+            "translation": {
+              "ru": "Нач."
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "2050"
+          },
+          {
+            "type": "punct",
+            "value": ","
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "most",
+            "translation": {
+              "ru": "большинство"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "people",
+            "translation": {
+              "ru": "человек"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "will",
+            "role": "verb",
+            "translation": {
+              "ru": "---"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "live",
+            "role": "verb",
+            "translation": {
+              "ru": "жить"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "in",
+            "translation": {
+              "ru": "от"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "cities",
+            "translation": {
+              "ru": "города"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
       }
     ]
   },
@@ -147,10 +430,98 @@
     ],
     "sentences": [
       {
-        "pre": "Don't worry, I ",
-        "verb": "will help",
-        "post": " you with that.",
-        "answer": "future-simple"
+        "answer": "future-simple",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "Don't",
+            "translation": {
+              "ru": "Не"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "worry",
+            "translation": {
+              "ru": "беспокоиться"
+            }
+          },
+          {
+            "type": "punct",
+            "value": ","
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "I"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "will",
+            "role": "verb",
+            "translation": {
+              "ru": "---"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "help",
+            "role": "verb"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "you",
+            "translation": {
+              "ru": "вы"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "with",
+            "translation": {
+              "ru": "где"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "that",
+            "translation": {
+              "ru": "что"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
       }
     ]
   },
@@ -178,10 +549,112 @@
     ],
     "sentences": [
       {
-        "pre": "If you study hard, you ",
-        "verb": "will pass",
-        "post": " the exam.",
-        "answer": "future-simple"
+        "answer": "future-simple",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "If",
+            "translation": {
+              "ru": "При"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "you",
+            "translation": {
+              "ru": "вы"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "study",
+            "translation": {
+              "ru": "светостабильности"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "hard",
+            "translation": {
+              "ru": "твёрдый"
+            }
+          },
+          {
+            "type": "punct",
+            "value": ","
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "you",
+            "translation": {
+              "ru": "вы"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "will",
+            "role": "verb",
+            "translation": {
+              "ru": "---"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "pass",
+            "role": "verb",
+            "translation": {
+              "ru": "зачет"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "exam",
+            "translation": {
+              "ru": "экзамен"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
       }
     ]
   },
@@ -209,10 +682,78 @@
     ],
     "sentences": [
       {
-        "pre": "Technology ",
-        "verb": "will change",
-        "post": " our lives significantly.",
-        "answer": "future-simple"
+        "answer": "future-simple",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "Technology",
+            "translation": {
+              "ru": "Технология"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "will",
+            "role": "verb",
+            "translation": {
+              "ru": "---"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "change",
+            "role": "verb",
+            "translation": {
+              "ru": "изменении"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "our",
+            "translation": {
+              "ru": "наш"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "lives",
+            "translation": {
+              "ru": ","
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "significantly",
+            "translation": {
+              "ru": "значимо"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
       }
     ]
   },
@@ -240,10 +781,89 @@
     ],
     "sentences": [
       {
-        "pre": "We ",
-        "verb": "will travel",
-        "post": " to Japan next summer.",
-        "answer": "future-simple"
+        "answer": "future-simple",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "We",
+            "translation": {
+              "ru": "Перед"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "will",
+            "role": "verb",
+            "translation": {
+              "ru": "---"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "travel",
+            "role": "verb",
+            "translation": {
+              "ru": "поездка"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "to",
+            "translation": {
+              "ru": "кому"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "Japan",
+            "translation": {
+              "ru": "Япония"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "next",
+            "translation": {
+              "ru": "след."
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "summer",
+            "translation": {
+              "ru": "лето"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
       }
     ]
   },
@@ -271,10 +891,105 @@
     ],
     "sentences": [
       {
-        "pre": "The sun ",
-        "verb": "will set",
-        "post": " this evening at 8 PM.",
-        "answer": "future-simple"
+        "answer": "future-simple",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "The",
+            "translation": {
+              "ru": "-"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "sun",
+            "translation": {
+              "ru": "солнце"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "will",
+            "role": "verb",
+            "translation": {
+              "ru": "---"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "set",
+            "role": "verb",
+            "translation": {
+              "ru": "набор"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "this",
+            "translation": {
+              "ru": "сего"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "evening",
+            "translation": {
+              "ru": "вечер"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "at"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "8"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "PM",
+            "translation": {
+              "ru": "После полудня"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
       }
     ]
   },
@@ -302,10 +1017,137 @@
     ],
     "sentences": [
       {
-        "pre": "If you don't leave now, you ",
-        "verb": "will be",
-        "post": " late for school.",
-        "answer": "future-simple"
+        "answer": "future-simple",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "If",
+            "translation": {
+              "ru": "При"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "you",
+            "translation": {
+              "ru": "вы"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "don't",
+            "translation": {
+              "ru": "не"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "leave",
+            "translation": {
+              "ru": "отпуск"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "now",
+            "translation": {
+              "ru": "сейчас"
+            }
+          },
+          {
+            "type": "punct",
+            "value": ","
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "you",
+            "translation": {
+              "ru": "вы"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "will",
+            "role": "verb",
+            "translation": {
+              "ru": "---"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "be",
+            "role": "verb",
+            "translation": {
+              "ru": "переносу"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "late",
+            "translation": {
+              "ru": "позже"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "for",
+            "translation": {
+              "ru": "."
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "school",
+            "translation": {
+              "ru": "школа"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
       }
     ]
   },
@@ -333,10 +1175,88 @@
     ],
     "sentences": [
       {
-        "pre": "I ",
-        "verb": "won't apologise",
-        "post": " — I did nothing wrong.",
-        "answer": "future-simple"
+        "answer": "future-simple",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "I"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "won't",
+            "role": "verb",
+            "translation": {
+              "ru": "не будет"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "apologise",
+            "role": "verb"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "punct",
+            "value": "—"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "I"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "did",
+            "translation": {
+              "ru": "сделал"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "nothing",
+            "translation": {
+              "ru": "нет"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "wrong",
+            "translation": {
+              "ru": "Неверно"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
       }
     ]
   },
@@ -364,10 +1284,133 @@
     ],
     "sentences": [
       {
-        "pre": "Scientists say sea levels ",
-        "verb": "will rise",
-        "post": " by two metres this century.",
-        "answer": "future-simple"
+        "answer": "future-simple",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "Scientists",
+            "translation": {
+              "ru": "Ученые"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "say",
+            "translation": {
+              "ru": "сказать"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "sea",
+            "translation": {
+              "ru": "море"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "levels",
+            "translation": {
+              "ru": "."
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "will",
+            "role": "verb",
+            "translation": {
+              "ru": "---"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "rise",
+            "role": "verb",
+            "translation": {
+              "ru": "подниматься"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "by",
+            "translation": {
+              "ru": "от кого"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "two",
+            "translation": {
+              "ru": "два"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "metres",
+            "translation": {
+              "ru": "в метрах"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "this",
+            "translation": {
+              "ru": "сего"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "century",
+            "translation": {
+              "ru": "век"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
       }
     ]
   },
@@ -395,10 +1438,101 @@
     ],
     "sentences": [
       {
-        "pre": "Unless you hurry, you ",
-        "verb": "will miss",
-        "post": " the bus.",
-        "answer": "future-simple"
+        "answer": "future-simple",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "Unless",
+            "translation": {
+              "ru": "Unless."
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "you",
+            "translation": {
+              "ru": "вы"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "hurry",
+            "translation": {
+              "ru": "спешить"
+            }
+          },
+          {
+            "type": "punct",
+            "value": ","
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "you",
+            "translation": {
+              "ru": "вы"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "will",
+            "role": "verb",
+            "translation": {
+              "ru": "---"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "miss",
+            "role": "verb",
+            "translation": {
+              "ru": "пропустить"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "bus",
+            "translation": {
+              "ru": "шина"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
       }
     ]
   },
@@ -426,10 +1560,124 @@
     ],
     "sentences": [
       {
-        "pre": "That bag looks heavy — I ",
-        "verb": "will carry",
-        "post": " it for you.",
-        "answer": "future-simple"
+        "answer": "future-simple",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "That",
+            "translation": {
+              "ru": "Что"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "bag",
+            "translation": {
+              "ru": "Мешок"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "looks",
+            "translation": {
+              "ru": "выглядит"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "heavy",
+            "translation": {
+              "ru": "Тяжёлые"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "punct",
+            "value": "—"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "I"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "will",
+            "role": "verb",
+            "translation": {
+              "ru": "---"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "carry",
+            "role": "verb",
+            "translation": {
+              "ru": "нести "
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "it"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "for",
+            "translation": {
+              "ru": "."
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "you",
+            "translation": {
+              "ru": "вы"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
       }
     ]
   },
@@ -457,10 +1705,105 @@
     ],
     "sentences": [
       {
-        "pre": "I'm sure you ",
-        "verb": "will do",
-        "post": " well in the interview.",
-        "answer": "future-simple"
+        "answer": "future-simple",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "I'm",
+            "translation": {
+              "ru": "Я"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "sure",
+            "translation": {
+              "ru": "конечно"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "you",
+            "translation": {
+              "ru": "вы"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "will",
+            "role": "verb",
+            "translation": {
+              "ru": "---"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "do",
+            "role": "verb"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "well",
+            "translation": {
+              "ru": "хорошо"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "in",
+            "translation": {
+              "ru": "от"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "interview",
+            "translation": {
+              "ru": "собеседование"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
       }
     ]
   },
@@ -488,10 +1831,140 @@
     ],
     "sentences": [
       {
-        "pre": "The new bridge ",
-        "verb": "will be built",
-        "post": " by the end of the decade.",
-        "answer": "future-simple"
+        "answer": "future-simple",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "The",
+            "translation": {
+              "ru": "-"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "new",
+            "translation": {
+              "ru": "новых"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "bridge",
+            "translation": {
+              "ru": "мост"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "will",
+            "role": "verb",
+            "translation": {
+              "ru": "---"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "be",
+            "role": "verb",
+            "translation": {
+              "ru": "переносу"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "built",
+            "role": "verb",
+            "translation": {
+              "ru": "построен"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "by",
+            "translation": {
+              "ru": "от кого"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "end",
+            "translation": {
+              "ru": "в конце"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "of",
+            "translation": {
+              "ru": "коллегиальных"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "decade",
+            "translation": {
+              "ru": "декада"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
       }
     ]
   },
@@ -519,10 +1992,138 @@
     ],
     "sentences": [
       {
-        "pre": "The committee ",
-        "verb": "will review",
-        "post": " all applications by the end of the month.",
-        "answer": "future-simple"
+        "answer": "future-simple",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "The",
+            "translation": {
+              "ru": "-"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "committee",
+            "translation": {
+              "ru": "комитет"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "will",
+            "role": "verb",
+            "translation": {
+              "ru": "---"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "review",
+            "role": "verb",
+            "translation": {
+              "ru": "отзыв"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "all",
+            "translation": {
+              "ru": "все"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "applications",
+            "translation": {
+              "ru": "отклики"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "by",
+            "translation": {
+              "ru": "от кого"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "end",
+            "translation": {
+              "ru": "в конце"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "of",
+            "translation": {
+              "ru": "коллегиальных"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "month",
+            "translation": {
+              "ru": "месяца"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
       }
     ]
   },
@@ -550,10 +2151,119 @@
     ],
     "sentences": [
       {
-        "pre": "Analysts believe the economy ",
-        "verb": "will recover",
-        "post": " fully within two years.",
-        "answer": "future-simple"
+        "answer": "future-simple",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "Analysts",
+            "translation": {
+              "ru": "Аналитика"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "believe",
+            "translation": {
+              "ru": "верить"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "economy",
+            "translation": {
+              "ru": "экономики"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "will",
+            "role": "verb",
+            "translation": {
+              "ru": "---"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "recover",
+            "role": "verb",
+            "translation": {
+              "ru": "улавливать"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "fully",
+            "translation": {
+              "ru": "Полностью"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "within",
+            "translation": {
+              "ru": "в течение"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "two",
+            "translation": {
+              "ru": "два"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "years",
+            "translation": {
+              "ru": "годы"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
       }
     ]
   },
@@ -581,10 +2291,73 @@
     ],
     "sentences": [
       {
-        "pre": "When ",
-        "verb": "will",
-        "post": " you finish the report?",
-        "answer": "future-simple"
+        "answer": "future-simple",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "When",
+            "translation": {
+              "ru": "После пробуждения"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "will",
+            "role": "verb",
+            "translation": {
+              "ru": "---"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "you",
+            "translation": {
+              "ru": "вы"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "finish",
+            "translation": {
+              "ru": "закончить"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "report",
+            "translation": {
+              "ru": "отчет о проведении валидации"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "?"
+          }
+        ]
       }
     ]
   },
@@ -612,10 +2385,100 @@
     ],
     "sentences": [
       {
-        "pre": "One day people ",
-        "verb": "will travel",
-        "post": " to other planets.",
-        "answer": "future-simple"
+        "answer": "future-simple",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "One",
+            "translation": {
+              "ru": "Dne"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "day",
+            "translation": {
+              "ru": "число"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "people",
+            "translation": {
+              "ru": "человек"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "will",
+            "role": "verb",
+            "translation": {
+              "ru": "---"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "travel",
+            "role": "verb",
+            "translation": {
+              "ru": "поездка"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "to",
+            "translation": {
+              "ru": "кому"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "other",
+            "translation": {
+              "ru": "другие"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "planets",
+            "translation": {
+              "ru": "PLANETY"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
       }
     ]
   },
@@ -643,10 +2506,116 @@
     ],
     "sentences": [
       {
-        "pre": "I don't think they ",
-        "verb": "will win",
-        "post": " the championship this year.",
-        "answer": "future-simple"
+        "answer": "future-simple",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "I"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "don't",
+            "translation": {
+              "ru": "не"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "think",
+            "translation": {
+              "ru": "думать"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "they",
+            "translation": {
+              "ru": "они"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "will",
+            "role": "verb",
+            "translation": {
+              "ru": "---"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "win",
+            "role": "verb",
+            "translation": {
+              "ru": "побеждать"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "championship",
+            "translation": {
+              "ru": "чемпионат"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "this",
+            "translation": {
+              "ru": "сего"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "year",
+            "translation": {
+              "ru": "год"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
       }
     ]
   },
@@ -674,10 +2643,87 @@
     ],
     "sentences": [
       {
-        "pre": "Will robots ever ",
-        "verb": "replace",
-        "post": " human workers completely?",
-        "answer": "future-simple"
+        "answer": "future-simple",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "Will",
+            "translation": {
+              "ru": "Воля"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "robots",
+            "translation": {
+              "ru": "роботами"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "ever",
+            "translation": {
+              "ru": "когда-нибудь"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "replace",
+            "role": "verb",
+            "translation": {
+              "ru": "Замените"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "human",
+            "translation": {
+              "ru": "человек"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "workers",
+            "translation": {
+              "ru": "рабочих"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "completely",
+            "translation": {
+              "ru": "полностью"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "?"
+          }
+        ]
       }
     ]
   },
@@ -705,10 +2751,119 @@
     ],
     "sentences": [
       {
-        "pre": "There ",
-        "verb": "will be",
-        "post": " a short break after the third presentation.",
-        "answer": "future-simple"
+        "answer": "future-simple",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "There",
+            "translation": {
+              "ru": "Ну, вот"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "will",
+            "role": "verb",
+            "translation": {
+              "ru": "---"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "be",
+            "role": "verb",
+            "translation": {
+              "ru": "переносу"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "a",
+            "translation": {
+              "ru": "а"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "short",
+            "translation": {
+              "ru": "короткий"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "break",
+            "translation": {
+              "ru": "излом"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "after",
+            "translation": {
+              "ru": "через"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "third",
+            "translation": {
+              "ru": "третий"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "presentation",
+            "translation": {
+              "ru": "предъявление"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
       }
     ]
   },
@@ -736,10 +2891,121 @@
     ],
     "sentences": [
       {
-        "pre": "The ceremony ",
-        "verb": "will take place",
-        "post": " on the 15th of June.",
-        "answer": "future-simple"
+        "answer": "future-simple",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "The",
+            "translation": {
+              "ru": "-"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "ceremony",
+            "translation": {
+              "ru": "ЦЕРЕМОНИЯ"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "will",
+            "role": "verb",
+            "translation": {
+              "ru": "---"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "take",
+            "role": "verb",
+            "translation": {
+              "ru": "взять"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "place",
+            "role": "verb",
+            "translation": {
+              "ru": "место"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "on",
+            "translation": {
+              "ru": "горит"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "15th",
+            "translation": {
+              "ru": "15-й"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "of",
+            "translation": {
+              "ru": "коллегиальных"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "June",
+            "translation": {
+              "ru": "Июнь"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
       }
     ]
   },
@@ -767,10 +3033,75 @@
     ],
     "sentences": [
       {
-        "pre": "I hope everything ",
-        "verb": "will be",
-        "post": " fine.",
-        "answer": "future-simple"
+        "answer": "future-simple",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "I"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "hope",
+            "translation": {
+              "ru": "надеяться"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "everything",
+            "translation": {
+              "ru": "всё"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "will",
+            "role": "verb",
+            "translation": {
+              "ru": "---"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "be",
+            "role": "verb",
+            "translation": {
+              "ru": "переносу"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "fine",
+            "translation": {
+              "ru": "штраф"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
       }
     ]
   },
@@ -798,10 +3129,126 @@
     ],
     "sentences": [
       {
-        "pre": "If you skip breakfast, you ",
-        "verb": "will feel",
-        "post": " tired by midday.",
-        "answer": "future-simple"
+        "answer": "future-simple",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "If",
+            "translation": {
+              "ru": "При"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "you",
+            "translation": {
+              "ru": "вы"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "skip",
+            "translation": {
+              "ru": "пропустить"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "breakfast",
+            "translation": {
+              "ru": "завтрак"
+            }
+          },
+          {
+            "type": "punct",
+            "value": ","
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "you",
+            "translation": {
+              "ru": "вы"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "will",
+            "role": "verb",
+            "translation": {
+              "ru": "---"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "feel",
+            "role": "verb",
+            "translation": {
+              "ru": "чувствовать"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "tired",
+            "translation": {
+              "ru": "уставший"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "by",
+            "translation": {
+              "ru": "от кого"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "midday",
+            "translation": {
+              "ru": "полдень"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
       }
     ]
   },
@@ -829,10 +3276,137 @@
     ],
     "sentences": [
       {
-        "pre": "She ",
-        "verb": "will probably get",
-        "post": " the job — she was the strongest candidate.",
-        "answer": "future-simple"
+        "answer": "future-simple",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "She",
+            "translation": {
+              "ru": "Она"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "will",
+            "role": "verb",
+            "translation": {
+              "ru": "---"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "probably",
+            "role": "verb",
+            "translation": {
+              "ru": "вероятно"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "get",
+            "role": "verb",
+            "translation": {
+              "ru": "взять"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "job",
+            "translation": {
+              "ru": "заказ"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "punct",
+            "value": "—"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "she",
+            "translation": {
+              "ru": "она"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "was",
+            "translation": {
+              "ru": "удаляли"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "strongest",
+            "translation": {
+              "ru": "Сильнейший"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "candidate",
+            "translation": {
+              "ru": "кандидат"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
       }
     ]
   },
@@ -860,10 +3434,126 @@
     ],
     "sentences": [
       {
-        "pre": "The results ",
-        "verb": "will be announced",
-        "post": " at the end of the week.",
-        "answer": "future-simple"
+        "answer": "future-simple",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "The",
+            "translation": {
+              "ru": "-"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "results",
+            "translation": {
+              "ru": "проектирования"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "will",
+            "role": "verb",
+            "translation": {
+              "ru": "---"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "be",
+            "role": "verb",
+            "translation": {
+              "ru": "переносу"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "announced",
+            "role": "verb",
+            "translation": {
+              "ru": "объявлено"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "at"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "end",
+            "translation": {
+              "ru": "в конце"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "of",
+            "translation": {
+              "ru": "коллегиальных"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "week",
+            "translation": {
+              "ru": "неделя"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
       }
     ]
   },
@@ -891,10 +3581,143 @@
     ],
     "sentences": [
       {
-        "pre": "We ",
-        "verb": "will all die",
-        "post": " one day — that's a fact of life.",
-        "answer": "future-simple"
+        "answer": "future-simple",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "We",
+            "translation": {
+              "ru": "Перед"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "will",
+            "role": "verb",
+            "translation": {
+              "ru": "---"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "all",
+            "role": "verb",
+            "translation": {
+              "ru": "все"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "die",
+            "role": "verb",
+            "translation": {
+              "ru": "."
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "one",
+            "translation": {
+              "ru": "ОДИН"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "day",
+            "translation": {
+              "ru": "число"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "punct",
+            "value": "—"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "that's",
+            "translation": {
+              "ru": "это"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "a",
+            "translation": {
+              "ru": "а"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "fact",
+            "translation": {
+              "ru": "Факт."
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "of",
+            "translation": {
+              "ru": "коллегиальных"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "life",
+            "translation": {
+              "ru": "жизнь"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
       }
     ]
   },
@@ -922,10 +3745,147 @@
     ],
     "sentences": [
       {
-        "pre": "As soon as the match ends, I ",
-        "verb": "will call",
-        "post": " you with the score.",
-        "answer": "future-simple"
+        "answer": "future-simple",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "As"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "soon",
+            "translation": {
+              "ru": "скоро"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "as",
+            "translation": {
+              "ru": "ХХХ"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "match",
+            "translation": {
+              "ru": "совпадение"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "ends",
+            "translation": {
+              "ru": "концы"
+            }
+          },
+          {
+            "type": "punct",
+            "value": ","
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "I"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "will",
+            "role": "verb",
+            "translation": {
+              "ru": "---"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "call",
+            "role": "verb",
+            "translation": {
+              "ru": "звонок"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "you",
+            "translation": {
+              "ru": "вы"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "with",
+            "translation": {
+              "ru": "где"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "score",
+            "translation": {
+              "ru": "счёт"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
       }
     ]
   }

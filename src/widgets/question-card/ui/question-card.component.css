@@ -39,6 +39,12 @@
 .tok-preposition,
 .tok-adverb   { opacity: 0.75; }
 
+.ann-span { text-decoration: underline dotted; text-underline-offset: 3px; cursor: pointer; }
+.ann-start { text-underline-offset: 3px; }
+
+.reveal-sentence-wrap { position: relative; display: inline; }
+app-annotation-tooltip { display: block; margin-top: 8px; text-align: left; }
+
 .points-pop {
   position: absolute;
   top: -14px;

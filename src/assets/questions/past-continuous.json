@@ -23,10 +23,83 @@
     ],
     "sentences": [
       {
-        "pre": "I ",
-        "verb": "was cooking",
-        "post": " when the phone rang.",
-        "answer": "past-continuous"
+        "answer": "past-continuous",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "I"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "was",
+            "role": "verb",
+            "translation": {
+              "ru": "удаляли"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "cooking",
+            "role": "verb",
+            "translation": {
+              "ru": "готовка"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "when",
+            "translation": {
+              "ru": "когда,"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "phone",
+            "translation": {
+              "ru": "13, тел."
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "rang",
+            "translation": {
+              "ru": "звенел"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
       }
     ]
   },
@@ -54,10 +127,75 @@
     ],
     "sentences": [
       {
-        "pre": "She ",
-        "verb": "was reading",
-        "post": " while I cooked.",
-        "answer": "past-continuous"
+        "answer": "past-continuous",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "She",
+            "translation": {
+              "ru": "Она"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "was",
+            "role": "verb",
+            "translation": {
+              "ru": "удаляли"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "reading",
+            "role": "verb",
+            "translation": {
+              "ru": "чтение"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "while",
+            "translation": {
+              "ru": "пока"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "I"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "cooked",
+            "translation": {
+              "ru": "приготовленный"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
       }
     ]
   },
@@ -85,10 +223,101 @@
     ],
     "sentences": [
       {
-        "pre": "When you called, I ",
-        "verb": "was taking",
-        "post": " a shower.",
-        "answer": "past-continuous"
+        "answer": "past-continuous",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "When",
+            "translation": {
+              "ru": "После пробуждения"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "you",
+            "translation": {
+              "ru": "вы"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "called",
+            "translation": {
+              "ru": "звать"
+            }
+          },
+          {
+            "type": "punct",
+            "value": ","
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "I"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "was",
+            "role": "verb",
+            "translation": {
+              "ru": "удаляли"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "taking",
+            "role": "verb",
+            "translation": {
+              "ru": "изъятие; покупка опциона"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "a",
+            "translation": {
+              "ru": "а"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "shower",
+            "translation": {
+              "ru": "душ"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
       }
     ]
   },
@@ -116,10 +345,101 @@
     ],
     "sentences": [
       {
-        "pre": "All morning, they ",
-        "verb": "were working",
-        "post": " in the garden.",
-        "answer": "past-continuous"
+        "answer": "past-continuous",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "All",
+            "translation": {
+              "ru": "Все"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "morning",
+            "translation": {
+              "ru": "утро"
+            }
+          },
+          {
+            "type": "punct",
+            "value": ","
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "they",
+            "translation": {
+              "ru": "они"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "were",
+            "role": "verb",
+            "translation": {
+              "ru": "был/а/и"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "working",
+            "role": "verb",
+            "translation": {
+              "ru": "рабочих"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "in",
+            "translation": {
+              "ru": "от"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "garden",
+            "translation": {
+              "ru": "посмотреть прочитать и сопоставить"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
       }
     ]
   },
@@ -147,10 +467,115 @@
     ],
     "sentences": [
       {
-        "pre": "When we arrived, everyone ",
-        "verb": "was dancing",
-        "post": " and having fun.",
-        "answer": "past-continuous"
+        "answer": "past-continuous",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "When",
+            "translation": {
+              "ru": "После пробуждения"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "we",
+            "translation": {
+              "ru": "ср"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "arrived",
+            "translation": {
+              "ru": "прибыл"
+            }
+          },
+          {
+            "type": "punct",
+            "value": ","
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "everyone",
+            "translation": {
+              "ru": "все"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "was",
+            "role": "verb",
+            "translation": {
+              "ru": "удаляли"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "dancing",
+            "role": "verb",
+            "translation": {
+              "ru": "танцы"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "and",
+            "translation": {
+              "ru": "и"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "having",
+            "translation": {
+              "ru": "имеющих"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "fun",
+            "translation": {
+              "ru": "весёлый"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
       }
     ]
   },
@@ -178,10 +603,78 @@
     ],
     "sentences": [
       {
-        "pre": "The situation ",
-        "verb": "was becoming",
-        "post": " more complicated.",
-        "answer": "past-continuous"
+        "answer": "past-continuous",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "The",
+            "translation": {
+              "ru": "-"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "situation",
+            "translation": {
+              "ru": "ситуация"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "was",
+            "role": "verb",
+            "translation": {
+              "ru": "удаляли"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "becoming",
+            "role": "verb",
+            "translation": {
+              "ru": "подходящий"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "more",
+            "translation": {
+              "ru": "дополнительно"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "complicated",
+            "translation": {
+              "ru": "сложным"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
       }
     ]
   },
@@ -209,10 +702,103 @@
     ],
     "sentences": [
       {
-        "pre": "During my childhood, I ",
-        "verb": "was constantly reading",
-        "post": " books.",
-        "answer": "past-continuous"
+        "answer": "past-continuous",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "During",
+            "translation": {
+              "ru": "В процессе"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "my",
+            "translation": {
+              "ru": "мой"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "childhood",
+            "translation": {
+              "ru": "детство"
+            }
+          },
+          {
+            "type": "punct",
+            "value": ","
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "I"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "was",
+            "role": "verb",
+            "translation": {
+              "ru": "удаляли"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "constantly",
+            "role": "verb",
+            "translation": {
+              "ru": "постоянно"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "reading",
+            "role": "verb",
+            "translation": {
+              "ru": "чтение"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "books",
+            "translation": {
+              "ru": "книг"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
       }
     ]
   },
@@ -240,10 +826,116 @@
     ],
     "sentences": [
       {
-        "pre": "My hands were dirty because I ",
-        "verb": "was fixing",
-        "post": " the car.",
-        "answer": "past-continuous"
+        "answer": "past-continuous",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "My",
+            "translation": {
+              "ru": "Мой"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "hands",
+            "translation": {
+              "ru": "руки)"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "were",
+            "translation": {
+              "ru": "был/а/и"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "dirty",
+            "translation": {
+              "ru": "&amp;"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "because",
+            "translation": {
+              "ru": "по"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "I"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "was",
+            "role": "verb",
+            "translation": {
+              "ru": "удаляли"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "fixing",
+            "role": "verb",
+            "translation": {
+              "ru": "крепление"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "car",
+            "translation": {
+              "ru": "кабина"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
       }
     ]
   },
@@ -271,10 +963,109 @@
     ],
     "sentences": [
       {
-        "pre": "While the children ",
-        "verb": "were sleeping",
-        "post": ", the adults talked quietly.",
-        "answer": "past-continuous"
+        "answer": "past-continuous",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "While",
+            "translation": {
+              "ru": "Пока"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "children",
+            "translation": {
+              "ru": "с рвотой"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "were",
+            "role": "verb",
+            "translation": {
+              "ru": "был/а/и"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "sleeping",
+            "role": "verb",
+            "translation": {
+              "ru": "СОН"
+            }
+          },
+          {
+            "type": "punct",
+            "value": ","
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "adults",
+            "translation": {
+              "ru": "взрослые"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "talked",
+            "translation": {
+              "ru": "Говорили"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "quietly",
+            "translation": {
+              "ru": "тихо"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
       }
     ]
   },
@@ -302,10 +1093,106 @@
     ],
     "sentences": [
       {
-        "pre": "At midnight, she ",
-        "verb": "was still writing",
-        "post": " her essay.",
-        "answer": "past-continuous"
+        "answer": "past-continuous",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "At",
+            "translation": {
+              "ru": "А+"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "midnight",
+            "translation": {
+              "ru": "полночь"
+            }
+          },
+          {
+            "type": "punct",
+            "value": ","
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "she",
+            "translation": {
+              "ru": "она"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "was",
+            "role": "verb",
+            "translation": {
+              "ru": "удаляли"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "still",
+            "role": "verb",
+            "translation": {
+              "ru": "до сих пор"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "writing",
+            "role": "verb",
+            "translation": {
+              "ru": "письмо"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "her",
+            "translation": {
+              "ru": "ей"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "essay",
+            "translation": {
+              "ru": "сочинение"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
       }
     ]
   },
@@ -333,10 +1220,91 @@
     ],
     "sentences": [
       {
-        "pre": "I ",
-        "verb": "was wondering",
-        "post": " if you could help me.",
-        "answer": "past-continuous"
+        "answer": "past-continuous",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "I"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "was",
+            "role": "verb",
+            "translation": {
+              "ru": "удаляли"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "wondering",
+            "role": "verb",
+            "translation": {
+              "ru": "Хотите знать,"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "if"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "you",
+            "translation": {
+              "ru": "вы"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "could",
+            "translation": {
+              "ru": "мог"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "help"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "me",
+            "translation": {
+              "ru": "ХХХ"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
       }
     ]
   },
@@ -364,10 +1332,108 @@
     ],
     "sentences": [
       {
-        "pre": "The rain ",
-        "verb": "was falling",
-        "post": " and the streets were empty.",
-        "answer": "past-continuous"
+        "answer": "past-continuous",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "The",
+            "translation": {
+              "ru": "-"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "rain",
+            "translation": {
+              "ru": "дождь"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "was",
+            "role": "verb",
+            "translation": {
+              "ru": "удаляли"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "falling",
+            "role": "verb",
+            "translation": {
+              "ru": "- при падении"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "and",
+            "translation": {
+              "ru": "и"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "streets",
+            "translation": {
+              "ru": "улицы"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "were",
+            "translation": {
+              "ru": "был/а/и"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "empty",
+            "translation": {
+              "ru": "пустой"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
       }
     ]
   },
@@ -395,10 +1461,124 @@
     ],
     "sentences": [
       {
-        "pre": "I found my old diary while I ",
-        "verb": "was cleaning",
-        "post": " the attic.",
-        "answer": "past-continuous"
+        "answer": "past-continuous",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "I"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "found",
+            "translation": {
+              "ru": "конц."
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "my",
+            "translation": {
+              "ru": "мой"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "old",
+            "translation": {
+              "ru": "старый"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "diary",
+            "translation": {
+              "ru": "дневник"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "while",
+            "translation": {
+              "ru": "пока"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "I"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "was",
+            "role": "verb",
+            "translation": {
+              "ru": "удаляли"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "cleaning",
+            "role": "verb",
+            "translation": {
+              "ru": "Очистка"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "attic",
+            "translation": {
+              "ru": "Мансарда"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
       }
     ]
   },
@@ -426,10 +1606,114 @@
     ],
     "sentences": [
       {
-        "pre": "At the time of the accident, he ",
-        "verb": "wasn't paying",
-        "post": " attention.",
-        "answer": "past-continuous"
+        "answer": "past-continuous",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "At",
+            "translation": {
+              "ru": "А+"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "time",
+            "translation": {
+              "ru": "время"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "of",
+            "translation": {
+              "ru": "коллегиальных"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "accident",
+            "translation": {
+              "ru": "происшествие"
+            }
+          },
+          {
+            "type": "punct",
+            "value": ","
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "he"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "wasn't",
+            "role": "verb",
+            "translation": {
+              "ru": "не был/а"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "paying",
+            "role": "verb"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "attention",
+            "translation": {
+              "ru": "внимания"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
       }
     ]
   },
@@ -457,10 +1741,115 @@
     ],
     "sentences": [
       {
-        "pre": "I ",
-        "verb": "was just leaving",
-        "post": " when the fire alarm went off.",
-        "answer": "past-continuous"
+        "answer": "past-continuous",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "I"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "was",
+            "role": "verb",
+            "translation": {
+              "ru": "удаляли"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "just",
+            "role": "verb",
+            "translation": {
+              "ru": "просто верьте в свои мечты"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "leaving",
+            "role": "verb",
+            "translation": {
+              "ru": "уходите"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "when",
+            "translation": {
+              "ru": "когда,"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "fire",
+            "translation": {
+              "ru": "пожар"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "alarm",
+            "translation": {
+              "ru": "предупреждение"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "went",
+            "translation": {
+              "ru": "ходил/а — ездил/а"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "off"
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
       }
     ]
   },
@@ -488,10 +1877,105 @@
     ],
     "sentences": [
       {
-        "pre": "Nobody ",
-        "verb": "was listening",
-        "post": " when the teacher explained the rule.",
-        "answer": "past-continuous"
+        "answer": "past-continuous",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "Nobody",
+            "translation": {
+              "ru": "Ни с кем"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "was",
+            "role": "verb",
+            "translation": {
+              "ru": "удаляли"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "listening",
+            "role": "verb",
+            "translation": {
+              "ru": "аудирование"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "when",
+            "translation": {
+              "ru": "когда,"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "teacher",
+            "translation": {
+              "ru": "преподавателем"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "explained",
+            "translation": {
+              "ru": "значит"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "rule",
+            "translation": {
+              "ru": "правило"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
       }
     ]
   },
@@ -519,10 +2003,99 @@
     ],
     "sentences": [
       {
-        "pre": "What ",
-        "verb": "were you doing",
-        "post": " when the earthquake struck?",
-        "answer": "past-continuous"
+        "answer": "past-continuous",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "What",
+            "translation": {
+              "ru": "Что"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "were",
+            "role": "verb",
+            "translation": {
+              "ru": "был/а/и"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "you",
+            "role": "verb",
+            "translation": {
+              "ru": "вы"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "doing",
+            "role": "verb",
+            "translation": {
+              "ru": "делать"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "when",
+            "translation": {
+              "ru": "когда,"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "earthquake",
+            "translation": {
+              "ru": "землетрясение"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "struck",
+            "translation": {
+              "ru": "Штрук"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "?"
+          }
+        ]
       }
     ]
   },
@@ -550,10 +2123,134 @@
     ],
     "sentences": [
       {
-        "pre": "While some guests ",
-        "verb": "were talking",
-        "post": ", others were dancing in the garden.",
-        "answer": "past-continuous"
+        "answer": "past-continuous",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "While",
+            "translation": {
+              "ru": "Пока"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "some",
+            "translation": {
+              "ru": "некоторые"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "guests",
+            "translation": {
+              "ru": "гости"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "were",
+            "role": "verb",
+            "translation": {
+              "ru": "был/а/и"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "talking",
+            "role": "verb",
+            "translation": {
+              "ru": "разговор"
+            }
+          },
+          {
+            "type": "punct",
+            "value": ","
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "others",
+            "translation": {
+              "ru": "Прочие положения"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "were",
+            "translation": {
+              "ru": "был/а/и"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "dancing",
+            "translation": {
+              "ru": "танцы"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "in",
+            "translation": {
+              "ru": "от"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "garden",
+            "translation": {
+              "ru": "посмотреть прочитать и сопоставить"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
       }
     ]
   },
@@ -581,10 +2278,139 @@
     ],
     "sentences": [
       {
-        "pre": "By the end of the project, the team's morale ",
-        "verb": "was falling",
-        "post": " rapidly.",
-        "answer": "past-continuous"
+        "answer": "past-continuous",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "By",
+            "translation": {
+              "ru": "________________________________"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "end",
+            "translation": {
+              "ru": "в конце"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "of",
+            "translation": {
+              "ru": "коллегиальных"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "project",
+            "translation": {
+              "ru": "Проектные"
+            }
+          },
+          {
+            "type": "punct",
+            "value": ","
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "team's",
+            "translation": {
+              "ru": "Команда(ы)"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "morale",
+            "translation": {
+              "ru": "боевой дух"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "was",
+            "role": "verb",
+            "translation": {
+              "ru": "удаляли"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "falling",
+            "role": "verb",
+            "translation": {
+              "ru": "- при падении"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "rapidly",
+            "translation": {
+              "ru": "быстро"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
       }
     ]
   },
@@ -612,10 +2438,111 @@
     ],
     "sentences": [
       {
-        "pre": "When the guests arrived, I ",
-        "verb": "was still getting",
-        "post": " dressed.",
-        "answer": "past-continuous"
+        "answer": "past-continuous",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "When",
+            "translation": {
+              "ru": "После пробуждения"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "guests",
+            "translation": {
+              "ru": "гости"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "arrived",
+            "translation": {
+              "ru": "прибыл"
+            }
+          },
+          {
+            "type": "punct",
+            "value": ","
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "I"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "was",
+            "role": "verb",
+            "translation": {
+              "ru": "удаляли"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "still",
+            "role": "verb",
+            "translation": {
+              "ru": "до сих пор"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "getting",
+            "role": "verb",
+            "translation": {
+              "ru": "чтобы я заказала"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "dressed",
+            "translation": {
+              "ru": "Одеваюсь"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
       }
     ]
   },
@@ -643,10 +2570,119 @@
     ],
     "sentences": [
       {
-        "pre": "The fire ",
-        "verb": "was crackling",
-        "post": " and the wind was howling outside.",
-        "answer": "past-continuous"
+        "answer": "past-continuous",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "The",
+            "translation": {
+              "ru": "-"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "fire",
+            "translation": {
+              "ru": "пожар"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "was",
+            "role": "verb",
+            "translation": {
+              "ru": "удаляли"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "crackling",
+            "role": "verb",
+            "translation": {
+              "ru": "[треск]"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "and",
+            "translation": {
+              "ru": "и"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "wind",
+            "translation": {
+              "ru": "ветер"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "was",
+            "translation": {
+              "ru": "удаляли"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "howling",
+            "translation": {
+              "ru": "Воющий"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "outside",
+            "translation": {
+              "ru": "извне"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
       }
     ]
   },
@@ -674,10 +2710,119 @@
     ],
     "sentences": [
       {
-        "pre": "She ",
-        "verb": "was giving",
-        "post": " a speech when the microphone cut out.",
-        "answer": "past-continuous"
+        "answer": "past-continuous",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "She",
+            "translation": {
+              "ru": "Она"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "was",
+            "role": "verb",
+            "translation": {
+              "ru": "удаляли"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "giving",
+            "role": "verb",
+            "translation": {
+              "ru": "предоставление"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "a",
+            "translation": {
+              "ru": "а"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "speech",
+            "translation": {
+              "ru": "речь"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "when",
+            "translation": {
+              "ru": "когда,"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "microphone",
+            "translation": {
+              "ru": "Микрофон"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "cut",
+            "translation": {
+              "ru": "отключила ли"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "out",
+            "translation": {
+              "ru": "Выходной"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
       }
     ]
   },
@@ -705,10 +2850,138 @@
     ],
     "sentences": [
       {
-        "pre": "The children ",
-        "verb": "were playing",
-        "post": " upstairs while the adults discussed the situation below.",
-        "answer": "past-continuous"
+        "answer": "past-continuous",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "The",
+            "translation": {
+              "ru": "-"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "children",
+            "translation": {
+              "ru": "с рвотой"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "were",
+            "role": "verb",
+            "translation": {
+              "ru": "был/а/и"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "playing",
+            "role": "verb",
+            "translation": {
+              "ru": "воспроизводится"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "upstairs",
+            "translation": {
+              "ru": "наверху (лестницы)"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "while",
+            "translation": {
+              "ru": "пока"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "adults",
+            "translation": {
+              "ru": "взрослые"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "discussed",
+            "translation": {
+              "ru": "рассмотрено"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "situation",
+            "translation": {
+              "ru": "ситуация"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "below",
+            "translation": {
+              "ru": "ниже"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
       }
     ]
   },
@@ -736,10 +3009,139 @@
     ],
     "sentences": [
       {
-        "pre": "While I ",
-        "verb": "was searching",
-        "post": " for my passport, I found the missing letter.",
-        "answer": "past-continuous"
+        "answer": "past-continuous",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "While",
+            "translation": {
+              "ru": "Пока"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "I"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "was",
+            "role": "verb",
+            "translation": {
+              "ru": "удаляли"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "searching",
+            "role": "verb",
+            "translation": {
+              "ru": "поиск..."
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "for",
+            "translation": {
+              "ru": "."
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "my",
+            "translation": {
+              "ru": "мой"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "passport",
+            "translation": {
+              "ru": "паспорт"
+            }
+          },
+          {
+            "type": "punct",
+            "value": ","
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "I"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "found",
+            "translation": {
+              "ru": "конц."
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "missing",
+            "translation": {
+              "ru": "пропущенный"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "letter",
+            "translation": {
+              "ru": "письмо"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
       }
     ]
   },
@@ -767,10 +3169,91 @@
     ],
     "sentences": [
       {
-        "pre": "He ",
-        "verb": "was always interrupting",
-        "post": " people in meetings.",
-        "answer": "past-continuous"
+        "answer": "past-continuous",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "He",
+            "translation": {
+              "ru": "Он,"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "was",
+            "role": "verb",
+            "translation": {
+              "ru": "удаляли"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "always",
+            "role": "verb",
+            "translation": {
+              "ru": "всегда"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "interrupting",
+            "role": "verb",
+            "translation": {
+              "ru": "Прерывание"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "people",
+            "translation": {
+              "ru": "человек"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "in",
+            "translation": {
+              "ru": "от"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "meetings",
+            "translation": {
+              "ru": "совещание"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
       }
     ]
   }

@@ -1,5 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import type { QuestionSentence } from '@shared/types';
+import type { Annotation, QuestionSentence } from '@shared/types';
+import { tokenizeSentence } from '@shared/lib/tokenize';
 import { QuestionCardComponent } from './question-card.component';
 
 describe('QuestionCardComponent', () => {
@@ -8,11 +9,17 @@ describe('QuestionCardComponent', () => {
   let fixture: ComponentFixture<QuestionCardComponent>;
 
   const SENTENCE: QuestionSentence = {
-    pre: 'She always ',
-    verb: 'drinks',
-    post: ' tea.',
+    tokens: tokenizeSentence('She always ', 'drinks', ' tea.'),
     answer: 'present-simple',
   };
+
+  const ANN: Annotation = {
+    from: 2,
+    to: 2,
+    note: { en: 'Third person singular adds -s', ru: 'Третье лицо ед. ч.' },
+  };
+
+  const SENTENCE_WITH_ANN: QuestionSentence = { ...SENTENCE, annotations: [ANN] };
 
   function el<T extends HTMLElement = HTMLElement>(selector: string): T | null {
     return fixture.nativeElement.querySelector(selector) as T | null;
@@ -172,45 +179,91 @@ describe('QuestionCardComponent', () => {
       fixture.detectChanges();
     });
 
-    it('should render three spans: pre, verb, post', () => {
-      expect(els('.reveal-sentence span').length).toBe(3);
+    it('should render full sentence text', () => {
+      const sentence = el('.reveal-sentence') as HTMLElement;
+      expect(sentence.textContent).toBe('She always drinks tea.');
     });
 
-    it('should render pre and post with tok-other class', () => {
-      const spans = els('.reveal-sentence span');
-      expect(spans[0].classList.contains('tok-other')).toBe(true);
-      expect(spans[2].classList.contains('tok-other')).toBe(true);
+    it('should render the verb token with tok-keyword class', () => {
+      const keywordSpans = els('.reveal-sentence .tok-keyword');
+      expect(keywordSpans.length).toBe(1);
+      expect(keywordSpans[0].textContent).toBe('drinks');
     });
 
-    it('should render verb with tok-keyword class', () => {
-      const spans = els('.reveal-sentence span');
-      expect(spans[1].classList.contains('tok-keyword')).toBe(true);
+    it('should render tok-other spans for word tokens outside verb', () => {
+      const wordSpans = els('.reveal-sentence .tok-other');
+      const texts = wordSpans.map(s => s.textContent);
+      expect(texts).toContain('She');
+      expect(texts).toContain('always');
+      expect(texts).toContain('tea');
     });
 
-    it('should render correct text content', () => {
-      const spans = els('.reveal-sentence span');
-      expect(spans[0].textContent).toBe('She always ');
-      expect(spans[1].textContent).toBe('drinks');
-      expect(spans[2].textContent).toBe(' tea.');
+    it('should render a tok-punct span for the period', () => {
+      const punctSpans = els('.reveal-sentence .tok-punct');
+      expect(punctSpans.length).toBeGreaterThan(0);
+      expect(punctSpans[0].textContent).toBe('.');
     });
 
-    it('should apply revealColor to keyword span', () => {
+    it('should apply revealColor to tok-keyword span', () => {
       fixture.componentRef.setInput('revealColor', 'oklch(0.76 0.15 158)');
       fixture.detectChanges();
-      const keywordSpan = el('.tok-keyword') as HTMLElement;
+      const keywordSpan = el<HTMLElement>('.tok-keyword')!;
       expect(keywordSpan.style.color).toBe('oklch(0.76 0.15 158)');
     });
 
-    it('should not apply inline color to pre/post spans', () => {
-      const spans = els<HTMLElement>('.reveal-sentence span');
-      expect(spans[0].style.color).toBe('');
-      expect(spans[2].style.color).toBe('');
+    it('should not apply inline color to non-keyword spans', () => {
+      const otherSpans = els<HTMLElement>('.reveal-sentence .tok-other');
+      for (const span of otherSpans) {
+        expect(span.style.color).toBe('');
+      }
     });
 
     it('should hide reveal-sentence when revealSentence is null', () => {
       fixture.componentRef.setInput('revealSentence', null);
       fixture.detectChanges();
       expect(el('.reveal-sentence')).toBeNull();
+    });
+  });
+
+  // ── Auto-annotation ──────────────────────────────────────────────────
+
+  describe('autoAnnotation', () => {
+    it('should not auto-show annotation by default', () => {
+      fixture.componentRef.setInput('revealName', 'Present Simple');
+      fixture.componentRef.setInput('revealSentence', SENTENCE_WITH_ANN);
+      fixture.componentRef.setInput('result', 'correct');
+      fixture.detectChanges();
+      expect(el('app-annotation-tooltip')).toBeNull();
+    });
+
+    it('should auto-show first annotation when autoAnnotation is true', () => {
+      fixture.componentRef.setInput('autoAnnotation', true);
+      fixture.componentRef.setInput('revealName', 'Present Simple');
+      fixture.componentRef.setInput('revealSentence', SENTENCE_WITH_ANN);
+      fixture.componentRef.setInput('result', 'correct');
+      fixture.detectChanges();
+      expect(el('app-annotation-tooltip')).not.toBeNull();
+    });
+
+    it('should clear annotation when result returns to none', () => {
+      fixture.componentRef.setInput('autoAnnotation', true);
+      fixture.componentRef.setInput('revealName', 'Present Simple');
+      fixture.componentRef.setInput('revealSentence', SENTENCE_WITH_ANN);
+      fixture.componentRef.setInput('result', 'correct');
+      fixture.detectChanges();
+
+      fixture.componentRef.setInput('result', 'none');
+      fixture.detectChanges();
+      expect(el('app-annotation-tooltip')).toBeNull();
+    });
+
+    it('should not auto-show annotation when sentence has no annotations', () => {
+      fixture.componentRef.setInput('autoAnnotation', true);
+      fixture.componentRef.setInput('revealName', 'Present Simple');
+      fixture.componentRef.setInput('revealSentence', SENTENCE);
+      fixture.componentRef.setInput('result', 'correct');
+      fixture.detectChanges();
+      expect(el('app-annotation-tooltip')).toBeNull();
     });
   });
 

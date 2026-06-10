@@ -23,10 +23,89 @@
     ],
     "sentences": [
       {
-        "pre": "The train ",
-        "verb": "had left",
-        "post": " before we arrived.",
-        "answer": "past-perfect"
+        "answer": "past-perfect",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "The",
+            "translation": {
+              "ru": "-"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "train",
+            "translation": {
+              "ru": "pociąg"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "had",
+            "role": "verb",
+            "translation": {
+              "ru": "имел/имела"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "left",
+            "role": "verb",
+            "translation": {
+              "ru": "левый"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "before",
+            "translation": {
+              "ru": "."
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "we",
+            "translation": {
+              "ru": "ср"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "arrived",
+            "translation": {
+              "ru": "прибыл"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
       }
     ]
   },
@@ -54,10 +133,78 @@
     ],
     "sentences": [
       {
-        "pre": "She ",
-        "verb": "had eaten",
-        "post": " before they came.",
-        "answer": "past-perfect"
+        "answer": "past-perfect",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "She",
+            "translation": {
+              "ru": "Она"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "had",
+            "role": "verb",
+            "translation": {
+              "ru": "имел/имела"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "eaten",
+            "role": "verb",
+            "translation": {
+              "ru": "поел/а"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "before",
+            "translation": {
+              "ru": "."
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "they",
+            "translation": {
+              "ru": "они"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "came",
+            "translation": {
+              "ru": "пришел"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
       }
     ]
   },
@@ -85,10 +232,116 @@
     ],
     "sentences": [
       {
-        "pre": "I couldn't get in because I ",
-        "verb": "had forgotten",
-        "post": " my key.",
-        "answer": "past-perfect"
+        "answer": "past-perfect",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "I"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "couldn't",
+            "translation": {
+              "ru": "не мог"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "get",
+            "translation": {
+              "ru": "взять"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "in",
+            "translation": {
+              "ru": "от"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "because",
+            "translation": {
+              "ru": "по"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "I"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "had",
+            "role": "verb",
+            "translation": {
+              "ru": "имел/имела"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "forgotten",
+            "role": "verb",
+            "translation": {
+              "ru": "забытый"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "my",
+            "translation": {
+              "ru": "мой"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "key",
+            "translation": {
+              "ru": "клавиша"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
       }
     ]
   },
@@ -116,10 +369,128 @@
     ],
     "sentences": [
       {
-        "pre": "By the time I graduated, I ",
-        "verb": "had worked",
-        "post": " on many projects.",
-        "answer": "past-perfect"
+        "answer": "past-perfect",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "By",
+            "translation": {
+              "ru": "________________________________"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "time",
+            "translation": {
+              "ru": "время"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "I"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "graduated",
+            "translation": {
+              "ru": "градуированный"
+            }
+          },
+          {
+            "type": "punct",
+            "value": ","
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "I"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "had",
+            "role": "verb",
+            "translation": {
+              "ru": "имел/имела"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "worked",
+            "role": "verb",
+            "translation": {
+              "ru": "RABOTA"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "on",
+            "translation": {
+              "ru": "горит"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "many",
+            "translation": {
+              "ru": "много"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "projects",
+            "translation": {
+              "ru": "проектов"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
       }
     ]
   },
@@ -147,10 +518,109 @@
     ],
     "sentences": [
       {
-        "pre": "They ",
-        "verb": "had planned",
-        "post": " the trip, but it was cancelled.",
-        "answer": "past-perfect"
+        "answer": "past-perfect",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "They",
+            "translation": {
+              "ru": "Они"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "had",
+            "role": "verb",
+            "translation": {
+              "ru": "имел/имела"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "planned",
+            "role": "verb",
+            "translation": {
+              "ru": "планируется"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "trip",
+            "translation": {
+              "ru": "трипсы,"
+            }
+          },
+          {
+            "type": "punct",
+            "value": ","
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "but",
+            "translation": {
+              "ru": "но"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "it"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "was",
+            "translation": {
+              "ru": "удаляли"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "cancelled",
+            "translation": {
+              "ru": "аннулиро-ванных"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
       }
     ]
   },
@@ -178,10 +648,133 @@
     ],
     "sentences": [
       {
-        "pre": "By the time they called, she ",
-        "verb": "had already left",
-        "post": " the office.",
-        "answer": "past-perfect"
+        "answer": "past-perfect",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "By",
+            "translation": {
+              "ru": "________________________________"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "time",
+            "translation": {
+              "ru": "время"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "they",
+            "translation": {
+              "ru": "они"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "called",
+            "translation": {
+              "ru": "звать"
+            }
+          },
+          {
+            "type": "punct",
+            "value": ","
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "she",
+            "translation": {
+              "ru": "она"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "had",
+            "role": "verb",
+            "translation": {
+              "ru": "имел/имела"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "already",
+            "role": "verb",
+            "translation": {
+              "ru": "уже"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "left",
+            "role": "verb",
+            "translation": {
+              "ru": "левый"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "office",
+            "translation": {
+              "ru": "офис "
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
       }
     ]
   },
@@ -209,10 +802,115 @@
     ],
     "sentences": [
       {
-        "pre": "If she ",
-        "verb": "had studied",
-        "post": " harder, she would have passed.",
-        "answer": "past-perfect"
+        "answer": "past-perfect",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "If",
+            "translation": {
+              "ru": "При"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "she",
+            "translation": {
+              "ru": "она"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "had",
+            "role": "verb",
+            "translation": {
+              "ru": "имел/имела"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "studied",
+            "role": "verb",
+            "translation": {
+              "ru": "изучена"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "harder",
+            "translation": {
+              "ru": "нагрузку. "
+            }
+          },
+          {
+            "type": "punct",
+            "value": ","
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "she",
+            "translation": {
+              "ru": "она"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "would",
+            "translation": {
+              "ru": "бы"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "have",
+            "translation": {
+              "ru": "быть"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "passed",
+            "translation": {
+              "ru": "зач."
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
       }
     ]
   },
@@ -240,10 +938,93 @@
     ],
     "sentences": [
       {
-        "pre": "I thought he ",
-        "verb": "had already finished",
-        "post": " the report.",
-        "answer": "past-perfect"
+        "answer": "past-perfect",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "I"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "thought",
+            "translation": {
+              "ru": "думал/а"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "he"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "had",
+            "role": "verb",
+            "translation": {
+              "ru": "имел/имела"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "already",
+            "role": "verb",
+            "translation": {
+              "ru": "уже"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "finished",
+            "role": "verb",
+            "translation": {
+              "ru": "образом"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "report",
+            "translation": {
+              "ru": "отчет о проведении валидации"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
       }
     ]
   },
@@ -271,10 +1052,113 @@
     ],
     "sentences": [
       {
-        "pre": "She told me she ",
-        "verb": "had never been",
-        "post": " abroad before.",
-        "answer": "past-perfect"
+        "answer": "past-perfect",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "She",
+            "translation": {
+              "ru": "Она"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "told",
+            "translation": {
+              "ru": "сказал/а"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "me",
+            "translation": {
+              "ru": "ХХХ"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "she",
+            "translation": {
+              "ru": "она"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "had",
+            "role": "verb",
+            "translation": {
+              "ru": "имел/имела"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "never",
+            "role": "verb",
+            "translation": {
+              "ru": "никогда"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "been",
+            "role": "verb",
+            "translation": {
+              "ru": "был"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "abroad",
+            "translation": {
+              "ru": "{1>знаки <1}{2>за <2}{3>рубежом<3}"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "before",
+            "translation": {
+              "ru": "."
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
       }
     ]
   },
@@ -302,10 +1186,139 @@
     ],
     "sentences": [
       {
-        "pre": "I realised I ",
-        "verb": "had met",
-        "post": " him before, at a conference in Berlin.",
-        "answer": "past-perfect"
+        "answer": "past-perfect",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "I"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "realised",
+            "translation": {
+              "ru": "Реализованная "
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "I"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "had",
+            "role": "verb",
+            "translation": {
+              "ru": "имел/имела"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "met",
+            "role": "verb",
+            "translation": {
+              "ru": "встретил/а"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "him",
+            "translation": {
+              "ru": "ему"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "before",
+            "translation": {
+              "ru": "."
+            }
+          },
+          {
+            "type": "punct",
+            "value": ","
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "at"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "a",
+            "translation": {
+              "ru": "а"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "conference",
+            "translation": {
+              "ru": "конференция"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "in",
+            "translation": {
+              "ru": "от"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "Berlin",
+            "translation": {
+              "ru": "Берлин"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
       }
     ]
   },
@@ -333,10 +1346,110 @@
     ],
     "sentences": [
       {
-        "pre": "It was the first time I ",
-        "verb": "had seen",
-        "post": " the ocean.",
-        "answer": "past-perfect"
+        "answer": "past-perfect",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "It"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "was",
+            "translation": {
+              "ru": "удаляли"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "first",
+            "translation": {
+              "ru": "первый"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "time",
+            "translation": {
+              "ru": "время"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "I"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "had",
+            "role": "verb",
+            "translation": {
+              "ru": "имел/имела"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "seen",
+            "role": "verb",
+            "translation": {
+              "ru": "видел/видела"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "ocean",
+            "translation": {
+              "ru": "океан"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
       }
     ]
   },
@@ -364,10 +1477,131 @@
     ],
     "sentences": [
       {
-        "pre": "When the doctor arrived, the patient ",
-        "verb": "had recovered",
-        "post": " on his own.",
-        "answer": "past-perfect"
+        "answer": "past-perfect",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "When",
+            "translation": {
+              "ru": "После пробуждения"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "doctor",
+            "translation": {
+              "ru": "врач"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "arrived",
+            "translation": {
+              "ru": "прибыл"
+            }
+          },
+          {
+            "type": "punct",
+            "value": ","
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "patient",
+            "translation": {
+              "ru": "пациент"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "had",
+            "role": "verb",
+            "translation": {
+              "ru": "имел/имела"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "recovered",
+            "role": "verb",
+            "translation": {
+              "ru": "."
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "on",
+            "translation": {
+              "ru": "горит"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "his",
+            "translation": {
+              "ru": "ХХХ"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "own",
+            "translation": {
+              "ru": "щих собствен"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
       }
     ]
   },
@@ -395,10 +1629,120 @@
     ],
     "sentences": [
       {
-        "pre": "At that point, no one ",
-        "verb": "had heard",
-        "post": " about the disaster.",
-        "answer": "past-perfect"
+        "answer": "past-perfect",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "At",
+            "translation": {
+              "ru": "А+"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "that",
+            "translation": {
+              "ru": "что"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "point",
+            "translation": {
+              "ru": "точка"
+            }
+          },
+          {
+            "type": "punct",
+            "value": ","
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "no",
+            "translation": {
+              "ru": "нет"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "one",
+            "translation": {
+              "ru": "ОДИН"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "had",
+            "role": "verb",
+            "translation": {
+              "ru": "имел/имела"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "heard",
+            "role": "verb",
+            "translation": {
+              "ru": "слышал/а"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "about"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "disaster",
+            "translation": {
+              "ru": "несчастье"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
       }
     ]
   },
@@ -426,10 +1770,132 @@
     ],
     "sentences": [
       {
-        "pre": "By the time I applied, the position ",
-        "verb": "had already been filled",
-        "post": ".",
-        "answer": "past-perfect"
+        "answer": "past-perfect",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "By",
+            "translation": {
+              "ru": "________________________________"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "time",
+            "translation": {
+              "ru": "время"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "I"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "applied",
+            "translation": {
+              "ru": "применяемый"
+            }
+          },
+          {
+            "type": "punct",
+            "value": ","
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "position",
+            "translation": {
+              "ru": "Расположение"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "had",
+            "role": "verb",
+            "translation": {
+              "ru": "имел/имела"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "already",
+            "role": "verb",
+            "translation": {
+              "ru": "уже"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "been",
+            "role": "verb",
+            "translation": {
+              "ru": "был"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "filled",
+            "role": "verb",
+            "translation": {
+              "ru": "заполненный"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
       }
     ]
   },
@@ -457,10 +1923,149 @@
     ],
     "sentences": [
       {
-        "pre": "She recognised the building immediately — she ",
-        "verb": "had lived",
-        "post": " there as a child.",
-        "answer": "past-perfect"
+        "answer": "past-perfect",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "She",
+            "translation": {
+              "ru": "Она"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "recognised",
+            "translation": {
+              "ru": "учтенная"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "building",
+            "translation": {
+              "ru": "здание"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "immediately",
+            "translation": {
+              "ru": "&amp;"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "punct",
+            "value": "—"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "she",
+            "translation": {
+              "ru": "она"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "had",
+            "role": "verb",
+            "translation": {
+              "ru": "имел/имела"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "lived",
+            "role": "verb",
+            "translation": {
+              "ru": "Жить\n"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "there",
+            "translation": {
+              "ru": "там"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "as",
+            "translation": {
+              "ru": "ХХХ"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "a",
+            "translation": {
+              "ru": "а"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "child",
+            "translation": {
+              "ru": "?????"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
       }
     ]
   },
@@ -488,10 +2093,119 @@
     ],
     "sentences": [
       {
-        "pre": "She ",
-        "verb": "hadn't slept",
-        "post": " properly for days before the final exam.",
-        "answer": "past-perfect"
+        "answer": "past-perfect",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "She",
+            "translation": {
+              "ru": "Она"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "hadn't",
+            "role": "verb",
+            "translation": {
+              "ru": "не было"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "slept",
+            "role": "verb",
+            "translation": {
+              "ru": "Сон"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "properly",
+            "translation": {
+              "ru": "надлежащим образом"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "for",
+            "translation": {
+              "ru": "."
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "days",
+            "translation": {
+              "ru": "дней"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "before",
+            "translation": {
+              "ru": "."
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "final",
+            "translation": {
+              "ru": "окончательное"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "exam",
+            "translation": {
+              "ru": "экзамен"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
       }
     ]
   },
@@ -519,10 +2233,108 @@
     ],
     "sentences": [
       {
-        "pre": "They asked whether anyone ",
-        "verb": "had seen",
-        "post": " the missing keys.",
-        "answer": "past-perfect"
+        "answer": "past-perfect",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "They",
+            "translation": {
+              "ru": "Они"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "asked",
+            "translation": {
+              "ru": "написал"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "whether",
+            "translation": {
+              "ru": "Уж не из Испании ли дядечка?"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "anyone",
+            "translation": {
+              "ru": "любой"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "had",
+            "role": "verb",
+            "translation": {
+              "ru": "имел/имела"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "seen",
+            "role": "verb",
+            "translation": {
+              "ru": "видел/видела"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "missing",
+            "translation": {
+              "ru": "пропущенный"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "keys",
+            "translation": {
+              "ru": "ключи"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
       }
     ]
   },
@@ -550,10 +2362,136 @@
     ],
     "sentences": [
       {
-        "pre": "By the time the authorities arrived, the witnesses ",
-        "verb": "had left",
-        "post": " the scene.",
-        "answer": "past-perfect"
+        "answer": "past-perfect",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "By",
+            "translation": {
+              "ru": "________________________________"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "time",
+            "translation": {
+              "ru": "время"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "authorities",
+            "translation": {
+              "ru": "органов"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "arrived",
+            "translation": {
+              "ru": "прибыл"
+            }
+          },
+          {
+            "type": "punct",
+            "value": ","
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "witnesses",
+            "translation": {
+              "ru": "понятые"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "had",
+            "role": "verb",
+            "translation": {
+              "ru": "имел/имела"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "left",
+            "role": "verb",
+            "translation": {
+              "ru": "левый"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "scene",
+            "translation": {
+              "ru": "сцена"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
       }
     ]
   },
@@ -581,10 +2519,146 @@
     ],
     "sentences": [
       {
-        "pre": "I wish I ",
-        "verb": "had taken",
-        "post": " her advice — everything would have been different.",
-        "answer": "past-perfect"
+        "answer": "past-perfect",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "I"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "wish",
+            "translation": {
+              "ru": "желание"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "I"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "had",
+            "role": "verb",
+            "translation": {
+              "ru": "имел/имела"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "taken",
+            "role": "verb",
+            "translation": {
+              "ru": "взял/а"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "her",
+            "translation": {
+              "ru": "ей"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "advice",
+            "translation": {
+              "ru": "совет"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "punct",
+            "value": "—"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "everything",
+            "translation": {
+              "ru": "всё"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "would",
+            "translation": {
+              "ru": "бы"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "have",
+            "translation": {
+              "ru": "быть"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "been",
+            "translation": {
+              "ru": "был"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "different",
+            "translation": {
+              "ru": "разный"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
       }
     ]
   },
@@ -612,10 +2686,117 @@
     ],
     "sentences": [
       {
-        "pre": "Hardly ",
-        "verb": "had",
-        "post": " she sat down when the phone rang again.",
-        "answer": "past-perfect"
+        "answer": "past-perfect",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "Hardly",
+            "translation": {
+              "ru": "Едва ли"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "had",
+            "role": "verb",
+            "translation": {
+              "ru": "имел/имела"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "she",
+            "translation": {
+              "ru": "она"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "sat",
+            "translation": {
+              "ru": "уд"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "down",
+            "translation": {
+              "ru": "Вниз"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "when",
+            "translation": {
+              "ru": "когда,"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "phone",
+            "translation": {
+              "ru": "13, тел."
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "rang",
+            "translation": {
+              "ru": "звенел"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "again",
+            "translation": {
+              "ru": "снова"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
       }
     ]
   },
@@ -643,10 +2824,150 @@
     ],
     "sentences": [
       {
-        "pre": "After he ",
-        "verb": "had submitted",
-        "post": " the application, he felt a huge sense of relief.",
-        "answer": "past-perfect"
+        "answer": "past-perfect",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "After",
+            "translation": {
+              "ru": "После"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "he"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "had",
+            "role": "verb",
+            "translation": {
+              "ru": "имел/имела"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "submitted",
+            "role": "verb",
+            "translation": {
+              "ru": "отправлен"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "application",
+            "translation": {
+              "ru": "приложение"
+            }
+          },
+          {
+            "type": "punct",
+            "value": ","
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "he"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "felt",
+            "translation": {
+              "ru": "Фетр"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "a",
+            "translation": {
+              "ru": "а"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "huge",
+            "translation": {
+              "ru": "огромный "
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "sense",
+            "translation": {
+              "ru": "чувствовать"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "of",
+            "translation": {
+              "ru": "коллегиальных"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "relief",
+            "translation": {
+              "ru": "облегчение"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
       }
     ]
   },
@@ -674,10 +2995,144 @@
     ],
     "sentences": [
       {
-        "pre": "By the time we arrived, all the tickets ",
-        "verb": "had been sold",
-        "post": " out.",
-        "answer": "past-perfect"
+        "answer": "past-perfect",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "By",
+            "translation": {
+              "ru": "________________________________"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "time",
+            "translation": {
+              "ru": "время"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "we",
+            "translation": {
+              "ru": "ср"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "arrived",
+            "translation": {
+              "ru": "прибыл"
+            }
+          },
+          {
+            "type": "punct",
+            "value": ","
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "all",
+            "translation": {
+              "ru": "все"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "tickets",
+            "translation": {
+              "ru": "тикеты"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "had",
+            "role": "verb",
+            "translation": {
+              "ru": "имел/имела"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "been",
+            "role": "verb",
+            "translation": {
+              "ru": "был"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "sold",
+            "role": "verb",
+            "translation": {
+              "ru": "количество"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "out",
+            "translation": {
+              "ru": "Выходной"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
       }
     ]
   },
@@ -705,10 +3160,120 @@
     ],
     "sentences": [
       {
-        "pre": "Once they ",
-        "verb": "had signed",
-        "post": " the contract, the work could begin.",
-        "answer": "past-perfect"
+        "answer": "past-perfect",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "Once",
+            "translation": {
+              "ru": "После"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "they",
+            "translation": {
+              "ru": "они"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "had",
+            "role": "verb",
+            "translation": {
+              "ru": "имел/имела"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "signed",
+            "role": "verb",
+            "translation": {
+              "ru": "Подпись"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "contract",
+            "translation": {
+              "ru": "контракт"
+            }
+          },
+          {
+            "type": "punct",
+            "value": ","
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "work",
+            "translation": {
+              "ru": "работа"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "could",
+            "translation": {
+              "ru": "мог"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "begin",
+            "translation": {
+              "ru": "в начале"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
       }
     ]
   },
@@ -736,10 +3301,144 @@
     ],
     "sentences": [
       {
-        "pre": "Before the accident, he ",
-        "verb": "had never been",
-        "post": " to hospital in his life.",
-        "answer": "past-perfect"
+        "answer": "past-perfect",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "Before",
+            "translation": {
+              "ru": "Было"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "accident",
+            "translation": {
+              "ru": "происшествие"
+            }
+          },
+          {
+            "type": "punct",
+            "value": ","
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "he"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "had",
+            "role": "verb",
+            "translation": {
+              "ru": "имел/имела"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "never",
+            "role": "verb",
+            "translation": {
+              "ru": "никогда"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "been",
+            "role": "verb",
+            "translation": {
+              "ru": "был"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "to",
+            "translation": {
+              "ru": "кому"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "hospital",
+            "translation": {
+              "ru": "больница"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "in",
+            "translation": {
+              "ru": "от"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "his",
+            "translation": {
+              "ru": "ХХХ"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "life",
+            "translation": {
+              "ru": "жизнь"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
       }
     ]
   },
@@ -767,10 +3466,161 @@
     ],
     "sentences": [
       {
-        "pre": "Before she moved to Paris, she ",
-        "verb": "had never spoken",
-        "post": " French outside a classroom.",
-        "answer": "past-perfect"
+        "answer": "past-perfect",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "Before",
+            "translation": {
+              "ru": "Было"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "she",
+            "translation": {
+              "ru": "она"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "moved",
+            "translation": {
+              "ru": "Перемещено"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "to",
+            "translation": {
+              "ru": "кому"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "Paris",
+            "translation": {
+              "ru": "Париж"
+            }
+          },
+          {
+            "type": "punct",
+            "value": ","
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "she",
+            "translation": {
+              "ru": "она"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "had",
+            "role": "verb",
+            "translation": {
+              "ru": "имел/имела"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "never",
+            "role": "verb",
+            "translation": {
+              "ru": "никогда"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "spoken",
+            "role": "verb",
+            "translation": {
+              "ru": "Умение воспроизводить речь"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "French",
+            "translation": {
+              "ru": "Французский"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "outside",
+            "translation": {
+              "ru": "извне"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "a",
+            "translation": {
+              "ru": "а"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "classroom",
+            "translation": {
+              "ru": "класс"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
       }
     ]
   }

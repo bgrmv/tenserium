@@ -15,6 +15,7 @@ import { QuestionRepository } from '@entities/question';
 import { getTense } from '@shared/config/tenses.config';
 import { tenseColor } from '@shared/config/tense-colors';
 import type { Question, TenseId } from '@shared/types';
+import { tokenizeSentence } from '@shared/lib/tokenize';
 import { AnswerGridComponent } from '@features/answer-input';
 import { QuestionCardComponent, type ResultState } from '@widgets/question-card';
 import { ScoreBarComponent } from '@widgets/score-bar';
@@ -29,7 +30,7 @@ const DEMO_QUESTION: Question = {
   mechanism: 'context',
   prompt: { ru: 'She always drinks tea in the morning.', en: 'She always drinks tea in the morning.' },
   sentences: [
-    { pre: 'She always ', verb: 'drinks', post: ' tea in the morning.', answer: 'present-simple' },
+    { tokens: tokenizeSentence('She always ', 'drinks', ' tea in the morning.'), answer: 'present-simple' },
   ],
   tags: ['present-simple', 'affirmative', 'simple'],
   difficulty: 1,

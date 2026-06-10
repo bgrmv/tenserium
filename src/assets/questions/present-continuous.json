@@ -27,9 +27,6 @@
     "difficulty": 1,
     "sentences": [
       {
-        "pre": "Be quiet — the baby ",
-        "verb": "is sleeping",
-        "post": ".",
         "answer": "present-continuous",
         "distractors": [
           {
@@ -40,6 +37,82 @@
           },
           {
             "tenseId": "present-perfect-continuous"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "word",
+            "value": "Be",
+            "translation": {
+              "ru": "Всегда будьте"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "quiet",
+            "translation": {
+              "ru": "тихий"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "punct",
+            "value": "—"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "baby",
+            "translation": {
+              "ru": "ребёнок"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "is",
+            "role": "verb",
+            "translation": {
+              "ru": "является"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "sleeping",
+            "role": "verb",
+            "translation": {
+              "ru": "СОН"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
           }
         ]
       }
@@ -73,9 +146,6 @@
     "difficulty": 1,
     "sentences": [
       {
-        "pre": "We ",
-        "verb": "are flying",
-        "post": " to Paris on Friday.",
         "answer": "present-continuous",
         "distractors": [
           {
@@ -86,6 +156,88 @@
           },
           {
             "tenseId": "future-continuous"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "word",
+            "value": "We",
+            "translation": {
+              "ru": "Перед"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "are",
+            "role": "verb",
+            "translation": {
+              "ru": "заднем окне включены"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "flying",
+            "role": "verb",
+            "translation": {
+              "ru": "полет"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "to",
+            "translation": {
+              "ru": "кому"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "Paris",
+            "translation": {
+              "ru": "Париж"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "on",
+            "translation": {
+              "ru": "горит"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "Friday",
+            "translation": {
+              "ru": "Пятница"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
           }
         ]
       }
@@ -119,9 +271,6 @@
     "difficulty": 1,
     "sentences": [
       {
-        "pre": "I ",
-        "verb": "am writing",
-        "post": " an email right now.",
         "answer": "present-continuous",
         "distractors": [
           {
@@ -132,6 +281,82 @@
           },
           {
             "tenseId": "present-perfect-continuous"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "word",
+            "value": "I"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "am",
+            "role": "verb",
+            "translation": {
+              "ru": "дп"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "writing",
+            "role": "verb",
+            "translation": {
+              "ru": "письмо"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "an"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "email",
+            "translation": {
+              "ru": "Отправлено по электронной почте"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "right",
+            "translation": {
+              "ru": "правый"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "now",
+            "translation": {
+              "ru": "сейчас"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
           }
         ]
       }
@@ -165,9 +390,6 @@
     "difficulty": 1,
     "sentences": [
       {
-        "pre": "She ",
-        "verb": "is studying",
-        "post": " for her exams this month.",
         "answer": "present-continuous",
         "distractors": [
           {
@@ -178,6 +400,99 @@
           },
           {
             "tenseId": "past-continuous"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "word",
+            "value": "She",
+            "translation": {
+              "ru": "Она"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "is",
+            "role": "verb",
+            "translation": {
+              "ru": "является"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "studying",
+            "role": "verb",
+            "translation": {
+              "ru": "изучение"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "for",
+            "translation": {
+              "ru": "."
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "her",
+            "translation": {
+              "ru": "ей"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "exams",
+            "translation": {
+              "ru": "экзамены"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "this",
+            "translation": {
+              "ru": "сего"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "month",
+            "translation": {
+              "ru": "месяца"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
           }
         ]
       }
@@ -211,9 +526,6 @@
     "difficulty": 2,
     "sentences": [
       {
-        "pre": "The world population ",
-        "verb": "is growing",
-        "post": " rapidly.",
         "answer": "present-continuous",
         "distractors": [
           {
@@ -224,6 +536,77 @@
           },
           {
             "tenseId": "past-continuous"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "word",
+            "value": "The",
+            "translation": {
+              "ru": "-"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "world",
+            "translation": {
+              "ru": "мир"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "population",
+            "translation": {
+              "ru": "население"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "is",
+            "role": "verb",
+            "translation": {
+              "ru": "является"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "growing",
+            "role": "verb",
+            "translation": {
+              "ru": "на данный момент количество (apartments/share houses) составляет (14/21), но будет увеличиваться"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "rapidly",
+            "translation": {
+              "ru": "быстро"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
           }
         ]
       }
@@ -257,9 +640,6 @@
     "difficulty": 2,
     "sentences": [
       {
-        "pre": "You ",
-        "verb": "are always complaining",
-        "post": " about everything!",
         "answer": "present-continuous",
         "distractors": [
           {
@@ -270,6 +650,76 @@
           },
           {
             "tenseId": "present-perfect-continuous"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "word",
+            "value": "You",
+            "translation": {
+              "ru": "Вы"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "are",
+            "role": "verb",
+            "translation": {
+              "ru": "заднем окне включены"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "always",
+            "role": "verb",
+            "translation": {
+              "ru": "всегда"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "complaining",
+            "role": "verb",
+            "translation": {
+              "ru": "Донос"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "about"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "everything",
+            "translation": {
+              "ru": "всё"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "!"
           }
         ]
       }
@@ -303,9 +753,6 @@
     "difficulty": 2,
     "sentences": [
       {
-        "pre": "Look! The children ",
-        "verb": "are playing",
-        "post": " in the park.",
         "answer": "present-continuous",
         "distractors": [
           {
@@ -316,6 +763,100 @@
           },
           {
             "tenseId": "present-perfect"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "word",
+            "value": "Look",
+            "translation": {
+              "ru": "Обзор"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "!"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "The",
+            "translation": {
+              "ru": "-"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "children",
+            "translation": {
+              "ru": "с рвотой"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "are",
+            "role": "verb",
+            "translation": {
+              "ru": "заднем окне включены"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "playing",
+            "role": "verb",
+            "translation": {
+              "ru": "воспроизводится"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "in",
+            "translation": {
+              "ru": "от"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "park",
+            "translation": {
+              "ru": "парковка"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
           }
         ]
       }
@@ -349,9 +890,6 @@
     "difficulty": 2,
     "sentences": [
       {
-        "pre": "They ",
-        "verb": "are getting married",
-        "post": " next month.",
         "answer": "present-continuous",
         "distractors": [
           {
@@ -362,6 +900,79 @@
           },
           {
             "tenseId": "future-continuous"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "word",
+            "value": "They",
+            "translation": {
+              "ru": "Они"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "are",
+            "role": "verb",
+            "translation": {
+              "ru": "заднем окне включены"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "getting",
+            "role": "verb",
+            "translation": {
+              "ru": "чтобы я заказала"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "married",
+            "role": "verb",
+            "translation": {
+              "ru": "женат"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "next",
+            "translation": {
+              "ru": "след."
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "month",
+            "translation": {
+              "ru": "месяца"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
           }
         ]
       }
@@ -395,9 +1006,6 @@
     "difficulty": 2,
     "sentences": [
       {
-        "pre": "He normally drives, but this week he ",
-        "verb": "is taking",
-        "post": " the bus.",
         "answer": "present-continuous",
         "distractors": [
           {
@@ -408,6 +1016,130 @@
           },
           {
             "tenseId": "present-perfect-continuous"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "word",
+            "value": "He",
+            "translation": {
+              "ru": "Он,"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "normally",
+            "translation": {
+              "ru": "обычно"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "drives",
+            "translation": {
+              "ru": "П|ЭИВОД OBj"
+            }
+          },
+          {
+            "type": "punct",
+            "value": ","
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "but",
+            "translation": {
+              "ru": "но"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "this",
+            "translation": {
+              "ru": "сего"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "week",
+            "translation": {
+              "ru": "неделя"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "he"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "is",
+            "role": "verb",
+            "translation": {
+              "ru": "является"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "taking",
+            "role": "verb",
+            "translation": {
+              "ru": "изъятие; покупка опциона"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "bus",
+            "translation": {
+              "ru": "шина"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
           }
         ]
       }
@@ -441,9 +1173,6 @@
     "difficulty": 2,
     "sentences": [
       {
-        "pre": "Sorry, I can't talk — I ",
-        "verb": "am having",
-        "post": " dinner.",
         "answer": "present-continuous",
         "distractors": [
           {
@@ -454,6 +1183,105 @@
           },
           {
             "tenseId": "present-perfect-continuous"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "word",
+            "value": "Sorry",
+            "translation": {
+              "ru": "Простите"
+            }
+          },
+          {
+            "type": "punct",
+            "value": ","
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "I"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "can't",
+            "translation": {
+              "ru": "не мочь"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "talk",
+            "translation": {
+              "ru": "разговаривать"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "punct",
+            "value": "—"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "I"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "am",
+            "role": "verb",
+            "translation": {
+              "ru": "дп"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "having",
+            "role": "verb",
+            "translation": {
+              "ru": "имеющих"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "dinner",
+            "translation": {
+              "ru": "ужин"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
           }
         ]
       }
@@ -487,9 +1315,6 @@
     "difficulty": 2,
     "sentences": [
       {
-        "pre": "More and more people ",
-        "verb": "are working",
-        "post": " remotely.",
         "answer": "present-continuous",
         "distractors": [
           {
@@ -500,6 +1325,88 @@
           },
           {
             "tenseId": "past-continuous"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "word",
+            "value": "More",
+            "translation": {
+              "ru": "Еще"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "and",
+            "translation": {
+              "ru": "и"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "more",
+            "translation": {
+              "ru": "дополнительно"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "people",
+            "translation": {
+              "ru": "человек"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "are",
+            "role": "verb",
+            "translation": {
+              "ru": "заднем окне включены"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "working",
+            "role": "verb",
+            "translation": {
+              "ru": "рабочих"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "remotely",
+            "translation": {
+              "ru": "дистанционно"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
           }
         ]
       }
@@ -533,9 +1440,6 @@
     "difficulty": 3,
     "sentences": [
       {
-        "pre": "My brother ",
-        "verb": "is constantly interrupting",
-        "post": " me when I speak.",
         "answer": "present-continuous",
         "distractors": [
           {
@@ -546,6 +1450,109 @@
           },
           {
             "tenseId": "present-perfect-continuous"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "word",
+            "value": "My",
+            "translation": {
+              "ru": "Мой"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "brother",
+            "translation": {
+              "ru": "брат"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "is",
+            "role": "verb",
+            "translation": {
+              "ru": "является"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "constantly",
+            "role": "verb",
+            "translation": {
+              "ru": "постоянно"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "interrupting",
+            "role": "verb",
+            "translation": {
+              "ru": "Прерывание"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "me",
+            "translation": {
+              "ru": "ХХХ"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "when",
+            "translation": {
+              "ru": "когда,"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "I"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "speak",
+            "translation": {
+              "ru": "говорю"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
           }
         ]
       }
@@ -579,9 +1586,6 @@
     "difficulty": 3,
     "sentences": [
       {
-        "pre": "I ",
-        "verb": "am meeting",
-        "post": " the director at three o'clock tomorrow.",
         "answer": "present-continuous",
         "distractors": [
           {
@@ -592,6 +1596,101 @@
           },
           {
             "tenseId": "future-continuous"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "word",
+            "value": "I"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "am",
+            "role": "verb",
+            "translation": {
+              "ru": "дп"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "meeting",
+            "role": "verb",
+            "translation": {
+              "ru": "встреча"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "director",
+            "translation": {
+              "ru": "директор"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "at"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "three",
+            "translation": {
+              "ru": "три"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "o'clock",
+            "translation": {
+              "ru": "часов"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "tomorrow",
+            "translation": {
+              "ru": "завтра"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
           }
         ]
       }
@@ -625,9 +1724,6 @@
     "difficulty": 3,
     "sentences": [
       {
-        "pre": "The patient ",
-        "verb": "is improving",
-        "post": " steadily.",
         "answer": "present-continuous",
         "distractors": [
           {
@@ -638,6 +1734,66 @@
           },
           {
             "tenseId": "past-continuous"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "word",
+            "value": "The",
+            "translation": {
+              "ru": "-"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "patient",
+            "translation": {
+              "ru": "пациент"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "is",
+            "role": "verb",
+            "translation": {
+              "ru": "является"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "improving",
+            "role": "verb",
+            "translation": {
+              "ru": "Улучшается"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "steadily",
+            "translation": {
+              "ru": "Неуклонно"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
           }
         ]
       }
@@ -671,9 +1827,6 @@
     "difficulty": 3,
     "sentences": [
       {
-        "pre": "She ",
-        "verb": "is acting",
-        "post": " very strangely lately.",
         "answer": "present-continuous",
         "distractors": [
           {
@@ -684,6 +1837,74 @@
           },
           {
             "tenseId": "past-continuous"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "word",
+            "value": "She",
+            "translation": {
+              "ru": "Она"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "is",
+            "role": "verb",
+            "translation": {
+              "ru": "является"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "acting",
+            "role": "verb",
+            "translation": {
+              "ru": "действующий(ая)"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "very",
+            "translation": {
+              "ru": "очень"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "strangely",
+            "translation": {
+              "ru": "Странно"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "lately"
+          },
+          {
+            "type": "punct",
+            "value": "."
           }
         ]
       }
@@ -717,9 +1938,6 @@
     "difficulty": 1,
     "sentences": [
       {
-        "pre": "Don't call him now — he ",
-        "verb": "isn't working",
-        "post": ", he's sleeping.",
         "answer": "present-continuous",
         "distractors": [
           {
@@ -730,6 +1948,119 @@
           },
           {
             "tenseId": "present-perfect"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "word",
+            "value": "Don't",
+            "translation": {
+              "ru": "Не"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "call",
+            "translation": {
+              "ru": "звонок"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "him",
+            "translation": {
+              "ru": "ему"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "now",
+            "translation": {
+              "ru": "сейчас"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "punct",
+            "value": "—"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "he"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "isn't",
+            "role": "verb",
+            "translation": {
+              "ru": "не совпадает с"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "working",
+            "role": "verb",
+            "translation": {
+              "ru": "рабочих"
+            }
+          },
+          {
+            "type": "punct",
+            "value": ","
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "he's",
+            "translation": {
+              "ru": "он"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "sleeping",
+            "translation": {
+              "ru": "СОН"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
           }
         ]
       }
@@ -763,9 +2094,6 @@
     "difficulty": 1,
     "sentences": [
       {
-        "pre": "What ",
-        "verb": "are you doing",
-        "post": " on Saturday evening?",
         "answer": "present-continuous",
         "distractors": [
           {
@@ -776,6 +2104,90 @@
           },
           {
             "tenseId": "past-continuous"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "word",
+            "value": "What",
+            "translation": {
+              "ru": "Что"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "are",
+            "role": "verb",
+            "translation": {
+              "ru": "заднем окне включены"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "you",
+            "role": "verb",
+            "translation": {
+              "ru": "вы"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "doing",
+            "role": "verb",
+            "translation": {
+              "ru": "делать"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "on",
+            "translation": {
+              "ru": "горит"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "Saturday",
+            "translation": {
+              "ru": "Суббота "
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "evening",
+            "translation": {
+              "ru": "вечер"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "?"
           }
         ]
       }
@@ -809,9 +2221,6 @@
     "difficulty": 2,
     "sentences": [
       {
-        "pre": "In this picture, the astronaut ",
-        "verb": "is floating",
-        "post": " above the Earth.",
         "answer": "present-continuous",
         "distractors": [
           {
@@ -822,6 +2231,116 @@
           },
           {
             "tenseId": "past-simple"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "word",
+            "value": "In",
+            "translation": {
+              "ru": "Нач."
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "this",
+            "translation": {
+              "ru": "сего"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "picture",
+            "translation": {
+              "ru": "картина"
+            }
+          },
+          {
+            "type": "punct",
+            "value": ","
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "astronaut",
+            "translation": {
+              "ru": "космонавт"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "is",
+            "role": "verb",
+            "translation": {
+              "ru": "является"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "floating",
+            "role": "verb"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "above",
+            "translation": {
+              "ru": "над "
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "Earth",
+            "translation": {
+              "ru": "Земля"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
           }
         ]
       }
@@ -855,9 +2374,6 @@
     "difficulty": 2,
     "sentences": [
       {
-        "pre": "I ",
-        "verb": "am staying",
-        "post": " at my sister's place while my flat is being renovated.",
         "answer": "present-continuous",
         "distractors": [
           {
@@ -868,6 +2384,148 @@
           },
           {
             "tenseId": "past-continuous"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "word",
+            "value": "I"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "am",
+            "role": "verb",
+            "translation": {
+              "ru": "дп"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "staying",
+            "role": "verb",
+            "translation": {
+              "ru": "проживание"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "at"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "my",
+            "translation": {
+              "ru": "мой"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "sister's",
+            "translation": {
+              "ru": "сестры"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "place",
+            "translation": {
+              "ru": "место"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "while",
+            "translation": {
+              "ru": "пока"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "my",
+            "translation": {
+              "ru": "мой"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "flat",
+            "translation": {
+              "ru": "плоский"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "is",
+            "translation": {
+              "ru": "является"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "being",
+            "translation": {
+              "ru": "быть/находиться"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "renovated",
+            "translation": {
+              "ru": "Реновация"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
           }
         ]
       }
@@ -901,9 +2559,6 @@
     "difficulty": 2,
     "sentences": [
       {
-        "pre": "Electric vehicles ",
-        "verb": "are becoming",
-        "post": " increasingly popular.",
         "answer": "present-continuous",
         "distractors": [
           {
@@ -914,6 +2569,77 @@
           },
           {
             "tenseId": "past-continuous"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "word",
+            "value": "Electric",
+            "translation": {
+              "ru": "Электрическая часть"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "vehicles",
+            "translation": {
+              "ru": "ТС"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "are",
+            "role": "verb",
+            "translation": {
+              "ru": "заднем окне включены"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "becoming",
+            "role": "verb",
+            "translation": {
+              "ru": "подходящий"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "increasingly",
+            "translation": {
+              "ru": "все чаще"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "popular",
+            "translation": {
+              "ru": "популярные"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
           }
         ]
       }
@@ -947,9 +2673,6 @@
     "difficulty": 2,
     "sentences": [
       {
-        "pre": "Are you ",
-        "verb": "coming",
-        "post": " to the party on Friday?",
         "answer": "present-continuous",
         "distractors": [
           {
@@ -960,6 +2683,94 @@
           },
           {
             "tenseId": "future-continuous"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "word",
+            "value": "Are",
+            "translation": {
+              "ru": "Ар"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "you",
+            "translation": {
+              "ru": "вы"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "coming",
+            "role": "verb",
+            "translation": {
+              "ru": "исходить"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "to",
+            "translation": {
+              "ru": "кому"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "party",
+            "translation": {
+              "ru": "третьих"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "on",
+            "translation": {
+              "ru": "горит"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "Friday",
+            "translation": {
+              "ru": "Пятница"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "?"
           }
         ]
       }
@@ -993,9 +2804,6 @@
     "difficulty": 3,
     "sentences": [
       {
-        "pre": "She usually works in the city, but this month she ",
-        "verb": "is working",
-        "post": " from home.",
         "answer": "present-continuous",
         "distractors": [
           {
@@ -1006,6 +2814,163 @@
           },
           {
             "tenseId": "past-continuous"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "word",
+            "value": "She",
+            "translation": {
+              "ru": "Она"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "usually",
+            "translation": {
+              "ru": "обычно"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "works",
+            "translation": {
+              "ru": "работы,"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "in",
+            "translation": {
+              "ru": "от"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "city"
+          },
+          {
+            "type": "punct",
+            "value": ","
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "but",
+            "translation": {
+              "ru": "но"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "this",
+            "translation": {
+              "ru": "сего"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "month",
+            "translation": {
+              "ru": "месяца"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "she",
+            "translation": {
+              "ru": "она"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "is",
+            "role": "verb",
+            "translation": {
+              "ru": "является"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "working",
+            "role": "verb",
+            "translation": {
+              "ru": "рабочих"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "from",
+            "translation": {
+              "ru": "от"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "home",
+            "translation": {
+              "ru": "главная"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
           }
         ]
       }
@@ -1039,9 +3004,6 @@
     "difficulty": 3,
     "sentences": [
       {
-        "pre": "The traffic ",
-        "verb": "is getting",
-        "post": " worse every year.",
         "answer": "present-continuous",
         "distractors": [
           {
@@ -1052,6 +3014,88 @@
           },
           {
             "tenseId": "past-continuous"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "word",
+            "value": "The",
+            "translation": {
+              "ru": "-"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "traffic",
+            "translation": {
+              "ru": "трафиков"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "is",
+            "role": "verb",
+            "translation": {
+              "ru": "является"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "getting",
+            "role": "verb",
+            "translation": {
+              "ru": "чтобы я заказала"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "worse",
+            "translation": {
+              "ru": "хуже"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "every",
+            "translation": {
+              "ru": "каждый"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "year",
+            "translation": {
+              "ru": "год"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
           }
         ]
       }
@@ -1085,9 +3129,6 @@
     "difficulty": 2,
     "sentences": [
       {
-        "pre": "Hurry up! The taxi ",
-        "verb": "is waiting",
-        "post": " outside.",
         "answer": "present-continuous",
         "distractors": [
           {
@@ -1098,6 +3139,89 @@
           },
           {
             "tenseId": "present-perfect-continuous"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "word",
+            "value": "Hurry",
+            "translation": {
+              "ru": "Скорее"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "up",
+            "translation": {
+              "ru": "вверх"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "!"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "The",
+            "translation": {
+              "ru": "-"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "taxi"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "is",
+            "role": "verb",
+            "translation": {
+              "ru": "является"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "waiting",
+            "role": "verb",
+            "translation": {
+              "ru": "ожидание"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "outside",
+            "translation": {
+              "ru": "извне"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
           }
         ]
       }
@@ -1131,9 +3255,6 @@
     "difficulty": 3,
     "sentences": [
       {
-        "pre": "They ",
-        "verb": "are constantly making",
-        "post": " noise during lectures.",
         "answer": "present-continuous",
         "distractors": [
           {
@@ -1144,6 +3265,90 @@
           },
           {
             "tenseId": "present-perfect-continuous"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "word",
+            "value": "They",
+            "translation": {
+              "ru": "Они"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "are",
+            "role": "verb",
+            "translation": {
+              "ru": "заднем окне включены"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "constantly",
+            "role": "verb",
+            "translation": {
+              "ru": "постоянно"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "making",
+            "role": "verb",
+            "translation": {
+              "ru": "изготовление"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "noise",
+            "translation": {
+              "ru": "шум"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "during",
+            "translation": {
+              "ru": "при"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "lectures",
+            "translation": {
+              "ru": "лекции"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
           }
         ]
       }

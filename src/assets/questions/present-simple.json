@@ -27,9 +27,6 @@
     "difficulty": 1,
     "sentences": [
       {
-        "pre": "She ",
-        "verb": "works",
-        "post": " every morning.",
         "answer": "present-simple",
         "distractors": [
           {
@@ -40,6 +37,53 @@
           },
           {
             "tenseId": "present-perfect"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "word",
+            "value": "She",
+            "translation": {
+              "ru": "Она"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "works",
+            "role": "verb",
+            "translation": {
+              "ru": "работы,"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "every",
+            "translation": {
+              "ru": "каждый"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "morning",
+            "translation": {
+              "ru": "утро"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
           }
         ]
       }
@@ -73,9 +117,6 @@
     "difficulty": 1,
     "sentences": [
       {
-        "pre": "Water ",
-        "verb": "boils",
-        "post": " at 100 degrees.",
         "answer": "present-simple",
         "distractors": [
           {
@@ -86,6 +127,55 @@
           },
           {
             "tenseId": "future-simple"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "word",
+            "value": "Water",
+            "translation": {
+              "ru": "Вода"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "boils",
+            "role": "verb",
+            "translation": {
+              "ru": "Кипит"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "at"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "100"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "degrees"
+          },
+          {
+            "type": "punct",
+            "value": "."
           }
         ]
       }
@@ -119,9 +209,6 @@
     "difficulty": 1,
     "sentences": [
       {
-        "pre": "I ",
-        "verb": "drink",
-        "post": " coffee every day.",
         "answer": "present-simple",
         "distractors": [
           {
@@ -132,6 +219,61 @@
           },
           {
             "tenseId": "present-perfect"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "word",
+            "value": "I"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "drink",
+            "role": "verb",
+            "translation": {
+              "ru": "напиток"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "coffee",
+            "translation": {
+              "ru": "кофе"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "every",
+            "translation": {
+              "ru": "каждый"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "day",
+            "translation": {
+              "ru": "число"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
           }
         ]
       }
@@ -165,9 +307,6 @@
     "difficulty": 1,
     "sentences": [
       {
-        "pre": "He ",
-        "verb": "likes",
-        "post": " reading books.",
         "answer": "present-simple",
         "distractors": [
           {
@@ -178,6 +317,53 @@
           },
           {
             "tenseId": "present-perfect"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "word",
+            "value": "He",
+            "translation": {
+              "ru": "Он,"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "likes",
+            "role": "verb",
+            "translation": {
+              "ru": "лайки"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "reading",
+            "translation": {
+              "ru": "чтение"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "books",
+            "translation": {
+              "ru": "книг"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
           }
         ]
       }
@@ -211,9 +397,6 @@
     "difficulty": 1,
     "sentences": [
       {
-        "pre": "The train ",
-        "verb": "leaves",
-        "post": " at 8 AM.",
         "answer": "present-simple",
         "distractors": [
           {
@@ -224,6 +407,66 @@
           },
           {
             "tenseId": "past-simple"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "word",
+            "value": "The",
+            "translation": {
+              "ru": "-"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "train",
+            "translation": {
+              "ru": "pociąg"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "leaves",
+            "role": "verb",
+            "translation": {
+              "ru": "Листья"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "at"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "8"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "AM"
+          },
+          {
+            "type": "punct",
+            "value": "."
           }
         ]
       }
@@ -257,9 +500,6 @@
     "difficulty": 1,
     "sentences": [
       {
-        "pre": "They ",
-        "verb": "live",
-        "post": " in London.",
         "answer": "present-simple",
         "distractors": [
           {
@@ -270,6 +510,53 @@
           },
           {
             "tenseId": "present-perfect"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "word",
+            "value": "They",
+            "translation": {
+              "ru": "Они"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "live",
+            "role": "verb",
+            "translation": {
+              "ru": "жить"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "in",
+            "translation": {
+              "ru": "от"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "London",
+            "translation": {
+              "ru": "Лондон"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
           }
         ]
       }
@@ -303,9 +590,6 @@
     "difficulty": 2,
     "sentences": [
       {
-        "pre": "We ",
-        "verb": "meet",
-        "post": " every Friday.",
         "answer": "present-simple",
         "distractors": [
           {
@@ -316,6 +600,53 @@
           },
           {
             "tenseId": "present-perfect"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "word",
+            "value": "We",
+            "translation": {
+              "ru": "Перед"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "meet",
+            "role": "verb",
+            "translation": {
+              "ru": "встречать "
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "every",
+            "translation": {
+              "ru": "каждый"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "Friday",
+            "translation": {
+              "ru": "Пятница"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
           }
         ]
       }
@@ -349,9 +680,6 @@
     "difficulty": 2,
     "sentences": [
       {
-        "pre": "She ",
-        "verb": "believes",
-        "post": " in sustainable living.",
         "answer": "present-simple",
         "distractors": [
           {
@@ -362,6 +690,64 @@
           },
           {
             "tenseId": "present-perfect"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "word",
+            "value": "She",
+            "translation": {
+              "ru": "Она"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "believes",
+            "role": "verb",
+            "translation": {
+              "ru": "считает"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "in",
+            "translation": {
+              "ru": "от"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "sustainable",
+            "translation": {
+              "ru": "экологичность"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "living",
+            "translation": {
+              "ru": "живой"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
           }
         ]
       }
@@ -395,9 +781,6 @@
     "difficulty": 2,
     "sentences": [
       {
-        "pre": "My father ",
-        "verb": "works",
-        "post": " as an engineer.",
         "answer": "present-simple",
         "distractors": [
           {
@@ -408,6 +791,72 @@
           },
           {
             "tenseId": "present-perfect"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "word",
+            "value": "My",
+            "translation": {
+              "ru": "Мой"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "father",
+            "translation": {
+              "ru": "отец"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "works",
+            "role": "verb",
+            "translation": {
+              "ru": "работы,"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "as",
+            "translation": {
+              "ru": "ХХХ"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "an"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "engineer",
+            "translation": {
+              "ru": "."
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
           }
         ]
       }
@@ -441,9 +890,6 @@
     "difficulty": 2,
     "sentences": [
       {
-        "pre": "I ",
-        "verb": "speak",
-        "post": " three languages.",
         "answer": "present-simple",
         "distractors": [
           {
@@ -454,6 +900,50 @@
           },
           {
             "tenseId": "past-simple"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "word",
+            "value": "I"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "speak",
+            "role": "verb",
+            "translation": {
+              "ru": "говорю"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "three",
+            "translation": {
+              "ru": "три"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "languages",
+            "translation": {
+              "ru": "языки"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
           }
         ]
       }
@@ -487,9 +977,6 @@
     "difficulty": 2,
     "sentences": [
       {
-        "pre": "I ",
-        "verb": "understand",
-        "post": " what you mean.",
         "answer": "present-simple",
         "distractors": [
           {
@@ -500,6 +987,61 @@
           },
           {
             "tenseId": "present-perfect"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "word",
+            "value": "I"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "understand",
+            "role": "verb",
+            "translation": {
+              "ru": "понимал(а)"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "what",
+            "translation": {
+              "ru": "что"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "you",
+            "translation": {
+              "ru": "вы"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "mean",
+            "translation": {
+              "ru": "среднее значение"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
           }
         ]
       }
@@ -533,9 +1075,6 @@
     "difficulty": 2,
     "sentences": [
       {
-        "pre": "If you heat ice, it ",
-        "verb": "melts",
-        "post": ".",
         "answer": "present-simple",
         "distractors": [
           {
@@ -546,6 +1085,76 @@
           },
           {
             "tenseId": "past-simple"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "word",
+            "value": "If",
+            "translation": {
+              "ru": "При"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "you",
+            "translation": {
+              "ru": "вы"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "heat",
+            "translation": {
+              "ru": "нагрев"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "ice",
+            "translation": {
+              "ru": "лёд"
+            }
+          },
+          {
+            "type": "punct",
+            "value": ","
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "it"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "melts",
+            "role": "verb",
+            "translation": {
+              "ru": "плавится"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
           }
         ]
       }
@@ -579,9 +1188,6 @@
     "difficulty": 2,
     "sentences": [
       {
-        "pre": "Napoleon ",
-        "verb": "invades",
-        "post": " Russia in 1812.",
         "answer": "present-simple",
         "distractors": [
           {
@@ -592,6 +1198,61 @@
           },
           {
             "tenseId": "present-perfect"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "word",
+            "value": "Napoleon",
+            "translation": {
+              "ru": "Наполеон"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "invades",
+            "role": "verb",
+            "translation": {
+              "ru": "вторгается"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "Russia",
+            "translation": {
+              "ru": "Россия"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "in",
+            "translation": {
+              "ru": "от"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "1812"
+          },
+          {
+            "type": "punct",
+            "value": "."
           }
         ]
       }
@@ -625,9 +1286,6 @@
     "difficulty": 2,
     "sentences": [
       {
-        "pre": "First, you ",
-        "verb": "add",
-        "post": " flour and sugar to the bowl.",
         "answer": "present-simple",
         "distractors": [
           {
@@ -638,6 +1296,109 @@
           },
           {
             "tenseId": "past-simple"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "word",
+            "value": "First",
+            "translation": {
+              "ru": "Имя"
+            }
+          },
+          {
+            "type": "punct",
+            "value": ","
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "you",
+            "translation": {
+              "ru": "вы"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "add",
+            "role": "verb",
+            "translation": {
+              "ru": "Добавить"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "flour",
+            "translation": {
+              "ru": "мука"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "and",
+            "translation": {
+              "ru": "и"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "sugar",
+            "translation": {
+              "ru": "сахар"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "to",
+            "translation": {
+              "ru": "кому"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "bowl",
+            "translation": {
+              "ru": "чаша"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
           }
         ]
       }
@@ -671,9 +1432,6 @@
     "difficulty": 2,
     "sentences": [
       {
-        "pre": "Something ",
-        "verb": "smells",
-        "post": " wonderful in the kitchen.",
         "answer": "present-simple",
         "distractors": [
           {
@@ -684,6 +1442,72 @@
           },
           {
             "tenseId": "present-perfect"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "word",
+            "value": "Something",
+            "translation": {
+              "ru": "Что-нибудь"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "smells",
+            "role": "verb",
+            "translation": {
+              "ru": "запахи"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "wonderful",
+            "translation": {
+              "ru": "замечательный"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "in",
+            "translation": {
+              "ru": "от"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "kitchen",
+            "translation": {
+              "ru": "кухня"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
           }
         ]
       }
@@ -717,9 +1541,6 @@
     "difficulty": 3,
     "sentences": [
       {
-        "pre": "She ",
-        "verb": "wants",
-        "post": " to become a doctor.",
         "answer": "present-simple",
         "distractors": [
           {
@@ -730,6 +1551,75 @@
           },
           {
             "tenseId": "future-simple"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "word",
+            "value": "She",
+            "translation": {
+              "ru": "Она"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "wants",
+            "role": "verb",
+            "translation": {
+              "ru": "хочет"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "to",
+            "translation": {
+              "ru": "кому"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "become",
+            "translation": {
+              "ru": "становиться"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "a",
+            "translation": {
+              "ru": "а"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "doctor",
+            "translation": {
+              "ru": "врач"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
           }
         ]
       }
@@ -763,9 +1653,6 @@
     "difficulty": 3,
     "sentences": [
       {
-        "pre": "The flight ",
-        "verb": "departs",
-        "post": " at 6:45 tomorrow morning.",
         "answer": "present-simple",
         "distractors": [
           {
@@ -776,6 +1663,88 @@
           },
           {
             "tenseId": "future-continuous"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "word",
+            "value": "The",
+            "translation": {
+              "ru": "-"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "flight",
+            "translation": {
+              "ru": "перелета"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "departs",
+            "role": "verb",
+            "translation": {
+              "ru": "Отправление"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "at"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "6"
+          },
+          {
+            "type": "punct",
+            "value": ":"
+          },
+          {
+            "type": "word",
+            "value": "45"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "tomorrow",
+            "translation": {
+              "ru": "завтра"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "morning",
+            "translation": {
+              "ru": "утро"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
           }
         ]
       }
@@ -809,9 +1778,6 @@
     "difficulty": 3,
     "sentences": [
       {
-        "pre": "I'll call you as soon as I ",
-        "verb": "get",
-        "post": " home.",
         "answer": "present-simple",
         "distractors": [
           {
@@ -822,6 +1788,105 @@
           },
           {
             "tenseId": "present-continuous"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "word",
+            "value": "I'll",
+            "translation": {
+              "ru": "<g id=\"5\">i</g><g id=\"6\">ll</g><g id=\"7\">&#10;</g> "
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "call",
+            "translation": {
+              "ru": "звонок"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "you",
+            "translation": {
+              "ru": "вы"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "as",
+            "translation": {
+              "ru": "ХХХ"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "soon",
+            "translation": {
+              "ru": "скоро"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "as",
+            "translation": {
+              "ru": "ХХХ"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "I"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "get",
+            "role": "verb",
+            "translation": {
+              "ru": "взять"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "home",
+            "translation": {
+              "ru": "главная"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
           }
         ]
       }
@@ -855,9 +1920,6 @@
     "difficulty": 3,
     "sentences": [
       {
-        "pre": "Plants ",
-        "verb": "convert",
-        "post": " sunlight into energy through photosynthesis.",
         "answer": "present-simple",
         "distractors": [
           {
@@ -868,6 +1930,86 @@
           },
           {
             "tenseId": "present-perfect"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "word",
+            "value": "Plants",
+            "translation": {
+              "ru": "Растения"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "convert",
+            "role": "verb",
+            "translation": {
+              "ru": "преобразовать"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "sunlight",
+            "translation": {
+              "ru": "солнечный свет"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "into",
+            "translation": {
+              "ru": "в"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "energy",
+            "translation": {
+              "ru": "прокола"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "through",
+            "translation": {
+              "ru": "через"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "photosynthesis",
+            "translation": {
+              "ru": "фотосинтез"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
           }
         ]
       }
@@ -901,9 +2043,6 @@
     "difficulty": 3,
     "sentences": [
       {
-        "pre": "This company ",
-        "verb": "owns",
-        "post": " offices in fifteen countries.",
         "answer": "present-simple",
         "distractors": [
           {
@@ -914,6 +2053,86 @@
           },
           {
             "tenseId": "past-simple"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "word",
+            "value": "This",
+            "translation": {
+              "ru": "Этот"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "company",
+            "translation": {
+              "ru": "компании"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "owns",
+            "role": "verb",
+            "translation": {
+              "ru": "Содержит"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "offices",
+            "translation": {
+              "ru": "офиса"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "in",
+            "translation": {
+              "ru": "от"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "fifteen",
+            "translation": {
+              "ru": "пятнадцать"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "countries",
+            "translation": {
+              "ru": "Страны"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
           }
         ]
       }
@@ -947,9 +2166,6 @@
     "difficulty": 1,
     "sentences": [
       {
-        "pre": "He ",
-        "verb": "doesn't eat",
-        "post": " meat — he has been vegetarian for years.",
         "answer": "present-simple",
         "distractors": [
           {
@@ -960,6 +2176,126 @@
           },
           {
             "tenseId": "past-simple"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "word",
+            "value": "He",
+            "translation": {
+              "ru": "Он,"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "doesn't",
+            "role": "verb",
+            "translation": {
+              "ru": "не делает"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "eat",
+            "role": "verb",
+            "translation": {
+              "ru": "есть"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "meat",
+            "translation": {
+              "ru": "                                    мясо"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "punct",
+            "value": "—"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "he"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "has",
+            "translation": {
+              "ru": "будет"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "been",
+            "translation": {
+              "ru": "был"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "vegetarian",
+            "translation": {
+              "ru": "ВЕГЕТАРИАНСКОЕ"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "for",
+            "translation": {
+              "ru": "."
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "years",
+            "translation": {
+              "ru": "годы"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
           }
         ]
       }
@@ -993,9 +2329,6 @@
     "difficulty": 1,
     "sentences": [
       {
-        "pre": "Where ",
-        "verb": "do",
-        "post": " you usually have lunch?",
         "answer": "present-simple",
         "distractors": [
           {
@@ -1006,6 +2339,72 @@
           },
           {
             "tenseId": "present-perfect"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "word",
+            "value": "Where",
+            "translation": {
+              "ru": "Где"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "do",
+            "role": "verb"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "you",
+            "translation": {
+              "ru": "вы"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "usually",
+            "translation": {
+              "ru": "обычно"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "have",
+            "translation": {
+              "ru": "быть"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "lunch",
+            "translation": {
+              "ru": "обед"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "?"
           }
         ]
       }
@@ -1039,9 +2438,6 @@
     "difficulty": 2,
     "sentences": [
       {
-        "pre": "This word ",
-        "verb": "belongs",
-        "post": " to the category of stative verbs.",
         "answer": "present-simple",
         "distractors": [
           {
@@ -1052,6 +2448,102 @@
           },
           {
             "tenseId": "present-perfect"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "word",
+            "value": "This",
+            "translation": {
+              "ru": "Этот"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "word",
+            "translation": {
+              "ru": "слово"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "belongs",
+            "role": "verb",
+            "translation": {
+              "ru": "Людей ли, пирамид."
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "to",
+            "translation": {
+              "ru": "кому"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "category",
+            "translation": {
+              "ru": "категория"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "of",
+            "translation": {
+              "ru": "коллегиальных"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "stative"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "verbs",
+            "translation": {
+              "ru": "^"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
           }
         ]
       }
@@ -1085,9 +2577,6 @@
     "difficulty": 2,
     "sentences": [
       {
-        "pre": "The Amazon River ",
-        "verb": "flows",
-        "post": " into the Atlantic Ocean.",
         "answer": "present-simple",
         "distractors": [
           {
@@ -1098,6 +2587,88 @@
           },
           {
             "tenseId": "future-simple"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "word",
+            "value": "The",
+            "translation": {
+              "ru": "-"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "Amazon"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "River",
+            "translation": {
+              "ru": "Река"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "flows",
+            "role": "verb",
+            "translation": {
+              "ru": "потоков"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "into",
+            "translation": {
+              "ru": "в"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "Atlantic"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "Ocean",
+            "translation": {
+              "ru": "Океан"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
           }
         ]
       }
@@ -1131,9 +2702,6 @@
     "difficulty": 2,
     "sentences": [
       {
-        "pre": "He ",
-        "verb": "shoots",
-        "post": " — and scores!",
         "answer": "present-simple",
         "distractors": [
           {
@@ -1144,6 +2712,61 @@
           },
           {
             "tenseId": "present-perfect"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "word",
+            "value": "He",
+            "translation": {
+              "ru": "Он,"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "shoots",
+            "role": "verb",
+            "translation": {
+              "ru": "побеги"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "punct",
+            "value": "—"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "and",
+            "translation": {
+              "ru": "и"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "scores",
+            "translation": {
+              "ru": "оценки"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "!"
           }
         ]
       }
@@ -1177,9 +2800,6 @@
     "difficulty": 2,
     "sentences": [
       {
-        "pre": "I ",
-        "verb": "remember",
-        "post": " the exact moment I heard that song for the first time.",
         "answer": "present-simple",
         "distractors": [
           {
@@ -1190,6 +2810,137 @@
           },
           {
             "tenseId": "past-simple"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "word",
+            "value": "I"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "remember",
+            "role": "verb",
+            "translation": {
+              "ru": "помнить"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "exact"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "moment",
+            "translation": {
+              "ru": "здесь и сейчас"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "I"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "heard",
+            "translation": {
+              "ru": "слышал/а"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "that",
+            "translation": {
+              "ru": "что"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "song",
+            "translation": {
+              "ru": "песня"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "for",
+            "translation": {
+              "ru": "."
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "first",
+            "translation": {
+              "ru": "первый"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "time",
+            "translation": {
+              "ru": "время"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
           }
         ]
       }
@@ -1223,9 +2974,6 @@
     "difficulty": 2,
     "sentences": [
       {
-        "pre": "She always ",
-        "verb": "arrives",
-        "post": " early and never misses a deadline.",
         "answer": "present-simple",
         "distractors": [
           {
@@ -1236,6 +2984,108 @@
           },
           {
             "tenseId": "present-perfect"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "word",
+            "value": "She",
+            "translation": {
+              "ru": "Она"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "always",
+            "translation": {
+              "ru": "всегда"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "arrives",
+            "role": "verb",
+            "translation": {
+              "ru": "arrives."
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "early",
+            "translation": {
+              "ru": "раньше"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "and",
+            "translation": {
+              "ru": "и"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "never",
+            "translation": {
+              "ru": "никогда"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "misses",
+            "translation": {
+              "ru": "Пропуски"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "a",
+            "translation": {
+              "ru": "а"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "deadline",
+            "translation": {
+              "ru": "дедлайн"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
           }
         ]
       }
@@ -1269,9 +3119,6 @@
     "difficulty": 3,
     "sentences": [
       {
-        "pre": "We ",
-        "verb": "rarely see",
-        "post": " each other now that she has moved abroad.",
         "answer": "present-simple",
         "distractors": [
           {
@@ -1282,6 +3129,132 @@
           },
           {
             "tenseId": "past-simple"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "word",
+            "value": "We",
+            "translation": {
+              "ru": "Перед"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "rarely",
+            "role": "verb",
+            "translation": {
+              "ru": "редко"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "see",
+            "role": "verb",
+            "translation": {
+              "ru": "см."
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "each",
+            "translation": {
+              "ru": "каждой"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "other",
+            "translation": {
+              "ru": "другие"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "now",
+            "translation": {
+              "ru": "сейчас"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "that",
+            "translation": {
+              "ru": "что"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "she",
+            "translation": {
+              "ru": "она"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "has",
+            "translation": {
+              "ru": "будет"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "moved",
+            "translation": {
+              "ru": "Перемещено"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "abroad",
+            "translation": {
+              "ru": "{1>знаки <1}{2>за <2}{3>рубежом<3}"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
           }
         ]
       }
@@ -1315,9 +3288,6 @@
     "difficulty": 3,
     "sentences": [
       {
-        "pre": "The detective ",
-        "verb": "picks up",
-        "post": " the envelope and tears it open.",
         "answer": "present-simple",
         "distractors": [
           {
@@ -1328,6 +3298,115 @@
           },
           {
             "tenseId": "past-continuous"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "word",
+            "value": "The",
+            "translation": {
+              "ru": "-"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "detective",
+            "translation": {
+              "ru": "детектив"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "picks",
+            "role": "verb",
+            "translation": {
+              "ru": "выбранные"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "up",
+            "role": "verb",
+            "translation": {
+              "ru": "вверх"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "envelope",
+            "translation": {
+              "ru": "конверт"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "and",
+            "translation": {
+              "ru": "и"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "tears",
+            "translation": {
+              "ru": "разрывов,"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "it"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "open",
+            "translation": {
+              "ru": "откр."
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
           }
         ]
       }
@@ -1361,9 +3440,6 @@
     "difficulty": 3,
     "sentences": [
       {
-        "pre": "Don't leave until the doctor ",
-        "verb": "gives",
-        "post": " you the all-clear.",
         "answer": "present-simple",
         "distractors": [
           {
@@ -1374,6 +3450,110 @@
           },
           {
             "tenseId": "present-continuous"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "word",
+            "value": "Don't",
+            "translation": {
+              "ru": "Не"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "leave",
+            "translation": {
+              "ru": "отпуск"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "until",
+            "translation": {
+              "ru": "до"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "doctor",
+            "translation": {
+              "ru": "врач"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "gives",
+            "role": "verb"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "you",
+            "translation": {
+              "ru": "вы"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "all",
+            "translation": {
+              "ru": "все"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "-"
+          },
+          {
+            "type": "word",
+            "value": "clear",
+            "translation": {
+              "ru": "ясно"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
           }
         ]
       }
