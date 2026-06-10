@@ -27,14 +27,16 @@
                 [class.ann-span]="!!ann"
                 [class.ann-start]="ann !== null && $index === ann.from"
                 [style.color]="t.role === 'verb' ? revealColor() : null"
+                [attr.tabindex]="ann ? 0 : null"
                 (click)="ann && showAnnotation(ann)"
+                (keydown.enter)="ann && showAnnotation(ann)"
               >{{ t.value }}</span>
             }
           </span>
           @if (activeAnnotation()) {
             <app-annotation-tooltip
               [annotation]="activeAnnotation()!"
-              (close)="activeAnnotation.set(null)"
+              (dismissed)="activeAnnotation.set(null)"
             />
           }
         }
