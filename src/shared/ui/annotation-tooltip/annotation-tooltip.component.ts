@@ -6,7 +6,14 @@ import type { Annotation } from '@shared/types';
   changeDetection: ChangeDetectionStrategy.OnPush,
   styleUrl: './annotation-tooltip.component.css',
   template: `
-    <div class="ann-tooltip" role="tooltip" (click)="close.emit()">
+    <div
+      class="ann-tooltip"
+      role="tooltip"
+      tabindex="0"
+      (click)="dismissed.emit()"
+      (keydown.enter)="dismissed.emit()"
+      (keydown.space)="dismissed.emit()"
+    >
       <p class="ann-note">{{ annotation().note.ru ?? annotation().note.en }}</p>
       @if (annotation().example) {
         <p class="ann-example">{{ annotation().example }}</p>
@@ -20,5 +27,5 @@ import type { Annotation } from '@shared/types';
 })
 export class AnnotationTooltipComponent {
   readonly annotation = input.required<Annotation>();
-  readonly close = output<void>();
+  readonly dismissed = output<void>();
 }

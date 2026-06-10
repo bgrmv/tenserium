@@ -12,6 +12,7 @@
     "e2e:ui": "playwright test --ui",
     "lint": "ng lint",
     "lint:fix": "ng lint --fix",
+    "prepare": "husky",
     "release": "release-it",
     "release:dry": "release-it --dry-run"
   },
@@ -42,11 +43,16 @@
     "eslint": "^9.39.1",
     "eslint-import-resolver-typescript": "^4.4.5",
     "eslint-plugin-boundaries": "^6.0.2",
+    "husky": "^9.1.7",
     "jsdom": "^29.1.1",
+    "lint-staged": "^17.0.7",
     "release-it": "^20.2.0",
     "typescript": "~6.0.3",
     "typescript-eslint": "8.60.1",
     "vitest": "^4.0.8",
     "zone.js": "^0.16.2"
+  },
+  "lint-staged": {
+    "*.{ts,html}": "eslint --fix"
   }
 }
