@@ -1,8 +1,9 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { QuestionCardComponent } from './question-card.component';
 import type { QuestionSentence } from '@shared/types';
+import { QuestionCardComponent } from './question-card.component';
 
 describe('QuestionCardComponent', () => {
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   let component: QuestionCardComponent;
   let fixture: ComponentFixture<QuestionCardComponent>;
 
