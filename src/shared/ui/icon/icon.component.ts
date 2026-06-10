@@ -4,7 +4,7 @@ export type IconName =
   | 'trainer' | 'learn' | 'stats' | 'logout' | 'bell' | 'gear' | 'lock'
   | 'play' | 'flame' | 'shield' | 'trophy' | 'arrow-right' | 'arrow-left' | 'zap'
   | 'check' | 'clock' | 'bolt' | 'repeat' | 'globe' | 'calendar' | 'squad'
-  | 'flag' | 'list' | 'share' | 'copy' | 'daily';
+  | 'flag' | 'list' | 'share' | 'copy' | 'daily' | 'x';
 
 const PATHS: Record<IconName, string> = {
   trainer: 'M6 12a6 6 0 0 1 12 0 M9 12h6 M12 9v6 M3 12h2 M19 12h2',
@@ -33,6 +33,7 @@ const PATHS: Record<IconName, string> = {
   globe: 'M12 3a9 9 0 1 0 0 18 9 9 0 0 0 0-18 M3 12h18 M12 3c2.5 2.5 2.5 15.5 0 18 M12 3c-2.5 2.5-2.5 15.5 0 18',
   calendar: 'M5 5h14v15H5z M5 9h14 M9 3v4 M15 3v4',
   squad: 'M9 11a3 3 0 1 0 0-6 3 3 0 0 0 0 6 M3 20a6 6 0 0 1 12 0 M17 11a3 3 0 1 0-2-5 M16 14a6 6 0 0 1 5 6',
+  x: 'M18 6 6 18 M6 6l12 12',
 };
 
 @Component({

@@ -1,0 +1,82 @@
+<div class="sp" [style.--c]="color()">
+
+  <div class="sp-header">
+    @if (result() === 'correct') {
+      <span class="sp-badge sp-correct"><app-icon name="check" [size]="13" /> Правильно</span>
+    } @else if (result() === 'timeout') {
+      <span class="sp-badge sp-wrong"><app-icon name="clock" [size]="13" /> Время вышло</span>
+    } @else {
+      <span class="sp-badge sp-wrong"><app-icon name="x" [size]="13" /> Неправильно</span>
+    }
+    @if (pickedName(); as picked) {
+      <span class="sp-picked">Вы выбрали: <b>{{ picked }}</b></span>
+    }
+    <h3 class="sp-tense" [style.color]="color()">{{ tenseName() }}</h3>
+  </div>
+
+  @if (explanation(); as expl) {
+    <div class="sp-explanation">
+      <div class="sp-label">Почему?</div>
+      <p class="sp-expl-text">{{ expl.ru ?? expl.en }}</p>
+    </div>
+  }
+
+  @if (content.isLoading()) {
+    <div class="sp-loading">Загрузка…</div>
+  } @else if (content.value(); as c) {
+
+    <div class="sp-grid">
+
+      <div class="sp-section">
+        <div class="sp-label">Formula</div>
+        <div class="sp-formulas">
+          @for (f of c.formula; track $index) {
+            <code class="sp-chip" [style.--c]="color()">{{ f }}</code>
+          }
+        </div>
+      </div>
+
+      @if (c.usage.length) {
+        <div class="sp-section">
+          <div class="sp-label">When to use</div>
+          <ul class="sp-usage">
+            @for (u of c.usage.slice(0, 4); track $index) {
+              <li>
+                <span class="sp-usage-ic" [style.color]="color()" [style.border-color]="'color-mix(in oklab, ' + color() + ' 35%, transparent)'">
+                  <app-icon [name]="$any(u.icon)" [size]="14" />
+                </span>
+                {{ u.text }}
+              </li>
+            }
+          </ul>
+        </div>
+      }
+
+      <div class="sp-section">
+        <div class="sp-label">Examples</div>
+        <ul class="sp-examples">
+          @for (e of c.examples.slice(0, 3); track $index) {
+            <li>{{ e.pre }}<b [style.color]="color()">{{ e.verb }}</b>{{ e.post }}</li>
+          }
+        </ul>
+      </div>
+
+      @if (c.markers.length) {
+        <div class="sp-section sp-section-markers">
+          <div class="sp-label">Time markers</div>
+          <div class="sp-markers">
+            @for (m of c.markers; track m) {
+              <span class="sp-marker" [style.--c]="color()">{{ m }}</span>
+            }
+          </div>
+        </div>
+      }
+
+    </div>
+  }
+
+  <button class="sp-next" type="button" (click)="next.emit()">
+    Next question <app-icon name="arrow-right" [size]="15" />
+  </button>
+
+</div>

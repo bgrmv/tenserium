@@ -30,8 +30,14 @@
 .prompt-quote { font-family: var(--display); font-size: clamp(20px, 3.2vh, 26px); font-weight: 500; line-height: 1.35; text-wrap: balance; }
 .reveal { margin-top: 14px; padding-top: 12px; border-top: 1px solid var(--line); animation: fade 0.3s ease; }
 .reveal-label { display: block; font-size: 12px; font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase; margin-bottom: 4px; }
-.reveal-sentence { font-size: 15px; color: var(--dim); }
-.reveal-sentence b { font-weight: 700; }
+.reveal-sentence { font-size: 15px; color: var(--dim); display: inline-flex; flex-wrap: wrap; gap: 0 0.25em; }
+.reveal-explanation { font-size: 13px; color: var(--muted); text-align: left; margin: 8px 0 0; line-height: 1.5; }
+.reveal-rules { font-size: 12px; color: var(--dim); text-align: left; margin: 6px 0 0; font-style: italic; line-height: 1.4; }
+.reveal-examples { font-size: 13px; color: var(--dim); text-align: left; margin: 6px 0 0; padding-left: 18px; line-height: 1.6; }
+.tok-keyword  { font-weight: 700; }
+.tok-pronoun  { color: var(--muted); }
+.tok-preposition,
+.tok-adverb   { opacity: 0.75; }
 
 .points-pop {
   position: absolute;
