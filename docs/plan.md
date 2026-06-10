@@ -331,17 +331,21 @@
 
 - [ ] Инициализировать Supabase CLI: `supabase init`
 - [ ] Создать первую миграцию `supabase/migrations/001_init_schema.sql`
-  - [ ] `users` (id, nickname, is_premium, league, rank_tier, rank_points, daily_rank_matches, created_at)
+  - [ ] `users` (id, nickname, is_premium, is_admin, league, rank_tier, rank_points, daily_rank_matches, last_active_at, is_banned, suspended_until, ban_reason, created_at)
     - `league`: elementary | intermediate | advanced
     - `rank_tier`: iron | bronze | silver | gold | platinum (внутри лиги)
-  - [ ] `questions` (id, tense_id, type, prompt, difficulty, created_at)
+  - [ ] `questions` (id, tense_id, type, prompt, difficulty, status, accuracy_rate, flagged_count, created_at)
+    - `status`: active | draft | pending_review | archived
   - [ ] `sessions` (id, user_id, mode, score, duration_ms, created_at)
   - [ ] `session_answers` (session_id, question_id, is_correct, response_ms)
   - [ ] `daily_challenge` (date PK, question_ids[])
-  - [ ] `error_reports` (id, question_id, user_id, description, created_at)
+  - [ ] `error_reports` (id, question_id, user_id, description, status, resolved_by, created_at)
+    - `status`: open | resolved | dismissed
   - [ ] `matches` (id, player_ids[], league, state, scores, created_at)
   - [ ] `match_answers` (match_id, player_id, ticket_idx, sentence_idx, tense_id, is_correct, response_ms, points)
-  - [ ] `feedback` (id, category, description, email, created_at)
+  - [ ] `feedback` (id, category, description, email, admin_reply, created_at)
+  - [ ] `admin_audit_log` (id, admin_id, target_user_id, action, reason, created_at)
+  - [ ] `announcements` (id, text, active, expires_at, created_at)
   - [ ] Materialized view `leaderboard`
 - [ ] Row Level Security на всех таблицах
 - [ ] `supabase gen types` → TypeScript-типы
@@ -350,9 +354,51 @@
 
 ### Auth
 
-- [ ] `features/auth/` — Supabase Auth: email/password + Google OAuth
-- [ ] Login / Register — страница или модалка
-- [ ] Redirect после login → туда откуда пришёл
+> Последовательность обязательна: сначала конфигурация внешнего провайдера и схема БД,
+> затем Angular-код (guard'ы зависят от структуры профиля/токена).
+
+#### Шаг 1 — Настройка Google OAuth (конфиг, не код)
+
+- [ ] Google Cloud Console: создать OAuth 2.0 Client ID
+  - [ ] Разрешённые redirect URI: `https://<supabase-project>.supabase.co/auth/v1/callback`
+  - [ ] Разрешённые origins: `https://<netlify-domain>`, `http://localhost:4200`
+- [ ] Supabase Dashboard → Authentication → Providers → Google
+  - [ ] Вставить Client ID + Client Secret
+  - [ ] Включить провайдер
+
+#### Шаг 2 — Роли в БД
+
+Четыре роли по функции (что человек делает, а не уровень доступа):
+
+- `admin` — владелец: полный доступ, назначение ролей, аудит
+- `moderator` — команда контента: вопросы, репорты, анонсы, пользователи
+- `support` — поддержка: только обращения пользователей и репорты ошибок
+- `user` — игрок: только свои данные
+
+---
+
+- [ ] Добавить enum `app_role` в миграцию: `user | support | moderator | admin`
+- [ ] Колонка `role app_role NOT NULL DEFAULT 'user'` в таблице `users`
+  - `is_admin` не нужен — заменяется `role = 'admin'`
+- [ ] RLS-политики (Supabase `auth.jwt() ->> 'app_role'`):
+  - [ ] `user` — только свои строки во всех таблицах
+  - [ ] `support` — SELECT на `feedback`, `error_reports`; UPDATE `error_reports.status`
+  - [ ] `moderator` — всё что `support` + full CRUD на `questions`; SELECT/UPDATE `users` (без изменения `role`); INSERT `announcements`
+  - [ ] `admin` — SECURITY DEFINER функция `is_admin()` → bypass всех политик; единственная роль которая может менять `role` другим пользователям
+- [ ] Передавать роль в JWT custom claims через Supabase `auth hook` (Database webhook на `users.role`)
+- [ ] `supabase gen types` → обновить TypeScript-типы
+
+#### Шаг 3 — Angular: auth + guards
+
+- [ ] `features/auth/` — Supabase Auth
+  - [ ] `auth.service.ts` — `signInWithGoogle()`, `signOut()`, `currentUser` сигнал
+  - [ ] `features/auth/ui/login-modal/` — модалка с кнопкой «Войти через Google»
+  - [ ] Redirect после login → туда откуда пришёл (`returnUrl` query param)
+- [ ] `shared/lib/auth.guard.ts` — `AuthGuard`: редирект на `/home` если не залогинен
+- [ ] `shared/lib/role.guard.ts` — `RoleGuard(minRole)`: редирект если роль ниже требуемой
+  - Иерархия: `user < support < moderator < admin`
+  - Пример: `canActivate: [RoleGuard('support')]` на `/admin`
+- [ ] `UserStore` — добавить `role` сигнал; загружать из JWT custom claims при login
 
 ### Cloud Sync
 
@@ -514,7 +560,149 @@ Advanced      C1     C1-IV  C1-III  C1-II  C1-I
 
 ---
 
-## 12. Монетизация
+## 12. Admin Panel
+
+> Требует Phase 9 (Supabase + Auth). Строится поверх реальных данных из БД.
+> ИИ-генерация вопросов — через Supabase Edge Function (API ключ на сервере, не в клиенте).
+
+### Инфраструктура
+
+> Роли и RLS настроены в Phase 9. Здесь только UI и маршруты.
+
+- [ ] Маршрут `/admin` → `pages/admin/` (shell + sidebar с табами)
+  - [ ] `canActivate: [RoleGuard('support')]` — минимальная роль для входа
+
+**Что видит каждая роль:**
+
+`support` — минимальный доступ, только работа с пользователями напрямую
+- Таб 6: Репорты ошибок (просмотр + закрытие)
+- Таб 8: Поддержка / Feedback (просмотр + ответ)
+
+`moderator` — всё что `support` + управление контентом и сообществом
+- Таб 1: Пользователи (просмотр профилей, без смены ролей)
+- Таб 2: Активность (live)
+- Таб 3: Статистика
+- Таб 4: Ревалидация контента
+- Таб 5: AI-генерация вопросов
+- Таб 7: Модерация аккаунтов (предупреждения, баны)
+- Таб 10: Daily Challenge Override
+- Таб 11: Анонсы
+
+`admin` — всё что `moderator` + системный контроль
+- Таб 1: Пользователи (смена ролей, удаление)
+- Таб 9: Аудит-лог (только admin)
+
+---
+
+### Таб 1 — Пользователи
+
+- [ ] Таблица: nickname, email, league/division, rank_points, is_premium, created_at, last_active
+- [ ] Поиск + фильтр по лиге, premium-статусу
+- [ ] Клик → detail: полный профиль, история сессий, история ранга
+- [ ] Schema: добавить `last_active_at timestamptz` в `users`
+
+---
+
+### Таб 2 — Активность (Live)
+
+- [ ] Активные ученики: сессии за последние 15 мин (query `sessions.created_at`)
+- [ ] Активные матчи: `matches` со `state = 'in_progress'`
+- [ ] Групповые сессии: матчи с `player_ids` count > 1 + список участников
+- [ ] Авто-обновление каждые 30 сек или Supabase Realtime подписка
+
+---
+
+### Таб 3 — Статистика
+
+- [ ] DAU / WAU / MAU (агрегация `sessions` по дате)
+- [ ] Вопросов в день + верных/неверных
+- [ ] Топ-10 наиболее сообщаемых вопросов (по `error_reports.count`)
+- [ ] Heatmap точности по временам (`session_answers` × `tense_id`)
+- [ ] Распределение пользователей по лигам (pie chart)
+- [ ] Новые регистрации по дням
+- [ ] Библиотека графиков: Chart.js или uPlot (без тяжёлых BI-инструментов)
+
+---
+
+### Таб 4 — Ревалидация контента
+
+- [ ] Schema: добавить в `questions`: `status text DEFAULT 'active'` (active|draft|pending_review|archived), `accuracy_rate numeric(4,3)`, `flagged_count int DEFAULT 0`
+- [ ] Список вопросов: tense, difficulty, type, flagged_count, accuracy_rate, is_active
+- [ ] Сортировка/фильтр по flagged_count, отклонению accuracy от ожидаемой
+- [ ] Inline-редактор: prompt/sentences, difficulty, toggle is_active
+- [ ] «Калибровать сложность» — авто-предложить difficulty на основе accuracy_rate
+- [ ] Learn-контент: список JSON-секций, флаги для ревизии, ссылка на файл в GitHub
+- [ ] Workflow согласования: отредактированный вопрос → `pending_review` → второй admin аппрувит
+
+---
+
+### Таб 5 — AI-генерация вопросов
+
+- [ ] Форма: tense, difficulty, количество, тип (sentence/context)
+- [ ] Вызов Claude API через Supabase Edge Function (API-ключ на сервере)
+- [ ] Сгенерированные вопросы попадают в staging (`questions.status = 'draft'`)
+- [ ] Admin ревьюит каждый черновик: approve → `is_active = true` / reject → удалить
+- [ ] Шаблон промпта — в конфиге Edge Function (не hardcoded)
+- [ ] Rate limit: 50 генераций/день для контроля стоимости API
+
+---
+
+### Таб 6 — Репорты ошибок
+
+- [ ] Schema: добавить в `error_reports`: `status text DEFAULT 'open'` (open|resolved|dismissed), `resolved_by uuid REFERENCES users(id)`
+- [ ] Список: превью вопроса, ник репортера, описание, дата
+- [ ] Клик → detail вопроса с inline-редактором
+- [ ] Массовые действия: dismiss все репорты по вопросу после исправления
+- [ ] Авто-закрытие: при редактировании вопроса → все open-репорты для него → `resolved`
+- [ ] Миграция localStorage-очереди при Phase 9 (репорты до регистрации)
+
+---
+
+### Таб 7 — Модерация аккаунтов
+
+- [ ] Schema: добавить в `users`: `is_banned boolean DEFAULT false`, `suspended_until timestamptz`, `ban_reason text`
+- [ ] Действия: предупреждение / временная блокировка (выбор длительности) / перманентный бан
+- [ ] Блокировка: пользователь не может начать Rank-матч пока `suspended_until > now()`
+- [ ] Ручная корректировка ранга (добавить/убрать rank_points) с полем причины
+- [ ] Audit log: каждое действие admin → `admin_audit_log` (admin_id, target_user_id, action, reason, created_at)
+
+---
+
+### Таб 8 — Поддержка (Feedback)
+
+- [ ] Сообщения из `feedback` по категориям: bug / feature_request / content / advertising / other
+- [ ] Отметить: прочитано / решено / эскалировано
+- [ ] Поле ответа (текст сохраняется в `feedback.admin_reply`; email-отправка — будущий этап)
+- [ ] Бейджи категорий + счётчик непрочитанных в label таба
+- [ ] Фильтры: непрочитанные / избранные / диапазон дат
+
+---
+
+### Таб 9 — Аудит-лог
+
+- [ ] Таблица `admin_audit_log` (только для super-admin)
+- [ ] Фильтр по admin_id, типу действия, дате
+- [ ] Readonly — только просмотр, без редактирования
+
+---
+
+### Таб 10 — Daily Challenge Override
+
+- [ ] Ручная куратура: выбрать конкретные question_ids для даты → перезаписать LCG-сид
+- [ ] Хранится в таблице `daily_challenge` (уже в схеме)
+- [ ] Полезно для тематических дней (сезон экзаменов, праздники)
+
+---
+
+### Таб 11 — Системные анонсы
+
+- [ ] Новая таблица `announcements` (id, text, active, created_at, expires_at)
+- [ ] Admin публикует → пользователь видит dismissible-баннер в app shell при следующей загрузке
+- [ ] Используется для технических работ, запуска новых фич
+
+---
+
+## 13. Монетизация
 
 - [ ] Premium-флаг `users.is_premium` в UserStore
 - [ ] `features/premium-gate/` — guard для premium-функций
@@ -533,7 +721,7 @@ Advanced      C1     C1-IV  C1-III  C1-II  C1-I
 
 ---
 
-## 13. Text Analysis Mode
+## 14. Text Analysis Mode
 
 > Полностью клиентский — мог бы быть раньше, но сфокусируемся на core сначала.
 
@@ -547,7 +735,7 @@ Advanced      C1     C1-IV  C1-III  C1-II  C1-I
 
 ---
 
-## 14. PWA + Service Worker
+## 15. PWA + Service Worker
 
 - [ ] `@angular/service-worker`
 - [ ] `manifest.webmanifest` (icon, name, theme color)
@@ -556,7 +744,7 @@ Advanced      C1     C1-IV  C1-III  C1-II  C1-I
 
 ---
 
-## 15. Визуальная полировка
+## 16. Визуальная полировка
 
 - [ ] **Цветовая система**
   - [ ] 12 accent colors, CSS Custom Properties: `--tense-{id}: #...`
@@ -571,7 +759,7 @@ Advanced      C1     C1-IV  C1-III  C1-II  C1-I
 
 ---
 
-## 16. Звуковой дизайн
+## 17. Звуковой дизайн
 
 - [ ] `shared/lib/sound.service.ts` (Web Audio API, `AudioContext`)
 - [ ] Аудиофайлы (.ogg / .webm): question-appear, correct, wrong, streak-2, streak-3+, session-complete, daily-complete
@@ -589,3 +777,37 @@ Advanced      C1     C1-IV  C1-III  C1-II  C1-I
 - [ ] По 15 вопросов на каждое из оставшихся 9 времён
 - [x] Learn-страницы приоритет 3 (Future Continuous, Perfect, Perfect Continuous — все 6 времён)
 - [ ] Daily Challenge cron (Supabase Edge Function — серверный генератор для честности, заменяет date-seed после Phase 8)
+
+---
+
+## Appendix: Версионирование
+
+> Semver (`MAJOR.MINOR.PATCH`). Версия — единственный источник истины в `package.json`.
+> Автоматизировано через `release-it` + `@release-it/conventional-changelog`.
+> Подробный гайд: [`docs/dev-spec/versioning/README.md`](dev-spec/versioning/README.md)
+
+### Соглашения
+
+| Часть | Когда меняется |
+|-------|----------------|
+| `PATCH` | Bug fixes, контент (вопросы, learn-тексты) |
+| `MINOR` | Завершение фазы, новая пользовательская функция |
+| `MAJOR` | Breaking change хранилища/схемы, смена платформы |
+
+### Вехи
+
+| Версия | Веха |
+|--------|------|
+| `0.0.1` | Bootstrap: CI/CD, Angular 22, FSD, Game Engine, Learn, Daily Challenge |
+| `0.1.0` | Phase 8: Netlify + Supabase + Auth |
+| `0.2.0` | Phase 9: Rank Mode |
+| `0.3.0` | Phase 10–11: Leaderboards + Admin Panel |
+| `1.0.0` | Phase 12–13: Монетизация + публичный релиз |
+
+### Задачи
+
+- [x] Установить `release-it` + `@release-it/conventional-changelog`
+- [x] `CHANGELOG.md` в корне — генерируется автоматически из conventional commits
+- [x] `pnpm release` / `pnpm release:dry` scripts
+- [ ] Добавить `version` в `shared/config/app.config.ts` — импортировать из `package.json`
+- [ ] Отображать версию в footer или `pages/about/` (мелко, без акцента)

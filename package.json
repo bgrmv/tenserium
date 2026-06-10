@@ -1,6 +1,7 @@
 {
   "name": "tenserium",
-  "version": "0.0.0",
+  "version": "0.0.1",
+  "license": "LicenseRef-PolyForm-Strict-1.0.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -11,7 +12,9 @@
     "e2e:ui": "playwright test --ui",
     "lint": "ng lint",
     "lint:fix": "ng lint --fix",
-    "prepare": "husky"
+    "prepare": "husky",
+    "release": "release-it",
+    "release:dry": "release-it --dry-run"
   },
   "private": true,
   "packageManager": "pnpm@10.15.0",
@@ -34,6 +37,7 @@
     "@angular/compiler-cli": "^22.0.0",
     "@eslint/js": "^9.39.1",
     "@playwright/test": "^1.60.0",
+    "@release-it/conventional-changelog": "^11.0.1",
     "@types/node": "^22.0.0",
     "angular-eslint": "21.0.1",
     "eslint": "^9.39.1",
@@ -42,6 +46,7 @@
     "husky": "^9.1.7",
     "jsdom": "^29.1.1",
     "lint-staged": "^17.0.7",
+    "release-it": "^20.2.0",
     "typescript": "~6.0.3",
     "typescript-eslint": "8.60.1",
     "vitest": "^4.0.8",
