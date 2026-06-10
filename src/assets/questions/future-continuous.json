@@ -1,80 +1,3860 @@
 [
   {
     "id": "future-continuous-01",
-    "answer": "future-continuous",
-    "type": "context",
-    "prompt": "Действие в процессе в конкретный момент будущего",
-    "promptEn": "An action that will be in progress at a specific future time",
-    "sentence": {
-      "pre": "This time tomorrow I ",
-      "verb": "will be flying",
-      "post": " home."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Действие в процессе в конкретный момент будущего",
+      "en": "An action that will be in progress at a specific future time"
     },
-    "difficulty": 2
+    "tags": [
+      "future-continuous",
+      "context-clue",
+      "affirmative",
+      "continuous",
+      "difficulty-2"
+    ],
+    "difficulty": 2,
+    "rules": {
+      "ru": "«This time tomorrow» — точка-якорь в будущем, в которую действие «flying» будет находиться в процессе; именно это требует Future Continuous, а не Future Simple."
+    },
+    "contextExamples": [
+      "This time next week, she will be sitting her final exams.",
+      "This time tomorrow, we will be driving through the mountains."
+    ],
+    "sentences": [
+      {
+        "answer": "future-continuous",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "This",
+            "translation": {
+              "ru": "Этот"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "time",
+            "translation": {
+              "ru": "время"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "tomorrow",
+            "translation": {
+              "ru": "завтра"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "I"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "will",
+            "role": "verb",
+            "translation": {
+              "ru": "---"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "be",
+            "role": "verb",
+            "translation": {
+              "ru": "переносу"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "flying",
+            "role": "verb",
+            "translation": {
+              "ru": "полет"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "home",
+            "translation": {
+              "ru": "главная"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "future-continuous-02",
-    "answer": "future-continuous",
-    "type": "context",
-    "prompt": "Ожидаемое длительное действие в будущем",
-    "promptEn": "Something expected to be ongoing at a future moment",
-    "sentence": {
-      "pre": "At 8 pm they ",
-      "verb": "will be having",
-      "post": " dinner."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Ожидаемое длительное действие в определённый момент будущего",
+      "en": "Something expected to be ongoing at a future moment"
     },
-    "difficulty": 2
+    "tags": [
+      "future-continuous",
+      "context-clue",
+      "affirmative",
+      "continuous",
+      "difficulty-2"
+    ],
+    "difficulty": 2,
+    "rules": {
+      "ru": "«At 8 pm» — конкретное время-точка в будущем; ужин — ожидаемое длящееся действие в этот момент, поэтому Future Continuous."
+    },
+    "contextExamples": [
+      "At noon tomorrow, the team will be attending a strategy meeting.",
+      "At midnight, the fireworks will be going off all over the city."
+    ],
+    "sentences": [
+      {
+        "answer": "future-continuous",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "At",
+            "translation": {
+              "ru": "А+"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "8"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "pm",
+            "translation": {
+              "ru": "μm/sec (мкм/сек)"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "they",
+            "translation": {
+              "ru": "они"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "will",
+            "role": "verb",
+            "translation": {
+              "ru": "---"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "be",
+            "role": "verb",
+            "translation": {
+              "ru": "переносу"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "having",
+            "role": "verb",
+            "translation": {
+              "ru": "имеющих"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "dinner",
+            "translation": {
+              "ru": "ужин"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "future-continuous-03",
-    "answer": "future-continuous",
-    "type": "sentence",
-    "prompt": "Фоновое действие в определённый момент в будущем",
-    "promptEn": "A background action at a specific future moment",
-    "sentence": {
-      "pre": "When you arrive, I ",
-      "verb": "will be cooking",
-      "post": " dinner."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Фоновое действие в определённый момент в будущем",
+      "en": "A background action at a specific future moment"
     },
-    "difficulty": 2
+    "tags": [
+      "future-continuous",
+      "sentence-analysis",
+      "affirmative",
+      "continuous",
+      "difficulty-2"
+    ],
+    "difficulty": 2,
+    "rules": {
+      "ru": "«When you arrive» — момент, когда действие «cooking» уже будет в процессе; Future Continuous описывает фоновое длящееся действие, прерываемое другим событием."
+    },
+    "contextExamples": [
+      "When you call, I will be putting the kids to bed.",
+      "When he gets back, she will be waiting at the station."
+    ],
+    "sentences": [
+      {
+        "answer": "future-continuous",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "When",
+            "translation": {
+              "ru": "После пробуждения"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "you",
+            "translation": {
+              "ru": "вы"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "arrive",
+            "translation": {
+              "ru": "Прибытие"
+            }
+          },
+          {
+            "type": "punct",
+            "value": ","
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "I"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "will",
+            "role": "verb",
+            "translation": {
+              "ru": "---"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "be",
+            "role": "verb",
+            "translation": {
+              "ru": "переносу"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "cooking",
+            "role": "verb",
+            "translation": {
+              "ru": "готовка"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "dinner",
+            "translation": {
+              "ru": "ужин"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "future-continuous-04",
-    "answer": "future-continuous",
-    "type": "sentence",
-    "prompt": "Длительное действие, которое будет происходить в определённый период",
-    "promptEn": "A long action happening during a specific period",
-    "sentence": {
-      "pre": "Next week, I ",
-      "verb": "will be studying",
-      "post": " for my exams."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Длительное действие, которое будет происходить в определённый период",
+      "en": "A long action happening during a specific future period"
     },
-    "difficulty": 2
+    "tags": [
+      "future-continuous",
+      "sentence-analysis",
+      "affirmative",
+      "continuous",
+      "difficulty-2"
+    ],
+    "difficulty": 2,
+    "rules": {
+      "ru": "«Next week» — протяжённый период, в течение которого учёба будет идти как длящийся процесс; Future Continuous подчёркивает, что это занятие всего периода, а не разовое событие."
+    },
+    "contextExamples": [
+      "Next month, they will be renovating the office.",
+      "This summer, she will be interning at a law firm."
+    ],
+    "sentences": [
+      {
+        "answer": "future-continuous",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "Next",
+            "translation": {
+              "ru": "Далее"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "week",
+            "translation": {
+              "ru": "неделя"
+            }
+          },
+          {
+            "type": "punct",
+            "value": ","
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "I"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "will",
+            "role": "verb",
+            "translation": {
+              "ru": "---"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "be",
+            "role": "verb",
+            "translation": {
+              "ru": "переносу"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "studying",
+            "role": "verb",
+            "translation": {
+              "ru": "изучение"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "for",
+            "translation": {
+              "ru": "."
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "my",
+            "translation": {
+              "ru": "мой"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "exams",
+            "translation": {
+              "ru": "экзамены"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "future-continuous-05",
-    "answer": "future-continuous",
-    "type": "context",
-    "prompt": "Два действия, которые будут происходить одновременно в будущем",
-    "promptEn": "Two actions happening at the same time in the future",
-    "sentence": {
-      "pre": "While you're working, I ",
-      "verb": "will be relaxing",
-      "post": " on the beach."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Два действия, которые будут происходить одновременно в будущем",
+      "en": "Two actions happening at the same time in the future"
     },
-    "difficulty": 3
+    "tags": [
+      "future-continuous",
+      "context-clue",
+      "affirmative",
+      "continuous",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«While you're working» задаёт одновременный фон — оба действия параллельны в будущем; Future Continuous во главном передаёт действие, совпадающее по времени с придаточным."
+    },
+    "contextExamples": [
+      "While the others are sleeping, I will be finishing the report.",
+      "While you're at the gym, I'll be cooking a special dinner."
+    ],
+    "sentences": [
+      {
+        "answer": "future-continuous",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "While",
+            "translation": {
+              "ru": "Пока"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "you're",
+            "translation": {
+              "ru": "ты/вы"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "working",
+            "translation": {
+              "ru": "рабочих"
+            }
+          },
+          {
+            "type": "punct",
+            "value": ","
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "I"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "will",
+            "role": "verb",
+            "translation": {
+              "ru": "---"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "be",
+            "role": "verb",
+            "translation": {
+              "ru": "переносу"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "relaxing",
+            "role": "verb",
+            "translation": {
+              "ru": "расслабление"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "on",
+            "translation": {
+              "ru": "горит"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "beach",
+            "translation": {
+              "ru": "пляж"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "future-continuous-06",
-    "answer": "future-continuous",
-    "type": "sentence",
-    "prompt": "Прерывание запланированного действия в будущем",
-    "promptEn": "An expected future action likely to be interrupted",
-    "sentence": {
-      "pre": "I'm sure the children ",
-      "verb": "will be playing",
-      "post": " when we get there."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Прерывание ожидаемого действия в будущем",
+      "en": "An expected future action likely to be interrupted"
     },
-    "difficulty": 3
+    "tags": [
+      "future-continuous",
+      "sentence-analysis",
+      "affirmative",
+      "continuous",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«I'm sure… when we get there» — уверенность, что «playing» уже будет идти в момент прибытия; это стандартная схема «фоновое длящееся действие + прерывающий момент»."
+    },
+    "contextExamples": [
+      "I'm sure the dog will be barking when the postman arrives.",
+      "I expect she will still be talking on the phone when we knock."
+    ],
+    "sentences": [
+      {
+        "answer": "future-continuous",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "I'm",
+            "translation": {
+              "ru": "Я"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "sure",
+            "translation": {
+              "ru": "конечно"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "children",
+            "translation": {
+              "ru": "с рвотой"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "will",
+            "role": "verb",
+            "translation": {
+              "ru": "---"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "be",
+            "role": "verb",
+            "translation": {
+              "ru": "переносу"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "playing",
+            "role": "verb",
+            "translation": {
+              "ru": "воспроизводится"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "when",
+            "translation": {
+              "ru": "когда,"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "we",
+            "translation": {
+              "ru": "ср"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "get",
+            "translation": {
+              "ru": "взять"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "there",
+            "translation": {
+              "ru": "там"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "future-continuous-07",
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Вопрос о планах другого человека (косвенный, вежливый)",
+      "en": "A polite indirect question about someone's future plans"
+    },
+    "tags": [
+      "future-continuous",
+      "context-clue",
+      "question",
+      "continuous",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«Will you be using…?» — вежливый косвенный запрос о планах; в отличие от «Will you use…?», он не подразумевает просьбы и не давит на собеседника."
+    },
+    "contextExamples": [
+      "Will you be needing the printer tomorrow morning?",
+      "Will they be staying for the whole conference?"
+    ],
+    "sentences": [
+      {
+        "answer": "future-continuous",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "Will",
+            "translation": {
+              "ru": "Воля"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "you",
+            "translation": {
+              "ru": "вы"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "be",
+            "role": "verb",
+            "translation": {
+              "ru": "переносу"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "using",
+            "role": "verb",
+            "translation": {
+              "ru": "используя"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "car",
+            "translation": {
+              "ru": "кабина"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "this",
+            "translation": {
+              "ru": "сего"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "weekend",
+            "translation": {
+              "ru": "выходные"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "?"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "future-continuous-08",
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Длительное действие во время предстоящего события",
+      "en": "An ongoing action during an upcoming event"
+    },
+    "tags": [
+      "future-continuous",
+      "sentence-analysis",
+      "affirmative",
+      "continuous",
+      "difficulty-2"
+    ],
+    "difficulty": 2,
+    "rules": {
+      "ru": "«During the conference» — временной период-контейнер; «presenting» будет идти на протяжении этого события, что делает Future Continuous обязательным."
+    },
+    "contextExamples": [
+      "During the seminar, she will be demonstrating the new technique.",
+      "During the match, thousands of fans will be watching from the stands."
+    ],
+    "sentences": [
+      {
+        "answer": "future-continuous",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "During",
+            "translation": {
+              "ru": "В процессе"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "conference",
+            "translation": {
+              "ru": "конференция"
+            }
+          },
+          {
+            "type": "punct",
+            "value": ","
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "I"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "will",
+            "role": "verb",
+            "translation": {
+              "ru": "---"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "be",
+            "role": "verb",
+            "translation": {
+              "ru": "переносу"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "presenting",
+            "role": "verb",
+            "translation": {
+              "ru": "Представляя"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "our",
+            "translation": {
+              "ru": "наш"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "research",
+            "translation": {
+              "ru": "исследования"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "findings",
+            "translation": {
+              "ru": "выводы"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "future-continuous-09",
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Ожидаемое действие в конкретный час в будущем",
+      "en": "An expected action at a specific clock time in the future"
+    },
+    "tags": [
+      "future-continuous",
+      "context-clue",
+      "affirmative",
+      "continuous",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«At this time next year» — точка-якорь через год; проживание в другой стране будет находиться в процессе в этот момент, отсюда Future Continuous."
+    },
+    "contextExamples": [
+      "At this time next month, we will be celebrating our anniversary.",
+      "At this time next summer, she will be working at a hospital in Berlin."
+    ],
+    "sentences": [
+      {
+        "answer": "future-continuous",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "At",
+            "translation": {
+              "ru": "А+"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "this",
+            "translation": {
+              "ru": "сего"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "time",
+            "translation": {
+              "ru": "время"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "next",
+            "translation": {
+              "ru": "след."
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "year",
+            "translation": {
+              "ru": "год"
+            }
+          },
+          {
+            "type": "punct",
+            "value": ","
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "I"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "will",
+            "role": "verb",
+            "translation": {
+              "ru": "---"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "be",
+            "role": "verb",
+            "translation": {
+              "ru": "переносу"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "living",
+            "role": "verb",
+            "translation": {
+              "ru": "живой"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "in",
+            "translation": {
+              "ru": "от"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "a",
+            "translation": {
+              "ru": "а"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "different",
+            "translation": {
+              "ru": "разный"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "country",
+            "translation": {
+              "ru": "страна"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "future-continuous-10",
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Отрицание длящегося действия в будущем",
+      "en": "Denying that an action will be ongoing in the future"
+    },
+    "tags": [
+      "future-continuous",
+      "sentence-analysis",
+      "negative",
+      "continuous",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«at noon» — точка-якорь, а «after the night shift» объясняет, почему сон будет идти как естественный ход событий; Future Continuous передаёт ожидаемое продолжающееся состояние."
+    },
+    "contextExamples": [
+      "Don't call before 9 — he will be commuting to work.",
+      "Don't schedule anything for Thursday morning — she will be recovering from surgery."
+    ],
+    "sentences": [
+      {
+        "answer": "future-continuous",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "Don't",
+            "translation": {
+              "ru": "Не"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "come",
+            "translation": {
+              "ru": "приходить"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "at"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "noon",
+            "translation": {
+              "ru": "12 ч. 00 м."
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "punct",
+            "value": "—"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "I"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "will",
+            "role": "verb",
+            "translation": {
+              "ru": "---"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "be",
+            "role": "verb",
+            "translation": {
+              "ru": "переносу"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "sleeping",
+            "role": "verb",
+            "translation": {
+              "ru": "СОН"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "after",
+            "translation": {
+              "ru": "через"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "night",
+            "translation": {
+              "ru": "ночь"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "shift",
+            "translation": {
+              "ru": "смена"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "future-continuous-11",
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Запланированная или рутинная деятельность в конкретный период будущего",
+      "en": "A planned or routine activity in a specific future period"
+    },
+    "tags": [
+      "future-continuous",
+      "context-clue",
+      "affirmative",
+      "continuous",
+      "difficulty-2"
+    ],
+    "difficulty": 2,
+    "rules": {
+      "ru": "«This evening» — конкретный будущий период; тренировка — ожидаемая длящаяся деятельность в течение всего этого периода, что требует Future Continuous."
+    },
+    "contextExamples": [
+      "This afternoon, the surgeons will be operating on three patients.",
+      "Tomorrow morning, the crew will be installing the new equipment."
+    ],
+    "sentences": [
+      {
+        "answer": "future-continuous",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "This",
+            "translation": {
+              "ru": "Этот"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "evening",
+            "translation": {
+              "ru": "вечер"
+            }
+          },
+          {
+            "type": "punct",
+            "value": ","
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "team",
+            "translation": {
+              "ru": "команда"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "will",
+            "role": "verb",
+            "translation": {
+              "ru": "---"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "be",
+            "role": "verb",
+            "translation": {
+              "ru": "переносу"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "practising",
+            "role": "verb",
+            "translation": {
+              "ru": "Практика"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "for",
+            "translation": {
+              "ru": "."
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "championship",
+            "translation": {
+              "ru": "чемпионат"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "future-continuous-12",
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Переход от текущего события к действию в момент будущего",
+      "en": "Transitioning from a current event to a future moment action"
+    },
+    "tags": [
+      "future-continuous",
+      "sentence-analysis",
+      "affirmative",
+      "continuous",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«By the time you read this» — момент-якорь в будущем; «sitting on a plane» будет находиться в процессе в этот момент, что и требует Future Continuous."
+    },
+    "contextExamples": [
+      "By the time this message reaches you, I will be crossing the border.",
+      "By the time you wake up, she will be giving her speech on stage."
+    ],
+    "sentences": [
+      {
+        "answer": "future-continuous",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "By",
+            "translation": {
+              "ru": "________________________________"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "time",
+            "translation": {
+              "ru": "время"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "you",
+            "translation": {
+              "ru": "вы"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "read",
+            "translation": {
+              "ru": "читали"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "this",
+            "translation": {
+              "ru": "сего"
+            }
+          },
+          {
+            "type": "punct",
+            "value": ","
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "I"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "will",
+            "role": "verb",
+            "translation": {
+              "ru": "---"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "be",
+            "role": "verb",
+            "translation": {
+              "ru": "переносу"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "sitting",
+            "role": "verb",
+            "translation": {
+              "ru": "Сидячее"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "on",
+            "translation": {
+              "ru": "горит"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "a",
+            "translation": {
+              "ru": "а"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "plane",
+            "translation": {
+              "ru": "уровень"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "future-continuous-13",
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Действие, которое естественным образом произойдёт по ходу событий",
+      "en": "An action that will naturally happen in the course of events"
+    },
+    "tags": [
+      "future-continuous",
+      "context-clue",
+      "affirmative",
+      "continuous",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«anyway» подчёркивает, что прохождение мимо почты — часть естественного хода событий, не специальное намерение; Future Continuous передаёт действие как неизбежный фоновый процесс."
+    },
+    "contextExamples": [
+      "I will be going past the supermarket anyway — shall I pick something up?",
+      "She will be seeing the doctor tomorrow regardless — she can ask about it then."
+    ],
+    "sentences": [
+      {
+        "answer": "future-continuous",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "I"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "will",
+            "role": "verb",
+            "translation": {
+              "ru": "---"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "be",
+            "role": "verb",
+            "translation": {
+              "ru": "переносу"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "passing",
+            "role": "verb",
+            "translation": {
+              "ru": "проходящей"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "post",
+            "translation": {
+              "ru": "публикация"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "office",
+            "translation": {
+              "ru": "офис "
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "anyway",
+            "translation": {
+              "ru": "в любом случае"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "punct",
+            "value": "—"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "I'll",
+            "translation": {
+              "ru": "<g id=\"5\">i</g><g id=\"6\">ll</g><g id=\"7\">&#10;</g> "
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "mail",
+            "translation": {
+              "ru": "пользова-"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "it"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "for",
+            "translation": {
+              "ru": "."
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "you",
+            "translation": {
+              "ru": "вы"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "future-continuous-14",
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Два параллельных действия в будущем",
+      "en": "Two parallel actions happening simultaneously in the future"
+    },
+    "tags": [
+      "future-continuous",
+      "sentence-analysis",
+      "affirmative",
+      "continuous",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«While» с Future Continuous в придаточном обозначает длящееся фоновое действие «examining», одновременное с завершённым действием в главном предложении."
+    },
+    "contextExamples": [
+      "While the manager will be interviewing candidates, the assistant will take notes.",
+      "While the builders will be working on the roof, tenants must use the side entrance."
+    ],
+    "sentences": [
+      {
+        "answer": "future-continuous",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "While",
+            "translation": {
+              "ru": "Пока"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "doctor",
+            "translation": {
+              "ru": "врач"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "will",
+            "role": "verb",
+            "translation": {
+              "ru": "---"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "be",
+            "role": "verb",
+            "translation": {
+              "ru": "переносу"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "examining",
+            "role": "verb",
+            "translation": {
+              "ru": "Подготовка@ title job"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "patient",
+            "translation": {
+              "ru": "пациент"
+            }
+          },
+          {
+            "type": "punct",
+            "value": ","
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "nurse",
+            "translation": {
+              "ru": "медсестра"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "will",
+            "translation": {
+              "ru": "---"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "prepare",
+            "translation": {
+              "ru": "готовить"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "equipment",
+            "translation": {
+              "ru": "оборудования"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "future-continuous-15",
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Длящееся действие, которое будет продолжаться после момента в будущем",
+      "en": "An ongoing action that will continue past a future moment"
+    },
+    "tags": [
+      "future-continuous",
+      "context-clue",
+      "affirmative",
+      "continuous",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«still» + Future Continuous подчёркивает, что приготовление не закончится к моменту прихода гостей — действие продолжается через точку-якорь «at seven»."
+    },
+    "contextExamples": [
+      "When the flight lands, the ground crew will still be clearing the runway.",
+      "When the boss arrives, they will still be setting up the presentation."
+    ],
+    "sentences": [
+      {
+        "answer": "future-continuous",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "When",
+            "translation": {
+              "ru": "После пробуждения"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "guests",
+            "translation": {
+              "ru": "гости"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "arrive",
+            "translation": {
+              "ru": "Прибытие"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "at"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "seven",
+            "translation": {
+              "ru": "семь"
+            }
+          },
+          {
+            "type": "punct",
+            "value": ","
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "we",
+            "translation": {
+              "ru": "ср"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "will",
+            "role": "verb",
+            "translation": {
+              "ru": "---"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "still",
+            "role": "verb",
+            "translation": {
+              "ru": "до сих пор"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "be",
+            "role": "verb",
+            "translation": {
+              "ru": "переносу"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "preparing",
+            "role": "verb",
+            "translation": {
+              "ru": "подготовка"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "food",
+            "translation": {
+              "ru": "еда"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "future-continuous-16",
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Отрицание длящегося действия в будущий момент",
+      "en": "Negating an ongoing action at a future moment"
+    },
+    "tags": [
+      "future-continuous",
+      "sentence-analysis",
+      "negative",
+      "continuous",
+      "difficulty-2"
+    ],
+    "difficulty": 2,
+    "rules": {
+      "ru": "«Won't be using» — отрицание Future Continuous: говорящий сообщает, что действие не будет происходить «tomorrow», тем самым предлагая ресурс собеседнику."
+    },
+    "contextExamples": [
+      "She won't be needing the laptop this week — you can use it.",
+      "They won't be staying at the villa this summer, so we can rent it."
+    ],
+    "sentences": [
+      {
+        "answer": "future-continuous",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "I"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "won't",
+            "role": "verb",
+            "translation": {
+              "ru": "не будет"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "be",
+            "role": "verb",
+            "translation": {
+              "ru": "переносу"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "using",
+            "role": "verb",
+            "translation": {
+              "ru": "используя"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "car",
+            "translation": {
+              "ru": "кабина"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "tomorrow",
+            "translation": {
+              "ru": "завтра"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "punct",
+            "value": "—"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "you",
+            "translation": {
+              "ru": "вы"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "can",
+            "translation": {
+              "ru": "могут"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "borrow",
+            "translation": {
+              "ru": "заимствовать"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "it"
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "future-continuous-17",
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Вопрос о действии в конкретный момент будущего",
+      "en": "A question about what someone will be doing at a future moment"
+    },
+    "tags": [
+      "future-continuous",
+      "context-clue",
+      "question",
+      "continuous",
+      "difficulty-2"
+    ],
+    "difficulty": 2,
+    "rules": {
+      "ru": "«Will you be attending…?» — вежливый вопрос о том, будет ли действие происходить в указанный период; менее прямолинеен, чем «Will you attend…?»"
+    },
+    "contextExamples": [
+      "Will you be joining us for lunch tomorrow?",
+      "Will she be presenting at the workshop next month?"
+    ],
+    "sentences": [
+      {
+        "answer": "future-continuous",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "Will",
+            "translation": {
+              "ru": "Воля"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "you",
+            "translation": {
+              "ru": "вы"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "be",
+            "role": "verb",
+            "translation": {
+              "ru": "переносу"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "attending",
+            "role": "verb",
+            "translation": {
+              "ru": "присутствующий"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "conference",
+            "translation": {
+              "ru": "конференция"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "next",
+            "translation": {
+              "ru": "след."
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "week",
+            "translation": {
+              "ru": "неделя"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "?"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "future-continuous-18",
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Длящееся действие во время поездки или перелёта",
+      "en": "An ongoing action during a journey or flight"
+    },
+    "tags": [
+      "future-continuous",
+      "sentence-analysis",
+      "affirmative",
+      "continuous",
+      "difficulty-2"
+    ],
+    "difficulty": 2,
+    "rules": {
+      "ru": "«For the next eight hours» — чётко ограниченный период, в течение которого полёт будет длиться непрерывно; Future Continuous акцентирует протяжённость действия."
+    },
+    "contextExamples": [
+      "For the next three days, the rescue team will be searching the mountainside.",
+      "For the duration of the voyage, sailors will be taking turns on watch."
+    ],
+    "sentences": [
+      {
+        "answer": "future-continuous",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "For",
+            "translation": {
+              "ru": "От"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "next",
+            "translation": {
+              "ru": "след."
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "eight",
+            "translation": {
+              "ru": "восемь"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "hours",
+            "translation": {
+              "ru": "часы"
+            }
+          },
+          {
+            "type": "punct",
+            "value": ","
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "we",
+            "translation": {
+              "ru": "ср"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "will",
+            "role": "verb",
+            "translation": {
+              "ru": "---"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "be",
+            "role": "verb",
+            "translation": {
+              "ru": "переносу"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "flying",
+            "role": "verb",
+            "translation": {
+              "ru": "полет"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "over",
+            "translation": {
+              "ru": "сверх"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "Pacific",
+            "translation": {
+              "ru": "Тихоокеанский регион"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "Ocean",
+            "translation": {
+              "ru": "Океан"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "future-continuous-19",
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Действие в процессе в момент прибытия другого человека",
+      "en": "An action in progress at the moment someone else arrives"
+    },
+    "tags": [
+      "future-continuous",
+      "context-clue",
+      "negative",
+      "continuous",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«when you get there at noon» — момент-якорь прибытия; «sleeping» будет находиться в процессе в этот момент как ожидаемое естественное состояние."
+    },
+    "contextExamples": [
+      "Ring ahead — they will be having lunch when you arrive.",
+      "Text first — he will be meditating when you show up at ten."
+    ],
+    "sentences": [
+      {
+        "answer": "future-continuous",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "Don't",
+            "translation": {
+              "ru": "Не"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "knock",
+            "translation": {
+              "ru": "открывание"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "punct",
+            "value": "—"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "she",
+            "translation": {
+              "ru": "она"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "will",
+            "role": "verb",
+            "translation": {
+              "ru": "---"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "be",
+            "role": "verb",
+            "translation": {
+              "ru": "переносу"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "sleeping",
+            "role": "verb",
+            "translation": {
+              "ru": "СОН"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "when",
+            "translation": {
+              "ru": "когда,"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "you",
+            "translation": {
+              "ru": "вы"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "get",
+            "translation": {
+              "ru": "взять"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "there",
+            "translation": {
+              "ru": "там"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "at"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "noon",
+            "translation": {
+              "ru": "12 ч. 00 м."
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "future-continuous-20",
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Предположение о чьей-то деятельности прямо сейчас",
+      "en": "An assumption about what someone is probably doing right now"
+    },
+    "tags": [
+      "future-continuous",
+      "sentence-analysis",
+      "affirmative",
+      "continuous",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«At this hour» — текущий момент, воспринимаемый как точка-якорь; Future Continuous используется для предположения о том, что кто-то сейчас находится в процессе действия."
+    },
+    "contextExamples": [
+      "At this hour, the kids will be getting ready for school.",
+      "Right now, she will probably be landing in New York."
+    ],
+    "sentences": [
+      {
+        "answer": "future-continuous",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "At",
+            "translation": {
+              "ru": "А+"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "this",
+            "translation": {
+              "ru": "сего"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "hour",
+            "translation": {
+              "ru": "часы"
+            }
+          },
+          {
+            "type": "punct",
+            "value": ","
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "he"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "will",
+            "role": "verb",
+            "translation": {
+              "ru": "---"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "be",
+            "role": "verb",
+            "translation": {
+              "ru": "переносу"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "sitting",
+            "role": "verb",
+            "translation": {
+              "ru": "Сидячее"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "in",
+            "translation": {
+              "ru": "от"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "traffic",
+            "translation": {
+              "ru": "трафиков"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "on",
+            "translation": {
+              "ru": "горит"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "his",
+            "translation": {
+              "ru": "ХХХ"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "way",
+            "translation": {
+              "ru": "способ"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "home",
+            "translation": {
+              "ru": "главная"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "future-continuous-21",
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Длящаяся деятельность в течение всего будущего периода",
+      "en": "An ongoing activity throughout an entire future period"
+    },
+    "tags": [
+      "future-continuous",
+      "context-clue",
+      "affirmative",
+      "continuous",
+      "difficulty-2"
+    ],
+    "difficulty": 2,
+    "rules": {
+      "ru": "«All next week» — весь период целиком; «testing» будет длиться на протяжении всей следующей недели, что подчёркивается Future Continuous."
+    },
+    "contextExamples": [
+      "All next month, the staff will be attending training sessions.",
+      "Throughout the summer, volunteers will be cleaning up the riverbank."
+    ],
+    "sentences": [
+      {
+        "answer": "future-continuous",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "All",
+            "translation": {
+              "ru": "Все"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "next",
+            "translation": {
+              "ru": "след."
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "week",
+            "translation": {
+              "ru": "неделя"
+            }
+          },
+          {
+            "type": "punct",
+            "value": ","
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "engineers",
+            "translation": {
+              "ru": "Инженеры"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "will",
+            "role": "verb",
+            "translation": {
+              "ru": "---"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "be",
+            "role": "verb",
+            "translation": {
+              "ru": "переносу"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "testing",
+            "role": "verb",
+            "translation": {
+              "ru": "опробование"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "new",
+            "translation": {
+              "ru": "новых"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "system",
+            "translation": {
+              "ru": "системы."
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "future-continuous-22",
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Два параллельных действия в будущем с 'while'",
+      "en": "Two parallel future actions with 'while'"
+    },
+    "tags": [
+      "future-continuous",
+      "sentence-analysis",
+      "affirmative",
+      "continuous",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "Оба глагола в форме Future Continuous — «will be presenting» и «I'll be setting up» — описывают два параллельных длящихся действия, происходящих одновременно в будущем."
+    },
+    "contextExamples": [
+      "While she will be negotiating the deal, her partner will be reviewing the contract.",
+      "While the band will be performing, the caterers will be serving dinner."
+    ],
+    "sentences": [
+      {
+        "answer": "future-continuous",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "While",
+            "translation": {
+              "ru": "Пока"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "you",
+            "translation": {
+              "ru": "вы"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "will",
+            "role": "verb",
+            "translation": {
+              "ru": "---"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "be",
+            "role": "verb",
+            "translation": {
+              "ru": "переносу"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "presenting",
+            "role": "verb",
+            "translation": {
+              "ru": "Представляя"
+            }
+          },
+          {
+            "type": "punct",
+            "value": ","
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "I'll",
+            "translation": {
+              "ru": "<g id=\"5\">i</g><g id=\"6\">ll</g><g id=\"7\">&#10;</g> "
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "be",
+            "translation": {
+              "ru": "переносу"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "setting",
+            "translation": {
+              "ru": "Настройка"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "up",
+            "translation": {
+              "ru": "вверх"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "demo",
+            "translation": {
+              "ru": "демо"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "future-continuous-23",
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Длящееся действие как прерываемый фон для другого события",
+      "en": "An ongoing action serving as background for another future event"
+    },
+    "tags": [
+      "future-continuous",
+      "context-clue",
+      "affirmative",
+      "continuous",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«all day» — протяжённый период; работа дома будет идти как длящийся фон, что позволяет приглашать звонки в любое время — Future Continuous передаёт эту доступность."
+    },
+    "contextExamples": [
+      "I will be monitoring the system all evening, so alert me if anything goes wrong.",
+      "She will be available online all morning — feel free to message her."
+    ],
+    "sentences": [
+      {
+        "answer": "future-continuous",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "I"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "will",
+            "role": "verb",
+            "translation": {
+              "ru": "---"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "be",
+            "role": "verb",
+            "translation": {
+              "ru": "переносу"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "working",
+            "role": "verb",
+            "translation": {
+              "ru": "рабочих"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "from",
+            "translation": {
+              "ru": "от"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "home",
+            "translation": {
+              "ru": "главная"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "all",
+            "translation": {
+              "ru": "все"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "day",
+            "translation": {
+              "ru": "число"
+            }
+          },
+          {
+            "type": "punct",
+            "value": ","
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "so",
+            "translation": {
+              "ru": "50"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "call",
+            "translation": {
+              "ru": "звонок"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "me",
+            "translation": {
+              "ru": "ХХХ"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "any",
+            "translation": {
+              "ru": "любой"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "time",
+            "translation": {
+              "ru": "время"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "future-continuous-24",
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Действие, которое начнётся до указанного момента и продолжится после",
+      "en": "An action that will have started before a stated time and continue after"
+    },
+    "tags": [
+      "future-continuous",
+      "sentence-analysis",
+      "affirmative",
+      "continuous",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«By the time you finish reading this» — будущий момент-якорь; «boarding» будет в процессе в этот момент, и продолжится после него — это Future Continuous, а не Future Perfect."
+    },
+    "contextExamples": [
+      "By the time you arrive at the hotel, we will be waiting in the lobby.",
+      "By the time the ceremony ends, the guests will be lining up for photos."
+    ],
+    "sentences": [
+      {
+        "answer": "future-continuous",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "By",
+            "translation": {
+              "ru": "________________________________"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "time",
+            "translation": {
+              "ru": "время"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "you",
+            "translation": {
+              "ru": "вы"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "finish",
+            "translation": {
+              "ru": "закончить"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "reading",
+            "translation": {
+              "ru": "чтение"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "this",
+            "translation": {
+              "ru": "сего"
+            }
+          },
+          {
+            "type": "punct",
+            "value": ","
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "I"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "will",
+            "role": "verb",
+            "translation": {
+              "ru": "---"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "be",
+            "role": "verb",
+            "translation": {
+              "ru": "переносу"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "boarding",
+            "role": "verb",
+            "translation": {
+              "ru": "посадка"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "my",
+            "translation": {
+              "ru": "мой"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "flight",
+            "translation": {
+              "ru": "перелета"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "future-continuous-25",
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Операция или процедура, которая будет проходить в момент события",
+      "en": "An operation or procedure that will be underway at the time of an event"
+    },
+    "tags": [
+      "future-continuous",
+      "context-clue",
+      "negative",
+      "continuous",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«all morning» — весь утренний период; «operating» будет непрерывно происходить в течение всего этого времени как ожидаемый рабочий процесс."
+    },
+    "contextExamples": [
+      "Don't call the lab — the researchers will be running experiments all afternoon.",
+      "Don't schedule meetings before noon — she will be conducting interviews all morning."
+    ],
+    "sentences": [
+      {
+        "answer": "future-continuous",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "Don't",
+            "translation": {
+              "ru": "Не"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "disturb",
+            "translation": {
+              "ru": "беспокоить"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "him",
+            "translation": {
+              "ru": "ему"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "punct",
+            "value": "—"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "he"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "will",
+            "role": "verb",
+            "translation": {
+              "ru": "---"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "be",
+            "role": "verb",
+            "translation": {
+              "ru": "переносу"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "operating",
+            "role": "verb",
+            "translation": {
+              "ru": "условия"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "all",
+            "translation": {
+              "ru": "все"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "morning",
+            "translation": {
+              "ru": "утро"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
   }
 ]

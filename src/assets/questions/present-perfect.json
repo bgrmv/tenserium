@@ -1,106 +1,3001 @@
 [
   {
     "id": "present-perfect-01",
-    "answer": "present-perfect",
-    "type": "context",
-    "prompt": "Прошлое действие с результатом, важным сейчас",
-    "promptEn": "A past action whose result clearly matters right now",
-    "sentence": {
-      "pre": "I can't get in — I ",
-      "verb": "have lost",
-      "post": " my keys."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Прошлое действие с результатом, важным сейчас",
+      "en": "A past action whose result clearly matters right now"
     },
-    "difficulty": 2
+    "tags": [
+      "present-perfect",
+      "context-clue",
+      "negative",
+      "perfect",
+      "difficulty-2"
+    ],
+    "difficulty": 2,
+    "rules": {
+      "ru": "Конструкция «I can't get in» — это видимое следствие прошлого действия прямо сейчас. «Have lost» указывает на Present Perfect: ключи потеряны, и это влияет на настоящий момент."
+    },
+    "contextExamples": [
+      "She can't pay — she has left her wallet at home.",
+      "We can't start the car — he has taken the keys."
+    ],
+    "sentences": [
+      {
+        "answer": "present-perfect",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "I"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "can't",
+            "translation": {
+              "ru": "не мочь"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "get",
+            "translation": {
+              "ru": "взять"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "in",
+            "translation": {
+              "ru": "от"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "punct",
+            "value": "—"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "I"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "have",
+            "role": "verb",
+            "translation": {
+              "ru": "быть"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "lost",
+            "role": "verb",
+            "translation": {
+              "ru": "поражение"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "my",
+            "translation": {
+              "ru": "мой"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "keys",
+            "translation": {
+              "ru": "ключи"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "present-perfect-02",
-    "answer": "present-perfect",
-    "type": "context",
-    "prompt": "Жизненный опыт без указания точного времени",
-    "promptEn": "A life experience where the exact time is not stated",
-    "sentence": {
-      "pre": "She ",
-      "verb": "has visited",
-      "post": " Japan twice."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Жизненный опыт без указания точного времени",
+      "en": "A life experience where the exact time is not stated"
     },
-    "difficulty": 2
+    "tags": [
+      "present-perfect",
+      "context-clue",
+      "affirmative",
+      "perfect",
+      "difficulty-2"
+    ],
+    "difficulty": 2,
+    "rules": {
+      "ru": "«Twice» обозначает количество раз в рамках жизненного опыта без привязки к конкретной дате. Это классический сигнал Present Perfect для описания опыта."
+    },
+    "contextExamples": [
+      "He has seen that film three times.",
+      "They have climbed this mountain before."
+    ],
+    "sentences": [
+      {
+        "answer": "present-perfect",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "She",
+            "translation": {
+              "ru": "Она"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "has",
+            "role": "verb",
+            "translation": {
+              "ru": "будет"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "visited",
+            "role": "verb",
+            "translation": {
+              "ru": "посетил"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "Japan",
+            "translation": {
+              "ru": "Япония"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "twice",
+            "translation": {
+              "ru": "раз"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "present-perfect-03",
-    "answer": "present-perfect",
-    "type": "sentence",
-    "prompt": "Действие, которое началось в прошлом и продолжается до сих пор",
-    "promptEn": "An action that started in the past and still continues",
-    "sentence": {
-      "pre": "I ",
-      "verb": "have worked",
-      "post": " here for five years."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Действие, которое началось в прошлом и продолжается до сих пор",
+      "en": "An action that started in the past and still continues"
     },
-    "difficulty": 2
+    "tags": [
+      "present-perfect",
+      "sentence-analysis",
+      "affirmative",
+      "perfect",
+      "difficulty-2"
+    ],
+    "difficulty": 2,
+    "rules": {
+      "ru": "«For five years» указывает на период, который начался в прошлом и длится до настоящего момента. Present Perfect с «for» показывает незавершённую длительность."
+    },
+    "contextExamples": [
+      "She has taught at this school for a decade.",
+      "We have lived in this city for two years."
+    ],
+    "sentences": [
+      {
+        "answer": "present-perfect",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "I"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "have",
+            "role": "verb",
+            "translation": {
+              "ru": "быть"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "worked",
+            "role": "verb",
+            "translation": {
+              "ru": "RABOTA"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "here",
+            "translation": {
+              "ru": "здесь —"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "for",
+            "translation": {
+              "ru": "."
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "five",
+            "translation": {
+              "ru": "пять"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "years",
+            "translation": {
+              "ru": "годы"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "present-perfect-04",
-    "answer": "present-perfect",
-    "type": "sentence",
-    "prompt": "Недавнее действие с неуказанным временем",
-    "promptEn": "A recent action with no time mentioned",
-    "sentence": {
-      "pre": "I just ",
-      "verb": "have finished",
-      "post": " my homework."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Недавнее действие с маркером 'just'",
+      "en": "A recent action with the marker 'just'"
     },
-    "difficulty": 2
+    "tags": [
+      "present-perfect",
+      "sentence-analysis",
+      "affirmative",
+      "perfect",
+      "difficulty-2"
+    ],
+    "difficulty": 2,
+    "rules": {
+      "ru": "Маркер «just» между «have» и «finished» сигнализирует о только что завершённом действии. Это классическое употребление Present Perfect с «just»."
+    },
+    "contextExamples": [
+      "He has just arrived at the airport.",
+      "They have just announced the results."
+    ],
+    "sentences": [
+      {
+        "answer": "present-perfect",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "I"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "have",
+            "role": "verb",
+            "translation": {
+              "ru": "быть"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "just",
+            "role": "verb",
+            "translation": {
+              "ru": "просто верьте в свои мечты"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "finished",
+            "role": "verb",
+            "translation": {
+              "ru": "образом"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "my",
+            "translation": {
+              "ru": "мой"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "homework",
+            "translation": {
+              "ru": "домашняя работа"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "present-perfect-05",
-    "answer": "present-perfect",
-    "type": "context",
-    "prompt": "Число раз, которое что-то происходило",
-    "promptEn": "The number of times something has happened",
-    "sentence": {
-      "pre": "How many times ",
-      "verb": "have you been",
-      "post": " to this restaurant?"
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Число раз, которое что-то происходило в жизни",
+      "en": "The number of times something has happened in one's life"
     },
-    "difficulty": 2
+    "tags": [
+      "present-perfect",
+      "context-clue",
+      "question",
+      "perfect",
+      "difficulty-2"
+    ],
+    "difficulty": 2,
+    "rules": {
+      "ru": "«How many times» — запрос о частоте опыта за всю жизнь без указания времени. Конструкция «have been to» описывает посещение как жизненный опыт."
+    },
+    "contextExamples": [
+      "How many times have you watched this series?",
+      "How many times has she been to the doctor this year?"
+    ],
+    "sentences": [
+      {
+        "answer": "present-perfect",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "How",
+            "translation": {
+              "ru": "Как"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "many",
+            "translation": {
+              "ru": "много"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "times",
+            "translation": {
+              "ru": "число раз"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "have",
+            "role": "verb",
+            "translation": {
+              "ru": "быть"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "you",
+            "role": "verb",
+            "translation": {
+              "ru": "вы"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "been",
+            "role": "verb",
+            "translation": {
+              "ru": "был"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "to",
+            "translation": {
+              "ru": "кому"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "this",
+            "translation": {
+              "ru": "сего"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "restaurant",
+            "translation": {
+              "ru": "ресторан"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "?"
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "present-perfect-06",
-    "answer": "present-perfect",
-    "type": "sentence",
-    "prompt": "Наличие опыта или умения в жизни",
-    "promptEn": "Having experience or ability in life",
-    "sentence": {
-      "pre": "I ",
-      "verb": "have never tried",
-      "post": " sushi before."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Отсутствие опыта (never) в жизни до настоящего момента",
+      "en": "Lack of experience (never) in life up to the present"
     },
-    "difficulty": 3
+    "tags": [
+      "present-perfect",
+      "sentence-analysis",
+      "affirmative",
+      "perfect",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«Never» + «before» описывают отсутствие опыта за всю жизнь вплоть до настоящего момента. Это отрицательный вариант описания жизненного опыта в Present Perfect."
+    },
+    "contextExamples": [
+      "She has never been to Africa.",
+      "He has never eaten meat in his life."
+    ],
+    "sentences": [
+      {
+        "answer": "present-perfect",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "I"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "have",
+            "role": "verb",
+            "translation": {
+              "ru": "быть"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "never",
+            "role": "verb",
+            "translation": {
+              "ru": "никогда"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "tried",
+            "role": "verb",
+            "translation": {
+              "ru": "пытался/пыталась"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "sushi",
+            "translation": {
+              "ru": "суши"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "before",
+            "translation": {
+              "ru": "."
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "present-perfect-07",
-    "answer": "present-perfect",
-    "type": "context",
-    "prompt": "Многократное действие, которое произошло в прошлом",
-    "promptEn": "A repeated action that has happened in the past",
-    "sentence": {
-      "pre": "We ",
-      "verb": "have discussed",
-      "post": " this issue many times."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Многократное действие, которое происходило в прошлом",
+      "en": "A repeated action that has happened in the past"
     },
-    "difficulty": 3
+    "tags": [
+      "present-perfect",
+      "context-clue",
+      "affirmative",
+      "perfect",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«Many times» — маркер многократного повторения без указания конкретных дат. Present Perfect используется, чтобы подчеркнуть накопленный опыт повторяющихся действий."
+    },
+    "contextExamples": [
+      "She has read that book several times.",
+      "They have tried to contact him on numerous occasions."
+    ],
+    "sentences": [
+      {
+        "answer": "present-perfect",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "We",
+            "translation": {
+              "ru": "Перед"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "have",
+            "role": "verb",
+            "translation": {
+              "ru": "быть"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "discussed",
+            "role": "verb",
+            "translation": {
+              "ru": "рассмотрено"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "this",
+            "translation": {
+              "ru": "сего"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "issue",
+            "translation": {
+              "ru": "номер (журнала или газеты)"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "many",
+            "translation": {
+              "ru": "много"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "times",
+            "translation": {
+              "ru": "число раз"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "present-perfect-08",
-    "answer": "present-perfect",
-    "type": "sentence",
-    "prompt": "Изменение состояния от прошлого к настоящему",
-    "promptEn": "A change from past to present",
-    "sentence": {
-      "pre": "The situation ",
-      "verb": "has improved",
-      "post": " significantly."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Изменение состояния от прошлого к настоящему",
+      "en": "A change from past state to the present"
     },
-    "difficulty": 3
+    "tags": [
+      "present-perfect",
+      "sentence-analysis",
+      "affirmative",
+      "perfect",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "Глагол «improved» описывает изменение состояния, актуальное сейчас. Нет точной даты — акцент на результате изменения, важном в настоящий момент."
+    },
+    "contextExamples": [
+      "His English has improved a lot this semester.",
+      "Prices have risen sharply in recent months."
+    ],
+    "sentences": [
+      {
+        "answer": "present-perfect",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "The",
+            "translation": {
+              "ru": "-"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "situation",
+            "translation": {
+              "ru": "ситуация"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "has",
+            "role": "verb",
+            "translation": {
+              "ru": "будет"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "improved",
+            "role": "verb",
+            "translation": {
+              "ru": "улучшен"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "significantly",
+            "translation": {
+              "ru": "значимо"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "present-perfect-09",
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Действие, завершённое к настоящему с маркером 'already'",
+      "en": "An action completed by now with the marker 'already'"
+    },
+    "tags": [
+      "present-perfect",
+      "sentence-analysis",
+      "negative",
+      "perfect",
+      "difficulty-2"
+    ],
+    "difficulty": 2,
+    "rules": {
+      "ru": "«Already» между «have» и «seen» указывает, что действие завершено раньше ожидаемого или раньше, чем в нём возникла необходимость. Это сигнал Present Perfect с «already»."
+    },
+    "contextExamples": [
+      "Don't buy that book — she has already read it.",
+      "There's no need to explain — I have already heard the news."
+    ],
+    "sentences": [
+      {
+        "answer": "present-perfect",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "Don't",
+            "translation": {
+              "ru": "Не"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "tell",
+            "translation": {
+              "ru": "Ты"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "me",
+            "translation": {
+              "ru": "ХХХ"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "ending",
+            "translation": {
+              "ru": "завершение"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "punct",
+            "value": "—"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "I"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "have",
+            "role": "verb",
+            "translation": {
+              "ru": "быть"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "already",
+            "role": "verb",
+            "translation": {
+              "ru": "уже"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "seen",
+            "role": "verb",
+            "translation": {
+              "ru": "видел/видела"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "this",
+            "translation": {
+              "ru": "сего"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "film",
+            "translation": {
+              "ru": "пленка"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "present-perfect-10",
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Вопрос о завершённости с маркером 'yet'",
+      "en": "A question about completion using the marker 'yet'"
+    },
+    "tags": [
+      "present-perfect",
+      "context-clue",
+      "question",
+      "perfect",
+      "difficulty-2"
+    ],
+    "difficulty": 2,
+    "rules": {
+      "ru": "«Yet» в конце вопроса — стандартный маркер Present Perfect, спрашивающий о том, выполнено ли ожидаемое действие к настоящему моменту."
+    },
+    "contextExamples": [
+      "Have you spoken to the manager yet?",
+      "Has she finished her assignment yet?"
+    ],
+    "sentences": [
+      {
+        "answer": "present-perfect",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "Have",
+            "translation": {
+              "ru": "Зав"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "you",
+            "translation": {
+              "ru": "вы"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "packed",
+            "role": "verb",
+            "translation": {
+              "ru": "Выравнивание данных"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "your",
+            "translation": {
+              "ru": "вращаются"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "suitcase"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "yet",
+            "translation": {
+              "ru": "еще"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "?"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "present-perfect-11",
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Продолжительность действия с предлогом 'since'",
+      "en": "Duration of an action using 'since'"
+    },
+    "tags": [
+      "present-perfect",
+      "sentence-analysis",
+      "affirmative",
+      "perfect",
+      "difficulty-2"
+    ],
+    "difficulty": 2,
+    "rules": {
+      "ru": "«Since 2015» указывает на конкретную точку отсчёта в прошлом, от которой действие продолжается до настоящего. «Since» + дата — классический сигнал Present Perfect."
+    },
+    "contextExamples": [
+      "He has worked at that firm since graduating.",
+      "We have known about this problem since January."
+    ],
+    "sentences": [
+      {
+        "answer": "present-perfect",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "She",
+            "translation": {
+              "ru": "Она"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "has",
+            "role": "verb",
+            "translation": {
+              "ru": "будет"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "lived",
+            "role": "verb",
+            "translation": {
+              "ru": "Жить\n"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "here",
+            "translation": {
+              "ru": "здесь —"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "since",
+            "translation": {
+              "ru": "с"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "2015"
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "present-perfect-12",
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Объявление о новости или событии",
+      "en": "An announcement about recent news or an event"
+    },
+    "tags": [
+      "present-perfect",
+      "context-clue",
+      "affirmative",
+      "perfect",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "Открытие «a new species» — это свежая новость, актуальная сейчас. Present Perfect используется для объявлений о событиях, важных в настоящий момент, без указания точной даты."
+    },
+    "contextExamples": [
+      "Archaeologists have found an ancient tomb in Egypt.",
+      "Researchers have developed a new treatment for the disease."
+    ],
+    "sentences": [
+      {
+        "answer": "present-perfect",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "Scientists",
+            "translation": {
+              "ru": "Ученые"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "have",
+            "role": "verb",
+            "translation": {
+              "ru": "быть"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "discovered",
+            "role": "verb",
+            "translation": {
+              "ru": "обнаружено"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "a",
+            "translation": {
+              "ru": "а"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "new",
+            "translation": {
+              "ru": "новых"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "species",
+            "translation": {
+              "ru": "виды"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "of",
+            "translation": {
+              "ru": "коллегиальных"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "deep",
+            "translation": {
+              "ru": "глубокий"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "-"
+          },
+          {
+            "type": "word",
+            "value": "sea",
+            "translation": {
+              "ru": "море"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "fish",
+            "translation": {
+              "ru": "рыб"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "present-perfect-13",
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Превосходная степень прилагательного в сочетании с 'ever'",
+      "en": "A superlative adjective used together with 'ever'"
+    },
+    "tags": [
+      "present-perfect",
+      "sentence-analysis",
+      "affirmative",
+      "perfect",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«The best … ever» — конструкция превосходной степени + «ever» требует Present Perfect. «Ever» охватывает весь жизненный опыт говорящего вплоть до настоящего момента."
+    },
+    "contextExamples": [
+      "That was the most difficult exam I have ever taken.",
+      "She is the kindest person I have ever met."
+    ],
+    "sentences": [
+      {
+        "answer": "present-perfect",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "This",
+            "translation": {
+              "ru": "Этот"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "is",
+            "translation": {
+              "ru": "является"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "best",
+            "translation": {
+              "ru": "лучший"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "meal",
+            "translation": {
+              "ru": "еда"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "I"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "have",
+            "role": "verb",
+            "translation": {
+              "ru": "быть"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "ever",
+            "role": "verb",
+            "translation": {
+              "ru": "когда-нибудь"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "had",
+            "role": "verb",
+            "translation": {
+              "ru": "имел/имела"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "present-perfect-14",
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Видимый сейчас результат прошлого действия",
+      "en": "A visible present result of a past action"
+    },
+    "tags": [
+      "present-perfect",
+      "context-clue",
+      "affirmative",
+      "perfect",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«Look» призывает обратить внимание на видимое следствие: разбитое окно существует прямо сейчас. Present Perfect акцентирует именно этот настоящий результат прошлого действия."
+    },
+    "contextExamples": [
+      "Look — someone has spilt coffee on the keyboard.",
+      "Careful — someone has left a bag on the stairs."
+    ],
+    "sentences": [
+      {
+        "answer": "present-perfect",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "Look",
+            "translation": {
+              "ru": "Обзор"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "punct",
+            "value": "—"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "someone",
+            "translation": {
+              "ru": "кто-то"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "has",
+            "role": "verb",
+            "translation": {
+              "ru": "будет"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "broken",
+            "role": "verb",
+            "translation": {
+              "ru": "сломан"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "window",
+            "translation": {
+              "ru": "окно"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "present-perfect-15",
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Отрицание прошлого события без указания точного времени",
+      "en": "Denying a past event without stating the exact time"
+    },
+    "tags": [
+      "present-perfect",
+      "sentence-analysis",
+      "negative",
+      "perfect",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«Since last year» указывает точку отсчёта, от которой длится отсутствие контакта. «Haven't heard» + «since» — сигнал незавершённого периода без связи, продолжающегося до сих пор."
+    },
+    "contextExamples": [
+      "She hasn't visited her parents since Christmas.",
+      "We haven't received any updates since the meeting."
+    ],
+    "sentences": [
+      {
+        "answer": "present-perfect",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "I"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "haven't",
+            "role": "verb",
+            "translation": {
+              "ru": "нет"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "heard",
+            "role": "verb",
+            "translation": {
+              "ru": "слышал/а"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "from",
+            "translation": {
+              "ru": "от"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "him",
+            "translation": {
+              "ru": "ему"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "since",
+            "translation": {
+              "ru": "с"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "last",
+            "translation": {
+              "ru": "последний"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "year",
+            "translation": {
+              "ru": "год"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "present-perfect-16",
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Опыт посещения места, выраженный через 'have been to'",
+      "en": "Experience of visiting a place expressed with 'have been to'"
+    },
+    "tags": [
+      "present-perfect",
+      "context-clue",
+      "affirmative",
+      "perfect",
+      "difficulty-2"
+    ],
+    "difficulty": 2,
+    "rules": {
+      "ru": "«Have been to» — устойчивая конструкция для описания опыта посещения места. «Three times» обозначает кратность без указания дат, что требует Present Perfect."
+    },
+    "contextExamples": [
+      "She has been to Paris twice on business.",
+      "Have you ever been to Australia?"
+    ],
+    "sentences": [
+      {
+        "answer": "present-perfect",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "I"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "have",
+            "role": "verb",
+            "translation": {
+              "ru": "быть"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "been",
+            "role": "verb",
+            "translation": {
+              "ru": "был"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "to",
+            "role": "verb",
+            "translation": {
+              "ru": "кому"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "New",
+            "translation": {
+              "ru": "Создать"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "York"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "three",
+            "translation": {
+              "ru": "три"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "times",
+            "translation": {
+              "ru": "число раз"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "present-perfect-17",
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Накопленные данные или сохранённые ресурсы к сегодняшнему дню",
+      "en": "Accumulated data or saved resources up to today"
+    },
+    "tags": [
+      "present-perfect",
+      "sentence-analysis",
+      "affirmative",
+      "perfect",
+      "difficulty-2"
+    ],
+    "difficulty": 2,
+    "rules": {
+      "ru": "«Over the years» описывает незавершённый временной период, накопление результатов которого актуально сейчас. Это сигнал Present Perfect для действий с длительным эффектом."
+    },
+    "contextExamples": [
+      "Over the decades, the museum has acquired many priceless artefacts.",
+      "She has saved enough money to buy a flat."
+    ],
+    "sentences": [
+      {
+        "answer": "present-perfect",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "Over",
+            "translation": {
+              "ru": "Больше"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "years",
+            "translation": {
+              "ru": "годы"
+            }
+          },
+          {
+            "type": "punct",
+            "value": ","
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "they",
+            "translation": {
+              "ru": "они"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "have",
+            "role": "verb",
+            "translation": {
+              "ru": "быть"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "collected",
+            "role": "verb",
+            "translation": {
+              "ru": "собрано"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "thousands",
+            "translation": {
+              "ru": "тысячи"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "of",
+            "translation": {
+              "ru": "коллегиальных"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "rare",
+            "translation": {
+              "ru": "редкий"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "stamps",
+            "translation": {
+              "ru": "штампы"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "present-perfect-18",
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Недавнее действие с маркером 'recently'",
+      "en": "A recent action with the marker 'recently'"
+    },
+    "tags": [
+      "present-perfect",
+      "context-clue",
+      "affirmative",
+      "perfect",
+      "difficulty-2"
+    ],
+    "difficulty": 2,
+    "rules": {
+      "ru": "«Recently» — маркер недавнего прошлого с актуальностью для настоящего момента. Он располагается между «has» и «launched», что является стандартной позицией для наречий в Present Perfect."
+    },
+    "contextExamples": [
+      "The government has recently introduced new regulations.",
+      "He has recently moved to a new city."
+    ],
+    "sentences": [
+      {
+        "answer": "present-perfect",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "The",
+            "translation": {
+              "ru": "-"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "company",
+            "translation": {
+              "ru": "компании"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "has",
+            "role": "verb",
+            "translation": {
+              "ru": "будет"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "recently",
+            "role": "verb"
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "launched",
+            "role": "verb",
+            "translation": {
+              "ru": "Запущен"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "a",
+            "translation": {
+              "ru": "а"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "new",
+            "translation": {
+              "ru": "новых"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "product",
+            "translation": {
+              "ru": "товара"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "line",
+            "translation": {
+              "ru": "сопосадку"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "present-perfect-19",
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Достижение или прогресс к текущему моменту с 'so far'",
+      "en": "Achievement or progress up to the current moment with 'so far'"
+    },
+    "tags": [
+      "present-perfect",
+      "sentence-analysis",
+      "affirmative",
+      "perfect",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«So far» означает «к настоящему моменту» и сигнализирует о незавершённом периоде: работа продолжается. Present Perfect здесь отражает промежуточный результат текущего процесса."
+    },
+    "contextExamples": [
+      "So far, the team has completed seven of the ten tasks.",
+      "So far this year, sales have exceeded last year's figures."
+    ],
+    "sentences": [
+      {
+        "answer": "present-perfect",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "So",
+            "translation": {
+              "ru": "Таким образом,"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "far",
+            "translation": {
+              "ru": "далеко"
+            }
+          },
+          {
+            "type": "punct",
+            "value": ","
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "we",
+            "translation": {
+              "ru": "ср"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "have",
+            "role": "verb",
+            "translation": {
+              "ru": "быть"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "raised",
+            "role": "verb",
+            "translation": {
+              "ru": "долга"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "half",
+            "translation": {
+              "ru": "половина"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "of",
+            "translation": {
+              "ru": "коллегиальных"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "required",
+            "translation": {
+              "ru": "необходимости"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "amount",
+            "translation": {
+              "ru": "размер"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "present-perfect-20",
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Страдательный залог: действие совершено, результат виден сейчас",
+      "en": "Passive voice: action done, result visible now"
+    },
+    "tags": [
+      "present-perfect",
+      "context-clue",
+      "affirmative",
+      "perfect",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«Has been repaired» — пассивный Present Perfect: дорога отремонтирована, и следствие («you can drive through again») актуально прямо сейчас. Конструкция has/have + been + V3 сигнализирует о пассивном залоге в этом времени."
+    },
+    "contextExamples": [
+      "The system has been updated — you can log in now.",
+      "The contract has been signed — we can proceed."
+    ],
+    "sentences": [
+      {
+        "answer": "present-perfect",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "The",
+            "translation": {
+              "ru": "-"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "road",
+            "translation": {
+              "ru": "дорожное"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "has",
+            "role": "verb",
+            "translation": {
+              "ru": "будет"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "been",
+            "role": "verb",
+            "translation": {
+              "ru": "был"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "repaired",
+            "role": "verb",
+            "translation": {
+              "ru": "Востановленная"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "punct",
+            "value": "—"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "you",
+            "translation": {
+              "ru": "вы"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "can",
+            "translation": {
+              "ru": "могут"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "drive",
+            "translation": {
+              "ru": "гидравлический"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "through",
+            "translation": {
+              "ru": "через"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "again",
+            "translation": {
+              "ru": "снова"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "present-perfect-21",
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Личное объявление об успехе или достижении",
+      "en": "A personal announcement of a success or achievement"
+    },
+    "tags": [
+      "present-perfect",
+      "sentence-analysis",
+      "affirmative",
+      "perfect",
+      "difficulty-2"
+    ],
+    "difficulty": 2,
+    "rules": {
+      "ru": "«Finally» подчёркивает долгожданный результат, важный именно сейчас. Восклицательный тон и отсутствие конкретной даты — типичное объявление о достижении в Present Perfect."
+    },
+    "contextExamples": [
+      "She has finally finished her PhD thesis!",
+      "We have finally found a flat we like!"
+    ],
+    "sentences": [
+      {
+        "answer": "present-perfect",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "I"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "have",
+            "role": "verb",
+            "translation": {
+              "ru": "быть"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "finally",
+            "role": "verb",
+            "translation": {
+              "ru": "наконец"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "got",
+            "role": "verb",
+            "translation": {
+              "ru": "завел/а"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "my",
+            "translation": {
+              "ru": "мой"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "driving",
+            "translation": {
+              "ru": "на автомобиле"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "licence",
+            "translation": {
+              "ru": "лицензия"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "!"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "present-perfect-22",
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Продолжительность отношений или знакомства с 'for'",
+      "en": "Duration of a relationship or acquaintance using 'for'"
+    },
+    "tags": [
+      "present-perfect",
+      "context-clue",
+      "affirmative",
+      "perfect",
+      "difficulty-2"
+    ],
+    "difficulty": 2,
+    "rules": {
+      "ru": "«For over twenty years» указывает длительность отношений от прошлого до настоящего. «Known» — глагол состояния; Present Perfect с «for» выражает непрерывный период, актуальный сейчас."
+    },
+    "contextExamples": [
+      "They have been married for thirty years.",
+      "I have admired her work for a long time."
+    ],
+    "sentences": [
+      {
+        "answer": "present-perfect",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "We",
+            "translation": {
+              "ru": "Перед"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "have",
+            "role": "verb",
+            "translation": {
+              "ru": "быть"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "known",
+            "role": "verb",
+            "translation": {
+              "ru": "известны"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "each",
+            "translation": {
+              "ru": "каждой"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "other",
+            "translation": {
+              "ru": "другие"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "for",
+            "translation": {
+              "ru": "."
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "over",
+            "translation": {
+              "ru": "сверх"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "twenty",
+            "translation": {
+              "ru": "двадцать"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "years",
+            "translation": {
+              "ru": "годы"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "present-perfect-23",
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Вопрос о наличии опыта с 'ever'",
+      "en": "A question about personal experience using 'ever'"
+    },
+    "tags": [
+      "present-perfect",
+      "sentence-analysis",
+      "question",
+      "perfect",
+      "difficulty-2"
+    ],
+    "difficulty": 2,
+    "rules": {
+      "ru": "«Ever» в вопросе охватывает весь жизненный опыт говорящего — от рождения до настоящего момента. Это канонический вопрос о наличии опыта в Present Perfect."
+    },
+    "contextExamples": [
+      "Have you ever visited a country where you didn't speak the language?",
+      "Has he ever worked abroad?"
+    ],
+    "sentences": [
+      {
+        "answer": "present-perfect",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "Have",
+            "translation": {
+              "ru": "Зав"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "you",
+            "translation": {
+              "ru": "вы"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "ever",
+            "translation": {
+              "ru": "когда-нибудь"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "tried",
+            "role": "verb",
+            "translation": {
+              "ru": "пытался/пыталась"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "rock",
+            "translation": {
+              "ru": "скала"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "climbing",
+            "translation": {
+              "ru": "Лазание"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "?"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "present-perfect-24",
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Изменение ситуации с момента прошлого события",
+      "en": "A change in situation since a past event"
+    },
+    "tags": [
+      "present-perfect",
+      "context-clue",
+      "affirmative",
+      "perfect",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«Since she left» задаёт точку в прошлом, от которой накапливались изменения. «Has changed» в Present Perfect показывает, что эти изменения актуальны в настоящем."
+    },
+    "contextExamples": [
+      "A lot has happened since we last spoke.",
+      "The neighbourhood has changed enormously since they built the new road."
+    ],
+    "sentences": [
+      {
+        "answer": "present-perfect",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "Everything",
+            "translation": {
+              "ru": "Все"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "has",
+            "role": "verb",
+            "translation": {
+              "ru": "будет"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "changed",
+            "role": "verb",
+            "translation": {
+              "ru": "изменены"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "since",
+            "translation": {
+              "ru": "с"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "she",
+            "translation": {
+              "ru": "она"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "left",
+            "translation": {
+              "ru": "левый"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "company",
+            "translation": {
+              "ru": "компании"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "present-perfect-25",
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Контраст с прошедшим простым: без указания времени vs. с указанием",
+      "en": "Contrast with past simple: no time stated vs. time stated"
+    },
+    "tags": [
+      "present-perfect",
+      "sentence-analysis",
+      "affirmative",
+      "perfect",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«Has written four novels» — обобщение опыта без конкретной даты, поэтому Present Perfect. Второй клауз «came out in 2023» — прошедшее время с конкретной датой, поэтому Past Simple. Эти два предложения демонстрируют ключевое различие между временами."
+    },
+    "contextExamples": [
+      "He has directed five films — his first one won an award in 2010.",
+      "They have released three albums — the last one came out two years ago."
+    ],
+    "sentences": [
+      {
+        "answer": "present-perfect",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "She",
+            "translation": {
+              "ru": "Она"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "has",
+            "role": "verb",
+            "translation": {
+              "ru": "будет"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "written",
+            "role": "verb"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "four",
+            "translation": {
+              "ru": "четыре"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "novels",
+            "translation": {
+              "ru": "Новеллы."
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "punct",
+            "value": "—"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "her",
+            "translation": {
+              "ru": "ей"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "latest",
+            "translation": {
+              "ru": "последние"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "came",
+            "translation": {
+              "ru": "пришел"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "out",
+            "translation": {
+              "ru": "Выходной"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "in",
+            "translation": {
+              "ru": "от"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "2023"
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
   }
 ]

@@ -17,13 +17,13 @@
 
       <div class="demo-area">
         <app-question-card
-          [prompt]="DEMO_QUESTION.prompt"
+          [prompt]="DEMO_QUESTION.prompt.ru ?? DEMO_QUESTION.prompt.en"
           [remainingMs]="12000"
           [fraction]="1"
           [result]="demoResult()"
           [revealName]="demoResult() !== 'none' ? 'Present Simple' : null"
           [revealColor]="demoRevealColor()"
-          [revealSentence]="demoResult() !== 'none' ? DEMO_QUESTION.sentence : null"
+          [revealSentence]="demoResult() !== 'none' ? DEMO_QUESTION.sentences[0] : null"
         />
 
         @if (!demoAnswered()) {
@@ -82,13 +82,13 @@
 
         @if (question(); as q) {
           <app-question-card
-            [prompt]="q.prompt"
+            [prompt]="q.prompt.ru ?? q.prompt.en"
             [remainingMs]="remainingMs()"
             [fraction]="fraction()"
             [result]="result()"
             [revealName]="revealName()"
             [revealColor]="revealColor()"
-            [revealSentence]="result() !== 'none' ? q.sentence : null"
+            [revealSentence]="result() !== 'none' ? q.sentences[0] : null"
             [gainedPoints]="gained()"
           />
         }

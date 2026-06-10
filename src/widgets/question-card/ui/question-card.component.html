@@ -20,8 +20,38 @@
         <span class="reveal-label" [style.color]="revealColor()">{{ revealName() }}</span>
         @if (revealSentence(); as s) {
           <span class="reveal-sentence">
-            {{ s.pre }}<b [style.color]="revealColor()">{{ s.verb }}</b>{{ s.post }}
+            @for (t of s.tokens; track $index) {
+              @let ann = annotationFor($index, s.annotations);
+              <span
+                [class]="tokenClass(t)"
+                [class.ann-span]="!!ann"
+                [class.ann-start]="ann !== null && $index === ann.from"
+                [style.color]="t.role === 'verb' ? revealColor() : null"
+                [attr.tabindex]="ann ? 0 : null"
+                (click)="ann && showAnnotation(ann)"
+                (keydown.enter)="ann && showAnnotation(ann)"
+              >{{ t.value }}</span>
+            }
           </span>
+          @if (activeAnnotation()) {
+            <app-annotation-tooltip
+              [annotation]="activeAnnotation()!"
+              (dismissed)="activeAnnotation.set(null)"
+            />
+          }
+        }
+        @if (revealExplanation()) {
+          <p class="reveal-explanation">{{ revealExplanation() }}</p>
+        }
+        @if (revealRules()) {
+          <p class="reveal-rules">{{ revealRules() }}</p>
+        }
+        @if (revealExamples()?.length) {
+          <ul class="reveal-examples">
+            @for (ex of revealExamples()!; track $index) {
+              <li>{{ ex }}</li>
+            }
+          </ul>
         }
       </div>
     }

@@ -68,13 +68,13 @@
 
     @if (question(); as q) {
       <app-question-card
-        [prompt]="q.prompt"
+        [prompt]="q.prompt.ru ?? q.prompt.en"
         [remainingMs]="remainingMs()"
         [fraction]="fraction()"
         [result]="result()"
         [revealName]="revealName()"
         [revealColor]="revealColor()"
-        [revealSentence]="result() !== 'none' ? q.sentence : null"
+        [revealSentence]="result() !== 'none' ? q.sentences[0] : null"
         [gainedPoints]="gained()"
       />
 
@@ -116,7 +116,7 @@
   @if (showReport() && question(); as q) {
     <app-report-error
       [questionId]="q.id"
-      [tenseId]="q.answer"
+      [tenseId]="q.sentences[0].answer"
       (dismiss)="showReport.set(false)"
       (sent)="onReportSent()"
     />

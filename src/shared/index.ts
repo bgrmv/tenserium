@@ -7,7 +7,8 @@ export { RANK_TIERS, rankTier, rankProgress } from './config/rank.config';
 
 // types
 export type {
-  QuestionType, Difficulty, Sentence, Question,
+  Difficulty, Question, QuestionSentence, SentenceDistractor, League,
+  LocalizedString, TaskMechanism,
   SessionMode, SessionStatus, SessionConfig, AnswerRecord,
   RankTier, RankProgress,
   ScoreDisplayPreference, UserProfile,

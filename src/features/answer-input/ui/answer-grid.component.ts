@@ -33,23 +33,30 @@ export class AnswerGridComponent {
   readonly pickedId = input<TenseId | null>(null);
   readonly hintId = input<TenseId | null>(null);
   readonly disabled = input(false);
+  /** When set, only these tense IDs are shown (study mode 4-choice). */
+  readonly choices = input<readonly TenseId[] | null>(null);
 
   readonly answer = output<TenseId>();
 
-  protected readonly tenses = TENSES;
-
-  protected readonly cells = computed(() =>
-    TENSES.map((t) => ({
-      tense: t,
-      color: tenseColor(t, this.palette()),
-      locked: this.lockedIds().includes(t.id),
-    })),
-  );
+  protected readonly cells = computed(() => {
+    const allowed = this.choices();
+    return TENSES
+      .filter((t) => !allowed || allowed.includes(t.id))
+      .map((t) => ({
+        tense: t,
+        color: tenseColor(t, this.palette()),
+        locked: this.lockedIds().includes(t.id),
+      }));
+  });
 
   constructor() {
     this.hotkeys.tenseKey$
       .pipe(takeUntilDestroyed(this.destroyRef))
-      .subscribe((id) => this.pick(id));
+      .subscribe((id) => {
+        const ch = this.choices();
+        if (ch && !ch.includes(id)) return;
+        this.pick(id);
+      });
   }
 
   protected pick(id: TenseId): void {

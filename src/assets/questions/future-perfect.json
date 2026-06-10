@@ -1,80 +1,4089 @@
 [
   {
     "id": "future-perfect-01",
-    "answer": "future-perfect",
-    "type": "context",
-    "prompt": "Действие, которое завершится до момента в будущем",
-    "promptEn": "An action that will be finished before a point in the future",
-    "sentence": {
-      "pre": "By 2030 he ",
-      "verb": "will have graduated",
-      "post": "."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Действие, которое завершится до момента в будущем",
+      "en": "An action that will be finished before a point in the future"
     },
-    "difficulty": 3
+    "tags": [
+      "future-perfect",
+      "context-clue",
+      "affirmative",
+      "perfect",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«By 2030» — дедлайн в будущем, к которому действие (graduated) уже завершится. Предлог «by» + год требует Future Perfect."
+    },
+    "contextExamples": [
+      "By 2030, the company will have expanded into twenty new markets.",
+      "By 2030, scientists will have developed the first commercial fusion reactor."
+    ],
+    "sentences": [
+      {
+        "answer": "future-perfect",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "By",
+            "translation": {
+              "ru": "________________________________"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "2030",
+            "translation": {
+              "ru": "2030 год"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "he"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "will",
+            "role": "verb",
+            "translation": {
+              "ru": "---"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "have",
+            "role": "verb",
+            "translation": {
+              "ru": "быть"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "graduated",
+            "role": "verb",
+            "translation": {
+              "ru": "градуированный"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "future-perfect-02",
-    "answer": "future-perfect",
-    "type": "context",
-    "prompt": "Завершённое до будущего дедлайна",
-    "promptEn": "Something completed before a future deadline",
-    "sentence": {
-      "pre": "I ",
-      "verb": "will have finished",
-      "post": " by noon."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Что-либо завершённое до будущего дедлайна",
+      "en": "Something completed before a future deadline"
     },
-    "difficulty": 3
+    "tags": [
+      "future-perfect",
+      "context-clue",
+      "affirmative",
+      "perfect",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«By noon» — конкретный момент времени в будущем, до которого завершится действие. Предлог «by» с временным дедлайном — главный сигнал Future Perfect."
+    },
+    "contextExamples": [
+      "She will have packed her bags by midnight.",
+      "The chef will have prepared all the dishes by seven o'clock."
+    ],
+    "sentences": [
+      {
+        "answer": "future-perfect",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "I"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "will",
+            "role": "verb",
+            "translation": {
+              "ru": "---"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "have",
+            "role": "verb",
+            "translation": {
+              "ru": "быть"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "finished",
+            "role": "verb",
+            "translation": {
+              "ru": "образом"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "by",
+            "translation": {
+              "ru": "от кого"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "noon",
+            "translation": {
+              "ru": "12 ч. 00 м."
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "future-perfect-03",
-    "answer": "future-perfect",
-    "type": "sentence",
-    "prompt": "Количество времени, потраченное на действие к определённому моменту",
-    "promptEn": "Duration of an action by a certain future point",
-    "sentence": {
-      "pre": "By next year, I ",
-      "verb": "will have lived",
-      "post": " here for ten years."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Накопленная длительность к определённому моменту будущего",
+      "en": "Duration of an action accumulated by a certain future point"
     },
-    "difficulty": 3
+    "tags": [
+      "future-perfect",
+      "sentence-analysis",
+      "affirmative",
+      "perfect",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«By next year» задаёт будущий дедлайн; «for ten years» указывает накопленную длительность к этому моменту. Комбинация «by + future point» + «for + duration» — классический паттерн Future Perfect."
+    },
+    "contextExamples": [
+      "By next spring, they will have owned this house for twenty years.",
+      "By the time she turns forty, she will have worked at the firm for fifteen years."
+    ],
+    "sentences": [
+      {
+        "answer": "future-perfect",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "By",
+            "translation": {
+              "ru": "________________________________"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "next",
+            "translation": {
+              "ru": "след."
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "year",
+            "translation": {
+              "ru": "год"
+            }
+          },
+          {
+            "type": "punct",
+            "value": ","
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "I"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "will",
+            "role": "verb",
+            "translation": {
+              "ru": "---"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "have",
+            "role": "verb",
+            "translation": {
+              "ru": "быть"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "lived",
+            "role": "verb",
+            "translation": {
+              "ru": "Жить\n"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "here",
+            "translation": {
+              "ru": "здесь —"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "for",
+            "translation": {
+              "ru": "."
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "ten",
+            "translation": {
+              "ru": "десять"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "years",
+            "translation": {
+              "ru": "годы"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "future-perfect-04",
-    "answer": "future-perfect",
-    "type": "sentence",
-    "prompt": "Результат к определённому времени в будущем",
-    "promptEn": "A result that will be accomplished by a future time",
-    "sentence": {
-      "pre": "Before the meeting, we ",
-      "verb": "will have prepared",
-      "post": " all the documents."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Результат, достигнутый к определённому времени в будущем",
+      "en": "A result that will be accomplished by a future time"
     },
-    "difficulty": 3
+    "tags": [
+      "future-perfect",
+      "sentence-analysis",
+      "affirmative",
+      "perfect",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«Before the meeting» — будущее событие, которое служит дедлайном. Действие «prepared» должно быть завершено до наступления этого события, что требует Future Perfect."
+    },
+    "contextExamples": [
+      "Before the concert starts, the band will have rehearsed every song twice.",
+      "Before you land, the ground crew will have cleared the runway."
+    ],
+    "sentences": [
+      {
+        "answer": "future-perfect",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "Before",
+            "translation": {
+              "ru": "Было"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "meeting",
+            "translation": {
+              "ru": "встреча"
+            }
+          },
+          {
+            "type": "punct",
+            "value": ","
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "we",
+            "translation": {
+              "ru": "ср"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "will",
+            "role": "verb",
+            "translation": {
+              "ru": "---"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "have",
+            "role": "verb",
+            "translation": {
+              "ru": "быть"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "prepared",
+            "role": "verb",
+            "translation": {
+              "ru": "подготовил"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "all",
+            "translation": {
+              "ru": "все"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "documents",
+            "translation": {
+              "ru": "кументам"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "future-perfect-05",
-    "answer": "future-perfect",
-    "type": "context",
-    "prompt": "Количество раз, которое что-то произойдёт к моменту в будущем",
-    "promptEn": "How many times something will have happened by a future point",
-    "sentence": {
-      "pre": "By the end of the year, I ",
-      "verb": "will have visited",
-      "post": " five countries."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Количество раз, которое что-то произойдёт к моменту в будущем",
+      "en": "How many times something will have happened by a future point"
     },
-    "difficulty": 3
+    "tags": [
+      "future-perfect",
+      "context-clue",
+      "affirmative",
+      "perfect",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«By the end of the year» — дедлайн; «five countries» — итоговый счётчик к этому моменту. Future Perfect используется для подсчёта накопленного результата к будущей дате."
+    },
+    "contextExamples": [
+      "By the end of the tour, the band will have played thirty concerts.",
+      "By graduation, she will have taken twelve exams."
+    ],
+    "sentences": [
+      {
+        "answer": "future-perfect",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "By",
+            "translation": {
+              "ru": "________________________________"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "end",
+            "translation": {
+              "ru": "в конце"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "of",
+            "translation": {
+              "ru": "коллегиальных"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "year",
+            "translation": {
+              "ru": "год"
+            }
+          },
+          {
+            "type": "punct",
+            "value": ","
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "I"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "will",
+            "role": "verb",
+            "translation": {
+              "ru": "---"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "have",
+            "role": "verb",
+            "translation": {
+              "ru": "быть"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "visited",
+            "role": "verb",
+            "translation": {
+              "ru": "посетил"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "five",
+            "translation": {
+              "ru": "пять"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "countries",
+            "translation": {
+              "ru": "Страны"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "future-perfect-06",
-    "answer": "future-perfect",
-    "type": "sentence",
-    "prompt": "Действие, которое надо завершить до определённого момента",
-    "promptEn": "Something that must be done before a specific time",
-    "sentence": {
-      "pre": "You must call before 5 pm; otherwise, I ",
-      "verb": "will have left",
-      "post": " the office."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Действие, которое надо завершить до определённого момента",
+      "en": "Something that must be done before a specific time"
     },
-    "difficulty": 3
+    "tags": [
+      "future-perfect",
+      "sentence-analysis",
+      "affirmative",
+      "perfect",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«Before 5 pm» — дедлайн, после которого действие «left» уже совершится. Конструкция «otherwise, will have + V3» описывает состояние завершённости к конкретному времени."
+    },
+    "contextExamples": [
+      "Hurry up, or the train will have departed before you reach the platform.",
+      "Come before nine; otherwise, the kitchen will have closed."
+    ],
+    "sentences": [
+      {
+        "answer": "future-perfect",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "You",
+            "translation": {
+              "ru": "Вы"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "must",
+            "translation": {
+              "ru": "должен"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "call",
+            "translation": {
+              "ru": "звонок"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "before",
+            "translation": {
+              "ru": "."
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "5"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "pm",
+            "translation": {
+              "ru": "μm/sec (мкм/сек)"
+            }
+          },
+          {
+            "type": "punct",
+            "value": ";"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "otherwise",
+            "translation": {
+              "ru": "оговорено"
+            }
+          },
+          {
+            "type": "punct",
+            "value": ","
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "I"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "will",
+            "role": "verb",
+            "translation": {
+              "ru": "---"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "have",
+            "role": "verb",
+            "translation": {
+              "ru": "быть"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "left",
+            "role": "verb",
+            "translation": {
+              "ru": "левый"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "office",
+            "translation": {
+              "ru": "офис "
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "future-perfect-07",
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Ожидаемое завершение действия к моменту другого события",
+      "en": "Expected completion of an action by the time another event occurs"
+    },
+    "tags": [
+      "future-perfect",
+      "context-clue",
+      "affirmative",
+      "perfect",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«By the time you wake up» — момент другого будущего действия (wake up), который служит дедлайном. «Already» дополнительно подчёркивает завершённость первого действия к этому моменту."
+    },
+    "contextExamples": [
+      "By the time she reads this letter, he will have already boarded his flight.",
+      "By the time the guests arrive, we will have already set the table."
+    ],
+    "sentences": [
+      {
+        "answer": "future-perfect",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "By",
+            "translation": {
+              "ru": "________________________________"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "time",
+            "translation": {
+              "ru": "время"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "you",
+            "translation": {
+              "ru": "вы"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "wake",
+            "translation": {
+              "ru": "будить"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "up",
+            "translation": {
+              "ru": "вверх"
+            }
+          },
+          {
+            "type": "punct",
+            "value": ","
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "I"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "will",
+            "role": "verb",
+            "translation": {
+              "ru": "---"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "have",
+            "role": "verb",
+            "translation": {
+              "ru": "быть"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "already",
+            "role": "verb",
+            "translation": {
+              "ru": "уже"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "left",
+            "role": "verb",
+            "translation": {
+              "ru": "левый"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "future-perfect-08",
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Достижение или веха к конкретной дате в будущем",
+      "en": "An achievement or milestone by a specific future date"
+    },
+    "tags": [
+      "future-perfect",
+      "sentence-analysis",
+      "affirmative",
+      "perfect",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«By her thirtieth birthday» — конкретная будущая дата-дедлайн. Смотрим назад из этой точки: к тому моменту «published two novels» — достигнутый результат. Это ретроспективный взгляд из будущего."
+    },
+    "contextExamples": [
+      "By his fortieth birthday, he will have climbed five of the world's highest peaks.",
+      "By the end of her career, the professor will have supervised over a hundred doctoral students."
+    ],
+    "sentences": [
+      {
+        "answer": "future-perfect",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "By",
+            "translation": {
+              "ru": "________________________________"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "her",
+            "translation": {
+              "ru": "ей"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "thirtieth",
+            "translation": {
+              "ru": "тридцатый&#x0D;"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "birthday",
+            "translation": {
+              "ru": "день рождения"
+            }
+          },
+          {
+            "type": "punct",
+            "value": ","
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "she",
+            "translation": {
+              "ru": "она"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "will",
+            "role": "verb",
+            "translation": {
+              "ru": "---"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "have",
+            "role": "verb",
+            "translation": {
+              "ru": "быть"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "published",
+            "role": "verb",
+            "translation": {
+              "ru": "опубликовали"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "two",
+            "translation": {
+              "ru": "два"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "novels",
+            "translation": {
+              "ru": "Новеллы."
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "future-perfect-09",
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Завершение дела до наступления события или срока",
+      "en": "Completion of a task before an event or deadline arrives"
+    },
+    "tags": [
+      "future-perfect",
+      "context-clue",
+      "negative",
+      "perfect",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«Before your trip» — будущее событие, которое устанавливает дедлайн для завершения «fixed». Предлог «before» + будущее событие — сигнал, что действие должно быть выполнено к тому моменту."
+    },
+    "contextExamples": [
+      "I will have installed the updates before you start work tomorrow.",
+      "The plumber will have repaired the pipes before the tenants move in."
+    ],
+    "sentences": [
+      {
+        "answer": "future-perfect",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "Don't",
+            "translation": {
+              "ru": "Не"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "worry",
+            "translation": {
+              "ru": "беспокоиться"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "punct",
+            "value": "—"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "I"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "will",
+            "role": "verb",
+            "translation": {
+              "ru": "---"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "have",
+            "role": "verb",
+            "translation": {
+              "ru": "быть"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "fixed",
+            "role": "verb",
+            "translation": {
+              "ru": "стационарный"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "car",
+            "translation": {
+              "ru": "кабина"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "before",
+            "translation": {
+              "ru": "."
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "your",
+            "translation": {
+              "ru": "вращаются"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "trip",
+            "translation": {
+              "ru": "трипсы,"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "future-perfect-10",
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Вопрос о завершении действия к определённому будущему моменту",
+      "en": "A question about completion of an action by a future moment"
+    },
+    "tags": [
+      "future-perfect",
+      "sentence-analysis",
+      "question",
+      "perfect",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "Вопрос начинается с «Will … have», а «by Friday» — дедлайн. Структура «Will + subject + have + V3 + by [time]» — вопросительная форма Future Perfect."
+    },
+    "contextExamples": [
+      "Will she have submitted her thesis by the deadline?",
+      "Will the team have resolved all the bugs by the product launch?"
+    ],
+    "sentences": [
+      {
+        "answer": "future-perfect",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "Will",
+            "translation": {
+              "ru": "Воля"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "you",
+            "translation": {
+              "ru": "вы"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "have",
+            "role": "verb",
+            "translation": {
+              "ru": "быть"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "finished",
+            "role": "verb",
+            "translation": {
+              "ru": "образом"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "project",
+            "translation": {
+              "ru": "Проектные"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "by",
+            "translation": {
+              "ru": "от кого"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "Friday",
+            "translation": {
+              "ru": "Пятница"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "?"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "future-perfect-11",
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Отрицание: действие не будет завершено к сроку",
+      "en": "Negation: an action will not be completed by a deadline"
+    },
+    "tags": [
+      "future-perfect",
+      "context-clue",
+      "negative",
+      "perfect",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«Will not have met» — отрицательная форма Future Perfect; «by December» — дедлайн. Конструкция «will not have + V3 + by [date]» означает, что результат к сроку НЕ будет достигнут."
+    },
+    "contextExamples": [
+      "At this pace, he will not have finished the manuscript by the publisher's deadline.",
+      "The construction crew will not have completed the bridge by the scheduled opening date."
+    ],
+    "sentences": [
+      {
+        "answer": "future-perfect",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "At",
+            "translation": {
+              "ru": "А+"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "this",
+            "translation": {
+              "ru": "сего"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "rate",
+            "translation": {
+              "ru": "вознаграждения"
+            }
+          },
+          {
+            "type": "punct",
+            "value": ","
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "team",
+            "translation": {
+              "ru": "команда"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "will",
+            "role": "verb",
+            "translation": {
+              "ru": "---"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "not",
+            "role": "verb"
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "have",
+            "role": "verb",
+            "translation": {
+              "ru": "быть"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "met",
+            "role": "verb",
+            "translation": {
+              "ru": "встретил/а"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "its",
+            "translation": {
+              "ru": "свой"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "target",
+            "translation": {
+              "ru": "2022 г."
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "by",
+            "translation": {
+              "ru": "от кого"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "December",
+            "translation": {
+              "ru": "Декабрь"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "future-perfect-12",
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Степень завершённости: большая часть работы сделана к сроку",
+      "en": "Degree of completion: most work done by a deadline"
+    },
+    "tags": [
+      "future-perfect",
+      "sentence-analysis",
+      "affirmative",
+      "perfect",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«By the end of the week» — дедлайн, к которому «the first phase» будет полностью завершена. Акцент на итоговом результате к конкретному сроку — характерный признак Future Perfect."
+    },
+    "contextExamples": [
+      "By the end of the month, the team will have released three new features.",
+      "By the end of the semester, she will have covered all the required topics."
+    ],
+    "sentences": [
+      {
+        "answer": "future-perfect",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "By",
+            "translation": {
+              "ru": "________________________________"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "end",
+            "translation": {
+              "ru": "в конце"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "of",
+            "translation": {
+              "ru": "коллегиальных"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "week",
+            "translation": {
+              "ru": "неделя"
+            }
+          },
+          {
+            "type": "punct",
+            "value": ","
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "we",
+            "translation": {
+              "ru": "ср"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "will",
+            "role": "verb",
+            "translation": {
+              "ru": "---"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "have",
+            "role": "verb",
+            "translation": {
+              "ru": "быть"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "completed",
+            "role": "verb",
+            "translation": {
+              "ru": "выполнено"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "first",
+            "translation": {
+              "ru": "первый"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "phase",
+            "translation": {
+              "ru": "фаза (Космин)"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "of",
+            "translation": {
+              "ru": "коллегиальных"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "project",
+            "translation": {
+              "ru": "Проектные"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "future-perfect-13",
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Личное обязательство завершить дело до встречи",
+      "en": "A personal commitment to finish something before a meeting"
+    },
+    "tags": [
+      "future-perfect",
+      "context-clue",
+      "affirmative",
+      "perfect",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«Before our call» — будущее событие-дедлайн; «will have read» выражает обязательство завершить действие до этого момента. Future Perfect здесь передаёт уверенное обещание о завершённости."
+    },
+    "contextExamples": [
+      "Don't worry — I promise I will have finished the slides before the presentation.",
+      "She assures us she will have reviewed all the applications before the interview day."
+    ],
+    "sentences": [
+      {
+        "answer": "future-perfect",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "I"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "promise",
+            "translation": {
+              "ru": "обещать"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "I"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "will",
+            "role": "verb",
+            "translation": {
+              "ru": "---"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "have",
+            "role": "verb",
+            "translation": {
+              "ru": "быть"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "read",
+            "role": "verb",
+            "translation": {
+              "ru": "читали"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "report",
+            "translation": {
+              "ru": "отчет о проведении валидации"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "before",
+            "translation": {
+              "ru": "."
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "our",
+            "translation": {
+              "ru": "наш"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "call",
+            "translation": {
+              "ru": "звонок"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "future-perfect-14",
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Накопленный опыт к определённому возрасту или дате",
+      "en": "Accumulated experience by a certain age or date"
+    },
+    "tags": [
+      "future-perfect",
+      "sentence-analysis",
+      "affirmative",
+      "perfect",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«By the time he is thirty» — будущий возрастной дедлайн, к которому накопится опыт. Смотрим на итог «four different countries» из будущей точки — ретроспективный взгляд, характерный для Future Perfect."
+    },
+    "contextExamples": [
+      "By the time she finishes university, she will have lived in three different cities.",
+      "By the time he retires, he will have managed over fifty large-scale projects."
+    ],
+    "sentences": [
+      {
+        "answer": "future-perfect",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "By",
+            "translation": {
+              "ru": "________________________________"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "time",
+            "translation": {
+              "ru": "время"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "he"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "is",
+            "translation": {
+              "ru": "является"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "thirty",
+            "translation": {
+              "ru": "тридцать"
+            }
+          },
+          {
+            "type": "punct",
+            "value": ","
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "he"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "will",
+            "role": "verb",
+            "translation": {
+              "ru": "---"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "have",
+            "role": "verb",
+            "translation": {
+              "ru": "быть"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "worked",
+            "role": "verb",
+            "translation": {
+              "ru": "RABOTA"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "in",
+            "translation": {
+              "ru": "от"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "four",
+            "translation": {
+              "ru": "четыре"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "different",
+            "translation": {
+              "ru": "разный"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "countries",
+            "translation": {
+              "ru": "Страны"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "future-perfect-15",
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Событие, которое завершится прежде, чем вы успеете что-то сделать",
+      "en": "An event that will be over before you can do anything"
+    },
+    "tags": [
+      "future-perfect",
+      "context-clue",
+      "affirmative",
+      "perfect",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«By the time the ambulance arrives» — момент другого будущего действия (arrives), до которого «the situation» уже изменится. Последовательность двух будущих событий с акцентом на завершённость первого."
+    },
+    "contextExamples": [
+      "By the time the fire brigade arrives, the flames will have spread to the upper floor.",
+      "By the time you get here, the sale will have ended."
+    ],
+    "sentences": [
+      {
+        "answer": "future-perfect",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "By",
+            "translation": {
+              "ru": "________________________________"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "time",
+            "translation": {
+              "ru": "время"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "ambulance",
+            "translation": {
+              "ru": "скорая помощь"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "arrives",
+            "translation": {
+              "ru": "arrives."
+            }
+          },
+          {
+            "type": "punct",
+            "value": ","
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "situation",
+            "translation": {
+              "ru": "ситуация"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "will",
+            "role": "verb",
+            "translation": {
+              "ru": "---"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "have",
+            "role": "verb",
+            "translation": {
+              "ru": "быть"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "changed",
+            "role": "verb",
+            "translation": {
+              "ru": "изменены"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "future-perfect-16",
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Отрицание: результат к сроку не будет достигнут",
+      "en": "Negation: a result will not have been reached by a deadline"
+    },
+    "tags": [
+      "future-perfect",
+      "sentence-analysis",
+      "negative",
+      "perfect",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«Won't have finished» — отрицательная форма Future Perfect (won't = will not); «by Monday» — дедлайн. Сочетание «won't have + V3 + by [day]» — надёжный сигнал отрицания Future Perfect."
+    },
+    "contextExamples": [
+      "I'm sorry, but I won't have reviewed your draft by tomorrow morning.",
+      "They won't have hired a replacement by the time he leaves."
+    ],
+    "sentences": [
+      {
+        "answer": "future-perfect",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "I'm",
+            "translation": {
+              "ru": "Я"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "afraid",
+            "translation": {
+              "ru": "испуганный "
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "I"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "won't",
+            "role": "verb",
+            "translation": {
+              "ru": "не будет"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "have",
+            "role": "verb",
+            "translation": {
+              "ru": "быть"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "finished",
+            "role": "verb",
+            "translation": {
+              "ru": "образом"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "report",
+            "translation": {
+              "ru": "отчет о проведении валидации"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "by",
+            "translation": {
+              "ru": "от кого"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "Monday",
+            "translation": {
+              "ru": "Понедельник"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "future-perfect-17",
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Вопрос о завершённости к конкретному сроку",
+      "en": "A question about whether something will be done by a deadline"
+    },
+    "tags": [
+      "future-perfect",
+      "context-clue",
+      "question",
+      "perfect",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«Will … have completed» — вопросительная инверсия Future Perfect; «by next month» — дедлайн. Вопрос строится по схеме «Will + subject + have + V3 + by [time]»."
+    },
+    "contextExamples": [
+      "Will the new software have been installed by the time we reopen the office?",
+      "Will the committee have reached a decision by Thursday's session?"
+    ],
+    "sentences": [
+      {
+        "answer": "future-perfect",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "Will",
+            "translation": {
+              "ru": "Воля"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "construction",
+            "translation": {
+              "ru": "строительной"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "team",
+            "translation": {
+              "ru": "команда"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "have",
+            "role": "verb",
+            "translation": {
+              "ru": "быть"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "completed",
+            "role": "verb",
+            "translation": {
+              "ru": "выполнено"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "repairs",
+            "translation": {
+              "ru": "ремонта"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "by",
+            "translation": {
+              "ru": "от кого"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "next",
+            "translation": {
+              "ru": "след."
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "month",
+            "translation": {
+              "ru": "месяца"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "?"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "future-perfect-18",
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Страдательный залог: что-то будет сделано к определённому времени",
+      "en": "Passive voice: something will have been done by a set time"
+    },
+    "tags": [
+      "future-perfect",
+      "sentence-analysis",
+      "affirmative",
+      "perfect",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«Will have been screened» — пассивная форма Future Perfect (will have been + V3). «Before the flight departs» — будущее событие-дедлайн. Структура пассива отличается от активного залога добавлением «been»."
+    },
+    "contextExamples": [
+      "By opening time, all the exhibits will have been installed.",
+      "The contracts will have been signed before the merger is announced."
+    ],
+    "sentences": [
+      {
+        "answer": "future-perfect",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "All",
+            "translation": {
+              "ru": "Все"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "passengers",
+            "translation": {
+              "ru": "пассажиров"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "will",
+            "role": "verb",
+            "translation": {
+              "ru": "---"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "have",
+            "role": "verb",
+            "translation": {
+              "ru": "быть"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "been",
+            "role": "verb",
+            "translation": {
+              "ru": "был"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "screened",
+            "role": "verb"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "before",
+            "translation": {
+              "ru": "."
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "flight",
+            "translation": {
+              "ru": "перелета"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "departs",
+            "translation": {
+              "ru": "Отправление"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "future-perfect-19",
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Количество лет работы к моменту выхода на пенсию",
+      "en": "Years of service accumulated by the time of retirement"
+    },
+    "tags": [
+      "future-perfect",
+      "context-clue",
+      "affirmative",
+      "perfect",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«By the time he retires» — будущий дедлайн (момент выхода на пенсию); «for thirty years» — накопленный стаж к этому моменту. Комбинация «by the time + future event» + «for + duration» указывает на Future Perfect."
+    },
+    "contextExamples": [
+      "By the time she steps down, she will have led the organisation for two decades.",
+      "By the time he finishes his contract, he will have taught at this school for twelve years."
+    ],
+    "sentences": [
+      {
+        "answer": "future-perfect",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "By",
+            "translation": {
+              "ru": "________________________________"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "time",
+            "translation": {
+              "ru": "время"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "he"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "retires",
+            "translation": {
+              "ru": "Удаление"
+            }
+          },
+          {
+            "type": "punct",
+            "value": ","
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "he"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "will",
+            "role": "verb",
+            "translation": {
+              "ru": "---"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "have",
+            "role": "verb",
+            "translation": {
+              "ru": "быть"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "served",
+            "role": "verb",
+            "translation": {
+              "ru": "подаются"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "company",
+            "translation": {
+              "ru": "компании"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "for",
+            "translation": {
+              "ru": "."
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "thirty",
+            "translation": {
+              "ru": "тридцать"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "years",
+            "translation": {
+              "ru": "годы"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "future-perfect-20",
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Научный или технологический прогресс к определённому году",
+      "en": "Scientific or technological progress by a certain year"
+    },
+    "tags": [
+      "future-perfect",
+      "sentence-analysis",
+      "affirmative",
+      "perfect",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«By 2040» — конкретный год в будущем как дедлайн. Смотрим вперёд из настоящего и оцениваем результат (found a cure) как свершившийся факт к тому году — классический ретроспективный взгляд Future Perfect."
+    },
+    "contextExamples": [
+      "By 2050, engineers will have built the first permanent lunar base.",
+      "By 2035, electric vehicles will have replaced most combustion-engine cars on city roads."
+    ],
+    "sentences": [
+      {
+        "answer": "future-perfect",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "By",
+            "translation": {
+              "ru": "________________________________"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "2040"
+          },
+          {
+            "type": "punct",
+            "value": ","
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "doctors",
+            "translation": {
+              "ru": "психоаналитики"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "will",
+            "role": "verb",
+            "translation": {
+              "ru": "---"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "have",
+            "role": "verb",
+            "translation": {
+              "ru": "быть"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "found",
+            "role": "verb",
+            "translation": {
+              "ru": "конц."
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "a",
+            "translation": {
+              "ru": "а"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "cure",
+            "translation": {
+              "ru": "лечить"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "for",
+            "translation": {
+              "ru": "."
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "several",
+            "translation": {
+              "ru": "несколько случаев"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "currently",
+            "translation": {
+              "ru": "В данный момент"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "incurable",
+            "translation": {
+              "ru": "неизлечимая"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "diseases",
+            "translation": {
+              "ru": "заболеваний"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "future-perfect-21",
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Личный учебный или профессиональный рубеж к дате",
+      "en": "A personal learning or professional milestone by a date"
+    },
+    "tags": [
+      "future-perfect",
+      "context-clue",
+      "affirmative",
+      "perfect",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«By the end of the course» — дедлайн завершения курса; «over five hundred new words» — итоговый накопленный результат к этому моменту. Future Perfect показывает предсказываемый итог обучения."
+    },
+    "contextExamples": [
+      "By the end of the programme, participants will have completed eight modules.",
+      "By the time you finish this book, you will have encountered all the key grammar structures."
+    ],
+    "sentences": [
+      {
+        "answer": "future-perfect",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "By",
+            "translation": {
+              "ru": "________________________________"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "end",
+            "translation": {
+              "ru": "в конце"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "of",
+            "translation": {
+              "ru": "коллегиальных"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "course",
+            "translation": {
+              "ru": "курс"
+            }
+          },
+          {
+            "type": "punct",
+            "value": ","
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "you",
+            "translation": {
+              "ru": "вы"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "will",
+            "role": "verb",
+            "translation": {
+              "ru": "---"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "have",
+            "role": "verb",
+            "translation": {
+              "ru": "быть"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "learned",
+            "role": "verb",
+            "translation": {
+              "ru": "и др."
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "over",
+            "translation": {
+              "ru": "сверх"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "five",
+            "translation": {
+              "ru": "пять"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "hundred",
+            "translation": {
+              "ru": "сотни"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "new",
+            "translation": {
+              "ru": "новых"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "words",
+            "translation": {
+              "ru": "слова"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "future-perfect-22",
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Накопленный результат решений или усилий к дате",
+      "en": "Accumulated result of decisions or efforts by a date"
+    },
+    "tags": [
+      "future-perfect",
+      "sentence-analysis",
+      "affirmative",
+      "perfect",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«By the end of the year» — дедлайн; «over three thousand euros» — накопленный итог регулярных действий к этому сроку. Future Perfect в условной конструкции (If … by …) подсчитывает будущий результат."
+    },
+    "contextExamples": [
+      "If you walk five kilometres daily, by the end of the month you will have covered over 150 kilometres.",
+      "If they keep this growth rate, by next quarter the company will have doubled its revenue."
+    ],
+    "sentences": [
+      {
+        "answer": "future-perfect",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "If",
+            "translation": {
+              "ru": "При"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "you",
+            "translation": {
+              "ru": "вы"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "save",
+            "translation": {
+              "ru": "сохранить"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "ten",
+            "translation": {
+              "ru": "десять"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "euros",
+            "translation": {
+              "ru": "евро"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "a",
+            "translation": {
+              "ru": "а"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "day",
+            "translation": {
+              "ru": "число"
+            }
+          },
+          {
+            "type": "punct",
+            "value": ","
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "by",
+            "translation": {
+              "ru": "от кого"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "end",
+            "translation": {
+              "ru": "в конце"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "of",
+            "translation": {
+              "ru": "коллегиальных"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "year",
+            "translation": {
+              "ru": "год"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "you",
+            "translation": {
+              "ru": "вы"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "will",
+            "role": "verb",
+            "translation": {
+              "ru": "---"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "have",
+            "role": "verb",
+            "translation": {
+              "ru": "быть"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "saved",
+            "role": "verb",
+            "translation": {
+              "ru": "сохранено"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "over",
+            "translation": {
+              "ru": "сверх"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "three",
+            "translation": {
+              "ru": "три"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "thousand",
+            "translation": {
+              "ru": "тысяч"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "euros",
+            "translation": {
+              "ru": "евро"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "future-perfect-23",
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Строительство или инфраструктурный проект, завершённый к дате",
+      "en": "A construction or infrastructure project completed by a date"
+    },
+    "tags": [
+      "future-perfect",
+      "context-clue",
+      "affirmative",
+      "perfect",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«By 2026» — год-дедлайн; «four new metro stations» — конкретный счётчик завершённых объектов к этой дате. Future Perfect выражает предсказание о результате масштабного проекта к будущему году."
+    },
+    "contextExamples": [
+      "By 2027, the city council will have built three new hospitals.",
+      "By the end of the decade, the government will have upgraded all major motorways."
+    ],
+    "sentences": [
+      {
+        "answer": "future-perfect",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "By",
+            "translation": {
+              "ru": "________________________________"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "2026"
+          },
+          {
+            "type": "punct",
+            "value": ","
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "authorities",
+            "translation": {
+              "ru": "органов"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "will",
+            "role": "verb",
+            "translation": {
+              "ru": "---"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "have",
+            "role": "verb",
+            "translation": {
+              "ru": "быть"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "opened",
+            "role": "verb",
+            "translation": {
+              "ru": "&amp;"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "four",
+            "translation": {
+              "ru": "четыре"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "new",
+            "translation": {
+              "ru": "новых"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "metro",
+            "translation": {
+              "ru": "metrou"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "stations",
+            "translation": {
+              "ru": "для работы"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "future-perfect-24",
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Завершённость действия к моменту встречи или разговора",
+      "en": "Completion of an action by the time of a meeting or conversation"
+    },
+    "tags": [
+      "future-perfect",
+      "sentence-analysis",
+      "affirmative",
+      "perfect",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«By the time we sit down to discuss it» — момент будущего события (встречи), до которого действие (read) должно быть завершено. Первое действие предшествует второму — классическая последовательность Future Perfect."
+    },
+    "contextExamples": [
+      "By the time the panel convenes, all judges will have scored the submissions.",
+      "By the time we reconvene after lunch, the technical team will have set up the equipment."
+    ],
+    "sentences": [
+      {
+        "answer": "future-perfect",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "By",
+            "translation": {
+              "ru": "________________________________"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "time",
+            "translation": {
+              "ru": "время"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "we",
+            "translation": {
+              "ru": "ср"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "sit",
+            "translation": {
+              "ru": "ХХХ"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "down",
+            "translation": {
+              "ru": "Вниз"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "to",
+            "translation": {
+              "ru": "кому"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "discuss",
+            "translation": {
+              "ru": "дискутировать"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "it"
+          },
+          {
+            "type": "punct",
+            "value": ","
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "everyone",
+            "translation": {
+              "ru": "все"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "will",
+            "role": "verb",
+            "translation": {
+              "ru": "---"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "have",
+            "role": "verb",
+            "translation": {
+              "ru": "быть"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "read",
+            "role": "verb",
+            "translation": {
+              "ru": "читали"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "proposal",
+            "translation": {
+              "ru": "предложение"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "future-perfect-25",
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Накопленный жизненный опыт или суммарное количество действий к возрасту",
+      "en": "Accumulated life experience or total count of actions by a certain age"
+    },
+    "tags": [
+      "future-perfect",
+      "context-clue",
+      "affirmative",
+      "perfect",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«By the age of eighty» — возрастной дедлайн; «for nearly twenty-seven years» — суммарная накопленная длительность. Взгляд из будущей точки жизни на итоговый результат — типичный случай Future Perfect."
+    },
+    "contextExamples": [
+      "By the age of seventy, the average driver will have spent over three years behind the wheel.",
+      "By the time most people retire, they will have attended thousands of hours of meetings."
+    ],
+    "sentences": [
+      {
+        "answer": "future-perfect",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "By",
+            "translation": {
+              "ru": "________________________________"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "age",
+            "translation": {
+              "ru": "ния"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "of",
+            "translation": {
+              "ru": "коллегиальных"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "eighty",
+            "translation": {
+              "ru": "восемьдесят"
+            }
+          },
+          {
+            "type": "punct",
+            "value": ","
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "average",
+            "translation": {
+              "ru": "среднее"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "person",
+            "translation": {
+              "ru": "лицо"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "will",
+            "role": "verb",
+            "translation": {
+              "ru": "---"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "have",
+            "role": "verb",
+            "translation": {
+              "ru": "быть"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "slept",
+            "role": "verb",
+            "translation": {
+              "ru": "Сон"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "for",
+            "translation": {
+              "ru": "."
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "nearly",
+            "translation": {
+              "ru": "почти"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "twenty",
+            "translation": {
+              "ru": "двадцать"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "-"
+          },
+          {
+            "type": "word",
+            "value": "seven",
+            "translation": {
+              "ru": "семь"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "years",
+            "translation": {
+              "ru": "годы"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
   }
 ]

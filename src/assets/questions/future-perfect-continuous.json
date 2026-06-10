@@ -1,67 +1,4830 @@
 [
   {
     "id": "future-perfect-continuous-01",
-    "answer": "future-perfect-continuous",
-    "type": "context",
-    "prompt": "Сколько времени продлится действие к моменту в будущем",
-    "promptEn": "How long an action will have continued up to a future point",
-    "sentence": {
-      "pre": "By June she ",
-      "verb": "will have been living",
-      "post": " here a year."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Сколько времени продлится действие к моменту в будущем",
+      "en": "How long an action will have continued up to a future point"
     },
-    "difficulty": 3
+    "tags": [
+      "future-perfect-continuous",
+      "context-clue",
+      "affirmative",
+      "perfect-continuous",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«By June» — будущий дедлайн; «a year» — длительность непрерывного процесса (living) к этому моменту. Акцент на продолжающемся процессе вплоть до июня требует Future Perfect Continuous, а не просто Future Perfect."
+    },
+    "contextExamples": [
+      "By March, he will have been renting this apartment for two years.",
+      "By the anniversary date, they will have been running the café for a decade."
+    ],
+    "sentences": [
+      {
+        "answer": "future-perfect-continuous",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "By",
+            "translation": {
+              "ru": "________________________________"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "June",
+            "translation": {
+              "ru": "Июнь"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "she",
+            "translation": {
+              "ru": "она"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "will",
+            "role": "verb",
+            "translation": {
+              "ru": "---"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "have",
+            "role": "verb",
+            "translation": {
+              "ru": "быть"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "been",
+            "role": "verb",
+            "translation": {
+              "ru": "был"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "living",
+            "role": "verb",
+            "translation": {
+              "ru": "живой"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "here",
+            "translation": {
+              "ru": "здесь —"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "a",
+            "translation": {
+              "ru": "а"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "year",
+            "translation": {
+              "ru": "год"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "future-perfect-continuous-02",
-    "answer": "future-perfect-continuous",
-    "type": "sentence",
-    "prompt": "Длительность действия в определённый момент будущего",
-    "promptEn": "The duration of an action at a specific future moment",
-    "sentence": {
-      "pre": "By the time you arrive, I ",
-      "verb": "will have been waiting",
-      "post": " for two hours."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Длительность ожидания к определённому моменту в будущем",
+      "en": "The duration of waiting up to a specific future moment"
     },
-    "difficulty": 3
+    "tags": [
+      "future-perfect-continuous",
+      "sentence-analysis",
+      "affirmative",
+      "perfect-continuous",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«For two hours» — длительность непрерывного ожидания; «by the time you arrive» — будущий момент-дедлайн. Сочетание «will have been + -ing» + «for + period» подчёркивает сам процесс ожидания, а не его завершение."
+    },
+    "contextExamples": [
+      "By the time the doctor sees you, you will have been sitting in the waiting room for three hours.",
+      "By the time the bus comes, we will have been standing in the rain for forty minutes."
+    ],
+    "sentences": [
+      {
+        "answer": "future-perfect-continuous",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "By",
+            "translation": {
+              "ru": "________________________________"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "time",
+            "translation": {
+              "ru": "время"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "you",
+            "translation": {
+              "ru": "вы"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "arrive",
+            "translation": {
+              "ru": "Прибытие"
+            }
+          },
+          {
+            "type": "punct",
+            "value": ","
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "I"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "will",
+            "role": "verb",
+            "translation": {
+              "ru": "---"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "have",
+            "role": "verb",
+            "translation": {
+              "ru": "быть"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "been",
+            "role": "verb",
+            "translation": {
+              "ru": "был"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "waiting",
+            "role": "verb",
+            "translation": {
+              "ru": "ожидание"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "for",
+            "translation": {
+              "ru": "."
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "two",
+            "translation": {
+              "ru": "два"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "hours",
+            "translation": {
+              "ru": "часы"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "future-perfect-continuous-03",
-    "answer": "future-perfect-continuous",
-    "type": "context",
-    "prompt": "Ожидаемая длительность работы/процесса к определённому времени",
-    "promptEn": "Expected duration of work or process by a future time",
-    "sentence": {
-      "pre": "By next year, they ",
-      "verb": "will have been building",
-      "post": " the bridge for two years."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Ожидаемая длительность работы или процесса к определённому времени",
+      "en": "Expected duration of work or a process by a future time"
     },
-    "difficulty": 3
+    "tags": [
+      "future-perfect-continuous",
+      "context-clue",
+      "affirmative",
+      "perfect-continuous",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«By next year» — будущий дедлайн; «for two years» — накопленная длительность непрерывного строительства (building) к тому моменту. Глагол building (-ing форма) акцентирует текущий процесс, а не факт завершения."
+    },
+    "contextExamples": [
+      "By next summer, the contractors will have been renovating the stadium for eighteen months.",
+      "By the end of the decade, scientists will have been developing the vaccine for over five years."
+    ],
+    "sentences": [
+      {
+        "answer": "future-perfect-continuous",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "By",
+            "translation": {
+              "ru": "________________________________"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "next",
+            "translation": {
+              "ru": "след."
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "year",
+            "translation": {
+              "ru": "год"
+            }
+          },
+          {
+            "type": "punct",
+            "value": ","
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "they",
+            "translation": {
+              "ru": "они"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "will",
+            "role": "verb",
+            "translation": {
+              "ru": "---"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "have",
+            "role": "verb",
+            "translation": {
+              "ru": "быть"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "been",
+            "role": "verb",
+            "translation": {
+              "ru": "был"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "building",
+            "role": "verb",
+            "translation": {
+              "ru": "здание"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "bridge",
+            "translation": {
+              "ru": "мост"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "for",
+            "translation": {
+              "ru": "."
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "two",
+            "translation": {
+              "ru": "два"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "years",
+            "translation": {
+              "ru": "годы"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "future-perfect-continuous-04",
-    "answer": "future-perfect-continuous",
-    "type": "sentence",
-    "prompt": "Сколько времени прошло при наступлении будущего события",
-    "promptEn": "How much time will have passed when a future event occurs",
-    "sentence": {
-      "pre": "When she retires, she ",
-      "verb": "will have been teaching",
-      "post": " for forty years."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Сколько времени пройдёт при наступлении будущего события",
+      "en": "How much time will have passed when a future event occurs"
     },
-    "difficulty": 3
+    "tags": [
+      "future-perfect-continuous",
+      "sentence-analysis",
+      "affirmative",
+      "perfect-continuous",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«When she retires» — будущее событие-дедлайн; «for forty years» — суммарная продолжительность профессии teaching к тому моменту. Future Perfect Continuous подчёркивает непрерывность карьеры учителя."
+    },
+    "contextExamples": [
+      "When he finally publishes, he will have been writing the novel for seven years.",
+      "When the factory closes, the workers will have been producing cars there for over thirty years."
+    ],
+    "sentences": [
+      {
+        "answer": "future-perfect-continuous",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "When",
+            "translation": {
+              "ru": "После пробуждения"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "she",
+            "translation": {
+              "ru": "она"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "retires",
+            "translation": {
+              "ru": "Удаление"
+            }
+          },
+          {
+            "type": "punct",
+            "value": ","
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "she",
+            "translation": {
+              "ru": "она"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "will",
+            "role": "verb",
+            "translation": {
+              "ru": "---"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "have",
+            "role": "verb",
+            "translation": {
+              "ru": "быть"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "been",
+            "role": "verb",
+            "translation": {
+              "ru": "был"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "teaching",
+            "role": "verb",
+            "translation": {
+              "ru": "преподавание"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "for",
+            "translation": {
+              "ru": "."
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "forty",
+            "translation": {
+              "ru": "сорок"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "years",
+            "translation": {
+              "ru": "годы"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "future-perfect-continuous-05",
-    "answer": "future-perfect-continuous",
-    "type": "context",
-    "prompt": "Временной промежуток к определённому моменту в будущем",
-    "promptEn": "The time span by a certain future moment",
-    "sentence": {
-      "pre": "By the time we meet, I ",
-      "verb": "will have been studying",
-      "post": " this subject for six months."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Временной промежуток к определённому моменту в будущем",
+      "en": "The time span accumulated by a certain future moment"
     },
-    "difficulty": 3
+    "tags": [
+      "future-perfect-continuous",
+      "context-clue",
+      "affirmative",
+      "perfect-continuous",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«For six months» — длительность непрерывного процесса изучения (studying); «by the time we meet» — будущий дедлайн. Процесс studying ещё продолжается вплоть до встречи — это сигнал Future Perfect Continuous."
+    },
+    "contextExamples": [
+      "By the time she takes the exam, she will have been preparing for it for three months.",
+      "By the time the internship ends, he will have been learning the trade for a full year."
+    ],
+    "sentences": [
+      {
+        "answer": "future-perfect-continuous",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "By",
+            "translation": {
+              "ru": "________________________________"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "time",
+            "translation": {
+              "ru": "время"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "we",
+            "translation": {
+              "ru": "ср"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "meet",
+            "translation": {
+              "ru": "встречать "
+            }
+          },
+          {
+            "type": "punct",
+            "value": ","
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "I"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "will",
+            "role": "verb",
+            "translation": {
+              "ru": "---"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "have",
+            "role": "verb",
+            "translation": {
+              "ru": "быть"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "been",
+            "role": "verb",
+            "translation": {
+              "ru": "был"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "studying",
+            "role": "verb",
+            "translation": {
+              "ru": "изучение"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "this",
+            "translation": {
+              "ru": "сего"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "subject",
+            "translation": {
+              "ru": "tema"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "for",
+            "translation": {
+              "ru": "."
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "six",
+            "translation": {
+              "ru": "шесть"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "months",
+            "translation": {
+              "ru": "месяца"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "future-perfect-continuous-06",
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Длительность отношений или знакомства к определённой дате",
+      "en": "Duration of a relationship or acquaintance by a certain date"
+    },
+    "tags": [
+      "future-perfect-continuous",
+      "sentence-analysis",
+      "affirmative",
+      "perfect-continuous",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«By this autumn» — будущий дедлайн; «for three years» — накопленная продолжительность отношений (dating). Глагол dating (-ing) подчёркивает, что процесс всё ещё длится к этому моменту."
+    },
+    "contextExamples": [
+      "By their wedding anniversary, they will have been together for ten years.",
+      "By next spring, the two companies will have been partnering for five years."
+    ],
+    "sentences": [
+      {
+        "answer": "future-perfect-continuous",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "By",
+            "translation": {
+              "ru": "________________________________"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "this",
+            "translation": {
+              "ru": "сего"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "autumn",
+            "translation": {
+              "ru": "осень"
+            }
+          },
+          {
+            "type": "punct",
+            "value": ","
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "we",
+            "translation": {
+              "ru": "ср"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "will",
+            "role": "verb",
+            "translation": {
+              "ru": "---"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "have",
+            "role": "verb",
+            "translation": {
+              "ru": "быть"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "been",
+            "role": "verb",
+            "translation": {
+              "ru": "был"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "dating",
+            "role": "verb",
+            "translation": {
+              "ru": "знакомство"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "for",
+            "translation": {
+              "ru": "."
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "three",
+            "translation": {
+              "ru": "три"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "years",
+            "translation": {
+              "ru": "годы"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "future-perfect-continuous-07",
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Накопленная усталость или истощение к будущему моменту",
+      "en": "Accumulated tiredness or exhaustion by a future moment"
+    },
+    "tags": [
+      "future-perfect-continuous",
+      "context-clue",
+      "affirmative",
+      "perfect-continuous",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«By Friday» — будущий дедлайн; «twelve-hour days all week» — описание интенсивного непрерывного процесса (working), накапливающегося к пятнице. Акцент именно на изматывающем процессе, а не на его итоге."
+    },
+    "contextExamples": [
+      "By Sunday evening, she will have been running the marathon training programme for four months.",
+      "By the end of the shift, the nurses will have been caring for patients for twelve hours straight."
+    ],
+    "sentences": [
+      {
+        "answer": "future-perfect-continuous",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "By",
+            "translation": {
+              "ru": "________________________________"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "Friday",
+            "translation": {
+              "ru": "Пятница"
+            }
+          },
+          {
+            "type": "punct",
+            "value": ","
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "I"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "will",
+            "role": "verb",
+            "translation": {
+              "ru": "---"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "have",
+            "role": "verb",
+            "translation": {
+              "ru": "быть"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "been",
+            "role": "verb",
+            "translation": {
+              "ru": "был"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "working",
+            "role": "verb",
+            "translation": {
+              "ru": "рабочих"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "twelve",
+            "translation": {
+              "ru": "двенадцать"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "-"
+          },
+          {
+            "type": "word",
+            "value": "hour",
+            "translation": {
+              "ru": "часы"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "days",
+            "translation": {
+              "ru": "дней"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "all",
+            "translation": {
+              "ru": "все"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "week",
+            "translation": {
+              "ru": "неделя"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "future-perfect-continuous-08",
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Вопрос о продолжительности деятельности к будущей дате",
+      "en": "A question about the duration of activity by a future date"
+    },
+    "tags": [
+      "future-perfect-continuous",
+      "sentence-analysis",
+      "question",
+      "perfect-continuous",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«How long» запрашивает продолжительность; «by next January» — будущий дедлайн. Вопросительная форма Future Perfect Continuous: «How long + will + subject + have been + -ing + by [time]»."
+    },
+    "contextExamples": [
+      "How long will she have been managing this project by the time it wraps up?",
+      "How long will they have been living abroad by next Christmas?"
+    ],
+    "sentences": [
+      {
+        "answer": "future-perfect-continuous",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "How",
+            "translation": {
+              "ru": "Как"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "long",
+            "translation": {
+              "ru": "длинный"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "will",
+            "role": "verb",
+            "translation": {
+              "ru": "---"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "you",
+            "role": "verb",
+            "translation": {
+              "ru": "вы"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "have",
+            "role": "verb",
+            "translation": {
+              "ru": "быть"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "been",
+            "role": "verb",
+            "translation": {
+              "ru": "был"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "working",
+            "role": "verb",
+            "translation": {
+              "ru": "рабочих"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "here",
+            "translation": {
+              "ru": "здесь —"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "by",
+            "translation": {
+              "ru": "от кого"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "next",
+            "translation": {
+              "ru": "след."
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "January",
+            "translation": {
+              "ru": "«20»"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "?"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "future-perfect-continuous-09",
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Профессиональный стаж к моменту выхода на пенсию или юбилею",
+      "en": "Professional tenure by retirement or an anniversary"
+    },
+    "tags": [
+      "future-perfect-continuous",
+      "context-clue",
+      "affirmative",
+      "perfect-continuous",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«For fifteen years» — длительность непрерывного руководства (managing); «by the time the company turns twenty» — будущий юбилейный дедлайн. Акцент на протяжённости управления, а не на конечном результате."
+    },
+    "contextExamples": [
+      "By the time the institute celebrates its centenary, the director will have been leading it for thirty years.",
+      "By the time she receives her gold watch, she will have been serving the organisation for forty years."
+    ],
+    "sentences": [
+      {
+        "answer": "future-perfect-continuous",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "By",
+            "translation": {
+              "ru": "________________________________"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "time",
+            "translation": {
+              "ru": "время"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "company",
+            "translation": {
+              "ru": "компании"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "turns",
+            "translation": {
+              "ru": "ходы"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "twenty",
+            "translation": {
+              "ru": "двадцать"
+            }
+          },
+          {
+            "type": "punct",
+            "value": ","
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "he"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "will",
+            "role": "verb",
+            "translation": {
+              "ru": "---"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "have",
+            "role": "verb",
+            "translation": {
+              "ru": "быть"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "been",
+            "role": "verb",
+            "translation": {
+              "ru": "был"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "managing",
+            "role": "verb",
+            "translation": {
+              "ru": "управляющий"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "it"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "for",
+            "translation": {
+              "ru": "."
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "fifteen",
+            "translation": {
+              "ru": "пятнадцать"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "years",
+            "translation": {
+              "ru": "годы"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "future-perfect-continuous-10",
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Отрицание: действие не будет длиться так долго к дате",
+      "en": "Negation: an action won't have lasted that long by a date"
+    },
+    "tags": [
+      "future-perfect-continuous",
+      "sentence-analysis",
+      "negative",
+      "perfect-continuous",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«Won't have been learning» — отрицательная форма Future Perfect Continuous; «long enough» указывает на недостаточную продолжительность процесса к будущему моменту «by then». Акцент именно на недостаточности времени процесса."
+    },
+    "contextExamples": [
+      "By the assessment date, he won't have been practising long enough to perform confidently.",
+      "By the time the season opens, the rookie won't have been training long enough to start."
+    ],
+    "sentences": [
+      {
+        "answer": "future-perfect-continuous",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "By",
+            "translation": {
+              "ru": "________________________________"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "then",
+            "translation": {
+              "ru": "тогда"
+            }
+          },
+          {
+            "type": "punct",
+            "value": ","
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "I"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "won't",
+            "role": "verb",
+            "translation": {
+              "ru": "не будет"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "have",
+            "role": "verb",
+            "translation": {
+              "ru": "быть"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "been",
+            "role": "verb",
+            "translation": {
+              "ru": "был"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "learning",
+            "role": "verb",
+            "translation": {
+              "ru": "обучение"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "language",
+            "translation": {
+              "ru": "язык"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "long",
+            "translation": {
+              "ru": "длинный"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "enough",
+            "translation": {
+              "ru": "&amp;"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "to",
+            "translation": {
+              "ru": "кому"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "speak",
+            "translation": {
+              "ru": "говорю"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "fluently",
+            "translation": {
+              "ru": "свободно"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "future-perfect-continuous-11",
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Продолжительность творческой или научной работы к дате публикации",
+      "en": "Duration of creative or academic work by a publication date"
+    },
+    "tags": [
+      "future-perfect-continuous",
+      "context-clue",
+      "affirmative",
+      "perfect-continuous",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«When the book comes out» — будущее событие-дедлайн (публикация); «for five years» — длительность непрерывного творческого процесса writing. Future Perfect Continuous подчёркивает протяжённость самого процесса написания."
+    },
+    "contextExamples": [
+      "When the album is released, the band will have been recording it for two years.",
+      "When the documentary premieres, the director will have been filming it for three years."
+    ],
+    "sentences": [
+      {
+        "answer": "future-perfect-continuous",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "When",
+            "translation": {
+              "ru": "После пробуждения"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "book",
+            "translation": {
+              "ru": "книга"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "comes",
+            "translation": {
+              "ru": "Комит"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "out",
+            "translation": {
+              "ru": "Выходной"
+            }
+          },
+          {
+            "type": "punct",
+            "value": ","
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "author",
+            "translation": {
+              "ru": "автором"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "will",
+            "role": "verb",
+            "translation": {
+              "ru": "---"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "have",
+            "role": "verb",
+            "translation": {
+              "ru": "быть"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "been",
+            "role": "verb",
+            "translation": {
+              "ru": "был"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "writing",
+            "role": "verb",
+            "translation": {
+              "ru": "письмо"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "it"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "for",
+            "translation": {
+              "ru": "."
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "five",
+            "translation": {
+              "ru": "пять"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "years",
+            "translation": {
+              "ru": "годы"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "future-perfect-continuous-12",
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Длительность тренировок или занятий к соревнованию или экзамену",
+      "en": "Duration of training or practice by a competition or exam"
+    },
+    "tags": [
+      "future-perfect-continuous",
+      "sentence-analysis",
+      "affirmative",
+      "perfect-continuous",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«By the time of the final» — дедлайн (соревнование); «for six months» — продолжительность непрерывных тренировок (training together). Future Perfect Continuous акцентирует командный процесс подготовки, а не готовый результат."
+    },
+    "contextExamples": [
+      "By the time the championships begin, the gymnasts will have been practising their routines for a year.",
+      "By the date of the qualifying round, the swimmer will have been training at elite level for eight months."
+    ],
+    "sentences": [
+      {
+        "answer": "future-perfect-continuous",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "By",
+            "translation": {
+              "ru": "________________________________"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "time",
+            "translation": {
+              "ru": "время"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "of",
+            "translation": {
+              "ru": "коллегиальных"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "final",
+            "translation": {
+              "ru": "окончательное"
+            }
+          },
+          {
+            "type": "punct",
+            "value": ","
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "players",
+            "translation": {
+              "ru": "игроки"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "will",
+            "role": "verb",
+            "translation": {
+              "ru": "---"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "have",
+            "role": "verb",
+            "translation": {
+              "ru": "быть"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "been",
+            "role": "verb",
+            "translation": {
+              "ru": "был"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "training",
+            "role": "verb",
+            "translation": {
+              "ru": "обучение"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "together",
+            "translation": {
+              "ru": "вместе"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "for",
+            "translation": {
+              "ru": "."
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "six",
+            "translation": {
+              "ru": "шесть"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "months",
+            "translation": {
+              "ru": "месяца"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "future-perfect-continuous-13",
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Технический процесс или оборудование, работающее в течение периода",
+      "en": "A technical process or equipment running throughout a period"
+    },
+    "tags": [
+      "future-perfect-continuous",
+      "context-clue",
+      "affirmative",
+      "perfect-continuous",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«For ten years» — длительность непрерывной работы оборудования (operating); «by the end of the mission» — будущий дедлайн. Процесс operating подчёркивает работу в режиме реального времени на протяжении всего периода."
+    },
+    "contextExamples": [
+      "By the time the satellite is decommissioned, it will have been orbiting Earth for twenty years.",
+      "By the scheduled shutdown, the power plant will have been generating electricity for fifty years."
+    ],
+    "sentences": [
+      {
+        "answer": "future-perfect-continuous",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "By",
+            "translation": {
+              "ru": "________________________________"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "end",
+            "translation": {
+              "ru": "в конце"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "of",
+            "translation": {
+              "ru": "коллегиальных"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "mission",
+            "translation": {
+              "ru": "миссия"
+            }
+          },
+          {
+            "type": "punct",
+            "value": ","
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "rover",
+            "translation": {
+              "ru": "rover,"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "will",
+            "role": "verb",
+            "translation": {
+              "ru": "---"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "have",
+            "role": "verb",
+            "translation": {
+              "ru": "быть"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "been",
+            "role": "verb",
+            "translation": {
+              "ru": "был"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "operating",
+            "role": "verb",
+            "translation": {
+              "ru": "условия"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "on",
+            "translation": {
+              "ru": "горит"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "Mars",
+            "translation": {
+              "ru": "Марс"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "for",
+            "translation": {
+              "ru": "."
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "ten",
+            "translation": {
+              "ru": "десять"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "years",
+            "translation": {
+              "ru": "годы"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "future-perfect-continuous-14",
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Ожидаемое накопление длительности к моменту события",
+      "en": "Expected accumulation of duration by the time an event occurs"
+    },
+    "tags": [
+      "future-perfect-continuous",
+      "sentence-analysis",
+      "affirmative",
+      "perfect-continuous",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«When the semester ends» — будущее событие-дедлайн; «for four months» — продолжительность регулярного посещения (attending classes). Акцент на самом процессе посещения занятий на протяжении семестра."
+    },
+    "contextExamples": [
+      "When the conference wraps up, delegates will have been networking for three days.",
+      "When the project review takes place, the interns will have been contributing for two months."
+    ],
+    "sentences": [
+      {
+        "answer": "future-perfect-continuous",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "When",
+            "translation": {
+              "ru": "После пробуждения"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "semester",
+            "translation": {
+              "ru": "семестр"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "ends",
+            "translation": {
+              "ru": "концы"
+            }
+          },
+          {
+            "type": "punct",
+            "value": ","
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "students",
+            "translation": {
+              "ru": "учащихся"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "will",
+            "role": "verb",
+            "translation": {
+              "ru": "---"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "have",
+            "role": "verb",
+            "translation": {
+              "ru": "быть"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "been",
+            "role": "verb",
+            "translation": {
+              "ru": "был"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "attending",
+            "role": "verb",
+            "translation": {
+              "ru": "присутствующий"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "classes",
+            "translation": {
+              "ru": "классов"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "for",
+            "translation": {
+              "ru": "."
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "four",
+            "translation": {
+              "ru": "четыре"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "months",
+            "translation": {
+              "ru": "месяца"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "future-perfect-continuous-15",
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Накопленная продолжительность непрерывного путешествия или процесса",
+      "en": "Accumulated duration of an uninterrupted journey or process"
+    },
+    "tags": [
+      "future-perfect-continuous",
+      "context-clue",
+      "affirmative",
+      "perfect-continuous",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«By the time we reach the destination» — будущий момент прибытия; «for over twelve hours» — продолжительность непрерывного вождения (driving). Слово «over» усиливает акцент на истощающей длительности процесса."
+    },
+    "contextExamples": [
+      "By the time the ship docks, the crew will have been sailing for three weeks.",
+      "By the time the cyclists finish, they will have been racing for over six hours."
+    ],
+    "sentences": [
+      {
+        "answer": "future-perfect-continuous",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "By",
+            "translation": {
+              "ru": "________________________________"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "time",
+            "translation": {
+              "ru": "время"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "we",
+            "translation": {
+              "ru": "ср"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "reach",
+            "translation": {
+              "ru": "добраться"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "destination",
+            "translation": {
+              "ru": "назначение"
+            }
+          },
+          {
+            "type": "punct",
+            "value": ","
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "we",
+            "translation": {
+              "ru": "ср"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "will",
+            "role": "verb",
+            "translation": {
+              "ru": "---"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "have",
+            "role": "verb",
+            "translation": {
+              "ru": "быть"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "been",
+            "role": "verb",
+            "translation": {
+              "ru": "был"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "driving",
+            "role": "verb",
+            "translation": {
+              "ru": "на автомобиле"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "for",
+            "translation": {
+              "ru": "."
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "over",
+            "translation": {
+              "ru": "сверх"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "twelve",
+            "translation": {
+              "ru": "двенадцать"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "hours",
+            "translation": {
+              "ru": "часы"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "future-perfect-continuous-16",
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Отрицание: деятельность не будет длиться достаточно долго к дате",
+      "en": "Negation: an activity won't have lasted long enough by a date"
+    },
+    "tags": [
+      "future-perfect-continuous",
+      "sentence-analysis",
+      "negative",
+      "perfect-continuous",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«Won't have been studying» — отрицание Future Perfect Continuous; «long enough» — оценка недостаточной продолжительности процесса к дедлайну «by the exam date». Фокус на недостаточной длительности, а не на отсутствии факта."
+    },
+    "contextExamples": [
+      "By the tournament, she won't have been practising long enough to compete at that level.",
+      "By the deadline, they won't have been collaborating long enough to produce a polished result."
+    ],
+    "sentences": [
+      {
+        "answer": "future-perfect-continuous",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "By",
+            "translation": {
+              "ru": "________________________________"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "exam",
+            "translation": {
+              "ru": "экзамен"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "date",
+            "translation": {
+              "ru": "Дата:"
+            }
+          },
+          {
+            "type": "punct",
+            "value": ","
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "I"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "won't",
+            "role": "verb",
+            "translation": {
+              "ru": "не будет"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "have",
+            "role": "verb",
+            "translation": {
+              "ru": "быть"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "been",
+            "role": "verb",
+            "translation": {
+              "ru": "был"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "studying",
+            "role": "verb",
+            "translation": {
+              "ru": "изучение"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "subject",
+            "translation": {
+              "ru": "tema"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "long",
+            "translation": {
+              "ru": "длинный"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "enough",
+            "translation": {
+              "ru": "&amp;"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "to",
+            "translation": {
+              "ru": "кому"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "pass",
+            "translation": {
+              "ru": "зачет"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "future-perfect-continuous-17",
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Вопрос о длительности деятельности к будущему моменту",
+      "en": "A question about how long an activity will have lasted by a future moment"
+    },
+    "tags": [
+      "future-perfect-continuous",
+      "context-clue",
+      "question",
+      "perfect-continuous",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«How long» спрашивает о длительности; «by the time a deal is reached» — будущий дедлайн. Future Perfect Continuous в вопросе фокусируется на продолжительности процесса переговоров (negotiating), а не на факте соглашения."
+    },
+    "contextExamples": [
+      "How long will the engineers have been testing the system by the time it goes live?",
+      "How long will she have been waiting by the time her visa application is processed?"
+    ],
+    "sentences": [
+      {
+        "answer": "future-perfect-continuous",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "How",
+            "translation": {
+              "ru": "Как"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "long",
+            "translation": {
+              "ru": "длинный"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "will",
+            "role": "verb",
+            "translation": {
+              "ru": "---"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "they",
+            "role": "verb",
+            "translation": {
+              "ru": "они"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "have",
+            "role": "verb",
+            "translation": {
+              "ru": "быть"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "been",
+            "role": "verb",
+            "translation": {
+              "ru": "был"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "negotiating",
+            "role": "verb",
+            "translation": {
+              "ru": "ARBITRAZH"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "by",
+            "translation": {
+              "ru": "от кого"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "time",
+            "translation": {
+              "ru": "время"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "a",
+            "translation": {
+              "ru": "а"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "deal",
+            "translation": {
+              "ru": "сделка"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "is",
+            "translation": {
+              "ru": "является"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "reached",
+            "translation": {
+              "ru": "концентрация"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "?"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "future-perfect-continuous-18",
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Длительность физических тренировок к соревнованию",
+      "en": "Duration of physical training accumulated by a competition"
+    },
+    "tags": [
+      "future-perfect-continuous",
+      "sentence-analysis",
+      "affirmative",
+      "perfect-continuous",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«By race day» — будущий дедлайн (день соревнования); «for eight weeks» — продолжительность специализированной подготовки (training at altitude). Акцент на непрерывном процессе тренировок, а не на финальном результате."
+    },
+    "contextExamples": [
+      "By the day of the marathon, she will have been following the training plan for sixteen weeks.",
+      "By the opening bell of the tournament, the boxer will have been sparring daily for three months."
+    ],
+    "sentences": [
+      {
+        "answer": "future-perfect-continuous",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "By",
+            "translation": {
+              "ru": "________________________________"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "race",
+            "translation": {
+              "ru": "расовая принадлежность"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "day",
+            "translation": {
+              "ru": "число"
+            }
+          },
+          {
+            "type": "punct",
+            "value": ","
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "athlete",
+            "translation": {
+              "ru": "ATLETY"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "will",
+            "role": "verb",
+            "translation": {
+              "ru": "---"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "have",
+            "role": "verb",
+            "translation": {
+              "ru": "быть"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "been",
+            "role": "verb",
+            "translation": {
+              "ru": "был"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "training",
+            "role": "verb",
+            "translation": {
+              "ru": "обучение"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "at"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "altitude",
+            "translation": {
+              "ru": "высота"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "for",
+            "translation": {
+              "ru": "."
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "eight",
+            "translation": {
+              "ru": "восемь"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "weeks",
+            "translation": {
+              "ru": "недели"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "future-perfect-continuous-19",
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Накопленная усталость учёного или исследователя к дате публикации",
+      "en": "Accumulated fatigue of a researcher by the time of publication"
+    },
+    "tags": [
+      "future-perfect-continuous",
+      "context-clue",
+      "affirmative",
+      "perfect-continuous",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«When the paper is published» — будущее событие-дедлайн; «for a decade» — десятилетняя продолжительность непрерывных исследований (researching). Future Perfect Continuous подчёркивает грандиозность самого научного процесса."
+    },
+    "contextExamples": [
+      "When the clinical trial concludes, the scientists will have been collecting data for five years.",
+      "When the expedition returns, the geologists will have been drilling core samples for eighteen months."
+    ],
+    "sentences": [
+      {
+        "answer": "future-perfect-continuous",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "When",
+            "translation": {
+              "ru": "После пробуждения"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "paper",
+            "translation": {
+              "ru": "бумага"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "is",
+            "translation": {
+              "ru": "является"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "published",
+            "translation": {
+              "ru": "опубликовали"
+            }
+          },
+          {
+            "type": "punct",
+            "value": ","
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "team",
+            "translation": {
+              "ru": "команда"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "will",
+            "role": "verb",
+            "translation": {
+              "ru": "---"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "have",
+            "role": "verb",
+            "translation": {
+              "ru": "быть"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "been",
+            "role": "verb",
+            "translation": {
+              "ru": "был"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "researching",
+            "role": "verb",
+            "translation": {
+              "ru": "исследование"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "topic",
+            "translation": {
+              "ru": "тема"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "for",
+            "translation": {
+              "ru": "."
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "a",
+            "translation": {
+              "ru": "а"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "decade",
+            "translation": {
+              "ru": "декада"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "future-perfect-continuous-20",
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Продолжительность проживания в городе к переезду",
+      "en": "Duration of living in a city by the time of moving away"
+    },
+    "tags": [
+      "future-perfect-continuous",
+      "sentence-analysis",
+      "affirmative",
+      "perfect-continuous",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«When we move» — будущее событие-дедлайн; «for over a decade» — продолжительность непрерывного проживания (living). «Over» подчёркивает протяжённость процесса. Future Perfect Continuous акцентирует сам образ жизни в этом районе."
+    },
+    "contextExamples": [
+      "When they emigrate, they will have been living in the same street for twenty years.",
+      "When she transfers to the new branch, she will have been commuting to this office for eight years."
+    ],
+    "sentences": [
+      {
+        "answer": "future-perfect-continuous",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "When",
+            "translation": {
+              "ru": "После пробуждения"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "we",
+            "translation": {
+              "ru": "ср"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "move",
+            "translation": {
+              "ru": "двигаться "
+            }
+          },
+          {
+            "type": "punct",
+            "value": ","
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "I"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "will",
+            "role": "verb",
+            "translation": {
+              "ru": "---"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "have",
+            "role": "verb",
+            "translation": {
+              "ru": "быть"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "been",
+            "role": "verb",
+            "translation": {
+              "ru": "был"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "living",
+            "role": "verb",
+            "translation": {
+              "ru": "живой"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "in",
+            "translation": {
+              "ru": "от"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "this",
+            "translation": {
+              "ru": "сего"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "neighbourhood",
+            "translation": {
+              "ru": "район"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "for",
+            "translation": {
+              "ru": "."
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "over",
+            "translation": {
+              "ru": "сверх"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "a",
+            "translation": {
+              "ru": "а"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "decade",
+            "translation": {
+              "ru": "декада"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "future-perfect-continuous-21",
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Длительность переговоров или разработки к подписанию соглашения",
+      "en": "Duration of negotiations or development by signing an agreement"
+    },
+    "tags": [
+      "future-perfect-continuous",
+      "context-clue",
+      "affirmative",
+      "perfect-continuous",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«By the time the treaty is signed» — будущее событие-дедлайн; «for three years» — длительность непрерывных дипломатических усилий (working on it). Акцент на самом процессе разработки договора, ведущем к его подписанию."
+    },
+    "contextExamples": [
+      "By the time the merger is finalised, lawyers will have been drafting the agreement for six months.",
+      "By the time the standards are adopted, the committee will have been deliberating for two years."
+    ],
+    "sentences": [
+      {
+        "answer": "future-perfect-continuous",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "By",
+            "translation": {
+              "ru": "________________________________"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "time",
+            "translation": {
+              "ru": "время"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "treaty",
+            "translation": {
+              "ru": "Договор"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "is",
+            "translation": {
+              "ru": "является"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "signed",
+            "translation": {
+              "ru": "Подпись"
+            }
+          },
+          {
+            "type": "punct",
+            "value": ","
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "diplomats",
+            "translation": {
+              "ru": "Дипломаты"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "will",
+            "role": "verb",
+            "translation": {
+              "ru": "---"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "have",
+            "role": "verb",
+            "translation": {
+              "ru": "быть"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "been",
+            "role": "verb",
+            "translation": {
+              "ru": "был"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "working",
+            "role": "verb",
+            "translation": {
+              "ru": "рабочих"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "on",
+            "translation": {
+              "ru": "горит"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "it"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "for",
+            "translation": {
+              "ru": "."
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "three",
+            "translation": {
+              "ru": "три"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "years",
+            "translation": {
+              "ru": "годы"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "future-perfect-continuous-22",
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Накопленная длительность пребывания в должности к юбилею",
+      "en": "Accumulated duration in a position by an anniversary"
+    },
+    "tags": [
+      "future-perfect-continuous",
+      "sentence-analysis",
+      "affirmative",
+      "perfect-continuous",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«By his tenth work anniversary» — конкретный будущий юбилейный дедлайн; «for a full decade» — продолжительность непрерывного руководства (managing). «Full» усиливает непрерывность всего десятилетия процесса."
+    },
+    "contextExamples": [
+      "By her twenty-fifth anniversary with the firm, she will have been advising clients for a quarter of a century.",
+      "By the time the founder steps down, he will have been steering the company for thirty years."
+    ],
+    "sentences": [
+      {
+        "answer": "future-perfect-continuous",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "By",
+            "translation": {
+              "ru": "________________________________"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "his",
+            "translation": {
+              "ru": "ХХХ"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "tenth",
+            "translation": {
+              "ru": "десятый"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "work",
+            "translation": {
+              "ru": "работа"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "anniversary",
+            "translation": {
+              "ru": "юбилей"
+            }
+          },
+          {
+            "type": "punct",
+            "value": ","
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "he"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "will",
+            "role": "verb",
+            "translation": {
+              "ru": "---"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "have",
+            "role": "verb",
+            "translation": {
+              "ru": "быть"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "been",
+            "role": "verb",
+            "translation": {
+              "ru": "был"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "managing",
+            "role": "verb",
+            "translation": {
+              "ru": "управляющий"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "department",
+            "translation": {
+              "ru": "департамент"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "for",
+            "translation": {
+              "ru": "."
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "a",
+            "translation": {
+              "ru": "а"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "full",
+            "translation": {
+              "ru": "полный"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "decade",
+            "translation": {
+              "ru": "декада"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "future-perfect-continuous-23",
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Продолжительность медицинского лечения к выздоровлению",
+      "en": "Duration of medical treatment by the time of recovery"
+    },
+    "tags": [
+      "future-perfect-continuous",
+      "context-clue",
+      "affirmative",
+      "perfect-continuous",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«When she is finally discharged» — будущее событие-дедлайн (выписка); «for three months» — продолжительность непрерывного лечения (receiving treatment). Future Perfect Continuous описывает сам медицинский процесс вплоть до выздоровления."
+    },
+    "contextExamples": [
+      "When he is cleared to return to work, he will have been undergoing rehabilitation for four months.",
+      "When the patient is released, the medical team will have been monitoring her condition for six weeks."
+    ],
+    "sentences": [
+      {
+        "answer": "future-perfect-continuous",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "When",
+            "translation": {
+              "ru": "После пробуждения"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "she",
+            "translation": {
+              "ru": "она"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "is",
+            "translation": {
+              "ru": "является"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "finally",
+            "translation": {
+              "ru": "наконец"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "discharged",
+            "translation": {
+              "ru": "выписан"
+            }
+          },
+          {
+            "type": "punct",
+            "value": ","
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "she",
+            "translation": {
+              "ru": "она"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "will",
+            "role": "verb",
+            "translation": {
+              "ru": "---"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "have",
+            "role": "verb",
+            "translation": {
+              "ru": "быть"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "been",
+            "role": "verb",
+            "translation": {
+              "ru": "был"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "receiving",
+            "role": "verb",
+            "translation": {
+              "ru": "получение"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "treatment",
+            "translation": {
+              "ru": "ческой обработки"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "for",
+            "translation": {
+              "ru": "."
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "three",
+            "translation": {
+              "ru": "три"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "months",
+            "translation": {
+              "ru": "месяца"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "future-perfect-continuous-24",
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Длительность программирования или разработки к релизу",
+      "en": "Duration of coding or development by the time of release"
+    },
+    "tags": [
+      "future-perfect-continuous",
+      "sentence-analysis",
+      "affirmative",
+      "perfect-continuous",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«When the app ships» — будущий релиз как дедлайн; «nonstop for eighteen months» — длительность и интенсивность непрерывного процесса разработки (coding). «Nonstop» подчёркивает непрерывность, характерную для Future Perfect Continuous."
+    },
+    "contextExamples": [
+      "When the game launches, the studio will have been developing it for four years.",
+      "When the platform goes live, the engineers will have been building the infrastructure for two years."
+    ],
+    "sentences": [
+      {
+        "answer": "future-perfect-continuous",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "When",
+            "translation": {
+              "ru": "После пробуждения"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "app",
+            "translation": {
+              "ru": "приложение"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "ships",
+            "translation": {
+              "ru": "судов. "
+            }
+          },
+          {
+            "type": "punct",
+            "value": ","
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "developers",
+            "translation": {
+              "ru": "разработчики"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "will",
+            "role": "verb",
+            "translation": {
+              "ru": "---"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "have",
+            "role": "verb",
+            "translation": {
+              "ru": "быть"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "been",
+            "role": "verb",
+            "translation": {
+              "ru": "был"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "coding",
+            "role": "verb",
+            "translation": {
+              "ru": "кодирования"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "it"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "nonstop",
+            "translation": {
+              "ru": "нон-стоп"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "for",
+            "translation": {
+              "ru": "."
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "eighteen",
+            "translation": {
+              "ru": "восемнадцать"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "months",
+            "translation": {
+              "ru": "месяца"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "future-perfect-continuous-25",
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Накопленная длительность ожидания к прибытию помощи или результата",
+      "en": "Accumulated waiting time by the arrival of help or a result"
+    },
+    "tags": [
+      "future-perfect-continuous",
+      "context-clue",
+      "affirmative",
+      "perfect-continuous",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«By the time the rescue team arrives» — будущий момент прибытия; «for over thirty hours» — продолжительность изматывающего ожидания (waiting in the cold). «In the cold» + «over thirty hours» передают накопленную тяжесть непрерывного процесса."
+    },
+    "contextExamples": [
+      "By the time the power is restored, residents will have been managing without electricity for two days.",
+      "By the time the relief supplies arrive, the villagers will have been surviving on emergency rations for a week."
+    ],
+    "sentences": [
+      {
+        "answer": "future-perfect-continuous",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "By",
+            "translation": {
+              "ru": "________________________________"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "time",
+            "translation": {
+              "ru": "время"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "rescue",
+            "translation": {
+              "ru": "финансовое оздоровление; санация; санирование"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "team",
+            "translation": {
+              "ru": "команда"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "arrives",
+            "translation": {
+              "ru": "arrives."
+            }
+          },
+          {
+            "type": "punct",
+            "value": ","
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "hikers",
+            "translation": {
+              "ru": "Пешеходный туризм"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "will",
+            "role": "verb",
+            "translation": {
+              "ru": "---"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "have",
+            "role": "verb",
+            "translation": {
+              "ru": "быть"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "been",
+            "role": "verb",
+            "translation": {
+              "ru": "был"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "waiting",
+            "role": "verb",
+            "translation": {
+              "ru": "ожидание"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "in",
+            "translation": {
+              "ru": "от"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "cold",
+            "translation": {
+              "ru": "простуда"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "for",
+            "translation": {
+              "ru": "."
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "over",
+            "translation": {
+              "ru": "сверх"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "thirty",
+            "translation": {
+              "ru": "тридцать"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "hours",
+            "translation": {
+              "ru": "часы"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
   }
 ]

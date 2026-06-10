@@ -1,67 +1,4121 @@
 [
   {
     "id": "past-perfect-continuous-01",
-    "answer": "past-perfect-continuous",
-    "type": "context",
-    "prompt": "Длительное действие, шедшее до другого момента в прошлом",
-    "promptEn": "A continuous action ongoing before another past moment",
-    "sentence": {
-      "pre": "They ",
-      "verb": "had been driving",
-      "post": " for hours before the stop."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Длительное действие, шедшее до другого момента в прошлом",
+      "en": "A continuous action ongoing before another past moment"
     },
-    "difficulty": 3
+    "tags": [
+      "past-perfect-continuous",
+      "context-clue",
+      "affirmative",
+      "perfect-continuous",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«For hours» указывает на длительность; «before the stop» — прошлый момент-ориентир. Сочетание «for + период» + прошлый ориентир требует Past Perfect Continuous, чтобы подчеркнуть непрерывность процесса."
+    },
+    "contextExamples": [
+      "The children had been playing outside for hours before it got dark.",
+      "He had been running for forty minutes before he reached the finish line."
+    ],
+    "sentences": [
+      {
+        "answer": "past-perfect-continuous",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "They",
+            "translation": {
+              "ru": "Они"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "had",
+            "role": "verb",
+            "translation": {
+              "ru": "имел/имела"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "been",
+            "role": "verb",
+            "translation": {
+              "ru": "был"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "driving",
+            "role": "verb",
+            "translation": {
+              "ru": "на автомобиле"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "for",
+            "translation": {
+              "ru": "."
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "hours",
+            "translation": {
+              "ru": "часы"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "before",
+            "translation": {
+              "ru": "."
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "stop",
+            "translation": {
+              "ru": "остановка"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "past-perfect-continuous-02",
-    "answer": "past-perfect-continuous",
-    "type": "sentence",
-    "prompt": "Результат длительного действия, объясняющий прошлое событие",
-    "promptEn": "A result of a long action that explains a past event",
-    "sentence": {
-      "pre": "He was exhausted because he ",
-      "verb": "had been working",
-      "post": " without a break."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Результат длительного действия, объясняющий прошлое состояние",
+      "en": "A result of prolonged action explaining a past state"
     },
-    "difficulty": 3
+    "tags": [
+      "past-perfect-continuous",
+      "sentence-analysis",
+      "affirmative",
+      "perfect-continuous",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«Was exhausted» — видимый результат в прошлом; «because he had been working without a break» — длительный процесс как причина этого состояния. Причинно-следственная связь с акцентом на продолжительности требует Past Perfect Continuous."
+    },
+    "contextExamples": [
+      "Her voice was hoarse because she had been singing all evening.",
+      "The floor was wet because someone had been mopping it."
+    ],
+    "sentences": [
+      {
+        "answer": "past-perfect-continuous",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "He",
+            "translation": {
+              "ru": "Он,"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "was",
+            "translation": {
+              "ru": "удаляли"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "exhausted",
+            "translation": {
+              "ru": "завершению"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "because",
+            "translation": {
+              "ru": "по"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "he"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "had",
+            "role": "verb",
+            "translation": {
+              "ru": "имел/имела"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "been",
+            "role": "verb",
+            "translation": {
+              "ru": "был"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "working",
+            "role": "verb",
+            "translation": {
+              "ru": "рабочих"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "without",
+            "translation": {
+              "ru": "без"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "a",
+            "translation": {
+              "ru": "а"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "break",
+            "translation": {
+              "ru": "излом"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "past-perfect-continuous-03",
-    "answer": "past-perfect-continuous",
-    "type": "context",
-    "prompt": "Процесс, длившийся до определённого момента в прошлом",
-    "promptEn": "A process that was going on until a point in the past",
-    "sentence": {
-      "pre": "Before the rain, it ",
-      "verb": "had been snowing",
-      "post": " for two days."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Процесс, длившийся до определённого момента в прошлом",
+      "en": "A process that was going on until a point in the past"
     },
-    "difficulty": 3
+    "tags": [
+      "past-perfect-continuous",
+      "context-clue",
+      "affirmative",
+      "perfect-continuous",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«For two days» — длительность процесса; «before the rain» — момент в прошлом, когда процесс прекратился. «For + период + before + прошлое событие» — классический сигнал Past Perfect Continuous."
+    },
+    "contextExamples": [
+      "Before the power cut, the machine had been running for six hours.",
+      "Before the ceasefire, the two sides had been fighting for weeks."
+    ],
+    "sentences": [
+      {
+        "answer": "past-perfect-continuous",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "Before",
+            "translation": {
+              "ru": "Было"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "rain",
+            "translation": {
+              "ru": "дождь"
+            }
+          },
+          {
+            "type": "punct",
+            "value": ","
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "it"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "had",
+            "role": "verb",
+            "translation": {
+              "ru": "имел/имела"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "been",
+            "role": "verb",
+            "translation": {
+              "ru": "был"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "snowing",
+            "role": "verb",
+            "translation": {
+              "ru": "SNEG"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "for",
+            "translation": {
+              "ru": "."
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "two",
+            "translation": {
+              "ru": "два"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "days",
+            "translation": {
+              "ru": "дней"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "past-perfect-continuous-04",
-    "answer": "past-perfect-continuous",
-    "type": "sentence",
-    "prompt": "Привычка или повторяющееся действие в определённый период прошлого",
-    "promptEn": "A habit or repeated action during a past period",
-    "sentence": {
-      "pre": "During his childhood, he ",
-      "verb": "had been playing",
-      "post": " the piano for years."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Привычка или повторяющееся действие в определённый период прошлого",
+      "en": "A habit or repeated action during a past period"
     },
-    "difficulty": 3
+    "tags": [
+      "past-perfect-continuous",
+      "sentence-analysis",
+      "affirmative",
+      "perfect-continuous",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«For years» — длительность регулярной деятельности; «during his childhood» — прошлый период-ориентир. Повторяющееся действие, продолжавшееся на протяжении значительного прошлого периода, передаётся Past Perfect Continuous."
+    },
+    "contextExamples": [
+      "During her university years, she had been volunteering at the shelter.",
+      "Throughout the project, they had been meeting every week."
+    ],
+    "sentences": [
+      {
+        "answer": "past-perfect-continuous",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "During",
+            "translation": {
+              "ru": "В процессе"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "his",
+            "translation": {
+              "ru": "ХХХ"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "childhood",
+            "translation": {
+              "ru": "детство"
+            }
+          },
+          {
+            "type": "punct",
+            "value": ","
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "he"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "had",
+            "role": "verb",
+            "translation": {
+              "ru": "имел/имела"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "been",
+            "role": "verb",
+            "translation": {
+              "ru": "был"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "playing",
+            "role": "verb",
+            "translation": {
+              "ru": "воспроизводится"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "piano",
+            "translation": {
+              "ru": "пианино"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "for",
+            "translation": {
+              "ru": "."
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "years",
+            "translation": {
+              "ru": "годы"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "past-perfect-continuous-05",
-    "answer": "past-perfect-continuous",
-    "type": "context",
-    "prompt": "Длительность действия, объясняющая положение к моменту в прошлом",
-    "promptEn": "Duration of an action explaining a situation in the past",
-    "sentence": {
-      "pre": "When the fire started, it ",
-      "verb": "had been burning",
-      "post": " undetected for hours."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Длительность действия, объясняющая положение к моменту в прошлом",
+      "en": "Duration of an action explaining a situation in the past"
     },
-    "difficulty": 3
+    "tags": [
+      "past-perfect-continuous",
+      "context-clue",
+      "affirmative",
+      "perfect-continuous",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«When the fire started» — прошлый ориентир; «had been burning… for hours» объясняет масштаб ситуации через длительность непрерывного процесса. «For hours» — ключевой маркер длительности."
+    },
+    "contextExamples": [
+      "When the inspection happened, the factory had been dumping waste for months.",
+      "When she noticed the smell, gas had been leaking for some time."
+    ],
+    "sentences": [
+      {
+        "answer": "past-perfect-continuous",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "When",
+            "translation": {
+              "ru": "После пробуждения"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "fire",
+            "translation": {
+              "ru": "пожар"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "started",
+            "translation": {
+              "ru": "Начато"
+            }
+          },
+          {
+            "type": "punct",
+            "value": ","
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "it"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "had",
+            "role": "verb",
+            "translation": {
+              "ru": "имел/имела"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "been",
+            "role": "verb",
+            "translation": {
+              "ru": "был"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "burning",
+            "role": "verb",
+            "translation": {
+              "ru": "Сжигание"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "undetected",
+            "translation": {
+              "ru": "Необнаружено"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "for",
+            "translation": {
+              "ru": "."
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "hours",
+            "translation": {
+              "ru": "часы"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "past-perfect-continuous-06",
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Видимый результат в прошлом от предшествующей длительной деятельности",
+      "en": "A visible past result of a prior prolonged activity"
+    },
+    "tags": [
+      "past-perfect-continuous",
+      "sentence-analysis",
+      "affirmative",
+      "perfect-continuous",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«Were sore» — видимое физическое состояние в прошлом; «because she had been typing all day» — длительный процесс как его причина. «All day» подчёркивает непрерывность деятельности."
+    },
+    "contextExamples": [
+      "His eyes were strained because he had been staring at the screen for hours.",
+      "Their clothes were muddy because they had been working in the garden all morning."
+    ],
+    "sentences": [
+      {
+        "answer": "past-perfect-continuous",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "Her"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "hands",
+            "translation": {
+              "ru": "руки)"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "were",
+            "translation": {
+              "ru": "был/а/и"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "sore",
+            "translation": {
+              "ru": "болезненный"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "because",
+            "translation": {
+              "ru": "по"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "she",
+            "translation": {
+              "ru": "она"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "had",
+            "role": "verb",
+            "translation": {
+              "ru": "имел/имела"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "been",
+            "role": "verb",
+            "translation": {
+              "ru": "был"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "typing",
+            "role": "verb",
+            "translation": {
+              "ru": "набор"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "all",
+            "translation": {
+              "ru": "все"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "day",
+            "translation": {
+              "ru": "число"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "past-perfect-continuous-07",
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Длительная деятельность, объясняющая усталость в прошлом",
+      "en": "Prolonged activity explaining fatigue at a past moment"
+    },
+    "tags": [
+      "past-perfect-continuous",
+      "context-clue",
+      "affirmative",
+      "perfect-continuous",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«Fell asleep immediately» — следствие; «because she had been travelling for twenty hours» — длительная причина. «For twenty hours» — конкретная продолжительность процесса, указывающая на Past Perfect Continuous."
+    },
+    "contextExamples": [
+      "He needed to rest because he had been carrying heavy boxes all afternoon.",
+      "They were relieved when it ended because they had been standing for over two hours."
+    ],
+    "sentences": [
+      {
+        "answer": "past-perfect-continuous",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "She",
+            "translation": {
+              "ru": "Она"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "fell",
+            "translation": {
+              "ru": "жестокий"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "asleep",
+            "translation": {
+              "ru": "спать"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "immediately",
+            "translation": {
+              "ru": "&amp;"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "because",
+            "translation": {
+              "ru": "по"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "she",
+            "translation": {
+              "ru": "она"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "had",
+            "role": "verb",
+            "translation": {
+              "ru": "имел/имела"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "been",
+            "role": "verb",
+            "translation": {
+              "ru": "был"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "travelling",
+            "role": "verb",
+            "translation": {
+              "ru": "путешествие"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "for",
+            "translation": {
+              "ru": "."
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "twenty",
+            "translation": {
+              "ru": "двадцать"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "hours",
+            "translation": {
+              "ru": "часы"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "past-perfect-continuous-08",
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Продолжительность деятельности к моменту прерывания в прошлом",
+      "en": "Duration of an activity up to the moment it was interrupted"
+    },
+    "tags": [
+      "past-perfect-continuous",
+      "sentence-analysis",
+      "affirmative",
+      "perfect-continuous",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«By the time they stopped» — момент прекращения процесса; «for over an hour» — суммарная длительность до этого момента. «By the time» + «for + период» — двойной маркер Past Perfect Continuous."
+    },
+    "contextExamples": [
+      "By the time the concert ended, the band had been performing for three hours.",
+      "By the time we reached the summit, we had been climbing since dawn."
+    ],
+    "sentences": [
+      {
+        "answer": "past-perfect-continuous",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "By",
+            "translation": {
+              "ru": "________________________________"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "time",
+            "translation": {
+              "ru": "время"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "they",
+            "translation": {
+              "ru": "они"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "stopped",
+            "translation": {
+              "ru": "остановлен"
+            }
+          },
+          {
+            "type": "punct",
+            "value": ","
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "they",
+            "translation": {
+              "ru": "они"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "had",
+            "role": "verb",
+            "translation": {
+              "ru": "имел/имела"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "been",
+            "role": "verb",
+            "translation": {
+              "ru": "был"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "arguing",
+            "role": "verb",
+            "translation": {
+              "ru": "спор"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "for",
+            "translation": {
+              "ru": "."
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "over",
+            "translation": {
+              "ru": "сверх"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "an"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "hour",
+            "translation": {
+              "ru": "часы"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "past-perfect-continuous-09",
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Нереализованное условие в прошлом с акцентом на длительности",
+      "en": "An unrealized past condition emphasizing the duration of effort"
+    },
+    "tags": [
+      "past-perfect-continuous",
+      "context-clue",
+      "negative",
+      "perfect-continuous",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "Третий кондиционал с Past Perfect Continuous в if-клаузе: «had been training» подчёркивает, что нарушение было систематическим (процесс), а не разовым. Выбор PPC вместо PP акцентирует длительный характер условия."
+    },
+    "contextExamples": [
+      "If she had been following the diet, she would have felt better.",
+      "If they had been paying attention, they would have noticed the warning signs."
+    ],
+    "sentences": [
+      {
+        "answer": "past-perfect-continuous",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "If",
+            "translation": {
+              "ru": "При"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "he"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "had",
+            "role": "verb",
+            "translation": {
+              "ru": "имел/имела"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "been",
+            "role": "verb",
+            "translation": {
+              "ru": "был"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "training",
+            "role": "verb",
+            "translation": {
+              "ru": "обучение"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "properly",
+            "translation": {
+              "ru": "надлежащим образом"
+            }
+          },
+          {
+            "type": "punct",
+            "value": ","
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "he"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "wouldn't",
+            "translation": {
+              "ru": "не"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "have",
+            "translation": {
+              "ru": "быть"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "been",
+            "translation": {
+              "ru": "был"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "injured",
+            "translation": {
+              "ru": "пострадавший"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "past-perfect-continuous-10",
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Процесс, который шёл в прошлом и был прерван другим событием",
+      "en": "A process going on in the past and interrupted by another event"
+    },
+    "tags": [
+      "past-perfect-continuous",
+      "sentence-analysis",
+      "affirmative",
+      "perfect-continuous",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«For an hour» — длительность непрерывного ожидания; «when the bus finally came» — прерывающее событие. Структура «had been -ing + for… when» — ключевой шаблон Past Perfect Continuous."
+    },
+    "contextExamples": [
+      "They had been rehearsing for two hours when the director called a break.",
+      "I had been reading for half an hour when the lights went out."
+    ],
+    "sentences": [
+      {
+        "answer": "past-perfect-continuous",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "We",
+            "translation": {
+              "ru": "Перед"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "had",
+            "role": "verb",
+            "translation": {
+              "ru": "имел/имела"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "been",
+            "role": "verb",
+            "translation": {
+              "ru": "был"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "waiting",
+            "role": "verb",
+            "translation": {
+              "ru": "ожидание"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "for",
+            "translation": {
+              "ru": "."
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "an"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "hour",
+            "translation": {
+              "ru": "часы"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "when",
+            "translation": {
+              "ru": "когда,"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "bus",
+            "translation": {
+              "ru": "шина"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "finally",
+            "translation": {
+              "ru": "наконец"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "came",
+            "translation": {
+              "ru": "пришел"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "past-perfect-continuous-11",
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Повторяющееся действие в прошлом, ставшее источником раздражения",
+      "en": "A repeated past action that had become a source of irritation"
+    },
+    "tags": [
+      "past-perfect-continuous",
+      "context-clue",
+      "affirmative",
+      "perfect-continuous",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«Over and over» — сигнал многократного повторения; «was tired of him because» — видимый эмоциональный результат. Повторяющийся процесс в прошлом, накопившийся до точки раздражения, выражается Past Perfect Continuous."
+    },
+    "contextExamples": [
+      "The manager was frustrated because the team had been missing deadlines repeatedly.",
+      "They complained because the neighbour had been playing loud music every night."
+    ],
+    "sentences": [
+      {
+        "answer": "past-perfect-continuous",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "She",
+            "translation": {
+              "ru": "Она"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "was",
+            "translation": {
+              "ru": "удаляли"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "tired",
+            "translation": {
+              "ru": "уставший"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "of",
+            "translation": {
+              "ru": "коллегиальных"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "him",
+            "translation": {
+              "ru": "ему"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "because",
+            "translation": {
+              "ru": "по"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "he"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "had",
+            "role": "verb",
+            "translation": {
+              "ru": "имел/имела"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "been",
+            "role": "verb",
+            "translation": {
+              "ru": "был"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "making",
+            "role": "verb",
+            "translation": {
+              "ru": "изготовление"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "same",
+            "translation": {
+              "ru": "То же самое"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "mistake",
+            "translation": {
+              "ru": "ошибка"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "over",
+            "translation": {
+              "ru": "сверх"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "and",
+            "translation": {
+              "ru": "и"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "over",
+            "translation": {
+              "ru": "сверх"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "past-perfect-continuous-12",
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Длительность работы над проектом к моменту его завершения",
+      "en": "Duration of work on a project up to the time it was completed"
+    },
+    "tags": [
+      "past-perfect-continuous",
+      "sentence-analysis",
+      "affirmative",
+      "perfect-continuous",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«For three years» — длительность разработки; «when the app launched» — прошлый ориентир (завершение). Акцент на протяжённости процесса до результата — основной признак Past Perfect Continuous."
+    },
+    "contextExamples": [
+      "When the film finally came out, the director had been working on it for five years.",
+      "When the bridge opened, engineers had been designing it for a decade."
+    ],
+    "sentences": [
+      {
+        "answer": "past-perfect-continuous",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "When",
+            "translation": {
+              "ru": "После пробуждения"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "app",
+            "translation": {
+              "ru": "приложение"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "launched",
+            "translation": {
+              "ru": "Запущен"
+            }
+          },
+          {
+            "type": "punct",
+            "value": ","
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "team",
+            "translation": {
+              "ru": "команда"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "had",
+            "role": "verb",
+            "translation": {
+              "ru": "имел/имела"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "been",
+            "role": "verb",
+            "translation": {
+              "ru": "был"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "developing",
+            "role": "verb",
+            "translation": {
+              "ru": "В развитии"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "it"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "for",
+            "translation": {
+              "ru": "."
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "three",
+            "translation": {
+              "ru": "три"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "years",
+            "translation": {
+              "ru": "годы"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "past-perfect-continuous-13",
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Скрытая длительная деятельность, вскрывшаяся в прошлом",
+      "en": "A hidden prolonged activity that came to light in the past"
+    },
+    "tags": [
+      "past-perfect-continuous",
+      "context-clue",
+      "affirmative",
+      "perfect-continuous",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«Discovered» — момент раскрытия в прошлом; «had been using» — продолжавшийся тайный процесс вплоть до этого момента. Глагол обнаружения + длительный фоновый процесс — типичная конструкция для Past Perfect Continuous."
+    },
+    "contextExamples": [
+      "They found out that someone had been accessing the files remotely.",
+      "The investigation revealed that the officials had been accepting bribes for years."
+    ],
+    "sentences": [
+      {
+        "answer": "past-perfect-continuous",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "We",
+            "translation": {
+              "ru": "Перед"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "discovered",
+            "translation": {
+              "ru": "обнаружено"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "that",
+            "translation": {
+              "ru": "что"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "someone",
+            "translation": {
+              "ru": "кто-то"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "had",
+            "role": "verb",
+            "translation": {
+              "ru": "имел/имела"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "been",
+            "role": "verb",
+            "translation": {
+              "ru": "был"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "using",
+            "role": "verb",
+            "translation": {
+              "ru": "используя"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "our",
+            "translation": {
+              "ru": "наш"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "account",
+            "translation": {
+              "ru": "корресп."
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "without",
+            "translation": {
+              "ru": "без"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "permission",
+            "translation": {
+              "ru": "разрешение"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "past-perfect-continuous-14",
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Ощущение или состояние в прошлом, накопившееся за период",
+      "en": "A feeling or state in the past accumulated over a period"
+    },
+    "tags": [
+      "past-perfect-continuous",
+      "sentence-analysis",
+      "affirmative",
+      "perfect-continuous",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«Looked pale» — видимый физический признак; «because he had been sleeping badly for weeks» — длительный процесс, накопивший этот эффект. «For weeks» — маркер продолжительности, требующий Past Perfect Continuous."
+    },
+    "contextExamples": [
+      "She seemed distracted because she had been worrying about the results for days.",
+      "His skin was dry because he had been spending long hours outdoors all month."
+    ],
+    "sentences": [
+      {
+        "answer": "past-perfect-continuous",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "He",
+            "translation": {
+              "ru": "Он,"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "looked",
+            "translation": {
+              "ru": "Искали."
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "pale",
+            "translation": {
+              "ru": "бледный"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "because",
+            "translation": {
+              "ru": "по"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "he"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "had",
+            "role": "verb",
+            "translation": {
+              "ru": "имел/имела"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "been",
+            "role": "verb",
+            "translation": {
+              "ru": "был"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "sleeping",
+            "role": "verb",
+            "translation": {
+              "ru": "СОН"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "badly",
+            "translation": {
+              "ru": "очень"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "for",
+            "translation": {
+              "ru": "."
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "weeks",
+            "translation": {
+              "ru": "недели"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "past-perfect-continuous-15",
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Отрицание: действие, которого не было до события в прошлом",
+      "en": "Negation: an action not in progress before a past event"
+    },
+    "tags": [
+      "past-perfect-continuous",
+      "context-clue",
+      "negative",
+      "perfect-continuous",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«Hadn't been wearing» — отрицательный Past Perfect Continuous, отсутствие длительного действия до прошлого события («the accident»). «Before» — маркер прошлого ориентира; форма подчёркивает, что привычки/процесса не было вплоть до этого момента."
+    },
+    "contextExamples": [
+      "Before the warning, the workers hadn't been using protective equipment.",
+      "Before the diet started, she hadn't been exercising at all."
+    ],
+    "sentences": [
+      {
+        "answer": "past-perfect-continuous",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "Before",
+            "translation": {
+              "ru": "Было"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "accident",
+            "translation": {
+              "ru": "происшествие"
+            }
+          },
+          {
+            "type": "punct",
+            "value": ","
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "she",
+            "translation": {
+              "ru": "она"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "hadn't",
+            "role": "verb",
+            "translation": {
+              "ru": "не было"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "been",
+            "role": "verb",
+            "translation": {
+              "ru": "был"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "wearing",
+            "role": "verb",
+            "translation": {
+              "ru": "износ)"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "a",
+            "translation": {
+              "ru": "а"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "helmet",
+            "translation": {
+              "ru": "каска"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "past-perfect-continuous-16",
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Видимый признак в прошлом, указывавший на предшествующую деятельность",
+      "en": "A visible sign in the past pointing to a prior activity"
+    },
+    "tags": [
+      "past-perfect-continuous",
+      "sentence-analysis",
+      "affirmative",
+      "perfect-continuous",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«Her eyes were red» — наблюдаемое прошлое свидетельство; тире вводит объяснение через длительный процесс «had been crying for a long time». Видимый признак + длительность = Past Perfect Continuous."
+    },
+    "contextExamples": [
+      "His shirt was soaked — he had been sweating in the heat for hours.",
+      "The kitchen smelled amazing — she had been baking all afternoon."
+    ],
+    "sentences": [
+      {
+        "answer": "past-perfect-continuous",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "Her"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "eyes",
+            "translation": {
+              "ru": "глаза"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "were",
+            "translation": {
+              "ru": "был/а/и"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "red",
+            "translation": {
+              "ru": "красный"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "punct",
+            "value": "—"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "she",
+            "translation": {
+              "ru": "она"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "had",
+            "role": "verb",
+            "translation": {
+              "ru": "имел/имела"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "been",
+            "role": "verb",
+            "translation": {
+              "ru": "был"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "crying",
+            "role": "verb",
+            "translation": {
+              "ru": "плач"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "for",
+            "translation": {
+              "ru": "."
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "a",
+            "translation": {
+              "ru": "а"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "long",
+            "translation": {
+              "ru": "длинный"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "time",
+            "translation": {
+              "ru": "время"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "past-perfect-continuous-17",
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Длительность ожидания до наступления события",
+      "en": "Duration of waiting before an event finally occurred"
+    },
+    "tags": [
+      "past-perfect-continuous",
+      "context-clue",
+      "affirmative",
+      "perfect-continuous",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«Finally got the job» — прошлый результат-ориентир; «had been applying… for over a year» — длительный повторяющийся процесс, предшествовавший ему. «For over a year» — ключевой сигнал длительности."
+    },
+    "contextExamples": [
+      "She eventually passed the exam, but she had been preparing for months.",
+      "He found a buyer at last, but he had been trying to sell the house for two years."
+    ],
+    "sentences": [
+      {
+        "answer": "past-perfect-continuous",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "I"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "finally",
+            "translation": {
+              "ru": "наконец"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "got",
+            "translation": {
+              "ru": "завел/а"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "job",
+            "translation": {
+              "ru": "заказ"
+            }
+          },
+          {
+            "type": "punct",
+            "value": ","
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "but",
+            "translation": {
+              "ru": "но"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "I"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "had",
+            "role": "verb",
+            "translation": {
+              "ru": "имел/имела"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "been",
+            "role": "verb",
+            "translation": {
+              "ru": "был"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "applying",
+            "role": "verb",
+            "translation": {
+              "ru": "Применение"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "for",
+            "translation": {
+              "ru": "."
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "positions",
+            "translation": {
+              "ru": "должностях"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "for",
+            "translation": {
+              "ru": "."
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "over",
+            "translation": {
+              "ru": "сверх"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "a",
+            "translation": {
+              "ru": "а"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "year",
+            "translation": {
+              "ru": "год"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "past-perfect-continuous-18",
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Процесс, шедший до его обнаружения или раскрытия",
+      "en": "A process that had been going on before it was discovered"
+    },
+    "tags": [
+      "past-perfect-continuous",
+      "sentence-analysis",
+      "affirmative",
+      "perfect-continuous",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«For weeks» — длительность скрытого процесса; «before anyone noticed» — прошлый ориентир обнаружения. Непрерывный фоновый процесс, продолжавшийся вплоть до момента раскрытия, требует Past Perfect Continuous."
+    },
+    "contextExamples": [
+      "The roof had been deteriorating for months before the landlord investigated.",
+      "The virus had been spreading through the network for days before IT detected it."
+    ],
+    "sentences": [
+      {
+        "answer": "past-perfect-continuous",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "The",
+            "translation": {
+              "ru": "-"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "pipe",
+            "translation": {
+              "ru": "накипь"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "had",
+            "role": "verb",
+            "translation": {
+              "ru": "имел/имела"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "been",
+            "role": "verb",
+            "translation": {
+              "ru": "был"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "leaking",
+            "role": "verb",
+            "translation": {
+              "ru": "протекает"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "for",
+            "translation": {
+              "ru": "."
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "weeks",
+            "translation": {
+              "ru": "недели"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "before",
+            "translation": {
+              "ru": "."
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "anyone",
+            "translation": {
+              "ru": "любой"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "noticed",
+            "translation": {
+              "ru": "заметить."
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "past-perfect-continuous-19",
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Подготовительная работа до объявления или результата",
+      "en": "Preparatory work done before an announcement or result"
+    },
+    "tags": [
+      "past-perfect-continuous",
+      "context-clue",
+      "affirmative",
+      "perfect-continuous",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«For five years» — длительность подготовительного процесса; «before publishing their findings» — момент публикации-результата. Длительная предварительная работа, завершившаяся конкретным итогом, выражается Past Perfect Continuous."
+    },
+    "contextExamples": [
+      "The architect had been refining the design for months before presenting it to the client.",
+      "The athletes had been training intensively for two years before the championship."
+    ],
+    "sentences": [
+      {
+        "answer": "past-perfect-continuous",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "The",
+            "translation": {
+              "ru": "-"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "scientists",
+            "translation": {
+              "ru": "ученые"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "had",
+            "role": "verb",
+            "translation": {
+              "ru": "имел/имела"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "been",
+            "role": "verb",
+            "translation": {
+              "ru": "был"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "conducting",
+            "role": "verb",
+            "translation": {
+              "ru": "тех.оп."
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "study",
+            "translation": {
+              "ru": "светостабильности"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "for",
+            "translation": {
+              "ru": "."
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "five",
+            "translation": {
+              "ru": "пять"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "years",
+            "translation": {
+              "ru": "годы"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "before",
+            "translation": {
+              "ru": "."
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "publishing",
+            "translation": {
+              "ru": "Издательство"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "their",
+            "translation": {
+              "ru": "их"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "findings",
+            "translation": {
+              "ru": "выводы"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "past-perfect-continuous-20",
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Вопрос о длительности деятельности до прошлого момента",
+      "en": "A question about how long an activity had been going on before a past moment"
+    },
+    "tags": [
+      "past-perfect-continuous",
+      "sentence-analysis",
+      "question",
+      "perfect-continuous",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«How long» — вопрос о длительности; «before you arrived» — прошлый ориентир. Вопросительная форма «How long had… been -ing?» — прямой маркер Past Perfect Continuous для уточнения продолжительности процесса."
+    },
+    "contextExamples": [
+      "How long had the engine been making that noise before it broke down?",
+      "How long had she been waiting before the doctor finally called her in?"
+    ],
+    "sentences": [
+      {
+        "answer": "past-perfect-continuous",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "How",
+            "translation": {
+              "ru": "Как"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "long",
+            "translation": {
+              "ru": "длинный"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "had",
+            "role": "verb",
+            "translation": {
+              "ru": "имел/имела"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "they",
+            "role": "verb",
+            "translation": {
+              "ru": "они"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "been",
+            "role": "verb",
+            "translation": {
+              "ru": "был"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "arguing",
+            "role": "verb",
+            "translation": {
+              "ru": "спор"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "before",
+            "translation": {
+              "ru": "."
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "you",
+            "translation": {
+              "ru": "вы"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "arrived",
+            "translation": {
+              "ru": "прибыл"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "?"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "past-perfect-continuous-21",
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Деятельность, объясняющая уровень мастерства или знаний в прошлом",
+      "en": "Activity explaining a level of skill or knowledge at a past time"
+    },
+    "tags": [
+      "past-perfect-continuous",
+      "context-clue",
+      "affirmative",
+      "perfect-continuous",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«Spoke fluently» — прошлый наблюдаемый результат; «because she had been practising… for years» — длительный процесс как его причина. «For years» — маркер продолжительности тренировок, объясняющий достигнутое мастерство."
+    },
+    "contextExamples": [
+      "He played brilliantly because he had been taking lessons since childhood.",
+      "The team performed confidently because they had been drilling the routine for months."
+    ],
+    "sentences": [
+      {
+        "answer": "past-perfect-continuous",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "She",
+            "translation": {
+              "ru": "Она"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "spoke",
+            "translation": {
+              "ru": "говорил/а"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "fluently",
+            "translation": {
+              "ru": "свободно"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "because",
+            "translation": {
+              "ru": "по"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "she",
+            "translation": {
+              "ru": "она"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "had",
+            "role": "verb",
+            "translation": {
+              "ru": "имел/имела"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "been",
+            "role": "verb",
+            "translation": {
+              "ru": "был"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "practising",
+            "role": "verb",
+            "translation": {
+              "ru": "Практика"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "with",
+            "translation": {
+              "ru": "где"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "native",
+            "translation": {
+              "ru": "природный"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "speakers",
+            "translation": {
+              "ru": "cпикеры"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "for",
+            "translation": {
+              "ru": "."
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "years",
+            "translation": {
+              "ru": "годы"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "past-perfect-continuous-22",
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Строительство или разработка до завершения или запуска",
+      "en": "Construction or development before completion or launch"
+    },
+    "tags": [
+      "past-perfect-continuous",
+      "sentence-analysis",
+      "affirmative",
+      "perfect-continuous",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«For three years» — длительность строительного процесса; «before the floods hit» — прошлое событие-ориентир, прервавшее работу. Незавершённый длительный процесс до прерывающего события — типичный случай Past Perfect Continuous."
+    },
+    "contextExamples": [
+      "Architects had been redesigning the square for two years before the project was cancelled.",
+      "Volunteers had been restoring the old theatre for months before it was declared unsafe."
+    ],
+    "sentences": [
+      {
+        "answer": "past-perfect-continuous",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "Workers",
+            "translation": {
+              "ru": "Рабочие"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "had",
+            "role": "verb",
+            "translation": {
+              "ru": "имел/имела"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "been",
+            "role": "verb",
+            "translation": {
+              "ru": "был"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "building",
+            "role": "verb",
+            "translation": {
+              "ru": "здание"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "dam",
+            "translation": {
+              "ru": "дамба"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "for",
+            "translation": {
+              "ru": "."
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "three",
+            "translation": {
+              "ru": "три"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "years",
+            "translation": {
+              "ru": "годы"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "before",
+            "translation": {
+              "ru": "."
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "floods",
+            "translation": {
+              "ru": "ЗАТОПЛЕНИЕ"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "hit",
+            "translation": {
+              "ru": "ударить"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "past-perfect-continuous-23",
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Третий кондиционал с акцентом на длительности предшествующего действия",
+      "en": "Third conditional emphasising the duration of a prior action"
+    },
+    "tags": [
+      "past-perfect-continuous",
+      "context-clue",
+      "negative",
+      "perfect-continuous",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "Третий кондиционал: «hadn't been ignoring» вместо «hadn't ignored» подчёркивает, что игнорирование было систематическим и длительным, а не однократным. Процессуальный характер нарушения требует Past Perfect Continuous."
+    },
+    "contextExamples": [
+      "If they hadn't been cutting corners, the structure would have held.",
+      "If he hadn't been speeding, he could have stopped in time."
+    ],
+    "sentences": [
+      {
+        "answer": "past-perfect-continuous",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "If",
+            "translation": {
+              "ru": "При"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "they",
+            "translation": {
+              "ru": "они"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "hadn't",
+            "role": "verb",
+            "translation": {
+              "ru": "не было"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "been",
+            "role": "verb",
+            "translation": {
+              "ru": "был"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "ignoring",
+            "role": "verb",
+            "translation": {
+              "ru": "игнорировать"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "warnings",
+            "translation": {
+              "ru": "предупреждения"
+            }
+          },
+          {
+            "type": "punct",
+            "value": ","
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "accident",
+            "translation": {
+              "ru": "происшествие"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "could",
+            "translation": {
+              "ru": "мог"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "have",
+            "translation": {
+              "ru": "быть"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "been",
+            "translation": {
+              "ru": "был"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "prevented",
+            "translation": {
+              "ru": "Предотвращена"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "past-perfect-continuous-24",
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Постепенное ухудшение ситуации до кризиса в прошлом",
+      "en": "Gradual deterioration of a situation leading up to a past crisis"
+    },
+    "tags": [
+      "past-perfect-continuous",
+      "sentence-analysis",
+      "affirmative",
+      "perfect-continuous",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«For two years» — длительность постепенного ухудшения; «before the recession was officially declared» — прошлый момент официального признания кризиса. Непрерывный процесс деградации до кризисного ориентира — сигнал Past Perfect Continuous."
+    },
+    "contextExamples": [
+      "The patient's condition had been worsening for days before the doctors intervened.",
+      "Relations between the two countries had been deteriorating for months before the talks collapsed."
+    ],
+    "sentences": [
+      {
+        "answer": "past-perfect-continuous",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "The",
+            "translation": {
+              "ru": "-"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "economy",
+            "translation": {
+              "ru": "экономики"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "had",
+            "role": "verb",
+            "translation": {
+              "ru": "имел/имела"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "been",
+            "role": "verb",
+            "translation": {
+              "ru": "был"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "declining",
+            "role": "verb",
+            "translation": {
+              "ru": "СУЖАЮЩИЙСЯ"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "for",
+            "translation": {
+              "ru": "."
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "two",
+            "translation": {
+              "ru": "два"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "years",
+            "translation": {
+              "ru": "годы"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "before",
+            "translation": {
+              "ru": "."
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "recession",
+            "translation": {
+              "ru": "рецессия"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "was",
+            "translation": {
+              "ru": "удаляли"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "officially",
+            "translation": {
+              "ru": "Официально."
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "declared",
+            "translation": {
+              "ru": "признан"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "past-perfect-continuous-25",
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Незавершённое действие в прошлом, которое пришлось прервать",
+      "en": "An unfinished past action that had to be interrupted"
+    },
+    "tags": [
+      "past-perfect-continuous",
+      "context-clue",
+      "affirmative",
+      "perfect-continuous",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«For an hour» — длительность незавершённого занятия; «when she was called in» — прерывающее прошлое событие. Структура «had been -ing + for… when» фиксирует процесс, прерванный внешним событием."
+    },
+    "contextExamples": [
+      "He had been writing the report for two hours when his computer crashed.",
+      "They had been discussing the proposal for some time when the manager walked in."
+    ],
+    "sentences": [
+      {
+        "answer": "past-perfect-continuous",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "She",
+            "translation": {
+              "ru": "Она"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "had",
+            "role": "verb",
+            "translation": {
+              "ru": "имел/имела"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "been",
+            "role": "verb",
+            "translation": {
+              "ru": "был"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "reading",
+            "role": "verb",
+            "translation": {
+              "ru": "чтение"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "for",
+            "translation": {
+              "ru": "."
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "an"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "hour",
+            "translation": {
+              "ru": "часы"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "when",
+            "translation": {
+              "ru": "когда,"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "she",
+            "translation": {
+              "ru": "она"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "was",
+            "translation": {
+              "ru": "удаляли"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "called",
+            "translation": {
+              "ru": "звать"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "in",
+            "translation": {
+              "ru": "от"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "for",
+            "translation": {
+              "ru": "."
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "interview",
+            "translation": {
+              "ru": "собеседование"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
   }
 ]

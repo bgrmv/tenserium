@@ -113,7 +113,7 @@ export class GameSessionStore {
     if (!config || !question || this._status() !== 'question') return null;
 
     const responseMs = performance.now() - this._questionShownAt();
-    const isCorrect = picked === question.answer;
+    const isCorrect = picked === question.sentences[0].answer;
     const streak = (isCorrect ? this.currentStreak() : 0) + (isCorrect ? 1 : 0);
     const points = calcPoints({
       isCorrect,

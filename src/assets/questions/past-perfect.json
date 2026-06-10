@@ -1,80 +1,3627 @@
 [
   {
     "id": "past-perfect-01",
-    "answer": "past-perfect",
-    "type": "context",
-    "prompt": "Действие, завершённое до другого события в прошлом",
-    "promptEn": "An action completed before another event in the past",
-    "sentence": {
-      "pre": "The train ",
-      "verb": "had left",
-      "post": " before we arrived."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Действие, завершённое до другого события в прошлом",
+      "en": "An action completed before another event in the past"
     },
-    "difficulty": 3
+    "tags": [
+      "past-perfect",
+      "context-clue",
+      "affirmative",
+      "perfect",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "Союз «before» указывает на два события в прошлом; «had left» — действие, завершившееся раньше «arrived». Первое из двух прошедших действий требует Past Perfect."
+    },
+    "contextExamples": [
+      "The show had started before they found their seats.",
+      "He had finished his homework before his mother came home."
+    ],
+    "sentences": [
+      {
+        "answer": "past-perfect",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "The",
+            "translation": {
+              "ru": "-"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "train",
+            "translation": {
+              "ru": "pociąg"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "had",
+            "role": "verb",
+            "translation": {
+              "ru": "имел/имела"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "left",
+            "role": "verb",
+            "translation": {
+              "ru": "левый"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "before",
+            "translation": {
+              "ru": "."
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "we",
+            "translation": {
+              "ru": "ср"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "arrived",
+            "translation": {
+              "ru": "прибыл"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "past-perfect-02",
-    "answer": "past-perfect",
-    "type": "context",
-    "prompt": "Более раннее из двух прошлых действий",
-    "promptEn": "The earlier of two past actions, to show the sequence",
-    "sentence": {
-      "pre": "She ",
-      "verb": "had eaten",
-      "post": " before they came."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Более раннее из двух прошлых действий",
+      "en": "The earlier of two past actions, to show the sequence"
     },
-    "difficulty": 3
+    "tags": [
+      "past-perfect",
+      "context-clue",
+      "affirmative",
+      "perfect",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«Before they came» задаёт точку отсчёта в прошлом; «had eaten» обозначает действие, уже завершённое к этому моменту. Более раннее из двух прошедших событий всегда принимает Past Perfect."
+    },
+    "contextExamples": [
+      "The guests had left before the storm began.",
+      "He had already packed his bag before she called."
+    ],
+    "sentences": [
+      {
+        "answer": "past-perfect",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "She",
+            "translation": {
+              "ru": "Она"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "had",
+            "role": "verb",
+            "translation": {
+              "ru": "имел/имела"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "eaten",
+            "role": "verb",
+            "translation": {
+              "ru": "поел/а"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "before",
+            "translation": {
+              "ru": "."
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "they",
+            "translation": {
+              "ru": "они"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "came",
+            "translation": {
+              "ru": "пришел"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "past-perfect-03",
-    "answer": "past-perfect",
-    "type": "sentence",
-    "prompt": "Следствие в прошлом предыдущего действия",
-    "promptEn": "A result in the past of a previous past action",
-    "sentence": {
-      "pre": "I couldn't get in because I ",
-      "verb": "had forgotten",
-      "post": " my key."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Следствие в прошлом предыдущего действия",
+      "en": "A result in the past of a previous past action"
     },
-    "difficulty": 3
+    "tags": [
+      "past-perfect",
+      "sentence-analysis",
+      "negative",
+      "perfect",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "Союз «because» связывает следствие («couldn't get in») с причиной («had forgotten»). Причина произошла раньше следствия, поэтому она в Past Perfect."
+    },
+    "contextExamples": [
+      "She was upset because she had lost her wallet.",
+      "They missed the bus because they had taken the wrong route."
+    ],
+    "sentences": [
+      {
+        "answer": "past-perfect",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "I"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "couldn't",
+            "translation": {
+              "ru": "не мог"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "get",
+            "translation": {
+              "ru": "взять"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "in",
+            "translation": {
+              "ru": "от"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "because",
+            "translation": {
+              "ru": "по"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "I"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "had",
+            "role": "verb",
+            "translation": {
+              "ru": "имел/имела"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "forgotten",
+            "role": "verb",
+            "translation": {
+              "ru": "забытый"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "my",
+            "translation": {
+              "ru": "мой"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "key",
+            "translation": {
+              "ru": "клавиша"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "past-perfect-04",
-    "answer": "past-perfect",
-    "type": "sentence",
-    "prompt": "Опыт к определённому моменту в прошлом",
-    "promptEn": "Experience by a certain point in the past",
-    "sentence": {
-      "pre": "By the time I graduated, I ",
-      "verb": "had worked",
-      "post": " on many projects."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Опыт к определённому моменту в прошлом",
+      "en": "Experience accumulated by a certain point in the past"
     },
-    "difficulty": 3
+    "tags": [
+      "past-perfect",
+      "sentence-analysis",
+      "affirmative",
+      "perfect",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "Конструкция «by the time I graduated» задаёт момент в прошлом, к которому накопился опыт. «Had worked» показывает суммарный результат к этому моменту."
+    },
+    "contextExamples": [
+      "By the time he retired, he had visited over thirty countries.",
+      "By the time she turned eighteen, she had won several competitions."
+    ],
+    "sentences": [
+      {
+        "answer": "past-perfect",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "By",
+            "translation": {
+              "ru": "________________________________"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "time",
+            "translation": {
+              "ru": "время"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "I"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "graduated",
+            "translation": {
+              "ru": "градуированный"
+            }
+          },
+          {
+            "type": "punct",
+            "value": ","
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "I"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "had",
+            "role": "verb",
+            "translation": {
+              "ru": "имел/имела"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "worked",
+            "role": "verb",
+            "translation": {
+              "ru": "RABOTA"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "on",
+            "translation": {
+              "ru": "горит"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "many",
+            "translation": {
+              "ru": "много"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "projects",
+            "translation": {
+              "ru": "проектов"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "past-perfect-05",
-    "answer": "past-perfect",
-    "type": "context",
-    "prompt": "Неожиданное событие на основе предыдущего",
-    "promptEn": "Unexpected result of a prior past action",
-    "sentence": {
-      "pre": "They ",
-      "verb": "had planned",
-      "post": " the trip, but it was cancelled."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Запланированное действие в прошлом, которое не реализовалось",
+      "en": "A past plan that did not come to fruition"
     },
-    "difficulty": 3
+    "tags": [
+      "past-perfect",
+      "context-clue",
+      "affirmative",
+      "perfect",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«Had planned» относится к замыслу, возникшему до момента отмены («was cancelled»). Контраст «but» подчёркивает, что более раннее намерение не осуществилось."
+    },
+    "contextExamples": [
+      "She had booked the flight, but it was delayed indefinitely.",
+      "We had prepared everything, but the event was called off."
+    ],
+    "sentences": [
+      {
+        "answer": "past-perfect",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "They",
+            "translation": {
+              "ru": "Они"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "had",
+            "role": "verb",
+            "translation": {
+              "ru": "имел/имела"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "planned",
+            "role": "verb",
+            "translation": {
+              "ru": "планируется"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "trip",
+            "translation": {
+              "ru": "трипсы,"
+            }
+          },
+          {
+            "type": "punct",
+            "value": ","
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "but",
+            "translation": {
+              "ru": "но"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "it"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "was",
+            "translation": {
+              "ru": "удаляли"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "cancelled",
+            "translation": {
+              "ru": "аннулиро-ванных"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "past-perfect-06",
-    "answer": "past-perfect",
-    "type": "sentence",
-    "prompt": "Описание предыстории события в прошлом",
-    "promptEn": "Backstory of an event in the past",
-    "sentence": {
-      "pre": "When the accident happened, he ",
-      "verb": "had been driving",
-      "post": " for ten hours."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Действие, уже завершённое к определённому моменту прошлого",
+      "en": "An action already completed by a certain past moment"
     },
-    "difficulty": 3
+    "tags": [
+      "past-perfect",
+      "sentence-analysis",
+      "affirmative",
+      "perfect",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«By the time they called» — прошлый момент-ориентир; «had already left» содержит «already», усиливающее идею завершённости до этого ориентира. Оба сигнала вместе однозначно указывают на Past Perfect."
+    },
+    "contextExamples": [
+      "By the time the ambulance arrived, the patient had already recovered.",
+      "By the time I reached the shop, it had already closed."
+    ],
+    "sentences": [
+      {
+        "answer": "past-perfect",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "By",
+            "translation": {
+              "ru": "________________________________"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "time",
+            "translation": {
+              "ru": "время"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "they",
+            "translation": {
+              "ru": "они"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "called",
+            "translation": {
+              "ru": "звать"
+            }
+          },
+          {
+            "type": "punct",
+            "value": ","
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "she",
+            "translation": {
+              "ru": "она"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "had",
+            "role": "verb",
+            "translation": {
+              "ru": "имел/имела"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "already",
+            "role": "verb",
+            "translation": {
+              "ru": "уже"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "left",
+            "role": "verb",
+            "translation": {
+              "ru": "левый"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "office",
+            "translation": {
+              "ru": "офис "
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "past-perfect-07",
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Нереализованное условие в прошлом (третий кондиционал)",
+      "en": "An unfulfilled condition in the past (third conditional)"
+    },
+    "tags": [
+      "past-perfect",
+      "context-clue",
+      "affirmative",
+      "perfect",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "Структура «If + Past Perfect, would have + V3» — это третий кондиционал: нереализованное условие в прошлом. «Had studied» в if-клаузе требует Past Perfect."
+    },
+    "contextExamples": [
+      "If he had arrived earlier, he would have caught the flight.",
+      "If they had read the instructions, they would have avoided the mistake."
+    ],
+    "sentences": [
+      {
+        "answer": "past-perfect",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "If",
+            "translation": {
+              "ru": "При"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "she",
+            "translation": {
+              "ru": "она"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "had",
+            "role": "verb",
+            "translation": {
+              "ru": "имел/имела"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "studied",
+            "role": "verb",
+            "translation": {
+              "ru": "изучена"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "harder",
+            "translation": {
+              "ru": "нагрузку. "
+            }
+          },
+          {
+            "type": "punct",
+            "value": ","
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "she",
+            "translation": {
+              "ru": "она"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "would",
+            "translation": {
+              "ru": "бы"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "have",
+            "translation": {
+              "ru": "быть"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "passed",
+            "translation": {
+              "ru": "зач."
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "past-perfect-08",
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Несбывшееся ожидание или надежда в прошлом",
+      "en": "An unfulfilled expectation or hope in the past"
+    },
+    "tags": [
+      "past-perfect",
+      "sentence-analysis",
+      "affirmative",
+      "perfect",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "Глагол «thought» (прошедшее время) вводит косвенную речь; содержимое мысли («had already finished») сдвигается в Past Perfect, так как описывает действие, предшествовавшее моменту мышления."
+    },
+    "contextExamples": [
+      "She assumed the meeting had already ended.",
+      "He believed the package had already been delivered."
+    ],
+    "sentences": [
+      {
+        "answer": "past-perfect",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "I"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "thought",
+            "translation": {
+              "ru": "думал/а"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "he"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "had",
+            "role": "verb",
+            "translation": {
+              "ru": "имел/имела"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "already",
+            "role": "verb",
+            "translation": {
+              "ru": "уже"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "finished",
+            "role": "verb",
+            "translation": {
+              "ru": "образом"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "report",
+            "translation": {
+              "ru": "отчет о проведении валидации"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "past-perfect-09",
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Косвенная речь: прошедший перфект в передаче слов",
+      "en": "Reported speech: past perfect in indirect speech"
+    },
+    "tags": [
+      "past-perfect",
+      "context-clue",
+      "affirmative",
+      "perfect",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«She told me» — вводный глагол в прошедшем времени запускает согласование времён. Present Perfect («has never been») сдвигается в Past Perfect при переводе в косвенную речь."
+    },
+    "contextExamples": [
+      "He said he had never tried sushi before.",
+      "They told us they had already spoken to the manager."
+    ],
+    "sentences": [
+      {
+        "answer": "past-perfect",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "She",
+            "translation": {
+              "ru": "Она"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "told",
+            "translation": {
+              "ru": "сказал/а"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "me",
+            "translation": {
+              "ru": "ХХХ"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "she",
+            "translation": {
+              "ru": "она"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "had",
+            "role": "verb",
+            "translation": {
+              "ru": "имел/имела"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "never",
+            "role": "verb",
+            "translation": {
+              "ru": "никогда"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "been",
+            "role": "verb",
+            "translation": {
+              "ru": "был"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "abroad",
+            "translation": {
+              "ru": "{1>знаки <1}{2>за <2}{3>рубежом<3}"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "before",
+            "translation": {
+              "ru": "."
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "past-perfect-10",
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Неожиданное открытие о ранее произошедшем событии",
+      "en": "A surprising discovery about a previously occurred event"
+    },
+    "tags": [
+      "past-perfect",
+      "sentence-analysis",
+      "affirmative",
+      "perfect",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«Realised» — момент осознания в прошлом; «had met… before» описывает встречу, произошедшую ещё раньше. Наречие «before» усиливает сигнал предшествования."
+    },
+    "contextExamples": [
+      "She suddenly remembered she had seen that film already.",
+      "He noticed that he had left his phone in the taxi."
+    ],
+    "sentences": [
+      {
+        "answer": "past-perfect",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "I"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "realised",
+            "translation": {
+              "ru": "Реализованная "
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "I"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "had",
+            "role": "verb",
+            "translation": {
+              "ru": "имел/имела"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "met",
+            "role": "verb",
+            "translation": {
+              "ru": "встретил/а"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "him",
+            "translation": {
+              "ru": "ему"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "before",
+            "translation": {
+              "ru": "."
+            }
+          },
+          {
+            "type": "punct",
+            "value": ","
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "at"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "a",
+            "translation": {
+              "ru": "а"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "conference",
+            "translation": {
+              "ru": "конференция"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "in",
+            "translation": {
+              "ru": "от"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "Berlin",
+            "translation": {
+              "ru": "Берлин"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "past-perfect-11",
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Первый опыт чего-либо в прошлом",
+      "en": "The first time something had ever happened in the past"
+    },
+    "tags": [
+      "past-perfect",
+      "context-clue",
+      "affirmative",
+      "perfect",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "Шаблон «It was the first time + Past Perfect» — устойчивая конструкция для описания первого в жизни опыта к определённому прошлому моменту."
+    },
+    "contextExamples": [
+      "It was the first time he had driven on a motorway.",
+      "It was the first time they had tasted authentic Thai food."
+    ],
+    "sentences": [
+      {
+        "answer": "past-perfect",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "It"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "was",
+            "translation": {
+              "ru": "удаляли"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "first",
+            "translation": {
+              "ru": "первый"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "time",
+            "translation": {
+              "ru": "время"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "I"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "had",
+            "role": "verb",
+            "translation": {
+              "ru": "имел/имела"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "seen",
+            "role": "verb",
+            "translation": {
+              "ru": "видел/видела"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "ocean",
+            "translation": {
+              "ru": "океан"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "past-perfect-12",
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Действие, которое уже произошло до прибытия или начала чего-либо",
+      "en": "An action that had already occurred before something began"
+    },
+    "tags": [
+      "past-perfect",
+      "sentence-analysis",
+      "affirmative",
+      "perfect",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«When the doctor arrived» — прошлый ориентир (Past Simple); «had recovered» — действие, завершившееся до его прихода. Два разных прошедших события требуют разных форм."
+    },
+    "contextExamples": [
+      "When the firefighters arrived, the blaze had already spread to the roof.",
+      "When I got to the party, most guests had already gone home."
+    ],
+    "sentences": [
+      {
+        "answer": "past-perfect",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "When",
+            "translation": {
+              "ru": "После пробуждения"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "doctor",
+            "translation": {
+              "ru": "врач"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "arrived",
+            "translation": {
+              "ru": "прибыл"
+            }
+          },
+          {
+            "type": "punct",
+            "value": ","
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "patient",
+            "translation": {
+              "ru": "пациент"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "had",
+            "role": "verb",
+            "translation": {
+              "ru": "имел/имела"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "recovered",
+            "role": "verb",
+            "translation": {
+              "ru": "."
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "on",
+            "translation": {
+              "ru": "горит"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "his",
+            "translation": {
+              "ru": "ХХХ"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "own",
+            "translation": {
+              "ru": "щих собствен"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "past-perfect-13",
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Отрицание: то, что ещё не случилось к моменту в прошлом",
+      "en": "Negation: something not yet done by a past moment"
+    },
+    "tags": [
+      "past-perfect",
+      "context-clue",
+      "affirmative",
+      "perfect",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«At that point» устанавливает прошлый момент-ориентир; «no one had heard» отрицает событие вплоть до этого момента. Отрицательный Past Perfect фиксирует информационный вакуум до точки в прошлом."
+    },
+    "contextExamples": [
+      "At that stage, nobody had confirmed the news.",
+      "Up to that moment, nothing unusual had happened."
+    ],
+    "sentences": [
+      {
+        "answer": "past-perfect",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "At",
+            "translation": {
+              "ru": "А+"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "that",
+            "translation": {
+              "ru": "что"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "point",
+            "translation": {
+              "ru": "точка"
+            }
+          },
+          {
+            "type": "punct",
+            "value": ","
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "no",
+            "translation": {
+              "ru": "нет"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "one",
+            "translation": {
+              "ru": "ОДИН"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "had",
+            "role": "verb",
+            "translation": {
+              "ru": "имел/имела"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "heard",
+            "role": "verb",
+            "translation": {
+              "ru": "слышал/а"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "about"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "disaster",
+            "translation": {
+              "ru": "несчастье"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "past-perfect-14",
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Истечение срока или момента, после которого было поздно",
+      "en": "A deadline that had passed, making something too late"
+    },
+    "tags": [
+      "past-perfect",
+      "sentence-analysis",
+      "affirmative",
+      "perfect",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "Пассивная конструкция «had already been filled» указывает на завершённый факт (вакансия занята) до прошлого действия «applied». «By the time» + Past Perfect — классический сигнал."
+    },
+    "contextExamples": [
+      "By the time we ordered, the special dish had already sold out.",
+      "By the time she registered, all the spots had already been taken."
+    ],
+    "sentences": [
+      {
+        "answer": "past-perfect",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "By",
+            "translation": {
+              "ru": "________________________________"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "time",
+            "translation": {
+              "ru": "время"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "I"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "applied",
+            "translation": {
+              "ru": "применяемый"
+            }
+          },
+          {
+            "type": "punct",
+            "value": ","
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "position",
+            "translation": {
+              "ru": "Расположение"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "had",
+            "role": "verb",
+            "translation": {
+              "ru": "имел/имела"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "already",
+            "role": "verb",
+            "translation": {
+              "ru": "уже"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "been",
+            "role": "verb",
+            "translation": {
+              "ru": "был"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "filled",
+            "role": "verb",
+            "translation": {
+              "ru": "заполненный"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "past-perfect-15",
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Предыстория события: то, что произошло задолго до основного",
+      "en": "Backstory: what happened long before the main event"
+    },
+    "tags": [
+      "past-perfect",
+      "context-clue",
+      "affirmative",
+      "perfect",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "Тире вводит пояснение-предысторию: «had lived there as a child» описывает состояние, существовавшее задолго до момента узнавания («recognised»). Past Perfect подчёркивает временну́ю дистанцию."
+    },
+    "contextExamples": [
+      "He knew the city well — he had grown up there.",
+      "She smiled at the old song — she had danced to it at her wedding."
+    ],
+    "sentences": [
+      {
+        "answer": "past-perfect",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "She",
+            "translation": {
+              "ru": "Она"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "recognised",
+            "translation": {
+              "ru": "учтенная"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "building",
+            "translation": {
+              "ru": "здание"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "immediately",
+            "translation": {
+              "ru": "&amp;"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "punct",
+            "value": "—"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "she",
+            "translation": {
+              "ru": "она"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "had",
+            "role": "verb",
+            "translation": {
+              "ru": "имел/имела"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "lived",
+            "role": "verb",
+            "translation": {
+              "ru": "Жить\n"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "there",
+            "translation": {
+              "ru": "там"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "as",
+            "translation": {
+              "ru": "ХХХ"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "a",
+            "translation": {
+              "ru": "а"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "child",
+            "translation": {
+              "ru": "?????"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "past-perfect-16",
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Отрицание: то, чего ещё не было сделано к прошлому моменту",
+      "en": "Negation: something not yet done by a past moment"
+    },
+    "tags": [
+      "past-perfect",
+      "sentence-analysis",
+      "negative",
+      "perfect",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«Hadn't slept… for days before the final exam» — отрицательный Past Perfect с «for days» показывает длительное отсутствие действия вплоть до прошлого ориентира («the final exam»)."
+    },
+    "contextExamples": [
+      "He hadn't eaten anything for hours before the interview.",
+      "They hadn't spoken to each other for weeks before that meeting."
+    ],
+    "sentences": [
+      {
+        "answer": "past-perfect",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "She",
+            "translation": {
+              "ru": "Она"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "hadn't",
+            "role": "verb",
+            "translation": {
+              "ru": "не было"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "slept",
+            "role": "verb",
+            "translation": {
+              "ru": "Сон"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "properly",
+            "translation": {
+              "ru": "надлежащим образом"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "for",
+            "translation": {
+              "ru": "."
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "days",
+            "translation": {
+              "ru": "дней"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "before",
+            "translation": {
+              "ru": "."
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "final",
+            "translation": {
+              "ru": "окончательное"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "exam",
+            "translation": {
+              "ru": "экзамен"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "past-perfect-17",
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Вопрос о предшествующем действии в косвенной речи",
+      "en": "A question about a preceding action in reported speech"
+    },
+    "tags": [
+      "past-perfect",
+      "context-clue",
+      "affirmative",
+      "perfect",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«Asked» — прошедшее время глагола сообщения; «whether anyone had seen» — косвенный вопрос с Past Perfect (сдвиг из Present Perfect при согласовании времён)."
+    },
+    "contextExamples": [
+      "She wondered whether he had received her message.",
+      "The teacher asked if anyone had completed the assignment."
+    ],
+    "sentences": [
+      {
+        "answer": "past-perfect",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "They",
+            "translation": {
+              "ru": "Они"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "asked",
+            "translation": {
+              "ru": "написал"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "whether",
+            "translation": {
+              "ru": "Уж не из Испании ли дядечка?"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "anyone",
+            "translation": {
+              "ru": "любой"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "had",
+            "role": "verb",
+            "translation": {
+              "ru": "имел/имела"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "seen",
+            "role": "verb",
+            "translation": {
+              "ru": "видел/видела"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "missing",
+            "translation": {
+              "ru": "пропущенный"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "keys",
+            "translation": {
+              "ru": "ключи"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "past-perfect-18",
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Действие, совершённое прежде, чем что-то стало известно",
+      "en": "An action completed before something became known"
+    },
+    "tags": [
+      "past-perfect",
+      "sentence-analysis",
+      "affirmative",
+      "perfect",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«By the time the authorities arrived» — прошлый ориентир; «had left the scene» — завершённый факт, предшествующий ему. Конструкция «by the time» всегда требует Past Perfect в соотносимом придаточном."
+    },
+    "contextExamples": [
+      "By the time the inspector arrived, the thieves had escaped.",
+      "By the time we got there, the crowd had already dispersed."
+    ],
+    "sentences": [
+      {
+        "answer": "past-perfect",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "By",
+            "translation": {
+              "ru": "________________________________"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "time",
+            "translation": {
+              "ru": "время"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "authorities",
+            "translation": {
+              "ru": "органов"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "arrived",
+            "translation": {
+              "ru": "прибыл"
+            }
+          },
+          {
+            "type": "punct",
+            "value": ","
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "witnesses",
+            "translation": {
+              "ru": "понятые"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "had",
+            "role": "verb",
+            "translation": {
+              "ru": "имел/имела"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "left",
+            "role": "verb",
+            "translation": {
+              "ru": "левый"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "scene",
+            "translation": {
+              "ru": "сцена"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "past-perfect-19",
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Сожаление или желание о прошлом (wish + past perfect)",
+      "en": "Regret or wish about the past (wish + past perfect)"
+    },
+    "tags": [
+      "past-perfect",
+      "context-clue",
+      "affirmative",
+      "perfect",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«I wish + Past Perfect» — грамматическая конструкция для сожаления о прошлом. «Had taken» указывает на невыполненное прошлое действие, изменить которое уже невозможно."
+    },
+    "contextExamples": [
+      "I wish I had applied for that scholarship.",
+      "She wished she had told him the truth sooner."
+    ],
+    "sentences": [
+      {
+        "answer": "past-perfect",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "I"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "wish",
+            "translation": {
+              "ru": "желание"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "I"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "had",
+            "role": "verb",
+            "translation": {
+              "ru": "имел/имела"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "taken",
+            "role": "verb",
+            "translation": {
+              "ru": "взял/а"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "her",
+            "translation": {
+              "ru": "ей"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "advice",
+            "translation": {
+              "ru": "совет"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "punct",
+            "value": "—"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "everything",
+            "translation": {
+              "ru": "всё"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "would",
+            "translation": {
+              "ru": "бы"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "have",
+            "translation": {
+              "ru": "быть"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "been",
+            "translation": {
+              "ru": "был"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "different",
+            "translation": {
+              "ru": "разный"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "past-perfect-20",
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Едва завершённое действие, когда произошло следующее",
+      "en": "Barely completed action when the next event happened"
+    },
+    "tags": [
+      "past-perfect",
+      "sentence-analysis",
+      "affirmative",
+      "perfect",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«Hardly… when» — инвертированная конструкция с Past Perfect; отрицательное наречие «hardly» в начале предложения вызывает инверсию «had she». Структура означает «едва успела… как»."
+    },
+    "contextExamples": [
+      "Hardly had he fallen asleep when the alarm went off.",
+      "Scarcely had they arrived when it started to rain."
+    ],
+    "sentences": [
+      {
+        "answer": "past-perfect",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "Hardly",
+            "translation": {
+              "ru": "Едва ли"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "had",
+            "role": "verb",
+            "translation": {
+              "ru": "имел/имела"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "she",
+            "translation": {
+              "ru": "она"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "sat",
+            "translation": {
+              "ru": "уд"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "down",
+            "translation": {
+              "ru": "Вниз"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "when",
+            "translation": {
+              "ru": "когда,"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "phone",
+            "translation": {
+              "ru": "13, тел."
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "rang",
+            "translation": {
+              "ru": "звенел"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "again",
+            "translation": {
+              "ru": "снова"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "past-perfect-21",
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Прошлое действие с 'after', обозначающее завершение до другого",
+      "en": "A past action with 'after', showing completion before another"
+    },
+    "tags": [
+      "past-perfect",
+      "context-clue",
+      "affirmative",
+      "perfect",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«After» указывает последовательность: «had submitted» — первое, завершённое действие; «felt» — второе. После «after» Past Perfect подчёркивает, что первое действие было полностью завершено."
+    },
+    "contextExamples": [
+      "After she had read the letter, she burst into tears.",
+      "After they had discussed the plan, everyone agreed to proceed."
+    ],
+    "sentences": [
+      {
+        "answer": "past-perfect",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "After",
+            "translation": {
+              "ru": "После"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "he"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "had",
+            "role": "verb",
+            "translation": {
+              "ru": "имел/имела"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "submitted",
+            "role": "verb",
+            "translation": {
+              "ru": "отправлен"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "application",
+            "translation": {
+              "ru": "приложение"
+            }
+          },
+          {
+            "type": "punct",
+            "value": ","
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "he"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "felt",
+            "translation": {
+              "ru": "Фетр"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "a",
+            "translation": {
+              "ru": "а"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "huge",
+            "translation": {
+              "ru": "огромный "
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "sense",
+            "translation": {
+              "ru": "чувствовать"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "of",
+            "translation": {
+              "ru": "коллегиальных"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "relief",
+            "translation": {
+              "ru": "облегчение"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "past-perfect-22",
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Страдательный залог: то, что было сделано к определённому прошлому моменту",
+      "en": "Passive: something that had been done by a past moment"
+    },
+    "tags": [
+      "past-perfect",
+      "sentence-analysis",
+      "affirmative",
+      "perfect",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "Пассивный Past Perfect «had been sold out» строится по схеме had + been + V3. «By the time we arrived» — ориентир; продажа завершилась до прибытия."
+    },
+    "contextExamples": [
+      "By the time the rescue team reached the site, the survivors had been found.",
+      "When we got to the library, all the copies had been borrowed."
+    ],
+    "sentences": [
+      {
+        "answer": "past-perfect",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "By",
+            "translation": {
+              "ru": "________________________________"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "time",
+            "translation": {
+              "ru": "время"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "we",
+            "translation": {
+              "ru": "ср"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "arrived",
+            "translation": {
+              "ru": "прибыл"
+            }
+          },
+          {
+            "type": "punct",
+            "value": ","
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "all",
+            "translation": {
+              "ru": "все"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "tickets",
+            "translation": {
+              "ru": "тикеты"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "had",
+            "role": "verb",
+            "translation": {
+              "ru": "имел/имела"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "been",
+            "role": "verb",
+            "translation": {
+              "ru": "был"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "sold",
+            "role": "verb",
+            "translation": {
+              "ru": "количество"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "out",
+            "translation": {
+              "ru": "Выходной"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "past-perfect-23",
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Необходимое предварительное условие перед основным событием",
+      "en": "A prerequisite that needed to be met before a main event"
+    },
+    "tags": [
+      "past-perfect",
+      "context-clue",
+      "affirmative",
+      "perfect",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«Once» означает «как только/после того как»; «had signed» — необходимое предварительное условие (подпись), без выполнения которого главное событие невозможно. «Once + Past Perfect» показывает обязательную завершённость условия."
+    },
+    "contextExamples": [
+      "Once he had passed the medical, he was cleared to travel.",
+      "Once she had confirmed the reservation, the hotel sent a receipt."
+    ],
+    "sentences": [
+      {
+        "answer": "past-perfect",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "Once",
+            "translation": {
+              "ru": "После"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "they",
+            "translation": {
+              "ru": "они"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "had",
+            "role": "verb",
+            "translation": {
+              "ru": "имел/имела"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "signed",
+            "role": "verb",
+            "translation": {
+              "ru": "Подпись"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "contract",
+            "translation": {
+              "ru": "контракт"
+            }
+          },
+          {
+            "type": "punct",
+            "value": ","
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "work",
+            "translation": {
+              "ru": "работа"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "could",
+            "translation": {
+              "ru": "мог"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "begin",
+            "translation": {
+              "ru": "в начале"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "past-perfect-24",
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Описание состояния здоровья, образования или положения до события",
+      "en": "Describing health, education or status before an event"
+    },
+    "tags": [
+      "past-perfect",
+      "sentence-analysis",
+      "affirmative",
+      "perfect",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«Before the accident» + «had never been» — отрицательный опыт вплоть до прошлого ориентира. «Never» усиливает значение: ни разу за всю жизнь до этого момента."
+    },
+    "contextExamples": [
+      "Before the diagnosis, she had never missed a day of work.",
+      "Before joining the army, he had never left his home town."
+    ],
+    "sentences": [
+      {
+        "answer": "past-perfect",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "Before",
+            "translation": {
+              "ru": "Было"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "accident",
+            "translation": {
+              "ru": "происшествие"
+            }
+          },
+          {
+            "type": "punct",
+            "value": ","
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "he"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "had",
+            "role": "verb",
+            "translation": {
+              "ru": "имел/имела"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "never",
+            "role": "verb",
+            "translation": {
+              "ru": "никогда"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "been",
+            "role": "verb",
+            "translation": {
+              "ru": "был"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "to",
+            "translation": {
+              "ru": "кому"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "hospital",
+            "translation": {
+              "ru": "больница"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "in",
+            "translation": {
+              "ru": "от"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "his",
+            "translation": {
+              "ru": "ХХХ"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "life",
+            "translation": {
+              "ru": "жизнь"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "past-perfect-25",
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Автобиографический факт, существовавший до поворотного момента",
+      "en": "An autobiographical fact that existed before a turning point"
+    },
+    "tags": [
+      "past-perfect",
+      "context-clue",
+      "affirmative",
+      "perfect",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«Before she moved» — поворотный момент в прошлом; «had never spoken… outside a classroom» описывает ограниченный опыт вплоть до этого момента. «Before + Past Simple» + «never + Past Perfect» — двойной сигнал."
+    },
+    "contextExamples": [
+      "Before he started the course, he had never written code in his life.",
+      "Before they emigrated, they had never lived outside their home country."
+    ],
+    "sentences": [
+      {
+        "answer": "past-perfect",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "Before",
+            "translation": {
+              "ru": "Было"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "she",
+            "translation": {
+              "ru": "она"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "moved",
+            "translation": {
+              "ru": "Перемещено"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "to",
+            "translation": {
+              "ru": "кому"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "Paris",
+            "translation": {
+              "ru": "Париж"
+            }
+          },
+          {
+            "type": "punct",
+            "value": ","
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "she",
+            "translation": {
+              "ru": "она"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "had",
+            "role": "verb",
+            "translation": {
+              "ru": "имел/имела"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "never",
+            "role": "verb",
+            "translation": {
+              "ru": "никогда"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "spoken",
+            "role": "verb",
+            "translation": {
+              "ru": "Умение воспроизводить речь"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "French",
+            "translation": {
+              "ru": "Французский"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "outside",
+            "translation": {
+              "ru": "извне"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "a",
+            "translation": {
+              "ru": "а"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "classroom",
+            "translation": {
+              "ru": "класс"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
   }
 ]

@@ -12,6 +12,8 @@ const DEFAULT_PROFILE: UserProfile = {
   isPremium: false,
   hasSeenOnboarding: false,
   scoreDisplayPreference: 'none',
+  studyMode: false,
+  pauseMode: false,
 };
 
 /**
@@ -29,6 +31,8 @@ export class UserStore {
   readonly profile = this._profile.asReadonly();
   readonly rank = computed(() => rankProgress(this._profile().rankPoints));
   readonly streakDays = computed(() => this._profile().streakDays);
+  readonly studyMode = computed(() => this._profile().studyMode ?? false);
+  readonly pauseMode = computed(() => this._profile().pauseMode ?? false);
 
   awardRankPoints(points: number): void {
     this._profile.update((p) => ({ ...p, rankPoints: p.rankPoints + points }));
@@ -42,6 +46,16 @@ export class UserStore {
 
   markOnboardingSeen(): void {
     this._profile.update((p) => ({ ...p, hasSeenOnboarding: true }));
+    this.persist();
+  }
+
+  toggleStudyMode(): void {
+    this._profile.update((p) => ({ ...p, studyMode: !p.studyMode }));
+    this.persist();
+  }
+
+  togglePauseMode(): void {
+    this._profile.update((p) => ({ ...p, pauseMode: !p.pauseMode }));
     this.persist();
   }
 

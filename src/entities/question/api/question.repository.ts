@@ -33,23 +33,23 @@ export class QuestionRepository {
 
   buildDeck(config: SessionConfig): Question[] {
     const pool = (this.questions.value() ?? []).filter((q) =>
-      config.tenses.includes(q.answer),
+      config.tenses.includes(q.sentences[0].answer),
     );
     const deck: Question[] = [];
     let prev: TenseId | null = null;
 
     for (let i = 0; i < config.total && pool.length > 0; i++) {
-      let candidates = pool.filter((q) => q.answer !== prev);
+      let candidates = pool.filter((q) => q.sentences[0].answer !== prev);
       if (config.focusAspect) {
         const focused = candidates.filter(
-          (q) => getTense(q.answer).aspect === config.focusAspect,
+          (q) => getTense(q.sentences[0].answer).aspect === config.focusAspect,
         );
         if (focused.length >= 2 && Math.random() < 0.65) candidates = focused;
       }
       if (candidates.length === 0) candidates = pool;
       const pick = candidates[Math.floor(Math.random() * candidates.length)];
       deck.push(pick);
-      prev = pick.answer;
+      prev = pick.sentences[0].answer;
     }
     return deck;
   }
@@ -68,9 +68,9 @@ export class QuestionRepository {
     let prev: TenseId | null = null;
     for (const q of shuffled) {
       if (deck.length >= total) break;
-      if (q.answer !== prev) {
+      if (q.sentences[0].answer !== prev) {
         deck.push(q);
-        prev = q.answer;
+        prev = q.sentences[0].answer;
       }
     }
     // If we fell short (edge case: all shuffled items had same tense), top up

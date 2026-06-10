@@ -1,106 +1,3357 @@
 [
   {
     "id": "present-continuous-01",
-    "answer": "present-continuous",
-    "type": "context",
-    "prompt": "Действие, происходящее прямо сейчас",
-    "promptEn": "An action happening right now, at this very moment",
-    "sentence": {
-      "pre": "Be quiet — the baby ",
-      "verb": "is sleeping",
-      "post": "."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Действие, происходящее прямо сейчас",
+      "en": "An action happening right now, at this very moment"
     },
-    "difficulty": 1
+    "explanation": {
+      "ru": "«Is sleeping» — форма is + -ing. Действие происходит прямо сейчас, в момент говорения. Маркер — контекст «Be quiet».",
+      "en": "'Is sleeping' = is + -ing. The action is in progress right now — signalled by the context 'Be quiet'."
+    },
+    "rules": {
+      "ru": "«Be quiet» — призыв к тишине сигнализирует о действии прямо сейчас; «is sleeping» подтверждает процесс в момент говорения → Present Continuous."
+    },
+    "contextExamples": [
+      "Shh! The cat is sleeping on the sofa.",
+      "Don't make noise — the neighbours are sleeping."
+    ],
+    "tags": [
+      "present-continuous",
+      "context-clue",
+      "affirmative",
+      "continuous",
+      "difficulty-1"
+    ],
+    "difficulty": 1,
+    "sentences": [
+      {
+        "answer": "present-continuous",
+        "distractors": [
+          {
+            "tenseId": "present-simple"
+          },
+          {
+            "tenseId": "past-continuous"
+          },
+          {
+            "tenseId": "present-perfect-continuous"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "word",
+            "value": "Be",
+            "translation": {
+              "ru": "Всегда будьте"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "quiet",
+            "translation": {
+              "ru": "тихий"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "punct",
+            "value": "—"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "baby",
+            "translation": {
+              "ru": "ребёнок"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "is",
+            "role": "verb",
+            "translation": {
+              "ru": "является"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "sleeping",
+            "role": "verb",
+            "translation": {
+              "ru": "СОН"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "present-continuous-02",
-    "answer": "present-continuous",
-    "type": "context",
-    "prompt": "Запланированная договорённость на ближайшее будущее",
-    "promptEn": "A fixed personal arrangement in the near future",
-    "sentence": {
-      "pre": "We ",
-      "verb": "are flying",
-      "post": " to Paris on Friday."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Запланированная договорённость на ближайшее будущее",
+      "en": "A fixed personal arrangement in the near future"
     },
-    "difficulty": 1
+    "explanation": {
+      "ru": "«Are flying on Friday» — личная договорённость. Present Continuous для планов с конкретной датой (on Friday).",
+      "en": "'Are flying on Friday' — a personal arrangement with a specific date. Present Continuous for fixed future plans."
+    },
+    "rules": {
+      "ru": "«On Friday» — конкретная дата личной договорённости; билеты уже куплены, план зафиксирован → Present Continuous для запланированных поездок."
+    },
+    "contextExamples": [
+      "I am flying to Rome on Thursday for a conference.",
+      "They are taking the night train to Berlin on Saturday."
+    ],
+    "tags": [
+      "present-continuous",
+      "context-clue",
+      "affirmative",
+      "continuous",
+      "difficulty-1"
+    ],
+    "difficulty": 1,
+    "sentences": [
+      {
+        "answer": "present-continuous",
+        "distractors": [
+          {
+            "tenseId": "future-simple"
+          },
+          {
+            "tenseId": "present-simple"
+          },
+          {
+            "tenseId": "future-continuous"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "word",
+            "value": "We",
+            "translation": {
+              "ru": "Перед"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "are",
+            "role": "verb",
+            "translation": {
+              "ru": "заднем окне включены"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "flying",
+            "role": "verb",
+            "translation": {
+              "ru": "полет"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "to",
+            "translation": {
+              "ru": "кому"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "Paris",
+            "translation": {
+              "ru": "Париж"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "on",
+            "translation": {
+              "ru": "горит"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "Friday",
+            "translation": {
+              "ru": "Пятница"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "present-continuous-03",
-    "answer": "present-continuous",
-    "type": "sentence",
-    "prompt": "Текущий процесс, длящийся в момент говорения",
-    "promptEn": "A process ongoing at the moment of speaking",
-    "sentence": {
-      "pre": "I ",
-      "verb": "am writing",
-      "post": " an email right now."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Текущий процесс, длящийся в момент говорения",
+      "en": "A process ongoing at the moment of speaking"
     },
-    "difficulty": 1
+    "explanation": {
+      "ru": "«Right now» — прямой маркер Present Continuous. Действие началось и продолжается прямо сейчас.",
+      "en": "'Right now' directly signals Present Continuous — the action started and is still in progress."
+    },
+    "rules": {
+      "ru": "«Right now» — прямой маркер незавершённого действия в момент говорения → Present Continuous."
+    },
+    "contextExamples": [
+      "She is reading an article right now and can't be disturbed.",
+      "He is fixing the printer right now — it should be ready soon."
+    ],
+    "tags": [
+      "present-continuous",
+      "sentence-analysis",
+      "affirmative",
+      "continuous",
+      "difficulty-1"
+    ],
+    "difficulty": 1,
+    "sentences": [
+      {
+        "answer": "present-continuous",
+        "distractors": [
+          {
+            "tenseId": "present-simple"
+          },
+          {
+            "tenseId": "past-continuous"
+          },
+          {
+            "tenseId": "present-perfect-continuous"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "word",
+            "value": "I"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "am",
+            "role": "verb",
+            "translation": {
+              "ru": "дп"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "writing",
+            "role": "verb",
+            "translation": {
+              "ru": "письмо"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "an"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "email",
+            "translation": {
+              "ru": "Отправлено по электронной почте"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "right",
+            "translation": {
+              "ru": "правый"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "now",
+            "translation": {
+              "ru": "сейчас"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "present-continuous-04",
-    "answer": "present-continuous",
-    "type": "sentence",
-    "prompt": "Временный процесс, длящийся в эту неделю/месяц",
-    "promptEn": "A temporary action happening this week or month",
-    "sentence": {
-      "pre": "She ",
-      "verb": "is studying",
-      "post": " for her exams this month."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Временный процесс, длящийся в эту неделю или месяц",
+      "en": "A temporary action happening this week or month"
     },
-    "difficulty": 1
+    "explanation": {
+      "ru": "«This month» — указание на временный период. Present Continuous для временных ситуаций, которые отличаются от нормы.",
+      "en": "'This month' signals a temporary period. Present Continuous for temporary situations different from usual."
+    },
+    "rules": {
+      "ru": "«This month» — маркер временного периода; учёба на экзамены отличается от обычного распорядка → Present Continuous для временных ситуаций."
+    },
+    "contextExamples": [
+      "He is training twice a day this month to prepare for the marathon.",
+      "We are using a temporary office this week while the main one is being renovated."
+    ],
+    "tags": [
+      "present-continuous",
+      "sentence-analysis",
+      "affirmative",
+      "continuous",
+      "difficulty-1"
+    ],
+    "difficulty": 1,
+    "sentences": [
+      {
+        "answer": "present-continuous",
+        "distractors": [
+          {
+            "tenseId": "present-simple"
+          },
+          {
+            "tenseId": "present-perfect-continuous"
+          },
+          {
+            "tenseId": "past-continuous"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "word",
+            "value": "She",
+            "translation": {
+              "ru": "Она"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "is",
+            "role": "verb",
+            "translation": {
+              "ru": "является"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "studying",
+            "role": "verb",
+            "translation": {
+              "ru": "изучение"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "for",
+            "translation": {
+              "ru": "."
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "her",
+            "translation": {
+              "ru": "ей"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "exams",
+            "translation": {
+              "ru": "экзамены"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "this",
+            "translation": {
+              "ru": "сего"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "month",
+            "translation": {
+              "ru": "месяца"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "present-continuous-05",
-    "answer": "present-continuous",
-    "type": "context",
-    "prompt": "Прогрессирующее изменение или тенденция",
-    "promptEn": "A progressive change or trend",
-    "sentence": {
-      "pre": "The world population ",
-      "verb": "is growing",
-      "post": " rapidly."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Прогрессирующее изменение или нарастающая тенденция",
+      "en": "A progressive change or growing trend"
     },
-    "difficulty": 2
+    "explanation": {
+      "ru": "«Is growing» — процесс нарастания. Present Continuous для описания изменений и тенденций, происходящих в наше время.",
+      "en": "'Is growing' describes ongoing change. Present Continuous for trends and changes unfolding in our time."
+    },
+    "rules": {
+      "ru": "«Is growing rapidly» — глагол «grow» передаёт нарастающую тенденцию в наше время; это не стабильный факт, а динамика → Present Continuous."
+    },
+    "contextExamples": [
+      "Urban areas are expanding rapidly across Southeast Asia.",
+      "The number of remote workers is growing every year."
+    ],
+    "tags": [
+      "present-continuous",
+      "context-clue",
+      "affirmative",
+      "continuous",
+      "difficulty-2"
+    ],
+    "difficulty": 2,
+    "sentences": [
+      {
+        "answer": "present-continuous",
+        "distractors": [
+          {
+            "tenseId": "present-simple"
+          },
+          {
+            "tenseId": "present-perfect-continuous"
+          },
+          {
+            "tenseId": "past-continuous"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "word",
+            "value": "The",
+            "translation": {
+              "ru": "-"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "world",
+            "translation": {
+              "ru": "мир"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "population",
+            "translation": {
+              "ru": "население"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "is",
+            "role": "verb",
+            "translation": {
+              "ru": "является"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "growing",
+            "role": "verb",
+            "translation": {
+              "ru": "на данный момент количество (apartments/share houses) составляет (14/21), но будет увеличиваться"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "rapidly",
+            "translation": {
+              "ru": "быстро"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "present-continuous-06",
-    "answer": "present-continuous",
-    "type": "sentence",
-    "prompt": "Повторяющееся раздражающее действие в настоящий период",
-    "promptEn": "A repeated annoying action during this period",
-    "sentence": {
-      "pre": "You ",
-      "verb": "are always complaining",
-      "post": " about everything!"
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Раздражающее повторяющееся действие в настоящий период",
+      "en": "An annoying habit during the current period"
     },
-    "difficulty": 2
+    "explanation": {
+      "ru": "«Are always complaining» — «always» с Continuous выражает раздражение от повторяющейся привычки. Это особый эмоциональный оттенок.",
+      "en": "'Are always complaining' — 'always' + Continuous expresses irritation at a repeated habit. This is a special emotional use."
+    },
+    "rules": {
+      "ru": "«Always complaining» — конструкция «always + -ing» выражает раздражение от повторяющейся привычки, а не нейтральный факт → Present Continuous."
+    },
+    "contextExamples": [
+      "He is always losing his keys and blaming others.",
+      "She is always arriving late and making excuses."
+    ],
+    "tags": [
+      "present-continuous",
+      "sentence-analysis",
+      "affirmative",
+      "continuous",
+      "difficulty-2"
+    ],
+    "difficulty": 2,
+    "sentences": [
+      {
+        "answer": "present-continuous",
+        "distractors": [
+          {
+            "tenseId": "present-simple"
+          },
+          {
+            "tenseId": "past-continuous"
+          },
+          {
+            "tenseId": "present-perfect-continuous"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "word",
+            "value": "You",
+            "translation": {
+              "ru": "Вы"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "are",
+            "role": "verb",
+            "translation": {
+              "ru": "заднем окне включены"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "always",
+            "role": "verb",
+            "translation": {
+              "ru": "всегда"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "complaining",
+            "role": "verb",
+            "translation": {
+              "ru": "Донос"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "about"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "everything",
+            "translation": {
+              "ru": "всё"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "!"
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "present-continuous-07",
-    "answer": "present-continuous",
-    "type": "context",
-    "prompt": "Описание сцены или ситуации в момент наблюдения",
-    "promptEn": "Describing a scene or situation as it unfolds",
-    "sentence": {
-      "pre": "Look! The children ",
-      "verb": "are playing",
-      "post": " in the park."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Описание сцены или ситуации в момент наблюдения",
+      "en": "Describing a scene or situation as it unfolds"
     },
-    "difficulty": 2
+    "explanation": {
+      "ru": "«Look!» — призыв обратить внимание на то, что происходит прямо сейчас. Present Continuous для описания наблюдаемой сцены.",
+      "en": "'Look!' draws attention to what's happening right now. Present Continuous for describing an observed scene."
+    },
+    "rules": {
+      "ru": "«Look!» — восклицание, привлекающее внимание к действию прямо сейчас; «are playing» — процесс в момент наблюдения → Present Continuous."
+    },
+    "contextExamples": [
+      "Look! A fox is crossing the road just ahead of us.",
+      "Listen! Someone is playing the piano upstairs."
+    ],
+    "tags": [
+      "present-continuous",
+      "context-clue",
+      "affirmative",
+      "continuous",
+      "difficulty-2"
+    ],
+    "difficulty": 2,
+    "sentences": [
+      {
+        "answer": "present-continuous",
+        "distractors": [
+          {
+            "tenseId": "present-simple"
+          },
+          {
+            "tenseId": "past-continuous"
+          },
+          {
+            "tenseId": "present-perfect"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "word",
+            "value": "Look",
+            "translation": {
+              "ru": "Обзор"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "!"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "The",
+            "translation": {
+              "ru": "-"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "children",
+            "translation": {
+              "ru": "с рвотой"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "are",
+            "role": "verb",
+            "translation": {
+              "ru": "заднем окне включены"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "playing",
+            "role": "verb",
+            "translation": {
+              "ru": "воспроизводится"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "in",
+            "translation": {
+              "ru": "от"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "park",
+            "translation": {
+              "ru": "парковка"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "present-continuous-08",
-    "answer": "present-continuous",
-    "type": "sentence",
-    "prompt": "Запланированное событие в ближайшем будущем",
-    "promptEn": "A planned event in the near future",
-    "sentence": {
-      "pre": "They ",
-      "verb": "are getting married",
-      "post": " next month."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Запланированное событие в ближайшем будущем",
+      "en": "A planned event in the near future"
     },
-    "difficulty": 2
+    "explanation": {
+      "ru": "«Next month» с Present Continuous — личный план, уже организованный. Отличается от Future Simple тем, что договорённость уже есть.",
+      "en": "'Next month' + Present Continuous = a personal plan already arranged — different from Future Simple which is just a decision."
+    },
+    "rules": {
+      "ru": "«Getting married next month» — личная договорённость, уже организованная на конкретный будущий срок → Present Continuous."
+    },
+    "contextExamples": [
+      "My cousin is moving to a new apartment next month.",
+      "They are launching the product next week — everything is set."
+    ],
+    "tags": [
+      "present-continuous",
+      "sentence-analysis",
+      "affirmative",
+      "continuous",
+      "difficulty-2"
+    ],
+    "difficulty": 2,
+    "sentences": [
+      {
+        "answer": "present-continuous",
+        "distractors": [
+          {
+            "tenseId": "future-simple"
+          },
+          {
+            "tenseId": "present-simple"
+          },
+          {
+            "tenseId": "future-continuous"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "word",
+            "value": "They",
+            "translation": {
+              "ru": "Они"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "are",
+            "role": "verb",
+            "translation": {
+              "ru": "заднем окне включены"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "getting",
+            "role": "verb",
+            "translation": {
+              "ru": "чтобы я заказала"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "married",
+            "role": "verb",
+            "translation": {
+              "ru": "женат"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "next",
+            "translation": {
+              "ru": "след."
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "month",
+            "translation": {
+              "ru": "месяца"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "present-continuous-09",
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Временная ситуация, отличающаяся от обычной",
+      "en": "A temporary situation different from the usual one"
+    },
+    "explanation": {
+      "ru": "«Normally drives» (привычка) vs. «this week is taking» (временное изменение). Present Continuous подчёркивает отклонение от нормы.",
+      "en": "'Normally drives' (habit) vs. 'this week is taking' (temporary change). Continuous highlights deviation from the norm."
+    },
+    "rules": {
+      "ru": "«This week» сигнализирует о временном отклонении от привычного «normally drives» → Present Continuous для контраста с нормой."
+    },
+    "contextExamples": [
+      "She usually cycles, but this week she is taking taxis because of her injury.",
+      "He normally works nights, but this month he is covering the day shift."
+    ],
+    "tags": [
+      "present-continuous",
+      "context-clue",
+      "affirmative",
+      "continuous",
+      "difficulty-2"
+    ],
+    "difficulty": 2,
+    "sentences": [
+      {
+        "answer": "present-continuous",
+        "distractors": [
+          {
+            "tenseId": "present-simple"
+          },
+          {
+            "tenseId": "past-continuous"
+          },
+          {
+            "tenseId": "present-perfect-continuous"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "word",
+            "value": "He",
+            "translation": {
+              "ru": "Он,"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "normally",
+            "translation": {
+              "ru": "обычно"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "drives",
+            "translation": {
+              "ru": "П|ЭИВОД OBj"
+            }
+          },
+          {
+            "type": "punct",
+            "value": ","
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "but",
+            "translation": {
+              "ru": "но"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "this",
+            "translation": {
+              "ru": "сего"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "week",
+            "translation": {
+              "ru": "неделя"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "he"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "is",
+            "role": "verb",
+            "translation": {
+              "ru": "является"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "taking",
+            "role": "verb",
+            "translation": {
+              "ru": "изъятие; покупка опциона"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "bus",
+            "translation": {
+              "ru": "шина"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "present-continuous-10",
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Текущее действие в ходе телефонного разговора",
+      "en": "An action in progress during a phone conversation"
+    },
+    "explanation": {
+      "ru": "«Am having dinner» — действие в процессе прямо сейчас (во время звонка). «Can't talk» подтверждает, что действие мешает разговору.",
+      "en": "'Am having dinner' — action in progress right now (during the call). 'Can't talk' confirms it's happening at this moment."
+    },
+    "rules": {
+      "ru": "«Can't talk» + «am having dinner» — действие, происходящее в момент звонка и мешающее разговору → Present Continuous."
+    },
+    "contextExamples": [
+      "I can't speak right now — I am giving a presentation.",
+      "Call me back later, I am just getting on the train."
+    ],
+    "tags": [
+      "present-continuous",
+      "sentence-analysis",
+      "negative",
+      "continuous",
+      "difficulty-2"
+    ],
+    "difficulty": 2,
+    "sentences": [
+      {
+        "answer": "present-continuous",
+        "distractors": [
+          {
+            "tenseId": "present-simple"
+          },
+          {
+            "tenseId": "past-continuous"
+          },
+          {
+            "tenseId": "present-perfect-continuous"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "word",
+            "value": "Sorry",
+            "translation": {
+              "ru": "Простите"
+            }
+          },
+          {
+            "type": "punct",
+            "value": ","
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "I"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "can't",
+            "translation": {
+              "ru": "не мочь"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "talk",
+            "translation": {
+              "ru": "разговаривать"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "punct",
+            "value": "—"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "I"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "am",
+            "role": "verb",
+            "translation": {
+              "ru": "дп"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "having",
+            "role": "verb",
+            "translation": {
+              "ru": "имеющих"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "dinner",
+            "translation": {
+              "ru": "ужин"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "present-continuous-11",
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Тенденция или развитие в обществе или экономике",
+      "en": "A trend or development in society or the economy"
+    },
+    "explanation": {
+      "ru": "«Are working remotely» — нарастающая тенденция в наши дни. Present Continuous для описания текущих социальных изменений.",
+      "en": "'Are working remotely' — a growing trend in today's world. Present Continuous for current social changes."
+    },
+    "rules": {
+      "ru": "«More and more people» — усилительная конструкция роста + «are working remotely» описывает нарастающую социальную тенденцию → Present Continuous."
+    },
+    "contextExamples": [
+      "More and more companies are switching to a four-day working week.",
+      "An increasing number of students are choosing online degrees."
+    ],
+    "tags": [
+      "present-continuous",
+      "context-clue",
+      "affirmative",
+      "continuous",
+      "difficulty-2"
+    ],
+    "difficulty": 2,
+    "sentences": [
+      {
+        "answer": "present-continuous",
+        "distractors": [
+          {
+            "tenseId": "present-simple"
+          },
+          {
+            "tenseId": "present-perfect-continuous"
+          },
+          {
+            "tenseId": "past-continuous"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "word",
+            "value": "More",
+            "translation": {
+              "ru": "Еще"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "and",
+            "translation": {
+              "ru": "и"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "more",
+            "translation": {
+              "ru": "дополнительно"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "people",
+            "translation": {
+              "ru": "человек"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "are",
+            "role": "verb",
+            "translation": {
+              "ru": "заднем окне включены"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "working",
+            "role": "verb",
+            "translation": {
+              "ru": "рабочих"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "remotely",
+            "translation": {
+              "ru": "дистанционно"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "present-continuous-12",
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Раздражающая привычка с наречием 'always' или 'constantly'",
+      "en": "An irritating habit with 'always' or 'constantly'"
+    },
+    "explanation": {
+      "ru": "«Is constantly interrupting» — «constantly» с Continuous выражает раздражение. Это не Simply факт, а эмоциональная оценка поведения.",
+      "en": "'Is constantly interrupting' — 'constantly' + Continuous conveys irritation. This is an emotional observation, not a neutral fact."
+    },
+    "rules": {
+      "ru": "«Constantly interrupting» — «constantly + -ing» передаёт раздражение говорящего повторяющимся поведением → Present Continuous."
+    },
+    "contextExamples": [
+      "She is constantly checking her phone during meetings.",
+      "He is always borrowing things and never returning them."
+    ],
+    "tags": [
+      "present-continuous",
+      "sentence-analysis",
+      "affirmative",
+      "continuous",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "sentences": [
+      {
+        "answer": "present-continuous",
+        "distractors": [
+          {
+            "tenseId": "present-simple"
+          },
+          {
+            "tenseId": "past-continuous"
+          },
+          {
+            "tenseId": "present-perfect-continuous"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "word",
+            "value": "My",
+            "translation": {
+              "ru": "Мой"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "brother",
+            "translation": {
+              "ru": "брат"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "is",
+            "role": "verb",
+            "translation": {
+              "ru": "является"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "constantly",
+            "role": "verb",
+            "translation": {
+              "ru": "постоянно"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "interrupting",
+            "role": "verb",
+            "translation": {
+              "ru": "Прерывание"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "me",
+            "translation": {
+              "ru": "ХХХ"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "when",
+            "translation": {
+              "ru": "когда,"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "I"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "speak",
+            "translation": {
+              "ru": "говорю"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "present-continuous-13",
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Личная договорённость на конкретное время в будущем",
+      "en": "A personal arrangement at a specific future time"
+    },
+    "explanation": {
+      "ru": "«At three o'clock tomorrow» — конкретное время личной встречи. Present Continuous для уже организованных планов на будущее.",
+      "en": "'At three o'clock tomorrow' — specific time for a personal meeting. Present Continuous for already arranged future plans."
+    },
+    "rules": {
+      "ru": "«At three o'clock tomorrow» — конкретное время уже организованной личной встречи → Present Continuous, не Future Simple."
+    },
+    "contextExamples": [
+      "She is presenting her research at two o'clock tomorrow.",
+      "I am seeing the dentist at half past nine on Monday."
+    ],
+    "tags": [
+      "present-continuous",
+      "context-clue",
+      "affirmative",
+      "continuous",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "sentences": [
+      {
+        "answer": "present-continuous",
+        "distractors": [
+          {
+            "tenseId": "future-simple"
+          },
+          {
+            "tenseId": "present-simple"
+          },
+          {
+            "tenseId": "future-continuous"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "word",
+            "value": "I"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "am",
+            "role": "verb",
+            "translation": {
+              "ru": "дп"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "meeting",
+            "role": "verb",
+            "translation": {
+              "ru": "встреча"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "director",
+            "translation": {
+              "ru": "директор"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "at"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "three",
+            "translation": {
+              "ru": "три"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "o'clock",
+            "translation": {
+              "ru": "часов"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "tomorrow",
+            "translation": {
+              "ru": "завтра"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "present-continuous-14",
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Изменяющаяся ситуация, которая становится хуже или лучше",
+      "en": "A changing situation that is getting better or worse"
+    },
+    "explanation": {
+      "ru": "«Is improving» — ситуация меняется в лучшую сторону в данный момент. Present Continuous для динамичных изменений.",
+      "en": "'Is improving' — situation changing for the better right now. Present Continuous for dynamic, ongoing changes."
+    },
+    "rules": {
+      "ru": "«Is improving steadily» — глагол «improve» передаёт динамику позитивного изменения, происходящего прямо сейчас → Present Continuous."
+    },
+    "contextExamples": [
+      "His pronunciation is improving with every lesson.",
+      "The economic situation is getting better after the reforms."
+    ],
+    "tags": [
+      "present-continuous",
+      "sentence-analysis",
+      "affirmative",
+      "continuous",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "sentences": [
+      {
+        "answer": "present-continuous",
+        "distractors": [
+          {
+            "tenseId": "present-simple"
+          },
+          {
+            "tenseId": "present-perfect-continuous"
+          },
+          {
+            "tenseId": "past-continuous"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "word",
+            "value": "The",
+            "translation": {
+              "ru": "-"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "patient",
+            "translation": {
+              "ru": "пациент"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "is",
+            "role": "verb",
+            "translation": {
+              "ru": "является"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "improving",
+            "role": "verb",
+            "translation": {
+              "ru": "Улучшается"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "steadily",
+            "translation": {
+              "ru": "Неуклонно"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "present-continuous-15",
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Описание поведения человека в последнее время",
+      "en": "Describing how someone has been behaving lately"
+    },
+    "explanation": {
+      "ru": "«Is acting strangely lately» — поведение наблюдается в последнее время, это временная ситуация, а не постоянная черта характера.",
+      "en": "'Is acting strangely lately' — behaviour observed recently, a temporary situation, not a permanent trait."
+    },
+    "rules": {
+      "ru": "«Lately» + «is acting» — маркер «lately» указывает на временно изменившееся поведение в последний период → Present Continuous."
+    },
+    "contextExamples": [
+      "He is behaving very oddly these days — I wonder what happened.",
+      "She is speaking very quietly lately; something must be wrong."
+    ],
+    "tags": [
+      "present-continuous",
+      "context-clue",
+      "affirmative",
+      "continuous",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "sentences": [
+      {
+        "answer": "present-continuous",
+        "distractors": [
+          {
+            "tenseId": "present-simple"
+          },
+          {
+            "tenseId": "present-perfect-continuous"
+          },
+          {
+            "tenseId": "past-continuous"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "word",
+            "value": "She",
+            "translation": {
+              "ru": "Она"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "is",
+            "role": "verb",
+            "translation": {
+              "ru": "является"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "acting",
+            "role": "verb",
+            "translation": {
+              "ru": "действующий(ая)"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "very",
+            "translation": {
+              "ru": "очень"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "strangely",
+            "translation": {
+              "ru": "Странно"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "lately"
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "present-continuous-16",
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Отрицание текущего действия в данный момент",
+      "en": "Negating an action happening at this moment"
+    },
+    "explanation": {
+      "ru": "«Isn't working» — отрицание действия, которое не происходит прямо сейчас. «Now» подтверждает момент речи.",
+      "en": "'Isn't working' negates what's not happening right now. 'Now' confirms the moment of speaking."
+    },
+    "rules": {
+      "ru": "«Now» — маркер момента речи; «isn't working» — отрицание текущего процесса, которого нет прямо сейчас → Present Continuous."
+    },
+    "contextExamples": [
+      "Don't bother him now — he isn't resting, he's meditating.",
+      "She isn't answering her phone right now; she must be in a meeting."
+    ],
+    "tags": [
+      "present-continuous",
+      "sentence-analysis",
+      "negative",
+      "continuous",
+      "difficulty-1"
+    ],
+    "difficulty": 1,
+    "sentences": [
+      {
+        "answer": "present-continuous",
+        "distractors": [
+          {
+            "tenseId": "present-simple"
+          },
+          {
+            "tenseId": "past-continuous"
+          },
+          {
+            "tenseId": "present-perfect"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "word",
+            "value": "Don't",
+            "translation": {
+              "ru": "Не"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "call",
+            "translation": {
+              "ru": "звонок"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "him",
+            "translation": {
+              "ru": "ему"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "now",
+            "translation": {
+              "ru": "сейчас"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "punct",
+            "value": "—"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "he"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "isn't",
+            "role": "verb",
+            "translation": {
+              "ru": "не совпадает с"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "working",
+            "role": "verb",
+            "translation": {
+              "ru": "рабочих"
+            }
+          },
+          {
+            "type": "punct",
+            "value": ","
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "he's",
+            "translation": {
+              "ru": "он"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "sleeping",
+            "translation": {
+              "ru": "СОН"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "present-continuous-17",
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Вопрос о текущем действии собеседника",
+      "en": "Asking what someone is doing at this moment"
+    },
+    "explanation": {
+      "ru": "«What are you doing?» — вопрос о действии прямо сейчас или о запланированном событии. «Saturday evening» указывает на личный план.",
+      "en": "'What are you doing?' asks about current action or arranged plans. 'Saturday evening' points to a personal arrangement."
+    },
+    "rules": {
+      "ru": "«On Saturday evening» — конкретный момент в будущем; «are you doing» — вопрос о личной договорённости → Present Continuous."
+    },
+    "contextExamples": [
+      "What are you doing this weekend? Any plans?",
+      "Are you doing anything special on New Year's Eve?"
+    ],
+    "tags": [
+      "present-continuous",
+      "context-clue",
+      "question",
+      "continuous",
+      "difficulty-1"
+    ],
+    "difficulty": 1,
+    "sentences": [
+      {
+        "answer": "present-continuous",
+        "distractors": [
+          {
+            "tenseId": "present-simple"
+          },
+          {
+            "tenseId": "future-simple"
+          },
+          {
+            "tenseId": "past-continuous"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "word",
+            "value": "What",
+            "translation": {
+              "ru": "Что"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "are",
+            "role": "verb",
+            "translation": {
+              "ru": "заднем окне включены"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "you",
+            "role": "verb",
+            "translation": {
+              "ru": "вы"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "doing",
+            "role": "verb",
+            "translation": {
+              "ru": "делать"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "on",
+            "translation": {
+              "ru": "горит"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "Saturday",
+            "translation": {
+              "ru": "Суббота "
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "evening",
+            "translation": {
+              "ru": "вечер"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "?"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "present-continuous-18",
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Описание того, что видно на фото или видео",
+      "en": "Describing what can be seen in a photo or video"
+    },
+    "explanation": {
+      "ru": "«In this picture» — описание зафиксированного момента. Present Continuous описывает действие, «замороженное» на изображении.",
+      "en": "'In this picture' describes a frozen moment. Present Continuous narrates an action captured in a photo/video."
+    },
+    "rules": {
+      "ru": "«In this picture» — описание зафиксированного момента на изображении; «is floating» передаёт незавершённое действие в кадре → Present Continuous."
+    },
+    "contextExamples": [
+      "In this photo, the athletes are crossing the finish line together.",
+      "In the video, a whale is jumping completely out of the water."
+    ],
+    "tags": [
+      "present-continuous",
+      "sentence-analysis",
+      "affirmative",
+      "continuous",
+      "difficulty-2"
+    ],
+    "difficulty": 2,
+    "sentences": [
+      {
+        "answer": "present-continuous",
+        "distractors": [
+          {
+            "tenseId": "present-simple"
+          },
+          {
+            "tenseId": "past-continuous"
+          },
+          {
+            "tenseId": "past-simple"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "word",
+            "value": "In",
+            "translation": {
+              "ru": "Нач."
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "this",
+            "translation": {
+              "ru": "сего"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "picture",
+            "translation": {
+              "ru": "картина"
+            }
+          },
+          {
+            "type": "punct",
+            "value": ","
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "astronaut",
+            "translation": {
+              "ru": "космонавт"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "is",
+            "role": "verb",
+            "translation": {
+              "ru": "является"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "floating",
+            "role": "verb"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "above",
+            "translation": {
+              "ru": "над "
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "Earth",
+            "translation": {
+              "ru": "Земля"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "present-continuous-19",
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Временная работа или жильё в данный период жизни",
+      "en": "Temporary work or accommodation during this life period"
+    },
+    "explanation": {
+      "ru": "«While my flat is being renovated» — временная ситуация из-за ремонта. Present Continuous для временных жизненных обстоятельств.",
+      "en": "'While my flat is being renovated' — temporary situation. Present Continuous for temporary life circumstances."
+    },
+    "rules": {
+      "ru": "«While my flat is being renovated» — явный временный повод; «am staying» подчёркивает, что жильё — не постоянное, а вынужденное → Present Continuous."
+    },
+    "contextExamples": [
+      "I am renting a room in the city centre while I look for a permanent place.",
+      "He is living with his parents temporarily while his visa is being processed."
+    ],
+    "tags": [
+      "present-continuous",
+      "context-clue",
+      "affirmative",
+      "continuous",
+      "difficulty-2"
+    ],
+    "difficulty": 2,
+    "sentences": [
+      {
+        "answer": "present-continuous",
+        "distractors": [
+          {
+            "tenseId": "present-simple"
+          },
+          {
+            "tenseId": "present-perfect-continuous"
+          },
+          {
+            "tenseId": "past-continuous"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "word",
+            "value": "I"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "am",
+            "role": "verb",
+            "translation": {
+              "ru": "дп"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "staying",
+            "role": "verb",
+            "translation": {
+              "ru": "проживание"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "at"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "my",
+            "translation": {
+              "ru": "мой"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "sister's",
+            "translation": {
+              "ru": "сестры"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "place",
+            "translation": {
+              "ru": "место"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "while",
+            "translation": {
+              "ru": "пока"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "my",
+            "translation": {
+              "ru": "мой"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "flat",
+            "translation": {
+              "ru": "плоский"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "is",
+            "translation": {
+              "ru": "является"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "being",
+            "translation": {
+              "ru": "быть/находиться"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "renovated",
+            "translation": {
+              "ru": "Реновация"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "present-continuous-20",
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Нарастающее изменение в обществе или технологиях",
+      "en": "A growing change in society or technology"
+    },
+    "explanation": {
+      "ru": "«Are becoming increasingly popular» — постепенное изменение в настоящий период. Present Continuous для нарастающих тенденций.",
+      "en": "'Are becoming increasingly popular' — gradual change in the present period. Present Continuous for growing trends."
+    },
+    "rules": {
+      "ru": "«Are becoming increasingly popular» — «become» + «increasingly» описывает нарастающую технологическую тенденцию в наше время → Present Continuous."
+    },
+    "contextExamples": [
+      "Solar panels are becoming more affordable every year.",
+      "Artificial intelligence is becoming a key part of modern business."
+    ],
+    "tags": [
+      "present-continuous",
+      "sentence-analysis",
+      "affirmative",
+      "continuous",
+      "difficulty-2"
+    ],
+    "difficulty": 2,
+    "sentences": [
+      {
+        "answer": "present-continuous",
+        "distractors": [
+          {
+            "tenseId": "present-simple"
+          },
+          {
+            "tenseId": "present-perfect-continuous"
+          },
+          {
+            "tenseId": "past-continuous"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "word",
+            "value": "Electric",
+            "translation": {
+              "ru": "Электрическая часть"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "vehicles",
+            "translation": {
+              "ru": "ТС"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "are",
+            "role": "verb",
+            "translation": {
+              "ru": "заднем окне включены"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "becoming",
+            "role": "verb",
+            "translation": {
+              "ru": "подходящий"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "increasingly",
+            "translation": {
+              "ru": "все чаще"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "popular",
+            "translation": {
+              "ru": "популярные"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "present-continuous-21",
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Действие, запланированное как личная встреча или визит",
+      "en": "A planned personal meeting or visit"
+    },
+    "explanation": {
+      "ru": "«On Friday» — конкретная дата. Present Continuous в вопросе о личных планах: «Are you coming?» = «Ты уже договорился прийти?»",
+      "en": "'On Friday' = specific date. Present Continuous in a question about personal plans: 'Are you coming?' = 'Have you arranged to come?'"
+    },
+    "rules": {
+      "ru": "«Are you coming … on Friday?» — вопрос о конкретной запланированной встрече с датой → Present Continuous для личных договорённостей."
+    },
+    "contextExamples": [
+      "Is she joining us for dinner on Wednesday?",
+      "Are they coming to the conference next Tuesday?"
+    ],
+    "tags": [
+      "present-continuous",
+      "context-clue",
+      "question",
+      "continuous",
+      "difficulty-2"
+    ],
+    "difficulty": 2,
+    "sentences": [
+      {
+        "answer": "present-continuous",
+        "distractors": [
+          {
+            "tenseId": "future-simple"
+          },
+          {
+            "tenseId": "present-simple"
+          },
+          {
+            "tenseId": "future-continuous"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "word",
+            "value": "Are",
+            "translation": {
+              "ru": "Ар"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "you",
+            "translation": {
+              "ru": "вы"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "coming",
+            "role": "verb",
+            "translation": {
+              "ru": "исходить"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "to",
+            "translation": {
+              "ru": "кому"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "party",
+            "translation": {
+              "ru": "третьих"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "on",
+            "translation": {
+              "ru": "горит"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "Friday",
+            "translation": {
+              "ru": "Пятница"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "?"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "present-continuous-22",
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Контраст с обычным поведением: временное vs. постоянное",
+      "en": "Contrast with usual behaviour: temporary vs. permanent"
+    },
+    "explanation": {
+      "ru": "«Usually works» (Present Simple = обычно) vs. «is working from home» (Present Continuous = временно в этом месяце). Ключ — «this month».",
+      "en": "'Usually works' (Simple = habit) vs. 'is working from home' (Continuous = temporary this month). Key: 'this month'."
+    },
+    "rules": {
+      "ru": "«This month» + «is working from home» образует контраст с «usually works in the city» — явное временное отклонение от привычки → Present Continuous."
+    },
+    "contextExamples": [
+      "He usually goes running in the morning, but this week he is swimming instead.",
+      "They normally use the conference room, but this month they are meeting online."
+    ],
+    "tags": [
+      "present-continuous",
+      "sentence-analysis",
+      "affirmative",
+      "continuous",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "sentences": [
+      {
+        "answer": "present-continuous",
+        "distractors": [
+          {
+            "tenseId": "present-simple"
+          },
+          {
+            "tenseId": "present-perfect-continuous"
+          },
+          {
+            "tenseId": "past-continuous"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "word",
+            "value": "She",
+            "translation": {
+              "ru": "Она"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "usually",
+            "translation": {
+              "ru": "обычно"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "works",
+            "translation": {
+              "ru": "работы,"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "in",
+            "translation": {
+              "ru": "от"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "city"
+          },
+          {
+            "type": "punct",
+            "value": ","
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "but",
+            "translation": {
+              "ru": "но"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "this",
+            "translation": {
+              "ru": "сего"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "month",
+            "translation": {
+              "ru": "месяца"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "she",
+            "translation": {
+              "ru": "она"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "is",
+            "role": "verb",
+            "translation": {
+              "ru": "является"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "working",
+            "role": "verb",
+            "translation": {
+              "ru": "рабочих"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "from",
+            "translation": {
+              "ru": "от"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "home",
+            "translation": {
+              "ru": "главная"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "present-continuous-23",
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Развивающееся ухудшение состояния или обстановки",
+      "en": "A worsening condition or situation that is developing"
+    },
+    "explanation": {
+      "ru": "«Is getting worse» — ситуация ухудшается прямо сейчас / в наше время. Present Continuous для динамики изменений.",
+      "en": "'Is getting worse' — situation worsening right now / in our time. Present Continuous for dynamic change."
+    },
+    "rules": {
+      "ru": "«Is getting worse» — «get» передаёт нарастающее ухудшение; «every year» подчёркивает продолжающуюся тенденцию → Present Continuous."
+    },
+    "contextExamples": [
+      "Air quality is getting worse in many industrial cities.",
+      "The situation is getting more complicated with every passing day."
+    ],
+    "tags": [
+      "present-continuous",
+      "context-clue",
+      "affirmative",
+      "continuous",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "sentences": [
+      {
+        "answer": "present-continuous",
+        "distractors": [
+          {
+            "tenseId": "present-simple"
+          },
+          {
+            "tenseId": "present-perfect-continuous"
+          },
+          {
+            "tenseId": "past-continuous"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "word",
+            "value": "The",
+            "translation": {
+              "ru": "-"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "traffic",
+            "translation": {
+              "ru": "трафиков"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "is",
+            "role": "verb",
+            "translation": {
+              "ru": "является"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "getting",
+            "role": "verb",
+            "translation": {
+              "ru": "чтобы я заказала"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "worse",
+            "translation": {
+              "ru": "хуже"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "every",
+            "translation": {
+              "ru": "каждый"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "year",
+            "translation": {
+              "ru": "год"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "present-continuous-24",
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Процесс, происходящий прямо во время разговора",
+      "en": "A process unfolding at the very moment of speaking"
+    },
+    "explanation": {
+      "ru": "«Hurry up!» — срочность указывает на действие прямо сейчас. «Is waiting» — процесс уже идёт в момент произносимых слов.",
+      "en": "'Hurry up!' signals urgency — something is happening now. 'Is waiting' = the process is already underway as you speak."
+    },
+    "rules": {
+      "ru": "«Hurry up!» — призыв к действию из-за происходящего сейчас; «is waiting» — процесс идёт прямо в момент говорения → Present Continuous."
+    },
+    "contextExamples": [
+      "Quick, get dressed! Your friends are waiting downstairs.",
+      "Come on! The bus is leaving in two minutes."
+    ],
+    "tags": [
+      "present-continuous",
+      "sentence-analysis",
+      "affirmative",
+      "continuous",
+      "difficulty-2"
+    ],
+    "difficulty": 2,
+    "sentences": [
+      {
+        "answer": "present-continuous",
+        "distractors": [
+          {
+            "tenseId": "present-simple"
+          },
+          {
+            "tenseId": "past-continuous"
+          },
+          {
+            "tenseId": "present-perfect-continuous"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "word",
+            "value": "Hurry",
+            "translation": {
+              "ru": "Скорее"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "up",
+            "translation": {
+              "ru": "вверх"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "!"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "The",
+            "translation": {
+              "ru": "-"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "taxi"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "is",
+            "role": "verb",
+            "translation": {
+              "ru": "является"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "waiting",
+            "role": "verb",
+            "translation": {
+              "ru": "ожидание"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "outside",
+            "translation": {
+              "ru": "извне"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "present-continuous-25",
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Многократно раздражающее поведение в этот период",
+      "en": "Repeatedly irritating behaviour during this period"
+    },
+    "explanation": {
+      "ru": "«Are constantly making noise» — «constantly» с Continuous выражает раздражение от повторяющегося поведения. Это эмоциональная характеристика.",
+      "en": "'Are constantly making noise' — 'constantly' + Continuous conveys frustration at repeated behaviour during this period."
+    },
+    "rules": {
+      "ru": "«Constantly making noise» — «constantly + -ing» выражает недовольство регулярно повторяющимся поведением в данный период → Present Continuous."
+    },
+    "contextExamples": [
+      "They are constantly talking during the film — it's so annoying.",
+      "He is always slamming doors and waking everyone up."
+    ],
+    "tags": [
+      "present-continuous",
+      "context-clue",
+      "affirmative",
+      "continuous",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "sentences": [
+      {
+        "answer": "present-continuous",
+        "distractors": [
+          {
+            "tenseId": "present-simple"
+          },
+          {
+            "tenseId": "past-continuous"
+          },
+          {
+            "tenseId": "present-perfect-continuous"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "word",
+            "value": "They",
+            "translation": {
+              "ru": "Они"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "are",
+            "role": "verb",
+            "translation": {
+              "ru": "заднем окне включены"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "constantly",
+            "role": "verb",
+            "translation": {
+              "ru": "постоянно"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "making",
+            "role": "verb",
+            "translation": {
+              "ru": "изготовление"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "noise",
+            "translation": {
+              "ru": "шум"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "during",
+            "translation": {
+              "ru": "при"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "lectures",
+            "translation": {
+              "ru": "лекции"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
   }
 ]

@@ -1,132 +1,3562 @@
 [
   {
     "id": "present-simple-01",
-    "answer": "present-simple",
-    "type": "context",
-    "prompt": "Повторяющееся действие или привычка",
-    "promptEn": "A repeated habit or routine",
-    "sentence": {
-      "pre": "She ",
-      "verb": "works",
-      "post": " every morning."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Повторяющееся действие или привычка",
+      "en": "A repeated habit or routine"
     },
-    "difficulty": 1
+    "explanation": {
+      "ru": "Слово «every» (каждое) — маркер повторяемости. Present Simple описывает привычки и регулярные действия.",
+      "en": "'Every morning' is a frequency marker. Present Simple is used for habits and routines."
+    },
+    "rules": {
+      "ru": "«Every morning» — маркер повторяемости, указывающий на регулярную привычку → Present Simple."
+    },
+    "contextExamples": [
+      "He jogs every morning before breakfast.",
+      "They visit their grandparents every Sunday."
+    ],
+    "tags": [
+      "present-simple",
+      "context-clue",
+      "affirmative",
+      "simple",
+      "difficulty-1"
+    ],
+    "difficulty": 1,
+    "sentences": [
+      {
+        "answer": "present-simple",
+        "distractors": [
+          {
+            "tenseId": "present-continuous"
+          },
+          {
+            "tenseId": "past-simple"
+          },
+          {
+            "tenseId": "present-perfect"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "word",
+            "value": "She",
+            "translation": {
+              "ru": "Она"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "works",
+            "role": "verb",
+            "translation": {
+              "ru": "работы,"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "every",
+            "translation": {
+              "ru": "каждый"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "morning",
+            "translation": {
+              "ru": "утро"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "present-simple-02",
-    "answer": "present-simple",
-    "type": "context",
-    "prompt": "Научный факт или универсальная истина",
-    "promptEn": "A scientific fact that is always true",
-    "sentence": {
-      "pre": "Water ",
-      "verb": "boils",
-      "post": " at 100 degrees."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Научный факт или универсальная истина",
+      "en": "A scientific fact that is always true"
     },
-    "difficulty": 1
+    "explanation": {
+      "ru": "Научные законы не меняются — они вечные факты. Present Simple используется для вечных истин без указания времени.",
+      "en": "Scientific laws are timeless facts. Present Simple is used for permanent truths."
+    },
+    "rules": {
+      "ru": "«Boils at 100 degrees» — вечный научный закон без привязки ко времени → Present Simple для неизменных фактов."
+    },
+    "contextExamples": [
+      "Iron expands when heated.",
+      "The Earth orbits the Sun once a year."
+    ],
+    "tags": [
+      "present-simple",
+      "context-clue",
+      "affirmative",
+      "simple",
+      "difficulty-1"
+    ],
+    "difficulty": 1,
+    "sentences": [
+      {
+        "answer": "present-simple",
+        "distractors": [
+          {
+            "tenseId": "present-continuous"
+          },
+          {
+            "tenseId": "past-simple"
+          },
+          {
+            "tenseId": "future-simple"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "word",
+            "value": "Water",
+            "translation": {
+              "ru": "Вода"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "boils",
+            "role": "verb",
+            "translation": {
+              "ru": "Кипит"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "at"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "100"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "degrees"
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "present-simple-03",
-    "answer": "present-simple",
-    "type": "sentence",
-    "prompt": "Регулярное действие в настоящем",
-    "promptEn": "Regular action in the present",
-    "sentence": {
-      "pre": "I ",
-      "verb": "drink",
-      "post": " coffee every day."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Регулярное действие в настоящем",
+      "en": "Regular action in the present"
     },
-    "difficulty": 1
+    "explanation": {
+      "ru": "«Every day» — классический маркер Present Simple. Действие повторяется ежедневно, это привычка.",
+      "en": "'Every day' is a classic Present Simple marker for a daily habit."
+    },
+    "rules": {
+      "ru": "«Every day» — маркер ежедневной повторяемости → Present Simple для регулярных привычек."
+    },
+    "contextExamples": [
+      "She reads the news every day.",
+      "We have a team meeting every day at nine."
+    ],
+    "tags": [
+      "present-simple",
+      "sentence-analysis",
+      "affirmative",
+      "simple",
+      "difficulty-1"
+    ],
+    "difficulty": 1,
+    "sentences": [
+      {
+        "answer": "present-simple",
+        "distractors": [
+          {
+            "tenseId": "present-continuous"
+          },
+          {
+            "tenseId": "past-simple"
+          },
+          {
+            "tenseId": "present-perfect"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "word",
+            "value": "I"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "drink",
+            "role": "verb",
+            "translation": {
+              "ru": "напиток"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "coffee",
+            "translation": {
+              "ru": "кофе"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "every",
+            "translation": {
+              "ru": "каждый"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "day",
+            "translation": {
+              "ru": "число"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "present-simple-04",
-    "answer": "present-simple",
-    "type": "sentence",
-    "prompt": "Состояние, которое продолжается обычно",
-    "promptEn": "A state that typically continues",
-    "sentence": {
-      "pre": "He ",
-      "verb": "likes",
-      "post": " reading books."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Состояние, которое продолжается обычно",
+      "en": "A state that typically continues"
     },
-    "difficulty": 1
+    "explanation": {
+      "ru": "«Like» — глагол состояния (stative verb). Стативные глаголы не используются в Continuous — только в Simple.",
+      "en": "'Like' is a stative verb. Stative verbs use Simple, not Continuous."
+    },
+    "rules": {
+      "ru": "«Likes» — стативный глагол предпочтения; стативные глаголы не принимают форму Continuous → Present Simple."
+    },
+    "contextExamples": [
+      "She loves classical music.",
+      "They prefer tea to coffee."
+    ],
+    "tags": [
+      "present-simple",
+      "sentence-analysis",
+      "affirmative",
+      "simple",
+      "difficulty-1"
+    ],
+    "difficulty": 1,
+    "sentences": [
+      {
+        "answer": "present-simple",
+        "distractors": [
+          {
+            "tenseId": "present-continuous"
+          },
+          {
+            "tenseId": "past-simple"
+          },
+          {
+            "tenseId": "present-perfect"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "word",
+            "value": "He",
+            "translation": {
+              "ru": "Он,"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "likes",
+            "role": "verb",
+            "translation": {
+              "ru": "лайки"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "reading",
+            "translation": {
+              "ru": "чтение"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "books",
+            "translation": {
+              "ru": "книг"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "present-simple-05",
-    "answer": "present-simple",
-    "type": "context",
-    "prompt": "Действие, которое происходит регулярно по расписанию",
-    "promptEn": "An action that happens regularly according to schedule",
-    "sentence": {
-      "pre": "The train ",
-      "verb": "leaves",
-      "post": " at 8 AM."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Действие, которое происходит регулярно по расписанию",
+      "en": "An action that happens regularly according to schedule"
     },
-    "difficulty": 1
+    "explanation": {
+      "ru": "Фиксированное расписание (8 AM) для транспорта — Present Simple. Это не конкретный момент, а регулярный факт.",
+      "en": "Fixed timetables for transport use Present Simple — it's a regular fact, not a single event."
+    },
+    "rules": {
+      "ru": "«At 8 AM» — фиксированное время в официальном расписании транспорта → Present Simple, а не Future Simple."
+    },
+    "contextExamples": [
+      "The bus arrives at the station at 7:30 every morning.",
+      "This ferry departs at noon on weekdays."
+    ],
+    "tags": [
+      "present-simple",
+      "context-clue",
+      "affirmative",
+      "simple",
+      "difficulty-1"
+    ],
+    "difficulty": 1,
+    "sentences": [
+      {
+        "answer": "present-simple",
+        "distractors": [
+          {
+            "tenseId": "future-simple"
+          },
+          {
+            "tenseId": "present-continuous"
+          },
+          {
+            "tenseId": "past-simple"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "word",
+            "value": "The",
+            "translation": {
+              "ru": "-"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "train",
+            "translation": {
+              "ru": "pociąg"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "leaves",
+            "role": "verb",
+            "translation": {
+              "ru": "Листья"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "at"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "8"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "AM"
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "present-simple-06",
-    "answer": "present-simple",
-    "type": "sentence",
-    "prompt": "Общее состояние или характеристика",
-    "promptEn": "A general state or characteristic",
-    "sentence": {
-      "pre": "They ",
-      "verb": "live",
-      "post": " in London."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Общее состояние или характеристика",
+      "en": "A general state or characteristic"
     },
-    "difficulty": 1
+    "explanation": {
+      "ru": "«Live» описывает постоянное место жительства — стабильный факт. Present Simple для долгосрочных состояний.",
+      "en": "'Live' describes a permanent residence — a stable fact expressed with Present Simple."
+    },
+    "rules": {
+      "ru": "«Live in London» — постоянная характеристика места жительства, стабильный факт → Present Simple."
+    },
+    "contextExamples": [
+      "My parents live in the countryside.",
+      "She lives near the university campus."
+    ],
+    "tags": [
+      "present-simple",
+      "sentence-analysis",
+      "affirmative",
+      "simple",
+      "difficulty-1"
+    ],
+    "difficulty": 1,
+    "sentences": [
+      {
+        "answer": "present-simple",
+        "distractors": [
+          {
+            "tenseId": "present-continuous"
+          },
+          {
+            "tenseId": "past-simple"
+          },
+          {
+            "tenseId": "present-perfect"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "word",
+            "value": "They",
+            "translation": {
+              "ru": "Они"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "live",
+            "role": "verb",
+            "translation": {
+              "ru": "жить"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "in",
+            "translation": {
+              "ru": "от"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "London",
+            "translation": {
+              "ru": "Лондон"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "present-simple-07",
-    "answer": "present-simple",
-    "type": "context",
-    "prompt": "Действие, которое повторяется через определённые промежутки",
-    "promptEn": "An action that repeats at intervals",
-    "sentence": {
-      "pre": "We ",
-      "verb": "meet",
-      "post": " every Friday."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Действие, которое повторяется через определённые промежутки",
+      "en": "An action that repeats at intervals"
     },
-    "difficulty": 2
+    "explanation": {
+      "ru": "«Every Friday» — регулярный интервал, маркер Present Simple. Встречи происходят еженедельно.",
+      "en": "'Every Friday' signals a weekly routine — Present Simple for repeating intervals."
+    },
+    "rules": {
+      "ru": "«Every Friday» — маркер регулярного еженедельного интервала → Present Simple."
+    },
+    "contextExamples": [
+      "They hold a staff briefing every Monday.",
+      "She goes to the gym every other day."
+    ],
+    "tags": [
+      "present-simple",
+      "context-clue",
+      "affirmative",
+      "simple",
+      "difficulty-2"
+    ],
+    "difficulty": 2,
+    "sentences": [
+      {
+        "answer": "present-simple",
+        "distractors": [
+          {
+            "tenseId": "present-continuous"
+          },
+          {
+            "tenseId": "past-simple"
+          },
+          {
+            "tenseId": "present-perfect"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "word",
+            "value": "We",
+            "translation": {
+              "ru": "Перед"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "meet",
+            "role": "verb",
+            "translation": {
+              "ru": "встречать "
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "every",
+            "translation": {
+              "ru": "каждый"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "Friday",
+            "translation": {
+              "ru": "Пятница"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "present-simple-08",
-    "answer": "present-simple",
-    "type": "sentence",
-    "prompt": "Состояние чувства или мнения",
-    "promptEn": "A feeling or opinion state",
-    "sentence": {
-      "pre": "She ",
-      "verb": "believes",
-      "post": " in sustainable living."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Состояние чувства или мнения",
+      "en": "A feeling or opinion state"
     },
-    "difficulty": 2
+    "explanation": {
+      "ru": "«Believe» — глагол мнения/убеждения (stative verb). Такие глаголы не используются в Continuous форме.",
+      "en": "'Believe' is a stative opinion verb — it takes Simple, never Continuous."
+    },
+    "rules": {
+      "ru": "«Believes» — стативный глагол убеждения; выражает постоянное мнение, не процесс → Present Simple."
+    },
+    "contextExamples": [
+      "He believes that hard work pays off.",
+      "Most scientists agree that the climate is changing."
+    ],
+    "tags": [
+      "present-simple",
+      "sentence-analysis",
+      "affirmative",
+      "simple",
+      "difficulty-2"
+    ],
+    "difficulty": 2,
+    "sentences": [
+      {
+        "answer": "present-simple",
+        "distractors": [
+          {
+            "tenseId": "present-continuous"
+          },
+          {
+            "tenseId": "past-simple"
+          },
+          {
+            "tenseId": "present-perfect"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "word",
+            "value": "She",
+            "translation": {
+              "ru": "Она"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "believes",
+            "role": "verb",
+            "translation": {
+              "ru": "считает"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "in",
+            "translation": {
+              "ru": "от"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "sustainable",
+            "translation": {
+              "ru": "экологичность"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "living",
+            "translation": {
+              "ru": "живой"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "present-simple-09",
-    "answer": "present-simple",
-    "type": "context",
-    "prompt": "Описание профессии или постоянной роли",
-    "promptEn": "Describing a profession or permanent role",
-    "sentence": {
-      "pre": "My father ",
-      "verb": "works",
-      "post": " as an engineer."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Описание профессии или постоянной роли",
+      "en": "Describing a profession or permanent role"
     },
-    "difficulty": 2
+    "explanation": {
+      "ru": "Профессия — постоянная роль, а не временное действие. Present Simple для стабильных фактов о человеке.",
+      "en": "A profession is a permanent role, not a temporary action — Present Simple for stable facts."
+    },
+    "rules": {
+      "ru": "«Works as an engineer» — профессия как постоянная роль, стабильный факт о человеке → Present Simple."
+    },
+    "contextExamples": [
+      "Her sister works as a graphic designer.",
+      "He teaches mathematics at a local school."
+    ],
+    "tags": [
+      "present-simple",
+      "context-clue",
+      "affirmative",
+      "simple",
+      "difficulty-2"
+    ],
+    "difficulty": 2,
+    "sentences": [
+      {
+        "answer": "present-simple",
+        "distractors": [
+          {
+            "tenseId": "present-continuous"
+          },
+          {
+            "tenseId": "past-simple"
+          },
+          {
+            "tenseId": "present-perfect"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "word",
+            "value": "My",
+            "translation": {
+              "ru": "Мой"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "father",
+            "translation": {
+              "ru": "отец"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "works",
+            "role": "verb",
+            "translation": {
+              "ru": "работы,"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "as",
+            "translation": {
+              "ru": "ХХХ"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "an"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "engineer",
+            "translation": {
+              "ru": "."
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "present-simple-10",
-    "answer": "present-simple",
-    "type": "sentence",
-    "prompt": "Описание способности или умения",
-    "promptEn": "Describing an ability or skill",
-    "sentence": {
-      "pre": "I ",
-      "verb": "speak",
-      "post": " three languages."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Описание способности или умения",
+      "en": "Describing an ability or skill"
     },
-    "difficulty": 2
+    "explanation": {
+      "ru": "Способность говорить на языках — постоянная характеристика. Present Simple для стабильных умений.",
+      "en": "Speaking languages is a permanent skill — Present Simple for stable abilities."
+    },
+    "rules": {
+      "ru": "«Speak three languages» — постоянное умение как характеристика человека → Present Simple."
+    },
+    "contextExamples": [
+      "She plays the violin at a professional level.",
+      "He swims faster than anyone else on the team."
+    ],
+    "tags": [
+      "present-simple",
+      "sentence-analysis",
+      "affirmative",
+      "simple",
+      "difficulty-2"
+    ],
+    "difficulty": 2,
+    "sentences": [
+      {
+        "answer": "present-simple",
+        "distractors": [
+          {
+            "tenseId": "present-continuous"
+          },
+          {
+            "tenseId": "present-perfect"
+          },
+          {
+            "tenseId": "past-simple"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "word",
+            "value": "I"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "speak",
+            "role": "verb",
+            "translation": {
+              "ru": "говорю"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "three",
+            "translation": {
+              "ru": "три"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "languages",
+            "translation": {
+              "ru": "языки"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "present-simple-11",
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Ментальное состояние или убеждение (глагол состояния)",
+      "en": "A mental state or belief expressed by a stative verb"
+    },
+    "explanation": {
+      "ru": "«Understand» — глагол ментального состояния. Такие глаголы всегда в Simple, не в Continuous.",
+      "en": "'Understand' is a mental state verb — always Simple, never Continuous."
+    },
+    "rules": {
+      "ru": "«Understand» — стативный глагол ментального состояния; выражает знание, а не процесс → Present Simple."
+    },
+    "contextExamples": [
+      "She understands the instructions perfectly.",
+      "We know exactly what needs to be done."
+    ],
+    "tags": [
+      "present-simple",
+      "context-clue",
+      "affirmative",
+      "simple",
+      "difficulty-2"
+    ],
+    "difficulty": 2,
+    "sentences": [
+      {
+        "answer": "present-simple",
+        "distractors": [
+          {
+            "tenseId": "present-continuous"
+          },
+          {
+            "tenseId": "past-simple"
+          },
+          {
+            "tenseId": "present-perfect"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "word",
+            "value": "I"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "understand",
+            "role": "verb",
+            "translation": {
+              "ru": "понимал(а)"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "what",
+            "translation": {
+              "ru": "что"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "you",
+            "translation": {
+              "ru": "вы"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "mean",
+            "translation": {
+              "ru": "среднее значение"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "present-simple-12",
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Нулевое условие: закономерность или правило природы",
+      "en": "Zero conditional: a natural law or rule"
+    },
+    "explanation": {
+      "ru": "В нулевом условии (Zero Conditional) оба глагола — в Present Simple, потому что речь о законе природы.",
+      "en": "In Zero Conditional, both verbs use Present Simple — it's a natural law, always true."
+    },
+    "rules": {
+      "ru": "Конструкция «If + Present Simple → Present Simple» — нулевое условие для вечных законов природы; «if you heat … it melts»."
+    },
+    "contextExamples": [
+      "If you mix blue and yellow, you get green.",
+      "If the temperature drops below zero, water freezes."
+    ],
+    "tags": [
+      "present-simple",
+      "sentence-analysis",
+      "affirmative",
+      "simple",
+      "difficulty-2"
+    ],
+    "difficulty": 2,
+    "sentences": [
+      {
+        "answer": "present-simple",
+        "distractors": [
+          {
+            "tenseId": "future-simple"
+          },
+          {
+            "tenseId": "present-continuous"
+          },
+          {
+            "tenseId": "past-simple"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "word",
+            "value": "If",
+            "translation": {
+              "ru": "При"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "you",
+            "translation": {
+              "ru": "вы"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "heat",
+            "translation": {
+              "ru": "нагрев"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "ice",
+            "translation": {
+              "ru": "лёд"
+            }
+          },
+          {
+            "type": "punct",
+            "value": ","
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "it"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "melts",
+            "role": "verb",
+            "translation": {
+              "ru": "плавится"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "present-simple-13",
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Исторический настоящий: события в нарративе или книге",
+      "en": "Historical present: events described in a narrative"
+    },
+    "explanation": {
+      "ru": "«Исторический презент» — Present Simple для описания прошлых событий в повествовании, чтобы оживить рассказ.",
+      "en": "Historical present uses Present Simple to narrate past events more vividly."
+    },
+    "rules": {
+      "ru": "«Invades Russia in 1812» — прошедшее событие, но передано через исторический презент для живости повествования → Present Simple."
+    },
+    "contextExamples": [
+      "Caesar crosses the Rubicon and changes Rome forever.",
+      "In the final chapter, the hero returns home and discovers the truth."
+    ],
+    "tags": [
+      "present-simple",
+      "context-clue",
+      "affirmative",
+      "simple",
+      "difficulty-2"
+    ],
+    "difficulty": 2,
+    "sentences": [
+      {
+        "answer": "present-simple",
+        "distractors": [
+          {
+            "tenseId": "past-simple"
+          },
+          {
+            "tenseId": "past-continuous"
+          },
+          {
+            "tenseId": "present-perfect"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "word",
+            "value": "Napoleon",
+            "translation": {
+              "ru": "Наполеон"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "invades",
+            "role": "verb",
+            "translation": {
+              "ru": "вторгается"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "Russia",
+            "translation": {
+              "ru": "Россия"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "in",
+            "translation": {
+              "ru": "от"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "1812"
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "present-simple-14",
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Инструкция или рецепт: последовательный шаг",
+      "en": "Instruction or recipe: a sequential step"
+    },
+    "explanation": {
+      "ru": "Инструкции и рецепты используют Present Simple для каждого шага — это универсальные, повторяемые действия.",
+      "en": "Instructions and recipes use Present Simple for each step — universal, repeatable actions."
+    },
+    "rules": {
+      "ru": "«First, you add» — последовательный шаг в рецепте; слово «First» и императивный стиль указывают на инструкцию → Present Simple."
+    },
+    "contextExamples": [
+      "Next, you fold the dough and leave it to rest for ten minutes.",
+      "Then you apply a thin layer of paint to the entire surface."
+    ],
+    "tags": [
+      "present-simple",
+      "sentence-analysis",
+      "affirmative",
+      "simple",
+      "difficulty-2"
+    ],
+    "difficulty": 2,
+    "sentences": [
+      {
+        "answer": "present-simple",
+        "distractors": [
+          {
+            "tenseId": "future-simple"
+          },
+          {
+            "tenseId": "present-continuous"
+          },
+          {
+            "tenseId": "past-simple"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "word",
+            "value": "First",
+            "translation": {
+              "ru": "Имя"
+            }
+          },
+          {
+            "type": "punct",
+            "value": ","
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "you",
+            "translation": {
+              "ru": "вы"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "add",
+            "role": "verb",
+            "translation": {
+              "ru": "Добавить"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "flour",
+            "translation": {
+              "ru": "мука"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "and",
+            "translation": {
+              "ru": "и"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "sugar",
+            "translation": {
+              "ru": "сахар"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "to",
+            "translation": {
+              "ru": "кому"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "bowl",
+            "translation": {
+              "ru": "чаша"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "present-simple-15",
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Физическое ощущение или восприятие (глагол восприятия)",
+      "en": "Physical sensation expressed by a perception verb"
+    },
+    "explanation": {
+      "ru": "«Smell» в значении «иметь запах» — глагол состояния. Стативные глаголы не принимают форму Continuous.",
+      "en": "'Smell' meaning 'have a smell' is stative — stative verbs don't take Continuous form."
+    },
+    "rules": {
+      "ru": "«Smells wonderful» — глагол восприятия «smell» в значении «иметь запах» — стативный; описывает состояние, а не процесс → Present Simple."
+    },
+    "contextExamples": [
+      "The soup tastes too salty.",
+      "These flowers smell amazing in the morning."
+    ],
+    "tags": [
+      "present-simple",
+      "context-clue",
+      "affirmative",
+      "simple",
+      "difficulty-2"
+    ],
+    "difficulty": 2,
+    "sentences": [
+      {
+        "answer": "present-simple",
+        "distractors": [
+          {
+            "tenseId": "present-continuous"
+          },
+          {
+            "tenseId": "past-simple"
+          },
+          {
+            "tenseId": "present-perfect"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "word",
+            "value": "Something",
+            "translation": {
+              "ru": "Что-нибудь"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "smells",
+            "role": "verb",
+            "translation": {
+              "ru": "запахи"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "wonderful",
+            "translation": {
+              "ru": "замечательный"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "in",
+            "translation": {
+              "ru": "от"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "kitchen",
+            "translation": {
+              "ru": "кухня"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "present-simple-16",
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Желание или потребность (глагол состояния)",
+      "en": "A wish or need expressed by a stative verb"
+    },
+    "explanation": {
+      "ru": "«Want» — глагол желания (stative verb). Его нельзя использовать в Continuous. Всегда Present Simple.",
+      "en": "'Want' is a stative verb for desire — never Continuous, always Simple."
+    },
+    "rules": {
+      "ru": "«Wants» — стативный глагол желания; желание — это состояние, а не действие в процессе → Present Simple."
+    },
+    "contextExamples": [
+      "He wants to travel around the world someday.",
+      "She needs more time to finish the project."
+    ],
+    "tags": [
+      "present-simple",
+      "sentence-analysis",
+      "affirmative",
+      "simple",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "sentences": [
+      {
+        "answer": "present-simple",
+        "distractors": [
+          {
+            "tenseId": "present-continuous"
+          },
+          {
+            "tenseId": "past-simple"
+          },
+          {
+            "tenseId": "future-simple"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "word",
+            "value": "She",
+            "translation": {
+              "ru": "Она"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "wants",
+            "role": "verb",
+            "translation": {
+              "ru": "хочет"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "to",
+            "translation": {
+              "ru": "кому"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "become",
+            "translation": {
+              "ru": "становиться"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "a",
+            "translation": {
+              "ru": "а"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "doctor",
+            "translation": {
+              "ru": "врач"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "present-simple-17",
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Будущее действие по официальному расписанию",
+      "en": "A future event expressed through an official timetable"
+    },
+    "explanation": {
+      "ru": "Будущее по официальному расписанию (рейсы, поезда) — Present Simple, а не Future Simple. «Tomorrow» не меняет правило.",
+      "en": "Official timetables (flights, trains) use Present Simple even for future events — 'tomorrow' doesn't change this."
+    },
+    "rules": {
+      "ru": "«Departs at 6:45 tomorrow morning» — официальное расписание рейса с фиксированным временем → Present Simple, не Future Simple."
+    },
+    "contextExamples": [
+      "The connecting flight leaves at 14:20 tomorrow.",
+      "The next express train departs at 09:05 on Saturday."
+    ],
+    "tags": [
+      "present-simple",
+      "context-clue",
+      "affirmative",
+      "simple",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "sentences": [
+      {
+        "answer": "present-simple",
+        "distractors": [
+          {
+            "tenseId": "future-simple"
+          },
+          {
+            "tenseId": "present-continuous"
+          },
+          {
+            "tenseId": "future-continuous"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "word",
+            "value": "The",
+            "translation": {
+              "ru": "-"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "flight",
+            "translation": {
+              "ru": "перелета"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "departs",
+            "role": "verb",
+            "translation": {
+              "ru": "Отправление"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "at"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "6"
+          },
+          {
+            "type": "punct",
+            "value": ":"
+          },
+          {
+            "type": "word",
+            "value": "45"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "tomorrow",
+            "translation": {
+              "ru": "завтра"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "morning",
+            "translation": {
+              "ru": "утро"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "present-simple-18",
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Условие в придаточном времени с союзом 'as soon as'",
+      "en": "A condition in a time clause introduced by 'as soon as'"
+    },
+    "explanation": {
+      "ru": "После «as soon as», «when», «until» в придаточных времени — Present Simple, даже если речь о будущем. Future Simple здесь недопустим.",
+      "en": "After time conjunctions (as soon as, when, until), use Present Simple — not Future — even when referring to the future."
+    },
+    "rules": {
+      "ru": "«As soon as I get home» — придаточное времени с союзом «as soon as»; после него обязателен Present Simple, даже если речь о будущем."
+    },
+    "contextExamples": [
+      "She will text you as soon as she lands.",
+      "We can start as soon as everyone arrives."
+    ],
+    "tags": [
+      "present-simple",
+      "sentence-analysis",
+      "affirmative",
+      "simple",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "sentences": [
+      {
+        "answer": "present-simple",
+        "distractors": [
+          {
+            "tenseId": "future-simple"
+          },
+          {
+            "tenseId": "present-perfect"
+          },
+          {
+            "tenseId": "present-continuous"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "word",
+            "value": "I'll",
+            "translation": {
+              "ru": "<g id=\"5\">i</g><g id=\"6\">ll</g><g id=\"7\">&#10;</g> "
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "call",
+            "translation": {
+              "ru": "звонок"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "you",
+            "translation": {
+              "ru": "вы"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "as",
+            "translation": {
+              "ru": "ХХХ"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "soon",
+            "translation": {
+              "ru": "скоро"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "as",
+            "translation": {
+              "ru": "ХХХ"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "I"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "get",
+            "role": "verb",
+            "translation": {
+              "ru": "взять"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "home",
+            "translation": {
+              "ru": "главная"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "present-simple-19",
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Академическое или научное утверждение об общем факте",
+      "en": "An academic or scientific statement of general fact"
+    },
+    "explanation": {
+      "ru": "Научные и академические утверждения об общих законах — Present Simple. Это не прошлое открытие, а вечный факт.",
+      "en": "Scientific and academic generalizations use Present Simple — they describe timeless facts, not past discoveries."
+    },
+    "rules": {
+      "ru": "«Plants convert sunlight» — академическое обобщение о вечном биологическом процессе → Present Simple для научных фактов."
+    },
+    "contextExamples": [
+      "Mammals breathe air and give birth to live young.",
+      "Gravity attracts objects with mass towards each other."
+    ],
+    "tags": [
+      "present-simple",
+      "context-clue",
+      "affirmative",
+      "simple",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "sentences": [
+      {
+        "answer": "present-simple",
+        "distractors": [
+          {
+            "tenseId": "past-simple"
+          },
+          {
+            "tenseId": "present-continuous"
+          },
+          {
+            "tenseId": "present-perfect"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "word",
+            "value": "Plants",
+            "translation": {
+              "ru": "Растения"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "convert",
+            "role": "verb",
+            "translation": {
+              "ru": "преобразовать"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "sunlight",
+            "translation": {
+              "ru": "солнечный свет"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "into",
+            "translation": {
+              "ru": "в"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "energy",
+            "translation": {
+              "ru": "прокола"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "through",
+            "translation": {
+              "ru": "через"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "photosynthesis",
+            "translation": {
+              "ru": "фотосинтез"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "present-simple-20",
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Выражение принадлежности (глагол состояния)",
+      "en": "Expressing possession using a stative verb"
+    },
+    "explanation": {
+      "ru": "«Own» — глагол принадлежности (stative verb). Принадлежность — это состояние, а не действие, поэтому только Simple.",
+      "en": "'Own' is a stative possession verb — it's a state, not an action, so always Simple."
+    },
+    "rules": {
+      "ru": "«Owns offices» — стативный глагол принадлежности «own»; принадлежность — состояние, не действие → Present Simple."
+    },
+    "contextExamples": [
+      "She owns a small apartment in the city centre.",
+      "They possess all the necessary permits for the construction."
+    ],
+    "tags": [
+      "present-simple",
+      "sentence-analysis",
+      "affirmative",
+      "simple",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "sentences": [
+      {
+        "answer": "present-simple",
+        "distractors": [
+          {
+            "tenseId": "present-continuous"
+          },
+          {
+            "tenseId": "present-perfect"
+          },
+          {
+            "tenseId": "past-simple"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "word",
+            "value": "This",
+            "translation": {
+              "ru": "Этот"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "company",
+            "translation": {
+              "ru": "компании"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "owns",
+            "role": "verb",
+            "translation": {
+              "ru": "Содержит"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "offices",
+            "translation": {
+              "ru": "офиса"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "in",
+            "translation": {
+              "ru": "от"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "fifteen",
+            "translation": {
+              "ru": "пятнадцать"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "countries",
+            "translation": {
+              "ru": "Страны"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "present-simple-21",
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Отрицание повседневной привычки",
+      "en": "Negating an everyday habit"
+    },
+    "explanation": {
+      "ru": "«Doesn't eat» — отрицание в Present Simple. «Has been vegetarian for years» указывает на постоянную привычку.",
+      "en": "'Doesn't eat' is Present Simple negative — a permanent habit negated, confirmed by 'for years'."
+    },
+    "rules": {
+      "ru": "«Doesn't eat meat» — отрицательная форма Present Simple; «for years» подтверждает, что это постоянная, а не временная привычка."
+    },
+    "contextExamples": [
+      "She doesn't drink alcohol — she never has.",
+      "He doesn't watch TV; he reads instead every evening."
+    ],
+    "tags": [
+      "present-simple",
+      "sentence-analysis",
+      "negative",
+      "simple",
+      "difficulty-1"
+    ],
+    "difficulty": 1,
+    "sentences": [
+      {
+        "answer": "present-simple",
+        "distractors": [
+          {
+            "tenseId": "present-continuous"
+          },
+          {
+            "tenseId": "present-perfect"
+          },
+          {
+            "tenseId": "past-simple"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "word",
+            "value": "He",
+            "translation": {
+              "ru": "Он,"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "doesn't",
+            "role": "verb",
+            "translation": {
+              "ru": "не делает"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "eat",
+            "role": "verb",
+            "translation": {
+              "ru": "есть"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "meat",
+            "translation": {
+              "ru": "                                    мясо"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "punct",
+            "value": "—"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "he"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "has",
+            "translation": {
+              "ru": "будет"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "been",
+            "translation": {
+              "ru": "был"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "vegetarian",
+            "translation": {
+              "ru": "ВЕГЕТАРИАНСКОЕ"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "for",
+            "translation": {
+              "ru": "."
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "years",
+            "translation": {
+              "ru": "годы"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "present-simple-22",
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Вопрос о чьих-то обычных действиях или предпочтениях",
+      "en": "A question about someone's regular actions or preferences"
+    },
+    "explanation": {
+      "ru": "«Usually» — наречие частоты, маркер Present Simple. Вопрос о привычке требует вспомогательного глагола «do».",
+      "en": "'Usually' is a frequency adverb — a Present Simple marker. Questions about habits use auxiliary 'do'."
+    },
+    "rules": {
+      "ru": "«Usually» — наречие частоты, сигнал Present Simple; вопрос о привычке строится с вспомогательным «do»."
+    },
+    "contextExamples": [
+      "What do you usually do on weekends?",
+      "Does she normally take the subway to work?"
+    ],
+    "tags": [
+      "present-simple",
+      "context-clue",
+      "question",
+      "simple",
+      "difficulty-1"
+    ],
+    "difficulty": 1,
+    "sentences": [
+      {
+        "answer": "present-simple",
+        "distractors": [
+          {
+            "tenseId": "present-continuous"
+          },
+          {
+            "tenseId": "past-simple"
+          },
+          {
+            "tenseId": "present-perfect"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "word",
+            "value": "Where",
+            "translation": {
+              "ru": "Где"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "do",
+            "role": "verb"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "you",
+            "translation": {
+              "ru": "вы"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "usually",
+            "translation": {
+              "ru": "обычно"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "have",
+            "translation": {
+              "ru": "быть"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "lunch",
+            "translation": {
+              "ru": "обед"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "?"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "present-simple-23",
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Принадлежность предмета или явления к классу/группе",
+      "en": "Something belonging to a category or group"
+    },
+    "explanation": {
+      "ru": "«Belong to» — глагол состояния принадлежности. Принадлежность к категории — постоянный факт в Present Simple.",
+      "en": "'Belong to' is a stative verb of category membership — a permanent fact in Present Simple."
+    },
+    "rules": {
+      "ru": "«Belongs to the category» — стативный глагол «belong» выражает категориальную принадлежность как постоянный факт → Present Simple."
+    },
+    "contextExamples": [
+      "Whales belong to the order of mammals, not fish.",
+      "This painting belongs to the Impressionist movement."
+    ],
+    "tags": [
+      "present-simple",
+      "sentence-analysis",
+      "affirmative",
+      "simple",
+      "difficulty-2"
+    ],
+    "difficulty": 2,
+    "sentences": [
+      {
+        "answer": "present-simple",
+        "distractors": [
+          {
+            "tenseId": "present-continuous"
+          },
+          {
+            "tenseId": "past-simple"
+          },
+          {
+            "tenseId": "present-perfect"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "word",
+            "value": "This",
+            "translation": {
+              "ru": "Этот"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "word",
+            "translation": {
+              "ru": "слово"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "belongs",
+            "role": "verb",
+            "translation": {
+              "ru": "Людей ли, пирамид."
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "to",
+            "translation": {
+              "ru": "кому"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "category",
+            "translation": {
+              "ru": "категория"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "of",
+            "translation": {
+              "ru": "коллегиальных"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "stative"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "verbs",
+            "translation": {
+              "ru": "^"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "present-simple-24",
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Географический факт или постоянная истина о природе",
+      "en": "A geographical fact or permanent natural truth"
+    },
+    "explanation": {
+      "ru": "Географические факты неизменны — Present Simple для вечных истин о природе и географии.",
+      "en": "Geographical facts don't change — Present Simple for permanent truths about nature and geography."
+    },
+    "rules": {
+      "ru": "«Flows into the Atlantic Ocean» — постоянный географический факт о реке, не меняющийся со временем → Present Simple."
+    },
+    "contextExamples": [
+      "The Nile flows northward and empties into the Mediterranean Sea.",
+      "Mount Everest rises to about 8,849 metres above sea level."
+    ],
+    "tags": [
+      "present-simple",
+      "context-clue",
+      "affirmative",
+      "simple",
+      "difficulty-2"
+    ],
+    "difficulty": 2,
+    "sentences": [
+      {
+        "answer": "present-simple",
+        "distractors": [
+          {
+            "tenseId": "present-continuous"
+          },
+          {
+            "tenseId": "past-simple"
+          },
+          {
+            "tenseId": "future-simple"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "word",
+            "value": "The",
+            "translation": {
+              "ru": "-"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "Amazon"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "River",
+            "translation": {
+              "ru": "Река"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "flows",
+            "role": "verb",
+            "translation": {
+              "ru": "потоков"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "into",
+            "translation": {
+              "ru": "в"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "Atlantic"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "Ocean",
+            "translation": {
+              "ru": "Океан"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "present-simple-25",
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Спортивный комментарий в реальном времени",
+      "en": "Live sports commentary describing an instant action"
+    },
+    "explanation": {
+      "ru": "В спортивном комментарии мгновенные действия передаются через Present Simple — это «мгновенный» комментарий, а не длящееся действие.",
+      "en": "Live sports commentary uses Present Simple for instant actions — they happen and finish in a flash."
+    },
+    "rules": {
+      "ru": "«Shoots — and scores!» — мгновенные действия в живом спортивном комментарии; каждое событие завершается в момент произносимого слова → Present Simple."
+    },
+    "contextExamples": [
+      "He passes to the winger, who crosses into the box!",
+      "She serves, he returns — and the ball hits the net!"
+    ],
+    "tags": [
+      "present-simple",
+      "sentence-analysis",
+      "affirmative",
+      "simple",
+      "difficulty-2"
+    ],
+    "difficulty": 2,
+    "sentences": [
+      {
+        "answer": "present-simple",
+        "distractors": [
+          {
+            "tenseId": "present-continuous"
+          },
+          {
+            "tenseId": "past-simple"
+          },
+          {
+            "tenseId": "present-perfect"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "word",
+            "value": "He",
+            "translation": {
+              "ru": "Он,"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "shoots",
+            "role": "verb",
+            "translation": {
+              "ru": "побеги"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "punct",
+            "value": "—"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "and",
+            "translation": {
+              "ru": "и"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "scores",
+            "translation": {
+              "ru": "оценки"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "!"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "present-simple-26",
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Глагол когнитивного состояния: знание или память",
+      "en": "A cognitive state verb: knowing or remembering"
+    },
+    "explanation": {
+      "ru": "«Remember» — глагол когнитивного состояния. Память — это состояние, а не процесс, поэтому только Simple.",
+      "en": "'Remember' is a cognitive stative verb — memory is a state, not a process, so always Simple."
+    },
+    "rules": {
+      "ru": "«Remember» — стативный глагол памяти; хранение информации — это состояние, не динамический процесс → Present Simple."
+    },
+    "contextExamples": [
+      "She still remembers the name of her first teacher.",
+      "I know every line of that poem by heart."
+    ],
+    "tags": [
+      "present-simple",
+      "context-clue",
+      "affirmative",
+      "simple",
+      "difficulty-2"
+    ],
+    "difficulty": 2,
+    "sentences": [
+      {
+        "answer": "present-simple",
+        "distractors": [
+          {
+            "tenseId": "present-continuous"
+          },
+          {
+            "tenseId": "present-perfect"
+          },
+          {
+            "tenseId": "past-simple"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "word",
+            "value": "I"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "remember",
+            "role": "verb",
+            "translation": {
+              "ru": "помнить"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "exact"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "moment",
+            "translation": {
+              "ru": "здесь и сейчас"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "I"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "heard",
+            "translation": {
+              "ru": "слышал/а"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "that",
+            "translation": {
+              "ru": "что"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "song",
+            "translation": {
+              "ru": "песня"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "for",
+            "translation": {
+              "ru": "."
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "first",
+            "translation": {
+              "ru": "первый"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "time",
+            "translation": {
+              "ru": "время"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "present-simple-27",
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Характеристика человека через его поведение или отношение",
+      "en": "Describing a person through their typical behaviour or attitude"
+    },
+    "explanation": {
+      "ru": "«Always» и «never» — наречия частоты. Характерное поведение человека описывается Present Simple.",
+      "en": "'Always' and 'never' are frequency adverbs — typical personal behaviour is described in Present Simple."
+    },
+    "rules": {
+      "ru": "«Always arrives» и «never misses» — два наречия частоты в одном предложении; описывают устойчивые черты характера → Present Simple."
+    },
+    "contextExamples": [
+      "He always double-checks his work before submitting it.",
+      "She never raises her voice, even in difficult situations."
+    ],
+    "tags": [
+      "present-simple",
+      "sentence-analysis",
+      "affirmative",
+      "simple",
+      "difficulty-2"
+    ],
+    "difficulty": 2,
+    "sentences": [
+      {
+        "answer": "present-simple",
+        "distractors": [
+          {
+            "tenseId": "present-continuous"
+          },
+          {
+            "tenseId": "past-simple"
+          },
+          {
+            "tenseId": "present-perfect"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "word",
+            "value": "She",
+            "translation": {
+              "ru": "Она"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "always",
+            "translation": {
+              "ru": "всегда"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "arrives",
+            "role": "verb",
+            "translation": {
+              "ru": "arrives."
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "early",
+            "translation": {
+              "ru": "раньше"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "and",
+            "translation": {
+              "ru": "и"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "never",
+            "translation": {
+              "ru": "никогда"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "misses",
+            "translation": {
+              "ru": "Пропуски"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "a",
+            "translation": {
+              "ru": "а"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "deadline",
+            "translation": {
+              "ru": "дедлайн"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "present-simple-28",
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Редкое или нечастое действие с наречием частоты",
+      "en": "An infrequent action described with a frequency adverb"
+    },
+    "explanation": {
+      "ru": "«Rarely» — наречие нечастого действия. Любое наречие частоты (never, rarely, sometimes, often) указывает на Present Simple.",
+      "en": "'Rarely' is a frequency adverb — any frequency adverb (never, rarely, often) signals Present Simple."
+    },
+    "rules": {
+      "ru": "«Rarely see» — наречие нечастого действия «rarely» — сигнал Present Simple для описания низкочастотных привычек."
+    },
+    "contextExamples": [
+      "He rarely loses his temper at work.",
+      "They seldom go out on weeknights anymore."
+    ],
+    "tags": [
+      "present-simple",
+      "context-clue",
+      "affirmative",
+      "simple",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "sentences": [
+      {
+        "answer": "present-simple",
+        "distractors": [
+          {
+            "tenseId": "present-continuous"
+          },
+          {
+            "tenseId": "present-perfect-continuous"
+          },
+          {
+            "tenseId": "past-simple"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "word",
+            "value": "We",
+            "translation": {
+              "ru": "Перед"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "rarely",
+            "role": "verb",
+            "translation": {
+              "ru": "редко"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "see",
+            "role": "verb",
+            "translation": {
+              "ru": "см."
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "each",
+            "translation": {
+              "ru": "каждой"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "other",
+            "translation": {
+              "ru": "другие"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "now",
+            "translation": {
+              "ru": "сейчас"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "that",
+            "translation": {
+              "ru": "что"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "she",
+            "translation": {
+              "ru": "она"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "has",
+            "translation": {
+              "ru": "будет"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "moved",
+            "translation": {
+              "ru": "Перемещено"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "abroad",
+            "translation": {
+              "ru": "{1>знаки <1}{2>за <2}{3>рубежом<3}"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "present-simple-29",
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Сценическая ремарка или описание в скрипте",
+      "en": "A stage direction or script description"
+    },
+    "explanation": {
+      "ru": "Ремарки в пьесах и сценарии — Present Simple. Действия описываются как общий факт, а не длящийся процесс.",
+      "en": "Stage directions in plays and scripts use Present Simple — actions as facts, not ongoing processes."
+    },
+    "rules": {
+      "ru": "«Picks up … and tears it open» — последовательные сценические действия в ремарке; конвенция скрипта → Present Simple."
+    },
+    "contextExamples": [
+      "The villain enters from the left and slams the door behind him.",
+      "She opens the window, looks out, then turns to face the audience."
+    ],
+    "tags": [
+      "present-simple",
+      "sentence-analysis",
+      "affirmative",
+      "simple",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "sentences": [
+      {
+        "answer": "present-simple",
+        "distractors": [
+          {
+            "tenseId": "past-simple"
+          },
+          {
+            "tenseId": "present-continuous"
+          },
+          {
+            "tenseId": "past-continuous"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "word",
+            "value": "The",
+            "translation": {
+              "ru": "-"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "detective",
+            "translation": {
+              "ru": "детектив"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "picks",
+            "role": "verb",
+            "translation": {
+              "ru": "выбранные"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "up",
+            "role": "verb",
+            "translation": {
+              "ru": "вверх"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "envelope",
+            "translation": {
+              "ru": "конверт"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "and",
+            "translation": {
+              "ru": "и"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "tears",
+            "translation": {
+              "ru": "разрывов,"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "it"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "open",
+            "translation": {
+              "ru": "откр."
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "present-simple-30",
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Условие в придаточном с 'before' или 'until'",
+      "en": "A condition in a clause with 'before' or 'until'"
+    },
+    "explanation": {
+      "ru": "После «until» в придаточном условия — Present Simple, даже если речь о будущем. «Until the doctor gives» — это правило, как и с «when»/«as soon as».",
+      "en": "After 'until' in subordinate clauses, use Present Simple even for future meaning — same rule as 'when'/'as soon as'."
+    },
+    "rules": {
+      "ru": "«Until the doctor gives» — придаточное времени с союзом «until»; после него обязателен Present Simple, даже когда смысл будущего."
+    },
+    "contextExamples": [
+      "Stay in bed until your temperature comes down.",
+      "We won't sign the contract before the lawyer checks every clause."
+    ],
+    "tags": [
+      "present-simple",
+      "context-clue",
+      "negative",
+      "simple",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "sentences": [
+      {
+        "answer": "present-simple",
+        "distractors": [
+          {
+            "tenseId": "future-simple"
+          },
+          {
+            "tenseId": "present-perfect"
+          },
+          {
+            "tenseId": "present-continuous"
+          }
+        ],
+        "tokens": [
+          {
+            "type": "word",
+            "value": "Don't",
+            "translation": {
+              "ru": "Не"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "leave",
+            "translation": {
+              "ru": "отпуск"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "until",
+            "translation": {
+              "ru": "до"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "doctor",
+            "translation": {
+              "ru": "врач"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "gives",
+            "role": "verb"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "you",
+            "translation": {
+              "ru": "вы"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "all",
+            "translation": {
+              "ru": "все"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "-"
+          },
+          {
+            "type": "word",
+            "value": "clear",
+            "translation": {
+              "ru": "ясно"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
   }
 ]

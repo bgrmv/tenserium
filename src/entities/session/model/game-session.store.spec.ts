@@ -2,6 +2,7 @@ import { TestBed } from '@angular/core/testing';
 import { GameSessionStore } from './game-session.store';
 import { StorageService } from '@shared/api/storage.service';
 import type { Question, SessionConfig, TenseId } from '@shared/types';
+import { tokenizeSentence } from '@shared/lib/tokenize';
 
 describe('GameSessionStore', () => {
   let store: GameSessionStore;
@@ -20,14 +21,12 @@ describe('GameSessionStore', () => {
   ): Question {
     return {
       id,
-      answer,
-      type: 'sentence',
-      prompt: `Question ${id}`,
-      sentence: {
-        pre: 'I',
-        verb: 'play',
-        post: 'football',
-      },
+      mechanism: 'context',
+      prompt: { en: `Question ${id}`, ru: `Вопрос ${id}` },
+      sentences: [
+        { tokens: tokenizeSentence('I ', 'play', ' football'), answer },
+      ],
+      tags: ['present-simple', 'affirmative'],
       difficulty: 1,
     };
   }

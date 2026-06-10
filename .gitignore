@@ -45,6 +45,7 @@ Thumbs.db
 .claude/settings.json
 .claude/settings.local.json
 .claude/memory/
+.claude/worktrees/
 .pnpm-store/
 
 # Playwright

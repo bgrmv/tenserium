@@ -1,80 +1,3571 @@
 [
   {
     "id": "present-perfect-continuous-01",
-    "answer": "present-perfect-continuous",
-    "type": "context",
-    "prompt": "Действие из прошлого, длящееся до сих пор; акцент на длительности",
-    "promptEn": "An action started in the past, still going, stressing duration",
-    "sentence": {
-      "pre": "She ",
-      "verb": "has been working",
-      "post": " for three hours."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Действие из прошлого, длящееся до сих пор; акцент на длительности",
+      "en": "An action started in the past, still going, stressing duration"
     },
-    "difficulty": 3
+    "tags": [
+      "present-perfect-continuous",
+      "context-clue",
+      "affirmative",
+      "perfect-continuous",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«For three hours» указывает на конкретную длительность продолжающегося действия. Конструкция «has been working» акцентирует именно процесс, который всё ещё идёт, а не результат."
+    },
+    "contextExamples": [
+      "He has been running for forty minutes without a break.",
+      "They have been waiting for the bus for over an hour."
+    ],
+    "sentences": [
+      {
+        "answer": "present-perfect-continuous",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "She",
+            "translation": {
+              "ru": "Она"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "has",
+            "role": "verb",
+            "translation": {
+              "ru": "будет"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "been",
+            "role": "verb",
+            "translation": {
+              "ru": "был"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "working",
+            "role": "verb",
+            "translation": {
+              "ru": "рабочих"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "for",
+            "translation": {
+              "ru": "."
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "three",
+            "translation": {
+              "ru": "три"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "hours",
+            "translation": {
+              "ru": "часы"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "present-perfect-continuous-02",
-    "answer": "present-perfect-continuous",
-    "type": "context",
-    "prompt": "Недавнее длительное действие, объясняющее настоящий результат",
-    "promptEn": "Recent ongoing activity that explains a present result",
-    "sentence": {
-      "pre": "I'm soaked — it ",
-      "verb": "has been raining",
-      "post": "."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Недавнее длительное действие, объясняющее настоящий результат",
+      "en": "Recent ongoing activity that explains a present result"
     },
-    "difficulty": 3
+    "tags": [
+      "present-perfect-continuous",
+      "context-clue",
+      "affirmative",
+      "perfect-continuous",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«I'm soaked» — физическое доказательство того, что происходило. «Has been raining» объясняет нынешнее состояние через недавнюю продолжительную активность, которая только что закончилась или ещё продолжается."
+    },
+    "contextExamples": [
+      "My hands are dirty — I have been gardening.",
+      "He is out of breath because he has been running."
+    ],
+    "sentences": [
+      {
+        "answer": "present-perfect-continuous",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "I'm",
+            "translation": {
+              "ru": "Я"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "soaked",
+            "translation": {
+              "ru": "пропитанный"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "punct",
+            "value": "—"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "it"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "has",
+            "role": "verb",
+            "translation": {
+              "ru": "будет"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "been",
+            "role": "verb",
+            "translation": {
+              "ru": "был"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "raining",
+            "role": "verb",
+            "translation": {
+              "ru": "DOZHD&apos;"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "present-perfect-continuous-03",
-    "answer": "present-perfect-continuous",
-    "type": "sentence",
-    "prompt": "Продолжающееся действие с видимыми результатами сейчас",
-    "promptEn": "An ongoing action with visible results right now",
-    "sentence": {
-      "pre": "They look tired because they ",
-      "verb": "have been studying",
-      "post": " all night."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Продолжающееся действие с видимыми результатами сейчас",
+      "en": "An ongoing action with visible results right now"
     },
-    "difficulty": 3
+    "tags": [
+      "present-perfect-continuous",
+      "sentence-analysis",
+      "affirmative",
+      "perfect-continuous",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«Look tired» — видимый признак усталости как следствие длительной активности. «Because they have been studying all night» напрямую связывает текущее состояние с непрерывным прошедшим процессом."
+    },
+    "contextExamples": [
+      "She looks pale because she has been feeling ill all week.",
+      "His voice is hoarse because he has been talking for hours."
+    ],
+    "sentences": [
+      {
+        "answer": "present-perfect-continuous",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "They",
+            "translation": {
+              "ru": "Они"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "look",
+            "translation": {
+              "ru": "nocmowe"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "tired",
+            "translation": {
+              "ru": "уставший"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "because",
+            "translation": {
+              "ru": "по"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "they",
+            "translation": {
+              "ru": "они"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "have",
+            "role": "verb",
+            "translation": {
+              "ru": "быть"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "been",
+            "role": "verb",
+            "translation": {
+              "ru": "был"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "studying",
+            "role": "verb",
+            "translation": {
+              "ru": "изучение"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "all",
+            "translation": {
+              "ru": "все"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "night",
+            "translation": {
+              "ru": "ночь"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "present-perfect-continuous-04",
-    "answer": "present-perfect-continuous",
-    "type": "sentence",
-    "prompt": "Временное состояние, которое длится некоторое время",
-    "promptEn": "A temporary condition lasting for some time",
-    "sentence": {
-      "pre": "I ",
-      "verb": "have been living",
-      "post": " in this house since childhood."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Действие, которое началось давно и продолжается по сей день",
+      "en": "An action started long ago and continuing to the present"
     },
-    "difficulty": 3
+    "tags": [
+      "present-perfect-continuous",
+      "sentence-analysis",
+      "affirmative",
+      "perfect-continuous",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«Since childhood» — точка отсчёта в далёком прошлом, и действие «living» продолжается по сей день. «Have been living» подчёркивает непрерывность процесса, а не просто факт."
+    },
+    "contextExamples": [
+      "He has been playing the violin since the age of five.",
+      "She has been working at the same company since she graduated."
+    ],
+    "sentences": [
+      {
+        "answer": "present-perfect-continuous",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "I"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "have",
+            "role": "verb",
+            "translation": {
+              "ru": "быть"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "been",
+            "role": "verb",
+            "translation": {
+              "ru": "был"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "living",
+            "role": "verb",
+            "translation": {
+              "ru": "живой"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "in",
+            "translation": {
+              "ru": "от"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "this",
+            "translation": {
+              "ru": "сего"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "house",
+            "translation": {
+              "ru": "дом"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "since",
+            "translation": {
+              "ru": "с"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "childhood",
+            "translation": {
+              "ru": "детство"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "present-perfect-continuous-05",
-    "answer": "present-perfect-continuous",
-    "type": "context",
-    "prompt": "Повторяющееся действие, которое продолжается в настоящий период",
-    "promptEn": "A repeated action that continues in the current period",
-    "sentence": {
-      "pre": "He ",
-      "verb": "has been calling",
-      "post": " me all day."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Повторяющееся действие, которое продолжается в настоящий период",
+      "en": "A repeated action that continues throughout the current period"
     },
-    "difficulty": 3
+    "tags": [
+      "present-perfect-continuous",
+      "context-clue",
+      "affirmative",
+      "perfect-continuous",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«All day» описывает открытый период сегодняшнего дня, в течение которого повторялось действие «calling». Present Perfect Continuous передаёт раздражение или удивление от повторяющегося паттерна."
+    },
+    "contextExamples": [
+      "The neighbours have been playing loud music all evening.",
+      "My phone has been ringing all morning."
+    ],
+    "sentences": [
+      {
+        "answer": "present-perfect-continuous",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "He",
+            "translation": {
+              "ru": "Он,"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "has",
+            "role": "verb",
+            "translation": {
+              "ru": "будет"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "been",
+            "role": "verb",
+            "translation": {
+              "ru": "был"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "calling",
+            "role": "verb",
+            "translation": {
+              "ru": "призвание"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "me",
+            "translation": {
+              "ru": "ХХХ"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "all",
+            "translation": {
+              "ru": "все"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "day",
+            "translation": {
+              "ru": "число"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "present-perfect-continuous-06",
-    "answer": "present-perfect-continuous",
-    "type": "sentence",
-    "prompt": "Процесс, который начался в прошлом и развивается до сих пор",
-    "promptEn": "A process that began in the past and is still developing",
-    "sentence": {
-      "pre": "The company ",
-      "verb": "has been growing",
-      "post": " steadily for years."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Процесс, который начался в прошлом и развивается до сих пор",
+      "en": "A process that began in the past and is still developing"
     },
-    "difficulty": 3
+    "tags": [
+      "present-perfect-continuous",
+      "sentence-analysis",
+      "affirmative",
+      "perfect-continuous",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«For years» задаёт продолжительность, а «has been growing» делает акцент на непрерывном процессе роста, который ещё не завершён. Наречие «steadily» дополнительно подчёркивает постепенность."
+    },
+    "contextExamples": [
+      "The population of the city has been increasing for decades.",
+      "Her confidence has been growing steadily since she started the course."
+    ],
+    "sentences": [
+      {
+        "answer": "present-perfect-continuous",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "The",
+            "translation": {
+              "ru": "-"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "company",
+            "translation": {
+              "ru": "компании"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "has",
+            "role": "verb",
+            "translation": {
+              "ru": "будет"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "been",
+            "role": "verb",
+            "translation": {
+              "ru": "был"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "growing",
+            "role": "verb",
+            "translation": {
+              "ru": "на данный момент количество (apartments/share houses) составляет (14/21), но будет увеличиваться"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "steadily",
+            "translation": {
+              "ru": "Неуклонно"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "for",
+            "translation": {
+              "ru": "."
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "years",
+            "translation": {
+              "ru": "годы"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "present-perfect-continuous-07",
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Вопрос о продолжительности текущего действия",
+      "en": "A question about how long a current action has been going on"
+    },
+    "tags": [
+      "present-perfect-continuous",
+      "context-clue",
+      "question",
+      "perfect-continuous",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«How long … have … been» — стандартная вопросительная конструкция Present Perfect Continuous, спрашивающая о длительности текущего, ещё не завершённого действия."
+    },
+    "contextExamples": [
+      "How long have they been arguing?",
+      "How long has he been living abroad?"
+    ],
+    "sentences": [
+      {
+        "answer": "present-perfect-continuous",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "How",
+            "translation": {
+              "ru": "Как"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "long",
+            "translation": {
+              "ru": "длинный"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "have",
+            "role": "verb",
+            "translation": {
+              "ru": "быть"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "you",
+            "role": "verb",
+            "translation": {
+              "ru": "вы"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "been",
+            "role": "verb",
+            "translation": {
+              "ru": "был"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "waiting",
+            "role": "verb",
+            "translation": {
+              "ru": "ожидание"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "?"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "present-perfect-continuous-08",
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Физический признак или усталость как результат продолжительной работы",
+      "en": "Physical sign or tiredness as a result of prolonged activity"
+    },
+    "tags": [
+      "present-perfect-continuous",
+      "sentence-analysis",
+      "affirmative",
+      "perfect-continuous",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«His eyes are red» — физический признак усталости прямо сейчас. «Has been staring at a screen all day» — причина: продолжительная активность за весь день, объясняющая нынешнее состояние."
+    },
+    "contextExamples": [
+      "Her fingers are sore because she has been typing for six hours.",
+      "He smells of sweat because he has been exercising all afternoon."
+    ],
+    "sentences": [
+      {
+        "answer": "present-perfect-continuous",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "His",
+            "translation": {
+              "ru": "Хис"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "eyes",
+            "translation": {
+              "ru": "глаза"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "are",
+            "translation": {
+              "ru": "заднем окне включены"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "red",
+            "translation": {
+              "ru": "красный"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "because",
+            "translation": {
+              "ru": "по"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "he"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "has",
+            "role": "verb",
+            "translation": {
+              "ru": "будет"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "been",
+            "role": "verb",
+            "translation": {
+              "ru": "был"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "staring",
+            "role": "verb",
+            "translation": {
+              "ru": "Взгляд"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "at"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "a",
+            "translation": {
+              "ru": "а"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "screen",
+            "translation": {
+              "ru": "экран"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "all",
+            "translation": {
+              "ru": "все"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "day",
+            "translation": {
+              "ru": "число"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "present-perfect-continuous-09",
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Деятельность, продолжающаяся на протяжении последнего времени",
+      "en": "An activity ongoing over the recent past period"
+    },
+    "tags": [
+      "present-perfect-continuous",
+      "context-clue",
+      "affirmative",
+      "perfect-continuous",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«For the past week» — период, который начался в прошлом и включает настоящий момент. «Has been learning» подчёркивает, что процесс обучения продолжается и ещё не завершён."
+    },
+    "contextExamples": [
+      "For the past month, he has been training for the marathon.",
+      "For the past few days, I have been feeling under the weather."
+    ],
+    "sentences": [
+      {
+        "answer": "present-perfect-continuous",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "For",
+            "translation": {
+              "ru": "От"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "past",
+            "translation": {
+              "ru": "прошедший "
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "week",
+            "translation": {
+              "ru": "неделя"
+            }
+          },
+          {
+            "type": "punct",
+            "value": ","
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "she",
+            "translation": {
+              "ru": "она"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "has",
+            "role": "verb",
+            "translation": {
+              "ru": "будет"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "been",
+            "role": "verb",
+            "translation": {
+              "ru": "был"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "learning",
+            "role": "verb",
+            "translation": {
+              "ru": "обучение"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "to",
+            "translation": {
+              "ru": "кому"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "drive",
+            "translation": {
+              "ru": "гидравлический"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "present-perfect-continuous-10",
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Жалоба на чьё-то повторяющееся поведение в последнее время",
+      "en": "Complaint about someone's repeated behaviour lately"
+    },
+    "tags": [
+      "present-perfect-continuous",
+      "sentence-analysis",
+      "affirmative",
+      "perfect-continuous",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«Every single day this week» описывает повторяющийся паттерн в текущем незавершённом периоде. Восклицательный тон и Present Perfect Continuous выражают раздражение от многократного повторения."
+    },
+    "contextExamples": [
+      "She has been arriving late every morning this month.",
+      "He has been making the same mistake repeatedly this term."
+    ],
+    "sentences": [
+      {
+        "answer": "present-perfect-continuous",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "You",
+            "translation": {
+              "ru": "Вы"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "have",
+            "role": "verb",
+            "translation": {
+              "ru": "быть"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "been",
+            "role": "verb",
+            "translation": {
+              "ru": "был"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "forgetting",
+            "role": "verb",
+            "translation": {
+              "ru": "Забывчивость"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "your",
+            "translation": {
+              "ru": "вращаются"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "homework",
+            "translation": {
+              "ru": "домашняя работа"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "every",
+            "translation": {
+              "ru": "каждый"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "single",
+            "translation": {
+              "ru": "одинарная"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "day",
+            "translation": {
+              "ru": "число"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "this",
+            "translation": {
+              "ru": "сего"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "week",
+            "translation": {
+              "ru": "неделя"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "!"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "present-perfect-continuous-11",
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Незавершённое действие, результат которого ещё не достигнут",
+      "en": "An unfinished action whose result has not yet been achieved"
+    },
+    "tags": [
+      "present-perfect-continuous",
+      "context-clue",
+      "affirmative",
+      "perfect-continuous",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«For hours» — длительность, «trying to fix» — незавершённое усилие. Глагол «trying» (а не «fixed») показывает, что цель ещё не достигнута; акцент на продолжающемся процессе."
+    },
+    "contextExamples": [
+      "She has been looking for her passport all morning.",
+      "They have been attempting to reach an agreement for weeks."
+    ],
+    "sentences": [
+      {
+        "answer": "present-perfect-continuous",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "I"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "have",
+            "role": "verb",
+            "translation": {
+              "ru": "быть"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "been",
+            "role": "verb",
+            "translation": {
+              "ru": "был"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "trying",
+            "role": "verb",
+            "translation": {
+              "ru": "пробуя"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "to",
+            "translation": {
+              "ru": "кому"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "fix",
+            "translation": {
+              "ru": "чинить"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "this",
+            "translation": {
+              "ru": "сего"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "bug",
+            "translation": {
+              "ru": "жук"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "for",
+            "translation": {
+              "ru": "."
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "hours",
+            "translation": {
+              "ru": "часы"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "present-perfect-continuous-12",
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Продолжительное действие с маркером 'since' и точкой отсчёта",
+      "en": "A continuous action with 'since' and a reference point"
+    },
+    "tags": [
+      "present-perfect-continuous",
+      "sentence-analysis",
+      "affirmative",
+      "perfect-continuous",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«Since this morning» — точка отсчёта в прошлом, от которой продолжается действие прямо сейчас. «Have been arguing» с «since» — сигнал непрерывного процесса, начатого в определённый момент."
+    },
+    "contextExamples": [
+      "She has been crying since she heard the news.",
+      "The printer has been making that noise since yesterday."
+    ],
+    "sentences": [
+      {
+        "answer": "present-perfect-continuous",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "They",
+            "translation": {
+              "ru": "Они"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "have",
+            "role": "verb",
+            "translation": {
+              "ru": "быть"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "been",
+            "role": "verb",
+            "translation": {
+              "ru": "был"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "arguing",
+            "role": "verb",
+            "translation": {
+              "ru": "спор"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "since",
+            "translation": {
+              "ru": "с"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "this",
+            "translation": {
+              "ru": "сего"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "morning",
+            "translation": {
+              "ru": "утро"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "present-perfect-continuous-13",
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Постепенное изменение или развитие ситуации с течением времени",
+      "en": "A gradual change or development over time"
+    },
+    "tags": [
+      "present-perfect-continuous",
+      "context-clue",
+      "affirmative",
+      "perfect-continuous",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«Has been warming» описывает постепенный, продолжающийся процесс без чёткой конечной точки. Отсутствие «for/since» не исключает Present Perfect Continuous, когда сам контекст указывает на длящийся процесс."
+    },
+    "contextExamples": [
+      "Sea levels have been rising for decades.",
+      "The ice caps have been melting at an unprecedented rate."
+    ],
+    "sentences": [
+      {
+        "answer": "present-perfect-continuous",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "The",
+            "translation": {
+              "ru": "-"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "climate",
+            "translation": {
+              "ru": "климат"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "has",
+            "role": "verb",
+            "translation": {
+              "ru": "будет"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "been",
+            "role": "verb",
+            "translation": {
+              "ru": "был"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "warming",
+            "role": "verb",
+            "translation": {
+              "ru": "Предупреждение"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "at"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "an"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "alarming",
+            "translation": {
+              "ru": "Сигнализации"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "rate",
+            "translation": {
+              "ru": "вознаграждения"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "present-perfect-continuous-14",
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Недавняя деятельность, которая объясняет текущее состояние человека",
+      "en": "Recent activity that explains a person's current state"
+    },
+    "tags": [
+      "present-perfect-continuous",
+      "sentence-analysis",
+      "affirmative",
+      "perfect-continuous",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«Smells of paint» — сенсорное доказательство недавней деятельности. «Has been decorating» — причина текущего состояния: активность завершилась недавно, но её следы ощутимы прямо сейчас."
+    },
+    "contextExamples": [
+      "His clothes are covered in mud because he has been working in the garden.",
+      "She has flour on her apron because she has been baking all morning."
+    ],
+    "sentences": [
+      {
+        "answer": "present-perfect-continuous",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "She",
+            "translation": {
+              "ru": "Она"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "smells",
+            "translation": {
+              "ru": "запахи"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "of",
+            "translation": {
+              "ru": "коллегиальных"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "paint",
+            "translation": {
+              "ru": "рисовать"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "because",
+            "translation": {
+              "ru": "по"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "she",
+            "translation": {
+              "ru": "она"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "has",
+            "role": "verb",
+            "translation": {
+              "ru": "будет"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "been",
+            "role": "verb",
+            "translation": {
+              "ru": "был"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "decorating",
+            "role": "verb",
+            "translation": {
+              "ru": "Декорирование дома"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "her",
+            "translation": {
+              "ru": "ей"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "flat",
+            "translation": {
+              "ru": "плоский"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "present-perfect-continuous-15",
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Профессиональная или творческая деятельность, продолжающаяся в течение периода",
+      "en": "Professional or creative work ongoing throughout a period"
+    },
+    "tags": [
+      "present-perfect-continuous",
+      "context-clue",
+      "affirmative",
+      "perfect-continuous",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«For the past two years» — ограниченный период, включающий настоящий момент. «Has been writing» подчёркивает, что работа над мемуарами продолжается: книга ещё не закончена."
+    },
+    "contextExamples": [
+      "The architect has been designing the new bridge for eighteen months.",
+      "She has been composing the symphony for the past three years."
+    ],
+    "sentences": [
+      {
+        "answer": "present-perfect-continuous",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "He",
+            "translation": {
+              "ru": "Он,"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "has",
+            "role": "verb",
+            "translation": {
+              "ru": "будет"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "been",
+            "role": "verb",
+            "translation": {
+              "ru": "был"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "writing",
+            "role": "verb",
+            "translation": {
+              "ru": "письмо"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "his",
+            "translation": {
+              "ru": "ХХХ"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "memoirs",
+            "translation": {
+              "ru": "воспоминаний. "
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "for",
+            "translation": {
+              "ru": "."
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "past",
+            "translation": {
+              "ru": "прошедший "
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "two",
+            "translation": {
+              "ru": "два"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "years",
+            "translation": {
+              "ru": "годы"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "present-perfect-continuous-16",
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Отрицание: действие не было в процессе на протяжении периода",
+      "en": "Negation: an action has not been ongoing throughout a period"
+    },
+    "tags": [
+      "present-perfect-continuous",
+      "sentence-analysis",
+      "negative",
+      "perfect-continuous",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«This week» — незавершённый текущий период. «Hasn't been sleeping» отрицает нормальный процесс в этот период, а «he looks terrible» — видимое следствие этого нарушения."
+    },
+    "contextExamples": [
+      "She hasn't been eating properly lately — she has lost a lot of weight.",
+      "I haven't been exercising this month and I feel sluggish."
+    ],
+    "sentences": [
+      {
+        "answer": "present-perfect-continuous",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "He",
+            "translation": {
+              "ru": "Он,"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "hasn't",
+            "role": "verb",
+            "translation": {
+              "ru": "не имеет"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "been",
+            "role": "verb",
+            "translation": {
+              "ru": "был"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "sleeping",
+            "role": "verb",
+            "translation": {
+              "ru": "СОН"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "well",
+            "translation": {
+              "ru": "хорошо"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "this",
+            "translation": {
+              "ru": "сего"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "week",
+            "translation": {
+              "ru": "неделя"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "punct",
+            "value": "—"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "he"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "looks",
+            "translation": {
+              "ru": "выглядит"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "terrible",
+            "translation": {
+              "ru": "ужасный"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "present-perfect-continuous-17",
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Запах или внешний признак, указывающий на продолжавшееся действие",
+      "en": "A smell or visible sign indicating a recent ongoing activity"
+    },
+    "tags": [
+      "present-perfect-continuous",
+      "context-clue",
+      "affirmative",
+      "perfect-continuous",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«Smells of garlic» — обонятельный признак длительной деятельности. «Has been cooking all afternoon» объясняет запах: процесс длился весь послеполуденный период и только недавно завершился."
+    },
+    "contextExamples": [
+      "The garage smells of oil — he has been fixing his motorbike.",
+      "The room is full of smoke — someone has been burning candles all evening."
+    ],
+    "sentences": [
+      {
+        "answer": "present-perfect-continuous",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "The",
+            "translation": {
+              "ru": "-"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "kitchen",
+            "translation": {
+              "ru": "кухня"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "smells",
+            "translation": {
+              "ru": "запахи"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "of",
+            "translation": {
+              "ru": "коллегиальных"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "garlic",
+            "translation": {
+              "ru": "чеснок;"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "punct",
+            "value": "—"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "she",
+            "translation": {
+              "ru": "она"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "has",
+            "role": "verb",
+            "translation": {
+              "ru": "будет"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "been",
+            "role": "verb",
+            "translation": {
+              "ru": "был"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "cooking",
+            "role": "verb",
+            "translation": {
+              "ru": "готовка"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "all",
+            "translation": {
+              "ru": "все"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "afternoon",
+            "translation": {
+              "ru": "день"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "present-perfect-continuous-18",
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Переговоры или обсуждение, продолжающиеся в течение периода",
+      "en": "Negotiations or discussions ongoing throughout a period"
+    },
+    "tags": [
+      "present-perfect-continuous",
+      "sentence-analysis",
+      "affirmative",
+      "perfect-continuous",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«For months» — продолжительность, «without reaching an agreement» — незавершённость процесса. «Have been talking» подчёркивает, что переговоры продолжаются и цель пока не достигнута."
+    },
+    "contextExamples": [
+      "The lawyers have been negotiating the contract for weeks.",
+      "The committee has been debating the proposal for months."
+    ],
+    "sentences": [
+      {
+        "answer": "present-perfect-continuous",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "The",
+            "translation": {
+              "ru": "-"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "two",
+            "translation": {
+              "ru": "два"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "sides",
+            "translation": {
+              "ru": "Стороны"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "have",
+            "role": "verb",
+            "translation": {
+              "ru": "быть"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "been",
+            "role": "verb",
+            "translation": {
+              "ru": "был"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "talking",
+            "role": "verb",
+            "translation": {
+              "ru": "разговор"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "for",
+            "translation": {
+              "ru": "."
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "months",
+            "translation": {
+              "ru": "месяца"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "without",
+            "translation": {
+              "ru": "без"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "reaching",
+            "translation": {
+              "ru": "вплоть до"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "an"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "agreement",
+            "translation": {
+              "ru": "договора"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "present-perfect-continuous-19",
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Текущая незавершённая деятельность команды или организации",
+      "en": "An ongoing unfinished activity of a team or organisation"
+    },
+    "tags": [
+      "present-perfect-continuous",
+      "context-clue",
+      "affirmative",
+      "perfect-continuous",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«For the last three sprints» — конкретный период повторяющихся рабочих циклов. «Has been developing» показывает, что фича всё ещё в разработке: процесс продолжается без завершения."
+    },
+    "contextExamples": [
+      "The engineers have been testing the system for the last two weeks.",
+      "Our researchers have been investigating the problem for the past six months."
+    ],
+    "sentences": [
+      {
+        "answer": "present-perfect-continuous",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "Our",
+            "translation": {
+              "ru": "В компании, "
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "team",
+            "translation": {
+              "ru": "команда"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "has",
+            "role": "verb",
+            "translation": {
+              "ru": "будет"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "been",
+            "role": "verb",
+            "translation": {
+              "ru": "был"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "developing",
+            "role": "verb",
+            "translation": {
+              "ru": "В развитии"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "this",
+            "translation": {
+              "ru": "сего"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "feature",
+            "translation": {
+              "ru": "blog"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "for",
+            "translation": {
+              "ru": "."
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "last",
+            "translation": {
+              "ru": "последний"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "three",
+            "translation": {
+              "ru": "три"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "sprints",
+            "translation": {
+              "ru": "Спринт"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "present-perfect-continuous-20",
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Вопрос о продолжительности текущего занятия или состояния",
+      "en": "A question about how long a current activity or state has lasted"
+    },
+    "tags": [
+      "present-perfect-continuous",
+      "sentence-analysis",
+      "question",
+      "perfect-continuous",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«How long has … been …-ing» — канонический вопрос о длительности текущего, незавершённого действия. «Learning Japanese» подразумевает продолжающийся процесс без указания конца."
+    },
+    "contextExamples": [
+      "How long has he been taking piano lessons?",
+      "How long have you been feeling this way?"
+    ],
+    "sentences": [
+      {
+        "answer": "present-perfect-continuous",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "How",
+            "translation": {
+              "ru": "Как"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "long",
+            "translation": {
+              "ru": "длинный"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "has",
+            "role": "verb",
+            "translation": {
+              "ru": "будет"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "she",
+            "role": "verb",
+            "translation": {
+              "ru": "она"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "been",
+            "role": "verb",
+            "translation": {
+              "ru": "был"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "learning",
+            "role": "verb",
+            "translation": {
+              "ru": "обучение"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "Japanese"
+          },
+          {
+            "type": "punct",
+            "value": "?"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "present-perfect-continuous-21",
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Хроническое или длительное ухудшение состояния здоровья",
+      "en": "A chronic or prolonged deterioration in health"
+    },
+    "tags": [
+      "present-perfect-continuous",
+      "context-clue",
+      "affirmative",
+      "perfect-continuous",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«Has been overworking» — диагноз врача о длительной деятельности, которая привела к нынешнему состоянию здоровья. «Needs rest» — следствие, актуальное прямо сейчас."
+    },
+    "contextExamples": [
+      "The therapist says he has been under too much stress and must take a break.",
+      "Her trainer says she has been pushing herself too hard and risks injury."
+    ],
+    "sentences": [
+      {
+        "answer": "present-perfect-continuous",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "The",
+            "translation": {
+              "ru": "-"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "doctor",
+            "translation": {
+              "ru": "врач"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "says",
+            "translation": {
+              "ru": "сообщает"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "she",
+            "translation": {
+              "ru": "она"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "has",
+            "role": "verb",
+            "translation": {
+              "ru": "будет"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "been",
+            "role": "verb",
+            "translation": {
+              "ru": "был"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "overworking",
+            "role": "verb",
+            "translation": {
+              "ru": "трудоголизма."
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "and",
+            "translation": {
+              "ru": "и"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "needs",
+            "translation": {
+              "ru": "заказчика"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "rest",
+            "translation": {
+              "ru": "отдых"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "present-perfect-continuous-22",
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Деятельность, ставшая источником усталости или стресса",
+      "en": "An activity that has been a source of fatigue or stress"
+    },
+    "tags": [
+      "present-perfect-continuous",
+      "sentence-analysis",
+      "affirmative",
+      "perfect-continuous",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«Feel completely drained» — эмоциональное истощение прямо сейчас. «Have been dealing with complaints all day» — причина: длительная стрессовая деятельность за весь день объясняет нынешнее состояние."
+    },
+    "contextExamples": [
+      "I'm exhausted — I have been attending back-to-back meetings all day.",
+      "She feels overwhelmed because she has been handling three projects at once."
+    ],
+    "sentences": [
+      {
+        "answer": "present-perfect-continuous",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "I"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "feel",
+            "translation": {
+              "ru": "чувствовать"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "completely",
+            "translation": {
+              "ru": "полностью"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "drained",
+            "translation": {
+              "ru": "истощен"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "punct",
+            "value": "—"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "I"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "have",
+            "role": "verb",
+            "translation": {
+              "ru": "быть"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "been",
+            "role": "verb",
+            "translation": {
+              "ru": "был"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "dealing",
+            "role": "verb",
+            "translation": {
+              "ru": "Любая финансовая или кредитная операция => сделки"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "with",
+            "role": "verb",
+            "translation": {
+              "ru": "где"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "complaints",
+            "translation": {
+              "ru": "жалоб"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "all",
+            "translation": {
+              "ru": "все"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "day",
+            "translation": {
+              "ru": "число"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "present-perfect-continuous-23",
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Продолжающееся обучение или тренировка с целью достичь результата",
+      "en": "Ongoing training or practice aimed at achieving a goal"
+    },
+    "tags": [
+      "present-perfect-continuous",
+      "context-clue",
+      "affirmative",
+      "perfect-continuous",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«Eight hours a day» — интенсивность повторяющейся деятельности, «for this competition» — текущая цель. «Has been practising» подчёркивает продолжающийся процесс подготовки, соревнование ещё впереди."
+    },
+    "contextExamples": [
+      "He has been training six days a week for the upcoming tournament.",
+      "The choir has been rehearsing every evening for the concert."
+    ],
+    "sentences": [
+      {
+        "answer": "present-perfect-continuous",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "She",
+            "translation": {
+              "ru": "Она"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "has",
+            "role": "verb",
+            "translation": {
+              "ru": "будет"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "been",
+            "role": "verb",
+            "translation": {
+              "ru": "был"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "practising",
+            "role": "verb",
+            "translation": {
+              "ru": "Практика"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "piano",
+            "translation": {
+              "ru": "пианино"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "eight",
+            "translation": {
+              "ru": "восемь"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "hours",
+            "translation": {
+              "ru": "часы"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "a",
+            "translation": {
+              "ru": "а"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "day",
+            "translation": {
+              "ru": "число"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "for",
+            "translation": {
+              "ru": "."
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "this",
+            "translation": {
+              "ru": "сего"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "competition",
+            "translation": {
+              "ru": "конкуренции"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "present-perfect-continuous-24",
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Тенденция или явление, нарастающее с течением времени",
+      "en": "A trend or phenomenon that has been growing over time"
+    },
+    "tags": [
+      "present-perfect-continuous",
+      "sentence-analysis",
+      "affirmative",
+      "perfect-continuous",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«Since the industrial revolution» — историческая точка отсчёта; «have been rising steadily» — непрерывная тенденция, продолжающаяся по сей день. Акцент на процессе потепления, а не на конечном факте."
+    },
+    "contextExamples": [
+      "Deforestation rates have been increasing since the 1950s.",
+      "The gap between rich and poor has been widening for decades."
+    ],
+    "sentences": [
+      {
+        "answer": "present-perfect-continuous",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "Temperatures",
+            "translation": {
+              "ru": "Температуры"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "around",
+            "translation": {
+              "ru": "вокруг которой"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "world",
+            "translation": {
+              "ru": "мир"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "have",
+            "role": "verb",
+            "translation": {
+              "ru": "быть"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "been",
+            "role": "verb",
+            "translation": {
+              "ru": "был"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "rising",
+            "role": "verb",
+            "translation": {
+              "ru": "в тренде"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "steadily",
+            "translation": {
+              "ru": "Неуклонно"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "since",
+            "translation": {
+              "ru": "с"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "industrial",
+            "translation": {
+              "ru": "промышленное"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "revolution",
+            "translation": {
+              "ru": "оборот"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "present-perfect-continuous-25",
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Неоднократные обращения или попытки, ещё не давшие результата",
+      "en": "Repeated attempts or requests that have not yet yielded a result"
+    },
+    "tags": [
+      "present-perfect-continuous",
+      "context-clue",
+      "affirmative",
+      "perfect-continuous",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«For six months» — длительность повторяющихся попыток; «without success» — результат не достигнут. «Has been applying» акцентирует процесс многократных усилий, а не завершённый факт."
+    },
+    "contextExamples": [
+      "He has been looking for investors for a year without finding any.",
+      "I have been trying to get a refund for weeks but nobody responds."
+    ],
+    "sentences": [
+      {
+        "answer": "present-perfect-continuous",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "She",
+            "translation": {
+              "ru": "Она"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "has",
+            "role": "verb",
+            "translation": {
+              "ru": "будет"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "been",
+            "role": "verb",
+            "translation": {
+              "ru": "был"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "applying",
+            "role": "verb",
+            "translation": {
+              "ru": "Применение"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "for",
+            "translation": {
+              "ru": "."
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "jobs",
+            "translation": {
+              "ru": "вакансии"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "for",
+            "translation": {
+              "ru": "."
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "six",
+            "translation": {
+              "ru": "шесть"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "months",
+            "translation": {
+              "ru": "месяца"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "without",
+            "translation": {
+              "ru": "без"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "success",
+            "translation": {
+              "ru": "выполнено"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
   }
 ]

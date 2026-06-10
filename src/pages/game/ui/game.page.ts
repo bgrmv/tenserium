@@ -18,9 +18,11 @@ import { getTense } from '@shared/config/tenses.config';
 import { tenseColor } from '@shared/config/tense-colors';
 import type { PaletteMode } from '@shared/config/tense-colors';
 import type { SessionMode, TenseId } from '@shared/types';
+import { studyChoices } from '@shared/lib/distractors';
 import { AnswerGridComponent } from '@features/answer-input';
 import { ReportErrorComponent } from '@features/report-error';
 import { QuestionCardComponent, type ResultState } from '@widgets/question-card';
+import { StudyPanelComponent } from '@widgets/study-panel';
 import { ScoreBarComponent } from '@widgets/score-bar';
 import { SquadBoardComponent } from '@widgets/squad-board';
 import { SessionSummaryComponent } from '@widgets/session-summary';
@@ -39,6 +41,7 @@ const BOT_TICK_MS = 200;
     AnswerGridComponent,
     ReportErrorComponent,
     QuestionCardComponent,
+    StudyPanelComponent,
     ScoreBarComponent,
     SquadBoardComponent,
     SessionSummaryComponent,
@@ -53,7 +56,7 @@ export class GamePageComponent {
 
   private readonly store = inject(GameSessionStore);
   private readonly match = inject(MatchStore);
-  private readonly user = inject(UserStore);
+  protected readonly user = inject(UserStore);
   private readonly repo = inject(QuestionRepository);
   private readonly router = inject(Router);
   private readonly destroyRef = inject(DestroyRef);
@@ -90,6 +93,14 @@ export class GamePageComponent {
   protected readonly revealName = computed(() => {
     const id = this.revealId();
     return id ? getTense(id).name : null;
+  });
+
+  /** In study mode: 4 shuffled choices (correct + 3 distractors); null = show all 12. */
+  protected readonly choices = computed((): readonly TenseId[] | null => {
+    if (!this.user.studyMode()) return null;
+    const q = this.question();
+    if (!q) return null;
+    return studyChoices(q.sentences[0].answer, q.sentences[0]?.distractors?.map(d => d.tenseId));
   });
 
   private readonly timer = createGameTimer(MODE_CONFIG[this.mode()].windowMs, () =>
@@ -159,24 +170,47 @@ export class GamePageComponent {
     if (!record) return;
 
     this.pickedId.set(id);
-    this.revealId.set(this.question()?.answer ?? null);
+    this.revealId.set(this.question()?.sentences[0].answer ?? null);
     if (record.correct) {
       this.result.set('correct');
       this.gained.set(record.points);
       this.maybeUnlock();
-      this.scheduleNext(FLASH_CORRECT_MS);
     } else {
       this.result.set('wrong');
-      this.scheduleNext(FLASH_WRONG_MS);
     }
+    this.scheduleNext(record.correct ? FLASH_CORRECT_MS : FLASH_WRONG_MS);
   }
 
   private onTimeout(): void {
     if (this.result() !== 'none') return;
     this.store.timeout();
-    this.revealId.set(this.question()?.answer ?? null);
+    this.revealId.set(this.question()?.sentences[0].answer ?? null);
     this.result.set('timeout');
     this.scheduleNext(FLASH_WRONG_MS);
+  }
+
+  /** In study/pause mode the auto-advance is suppressed; user clicks Next instead. */
+  private scheduleNext(delay: number): void {
+    if (this.user.studyMode() || this.user.pauseMode()) return;
+    setTimeout(() => this.advance(), delay);
+  }
+
+  protected onNextQuestion(): void {
+    this.advance();
+  }
+
+  private advance(): void {
+    this.result.set('none');
+    this.pickedId.set(null);
+    this.revealId.set(null);
+    this.gained.set(null);
+
+    this.store.nextQuestion();
+    if (this.store.status() === 'summary') {
+      this.finishMatch();
+      return;
+    }
+    this.timer.start();
   }
 
   protected endSession(): void {
@@ -196,22 +230,6 @@ export class GamePageComponent {
   protected exit(): void {
     this.store.reset();
     void this.router.navigate(['/home']);
-  }
-
-  private scheduleNext(delay: number): void {
-    setTimeout(() => {
-      this.result.set('none');
-      this.pickedId.set(null);
-      this.revealId.set(null);
-      this.gained.set(null);
-
-      this.store.nextQuestion();
-      if (this.store.status() === 'summary') {
-        this.finishMatch();
-        return;
-      }
-      this.timer.start();
-    }, delay);
   }
 
   private finishMatch(): void {

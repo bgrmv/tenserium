@@ -1,132 +1,3892 @@
 [
   {
     "id": "future-simple-01",
-    "answer": "future-simple",
-    "type": "context",
-    "prompt": "Спонтанное решение или предсказание в момент говорения",
-    "promptEn": "A spontaneous decision or prediction at the moment of speaking",
-    "sentence": {
-      "pre": "I think it ",
-      "verb": "will rain",
-      "post": " tomorrow."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Спонтанное решение или предсказание в момент говорения",
+      "en": "A spontaneous decision or prediction at the moment of speaking"
     },
-    "difficulty": 1
+    "tags": [
+      "future-simple",
+      "context-clue",
+      "affirmative",
+      "simple",
+      "difficulty-1"
+    ],
+    "difficulty": 1,
+    "rules": {
+      "ru": "«I think» сигнализирует личное предсказание без доказательств — именно для таких предположений используется will, а не going to."
+    },
+    "contextExamples": [
+      "I think they will cancel the outdoor concert.",
+      "Probably it will snow overnight."
+    ],
+    "sentences": [
+      {
+        "answer": "future-simple",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "I"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "think",
+            "translation": {
+              "ru": "думать"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "it"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "will",
+            "role": "verb",
+            "translation": {
+              "ru": "---"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "rain",
+            "role": "verb",
+            "translation": {
+              "ru": "дождь"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "tomorrow",
+            "translation": {
+              "ru": "завтра"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "future-simple-02",
-    "answer": "future-simple",
-    "type": "context",
-    "prompt": "Действие, которое произойдёт в будущем",
-    "promptEn": "An action that will happen in the future",
-    "sentence": {
-      "pre": "She ",
-      "verb": "will graduate",
-      "post": " next year."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Действие, которое произойдёт в будущем",
+      "en": "An action that will happen in the future"
     },
-    "difficulty": 1
+    "tags": [
+      "future-simple",
+      "context-clue",
+      "affirmative",
+      "simple",
+      "difficulty-1"
+    ],
+    "difficulty": 1,
+    "rules": {
+      "ru": "Нейтральное утверждение о будущем факте с маркером времени «next year» — простое will для описания предстоящего события."
+    },
+    "contextExamples": [
+      "He will retire in three years.",
+      "The contract will expire next month."
+    ],
+    "sentences": [
+      {
+        "answer": "future-simple",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "She",
+            "translation": {
+              "ru": "Она"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "will",
+            "role": "verb",
+            "translation": {
+              "ru": "---"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "graduate",
+            "role": "verb",
+            "translation": {
+              "ru": "Цилиндр с делениями"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "next",
+            "translation": {
+              "ru": "след."
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "year",
+            "translation": {
+              "ru": "год"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "future-simple-03",
-    "answer": "future-simple",
-    "type": "sentence",
-    "prompt": "Обещание или намерение на будущее",
-    "promptEn": "A promise or intention for the future",
-    "sentence": {
-      "pre": "I promise I ",
-      "verb": "will call",
-      "post": " you tomorrow."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Обещание или намерение на будущее",
+      "en": "A promise or intention for the future"
     },
-    "difficulty": 1
+    "tags": [
+      "future-simple",
+      "sentence-analysis",
+      "affirmative",
+      "simple",
+      "difficulty-1"
+    ],
+    "difficulty": 1,
+    "rules": {
+      "ru": "Слово «promise» прямо указывает на обещание — will передаёт личное обязательство сделать что-то в будущем."
+    },
+    "contextExamples": [
+      "I swear I will be there on time.",
+      "Don't worry, I will send you the file by evening."
+    ],
+    "sentences": [
+      {
+        "answer": "future-simple",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "I"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "promise",
+            "translation": {
+              "ru": "обещать"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "I"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "will",
+            "role": "verb",
+            "translation": {
+              "ru": "---"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "call",
+            "role": "verb",
+            "translation": {
+              "ru": "звонок"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "you",
+            "translation": {
+              "ru": "вы"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "tomorrow",
+            "translation": {
+              "ru": "завтра"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "future-simple-04",
-    "answer": "future-simple",
-    "type": "sentence",
-    "prompt": "Долгосрочное будущее событие или состояние",
-    "promptEn": "A long-term future event or state",
-    "sentence": {
-      "pre": "In 2050, most people ",
-      "verb": "will live",
-      "post": " in cities."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Долгосрочное будущее событие или состояние",
+      "en": "A long-term future event or state"
     },
-    "difficulty": 1
+    "tags": [
+      "future-simple",
+      "sentence-analysis",
+      "affirmative",
+      "simple",
+      "difficulty-1"
+    ],
+    "difficulty": 1,
+    "rules": {
+      "ru": "«In 2050» — далёкое будущее без конкретного плана, поэтому используется will для долгосрочного предсказания-факта."
+    },
+    "contextExamples": [
+      "By 2100, temperatures will rise by several degrees.",
+      "In the next decade, electric cars will dominate the market."
+    ],
+    "sentences": [
+      {
+        "answer": "future-simple",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "In",
+            "translation": {
+              "ru": "Нач."
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "2050"
+          },
+          {
+            "type": "punct",
+            "value": ","
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "most",
+            "translation": {
+              "ru": "большинство"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "people",
+            "translation": {
+              "ru": "человек"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "will",
+            "role": "verb",
+            "translation": {
+              "ru": "---"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "live",
+            "role": "verb",
+            "translation": {
+              "ru": "жить"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "in",
+            "translation": {
+              "ru": "от"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "cities",
+            "translation": {
+              "ru": "города"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "future-simple-05",
-    "answer": "future-simple",
-    "type": "context",
-    "prompt": "Предложение помощи или согласие сделать что-то",
-    "promptEn": "An offer to help or agreement to do something",
-    "sentence": {
-      "pre": "Don't worry, I ",
-      "verb": "will help",
-      "post": " you with that."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Предложение помощи или согласие сделать что-то",
+      "en": "An offer to help or agreement to do something"
     },
-    "difficulty": 1
+    "tags": [
+      "future-simple",
+      "context-clue",
+      "negative",
+      "simple",
+      "difficulty-1"
+    ],
+    "difficulty": 1,
+    "rules": {
+      "ru": "«Don't worry» показывает, что говорящий реагирует на чужое затруднение — это спонтанное предложение помощи в момент речи, классический случай will."
+    },
+    "contextExamples": [
+      "Leave it to me — I will sort it out.",
+      "I'll answer the door, you stay there."
+    ],
+    "sentences": [
+      {
+        "answer": "future-simple",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "Don't",
+            "translation": {
+              "ru": "Не"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "worry",
+            "translation": {
+              "ru": "беспокоиться"
+            }
+          },
+          {
+            "type": "punct",
+            "value": ","
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "I"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "will",
+            "role": "verb",
+            "translation": {
+              "ru": "---"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "help",
+            "role": "verb"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "you",
+            "translation": {
+              "ru": "вы"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "with",
+            "translation": {
+              "ru": "где"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "that",
+            "translation": {
+              "ru": "что"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "future-simple-06",
-    "answer": "future-simple",
-    "type": "sentence",
-    "prompt": "Условное будущее действие",
-    "promptEn": "A conditional future action",
-    "sentence": {
-      "pre": "If you study hard, you ",
-      "verb": "will pass",
-      "post": " the exam."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Условное будущее действие (первый кондиционал)",
+      "en": "A conditional future action (first conditional)"
     },
-    "difficulty": 2
+    "tags": [
+      "future-simple",
+      "sentence-analysis",
+      "affirmative",
+      "simple",
+      "difficulty-2"
+    ],
+    "difficulty": 2,
+    "rules": {
+      "ru": "Структура «If + Present Simple → will» — первый кондиционал: условие в придаточном, результат в главном с will."
+    },
+    "contextExamples": [
+      "If it stops raining, we will go for a walk.",
+      "If she applies early, she will get a discount."
+    ],
+    "sentences": [
+      {
+        "answer": "future-simple",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "If",
+            "translation": {
+              "ru": "При"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "you",
+            "translation": {
+              "ru": "вы"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "study",
+            "translation": {
+              "ru": "светостабильности"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "hard",
+            "translation": {
+              "ru": "твёрдый"
+            }
+          },
+          {
+            "type": "punct",
+            "value": ","
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "you",
+            "translation": {
+              "ru": "вы"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "will",
+            "role": "verb",
+            "translation": {
+              "ru": "---"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "pass",
+            "role": "verb",
+            "translation": {
+              "ru": "зачет"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "exam",
+            "translation": {
+              "ru": "экзамен"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "future-simple-07",
-    "answer": "future-simple",
-    "type": "context",
-    "prompt": "Общее предсказание или ожидание",
-    "promptEn": "A general prediction or expectation",
-    "sentence": {
-      "pre": "Technology ",
-      "verb": "will change",
-      "post": " our lives significantly."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Общее предсказание или ожидание о будущем",
+      "en": "A general prediction or expectation about the future"
     },
-    "difficulty": 2
+    "tags": [
+      "future-simple",
+      "context-clue",
+      "affirmative",
+      "simple",
+      "difficulty-2"
+    ],
+    "difficulty": 2,
+    "rules": {
+      "ru": "Нет ни доказательств, ни плана — только мнение-предсказание о долгосрочной тенденции, для которого выбирается will без going to."
+    },
+    "contextExamples": [
+      "Artificial intelligence will transform the job market.",
+      "Online education will become even more popular in future."
+    ],
+    "sentences": [
+      {
+        "answer": "future-simple",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "Technology",
+            "translation": {
+              "ru": "Технология"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "will",
+            "role": "verb",
+            "translation": {
+              "ru": "---"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "change",
+            "role": "verb",
+            "translation": {
+              "ru": "изменении"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "our",
+            "translation": {
+              "ru": "наш"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "lives",
+            "translation": {
+              "ru": ","
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "significantly",
+            "translation": {
+              "ru": "значимо"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "future-simple-08",
-    "answer": "future-simple",
-    "type": "sentence",
-    "prompt": "Будущее действие, которое уже было спланировано",
-    "promptEn": "A future action that has been planned",
-    "sentence": {
-      "pre": "We ",
-      "verb": "will travel",
-      "post": " to Japan next summer."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Будущее действие, которое ещё не было спланировано",
+      "en": "A future action decided spontaneously"
     },
-    "difficulty": 2
+    "tags": [
+      "future-simple",
+      "sentence-analysis",
+      "affirmative",
+      "simple",
+      "difficulty-2"
+    ],
+    "difficulty": 2,
+    "rules": {
+      "ru": "Нет признаков предварительного плана или договорённости — простое утверждение о будущем намерении, поэтому используется will, а не going to."
+    },
+    "contextExamples": [
+      "I will visit my grandparents next weekend.",
+      "They will move to a bigger apartment next year."
+    ],
+    "sentences": [
+      {
+        "answer": "future-simple",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "We",
+            "translation": {
+              "ru": "Перед"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "will",
+            "role": "verb",
+            "translation": {
+              "ru": "---"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "travel",
+            "role": "verb",
+            "translation": {
+              "ru": "поездка"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "to",
+            "translation": {
+              "ru": "кому"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "Japan",
+            "translation": {
+              "ru": "Япония"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "next",
+            "translation": {
+              "ru": "след."
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "summer",
+            "translation": {
+              "ru": "лето"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "future-simple-09",
-    "answer": "future-simple",
-    "type": "context",
-    "prompt": "Неизбежное будущее событие",
-    "promptEn": "An inevitable future event",
-    "sentence": {
-      "pre": "The sun ",
-      "verb": "will set",
-      "post": " this evening at 8 PM."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Неизбежное будущее событие",
+      "en": "An inevitable future event"
     },
-    "difficulty": 2
+    "tags": [
+      "future-simple",
+      "context-clue",
+      "affirmative",
+      "simple",
+      "difficulty-2"
+    ],
+    "difficulty": 2,
+    "rules": {
+      "ru": "Природное явление, которое не зависит от чьих-либо планов — неизбежный будущий факт, передаётся через will."
+    },
+    "contextExamples": [
+      "The moon will be full on Friday.",
+      "The tides will change at midnight."
+    ],
+    "sentences": [
+      {
+        "answer": "future-simple",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "The",
+            "translation": {
+              "ru": "-"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "sun",
+            "translation": {
+              "ru": "солнце"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "will",
+            "role": "verb",
+            "translation": {
+              "ru": "---"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "set",
+            "role": "verb",
+            "translation": {
+              "ru": "набор"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "this",
+            "translation": {
+              "ru": "сего"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "evening",
+            "translation": {
+              "ru": "вечер"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "at"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "8"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "PM",
+            "translation": {
+              "ru": "После полудня"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "future-simple-10",
-    "answer": "future-simple",
-    "type": "sentence",
-    "prompt": "Угроза или предупреждение о будущем",
-    "promptEn": "A threat or warning about the future",
-    "sentence": {
-      "pre": "If you don't leave now, you ",
-      "verb": "will be",
-      "post": " late for school."
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Угроза или предупреждение о будущих последствиях",
+      "en": "A threat or warning about future consequences"
     },
-    "difficulty": 2
+    "tags": [
+      "future-simple",
+      "sentence-analysis",
+      "negative",
+      "simple",
+      "difficulty-2"
+    ],
+    "difficulty": 2,
+    "rules": {
+      "ru": "Первый кондиционал с отрицательным условием: «If + don't + V» → will + предупреждение о последствии."
+    },
+    "contextExamples": [
+      "If you don't save your work, you will lose everything.",
+      "If he doesn't apologise, she will never speak to him again."
+    ],
+    "sentences": [
+      {
+        "answer": "future-simple",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "If",
+            "translation": {
+              "ru": "При"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "you",
+            "translation": {
+              "ru": "вы"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "don't",
+            "translation": {
+              "ru": "не"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "leave",
+            "translation": {
+              "ru": "отпуск"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "now",
+            "translation": {
+              "ru": "сейчас"
+            }
+          },
+          {
+            "type": "punct",
+            "value": ","
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "you",
+            "translation": {
+              "ru": "вы"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "will",
+            "role": "verb",
+            "translation": {
+              "ru": "---"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "be",
+            "role": "verb",
+            "translation": {
+              "ru": "переносу"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "late",
+            "translation": {
+              "ru": "позже"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "for",
+            "translation": {
+              "ru": "."
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "school",
+            "translation": {
+              "ru": "школа"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "future-simple-11",
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Категорический отказ что-либо делать",
+      "en": "A categorical refusal to do something"
+    },
+    "tags": [
+      "future-simple",
+      "sentence-analysis",
+      "negative",
+      "simple",
+      "difficulty-2"
+    ],
+    "difficulty": 2,
+    "rules": {
+      "ru": "Won't выражает категорический отказ — это волевое решение говорящего в момент речи, характерное применение will в отрицательной форме."
+    },
+    "contextExamples": [
+      "She won't change her mind — she's absolutely certain.",
+      "He won't accept any help, no matter what we say."
+    ],
+    "sentences": [
+      {
+        "answer": "future-simple",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "I"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "won't",
+            "role": "verb",
+            "translation": {
+              "ru": "не будет"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "apologise",
+            "role": "verb"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "punct",
+            "value": "—"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "I"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "did",
+            "translation": {
+              "ru": "сделал"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "nothing",
+            "translation": {
+              "ru": "нет"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "wrong",
+            "translation": {
+              "ru": "Неверно"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "future-simple-12",
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Прогноз или предсказание о климате или природе",
+      "en": "A forecast or prediction about climate or nature"
+    },
+    "tags": [
+      "future-simple",
+      "context-clue",
+      "affirmative",
+      "simple",
+      "difficulty-2"
+    ],
+    "difficulty": 2,
+    "rules": {
+      "ru": "«Scientists say» вводит предсказание, основанное на мнении экспертов, а не на видимых сиюминутных признаках — поэтому will, а не going to."
+    },
+    "contextExamples": [
+      "Experts predict the population will reach ten billion by 2060.",
+      "Researchers warn that summers will become much drier."
+    ],
+    "sentences": [
+      {
+        "answer": "future-simple",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "Scientists",
+            "translation": {
+              "ru": "Ученые"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "say",
+            "translation": {
+              "ru": "сказать"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "sea",
+            "translation": {
+              "ru": "море"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "levels",
+            "translation": {
+              "ru": "."
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "will",
+            "role": "verb",
+            "translation": {
+              "ru": "---"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "rise",
+            "role": "verb",
+            "translation": {
+              "ru": "подниматься"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "by",
+            "translation": {
+              "ru": "от кого"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "two",
+            "translation": {
+              "ru": "два"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "metres",
+            "translation": {
+              "ru": "в метрах"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "this",
+            "translation": {
+              "ru": "сего"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "century",
+            "translation": {
+              "ru": "век"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "future-simple-13",
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Условие с 'unless': что произойдёт без изменений",
+      "en": "Conditional with 'unless': what happens if nothing changes"
+    },
+    "tags": [
+      "future-simple",
+      "sentence-analysis",
+      "affirmative",
+      "simple",
+      "difficulty-2"
+    ],
+    "difficulty": 2,
+    "rules": {
+      "ru": "«Unless» = «if not» — вариант первого кондиционала: условное придаточное в Present Simple, главное с will для результата."
+    },
+    "contextExamples": [
+      "Unless they lower the price, I won't buy it.",
+      "Unless he calls first, she will not open the door."
+    ],
+    "sentences": [
+      {
+        "answer": "future-simple",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "Unless",
+            "translation": {
+              "ru": "Unless."
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "you",
+            "translation": {
+              "ru": "вы"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "hurry",
+            "translation": {
+              "ru": "спешить"
+            }
+          },
+          {
+            "type": "punct",
+            "value": ","
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "you",
+            "translation": {
+              "ru": "вы"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "will",
+            "role": "verb",
+            "translation": {
+              "ru": "---"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "miss",
+            "role": "verb",
+            "translation": {
+              "ru": "пропустить"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "bus",
+            "translation": {
+              "ru": "шина"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "future-simple-14",
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Спонтанное предложение помочь в конкретной ситуации",
+      "en": "A spontaneous offer to help in a specific situation"
+    },
+    "tags": [
+      "future-simple",
+      "context-clue",
+      "affirmative",
+      "simple",
+      "difficulty-2"
+    ],
+    "difficulty": 2,
+    "rules": {
+      "ru": "Тире после наблюдения («looks heavy») показывает реакцию на ситуацию — спонтанное предложение помощи, принятое в момент говорения, требует will."
+    },
+    "contextExamples": [
+      "You look tired — I will make you some tea.",
+      "The printer is jammed again — I'll fix it."
+    ],
+    "sentences": [
+      {
+        "answer": "future-simple",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "That",
+            "translation": {
+              "ru": "Что"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "bag",
+            "translation": {
+              "ru": "Мешок"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "looks",
+            "translation": {
+              "ru": "выглядит"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "heavy",
+            "translation": {
+              "ru": "Тяжёлые"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "punct",
+            "value": "—"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "I"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "will",
+            "role": "verb",
+            "translation": {
+              "ru": "---"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "carry",
+            "role": "verb",
+            "translation": {
+              "ru": "нести "
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "it"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "for",
+            "translation": {
+              "ru": "."
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "you",
+            "translation": {
+              "ru": "вы"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "future-simple-15",
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Уверенность в будущем результате",
+      "en": "Confidence or certainty about a future outcome"
+    },
+    "tags": [
+      "future-simple",
+      "sentence-analysis",
+      "affirmative",
+      "simple",
+      "difficulty-2"
+    ],
+    "difficulty": 2,
+    "rules": {
+      "ru": "«I'm sure» — маркер уверенности в предсказании без конкретных внешних доказательств, поэтому используется will."
+    },
+    "contextExamples": [
+      "I'm sure you will love this restaurant.",
+      "I'm certain she will pass the driving test this time."
+    ],
+    "sentences": [
+      {
+        "answer": "future-simple",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "I'm",
+            "translation": {
+              "ru": "Я"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "sure",
+            "translation": {
+              "ru": "конечно"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "you",
+            "translation": {
+              "ru": "вы"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "will",
+            "role": "verb",
+            "translation": {
+              "ru": "---"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "do",
+            "role": "verb"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "well",
+            "translation": {
+              "ru": "хорошо"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "in",
+            "translation": {
+              "ru": "от"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "interview",
+            "translation": {
+              "ru": "собеседование"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "future-simple-16",
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Страдательный залог о будущем событии",
+      "en": "Passive voice about a future event"
+    },
+    "tags": [
+      "future-simple",
+      "context-clue",
+      "affirmative",
+      "simple",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "Структура «will be + Participle II» — страдательный залог Future Simple; «by the end of the decade» задаёт срок, а не момент в процессе."
+    },
+    "contextExamples": [
+      "The new hospital will be opened next spring.",
+      "All applications will be reviewed within two weeks."
+    ],
+    "sentences": [
+      {
+        "answer": "future-simple",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "The",
+            "translation": {
+              "ru": "-"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "new",
+            "translation": {
+              "ru": "новых"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "bridge",
+            "translation": {
+              "ru": "мост"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "will",
+            "role": "verb",
+            "translation": {
+              "ru": "---"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "be",
+            "role": "verb",
+            "translation": {
+              "ru": "переносу"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "built",
+            "role": "verb",
+            "translation": {
+              "ru": "построен"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "by",
+            "translation": {
+              "ru": "от кого"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "end",
+            "translation": {
+              "ru": "в конце"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "of",
+            "translation": {
+              "ru": "коллегиальных"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "decade",
+            "translation": {
+              "ru": "декада"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "future-simple-17",
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Формальное утверждение о будущем в письме или документе",
+      "en": "Formal statement about the future in a letter or document"
+    },
+    "tags": [
+      "future-simple",
+      "sentence-analysis",
+      "affirmative",
+      "simple",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "Официальный тон и безличный субъект «the committee» характерны для формального объявления о будущем действии — нейтральное will без личных планов."
+    },
+    "contextExamples": [
+      "The board will announce its decision on Thursday.",
+      "The department will process all requests within five working days."
+    ],
+    "sentences": [
+      {
+        "answer": "future-simple",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "The",
+            "translation": {
+              "ru": "-"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "committee",
+            "translation": {
+              "ru": "комитет"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "will",
+            "role": "verb",
+            "translation": {
+              "ru": "---"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "review",
+            "role": "verb",
+            "translation": {
+              "ru": "отзыв"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "all",
+            "translation": {
+              "ru": "все"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "applications",
+            "translation": {
+              "ru": "отклики"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "by",
+            "translation": {
+              "ru": "от кого"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "end",
+            "translation": {
+              "ru": "в конце"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "of",
+            "translation": {
+              "ru": "коллегиальных"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "month",
+            "translation": {
+              "ru": "месяца"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "future-simple-18",
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Предсказание о будущем развитии событий в аналитическом тексте",
+      "en": "A prediction about future developments in an analytical text"
+    },
+    "tags": [
+      "future-simple",
+      "context-clue",
+      "affirmative",
+      "simple",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«Analysts believe» вводит экспертное мнение-предсказание без видимых немедленных признаков — это will, а не going to."
+    },
+    "contextExamples": [
+      "Forecasters believe inflation will fall to two percent next year.",
+      "The report suggests unemployment will decrease by the end of the quarter."
+    ],
+    "sentences": [
+      {
+        "answer": "future-simple",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "Analysts",
+            "translation": {
+              "ru": "Аналитика"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "believe",
+            "translation": {
+              "ru": "верить"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "economy",
+            "translation": {
+              "ru": "экономики"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "will",
+            "role": "verb",
+            "translation": {
+              "ru": "---"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "recover",
+            "role": "verb",
+            "translation": {
+              "ru": "улавливать"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "fully",
+            "translation": {
+              "ru": "Полностью"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "within",
+            "translation": {
+              "ru": "в течение"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "two",
+            "translation": {
+              "ru": "два"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "years",
+            "translation": {
+              "ru": "годы"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "future-simple-19",
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Вопрос с 'will' о будущих планах или намерениях",
+      "en": "A question with 'will' about future plans or intentions"
+    },
+    "tags": [
+      "future-simple",
+      "sentence-analysis",
+      "question",
+      "simple",
+      "difficulty-2"
+    ],
+    "difficulty": 2,
+    "rules": {
+      "ru": "Вопрос «When will you…?» запрашивает намерение или план о конкретном будущем действии — стандартная вопросительная форма Future Simple."
+    },
+    "contextExamples": [
+      "When will she return from her business trip?",
+      "How long will it take to fix the problem?"
+    ],
+    "sentences": [
+      {
+        "answer": "future-simple",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "When",
+            "translation": {
+              "ru": "После пробуждения"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "will",
+            "role": "verb",
+            "translation": {
+              "ru": "---"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "you",
+            "translation": {
+              "ru": "вы"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "finish",
+            "translation": {
+              "ru": "закончить"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "report",
+            "translation": {
+              "ru": "отчет о проведении валидации"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "?"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "future-simple-20",
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Убеждение или уверенность в неизбежном развитии событий",
+      "en": "Belief or certainty about how events will develop"
+    },
+    "tags": [
+      "future-simple",
+      "context-clue",
+      "affirmative",
+      "simple",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«One day» указывает на неопределённое далёкое будущее — это общее убеждение без привязки к конкретным планам, классический случай предсказания с will."
+    },
+    "contextExamples": [
+      "One day scientists will find a cure for every disease.",
+      "Someday humans will live on other worlds."
+    ],
+    "sentences": [
+      {
+        "answer": "future-simple",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "One",
+            "translation": {
+              "ru": "Dne"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "day",
+            "translation": {
+              "ru": "число"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "people",
+            "translation": {
+              "ru": "человек"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "will",
+            "role": "verb",
+            "translation": {
+              "ru": "---"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "travel",
+            "role": "verb",
+            "translation": {
+              "ru": "поездка"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "to",
+            "translation": {
+              "ru": "кому"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "other",
+            "translation": {
+              "ru": "другие"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "planets",
+            "translation": {
+              "ru": "PLANETY"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "future-simple-21",
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Отрицательное предсказание или сомнение",
+      "en": "A negative prediction or doubt about the future"
+    },
+    "tags": [
+      "future-simple",
+      "sentence-analysis",
+      "negative",
+      "simple",
+      "difficulty-2"
+    ],
+    "difficulty": 2,
+    "rules": {
+      "ru": "«I don't think… will» — стандартная форма сомнения-предсказания в English; отрицание помещается в главное предложение, а will остаётся в придаточном."
+    },
+    "contextExamples": [
+      "I don't think she will agree to those conditions.",
+      "I doubt he will ever apologise."
+    ],
+    "sentences": [
+      {
+        "answer": "future-simple",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "I"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "don't",
+            "translation": {
+              "ru": "не"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "think",
+            "translation": {
+              "ru": "думать"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "they",
+            "translation": {
+              "ru": "они"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "will",
+            "role": "verb",
+            "translation": {
+              "ru": "---"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "win",
+            "role": "verb",
+            "translation": {
+              "ru": "побеждать"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "championship",
+            "translation": {
+              "ru": "чемпионат"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "this",
+            "translation": {
+              "ru": "сего"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "year",
+            "translation": {
+              "ru": "год"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "future-simple-22",
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Риторический вопрос о будущем с 'Will...?'",
+      "en": "A rhetorical question about the future with 'Will...?'"
+    },
+    "tags": [
+      "future-simple",
+      "context-clue",
+      "question",
+      "simple",
+      "difficulty-2"
+    ],
+    "difficulty": 2,
+    "rules": {
+      "ru": "«Will… ever» — риторический вопрос-предсказание об отдалённом будущем; «ever» усиливает неопределённость без привязки к плану."
+    },
+    "contextExamples": [
+      "Will humanity ever achieve world peace?",
+      "Will we ever run out of new ideas?"
+    ],
+    "sentences": [
+      {
+        "answer": "future-simple",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "Will",
+            "translation": {
+              "ru": "Воля"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "robots",
+            "translation": {
+              "ru": "роботами"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "ever",
+            "translation": {
+              "ru": "когда-нибудь"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "replace",
+            "role": "verb",
+            "translation": {
+              "ru": "Замените"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "human",
+            "translation": {
+              "ru": "человек"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "workers",
+            "translation": {
+              "ru": "рабочих"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "completely",
+            "translation": {
+              "ru": "полностью"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "?"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "future-simple-23",
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Конструкция 'There will be' для обозначения существования в будущем",
+      "en": "The 'There will be' structure for future existence"
+    },
+    "tags": [
+      "future-simple",
+      "sentence-analysis",
+      "affirmative",
+      "simple",
+      "difficulty-1"
+    ],
+    "difficulty": 1,
+    "rules": {
+      "ru": "«There will be» — стандартная конструкция Future Simple для объявления о существовании чего-либо в будущем (аналог «there is/are» для прошлого/настоящего)."
+    },
+    "contextExamples": [
+      "There will be free parking available during the event.",
+      "There will be a Q&A session at the end of the talk."
+    ],
+    "sentences": [
+      {
+        "answer": "future-simple",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "There",
+            "translation": {
+              "ru": "Ну, вот"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "will",
+            "role": "verb",
+            "translation": {
+              "ru": "---"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "be",
+            "role": "verb",
+            "translation": {
+              "ru": "переносу"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "a",
+            "translation": {
+              "ru": "а"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "short",
+            "translation": {
+              "ru": "короткий"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "break",
+            "translation": {
+              "ru": "излом"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "after",
+            "translation": {
+              "ru": "через"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "third",
+            "translation": {
+              "ru": "третий"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "presentation",
+            "translation": {
+              "ru": "предъявление"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "future-simple-24",
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Официальное объявление о будущем событии",
+      "en": "An official announcement about an upcoming event"
+    },
+    "tags": [
+      "future-simple",
+      "context-clue",
+      "affirmative",
+      "simple",
+      "difficulty-2"
+    ],
+    "difficulty": 2,
+    "rules": {
+      "ru": "Безличное объявление «the ceremony will take place» — нейтральный официальный стиль; will используется для публичных объявлений о фиксированных будущих событиях."
+    },
+    "contextExamples": [
+      "The gala dinner will take place in the main hall.",
+      "The summit will be held in Vienna next March."
+    ],
+    "sentences": [
+      {
+        "answer": "future-simple",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "The",
+            "translation": {
+              "ru": "-"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "ceremony",
+            "translation": {
+              "ru": "ЦЕРЕМОНИЯ"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "will",
+            "role": "verb",
+            "translation": {
+              "ru": "---"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "take",
+            "role": "verb",
+            "translation": {
+              "ru": "взять"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "place",
+            "role": "verb",
+            "translation": {
+              "ru": "место"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "on",
+            "translation": {
+              "ru": "горит"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "15th",
+            "translation": {
+              "ru": "15-й"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "of",
+            "translation": {
+              "ru": "коллегиальных"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "June",
+            "translation": {
+              "ru": "Июнь"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "future-simple-25",
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Надежда или ожидание положительного будущего результата",
+      "en": "Hope or expectation of a positive future outcome"
+    },
+    "tags": [
+      "future-simple",
+      "sentence-analysis",
+      "affirmative",
+      "simple",
+      "difficulty-2"
+    ],
+    "difficulty": 2,
+    "rules": {
+      "ru": "«I hope» вводит желаемое предсказание — после глаголов надежды (hope, expect, believe) в придаточном используется will."
+    },
+    "contextExamples": [
+      "I hope she will recover quickly.",
+      "We hope the weather will improve by the weekend."
+    ],
+    "sentences": [
+      {
+        "answer": "future-simple",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "I"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "hope",
+            "translation": {
+              "ru": "надеяться"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "everything",
+            "translation": {
+              "ru": "всё"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "will",
+            "role": "verb",
+            "translation": {
+              "ru": "---"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "be",
+            "role": "verb",
+            "translation": {
+              "ru": "переносу"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "fine",
+            "translation": {
+              "ru": "штраф"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "future-simple-26",
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Будущее действие в следствии текущего выбора или решения",
+      "en": "A future action as a consequence of a current choice"
+    },
+    "tags": [
+      "future-simple",
+      "context-clue",
+      "affirmative",
+      "simple",
+      "difficulty-2"
+    ],
+    "difficulty": 2,
+    "rules": {
+      "ru": "Первый кондиционал: «if + skip (Present Simple)» — условие, «will feel» — предсказуемое следствие этого выбора."
+    },
+    "contextExamples": [
+      "If you exercise regularly, you will feel much healthier.",
+      "If they invest now, they will see good returns in five years."
+    ],
+    "sentences": [
+      {
+        "answer": "future-simple",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "If",
+            "translation": {
+              "ru": "При"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "you",
+            "translation": {
+              "ru": "вы"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "skip",
+            "translation": {
+              "ru": "пропустить"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "breakfast",
+            "translation": {
+              "ru": "завтрак"
+            }
+          },
+          {
+            "type": "punct",
+            "value": ","
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "you",
+            "translation": {
+              "ru": "вы"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "will",
+            "role": "verb",
+            "translation": {
+              "ru": "---"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "feel",
+            "role": "verb",
+            "translation": {
+              "ru": "чувствовать"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "tired",
+            "translation": {
+              "ru": "уставший"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "by",
+            "translation": {
+              "ru": "от кого"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "midday",
+            "translation": {
+              "ru": "полдень"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "future-simple-27",
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Вероятное будущее с наречием 'probably' или 'certainly'",
+      "en": "A likely future with the adverb 'probably' or 'certainly'"
+    },
+    "tags": [
+      "future-simple",
+      "sentence-analysis",
+      "affirmative",
+      "simple",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«probably» — наречие вероятности, помещённое между will и основным глаголом; это предсказание на основе косвенного умозаключения, а не прямого наблюдения."
+    },
+    "contextExamples": [
+      "He will probably be late — the traffic is always bad on Mondays.",
+      "They will certainly charge more for the premium version."
+    ],
+    "sentences": [
+      {
+        "answer": "future-simple",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "She",
+            "translation": {
+              "ru": "Она"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "will",
+            "role": "verb",
+            "translation": {
+              "ru": "---"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "probably",
+            "role": "verb",
+            "translation": {
+              "ru": "вероятно"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "get",
+            "role": "verb",
+            "translation": {
+              "ru": "взять"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "job",
+            "translation": {
+              "ru": "заказ"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "punct",
+            "value": "—"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "she",
+            "translation": {
+              "ru": "она"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "was",
+            "translation": {
+              "ru": "удаляли"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "strongest",
+            "translation": {
+              "ru": "Сильнейший"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "candidate",
+            "translation": {
+              "ru": "кандидат"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "future-simple-28",
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Будущее действие в страдательном залоге",
+      "en": "A future action expressed in the passive voice"
+    },
+    "tags": [
+      "future-simple",
+      "context-clue",
+      "affirmative",
+      "simple",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«will be announced» — пассив Future Simple (will be + Past Participle); акцент на объекте действия, деятель не указан."
+    },
+    "contextExamples": [
+      "The winners will be notified by email.",
+      "The new policy will be introduced next quarter."
+    ],
+    "sentences": [
+      {
+        "answer": "future-simple",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "The",
+            "translation": {
+              "ru": "-"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "results",
+            "translation": {
+              "ru": "проектирования"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "will",
+            "role": "verb",
+            "translation": {
+              "ru": "---"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "be",
+            "role": "verb",
+            "translation": {
+              "ru": "переносу"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "announced",
+            "role": "verb",
+            "translation": {
+              "ru": "объявлено"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "at"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "end",
+            "translation": {
+              "ru": "в конце"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "of",
+            "translation": {
+              "ru": "коллегиальных"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "week",
+            "translation": {
+              "ru": "неделя"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "future-simple-29",
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Неизбежный или предопределённый будущий факт",
+      "en": "An inevitable or predetermined future fact"
+    },
+    "tags": [
+      "future-simple",
+      "sentence-analysis",
+      "affirmative",
+      "simple",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«that's a fact of life» подтверждает абсолютную неизбежность — will используется для истин о будущем, которые не зависят от воли или плана."
+    },
+    "contextExamples": [
+      "Every living creature will eventually age and change.",
+      "Stars will burn out after billions of years."
+    ],
+    "sentences": [
+      {
+        "answer": "future-simple",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "We",
+            "translation": {
+              "ru": "Перед"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "will",
+            "role": "verb",
+            "translation": {
+              "ru": "---"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "all",
+            "role": "verb",
+            "translation": {
+              "ru": "все"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "die",
+            "role": "verb",
+            "translation": {
+              "ru": "."
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "one",
+            "translation": {
+              "ru": "ОДИН"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "day",
+            "translation": {
+              "ru": "число"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "punct",
+            "value": "—"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "that's",
+            "translation": {
+              "ru": "это"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "a",
+            "translation": {
+              "ru": "а"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "fact",
+            "translation": {
+              "ru": "Факт."
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "of",
+            "translation": {
+              "ru": "коллегиальных"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "life",
+            "translation": {
+              "ru": "жизнь"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "future-simple-30",
+    "mechanism": "context",
+    "prompt": {
+      "ru": "Действие сразу после другого будущего события",
+      "en": "An action that will happen right after another future event"
+    },
+    "tags": [
+      "future-simple",
+      "context-clue",
+      "affirmative",
+      "simple",
+      "difficulty-3"
+    ],
+    "difficulty": 3,
+    "rules": {
+      "ru": "«As soon as + Present Simple» вводит временное условие будущего действия — в главной части используется will, потому что речь об обещании, выполняемом сразу после события."
+    },
+    "contextExamples": [
+      "As soon as I land, I will text you.",
+      "The moment she gets the results, she will share them with everyone."
+    ],
+    "sentences": [
+      {
+        "answer": "future-simple",
+        "tokens": [
+          {
+            "type": "word",
+            "value": "As"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "soon",
+            "translation": {
+              "ru": "скоро"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "as",
+            "translation": {
+              "ru": "ХХХ"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "match",
+            "translation": {
+              "ru": "совпадение"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "ends",
+            "translation": {
+              "ru": "концы"
+            }
+          },
+          {
+            "type": "punct",
+            "value": ","
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "I"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "will",
+            "role": "verb",
+            "translation": {
+              "ru": "---"
+            }
+          },
+          {
+            "type": "space",
+            "value": " ",
+            "role": "verb"
+          },
+          {
+            "type": "word",
+            "value": "call",
+            "role": "verb",
+            "translation": {
+              "ru": "звонок"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "you",
+            "translation": {
+              "ru": "вы"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "with",
+            "translation": {
+              "ru": "где"
+            }
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "the"
+          },
+          {
+            "type": "space",
+            "value": " "
+          },
+          {
+            "type": "word",
+            "value": "score",
+            "translation": {
+              "ru": "счёт"
+            }
+          },
+          {
+            "type": "punct",
+            "value": "."
+          }
+        ]
+      }
+    ]
   }
 ]

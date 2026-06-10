@@ -37,6 +37,28 @@
 
       <div class="hud-right">
         <app-score-bar [score]="score()" [combo]="combo()" />
+        <button
+          type="button"
+          class="btn-mode"
+          [class.is-study]="user.pauseMode()"
+          (click)="user.togglePauseMode()"
+          title="пауза перед следующим вопросом"
+        >
+          <app-icon name="clock" [size]="14" /> Пауза
+        </button>
+        <button
+          type="button"
+          class="btn-mode"
+          [class.is-study]="user.studyMode()"
+          (click)="user.toggleStudyMode()"
+          title="Toggle Study / Exam mode"
+        >
+          @if (user.studyMode()) {
+            <app-icon name="learn" [size]="14" /> Study
+          } @else {
+            <app-icon name="zap" [size]="14" stroke="none" /> Exam
+          }
+        </button>
         <button type="button" class="end" (click)="endSession()" title="End session (zero points)">
           End session
         </button>
@@ -45,18 +67,27 @@
 
     @if (question(); as q) {
       <app-question-card
-        [prompt]="q.prompt"
+        [prompt]="q.prompt.ru ?? q.prompt.en"
         [remainingMs]="remainingMs()"
         [fraction]="fraction()"
         [result]="result()"
         [revealName]="revealName()"
         [revealColor]="revealColor()"
-        [revealSentence]="result() !== 'none' ? q.sentence : null"
+        [revealSentence]="result() !== 'none' ? q.sentences[0] : null"
+        [revealExplanation]="result() !== 'none' ? (q.explanation?.ru ?? q.explanation?.en ?? null) : null"
+        [revealRules]="result() !== 'none' ? (q.rules?.ru ?? q.rules?.en ?? null) : null"
+        [revealExamples]="result() !== 'none' ? (q.contextExamples ?? null) : null"
         [gainedPoints]="gained()"
+        [autoAnnotation]="user.pauseMode()"
       />
 
       <div class="q-actions">
-        @if (result() === 'wrong' || result() === 'timeout') {
+        @if (user.pauseMode() && !user.studyMode() && result() !== 'none') {
+          <button type="button" class="btn-next-pause" (click)="onNextQuestion()">
+            Далее <app-icon name="arrow-right" [size]="15" />
+          </button>
+        }
+        @if (!user.studyMode() && (result() === 'wrong' || result() === 'timeout')) {
           @if (revealId(); as id) {
             <button type="button" class="btn-study" (click)="studyTense(id)">
               <app-icon name="learn" [size]="15" /> Study {{ revealName() }}
@@ -79,11 +110,22 @@
       [palette]="palette()"
       [columns]="4"
       [lockedIds]="lockedIds()"
+      [choices]="choices()"
       [revealId]="revealId()"
       [pickedId]="pickedId()"
       [disabled]="result() !== 'none'"
       (answer)="onAnswer($event)"
     />
+
+    @if (user.studyMode() && result() !== 'none' && revealId(); as id) {
+      <app-study-panel
+        [correctId]="id"
+        [result]="result()"
+        [pickedId]="pickedId()"
+        [explanation]="question()?.explanation"
+        (next)="onNextQuestion()"
+      />
+    }
 
     @if (toast(); as t) {
       <div class="toast"><app-icon name="zap" [size]="14" stroke="none" /> {{ t }}</div>
@@ -93,7 +135,7 @@
   @if (showReport() && question(); as q) {
     <app-report-error
       [questionId]="q.id"
-      [tenseId]="q.answer"
+      [tenseId]="q.sentences[0].answer"
       (dismiss)="showReport.set(false)"
       (sent)="onReportSent()"
     />

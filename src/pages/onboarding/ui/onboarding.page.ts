@@ -15,6 +15,7 @@ import { QuestionRepository } from '@entities/question';
 import { getTense } from '@shared/config/tenses.config';
 import { tenseColor } from '@shared/config/tense-colors';
 import type { Question, TenseId } from '@shared/types';
+import { tokenizeSentence } from '@shared/lib/tokenize';
 import { AnswerGridComponent } from '@features/answer-input';
 import { QuestionCardComponent, type ResultState } from '@widgets/question-card';
 import { ScoreBarComponent } from '@widgets/score-bar';
@@ -26,10 +27,12 @@ type OnboardingStep = 'demo' | 'game' | 'save-prompt';
 
 const DEMO_QUESTION: Question = {
   id: 'demo-1',
-  answer: 'present-simple',
-  type: 'sentence',
-  prompt: 'She always drinks tea in the morning.',
-  sentence: { pre: 'She always ', verb: 'drinks', post: ' tea in the morning.' },
+  mechanism: 'context',
+  prompt: { ru: 'She always drinks tea in the morning.', en: 'She always drinks tea in the morning.' },
+  sentences: [
+    { tokens: tokenizeSentence('She always ', 'drinks', ' tea in the morning.'), answer: 'present-simple' },
+  ],
+  tags: ['present-simple', 'affirmative', 'simple'],
   difficulty: 1,
 };
 
@@ -170,7 +173,7 @@ export class OnboardingPageComponent {
     if (!record) return;
 
     this.pickedId.set(id);
-    this.revealId.set(this.question()?.answer ?? null);
+    this.revealId.set(this.question()?.sentences[0].answer ?? null);
     if (record.correct) {
       this.result.set('correct');
       this.gained.set(record.points);
@@ -184,7 +187,7 @@ export class OnboardingPageComponent {
   private onTimeout(): void {
     if (this.result() !== 'none') return;
     this.store.timeout();
-    this.revealId.set(this.question()?.answer ?? null);
+    this.revealId.set(this.question()?.sentences[0].answer ?? null);
     this.result.set('timeout');
     this.scheduleNext(FLASH_WRONG_MS);
   }
