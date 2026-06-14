@@ -48,6 +48,12 @@ Thumbs.db
 .claude/worktrees/
 .pnpm-store/
 
+# Environment variables — secrets never committed
+.env
+.env.local
+.env.*.local
+!.env.example
+
 # Playwright
 /playwright-report/
 /test-results/
