@@ -322,7 +322,12 @@
 
 - [ ] Зарегистрироваться / подключить GitHub repo
 - [ ] Установить `@netlify/angular-runtime`
-- [ ] Создать `netlify.toml` в корне
+- [x] Создать `netlify.toml` в корне
+- [x] Добавить `angular.json` конфигурацию `netlify` (`baseHref: "/"`, `fileReplacements`)
+- [x] Добавить скрипты `build:netlify` и `set-env` в `package.json`
+- [x] Создать `src/environments/environment.ts` и `environment.prod.ts`
+- [x] Создать `scripts/set-env.js` — генерирует `environment.prod.ts` из env vars перед сборкой
+- [x] Создать `.env.example` с документацией переменных; обновить `.gitignore`
 - [ ] Обновить `.github/workflows/deploy.yml` → `netlify deploy --prod`
 - [ ] Добавить секреты: `NETLIFY_AUTH_TOKEN`, `NETLIFY_SITE_ID`
 - [ ] PR автоматически получает preview URL

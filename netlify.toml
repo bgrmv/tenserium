@@ -1,0 +1,11 @@
+[build]
+  command = "pnpm run set-env && pnpm run build:netlify"
+  publish = "dist/tenserium/browser"
+
+[build.environment]
+  NODE_VERSION = "24"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
