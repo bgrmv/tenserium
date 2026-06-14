@@ -27,10 +27,7 @@
         "tokens": [
           {
             "type": "word",
-            "value": "She",
-            "translation": {
-              "ru": "Она"
-            }
+            "value": "She"
           },
           {
             "type": "space",
@@ -39,10 +36,7 @@
           {
             "type": "word",
             "value": "has",
-            "role": "verb",
-            "translation": {
-              "ru": "будет"
-            }
+            "role": "verb"
           },
           {
             "type": "space",
@@ -52,10 +46,7 @@
           {
             "type": "word",
             "value": "been",
-            "role": "verb",
-            "translation": {
-              "ru": "был"
-            }
+            "role": "verb"
           },
           {
             "type": "space",
@@ -65,10 +56,7 @@
           {
             "type": "word",
             "value": "working",
-            "role": "verb",
-            "translation": {
-              "ru": "рабочих"
-            }
+            "role": "verb"
           },
           {
             "type": "space",
@@ -76,10 +64,7 @@
           },
           {
             "type": "word",
-            "value": "for",
-            "translation": {
-              "ru": "."
-            }
+            "value": "for"
           },
           {
             "type": "space",
@@ -87,10 +72,7 @@
           },
           {
             "type": "word",
-            "value": "three",
-            "translation": {
-              "ru": "три"
-            }
+            "value": "three"
           },
           {
             "type": "space",
@@ -98,10 +80,7 @@
           },
           {
             "type": "word",
-            "value": "hours",
-            "translation": {
-              "ru": "часы"
-            }
+            "value": "hours"
           },
           {
             "type": "punct",
@@ -139,10 +118,7 @@
         "tokens": [
           {
             "type": "word",
-            "value": "I'm",
-            "translation": {
-              "ru": "Я"
-            }
+            "value": "I'm"
           },
           {
             "type": "space",
@@ -150,10 +126,7 @@
           },
           {
             "type": "word",
-            "value": "soaked",
-            "translation": {
-              "ru": "пропитанный"
-            }
+            "value": "soaked"
           },
           {
             "type": "space",
@@ -178,10 +151,7 @@
           {
             "type": "word",
             "value": "has",
-            "role": "verb",
-            "translation": {
-              "ru": "будет"
-            }
+            "role": "verb"
           },
           {
             "type": "space",
@@ -191,10 +161,7 @@
           {
             "type": "word",
             "value": "been",
-            "role": "verb",
-            "translation": {
-              "ru": "был"
-            }
+            "role": "verb"
           },
           {
             "type": "space",
@@ -204,10 +171,7 @@
           {
             "type": "word",
             "value": "raining",
-            "role": "verb",
-            "translation": {
-              "ru": "DOZHD&apos;"
-            }
+            "role": "verb"
           },
           {
             "type": "punct",
@@ -245,10 +209,7 @@
         "tokens": [
           {
             "type": "word",
-            "value": "They",
-            "translation": {
-              "ru": "Они"
-            }
+            "value": "They"
           },
           {
             "type": "space",
@@ -256,10 +217,7 @@
           },
           {
             "type": "word",
-            "value": "look",
-            "translation": {
-              "ru": "nocmowe"
-            }
+            "value": "look"
           },
           {
             "type": "space",
@@ -267,10 +225,7 @@
           },
           {
             "type": "word",
-            "value": "tired",
-            "translation": {
-              "ru": "уставший"
-            }
+            "value": "tired"
           },
           {
             "type": "space",
@@ -278,10 +233,7 @@
           },
           {
             "type": "word",
-            "value": "because",
-            "translation": {
-              "ru": "по"
-            }
+            "value": "because"
           },
           {
             "type": "space",
@@ -289,10 +241,7 @@
           },
           {
             "type": "word",
-            "value": "they",
-            "translation": {
-              "ru": "они"
-            }
+            "value": "they"
           },
           {
             "type": "space",
@@ -301,10 +250,7 @@
           {
             "type": "word",
             "value": "have",
-            "role": "verb",
-            "translation": {
-              "ru": "быть"
-            }
+            "role": "verb"
           },
           {
             "type": "space",
@@ -314,10 +260,7 @@
           {
             "type": "word",
             "value": "been",
-            "role": "verb",
-            "translation": {
-              "ru": "был"
-            }
+            "role": "verb"
           },
           {
             "type": "space",
@@ -327,10 +270,7 @@
           {
             "type": "word",
             "value": "studying",
-            "role": "verb",
-            "translation": {
-              "ru": "изучение"
-            }
+            "role": "verb"
           },
           {
             "type": "space",
@@ -338,10 +278,7 @@
           },
           {
             "type": "word",
-            "value": "all",
-            "translation": {
-              "ru": "все"
-            }
+            "value": "all"
           },
           {
             "type": "space",
@@ -349,10 +286,7 @@
           },
           {
             "type": "word",
-            "value": "night",
-            "translation": {
-              "ru": "ночь"
-            }
+            "value": "night"
           },
           {
             "type": "punct",
@@ -399,10 +333,7 @@
           {
             "type": "word",
             "value": "have",
-            "role": "verb",
-            "translation": {
-              "ru": "быть"
-            }
+            "role": "verb"
           },
           {
             "type": "space",
@@ -412,10 +343,7 @@
           {
             "type": "word",
             "value": "been",
-            "role": "verb",
-            "translation": {
-              "ru": "был"
-            }
+            "role": "verb"
           },
           {
             "type": "space",
@@ -425,10 +353,7 @@
           {
             "type": "word",
             "value": "living",
-            "role": "verb",
-            "translation": {
-              "ru": "живой"
-            }
+            "role": "verb"
           },
           {
             "type": "space",
@@ -436,10 +361,7 @@
           },
           {
             "type": "word",
-            "value": "in",
-            "translation": {
-              "ru": "от"
-            }
+            "value": "in"
           },
           {
             "type": "space",
@@ -447,10 +369,7 @@
           },
           {
             "type": "word",
-            "value": "this",
-            "translation": {
-              "ru": "сего"
-            }
+            "value": "this"
           },
           {
             "type": "space",
@@ -458,10 +377,7 @@
           },
           {
             "type": "word",
-            "value": "house",
-            "translation": {
-              "ru": "дом"
-            }
+            "value": "house"
           },
           {
             "type": "space",
@@ -469,10 +385,7 @@
           },
           {
             "type": "word",
-            "value": "since",
-            "translation": {
-              "ru": "с"
-            }
+            "value": "since"
           },
           {
             "type": "space",
@@ -480,10 +393,7 @@
           },
           {
             "type": "word",
-            "value": "childhood",
-            "translation": {
-              "ru": "детство"
-            }
+            "value": "childhood"
           },
           {
             "type": "punct",
@@ -521,10 +431,7 @@
         "tokens": [
           {
             "type": "word",
-            "value": "He",
-            "translation": {
-              "ru": "Он,"
-            }
+            "value": "He"
           },
           {
             "type": "space",
@@ -533,10 +440,7 @@
           {
             "type": "word",
             "value": "has",
-            "role": "verb",
-            "translation": {
-              "ru": "будет"
-            }
+            "role": "verb"
           },
           {
             "type": "space",
@@ -546,10 +450,7 @@
           {
             "type": "word",
             "value": "been",
-            "role": "verb",
-            "translation": {
-              "ru": "был"
-            }
+            "role": "verb"
           },
           {
             "type": "space",
@@ -559,10 +460,7 @@
           {
             "type": "word",
             "value": "calling",
-            "role": "verb",
-            "translation": {
-              "ru": "призвание"
-            }
+            "role": "verb"
           },
           {
             "type": "space",
@@ -570,10 +468,7 @@
           },
           {
             "type": "word",
-            "value": "me",
-            "translation": {
-              "ru": "ХХХ"
-            }
+            "value": "me"
           },
           {
             "type": "space",
@@ -581,10 +476,7 @@
           },
           {
             "type": "word",
-            "value": "all",
-            "translation": {
-              "ru": "все"
-            }
+            "value": "all"
           },
           {
             "type": "space",
@@ -592,10 +484,7 @@
           },
           {
             "type": "word",
-            "value": "day",
-            "translation": {
-              "ru": "число"
-            }
+            "value": "day"
           },
           {
             "type": "punct",
@@ -633,10 +522,7 @@
         "tokens": [
           {
             "type": "word",
-            "value": "The",
-            "translation": {
-              "ru": "-"
-            }
+            "value": "The"
           },
           {
             "type": "space",
@@ -644,10 +530,7 @@
           },
           {
             "type": "word",
-            "value": "company",
-            "translation": {
-              "ru": "компании"
-            }
+            "value": "company"
           },
           {
             "type": "space",
@@ -656,10 +539,7 @@
           {
             "type": "word",
             "value": "has",
-            "role": "verb",
-            "translation": {
-              "ru": "будет"
-            }
+            "role": "verb"
           },
           {
             "type": "space",
@@ -669,10 +549,7 @@
           {
             "type": "word",
             "value": "been",
-            "role": "verb",
-            "translation": {
-              "ru": "был"
-            }
+            "role": "verb"
           },
           {
             "type": "space",
@@ -682,10 +559,7 @@
           {
             "type": "word",
             "value": "growing",
-            "role": "verb",
-            "translation": {
-              "ru": "на данный момент количество (apartments/share houses) составляет (14/21), но будет увеличиваться"
-            }
+            "role": "verb"
           },
           {
             "type": "space",
@@ -693,10 +567,7 @@
           },
           {
             "type": "word",
-            "value": "steadily",
-            "translation": {
-              "ru": "Неуклонно"
-            }
+            "value": "steadily"
           },
           {
             "type": "space",
@@ -704,10 +575,7 @@
           },
           {
             "type": "word",
-            "value": "for",
-            "translation": {
-              "ru": "."
-            }
+            "value": "for"
           },
           {
             "type": "space",
@@ -715,10 +583,7 @@
           },
           {
             "type": "word",
-            "value": "years",
-            "translation": {
-              "ru": "годы"
-            }
+            "value": "years"
           },
           {
             "type": "punct",
@@ -756,10 +621,7 @@
         "tokens": [
           {
             "type": "word",
-            "value": "How",
-            "translation": {
-              "ru": "Как"
-            }
+            "value": "How"
           },
           {
             "type": "space",
@@ -767,10 +629,7 @@
           },
           {
             "type": "word",
-            "value": "long",
-            "translation": {
-              "ru": "длинный"
-            }
+            "value": "long"
           },
           {
             "type": "space",
@@ -779,10 +638,7 @@
           {
             "type": "word",
             "value": "have",
-            "role": "verb",
-            "translation": {
-              "ru": "быть"
-            }
+            "role": "verb"
           },
           {
             "type": "space",
@@ -792,10 +648,7 @@
           {
             "type": "word",
             "value": "you",
-            "role": "verb",
-            "translation": {
-              "ru": "вы"
-            }
+            "role": "verb"
           },
           {
             "type": "space",
@@ -805,10 +658,7 @@
           {
             "type": "word",
             "value": "been",
-            "role": "verb",
-            "translation": {
-              "ru": "был"
-            }
+            "role": "verb"
           },
           {
             "type": "space",
@@ -818,10 +668,7 @@
           {
             "type": "word",
             "value": "waiting",
-            "role": "verb",
-            "translation": {
-              "ru": "ожидание"
-            }
+            "role": "verb"
           },
           {
             "type": "punct",
@@ -859,10 +706,7 @@
         "tokens": [
           {
             "type": "word",
-            "value": "His",
-            "translation": {
-              "ru": "Хис"
-            }
+            "value": "His"
           },
           {
             "type": "space",
@@ -870,10 +714,7 @@
           },
           {
             "type": "word",
-            "value": "eyes",
-            "translation": {
-              "ru": "глаза"
-            }
+            "value": "eyes"
           },
           {
             "type": "space",
@@ -881,10 +722,7 @@
           },
           {
             "type": "word",
-            "value": "are",
-            "translation": {
-              "ru": "заднем окне включены"
-            }
+            "value": "are"
           },
           {
             "type": "space",
@@ -892,10 +730,7 @@
           },
           {
             "type": "word",
-            "value": "red",
-            "translation": {
-              "ru": "красный"
-            }
+            "value": "red"
           },
           {
             "type": "space",
@@ -903,10 +738,7 @@
           },
           {
             "type": "word",
-            "value": "because",
-            "translation": {
-              "ru": "по"
-            }
+            "value": "because"
           },
           {
             "type": "space",
@@ -923,10 +755,7 @@
           {
             "type": "word",
             "value": "has",
-            "role": "verb",
-            "translation": {
-              "ru": "будет"
-            }
+            "role": "verb"
           },
           {
             "type": "space",
@@ -936,10 +765,7 @@
           {
             "type": "word",
             "value": "been",
-            "role": "verb",
-            "translation": {
-              "ru": "был"
-            }
+            "role": "verb"
           },
           {
             "type": "space",
@@ -949,10 +775,7 @@
           {
             "type": "word",
             "value": "staring",
-            "role": "verb",
-            "translation": {
-              "ru": "Взгляд"
-            }
+            "role": "verb"
           },
           {
             "type": "space",
@@ -968,10 +791,7 @@
           },
           {
             "type": "word",
-            "value": "a",
-            "translation": {
-              "ru": "а"
-            }
+            "value": "a"
           },
           {
             "type": "space",
@@ -979,10 +799,7 @@
           },
           {
             "type": "word",
-            "value": "screen",
-            "translation": {
-              "ru": "экран"
-            }
+            "value": "screen"
           },
           {
             "type": "space",
@@ -990,10 +807,7 @@
           },
           {
             "type": "word",
-            "value": "all",
-            "translation": {
-              "ru": "все"
-            }
+            "value": "all"
           },
           {
             "type": "space",
@@ -1001,10 +815,7 @@
           },
           {
             "type": "word",
-            "value": "day",
-            "translation": {
-              "ru": "число"
-            }
+            "value": "day"
           },
           {
             "type": "punct",
@@ -1042,10 +853,7 @@
         "tokens": [
           {
             "type": "word",
-            "value": "For",
-            "translation": {
-              "ru": "От"
-            }
+            "value": "For"
           },
           {
             "type": "space",
@@ -1061,10 +869,7 @@
           },
           {
             "type": "word",
-            "value": "past",
-            "translation": {
-              "ru": "прошедший "
-            }
+            "value": "past"
           },
           {
             "type": "space",
@@ -1072,10 +877,7 @@
           },
           {
             "type": "word",
-            "value": "week",
-            "translation": {
-              "ru": "неделя"
-            }
+            "value": "week"
           },
           {
             "type": "punct",
@@ -1087,10 +889,7 @@
           },
           {
             "type": "word",
-            "value": "she",
-            "translation": {
-              "ru": "она"
-            }
+            "value": "she"
           },
           {
             "type": "space",
@@ -1099,10 +898,7 @@
           {
             "type": "word",
             "value": "has",
-            "role": "verb",
-            "translation": {
-              "ru": "будет"
-            }
+            "role": "verb"
           },
           {
             "type": "space",
@@ -1112,10 +908,7 @@
           {
             "type": "word",
             "value": "been",
-            "role": "verb",
-            "translation": {
-              "ru": "был"
-            }
+            "role": "verb"
           },
           {
             "type": "space",
@@ -1125,10 +918,7 @@
           {
             "type": "word",
             "value": "learning",
-            "role": "verb",
-            "translation": {
-              "ru": "обучение"
-            }
+            "role": "verb"
           },
           {
             "type": "space",
@@ -1136,10 +926,7 @@
           },
           {
             "type": "word",
-            "value": "to",
-            "translation": {
-              "ru": "кому"
-            }
+            "value": "to"
           },
           {
             "type": "space",
@@ -1147,10 +934,7 @@
           },
           {
             "type": "word",
-            "value": "drive",
-            "translation": {
-              "ru": "гидравлический"
-            }
+            "value": "drive"
           },
           {
             "type": "punct",
@@ -1188,10 +972,7 @@
         "tokens": [
           {
             "type": "word",
-            "value": "You",
-            "translation": {
-              "ru": "Вы"
-            }
+            "value": "You"
           },
           {
             "type": "space",
@@ -1200,10 +981,7 @@
           {
             "type": "word",
             "value": "have",
-            "role": "verb",
-            "translation": {
-              "ru": "быть"
-            }
+            "role": "verb"
           },
           {
             "type": "space",
@@ -1213,10 +991,7 @@
           {
             "type": "word",
             "value": "been",
-            "role": "verb",
-            "translation": {
-              "ru": "был"
-            }
+            "role": "verb"
           },
           {
             "type": "space",
@@ -1226,10 +1001,7 @@
           {
             "type": "word",
             "value": "forgetting",
-            "role": "verb",
-            "translation": {
-              "ru": "Забывчивость"
-            }
+            "role": "verb"
           },
           {
             "type": "space",
@@ -1237,10 +1009,7 @@
           },
           {
             "type": "word",
-            "value": "your",
-            "translation": {
-              "ru": "вращаются"
-            }
+            "value": "your"
           },
           {
             "type": "space",
@@ -1248,10 +1017,7 @@
           },
           {
             "type": "word",
-            "value": "homework",
-            "translation": {
-              "ru": "домашняя работа"
-            }
+            "value": "homework"
           },
           {
             "type": "space",
@@ -1259,10 +1025,7 @@
           },
           {
             "type": "word",
-            "value": "every",
-            "translation": {
-              "ru": "каждый"
-            }
+            "value": "every"
           },
           {
             "type": "space",
@@ -1270,10 +1033,7 @@
           },
           {
             "type": "word",
-            "value": "single",
-            "translation": {
-              "ru": "одинарная"
-            }
+            "value": "single"
           },
           {
             "type": "space",
@@ -1281,10 +1041,7 @@
           },
           {
             "type": "word",
-            "value": "day",
-            "translation": {
-              "ru": "число"
-            }
+            "value": "day"
           },
           {
             "type": "space",
@@ -1292,10 +1049,7 @@
           },
           {
             "type": "word",
-            "value": "this",
-            "translation": {
-              "ru": "сего"
-            }
+            "value": "this"
           },
           {
             "type": "space",
@@ -1303,10 +1057,7 @@
           },
           {
             "type": "word",
-            "value": "week",
-            "translation": {
-              "ru": "неделя"
-            }
+            "value": "week"
           },
           {
             "type": "punct",
@@ -1353,10 +1104,7 @@
           {
             "type": "word",
             "value": "have",
-            "role": "verb",
-            "translation": {
-              "ru": "быть"
-            }
+            "role": "verb"
           },
           {
             "type": "space",
@@ -1366,10 +1114,7 @@
           {
             "type": "word",
             "value": "been",
-            "role": "verb",
-            "translation": {
-              "ru": "был"
-            }
+            "role": "verb"
           },
           {
             "type": "space",
@@ -1379,10 +1124,7 @@
           {
             "type": "word",
             "value": "trying",
-            "role": "verb",
-            "translation": {
-              "ru": "пробуя"
-            }
+            "role": "verb"
           },
           {
             "type": "space",
@@ -1390,10 +1132,7 @@
           },
           {
             "type": "word",
-            "value": "to",
-            "translation": {
-              "ru": "кому"
-            }
+            "value": "to"
           },
           {
             "type": "space",
@@ -1401,10 +1140,7 @@
           },
           {
             "type": "word",
-            "value": "fix",
-            "translation": {
-              "ru": "чинить"
-            }
+            "value": "fix"
           },
           {
             "type": "space",
@@ -1412,10 +1148,7 @@
           },
           {
             "type": "word",
-            "value": "this",
-            "translation": {
-              "ru": "сего"
-            }
+            "value": "this"
           },
           {
             "type": "space",
@@ -1423,10 +1156,7 @@
           },
           {
             "type": "word",
-            "value": "bug",
-            "translation": {
-              "ru": "жук"
-            }
+            "value": "bug"
           },
           {
             "type": "space",
@@ -1434,10 +1164,7 @@
           },
           {
             "type": "word",
-            "value": "for",
-            "translation": {
-              "ru": "."
-            }
+            "value": "for"
           },
           {
             "type": "space",
@@ -1445,10 +1172,7 @@
           },
           {
             "type": "word",
-            "value": "hours",
-            "translation": {
-              "ru": "часы"
-            }
+            "value": "hours"
           },
           {
             "type": "punct",
@@ -1486,10 +1210,7 @@
         "tokens": [
           {
             "type": "word",
-            "value": "They",
-            "translation": {
-              "ru": "Они"
-            }
+            "value": "They"
           },
           {
             "type": "space",
@@ -1498,10 +1219,7 @@
           {
             "type": "word",
             "value": "have",
-            "role": "verb",
-            "translation": {
-              "ru": "быть"
-            }
+            "role": "verb"
           },
           {
             "type": "space",
@@ -1511,10 +1229,7 @@
           {
             "type": "word",
             "value": "been",
-            "role": "verb",
-            "translation": {
-              "ru": "был"
-            }
+            "role": "verb"
           },
           {
             "type": "space",
@@ -1524,10 +1239,7 @@
           {
             "type": "word",
             "value": "arguing",
-            "role": "verb",
-            "translation": {
-              "ru": "спор"
-            }
+            "role": "verb"
           },
           {
             "type": "space",
@@ -1535,10 +1247,7 @@
           },
           {
             "type": "word",
-            "value": "since",
-            "translation": {
-              "ru": "с"
-            }
+            "value": "since"
           },
           {
             "type": "space",
@@ -1546,10 +1255,7 @@
           },
           {
             "type": "word",
-            "value": "this",
-            "translation": {
-              "ru": "сего"
-            }
+            "value": "this"
           },
           {
             "type": "space",
@@ -1557,10 +1263,7 @@
           },
           {
             "type": "word",
-            "value": "morning",
-            "translation": {
-              "ru": "утро"
-            }
+            "value": "morning"
           },
           {
             "type": "punct",
@@ -1598,10 +1301,7 @@
         "tokens": [
           {
             "type": "word",
-            "value": "The",
-            "translation": {
-              "ru": "-"
-            }
+            "value": "The"
           },
           {
             "type": "space",
@@ -1609,10 +1309,7 @@
           },
           {
             "type": "word",
-            "value": "climate",
-            "translation": {
-              "ru": "климат"
-            }
+            "value": "climate"
           },
           {
             "type": "space",
@@ -1621,10 +1318,7 @@
           {
             "type": "word",
             "value": "has",
-            "role": "verb",
-            "translation": {
-              "ru": "будет"
-            }
+            "role": "verb"
           },
           {
             "type": "space",
@@ -1634,10 +1328,7 @@
           {
             "type": "word",
             "value": "been",
-            "role": "verb",
-            "translation": {
-              "ru": "был"
-            }
+            "role": "verb"
           },
           {
             "type": "space",
@@ -1647,10 +1338,7 @@
           {
             "type": "word",
             "value": "warming",
-            "role": "verb",
-            "translation": {
-              "ru": "Предупреждение"
-            }
+            "role": "verb"
           },
           {
             "type": "space",
@@ -1674,10 +1362,7 @@
           },
           {
             "type": "word",
-            "value": "alarming",
-            "translation": {
-              "ru": "Сигнализации"
-            }
+            "value": "alarming"
           },
           {
             "type": "space",
@@ -1685,10 +1370,7 @@
           },
           {
             "type": "word",
-            "value": "rate",
-            "translation": {
-              "ru": "вознаграждения"
-            }
+            "value": "rate"
           },
           {
             "type": "punct",
@@ -1726,10 +1408,7 @@
         "tokens": [
           {
             "type": "word",
-            "value": "She",
-            "translation": {
-              "ru": "Она"
-            }
+            "value": "She"
           },
           {
             "type": "space",
@@ -1737,10 +1416,7 @@
           },
           {
             "type": "word",
-            "value": "smells",
-            "translation": {
-              "ru": "запахи"
-            }
+            "value": "smells"
           },
           {
             "type": "space",
@@ -1748,10 +1424,7 @@
           },
           {
             "type": "word",
-            "value": "of",
-            "translation": {
-              "ru": "коллегиальных"
-            }
+            "value": "of"
           },
           {
             "type": "space",
@@ -1759,10 +1432,7 @@
           },
           {
             "type": "word",
-            "value": "paint",
-            "translation": {
-              "ru": "рисовать"
-            }
+            "value": "paint"
           },
           {
             "type": "space",
@@ -1770,10 +1440,7 @@
           },
           {
             "type": "word",
-            "value": "because",
-            "translation": {
-              "ru": "по"
-            }
+            "value": "because"
           },
           {
             "type": "space",
@@ -1781,10 +1448,7 @@
           },
           {
             "type": "word",
-            "value": "she",
-            "translation": {
-              "ru": "она"
-            }
+            "value": "she"
           },
           {
             "type": "space",
@@ -1793,10 +1457,7 @@
           {
             "type": "word",
             "value": "has",
-            "role": "verb",
-            "translation": {
-              "ru": "будет"
-            }
+            "role": "verb"
           },
           {
             "type": "space",
@@ -1806,10 +1467,7 @@
           {
             "type": "word",
             "value": "been",
-            "role": "verb",
-            "translation": {
-              "ru": "был"
-            }
+            "role": "verb"
           },
           {
             "type": "space",
@@ -1819,10 +1477,7 @@
           {
             "type": "word",
             "value": "decorating",
-            "role": "verb",
-            "translation": {
-              "ru": "Декорирование дома"
-            }
+            "role": "verb"
           },
           {
             "type": "space",
@@ -1830,10 +1485,7 @@
           },
           {
             "type": "word",
-            "value": "her",
-            "translation": {
-              "ru": "ей"
-            }
+            "value": "her"
           },
           {
             "type": "space",
@@ -1841,10 +1493,7 @@
           },
           {
             "type": "word",
-            "value": "flat",
-            "translation": {
-              "ru": "плоский"
-            }
+            "value": "flat"
           },
           {
             "type": "punct",
@@ -1882,10 +1531,7 @@
         "tokens": [
           {
             "type": "word",
-            "value": "He",
-            "translation": {
-              "ru": "Он,"
-            }
+            "value": "He"
           },
           {
             "type": "space",
@@ -1894,10 +1540,7 @@
           {
             "type": "word",
             "value": "has",
-            "role": "verb",
-            "translation": {
-              "ru": "будет"
-            }
+            "role": "verb"
           },
           {
             "type": "space",
@@ -1907,10 +1550,7 @@
           {
             "type": "word",
             "value": "been",
-            "role": "verb",
-            "translation": {
-              "ru": "был"
-            }
+            "role": "verb"
           },
           {
             "type": "space",
@@ -1920,10 +1560,7 @@
           {
             "type": "word",
             "value": "writing",
-            "role": "verb",
-            "translation": {
-              "ru": "письмо"
-            }
+            "role": "verb"
           },
           {
             "type": "space",
@@ -1931,10 +1568,7 @@
           },
           {
             "type": "word",
-            "value": "his",
-            "translation": {
-              "ru": "ХХХ"
-            }
+            "value": "his"
           },
           {
             "type": "space",
@@ -1942,10 +1576,7 @@
           },
           {
             "type": "word",
-            "value": "memoirs",
-            "translation": {
-              "ru": "воспоминаний. "
-            }
+            "value": "memoirs"
           },
           {
             "type": "space",
@@ -1953,10 +1584,7 @@
           },
           {
             "type": "word",
-            "value": "for",
-            "translation": {
-              "ru": "."
-            }
+            "value": "for"
           },
           {
             "type": "space",
@@ -1972,10 +1600,7 @@
           },
           {
             "type": "word",
-            "value": "past",
-            "translation": {
-              "ru": "прошедший "
-            }
+            "value": "past"
           },
           {
             "type": "space",
@@ -1983,10 +1608,7 @@
           },
           {
             "type": "word",
-            "value": "two",
-            "translation": {
-              "ru": "два"
-            }
+            "value": "two"
           },
           {
             "type": "space",
@@ -1994,10 +1616,7 @@
           },
           {
             "type": "word",
-            "value": "years",
-            "translation": {
-              "ru": "годы"
-            }
+            "value": "years"
           },
           {
             "type": "punct",
@@ -2035,10 +1654,7 @@
         "tokens": [
           {
             "type": "word",
-            "value": "He",
-            "translation": {
-              "ru": "Он,"
-            }
+            "value": "He"
           },
           {
             "type": "space",
@@ -2047,10 +1663,7 @@
           {
             "type": "word",
             "value": "hasn't",
-            "role": "verb",
-            "translation": {
-              "ru": "не имеет"
-            }
+            "role": "verb"
           },
           {
             "type": "space",
@@ -2060,10 +1673,7 @@
           {
             "type": "word",
             "value": "been",
-            "role": "verb",
-            "translation": {
-              "ru": "был"
-            }
+            "role": "verb"
           },
           {
             "type": "space",
@@ -2073,10 +1683,7 @@
           {
             "type": "word",
             "value": "sleeping",
-            "role": "verb",
-            "translation": {
-              "ru": "СОН"
-            }
+            "role": "verb"
           },
           {
             "type": "space",
@@ -2084,10 +1691,7 @@
           },
           {
             "type": "word",
-            "value": "well",
-            "translation": {
-              "ru": "хорошо"
-            }
+            "value": "well"
           },
           {
             "type": "space",
@@ -2095,10 +1699,7 @@
           },
           {
             "type": "word",
-            "value": "this",
-            "translation": {
-              "ru": "сего"
-            }
+            "value": "this"
           },
           {
             "type": "space",
@@ -2106,10 +1707,7 @@
           },
           {
             "type": "word",
-            "value": "week",
-            "translation": {
-              "ru": "неделя"
-            }
+            "value": "week"
           },
           {
             "type": "space",
@@ -2133,10 +1731,7 @@
           },
           {
             "type": "word",
-            "value": "looks",
-            "translation": {
-              "ru": "выглядит"
-            }
+            "value": "looks"
           },
           {
             "type": "space",
@@ -2144,10 +1739,7 @@
           },
           {
             "type": "word",
-            "value": "terrible",
-            "translation": {
-              "ru": "ужасный"
-            }
+            "value": "terrible"
           },
           {
             "type": "punct",
@@ -2185,10 +1777,7 @@
         "tokens": [
           {
             "type": "word",
-            "value": "The",
-            "translation": {
-              "ru": "-"
-            }
+            "value": "The"
           },
           {
             "type": "space",
@@ -2196,10 +1785,7 @@
           },
           {
             "type": "word",
-            "value": "kitchen",
-            "translation": {
-              "ru": "кухня"
-            }
+            "value": "kitchen"
           },
           {
             "type": "space",
@@ -2207,10 +1793,7 @@
           },
           {
             "type": "word",
-            "value": "smells",
-            "translation": {
-              "ru": "запахи"
-            }
+            "value": "smells"
           },
           {
             "type": "space",
@@ -2218,10 +1801,7 @@
           },
           {
             "type": "word",
-            "value": "of",
-            "translation": {
-              "ru": "коллегиальных"
-            }
+            "value": "of"
           },
           {
             "type": "space",
@@ -2229,10 +1809,7 @@
           },
           {
             "type": "word",
-            "value": "garlic",
-            "translation": {
-              "ru": "чеснок;"
-            }
+            "value": "garlic"
           },
           {
             "type": "space",
@@ -2248,10 +1825,7 @@
           },
           {
             "type": "word",
-            "value": "she",
-            "translation": {
-              "ru": "она"
-            }
+            "value": "she"
           },
           {
             "type": "space",
@@ -2260,10 +1834,7 @@
           {
             "type": "word",
             "value": "has",
-            "role": "verb",
-            "translation": {
-              "ru": "будет"
-            }
+            "role": "verb"
           },
           {
             "type": "space",
@@ -2273,10 +1844,7 @@
           {
             "type": "word",
             "value": "been",
-            "role": "verb",
-            "translation": {
-              "ru": "был"
-            }
+            "role": "verb"
           },
           {
             "type": "space",
@@ -2286,10 +1854,7 @@
           {
             "type": "word",
             "value": "cooking",
-            "role": "verb",
-            "translation": {
-              "ru": "готовка"
-            }
+            "role": "verb"
           },
           {
             "type": "space",
@@ -2297,10 +1862,7 @@
           },
           {
             "type": "word",
-            "value": "all",
-            "translation": {
-              "ru": "все"
-            }
+            "value": "all"
           },
           {
             "type": "space",
@@ -2308,10 +1870,7 @@
           },
           {
             "type": "word",
-            "value": "afternoon",
-            "translation": {
-              "ru": "день"
-            }
+            "value": "afternoon"
           },
           {
             "type": "punct",
@@ -2349,10 +1908,7 @@
         "tokens": [
           {
             "type": "word",
-            "value": "The",
-            "translation": {
-              "ru": "-"
-            }
+            "value": "The"
           },
           {
             "type": "space",
@@ -2360,10 +1916,7 @@
           },
           {
             "type": "word",
-            "value": "two",
-            "translation": {
-              "ru": "два"
-            }
+            "value": "two"
           },
           {
             "type": "space",
@@ -2371,10 +1924,7 @@
           },
           {
             "type": "word",
-            "value": "sides",
-            "translation": {
-              "ru": "Стороны"
-            }
+            "value": "sides"
           },
           {
             "type": "space",
@@ -2383,10 +1933,7 @@
           {
             "type": "word",
             "value": "have",
-            "role": "verb",
-            "translation": {
-              "ru": "быть"
-            }
+            "role": "verb"
           },
           {
             "type": "space",
@@ -2396,10 +1943,7 @@
           {
             "type": "word",
             "value": "been",
-            "role": "verb",
-            "translation": {
-              "ru": "был"
-            }
+            "role": "verb"
           },
           {
             "type": "space",
@@ -2409,10 +1953,7 @@
           {
             "type": "word",
             "value": "talking",
-            "role": "verb",
-            "translation": {
-              "ru": "разговор"
-            }
+            "role": "verb"
           },
           {
             "type": "space",
@@ -2420,10 +1961,7 @@
           },
           {
             "type": "word",
-            "value": "for",
-            "translation": {
-              "ru": "."
-            }
+            "value": "for"
           },
           {
             "type": "space",
@@ -2431,10 +1969,7 @@
           },
           {
             "type": "word",
-            "value": "months",
-            "translation": {
-              "ru": "месяца"
-            }
+            "value": "months"
           },
           {
             "type": "space",
@@ -2442,10 +1977,7 @@
           },
           {
             "type": "word",
-            "value": "without",
-            "translation": {
-              "ru": "без"
-            }
+            "value": "without"
           },
           {
             "type": "space",
@@ -2453,10 +1985,7 @@
           },
           {
             "type": "word",
-            "value": "reaching",
-            "translation": {
-              "ru": "вплоть до"
-            }
+            "value": "reaching"
           },
           {
             "type": "space",
@@ -2472,10 +2001,7 @@
           },
           {
             "type": "word",
-            "value": "agreement",
-            "translation": {
-              "ru": "договора"
-            }
+            "value": "agreement"
           },
           {
             "type": "punct",
@@ -2513,10 +2039,7 @@
         "tokens": [
           {
             "type": "word",
-            "value": "Our",
-            "translation": {
-              "ru": "В компании, "
-            }
+            "value": "Our"
           },
           {
             "type": "space",
@@ -2524,10 +2047,7 @@
           },
           {
             "type": "word",
-            "value": "team",
-            "translation": {
-              "ru": "команда"
-            }
+            "value": "team"
           },
           {
             "type": "space",
@@ -2536,10 +2056,7 @@
           {
             "type": "word",
             "value": "has",
-            "role": "verb",
-            "translation": {
-              "ru": "будет"
-            }
+            "role": "verb"
           },
           {
             "type": "space",
@@ -2549,10 +2066,7 @@
           {
             "type": "word",
             "value": "been",
-            "role": "verb",
-            "translation": {
-              "ru": "был"
-            }
+            "role": "verb"
           },
           {
             "type": "space",
@@ -2562,10 +2076,7 @@
           {
             "type": "word",
             "value": "developing",
-            "role": "verb",
-            "translation": {
-              "ru": "В развитии"
-            }
+            "role": "verb"
           },
           {
             "type": "space",
@@ -2573,10 +2084,7 @@
           },
           {
             "type": "word",
-            "value": "this",
-            "translation": {
-              "ru": "сего"
-            }
+            "value": "this"
           },
           {
             "type": "space",
@@ -2584,10 +2092,7 @@
           },
           {
             "type": "word",
-            "value": "feature",
-            "translation": {
-              "ru": "blog"
-            }
+            "value": "feature"
           },
           {
             "type": "space",
@@ -2595,10 +2100,7 @@
           },
           {
             "type": "word",
-            "value": "for",
-            "translation": {
-              "ru": "."
-            }
+            "value": "for"
           },
           {
             "type": "space",
@@ -2614,10 +2116,7 @@
           },
           {
             "type": "word",
-            "value": "last",
-            "translation": {
-              "ru": "последний"
-            }
+            "value": "last"
           },
           {
             "type": "space",
@@ -2625,10 +2124,7 @@
           },
           {
             "type": "word",
-            "value": "three",
-            "translation": {
-              "ru": "три"
-            }
+            "value": "three"
           },
           {
             "type": "space",
@@ -2636,10 +2132,7 @@
           },
           {
             "type": "word",
-            "value": "sprints",
-            "translation": {
-              "ru": "Спринт"
-            }
+            "value": "sprints"
           },
           {
             "type": "punct",
@@ -2677,10 +2170,7 @@
         "tokens": [
           {
             "type": "word",
-            "value": "How",
-            "translation": {
-              "ru": "Как"
-            }
+            "value": "How"
           },
           {
             "type": "space",
@@ -2688,10 +2178,7 @@
           },
           {
             "type": "word",
-            "value": "long",
-            "translation": {
-              "ru": "длинный"
-            }
+            "value": "long"
           },
           {
             "type": "space",
@@ -2700,10 +2187,7 @@
           {
             "type": "word",
             "value": "has",
-            "role": "verb",
-            "translation": {
-              "ru": "будет"
-            }
+            "role": "verb"
           },
           {
             "type": "space",
@@ -2713,10 +2197,7 @@
           {
             "type": "word",
             "value": "she",
-            "role": "verb",
-            "translation": {
-              "ru": "она"
-            }
+            "role": "verb"
           },
           {
             "type": "space",
@@ -2726,10 +2207,7 @@
           {
             "type": "word",
             "value": "been",
-            "role": "verb",
-            "translation": {
-              "ru": "был"
-            }
+            "role": "verb"
           },
           {
             "type": "space",
@@ -2739,10 +2217,7 @@
           {
             "type": "word",
             "value": "learning",
-            "role": "verb",
-            "translation": {
-              "ru": "обучение"
-            }
+            "role": "verb"
           },
           {
             "type": "space",
@@ -2788,10 +2263,7 @@
         "tokens": [
           {
             "type": "word",
-            "value": "The",
-            "translation": {
-              "ru": "-"
-            }
+            "value": "The"
           },
           {
             "type": "space",
@@ -2799,10 +2271,7 @@
           },
           {
             "type": "word",
-            "value": "doctor",
-            "translation": {
-              "ru": "врач"
-            }
+            "value": "doctor"
           },
           {
             "type": "space",
@@ -2810,10 +2279,7 @@
           },
           {
             "type": "word",
-            "value": "says",
-            "translation": {
-              "ru": "сообщает"
-            }
+            "value": "says"
           },
           {
             "type": "space",
@@ -2821,10 +2287,7 @@
           },
           {
             "type": "word",
-            "value": "she",
-            "translation": {
-              "ru": "она"
-            }
+            "value": "she"
           },
           {
             "type": "space",
@@ -2833,10 +2296,7 @@
           {
             "type": "word",
             "value": "has",
-            "role": "verb",
-            "translation": {
-              "ru": "будет"
-            }
+            "role": "verb"
           },
           {
             "type": "space",
@@ -2846,10 +2306,7 @@
           {
             "type": "word",
             "value": "been",
-            "role": "verb",
-            "translation": {
-              "ru": "был"
-            }
+            "role": "verb"
           },
           {
             "type": "space",
@@ -2859,10 +2316,7 @@
           {
             "type": "word",
             "value": "overworking",
-            "role": "verb",
-            "translation": {
-              "ru": "трудоголизма."
-            }
+            "role": "verb"
           },
           {
             "type": "space",
@@ -2870,10 +2324,7 @@
           },
           {
             "type": "word",
-            "value": "and",
-            "translation": {
-              "ru": "и"
-            }
+            "value": "and"
           },
           {
             "type": "space",
@@ -2881,10 +2332,7 @@
           },
           {
             "type": "word",
-            "value": "needs",
-            "translation": {
-              "ru": "заказчика"
-            }
+            "value": "needs"
           },
           {
             "type": "space",
@@ -2892,10 +2340,7 @@
           },
           {
             "type": "word",
-            "value": "rest",
-            "translation": {
-              "ru": "отдых"
-            }
+            "value": "rest"
           },
           {
             "type": "punct",
@@ -2941,10 +2386,7 @@
           },
           {
             "type": "word",
-            "value": "feel",
-            "translation": {
-              "ru": "чувствовать"
-            }
+            "value": "feel"
           },
           {
             "type": "space",
@@ -2952,10 +2394,7 @@
           },
           {
             "type": "word",
-            "value": "completely",
-            "translation": {
-              "ru": "полностью"
-            }
+            "value": "completely"
           },
           {
             "type": "space",
@@ -2963,10 +2402,7 @@
           },
           {
             "type": "word",
-            "value": "drained",
-            "translation": {
-              "ru": "истощен"
-            }
+            "value": "drained"
           },
           {
             "type": "space",
@@ -2991,10 +2427,7 @@
           {
             "type": "word",
             "value": "have",
-            "role": "verb",
-            "translation": {
-              "ru": "быть"
-            }
+            "role": "verb"
           },
           {
             "type": "space",
@@ -3004,10 +2437,7 @@
           {
             "type": "word",
             "value": "been",
-            "role": "verb",
-            "translation": {
-              "ru": "был"
-            }
+            "role": "verb"
           },
           {
             "type": "space",
@@ -3017,10 +2447,7 @@
           {
             "type": "word",
             "value": "dealing",
-            "role": "verb",
-            "translation": {
-              "ru": "Любая финансовая или кредитная операция => сделки"
-            }
+            "role": "verb"
           },
           {
             "type": "space",
@@ -3030,10 +2457,7 @@
           {
             "type": "word",
             "value": "with",
-            "role": "verb",
-            "translation": {
-              "ru": "где"
-            }
+            "role": "verb"
           },
           {
             "type": "space",
@@ -3041,10 +2465,7 @@
           },
           {
             "type": "word",
-            "value": "complaints",
-            "translation": {
-              "ru": "жалоб"
-            }
+            "value": "complaints"
           },
           {
             "type": "space",
@@ -3052,10 +2473,7 @@
           },
           {
             "type": "word",
-            "value": "all",
-            "translation": {
-              "ru": "все"
-            }
+            "value": "all"
           },
           {
             "type": "space",
@@ -3063,10 +2481,7 @@
           },
           {
             "type": "word",
-            "value": "day",
-            "translation": {
-              "ru": "число"
-            }
+            "value": "day"
           },
           {
             "type": "punct",
@@ -3104,10 +2519,7 @@
         "tokens": [
           {
             "type": "word",
-            "value": "She",
-            "translation": {
-              "ru": "Она"
-            }
+            "value": "She"
           },
           {
             "type": "space",
@@ -3116,10 +2528,7 @@
           {
             "type": "word",
             "value": "has",
-            "role": "verb",
-            "translation": {
-              "ru": "будет"
-            }
+            "role": "verb"
           },
           {
             "type": "space",
@@ -3129,10 +2538,7 @@
           {
             "type": "word",
             "value": "been",
-            "role": "verb",
-            "translation": {
-              "ru": "был"
-            }
+            "role": "verb"
           },
           {
             "type": "space",
@@ -3142,10 +2548,7 @@
           {
             "type": "word",
             "value": "practising",
-            "role": "verb",
-            "translation": {
-              "ru": "Практика"
-            }
+            "role": "verb"
           },
           {
             "type": "space",
@@ -3161,10 +2564,7 @@
           },
           {
             "type": "word",
-            "value": "piano",
-            "translation": {
-              "ru": "пианино"
-            }
+            "value": "piano"
           },
           {
             "type": "space",
@@ -3172,10 +2572,7 @@
           },
           {
             "type": "word",
-            "value": "eight",
-            "translation": {
-              "ru": "восемь"
-            }
+            "value": "eight"
           },
           {
             "type": "space",
@@ -3183,10 +2580,7 @@
           },
           {
             "type": "word",
-            "value": "hours",
-            "translation": {
-              "ru": "часы"
-            }
+            "value": "hours"
           },
           {
             "type": "space",
@@ -3194,10 +2588,7 @@
           },
           {
             "type": "word",
-            "value": "a",
-            "translation": {
-              "ru": "а"
-            }
+            "value": "a"
           },
           {
             "type": "space",
@@ -3205,10 +2596,7 @@
           },
           {
             "type": "word",
-            "value": "day",
-            "translation": {
-              "ru": "число"
-            }
+            "value": "day"
           },
           {
             "type": "space",
@@ -3216,10 +2604,7 @@
           },
           {
             "type": "word",
-            "value": "for",
-            "translation": {
-              "ru": "."
-            }
+            "value": "for"
           },
           {
             "type": "space",
@@ -3227,10 +2612,7 @@
           },
           {
             "type": "word",
-            "value": "this",
-            "translation": {
-              "ru": "сего"
-            }
+            "value": "this"
           },
           {
             "type": "space",
@@ -3238,10 +2620,7 @@
           },
           {
             "type": "word",
-            "value": "competition",
-            "translation": {
-              "ru": "конкуренции"
-            }
+            "value": "competition"
           },
           {
             "type": "punct",
@@ -3279,10 +2658,7 @@
         "tokens": [
           {
             "type": "word",
-            "value": "Temperatures",
-            "translation": {
-              "ru": "Температуры"
-            }
+            "value": "Temperatures"
           },
           {
             "type": "space",
@@ -3290,10 +2666,7 @@
           },
           {
             "type": "word",
-            "value": "around",
-            "translation": {
-              "ru": "вокруг которой"
-            }
+            "value": "around"
           },
           {
             "type": "space",
@@ -3309,10 +2682,7 @@
           },
           {
             "type": "word",
-            "value": "world",
-            "translation": {
-              "ru": "мир"
-            }
+            "value": "world"
           },
           {
             "type": "space",
@@ -3321,10 +2691,7 @@
           {
             "type": "word",
             "value": "have",
-            "role": "verb",
-            "translation": {
-              "ru": "быть"
-            }
+            "role": "verb"
           },
           {
             "type": "space",
@@ -3334,10 +2701,7 @@
           {
             "type": "word",
             "value": "been",
-            "role": "verb",
-            "translation": {
-              "ru": "был"
-            }
+            "role": "verb"
           },
           {
             "type": "space",
@@ -3347,10 +2711,7 @@
           {
             "type": "word",
             "value": "rising",
-            "role": "verb",
-            "translation": {
-              "ru": "в тренде"
-            }
+            "role": "verb"
           },
           {
             "type": "space",
@@ -3358,10 +2719,7 @@
           },
           {
             "type": "word",
-            "value": "steadily",
-            "translation": {
-              "ru": "Неуклонно"
-            }
+            "value": "steadily"
           },
           {
             "type": "space",
@@ -3369,10 +2727,7 @@
           },
           {
             "type": "word",
-            "value": "since",
-            "translation": {
-              "ru": "с"
-            }
+            "value": "since"
           },
           {
             "type": "space",
@@ -3388,10 +2743,7 @@
           },
           {
             "type": "word",
-            "value": "industrial",
-            "translation": {
-              "ru": "промышленное"
-            }
+            "value": "industrial"
           },
           {
             "type": "space",
@@ -3399,10 +2751,7 @@
           },
           {
             "type": "word",
-            "value": "revolution",
-            "translation": {
-              "ru": "оборот"
-            }
+            "value": "revolution"
           },
           {
             "type": "punct",
@@ -3440,10 +2789,7 @@
         "tokens": [
           {
             "type": "word",
-            "value": "She",
-            "translation": {
-              "ru": "Она"
-            }
+            "value": "She"
           },
           {
             "type": "space",
@@ -3452,10 +2798,7 @@
           {
             "type": "word",
             "value": "has",
-            "role": "verb",
-            "translation": {
-              "ru": "будет"
-            }
+            "role": "verb"
           },
           {
             "type": "space",
@@ -3465,10 +2808,7 @@
           {
             "type": "word",
             "value": "been",
-            "role": "verb",
-            "translation": {
-              "ru": "был"
-            }
+            "role": "verb"
           },
           {
             "type": "space",
@@ -3478,10 +2818,7 @@
           {
             "type": "word",
             "value": "applying",
-            "role": "verb",
-            "translation": {
-              "ru": "Применение"
-            }
+            "role": "verb"
           },
           {
             "type": "space",
@@ -3489,10 +2826,7 @@
           },
           {
             "type": "word",
-            "value": "for",
-            "translation": {
-              "ru": "."
-            }
+            "value": "for"
           },
           {
             "type": "space",
@@ -3500,10 +2834,7 @@
           },
           {
             "type": "word",
-            "value": "jobs",
-            "translation": {
-              "ru": "вакансии"
-            }
+            "value": "jobs"
           },
           {
             "type": "space",
@@ -3511,10 +2842,7 @@
           },
           {
             "type": "word",
-            "value": "for",
-            "translation": {
-              "ru": "."
-            }
+            "value": "for"
           },
           {
             "type": "space",
@@ -3522,10 +2850,7 @@
           },
           {
             "type": "word",
-            "value": "six",
-            "translation": {
-              "ru": "шесть"
-            }
+            "value": "six"
           },
           {
             "type": "space",
@@ -3533,10 +2858,7 @@
           },
           {
             "type": "word",
-            "value": "months",
-            "translation": {
-              "ru": "месяца"
-            }
+            "value": "months"
           },
           {
             "type": "space",
@@ -3544,10 +2866,7 @@
           },
           {
             "type": "word",
-            "value": "without",
-            "translation": {
-              "ru": "без"
-            }
+            "value": "without"
           },
           {
             "type": "space",
@@ -3555,10 +2874,7 @@
           },
           {
             "type": "word",
-            "value": "success",
-            "translation": {
-              "ru": "выполнено"
-            }
+            "value": "success"
           },
           {
             "type": "punct",

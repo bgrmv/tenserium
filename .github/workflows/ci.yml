@@ -22,6 +22,8 @@ jobs:
 
       - run: pnpm run lint
 
+      - run: pnpm run test --watch=false
+
       - run: pnpm run build
 
       - name: Install Playwright browsers

@@ -27,10 +27,7 @@
         "tokens": [
           {
             "type": "word",
-            "value": "By",
-            "translation": {
-              "ru": "________________________________"
-            }
+            "value": "By"
           },
           {
             "type": "space",
@@ -38,10 +35,7 @@
           },
           {
             "type": "word",
-            "value": "2030",
-            "translation": {
-              "ru": "2030 год"
-            }
+            "value": "2030"
           },
           {
             "type": "space",
@@ -58,10 +52,7 @@
           {
             "type": "word",
             "value": "will",
-            "role": "verb",
-            "translation": {
-              "ru": "---"
-            }
+            "role": "verb"
           },
           {
             "type": "space",
@@ -71,10 +62,7 @@
           {
             "type": "word",
             "value": "have",
-            "role": "verb",
-            "translation": {
-              "ru": "быть"
-            }
+            "role": "verb"
           },
           {
             "type": "space",
@@ -84,10 +72,7 @@
           {
             "type": "word",
             "value": "graduated",
-            "role": "verb",
-            "translation": {
-              "ru": "градуированный"
-            }
+            "role": "verb"
           },
           {
             "type": "punct",
@@ -134,10 +119,7 @@
           {
             "type": "word",
             "value": "will",
-            "role": "verb",
-            "translation": {
-              "ru": "---"
-            }
+            "role": "verb"
           },
           {
             "type": "space",
@@ -147,10 +129,7 @@
           {
             "type": "word",
             "value": "have",
-            "role": "verb",
-            "translation": {
-              "ru": "быть"
-            }
+            "role": "verb"
           },
           {
             "type": "space",
@@ -160,10 +139,7 @@
           {
             "type": "word",
             "value": "finished",
-            "role": "verb",
-            "translation": {
-              "ru": "образом"
-            }
+            "role": "verb"
           },
           {
             "type": "space",
@@ -171,10 +147,7 @@
           },
           {
             "type": "word",
-            "value": "by",
-            "translation": {
-              "ru": "от кого"
-            }
+            "value": "by"
           },
           {
             "type": "space",
@@ -182,10 +155,7 @@
           },
           {
             "type": "word",
-            "value": "noon",
-            "translation": {
-              "ru": "12 ч. 00 м."
-            }
+            "value": "noon"
           },
           {
             "type": "punct",
@@ -223,10 +193,7 @@
         "tokens": [
           {
             "type": "word",
-            "value": "By",
-            "translation": {
-              "ru": "________________________________"
-            }
+            "value": "By"
           },
           {
             "type": "space",
@@ -234,10 +201,7 @@
           },
           {
             "type": "word",
-            "value": "next",
-            "translation": {
-              "ru": "след."
-            }
+            "value": "next"
           },
           {
             "type": "space",
@@ -245,10 +209,7 @@
           },
           {
             "type": "word",
-            "value": "year",
-            "translation": {
-              "ru": "год"
-            }
+            "value": "year"
           },
           {
             "type": "punct",
@@ -269,10 +230,7 @@
           {
             "type": "word",
             "value": "will",
-            "role": "verb",
-            "translation": {
-              "ru": "---"
-            }
+            "role": "verb"
           },
           {
             "type": "space",
@@ -282,10 +240,7 @@
           {
             "type": "word",
             "value": "have",
-            "role": "verb",
-            "translation": {
-              "ru": "быть"
-            }
+            "role": "verb"
           },
           {
             "type": "space",
@@ -295,10 +250,7 @@
           {
             "type": "word",
             "value": "lived",
-            "role": "verb",
-            "translation": {
-              "ru": "Жить\n"
-            }
+            "role": "verb"
           },
           {
             "type": "space",
@@ -306,10 +258,7 @@
           },
           {
             "type": "word",
-            "value": "here",
-            "translation": {
-              "ru": "здесь —"
-            }
+            "value": "here"
           },
           {
             "type": "space",
@@ -317,10 +266,7 @@
           },
           {
             "type": "word",
-            "value": "for",
-            "translation": {
-              "ru": "."
-            }
+            "value": "for"
           },
           {
             "type": "space",
@@ -328,10 +274,7 @@
           },
           {
             "type": "word",
-            "value": "ten",
-            "translation": {
-              "ru": "десять"
-            }
+            "value": "ten"
           },
           {
             "type": "space",
@@ -339,10 +282,7 @@
           },
           {
             "type": "word",
-            "value": "years",
-            "translation": {
-              "ru": "годы"
-            }
+            "value": "years"
           },
           {
             "type": "punct",
@@ -380,10 +320,7 @@
         "tokens": [
           {
             "type": "word",
-            "value": "Before",
-            "translation": {
-              "ru": "Было"
-            }
+            "value": "Before"
           },
           {
             "type": "space",
@@ -399,10 +336,7 @@
           },
           {
             "type": "word",
-            "value": "meeting",
-            "translation": {
-              "ru": "встреча"
-            }
+            "value": "meeting"
           },
           {
             "type": "punct",
@@ -414,10 +348,7 @@
           },
           {
             "type": "word",
-            "value": "we",
-            "translation": {
-              "ru": "ср"
-            }
+            "value": "we"
           },
           {
             "type": "space",
@@ -426,10 +357,7 @@
           {
             "type": "word",
             "value": "will",
-            "role": "verb",
-            "translation": {
-              "ru": "---"
-            }
+            "role": "verb"
           },
           {
             "type": "space",
@@ -439,10 +367,7 @@
           {
             "type": "word",
             "value": "have",
-            "role": "verb",
-            "translation": {
-              "ru": "быть"
-            }
+            "role": "verb"
           },
           {
             "type": "space",
@@ -452,10 +377,7 @@
           {
             "type": "word",
             "value": "prepared",
-            "role": "verb",
-            "translation": {
-              "ru": "подготовил"
-            }
+            "role": "verb"
           },
           {
             "type": "space",
@@ -463,10 +385,7 @@
           },
           {
             "type": "word",
-            "value": "all",
-            "translation": {
-              "ru": "все"
-            }
+            "value": "all"
           },
           {
             "type": "space",
@@ -482,10 +401,7 @@
           },
           {
             "type": "word",
-            "value": "documents",
-            "translation": {
-              "ru": "кументам"
-            }
+            "value": "documents"
           },
           {
             "type": "punct",
@@ -523,10 +439,7 @@
         "tokens": [
           {
             "type": "word",
-            "value": "By",
-            "translation": {
-              "ru": "________________________________"
-            }
+            "value": "By"
           },
           {
             "type": "space",
@@ -542,10 +455,7 @@
           },
           {
             "type": "word",
-            "value": "end",
-            "translation": {
-              "ru": "в конце"
-            }
+            "value": "end"
           },
           {
             "type": "space",
@@ -553,10 +463,7 @@
           },
           {
             "type": "word",
-            "value": "of",
-            "translation": {
-              "ru": "коллегиальных"
-            }
+            "value": "of"
           },
           {
             "type": "space",
@@ -572,10 +479,7 @@
           },
           {
             "type": "word",
-            "value": "year",
-            "translation": {
-              "ru": "год"
-            }
+            "value": "year"
           },
           {
             "type": "punct",
@@ -596,10 +500,7 @@
           {
             "type": "word",
             "value": "will",
-            "role": "verb",
-            "translation": {
-              "ru": "---"
-            }
+            "role": "verb"
           },
           {
             "type": "space",
@@ -609,10 +510,7 @@
           {
             "type": "word",
             "value": "have",
-            "role": "verb",
-            "translation": {
-              "ru": "быть"
-            }
+            "role": "verb"
           },
           {
             "type": "space",
@@ -622,10 +520,7 @@
           {
             "type": "word",
             "value": "visited",
-            "role": "verb",
-            "translation": {
-              "ru": "посетил"
-            }
+            "role": "verb"
           },
           {
             "type": "space",
@@ -633,10 +528,7 @@
           },
           {
             "type": "word",
-            "value": "five",
-            "translation": {
-              "ru": "пять"
-            }
+            "value": "five"
           },
           {
             "type": "space",
@@ -644,10 +536,7 @@
           },
           {
             "type": "word",
-            "value": "countries",
-            "translation": {
-              "ru": "Страны"
-            }
+            "value": "countries"
           },
           {
             "type": "punct",
@@ -685,10 +574,7 @@
         "tokens": [
           {
             "type": "word",
-            "value": "You",
-            "translation": {
-              "ru": "Вы"
-            }
+            "value": "You"
           },
           {
             "type": "space",
@@ -696,10 +582,7 @@
           },
           {
             "type": "word",
-            "value": "must",
-            "translation": {
-              "ru": "должен"
-            }
+            "value": "must"
           },
           {
             "type": "space",
@@ -707,10 +590,7 @@
           },
           {
             "type": "word",
-            "value": "call",
-            "translation": {
-              "ru": "звонок"
-            }
+            "value": "call"
           },
           {
             "type": "space",
@@ -718,10 +598,7 @@
           },
           {
             "type": "word",
-            "value": "before",
-            "translation": {
-              "ru": "."
-            }
+            "value": "before"
           },
           {
             "type": "space",
@@ -737,10 +614,7 @@
           },
           {
             "type": "word",
-            "value": "pm",
-            "translation": {
-              "ru": "μm/sec (мкм/сек)"
-            }
+            "value": "pm"
           },
           {
             "type": "punct",
@@ -752,10 +626,7 @@
           },
           {
             "type": "word",
-            "value": "otherwise",
-            "translation": {
-              "ru": "оговорено"
-            }
+            "value": "otherwise"
           },
           {
             "type": "punct",
@@ -776,10 +647,7 @@
           {
             "type": "word",
             "value": "will",
-            "role": "verb",
-            "translation": {
-              "ru": "---"
-            }
+            "role": "verb"
           },
           {
             "type": "space",
@@ -789,10 +657,7 @@
           {
             "type": "word",
             "value": "have",
-            "role": "verb",
-            "translation": {
-              "ru": "быть"
-            }
+            "role": "verb"
           },
           {
             "type": "space",
@@ -802,10 +667,7 @@
           {
             "type": "word",
             "value": "left",
-            "role": "verb",
-            "translation": {
-              "ru": "левый"
-            }
+            "role": "verb"
           },
           {
             "type": "space",
@@ -821,10 +683,7 @@
           },
           {
             "type": "word",
-            "value": "office",
-            "translation": {
-              "ru": "офис "
-            }
+            "value": "office"
           },
           {
             "type": "punct",
@@ -862,10 +721,7 @@
         "tokens": [
           {
             "type": "word",
-            "value": "By",
-            "translation": {
-              "ru": "________________________________"
-            }
+            "value": "By"
           },
           {
             "type": "space",
@@ -881,10 +737,7 @@
           },
           {
             "type": "word",
-            "value": "time",
-            "translation": {
-              "ru": "время"
-            }
+            "value": "time"
           },
           {
             "type": "space",
@@ -892,10 +745,7 @@
           },
           {
             "type": "word",
-            "value": "you",
-            "translation": {
-              "ru": "вы"
-            }
+            "value": "you"
           },
           {
             "type": "space",
@@ -903,10 +753,7 @@
           },
           {
             "type": "word",
-            "value": "wake",
-            "translation": {
-              "ru": "будить"
-            }
+            "value": "wake"
           },
           {
             "type": "space",
@@ -914,10 +761,7 @@
           },
           {
             "type": "word",
-            "value": "up",
-            "translation": {
-              "ru": "вверх"
-            }
+            "value": "up"
           },
           {
             "type": "punct",
@@ -938,10 +782,7 @@
           {
             "type": "word",
             "value": "will",
-            "role": "verb",
-            "translation": {
-              "ru": "---"
-            }
+            "role": "verb"
           },
           {
             "type": "space",
@@ -951,10 +792,7 @@
           {
             "type": "word",
             "value": "have",
-            "role": "verb",
-            "translation": {
-              "ru": "быть"
-            }
+            "role": "verb"
           },
           {
             "type": "space",
@@ -964,10 +802,7 @@
           {
             "type": "word",
             "value": "already",
-            "role": "verb",
-            "translation": {
-              "ru": "уже"
-            }
+            "role": "verb"
           },
           {
             "type": "space",
@@ -977,10 +812,7 @@
           {
             "type": "word",
             "value": "left",
-            "role": "verb",
-            "translation": {
-              "ru": "левый"
-            }
+            "role": "verb"
           },
           {
             "type": "punct",
@@ -1018,10 +850,7 @@
         "tokens": [
           {
             "type": "word",
-            "value": "By",
-            "translation": {
-              "ru": "________________________________"
-            }
+            "value": "By"
           },
           {
             "type": "space",
@@ -1029,10 +858,7 @@
           },
           {
             "type": "word",
-            "value": "her",
-            "translation": {
-              "ru": "ей"
-            }
+            "value": "her"
           },
           {
             "type": "space",
@@ -1040,10 +866,7 @@
           },
           {
             "type": "word",
-            "value": "thirtieth",
-            "translation": {
-              "ru": "тридцатый&#x0D;"
-            }
+            "value": "thirtieth"
           },
           {
             "type": "space",
@@ -1051,10 +874,7 @@
           },
           {
             "type": "word",
-            "value": "birthday",
-            "translation": {
-              "ru": "день рождения"
-            }
+            "value": "birthday"
           },
           {
             "type": "punct",
@@ -1066,10 +886,7 @@
           },
           {
             "type": "word",
-            "value": "she",
-            "translation": {
-              "ru": "она"
-            }
+            "value": "she"
           },
           {
             "type": "space",
@@ -1078,10 +895,7 @@
           {
             "type": "word",
             "value": "will",
-            "role": "verb",
-            "translation": {
-              "ru": "---"
-            }
+            "role": "verb"
           },
           {
             "type": "space",
@@ -1091,10 +905,7 @@
           {
             "type": "word",
             "value": "have",
-            "role": "verb",
-            "translation": {
-              "ru": "быть"
-            }
+            "role": "verb"
           },
           {
             "type": "space",
@@ -1104,10 +915,7 @@
           {
             "type": "word",
             "value": "published",
-            "role": "verb",
-            "translation": {
-              "ru": "опубликовали"
-            }
+            "role": "verb"
           },
           {
             "type": "space",
@@ -1115,10 +923,7 @@
           },
           {
             "type": "word",
-            "value": "two",
-            "translation": {
-              "ru": "два"
-            }
+            "value": "two"
           },
           {
             "type": "space",
@@ -1126,10 +931,7 @@
           },
           {
             "type": "word",
-            "value": "novels",
-            "translation": {
-              "ru": "Новеллы."
-            }
+            "value": "novels"
           },
           {
             "type": "punct",
@@ -1167,10 +969,7 @@
         "tokens": [
           {
             "type": "word",
-            "value": "Don't",
-            "translation": {
-              "ru": "Не"
-            }
+            "value": "Don't"
           },
           {
             "type": "space",
@@ -1178,10 +977,7 @@
           },
           {
             "type": "word",
-            "value": "worry",
-            "translation": {
-              "ru": "беспокоиться"
-            }
+            "value": "worry"
           },
           {
             "type": "space",
@@ -1206,10 +1002,7 @@
           {
             "type": "word",
             "value": "will",
-            "role": "verb",
-            "translation": {
-              "ru": "---"
-            }
+            "role": "verb"
           },
           {
             "type": "space",
@@ -1219,10 +1012,7 @@
           {
             "type": "word",
             "value": "have",
-            "role": "verb",
-            "translation": {
-              "ru": "быть"
-            }
+            "role": "verb"
           },
           {
             "type": "space",
@@ -1232,10 +1022,7 @@
           {
             "type": "word",
             "value": "fixed",
-            "role": "verb",
-            "translation": {
-              "ru": "стационарный"
-            }
+            "role": "verb"
           },
           {
             "type": "space",
@@ -1251,10 +1038,7 @@
           },
           {
             "type": "word",
-            "value": "car",
-            "translation": {
-              "ru": "кабина"
-            }
+            "value": "car"
           },
           {
             "type": "space",
@@ -1262,10 +1046,7 @@
           },
           {
             "type": "word",
-            "value": "before",
-            "translation": {
-              "ru": "."
-            }
+            "value": "before"
           },
           {
             "type": "space",
@@ -1273,10 +1054,7 @@
           },
           {
             "type": "word",
-            "value": "your",
-            "translation": {
-              "ru": "вращаются"
-            }
+            "value": "your"
           },
           {
             "type": "space",
@@ -1284,10 +1062,7 @@
           },
           {
             "type": "word",
-            "value": "trip",
-            "translation": {
-              "ru": "трипсы,"
-            }
+            "value": "trip"
           },
           {
             "type": "punct",
@@ -1325,10 +1100,7 @@
         "tokens": [
           {
             "type": "word",
-            "value": "Will",
-            "translation": {
-              "ru": "Воля"
-            }
+            "value": "Will"
           },
           {
             "type": "space",
@@ -1336,10 +1108,7 @@
           },
           {
             "type": "word",
-            "value": "you",
-            "translation": {
-              "ru": "вы"
-            }
+            "value": "you"
           },
           {
             "type": "space",
@@ -1348,10 +1117,7 @@
           {
             "type": "word",
             "value": "have",
-            "role": "verb",
-            "translation": {
-              "ru": "быть"
-            }
+            "role": "verb"
           },
           {
             "type": "space",
@@ -1361,10 +1127,7 @@
           {
             "type": "word",
             "value": "finished",
-            "role": "verb",
-            "translation": {
-              "ru": "образом"
-            }
+            "role": "verb"
           },
           {
             "type": "space",
@@ -1380,10 +1143,7 @@
           },
           {
             "type": "word",
-            "value": "project",
-            "translation": {
-              "ru": "Проектные"
-            }
+            "value": "project"
           },
           {
             "type": "space",
@@ -1391,10 +1151,7 @@
           },
           {
             "type": "word",
-            "value": "by",
-            "translation": {
-              "ru": "от кого"
-            }
+            "value": "by"
           },
           {
             "type": "space",
@@ -1402,10 +1159,7 @@
           },
           {
             "type": "word",
-            "value": "Friday",
-            "translation": {
-              "ru": "Пятница"
-            }
+            "value": "Friday"
           },
           {
             "type": "punct",
@@ -1443,10 +1197,7 @@
         "tokens": [
           {
             "type": "word",
-            "value": "At",
-            "translation": {
-              "ru": "А+"
-            }
+            "value": "At"
           },
           {
             "type": "space",
@@ -1454,10 +1205,7 @@
           },
           {
             "type": "word",
-            "value": "this",
-            "translation": {
-              "ru": "сего"
-            }
+            "value": "this"
           },
           {
             "type": "space",
@@ -1465,10 +1213,7 @@
           },
           {
             "type": "word",
-            "value": "rate",
-            "translation": {
-              "ru": "вознаграждения"
-            }
+            "value": "rate"
           },
           {
             "type": "punct",
@@ -1488,10 +1233,7 @@
           },
           {
             "type": "word",
-            "value": "team",
-            "translation": {
-              "ru": "команда"
-            }
+            "value": "team"
           },
           {
             "type": "space",
@@ -1500,10 +1242,7 @@
           {
             "type": "word",
             "value": "will",
-            "role": "verb",
-            "translation": {
-              "ru": "---"
-            }
+            "role": "verb"
           },
           {
             "type": "space",
@@ -1523,10 +1262,7 @@
           {
             "type": "word",
             "value": "have",
-            "role": "verb",
-            "translation": {
-              "ru": "быть"
-            }
+            "role": "verb"
           },
           {
             "type": "space",
@@ -1536,10 +1272,7 @@
           {
             "type": "word",
             "value": "met",
-            "role": "verb",
-            "translation": {
-              "ru": "встретил/а"
-            }
+            "role": "verb"
           },
           {
             "type": "space",
@@ -1547,10 +1280,7 @@
           },
           {
             "type": "word",
-            "value": "its",
-            "translation": {
-              "ru": "свой"
-            }
+            "value": "its"
           },
           {
             "type": "space",
@@ -1558,10 +1288,7 @@
           },
           {
             "type": "word",
-            "value": "target",
-            "translation": {
-              "ru": "2022 г."
-            }
+            "value": "target"
           },
           {
             "type": "space",
@@ -1569,10 +1296,7 @@
           },
           {
             "type": "word",
-            "value": "by",
-            "translation": {
-              "ru": "от кого"
-            }
+            "value": "by"
           },
           {
             "type": "space",
@@ -1580,10 +1304,7 @@
           },
           {
             "type": "word",
-            "value": "December",
-            "translation": {
-              "ru": "Декабрь"
-            }
+            "value": "December"
           },
           {
             "type": "punct",
@@ -1621,10 +1342,7 @@
         "tokens": [
           {
             "type": "word",
-            "value": "By",
-            "translation": {
-              "ru": "________________________________"
-            }
+            "value": "By"
           },
           {
             "type": "space",
@@ -1640,10 +1358,7 @@
           },
           {
             "type": "word",
-            "value": "end",
-            "translation": {
-              "ru": "в конце"
-            }
+            "value": "end"
           },
           {
             "type": "space",
@@ -1651,10 +1366,7 @@
           },
           {
             "type": "word",
-            "value": "of",
-            "translation": {
-              "ru": "коллегиальных"
-            }
+            "value": "of"
           },
           {
             "type": "space",
@@ -1670,10 +1382,7 @@
           },
           {
             "type": "word",
-            "value": "week",
-            "translation": {
-              "ru": "неделя"
-            }
+            "value": "week"
           },
           {
             "type": "punct",
@@ -1685,10 +1394,7 @@
           },
           {
             "type": "word",
-            "value": "we",
-            "translation": {
-              "ru": "ср"
-            }
+            "value": "we"
           },
           {
             "type": "space",
@@ -1697,10 +1403,7 @@
           {
             "type": "word",
             "value": "will",
-            "role": "verb",
-            "translation": {
-              "ru": "---"
-            }
+            "role": "verb"
           },
           {
             "type": "space",
@@ -1710,10 +1413,7 @@
           {
             "type": "word",
             "value": "have",
-            "role": "verb",
-            "translation": {
-              "ru": "быть"
-            }
+            "role": "verb"
           },
           {
             "type": "space",
@@ -1723,10 +1423,7 @@
           {
             "type": "word",
             "value": "completed",
-            "role": "verb",
-            "translation": {
-              "ru": "выполнено"
-            }
+            "role": "verb"
           },
           {
             "type": "space",
@@ -1742,10 +1439,7 @@
           },
           {
             "type": "word",
-            "value": "first",
-            "translation": {
-              "ru": "первый"
-            }
+            "value": "first"
           },
           {
             "type": "space",
@@ -1753,10 +1447,7 @@
           },
           {
             "type": "word",
-            "value": "phase",
-            "translation": {
-              "ru": "фаза (Космин)"
-            }
+            "value": "phase"
           },
           {
             "type": "space",
@@ -1764,10 +1455,7 @@
           },
           {
             "type": "word",
-            "value": "of",
-            "translation": {
-              "ru": "коллегиальных"
-            }
+            "value": "of"
           },
           {
             "type": "space",
@@ -1783,10 +1471,7 @@
           },
           {
             "type": "word",
-            "value": "project",
-            "translation": {
-              "ru": "Проектные"
-            }
+            "value": "project"
           },
           {
             "type": "punct",
@@ -1832,10 +1517,7 @@
           },
           {
             "type": "word",
-            "value": "promise",
-            "translation": {
-              "ru": "обещать"
-            }
+            "value": "promise"
           },
           {
             "type": "space",
@@ -1852,10 +1534,7 @@
           {
             "type": "word",
             "value": "will",
-            "role": "verb",
-            "translation": {
-              "ru": "---"
-            }
+            "role": "verb"
           },
           {
             "type": "space",
@@ -1865,10 +1544,7 @@
           {
             "type": "word",
             "value": "have",
-            "role": "verb",
-            "translation": {
-              "ru": "быть"
-            }
+            "role": "verb"
           },
           {
             "type": "space",
@@ -1878,10 +1554,7 @@
           {
             "type": "word",
             "value": "read",
-            "role": "verb",
-            "translation": {
-              "ru": "читали"
-            }
+            "role": "verb"
           },
           {
             "type": "space",
@@ -1897,10 +1570,7 @@
           },
           {
             "type": "word",
-            "value": "report",
-            "translation": {
-              "ru": "отчет о проведении валидации"
-            }
+            "value": "report"
           },
           {
             "type": "space",
@@ -1908,10 +1578,7 @@
           },
           {
             "type": "word",
-            "value": "before",
-            "translation": {
-              "ru": "."
-            }
+            "value": "before"
           },
           {
             "type": "space",
@@ -1919,10 +1586,7 @@
           },
           {
             "type": "word",
-            "value": "our",
-            "translation": {
-              "ru": "наш"
-            }
+            "value": "our"
           },
           {
             "type": "space",
@@ -1930,10 +1594,7 @@
           },
           {
             "type": "word",
-            "value": "call",
-            "translation": {
-              "ru": "звонок"
-            }
+            "value": "call"
           },
           {
             "type": "punct",
@@ -1971,10 +1632,7 @@
         "tokens": [
           {
             "type": "word",
-            "value": "By",
-            "translation": {
-              "ru": "________________________________"
-            }
+            "value": "By"
           },
           {
             "type": "space",
@@ -1990,10 +1648,7 @@
           },
           {
             "type": "word",
-            "value": "time",
-            "translation": {
-              "ru": "время"
-            }
+            "value": "time"
           },
           {
             "type": "space",
@@ -2009,10 +1664,7 @@
           },
           {
             "type": "word",
-            "value": "is",
-            "translation": {
-              "ru": "является"
-            }
+            "value": "is"
           },
           {
             "type": "space",
@@ -2020,10 +1672,7 @@
           },
           {
             "type": "word",
-            "value": "thirty",
-            "translation": {
-              "ru": "тридцать"
-            }
+            "value": "thirty"
           },
           {
             "type": "punct",
@@ -2044,10 +1693,7 @@
           {
             "type": "word",
             "value": "will",
-            "role": "verb",
-            "translation": {
-              "ru": "---"
-            }
+            "role": "verb"
           },
           {
             "type": "space",
@@ -2057,10 +1703,7 @@
           {
             "type": "word",
             "value": "have",
-            "role": "verb",
-            "translation": {
-              "ru": "быть"
-            }
+            "role": "verb"
           },
           {
             "type": "space",
@@ -2070,10 +1713,7 @@
           {
             "type": "word",
             "value": "worked",
-            "role": "verb",
-            "translation": {
-              "ru": "RABOTA"
-            }
+            "role": "verb"
           },
           {
             "type": "space",
@@ -2081,10 +1721,7 @@
           },
           {
             "type": "word",
-            "value": "in",
-            "translation": {
-              "ru": "от"
-            }
+            "value": "in"
           },
           {
             "type": "space",
@@ -2092,10 +1729,7 @@
           },
           {
             "type": "word",
-            "value": "four",
-            "translation": {
-              "ru": "четыре"
-            }
+            "value": "four"
           },
           {
             "type": "space",
@@ -2103,10 +1737,7 @@
           },
           {
             "type": "word",
-            "value": "different",
-            "translation": {
-              "ru": "разный"
-            }
+            "value": "different"
           },
           {
             "type": "space",
@@ -2114,10 +1745,7 @@
           },
           {
             "type": "word",
-            "value": "countries",
-            "translation": {
-              "ru": "Страны"
-            }
+            "value": "countries"
           },
           {
             "type": "punct",
@@ -2155,10 +1783,7 @@
         "tokens": [
           {
             "type": "word",
-            "value": "By",
-            "translation": {
-              "ru": "________________________________"
-            }
+            "value": "By"
           },
           {
             "type": "space",
@@ -2174,10 +1799,7 @@
           },
           {
             "type": "word",
-            "value": "time",
-            "translation": {
-              "ru": "время"
-            }
+            "value": "time"
           },
           {
             "type": "space",
@@ -2193,10 +1815,7 @@
           },
           {
             "type": "word",
-            "value": "ambulance",
-            "translation": {
-              "ru": "скорая помощь"
-            }
+            "value": "ambulance"
           },
           {
             "type": "space",
@@ -2204,10 +1823,7 @@
           },
           {
             "type": "word",
-            "value": "arrives",
-            "translation": {
-              "ru": "arrives."
-            }
+            "value": "arrives"
           },
           {
             "type": "punct",
@@ -2227,10 +1843,7 @@
           },
           {
             "type": "word",
-            "value": "situation",
-            "translation": {
-              "ru": "ситуация"
-            }
+            "value": "situation"
           },
           {
             "type": "space",
@@ -2239,10 +1852,7 @@
           {
             "type": "word",
             "value": "will",
-            "role": "verb",
-            "translation": {
-              "ru": "---"
-            }
+            "role": "verb"
           },
           {
             "type": "space",
@@ -2252,10 +1862,7 @@
           {
             "type": "word",
             "value": "have",
-            "role": "verb",
-            "translation": {
-              "ru": "быть"
-            }
+            "role": "verb"
           },
           {
             "type": "space",
@@ -2265,10 +1872,7 @@
           {
             "type": "word",
             "value": "changed",
-            "role": "verb",
-            "translation": {
-              "ru": "изменены"
-            }
+            "role": "verb"
           },
           {
             "type": "punct",
@@ -2306,10 +1910,7 @@
         "tokens": [
           {
             "type": "word",
-            "value": "I'm",
-            "translation": {
-              "ru": "Я"
-            }
+            "value": "I'm"
           },
           {
             "type": "space",
@@ -2317,10 +1918,7 @@
           },
           {
             "type": "word",
-            "value": "afraid",
-            "translation": {
-              "ru": "испуганный "
-            }
+            "value": "afraid"
           },
           {
             "type": "space",
@@ -2337,10 +1935,7 @@
           {
             "type": "word",
             "value": "won't",
-            "role": "verb",
-            "translation": {
-              "ru": "не будет"
-            }
+            "role": "verb"
           },
           {
             "type": "space",
@@ -2350,10 +1945,7 @@
           {
             "type": "word",
             "value": "have",
-            "role": "verb",
-            "translation": {
-              "ru": "быть"
-            }
+            "role": "verb"
           },
           {
             "type": "space",
@@ -2363,10 +1955,7 @@
           {
             "type": "word",
             "value": "finished",
-            "role": "verb",
-            "translation": {
-              "ru": "образом"
-            }
+            "role": "verb"
           },
           {
             "type": "space",
@@ -2382,10 +1971,7 @@
           },
           {
             "type": "word",
-            "value": "report",
-            "translation": {
-              "ru": "отчет о проведении валидации"
-            }
+            "value": "report"
           },
           {
             "type": "space",
@@ -2393,10 +1979,7 @@
           },
           {
             "type": "word",
-            "value": "by",
-            "translation": {
-              "ru": "от кого"
-            }
+            "value": "by"
           },
           {
             "type": "space",
@@ -2404,10 +1987,7 @@
           },
           {
             "type": "word",
-            "value": "Monday",
-            "translation": {
-              "ru": "Понедельник"
-            }
+            "value": "Monday"
           },
           {
             "type": "punct",
@@ -2445,10 +2025,7 @@
         "tokens": [
           {
             "type": "word",
-            "value": "Will",
-            "translation": {
-              "ru": "Воля"
-            }
+            "value": "Will"
           },
           {
             "type": "space",
@@ -2464,10 +2041,7 @@
           },
           {
             "type": "word",
-            "value": "construction",
-            "translation": {
-              "ru": "строительной"
-            }
+            "value": "construction"
           },
           {
             "type": "space",
@@ -2475,10 +2049,7 @@
           },
           {
             "type": "word",
-            "value": "team",
-            "translation": {
-              "ru": "команда"
-            }
+            "value": "team"
           },
           {
             "type": "space",
@@ -2487,10 +2058,7 @@
           {
             "type": "word",
             "value": "have",
-            "role": "verb",
-            "translation": {
-              "ru": "быть"
-            }
+            "role": "verb"
           },
           {
             "type": "space",
@@ -2500,10 +2068,7 @@
           {
             "type": "word",
             "value": "completed",
-            "role": "verb",
-            "translation": {
-              "ru": "выполнено"
-            }
+            "role": "verb"
           },
           {
             "type": "space",
@@ -2519,10 +2084,7 @@
           },
           {
             "type": "word",
-            "value": "repairs",
-            "translation": {
-              "ru": "ремонта"
-            }
+            "value": "repairs"
           },
           {
             "type": "space",
@@ -2530,10 +2092,7 @@
           },
           {
             "type": "word",
-            "value": "by",
-            "translation": {
-              "ru": "от кого"
-            }
+            "value": "by"
           },
           {
             "type": "space",
@@ -2541,10 +2100,7 @@
           },
           {
             "type": "word",
-            "value": "next",
-            "translation": {
-              "ru": "след."
-            }
+            "value": "next"
           },
           {
             "type": "space",
@@ -2552,10 +2108,7 @@
           },
           {
             "type": "word",
-            "value": "month",
-            "translation": {
-              "ru": "месяца"
-            }
+            "value": "month"
           },
           {
             "type": "punct",
@@ -2593,10 +2146,7 @@
         "tokens": [
           {
             "type": "word",
-            "value": "All",
-            "translation": {
-              "ru": "Все"
-            }
+            "value": "All"
           },
           {
             "type": "space",
@@ -2604,10 +2154,7 @@
           },
           {
             "type": "word",
-            "value": "passengers",
-            "translation": {
-              "ru": "пассажиров"
-            }
+            "value": "passengers"
           },
           {
             "type": "space",
@@ -2616,10 +2163,7 @@
           {
             "type": "word",
             "value": "will",
-            "role": "verb",
-            "translation": {
-              "ru": "---"
-            }
+            "role": "verb"
           },
           {
             "type": "space",
@@ -2629,10 +2173,7 @@
           {
             "type": "word",
             "value": "have",
-            "role": "verb",
-            "translation": {
-              "ru": "быть"
-            }
+            "role": "verb"
           },
           {
             "type": "space",
@@ -2642,10 +2183,7 @@
           {
             "type": "word",
             "value": "been",
-            "role": "verb",
-            "translation": {
-              "ru": "был"
-            }
+            "role": "verb"
           },
           {
             "type": "space",
@@ -2663,10 +2201,7 @@
           },
           {
             "type": "word",
-            "value": "before",
-            "translation": {
-              "ru": "."
-            }
+            "value": "before"
           },
           {
             "type": "space",
@@ -2682,10 +2217,7 @@
           },
           {
             "type": "word",
-            "value": "flight",
-            "translation": {
-              "ru": "перелета"
-            }
+            "value": "flight"
           },
           {
             "type": "space",
@@ -2693,10 +2225,7 @@
           },
           {
             "type": "word",
-            "value": "departs",
-            "translation": {
-              "ru": "Отправление"
-            }
+            "value": "departs"
           },
           {
             "type": "punct",
@@ -2734,10 +2263,7 @@
         "tokens": [
           {
             "type": "word",
-            "value": "By",
-            "translation": {
-              "ru": "________________________________"
-            }
+            "value": "By"
           },
           {
             "type": "space",
@@ -2753,10 +2279,7 @@
           },
           {
             "type": "word",
-            "value": "time",
-            "translation": {
-              "ru": "время"
-            }
+            "value": "time"
           },
           {
             "type": "space",
@@ -2772,10 +2295,7 @@
           },
           {
             "type": "word",
-            "value": "retires",
-            "translation": {
-              "ru": "Удаление"
-            }
+            "value": "retires"
           },
           {
             "type": "punct",
@@ -2796,10 +2316,7 @@
           {
             "type": "word",
             "value": "will",
-            "role": "verb",
-            "translation": {
-              "ru": "---"
-            }
+            "role": "verb"
           },
           {
             "type": "space",
@@ -2809,10 +2326,7 @@
           {
             "type": "word",
             "value": "have",
-            "role": "verb",
-            "translation": {
-              "ru": "быть"
-            }
+            "role": "verb"
           },
           {
             "type": "space",
@@ -2822,10 +2336,7 @@
           {
             "type": "word",
             "value": "served",
-            "role": "verb",
-            "translation": {
-              "ru": "подаются"
-            }
+            "role": "verb"
           },
           {
             "type": "space",
@@ -2841,10 +2352,7 @@
           },
           {
             "type": "word",
-            "value": "company",
-            "translation": {
-              "ru": "компании"
-            }
+            "value": "company"
           },
           {
             "type": "space",
@@ -2852,10 +2360,7 @@
           },
           {
             "type": "word",
-            "value": "for",
-            "translation": {
-              "ru": "."
-            }
+            "value": "for"
           },
           {
             "type": "space",
@@ -2863,10 +2368,7 @@
           },
           {
             "type": "word",
-            "value": "thirty",
-            "translation": {
-              "ru": "тридцать"
-            }
+            "value": "thirty"
           },
           {
             "type": "space",
@@ -2874,10 +2376,7 @@
           },
           {
             "type": "word",
-            "value": "years",
-            "translation": {
-              "ru": "годы"
-            }
+            "value": "years"
           },
           {
             "type": "punct",
@@ -2915,10 +2414,7 @@
         "tokens": [
           {
             "type": "word",
-            "value": "By",
-            "translation": {
-              "ru": "________________________________"
-            }
+            "value": "By"
           },
           {
             "type": "space",
@@ -2938,10 +2434,7 @@
           },
           {
             "type": "word",
-            "value": "doctors",
-            "translation": {
-              "ru": "психоаналитики"
-            }
+            "value": "doctors"
           },
           {
             "type": "space",
@@ -2950,10 +2443,7 @@
           {
             "type": "word",
             "value": "will",
-            "role": "verb",
-            "translation": {
-              "ru": "---"
-            }
+            "role": "verb"
           },
           {
             "type": "space",
@@ -2963,10 +2453,7 @@
           {
             "type": "word",
             "value": "have",
-            "role": "verb",
-            "translation": {
-              "ru": "быть"
-            }
+            "role": "verb"
           },
           {
             "type": "space",
@@ -2976,10 +2463,7 @@
           {
             "type": "word",
             "value": "found",
-            "role": "verb",
-            "translation": {
-              "ru": "конц."
-            }
+            "role": "verb"
           },
           {
             "type": "space",
@@ -2987,10 +2471,7 @@
           },
           {
             "type": "word",
-            "value": "a",
-            "translation": {
-              "ru": "а"
-            }
+            "value": "a"
           },
           {
             "type": "space",
@@ -2998,10 +2479,7 @@
           },
           {
             "type": "word",
-            "value": "cure",
-            "translation": {
-              "ru": "лечить"
-            }
+            "value": "cure"
           },
           {
             "type": "space",
@@ -3009,10 +2487,7 @@
           },
           {
             "type": "word",
-            "value": "for",
-            "translation": {
-              "ru": "."
-            }
+            "value": "for"
           },
           {
             "type": "space",
@@ -3020,10 +2495,7 @@
           },
           {
             "type": "word",
-            "value": "several",
-            "translation": {
-              "ru": "несколько случаев"
-            }
+            "value": "several"
           },
           {
             "type": "space",
@@ -3031,10 +2503,7 @@
           },
           {
             "type": "word",
-            "value": "currently",
-            "translation": {
-              "ru": "В данный момент"
-            }
+            "value": "currently"
           },
           {
             "type": "space",
@@ -3042,10 +2511,7 @@
           },
           {
             "type": "word",
-            "value": "incurable",
-            "translation": {
-              "ru": "неизлечимая"
-            }
+            "value": "incurable"
           },
           {
             "type": "space",
@@ -3053,10 +2519,7 @@
           },
           {
             "type": "word",
-            "value": "diseases",
-            "translation": {
-              "ru": "заболеваний"
-            }
+            "value": "diseases"
           },
           {
             "type": "punct",
@@ -3094,10 +2557,7 @@
         "tokens": [
           {
             "type": "word",
-            "value": "By",
-            "translation": {
-              "ru": "________________________________"
-            }
+            "value": "By"
           },
           {
             "type": "space",
@@ -3113,10 +2573,7 @@
           },
           {
             "type": "word",
-            "value": "end",
-            "translation": {
-              "ru": "в конце"
-            }
+            "value": "end"
           },
           {
             "type": "space",
@@ -3124,10 +2581,7 @@
           },
           {
             "type": "word",
-            "value": "of",
-            "translation": {
-              "ru": "коллегиальных"
-            }
+            "value": "of"
           },
           {
             "type": "space",
@@ -3143,10 +2597,7 @@
           },
           {
             "type": "word",
-            "value": "course",
-            "translation": {
-              "ru": "курс"
-            }
+            "value": "course"
           },
           {
             "type": "punct",
@@ -3158,10 +2609,7 @@
           },
           {
             "type": "word",
-            "value": "you",
-            "translation": {
-              "ru": "вы"
-            }
+            "value": "you"
           },
           {
             "type": "space",
@@ -3170,10 +2618,7 @@
           {
             "type": "word",
             "value": "will",
-            "role": "verb",
-            "translation": {
-              "ru": "---"
-            }
+            "role": "verb"
           },
           {
             "type": "space",
@@ -3183,10 +2628,7 @@
           {
             "type": "word",
             "value": "have",
-            "role": "verb",
-            "translation": {
-              "ru": "быть"
-            }
+            "role": "verb"
           },
           {
             "type": "space",
@@ -3196,10 +2638,7 @@
           {
             "type": "word",
             "value": "learned",
-            "role": "verb",
-            "translation": {
-              "ru": "и др."
-            }
+            "role": "verb"
           },
           {
             "type": "space",
@@ -3207,10 +2646,7 @@
           },
           {
             "type": "word",
-            "value": "over",
-            "translation": {
-              "ru": "сверх"
-            }
+            "value": "over"
           },
           {
             "type": "space",
@@ -3218,10 +2654,7 @@
           },
           {
             "type": "word",
-            "value": "five",
-            "translation": {
-              "ru": "пять"
-            }
+            "value": "five"
           },
           {
             "type": "space",
@@ -3229,10 +2662,7 @@
           },
           {
             "type": "word",
-            "value": "hundred",
-            "translation": {
-              "ru": "сотни"
-            }
+            "value": "hundred"
           },
           {
             "type": "space",
@@ -3240,10 +2670,7 @@
           },
           {
             "type": "word",
-            "value": "new",
-            "translation": {
-              "ru": "новых"
-            }
+            "value": "new"
           },
           {
             "type": "space",
@@ -3251,10 +2678,7 @@
           },
           {
             "type": "word",
-            "value": "words",
-            "translation": {
-              "ru": "слова"
-            }
+            "value": "words"
           },
           {
             "type": "punct",
@@ -3292,10 +2716,7 @@
         "tokens": [
           {
             "type": "word",
-            "value": "If",
-            "translation": {
-              "ru": "При"
-            }
+            "value": "If"
           },
           {
             "type": "space",
@@ -3303,10 +2724,7 @@
           },
           {
             "type": "word",
-            "value": "you",
-            "translation": {
-              "ru": "вы"
-            }
+            "value": "you"
           },
           {
             "type": "space",
@@ -3314,10 +2732,7 @@
           },
           {
             "type": "word",
-            "value": "save",
-            "translation": {
-              "ru": "сохранить"
-            }
+            "value": "save"
           },
           {
             "type": "space",
@@ -3325,10 +2740,7 @@
           },
           {
             "type": "word",
-            "value": "ten",
-            "translation": {
-              "ru": "десять"
-            }
+            "value": "ten"
           },
           {
             "type": "space",
@@ -3336,10 +2748,7 @@
           },
           {
             "type": "word",
-            "value": "euros",
-            "translation": {
-              "ru": "евро"
-            }
+            "value": "euros"
           },
           {
             "type": "space",
@@ -3347,10 +2756,7 @@
           },
           {
             "type": "word",
-            "value": "a",
-            "translation": {
-              "ru": "а"
-            }
+            "value": "a"
           },
           {
             "type": "space",
@@ -3358,10 +2764,7 @@
           },
           {
             "type": "word",
-            "value": "day",
-            "translation": {
-              "ru": "число"
-            }
+            "value": "day"
           },
           {
             "type": "punct",
@@ -3373,10 +2776,7 @@
           },
           {
             "type": "word",
-            "value": "by",
-            "translation": {
-              "ru": "от кого"
-            }
+            "value": "by"
           },
           {
             "type": "space",
@@ -3392,10 +2792,7 @@
           },
           {
             "type": "word",
-            "value": "end",
-            "translation": {
-              "ru": "в конце"
-            }
+            "value": "end"
           },
           {
             "type": "space",
@@ -3403,10 +2800,7 @@
           },
           {
             "type": "word",
-            "value": "of",
-            "translation": {
-              "ru": "коллегиальных"
-            }
+            "value": "of"
           },
           {
             "type": "space",
@@ -3422,10 +2816,7 @@
           },
           {
             "type": "word",
-            "value": "year",
-            "translation": {
-              "ru": "год"
-            }
+            "value": "year"
           },
           {
             "type": "space",
@@ -3433,10 +2824,7 @@
           },
           {
             "type": "word",
-            "value": "you",
-            "translation": {
-              "ru": "вы"
-            }
+            "value": "you"
           },
           {
             "type": "space",
@@ -3445,10 +2833,7 @@
           {
             "type": "word",
             "value": "will",
-            "role": "verb",
-            "translation": {
-              "ru": "---"
-            }
+            "role": "verb"
           },
           {
             "type": "space",
@@ -3458,10 +2843,7 @@
           {
             "type": "word",
             "value": "have",
-            "role": "verb",
-            "translation": {
-              "ru": "быть"
-            }
+            "role": "verb"
           },
           {
             "type": "space",
@@ -3471,10 +2853,7 @@
           {
             "type": "word",
             "value": "saved",
-            "role": "verb",
-            "translation": {
-              "ru": "сохранено"
-            }
+            "role": "verb"
           },
           {
             "type": "space",
@@ -3482,10 +2861,7 @@
           },
           {
             "type": "word",
-            "value": "over",
-            "translation": {
-              "ru": "сверх"
-            }
+            "value": "over"
           },
           {
             "type": "space",
@@ -3493,10 +2869,7 @@
           },
           {
             "type": "word",
-            "value": "three",
-            "translation": {
-              "ru": "три"
-            }
+            "value": "three"
           },
           {
             "type": "space",
@@ -3504,10 +2877,7 @@
           },
           {
             "type": "word",
-            "value": "thousand",
-            "translation": {
-              "ru": "тысяч"
-            }
+            "value": "thousand"
           },
           {
             "type": "space",
@@ -3515,10 +2885,7 @@
           },
           {
             "type": "word",
-            "value": "euros",
-            "translation": {
-              "ru": "евро"
-            }
+            "value": "euros"
           },
           {
             "type": "punct",
@@ -3556,10 +2923,7 @@
         "tokens": [
           {
             "type": "word",
-            "value": "By",
-            "translation": {
-              "ru": "________________________________"
-            }
+            "value": "By"
           },
           {
             "type": "space",
@@ -3587,10 +2951,7 @@
           },
           {
             "type": "word",
-            "value": "authorities",
-            "translation": {
-              "ru": "органов"
-            }
+            "value": "authorities"
           },
           {
             "type": "space",
@@ -3599,10 +2960,7 @@
           {
             "type": "word",
             "value": "will",
-            "role": "verb",
-            "translation": {
-              "ru": "---"
-            }
+            "role": "verb"
           },
           {
             "type": "space",
@@ -3612,10 +2970,7 @@
           {
             "type": "word",
             "value": "have",
-            "role": "verb",
-            "translation": {
-              "ru": "быть"
-            }
+            "role": "verb"
           },
           {
             "type": "space",
@@ -3625,10 +2980,7 @@
           {
             "type": "word",
             "value": "opened",
-            "role": "verb",
-            "translation": {
-              "ru": "&amp;"
-            }
+            "role": "verb"
           },
           {
             "type": "space",
@@ -3636,10 +2988,7 @@
           },
           {
             "type": "word",
-            "value": "four",
-            "translation": {
-              "ru": "четыре"
-            }
+            "value": "four"
           },
           {
             "type": "space",
@@ -3647,10 +2996,7 @@
           },
           {
             "type": "word",
-            "value": "new",
-            "translation": {
-              "ru": "новых"
-            }
+            "value": "new"
           },
           {
             "type": "space",
@@ -3658,10 +3004,7 @@
           },
           {
             "type": "word",
-            "value": "metro",
-            "translation": {
-              "ru": "metrou"
-            }
+            "value": "metro"
           },
           {
             "type": "space",
@@ -3669,10 +3012,7 @@
           },
           {
             "type": "word",
-            "value": "stations",
-            "translation": {
-              "ru": "для работы"
-            }
+            "value": "stations"
           },
           {
             "type": "punct",
@@ -3710,10 +3050,7 @@
         "tokens": [
           {
             "type": "word",
-            "value": "By",
-            "translation": {
-              "ru": "________________________________"
-            }
+            "value": "By"
           },
           {
             "type": "space",
@@ -3729,10 +3066,7 @@
           },
           {
             "type": "word",
-            "value": "time",
-            "translation": {
-              "ru": "время"
-            }
+            "value": "time"
           },
           {
             "type": "space",
@@ -3740,10 +3074,7 @@
           },
           {
             "type": "word",
-            "value": "we",
-            "translation": {
-              "ru": "ср"
-            }
+            "value": "we"
           },
           {
             "type": "space",
@@ -3751,10 +3082,7 @@
           },
           {
             "type": "word",
-            "value": "sit",
-            "translation": {
-              "ru": "ХХХ"
-            }
+            "value": "sit"
           },
           {
             "type": "space",
@@ -3762,10 +3090,7 @@
           },
           {
             "type": "word",
-            "value": "down",
-            "translation": {
-              "ru": "Вниз"
-            }
+            "value": "down"
           },
           {
             "type": "space",
@@ -3773,10 +3098,7 @@
           },
           {
             "type": "word",
-            "value": "to",
-            "translation": {
-              "ru": "кому"
-            }
+            "value": "to"
           },
           {
             "type": "space",
@@ -3784,10 +3106,7 @@
           },
           {
             "type": "word",
-            "value": "discuss",
-            "translation": {
-              "ru": "дискутировать"
-            }
+            "value": "discuss"
           },
           {
             "type": "space",
@@ -3807,10 +3126,7 @@
           },
           {
             "type": "word",
-            "value": "everyone",
-            "translation": {
-              "ru": "все"
-            }
+            "value": "everyone"
           },
           {
             "type": "space",
@@ -3819,10 +3135,7 @@
           {
             "type": "word",
             "value": "will",
-            "role": "verb",
-            "translation": {
-              "ru": "---"
-            }
+            "role": "verb"
           },
           {
             "type": "space",
@@ -3832,10 +3145,7 @@
           {
             "type": "word",
             "value": "have",
-            "role": "verb",
-            "translation": {
-              "ru": "быть"
-            }
+            "role": "verb"
           },
           {
             "type": "space",
@@ -3845,10 +3155,7 @@
           {
             "type": "word",
             "value": "read",
-            "role": "verb",
-            "translation": {
-              "ru": "читали"
-            }
+            "role": "verb"
           },
           {
             "type": "space",
@@ -3864,10 +3171,7 @@
           },
           {
             "type": "word",
-            "value": "proposal",
-            "translation": {
-              "ru": "предложение"
-            }
+            "value": "proposal"
           },
           {
             "type": "punct",
@@ -3905,10 +3209,7 @@
         "tokens": [
           {
             "type": "word",
-            "value": "By",
-            "translation": {
-              "ru": "________________________________"
-            }
+            "value": "By"
           },
           {
             "type": "space",
@@ -3924,10 +3225,7 @@
           },
           {
             "type": "word",
-            "value": "age",
-            "translation": {
-              "ru": "ния"
-            }
+            "value": "age"
           },
           {
             "type": "space",
@@ -3935,10 +3233,7 @@
           },
           {
             "type": "word",
-            "value": "of",
-            "translation": {
-              "ru": "коллегиальных"
-            }
+            "value": "of"
           },
           {
             "type": "space",
@@ -3946,10 +3241,7 @@
           },
           {
             "type": "word",
-            "value": "eighty",
-            "translation": {
-              "ru": "восемьдесят"
-            }
+            "value": "eighty"
           },
           {
             "type": "punct",
@@ -3969,10 +3261,7 @@
           },
           {
             "type": "word",
-            "value": "average",
-            "translation": {
-              "ru": "среднее"
-            }
+            "value": "average"
           },
           {
             "type": "space",
@@ -3980,10 +3269,7 @@
           },
           {
             "type": "word",
-            "value": "person",
-            "translation": {
-              "ru": "лицо"
-            }
+            "value": "person"
           },
           {
             "type": "space",
@@ -3992,10 +3278,7 @@
           {
             "type": "word",
             "value": "will",
-            "role": "verb",
-            "translation": {
-              "ru": "---"
-            }
+            "role": "verb"
           },
           {
             "type": "space",
@@ -4005,10 +3288,7 @@
           {
             "type": "word",
             "value": "have",
-            "role": "verb",
-            "translation": {
-              "ru": "быть"
-            }
+            "role": "verb"
           },
           {
             "type": "space",
@@ -4018,10 +3298,7 @@
           {
             "type": "word",
             "value": "slept",
-            "role": "verb",
-            "translation": {
-              "ru": "Сон"
-            }
+            "role": "verb"
           },
           {
             "type": "space",
@@ -4029,10 +3306,7 @@
           },
           {
             "type": "word",
-            "value": "for",
-            "translation": {
-              "ru": "."
-            }
+            "value": "for"
           },
           {
             "type": "space",
@@ -4040,10 +3314,7 @@
           },
           {
             "type": "word",
-            "value": "nearly",
-            "translation": {
-              "ru": "почти"
-            }
+            "value": "nearly"
           },
           {
             "type": "space",
@@ -4051,10 +3322,7 @@
           },
           {
             "type": "word",
-            "value": "twenty",
-            "translation": {
-              "ru": "двадцать"
-            }
+            "value": "twenty"
           },
           {
             "type": "punct",
@@ -4062,10 +3330,7 @@
           },
           {
             "type": "word",
-            "value": "seven",
-            "translation": {
-              "ru": "семь"
-            }
+            "value": "seven"
           },
           {
             "type": "space",
@@ -4073,10 +3338,7 @@
           },
           {
             "type": "word",
-            "value": "years",
-            "translation": {
-              "ru": "годы"
-            }
+            "value": "years"
           },
           {
             "type": "punct",
