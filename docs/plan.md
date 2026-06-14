@@ -320,17 +320,18 @@
 
 ### Netlify
 
-- [ ] Зарегистрироваться / подключить GitHub repo
-- [ ] Установить `@netlify/angular-runtime`
+- [x] Зарегистрироваться / подключить GitHub repo → https://tenserium.netlify.app
 - [x] Создать `netlify.toml` в корне
 - [x] Добавить `angular.json` конфигурацию `netlify` (`baseHref: "/"`, `fileReplacements`)
 - [x] Добавить скрипты `build:netlify` и `set-env` в `package.json`
 - [x] Создать `src/environments/environment.ts` и `environment.prod.ts`
 - [x] Создать `scripts/set-env.js` — генерирует `environment.prod.ts` из env vars перед сборкой
 - [x] Создать `.env.example` с документацией переменных; обновить `.gitignore`
-- [ ] Обновить `.github/workflows/deploy.yml` → `netlify deploy --prod`
-- [ ] Добавить секреты: `NETLIFY_AUTH_TOKEN`, `NETLIFY_SITE_ID`
-- [ ] PR автоматически получает preview URL
+- [x] PR автоматически получает preview URL
+- [ ] ~~Установить `@netlify/angular-runtime`~~ — нужен только при включении SSR; откладывается до SSR-фазы
+- [ ] ~~Обновить `deploy.yml` → `netlify deploy --prod`~~ — не нужно: Netlify подключён к GitHub напрямую и деплоит сам при пуше в `main`; GitHub Actions в цепочке деплоя не участвует
+- [ ] ~~Добавить секреты `NETLIFY_AUTH_TOKEN`, `NETLIFY_SITE_ID`~~ — нужны только при деплое через Netlify CLI из GitHub Actions; в нашей схеме не требуются
+- [ ] При переходе на Netlify как основной хостинг: удалить `.github/workflows/deploy.yml` (GitHub Pages деплой станет лишним)
 
 ### Supabase
 
@@ -355,7 +356,7 @@
 - [ ] Row Level Security на всех таблицах
 - [ ] `supabase gen types` → TypeScript-типы
 - [ ] Обновить `StorageService` — новая реализация через Supabase клиент
-- [ ] Добавить env variables в Netlify UI (`SUPABASE_URL`, `SUPABASE_ANON_KEY`)
+- [x] Добавить env variables в Netlify UI (`SUPABASE_URL`, `SUPABASE_ANON_KEY`)
 
 ### Auth
 
