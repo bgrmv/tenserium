@@ -1,0 +1,57 @@
+<div class="admin-wrap">
+  <aside class="admin-sidebar">
+    <div class="admin-sidebar-head">
+      <div class="admin-role-badge"
+           [style.background]="store.roleMeta().bg"
+           [style.color]="store.roleMeta().color">
+        <app-icon name="shield" [size]="11" [stroke]="store.roleMeta().color" />
+        {{ store.roleMeta().label }}
+      </div>
+      <div class="admin-sidebar-user">Alex Rivera</div>
+    </div>
+
+    @for (tab of store.visibleTabs(); track tab.id) {
+      <button class="admin-tab" [class.is-active]="tab.id === store.activeTab()?.id"
+              (click)="store.setTab(tab.id)">
+        <app-icon [name]="tab.ico" [size]="14" />
+        {{ tab.label }}
+        @if (tab.badge === 'live') {
+          <span class="live-dot push-right"></span>
+        } @else if (tab.badge) {
+          <span class="tab-badge">{{ tab.badge }}</span>
+        }
+      </button>
+    }
+
+    <div class="role-switcher">
+      <label for="admin-role-select">Prototype role</label>
+      <select id="admin-role-select" #sel
+              [value]="store.role()" (change)="onRoleChange(sel.value)">
+        @for (r of roles; track r) {
+          <option [value]="r">{{ r[0].toUpperCase() + r.slice(1) }}</option>
+        }
+      </select>
+    </div>
+  </aside>
+
+  <div class="admin-content">
+    <div class="admin-head">
+      <h2>{{ store.meta().title }}</h2>
+      <p>{{ store.meta().desc }}</p>
+    </div>
+
+    @switch (store.activeTab()?.id) {
+      @case ('users')      { <app-admin-users-tab /> }
+      @case ('activity')   { <app-admin-activity-tab /> }
+      @case ('stats')      { <app-admin-stats-tab /> }
+      @case ('content')    { <app-admin-content-tab /> }
+      @case ('aigen')      { <app-admin-aigen-tab /> }
+      @case ('reports')    { <app-admin-reports-tab /> }
+      @case ('moderation') { <app-admin-moderation-tab /> }
+      @case ('feedback')   { <app-admin-feedback-tab /> }
+      @case ('audit')      { <app-admin-audit-tab /> }
+      @case ('daily')      { <app-admin-daily-tab /> }
+      @case ('announce')   { <app-admin-announce-tab /> }
+    }
+  </div>
+</div>

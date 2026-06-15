@@ -1,4 +1,5 @@
 import { Routes } from '@angular/router';
+import { adminGuard } from '@pages/admin/lib/admin.guard';
 
 export const ROUTES: Routes = [
   {
@@ -39,6 +40,13 @@ export const ROUTES: Routes = [
         title: 'Daily Challenge | Tenserium',
         loadComponent: () =>
           import('@pages/daily').then((m) => m.DailyPageComponent),
+      },
+      {
+        path: 'admin',
+        title: 'Admin | Tenserium',
+        canActivate: [adminGuard],
+        loadComponent: () =>
+          import('@pages/admin').then((m) => m.AdminPageComponent),
       },
     ],
   },

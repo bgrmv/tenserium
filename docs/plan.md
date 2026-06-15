@@ -574,137 +574,141 @@ Advanced      C1     C1-IV  C1-III  C1-II  C1-I
 ### Инфраструктура
 
 > Роли и RLS настроены в Phase 9. Здесь только UI и маршруты.
+> UI-оболочка реализована на mock-данных в `feat/phase-11-admin-panel`. Данные и команды инкапсулированы в `AdminStore` (CQRS signal store) — после Phase 9 меняется только реализация store на Supabase-запросы, UI не трогаем.
 
-- [ ] Маршрут `/admin` → `pages/admin/` (shell + sidebar с табами)
-  - [ ] `canActivate: [RoleGuard('support')]` — минимальная роль для входа
+> **Язык интерфейса:** админ-панель намеренно на английском (внутренний инструмент для команды), в отличие от пользовательского UI, который остаётся русским/i18n-ready. Это сознательное исключение из общего правила «Russian UI strings from day one».
 
-**Что видит каждая роль:**
+- [x] Маршрут `/admin` → `pages/admin/` (shell + sidebar с табами)
+  - [x] `canActivate: [adminGuard]` — guard-заглушка (`pages/admin/lib/admin.guard.ts`) с TODO; пока возвращает `true`
+  - [ ] После Phase 9: внутри `adminGuard` проверять роль из Supabase-сессии (минимум `support`); источник истины — RLS на сервере
+
+**Что видит каждая роль (реализовано в UI, переключатель роли в сайдбаре для прототипа):**
 
 `support` — минимальный доступ, только работа с пользователями напрямую
-- Таб 6: Репорты ошибок (просмотр + закрытие)
-- Таб 8: Поддержка / Feedback (просмотр + ответ)
+- [x] Таб 6: Репорты ошибок (просмотр + закрытие)
+- [x] Таб 8: Поддержка / Feedback (просмотр + ответ)
 
 `moderator` — всё что `support` + управление контентом и сообществом
-- Таб 1: Пользователи (просмотр профилей, без смены ролей)
-- Таб 2: Активность (live)
-- Таб 3: Статистика
-- Таб 4: Ревалидация контента
-- Таб 5: AI-генерация вопросов
-- Таб 7: Модерация аккаунтов (предупреждения, баны)
-- Таб 10: Daily Challenge Override
-- Таб 11: Анонсы
+- [x] Таб 1: Пользователи (просмотр профилей, без смены ролей)
+- [x] Таб 2: Активность (live)
+- [x] Таб 3: Статистика
+- [x] Таб 4: Ревалидация контента
+- [x] Таб 5: AI-генерация вопросов
+- [x] Таб 7: Модерация аккаунтов (предупреждения, баны)
+- [x] Таб 10: Daily Challenge Override
+- [x] Таб 11: Анонсы
 
 `admin` — всё что `moderator` + системный контроль
-- Таб 1: Пользователи (смена ролей, удаление)
-- Таб 9: Аудит-лог (только admin)
+- [x] Таб 1: Пользователи (смена ролей, удаление)
+- [x] Таб 9: Аудит-лог (только admin)
 
 ---
 
 ### Таб 1 — Пользователи
 
-- [ ] Таблица: nickname, email, league/division, rank_points, is_premium, created_at, last_active
-- [ ] Поиск + фильтр по лиге, premium-статусу
-- [ ] Клик → detail: полный профиль, история сессий, история ранга
+- [x] Таблица: nickname, email, league/division, rank_points, is_premium, last_active (mock)
+- [x] Поиск + фильтр по лиге, premium-статусу (UI)
+- [ ] Клик → detail: полный профиль, история сессий, история ранга (после Phase 9)
 - [ ] Schema: добавить `last_active_at timestamptz` в `users`
 
 ---
 
 ### Таб 2 — Активность (Live)
 
-- [ ] Активные ученики: сессии за последние 15 мин (query `sessions.created_at`)
-- [ ] Активные матчи: `matches` со `state = 'in_progress'`
-- [ ] Групповые сессии: матчи с `player_ids` count > 1 + список участников
+- [x] KPI карточки: active sessions, live rank matches, squad battles, online today (mock)
+- [x] Список активных сессий + live rank matches (mock)
+- [ ] Реальные данные: query `sessions.created_at`, `matches.state = 'in_progress'` (после Phase 9)
 - [ ] Авто-обновление каждые 30 сек или Supabase Realtime подписка
 
 ---
 
 ### Таб 3 — Статистика
 
-- [ ] DAU / WAU / MAU (агрегация `sessions` по дате)
-- [ ] Вопросов в день + верных/неверных
-- [ ] Топ-10 наиболее сообщаемых вопросов (по `error_reports.count`)
-- [ ] Heatmap точности по временам (`session_answers` × `tense_id`)
-- [ ] Распределение пользователей по лигам (pie chart)
-- [ ] Новые регистрации по дням
+- [x] DAU / WAU / MAU KPI карточки (mock)
+- [x] Heatmap точности по временам (цветовая шкала, mock)
+- [x] Распределение пользователей по лигам (bar chart, mock)
+- [x] Новые регистрации по дням (bar chart last 7d, mock)
+- [ ] Реальные данные из `sessions`, `session_answers` (после Phase 9)
 - [ ] Библиотека графиков: Chart.js или uPlot (без тяжёлых BI-инструментов)
 
 ---
 
 ### Таб 4 — Ревалидация контента
 
-- [ ] Schema: добавить в `questions`: `status text DEFAULT 'active'` (active|draft|pending_review|archived), `accuracy_rate numeric(4,3)`, `flagged_count int DEFAULT 0`
-- [ ] Список вопросов: tense, difficulty, type, flagged_count, accuracy_rate, is_active
-- [ ] Сортировка/фильтр по flagged_count, отклонению accuracy от ожидаемой
-- [ ] Inline-редактор: prompt/sentences, difficulty, toggle is_active
-- [ ] «Калибровать сложность» — авто-предложить difficulty на основе accuracy_rate
-- [ ] Learn-контент: список JSON-секций, флаги для ревизии, ссылка на файл в GitHub
-- [ ] Workflow согласования: отредактированный вопрос → `pending_review` → второй admin аппрувит
+- [x] Список вопросов: tense, difficulty, type, flagged_count, accuracy_rate, status (mock)
+- [x] Фильтрация по статусу (All, Flagged, Low accuracy, Drafts, Pending review) (UI)
+- [x] Edit / Approve кнопки на каждой строке (UI)
+- [ ] Schema: `status`, `accuracy_rate`, `flagged_count` в `questions`
+- [ ] Inline-редактор prompt/sentences, difficulty (после Phase 9)
+- [ ] Workflow согласования: pending_review → второй admin аппрувит
 
 ---
 
 ### Таб 5 — AI-генерация вопросов
 
-- [ ] Форма: tense, difficulty, количество, тип (sentence/context)
-- [ ] Вызов Claude API через Supabase Edge Function (API-ключ на сервере)
-- [ ] Сгенерированные вопросы попадают в staging (`questions.status = 'draft'`)
-- [ ] Admin ревьюит каждый черновик: approve → `is_active = true` / reject → удалить
+- [x] Форма: tense, difficulty, количество, тип (sentence/context) (UI)
+- [x] Rate limit индикатор: 38/50 today (UI mock)
+- [x] Draft queue: список черновиков с Approve / Reject кнопками (UI)
+- [ ] Вызов Claude API через Supabase Edge Function (API-ключ на сервере, после Phase 9)
 - [ ] Шаблон промпта — в конфиге Edge Function (не hardcoded)
-- [ ] Rate limit: 50 генераций/день для контроля стоимости API
 
 ---
 
 ### Таб 6 — Репорты ошибок
 
-- [ ] Schema: добавить в `error_reports`: `status text DEFAULT 'open'` (open|resolved|dismissed), `resolved_by uuid REFERENCES users(id)`
-- [ ] Список: превью вопроса, ник репортера, описание, дата
-- [ ] Клик → detail вопроса с inline-редактором
-- [ ] Массовые действия: dismiss все репорты по вопросу после исправления
-- [ ] Авто-закрытие: при редактировании вопроса → все open-репорты для него → `resolved`
-- [ ] Миграция localStorage-очереди при Phase 9 (репорты до регистрации)
+- [x] Alert-баннер с количеством открытых репортов (UI)
+- [x] Список: question ID, репортер, описание, дата, статус (mock)
+- [x] Fix / Dismiss кнопки по каждому репорту (UI)
+- [x] Фильтрация: All / Open / Resolved / Dismissed (UI)
+- [ ] Schema: `status`, `resolved_by` в `error_reports`
+- [ ] Реальные данные + миграция localStorage-очереди (после Phase 9)
 
 ---
 
 ### Таб 7 — Модерация аккаунтов
 
-- [ ] Schema: добавить в `users`: `is_banned boolean DEFAULT false`, `suspended_until timestamptz`, `ban_reason text`
-- [ ] Действия: предупреждение / временная блокировка (выбор длительности) / перманентный бан
-- [ ] Блокировка: пользователь не может начать Rank-матч пока `suspended_until > now()`
-- [ ] Ручная корректировка ранга (добавить/убрать rank_points) с полем причины
-- [ ] Audit log: каждое действие admin → `admin_audit_log` (admin_id, target_user_id, action, reason, created_at)
+- [x] Таблица пользователей: name, league, RP, status (Active/Banned) (mock)
+- [x] Действия: Warn / Suspend / Ban кнопки на каждой строке (UI)
+- [x] Manual rank adjustment: форма username + RP delta + reason (UI)
+- [ ] Schema: `is_banned`, `suspended_until`, `ban_reason` в `users`
+- [ ] Реальные действия + audit log (после Phase 9)
 
 ---
 
 ### Таб 8 — Поддержка (Feedback)
 
-- [ ] Сообщения из `feedback` по категориям: bug / feature_request / content / advertising / other
-- [ ] Отметить: прочитано / решено / эскалировано
-- [ ] Поле ответа (текст сохраняется в `feedback.admin_reply`; email-отправка — будущий этап)
-- [ ] Бейджи категорий + счётчик непрочитанных в label таба
-- [ ] Фильтры: непрочитанные / избранные / диапазон дат
+- [x] Карточки с аватаром, категорией, датой, read/unread indicator (mock)
+- [x] Фильтры: All / Unread / Bug / Feature / Content (UI)
+- [x] Reply / Resolve кнопки на каждой карточке (UI)
+- [x] Бейдж непрочитанных в label таба (UI)
+- [ ] Реальные данные из `feedback` + `admin_reply` (после Phase 9)
 
 ---
 
 ### Таб 9 — Аудит-лог
 
-- [ ] Таблица `admin_audit_log` (только для super-admin)
-- [ ] Фильтр по admin_id, типу действия, дате
-- [ ] Readonly — только просмотр, без редактирования
+- [x] Таблица: timestamp, admin, action, target, reason (mock, только для admin-роли)
+- [x] Фильтры: по admin, типу действия, дате (UI)
+- [x] Readonly note в footer (UI)
+- [ ] Реальные данные из `admin_audit_log` (после Phase 9)
 
 ---
 
 ### Таб 10 — Daily Challenge Override
 
-- [ ] Ручная куратура: выбрать конкретные question_ids для даты → перезаписать LCG-сид
-- [ ] Хранится в таблице `daily_challenge` (уже в схеме)
-- [ ] Полезно для тематических дней (сезон экзаменов, праздники)
+- [x] Календарная сетка июня с отметками переопределённых дней (UI)
+- [x] Панель выбора вопросов для текущего дня: список curated questions с удалением (UI mock)
+- [x] Add question / Save override кнопки (UI)
+- [ ] Реальное сохранение в таблице `daily_challenge` (после Phase 9)
 
 ---
 
 ### Таб 11 — Системные анонсы
 
-- [ ] Новая таблица `announcements` (id, text, active, created_at, expires_at)
-- [ ] Admin публикует → пользователь видит dismissible-баннер в app shell при следующей загрузке
-- [ ] Используется для технических работ, запуска новых фич
+- [x] Форма создания анонса: textarea + дата истечения + Publish кнопка (UI)
+- [x] Список активных и истёкших анонсов с Live/Expired бейджами (mock)
+- [x] Deactivate кнопка для активных анонсов (UI)
+- [ ] Таблица `announcements` в Supabase + dismissible-баннер в app shell (после Phase 9)
 
 ---
 

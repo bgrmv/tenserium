@@ -4,7 +4,8 @@ export type IconName =
   | 'trainer' | 'learn' | 'stats' | 'logout' | 'bell' | 'gear' | 'lock'
   | 'play' | 'flame' | 'shield' | 'trophy' | 'arrow-right' | 'arrow-left' | 'zap'
   | 'check' | 'clock' | 'bolt' | 'repeat' | 'globe' | 'calendar' | 'squad'
-  | 'flag' | 'list' | 'share' | 'copy' | 'daily' | 'x';
+  | 'flag' | 'list' | 'share' | 'copy' | 'daily' | 'x'
+  | 'eye' | 'edit' | 'alert' | 'ban' | 'send' | 'download' | 'plus' | 'chat';
 
 const PATHS: Record<IconName, string> = {
   trainer: 'M6 12a6 6 0 0 1 12 0 M9 12h6 M12 9v6 M3 12h2 M19 12h2',
@@ -34,6 +35,14 @@ const PATHS: Record<IconName, string> = {
   calendar: 'M5 5h14v15H5z M5 9h14 M9 3v4 M15 3v4',
   squad: 'M9 11a3 3 0 1 0 0-6 3 3 0 0 0 0 6 M3 20a6 6 0 0 1 12 0 M17 11a3 3 0 1 0-2-5 M16 14a6 6 0 0 1 5 6',
   x: 'M18 6 6 18 M6 6l12 12',
+  eye: 'M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z M12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6',
+  edit: 'M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7 M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z',
+  alert: 'M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z M12 9v4 M12 17h.01',
+  ban: 'M12 3a9 9 0 1 0 0 18 9 9 0 0 0 0-18 M4.93 4.93l14.14 14.14',
+  send: 'M22 2 11 13 M22 2 15 22 9 13 2 9l20-7z',
+  download: 'M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4 M7 10l5 5 5-5 M12 15V3',
+  plus: 'M12 5v14 M5 12h14',
+  chat: 'M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z',
 };
 
 @Component({
