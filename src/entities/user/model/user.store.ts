@@ -1,7 +1,7 @@
 import { Injectable, computed, inject, signal } from '@angular/core';
 import { StorageService } from '@shared/api/storage.service';
 import { rankProgress } from '@shared/config/rank.config';
-import type { UserProfile } from '@shared/types';
+import type { ScoreDisplayPreference, UserProfile } from '@shared/types';
 
 const DEFAULT_PROFILE: UserProfile = {
   id: 'local',
@@ -14,6 +14,7 @@ const DEFAULT_PROFILE: UserProfile = {
   scoreDisplayPreference: 'none',
   studyMode: false,
   pauseMode: false,
+  avatarHue: 210,
 };
 
 /**
@@ -24,15 +25,20 @@ const DEFAULT_PROFILE: UserProfile = {
 export class UserStore {
   private readonly storage = inject(StorageService);
 
-  private readonly _profile = signal<UserProfile>(
-    this.storage.load<UserProfile>('user:profile', DEFAULT_PROFILE),
-  );
+  private readonly _profile = signal<UserProfile>({
+    ...DEFAULT_PROFILE,
+    ...this.storage.load<Partial<UserProfile>>('user:profile', {}),
+  });
 
   readonly profile = this._profile.asReadonly();
   readonly rank = computed(() => rankProgress(this._profile().rankPoints));
   readonly streakDays = computed(() => this._profile().streakDays);
   readonly studyMode = computed(() => this._profile().studyMode ?? false);
   readonly pauseMode = computed(() => this._profile().pauseMode ?? false);
+  readonly scoreDisplayPreference = computed(
+    () => this._profile().scoreDisplayPreference,
+  );
+  readonly avatarHue = computed(() => this._profile().avatarHue);
 
   awardRankPoints(points: number): void {
     this._profile.update((p) => ({ ...p, rankPoints: p.rankPoints + points }));
@@ -56,6 +62,16 @@ export class UserStore {
 
   togglePauseMode(): void {
     this._profile.update((p) => ({ ...p, pauseMode: !p.pauseMode }));
+    this.persist();
+  }
+
+  setScoreDisplayPreference(pref: ScoreDisplayPreference): void {
+    this._profile.update((p) => ({ ...p, scoreDisplayPreference: pref }));
+    this.persist();
+  }
+
+  setAvatarHue(hue: number): void {
+    this._profile.update((p) => ({ ...p, avatarHue: hue }));
     this.persist();
   }
 

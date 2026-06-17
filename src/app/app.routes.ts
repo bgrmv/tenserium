@@ -30,10 +30,15 @@ export const ROUTES: Routes = [
           import('@pages/learn').then((m) => m.LearnPageComponent),
       },
       {
-        path: 'stats',
-        title: 'Stats | Tenserium',
+        path: 'profile',
+        title: 'Profile | Tenserium',
         loadComponent: () =>
-          import('@pages/stats').then((m) => m.StatsPageComponent),
+          import('@pages/profile').then((m) => m.ProfilePageComponent),
+      },
+      {
+        path: 'stats',
+        redirectTo: 'profile',
+        pathMatch: 'full',
       },
       {
         path: 'daily',

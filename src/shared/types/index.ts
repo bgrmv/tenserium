@@ -106,6 +106,7 @@ export interface UserProfile {
   readonly scoreDisplayPreference: ScoreDisplayPreference;
   readonly studyMode: boolean;
   readonly pauseMode: boolean;
+  readonly avatarHue: number;
 }
 
 export interface Player {

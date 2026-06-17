@@ -750,7 +750,7 @@ Advanced      C1     C1-IV  C1-III  C1-II  C1-I
 - [ ] `@angular/service-worker`
 - [ ] `manifest.webmanifest` (icon, name, theme color)
 - [ ] Кэширование оффлайн: learn-страницы + вопросы
-- [ ] Responsive: Home grid 2×6 на мобайл, крупный текст
+- [ ] Responsive: Home grid 3×4 на мобайл, крупный текст
 
 ---
 

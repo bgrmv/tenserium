@@ -1,0 +1,312 @@
+<div class="profile">
+  <!-- Section 1 — Identity header -->
+  <header class="hero" id="overview">
+    <app-avatar
+      [name]="profile().nickname"
+      [hue]="profile().avatarHue"
+      [size]="88"
+      ring="var(--accent)"
+    />
+    <div class="hero-main">
+      <div class="hero-name">
+        {{ profile().nickname }}
+        @if (profile().isPremium) {
+          <span class="premium">PREMIUM</span>
+        }
+      </div>
+      <div class="hero-status">Guest · progress saved on this device</div>
+
+      <div class="hero-badges">
+        <span class="badge-rank">
+          <app-rank-shield [metal]="tierMetal()" [size]="18" />
+          <span class="cap">{{ profile().rankTier }}</span>
+        </span>
+        <span class="badge-div">
+          {{ division() }}
+          <span class="ph-dot" title="Placeholder — division tracking is not wired yet">·</span>
+        </span>
+        @if (equivalent()) {
+          <span class="badge-eq">{{ equivalent() }}</span>
+        }
+      </div>
+
+      <div class="hero-bar">
+        <app-progress-bar
+          [value]="rank().intoTier"
+          [max]="rank().tierSize"
+          [height]="6"
+          [glow]="true"
+        />
+        <span class="hero-bar-lbl">
+          {{ rank().intoTier }} / {{ rank().tierSize }} to next tier
+        </span>
+      </div>
+
+      <div class="kpis">
+        <div class="kpi">
+          <b>{{ dailyStreak() }}🔥</b><span>day streak</span>
+        </div>
+        <div class="kpi ph">
+          <b>91%</b><span>accuracy</span>
+        </div>
+        <div class="kpi ph">
+          <b>4.1s</b><span>avg speed</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <nav class="subnav">
+    <a href="#statistics">Statistics</a>
+    <a href="#settings">Settings</a>
+    <a href="#account">Account</a>
+  </nav>
+
+  <!-- Section 2 — Statistics -->
+  <section class="block" id="statistics">
+    <h2>Statistics</h2>
+
+    <div class="grid">
+      <div class="card">
+        <div class="card-h">
+          <span>Accuracy by aspect</span>
+          <span class="ph-tag">placeholder</span>
+        </div>
+        <div class="acc-rows">
+          @for (row of aspectRows(); track row.aspect) {
+            <div class="acc-row">
+              <span class="acc-name">{{ row.label }}</span>
+              <app-progress-bar
+                [value]="row.accuracy"
+                [max]="1"
+                [height]="8"
+                [color]="row.color"
+              />
+              <span class="acc-pct">{{ (row.accuracy * 100).toFixed(0) }}%</span>
+            </div>
+          }
+        </div>
+        <button type="button" class="btn-ghost sm" (click)="train()">
+          Train weakest <app-icon name="arrow-right" [size]="14" />
+        </button>
+      </div>
+
+      <div class="card">
+        <div class="card-h">
+          <span>Totals</span>
+          <span class="ph-tag">placeholder</span>
+        </div>
+        <div class="totals">
+          <div><b>142</b><span>questions</span></div>
+          <div><b>7</b><span>games</span></div>
+          <div><b>18</b><span>best streak</span></div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-h"><span>Last session</span></div>
+        @if (lastSession(); as s) {
+          <div class="last">
+            <div class="last-score">{{ s.score }}<span>pts</span></div>
+            <div class="last-meta">
+              <span class="cap">{{ s.mode }}</span>
+              <span>{{ (s.accuracy * 100).toFixed(0) }}% accuracy</span>
+              <span>best streak {{ s.bestStreak }}</span>
+              <span class="muted">{{ sessionDate(s.at) }}</span>
+            </div>
+          </div>
+        } @else {
+          <p class="empty">No sessions yet — play a round to see your results here.</p>
+        }
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 3 — Settings -->
+  <section class="block" id="settings">
+    <h2>Settings</h2>
+
+    <div class="card">
+      <div class="card-h"><span>Profile</span></div>
+
+      <div class="row">
+        <div class="row-label">Nickname</div>
+        <div class="row-ctrl">
+          @if (editingNickname()) {
+            <input
+              class="nick-input"
+              type="text"
+              [value]="profile().nickname"
+              (keydown.enter)="setNickname($any($event.target).value)"
+              (blur)="setNickname($any($event.target).value)"
+            />
+          } @else {
+            <button
+              type="button"
+              class="inline-edit"
+              (click)="editingNickname.set(true)"
+            >
+              {{ profile().nickname }}
+              <app-icon name="edit" [size]="14" stroke="var(--muted)" />
+            </button>
+          }
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="row-label">Avatar colour</div>
+        <div class="row-ctrl hues">
+          @for (h of avatarHues; track h) {
+            <button
+              type="button"
+              class="hue"
+              [class.sel]="profile().avatarHue === h"
+              [style.background]="'oklch(0.55 0.13 ' + h + ')'"
+              [attr.aria-label]="'Avatar hue ' + h"
+              (click)="setAvatarHue(h)"
+            ></button>
+          }
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-h"><span>Display preference</span></div>
+      <p class="sub">Score system shown next to your division badge.</p>
+      <div class="segment">
+        @for (opt of displayOptions; track opt.value) {
+          <button
+            type="button"
+            class="seg"
+            [class.sel]="profile().scoreDisplayPreference === opt.value"
+            (click)="setDisplayPreference(opt.value)"
+          >
+            {{ opt.label }}
+          </button>
+        }
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-h">
+        <span>Hotkeys</span>
+        <span class="ph-tag">customisation soon</span>
+      </div>
+      <p class="sub">F1–F12 are mapped to tenses in grid order.</p>
+      <div class="hk-list">
+        @for (hk of hotkeyRows(); track hk.id) {
+          <div class="hk">
+            <span class="hk-dot" [style.background]="hk.color"></span>
+            <span class="hk-name">{{ hk.name }}</span>
+            <kbd>{{ hk.hotkey }}</kbd>
+          </div>
+        }
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-h"><span>Modes &amp; language</span></div>
+
+      <div class="row">
+        <div>
+          <div class="row-label">Study mode</div>
+          <div class="row-hint">Reveal grammar notes during play.</div>
+        </div>
+        <button
+          type="button"
+          class="toggle"
+          [class.on]="profile().studyMode"
+          (click)="toggleStudyMode()"
+          [attr.aria-pressed]="profile().studyMode"
+        ><span class="knob"></span></button>
+      </div>
+
+      <div class="row">
+        <div>
+          <div class="row-label">Pause mode</div>
+          <div class="row-hint">Allow pausing the timer mid-session.</div>
+        </div>
+        <button
+          type="button"
+          class="toggle"
+          [class.on]="profile().pauseMode"
+          (click)="togglePauseMode()"
+          [attr.aria-pressed]="profile().pauseMode"
+        ><span class="knob"></span></button>
+      </div>
+
+      <div class="row">
+        <div>
+          <div class="row-label">Language</div>
+          <div class="row-hint">UI language.</div>
+        </div>
+        <div class="segment small">
+          <button type="button" class="seg sel">RU</button>
+          <button type="button" class="seg" disabled>EN <span class="soon">soon</span></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 4 — Account (stub, Phase 8) -->
+  <section class="block" id="account">
+    <h2>Account</h2>
+
+    <div class="card">
+      <div class="card-h"><span>Sign in</span></div>
+      <p class="sub">
+        Your progress is stored locally. Sign in to unlock Rank mode,
+        leaderboards, and sync across devices.
+      </p>
+      <button type="button" class="btn-primary google" disabled>
+        <app-icon name="globe" [size]="16" /> Sign in with Google
+      </button>
+      <p class="soon-note">Account sign-in arrives in Phase 8.</p>
+
+      <div class="providers">
+        <span class="prov-label">Linked providers</span>
+        <span class="prov none">None yet</span>
+      </div>
+    </div>
+
+    <div class="card danger-zone">
+      <div class="card-h"><span>Danger zone</span></div>
+      <div class="row">
+        <div>
+          <div class="row-label">Delete account</div>
+          <div class="row-hint">Permanently removes your profile and progress.</div>
+        </div>
+        <button type="button" class="btn-danger" (click)="confirmDelete.set(true)">
+          Delete
+        </button>
+      </div>
+    </div>
+  </section>
+</div>
+
+@if (confirmDelete()) {
+  <div class="overlay">
+    <div
+      class="backdrop"
+      role="button"
+      tabindex="0"
+      aria-label="Close"
+      (click)="confirmDelete.set(false)"
+      (keydown.enter)="confirmDelete.set(false)"
+      (keydown.space)="confirmDelete.set(false)"
+    ></div>
+    <div class="modal" role="dialog" aria-label="Delete account">
+      <h3>Delete account?</h3>
+      <p class="sub">
+        This will permanently erase your profile and progress. This action
+        cannot be undone. Account deletion is wired up in Phase 8.
+      </p>
+      <div class="actions">
+        <button type="button" class="btn-ghost" (click)="confirmDelete.set(false)">
+          Cancel
+        </button>
+        <button type="button" class="btn-danger" disabled>Delete account</button>
+      </div>
+    </div>
+  </div>
+}

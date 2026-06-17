@@ -54,7 +54,7 @@
 .icon-chip { position: relative; width: 38px; height: 38px; border-radius: 10px; display: grid; place-items: center; color: var(--dim); border: none; background: none; cursor: pointer; transition: 0.14s; }
 .icon-chip:hover { background: var(--bg-2); color: var(--text); }
 .dot { position: absolute; top: 9px; right: 10px; width: 7px; height: 7px; border-radius: 50%; background: var(--danger); border: 2px solid var(--bg-0); }
-.profile-chip { display: flex; align-items: center; gap: 10px; }
+.profile-chip { display: flex; align-items: center; gap: 10px; text-decoration: none; color: inherit; cursor: pointer; }
 .meta { display: flex; flex-direction: column; align-items: flex-end; gap: 2px; }
 .rank { display: flex; align-items: center; gap: 4px; font-size: 13px; font-weight: 600; text-transform: capitalize; }
 .streak { display: flex; align-items: center; gap: 3px; font-size: 11px; color: var(--muted); }

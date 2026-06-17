@@ -8,7 +8,7 @@
       <a class="rail-btn" routerLink="/learn" routerLinkActive="is-active" title="Learn" aria-label="Learn">
         <app-icon name="learn" [size]="20" />
       </a>
-      <a class="rail-btn" routerLink="/stats" routerLinkActive="is-active" title="Stats" aria-label="Stats">
+      <a class="rail-btn" routerLink="/profile" routerLinkActive="is-active" title="Profile" aria-label="Profile">
         <app-icon name="stats" [size]="20" />
       </a>
       <a class="rail-btn daily-btn" routerLink="/daily" routerLinkActive="is-active" title="Daily Challenge" aria-label="Daily Challenge">
@@ -38,7 +38,7 @@
       <nav class="topnav">
         <a routerLink="/home" routerLinkActive="is-active">Trainer</a>
         <a routerLink="/learn" routerLinkActive="is-active">Learn</a>
-        <a routerLink="/stats" routerLinkActive="is-active">Stats</a>
+        <a routerLink="/profile" routerLinkActive="is-active">Profile</a>
         <a routerLink="/daily" routerLinkActive="is-active" class="daily-link">
           <app-icon name="flame" [size]="14" stroke="var(--warm)" />Daily
           @if (dailyDone()) { <span class="done-badge">✓</span> }
@@ -48,13 +48,13 @@
         <button type="button" class="icon-chip" aria-label="Notifications">
           <app-icon name="bell" [size]="18" /><span class="dot"></span>
         </button>
-        <div class="profile-chip">
+        <a class="profile-chip" routerLink="/profile" aria-label="Profile">
           <div class="meta">
             <span class="rank"><app-rank-shield [metal]="tierMetal()" [size]="15" />{{ profile().rankTier }}</span>
             <span class="streak"><app-icon name="flame" [size]="11" stroke="var(--warm)" />{{ profile().streakDays }}d</span>
           </div>
-          <app-avatar [name]="profile().nickname" [hue]="210" [size]="34" />
-        </div>
+          <app-avatar [name]="profile().nickname" [hue]="profile().avatarHue" [size]="34" />
+        </a>
       </div>
     </header>
 
