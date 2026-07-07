@@ -21,12 +21,16 @@
         }
       </a>
     </div>
-    <a class="rail-btn admin-rb" routerLink="/admin" routerLinkActive="is-active" title="Admin Panel" aria-label="Admin Panel">
-      <app-icon name="shield" [size]="20" />
-    </a>
-    <button type="button" class="rail-btn foot" title="Sign out" aria-label="Sign out">
-      <app-icon name="logout" [size]="19" />
-    </button>
+    @if (auth.currentUser() && auth.currentUser()!.appRole !== 'user') {
+      <a class="rail-btn admin-rb" routerLink="/admin" routerLinkActive="is-active" title="Admin Panel" aria-label="Admin Panel">
+        <app-icon name="shield" [size]="20" />
+      </a>
+    }
+    @if (auth.currentUser()) {
+      <button type="button" class="rail-btn foot" title="Sign out" aria-label="Sign out" (click)="signOut()">
+        <app-icon name="logout" [size]="19" />
+      </button>
+    }
   </nav>
 
   <div class="body">
@@ -45,16 +49,19 @@
         </a>
       </nav>
       <div class="right">
-        <button type="button" class="icon-chip" aria-label="Notifications">
-          <app-icon name="bell" [size]="18" /><span class="dot"></span>
-        </button>
-        <div class="profile-chip">
-          <div class="meta">
-            <span class="rank"><app-rank-shield [metal]="tierMetal()" [size]="15" />{{ profile().rankTier }}</span>
-            <span class="streak"><app-icon name="flame" [size]="11" stroke="var(--warm)" />{{ profile().streakDays }}d</span>
-          </div>
-          <app-avatar [name]="profile().nickname" [hue]="210" [size]="34" />
-        </div>
+        @if (auth.currentUser(); as user) {
+          <a class="profile-chip" routerLink="/profile" aria-label="Profile">
+            <div class="meta">
+              <span class="rank"><app-rank-shield [metal]="tierMetal()" [size]="15" />{{ profile().rankTier }}</span>
+              <span class="streak"><app-icon name="flame" [size]="11" stroke="var(--warm)" />{{ profile().streakDays }}d</span>
+            </div>
+            <app-avatar [name]="user.nickname ?? user.email" [hue]="210" [size]="34" />
+          </a>
+        } @else {
+          <button type="button" class="btn-login" (click)="openLogin()" [disabled]="auth.isLoading()">
+            Войти
+          </button>
+        }
       </div>
     </header>
 
@@ -63,3 +70,5 @@
     </main>
   </div>
 </div>
+
+<app-login-modal [open]="loginOpen()" (dismissed)="loginOpen.set(false)" />
