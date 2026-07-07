@@ -1,7 +1,9 @@
-import { Injectable, computed, inject, signal } from '@angular/core';
+import { effect, Injectable, computed, inject, signal } from '@angular/core';
 import { StorageService } from '@shared/api/storage.service';
 import { rankProgress } from '@shared/config/rank.config';
 import type { UserProfile } from '@shared/types';
+import { AuthService } from '@shared/api/auth.service';
+import type { AppRole } from '@shared/api/auth.service';
 
 const DEFAULT_PROFILE: UserProfile = {
   id: 'local',
@@ -16,23 +18,40 @@ const DEFAULT_PROFILE: UserProfile = {
   pauseMode: false,
 };
 
-/**
- * UserStore — local player profile and progression. Anonymous play persists to
- * StorageService; Phase 8 swaps in Supabase-backed sync behind the same surface.
- */
 @Injectable({ providedIn: 'root' })
 export class UserStore {
   private readonly storage = inject(StorageService);
+  private readonly auth = inject(AuthService);
 
   private readonly _profile = signal<UserProfile>(
     this.storage.load<UserProfile>('user:profile', DEFAULT_PROFILE),
   );
+  private readonly _role = signal<AppRole>('user');
 
   readonly profile = this._profile.asReadonly();
+  readonly role = this._role.asReadonly();
   readonly rank = computed(() => rankProgress(this._profile().rankPoints));
   readonly streakDays = computed(() => this._profile().streakDays);
   readonly studyMode = computed(() => this._profile().studyMode ?? false);
   readonly pauseMode = computed(() => this._profile().pauseMode ?? false);
+
+  constructor() {
+    effect(async () => {
+      const user = this.auth.currentUser();
+      if (user) {
+        this._role.set(user.appRole);
+        await this.storage.loadFromCloud(user.id);
+        const cloudProfile = this.storage.load<UserProfile>('user:profile', DEFAULT_PROFILE);
+        this._profile.set({
+          ...cloudProfile,
+          id: user.id,
+          nickname: user.nickname ?? cloudProfile.nickname,
+        });
+      } else {
+        this._role.set('user');
+      }
+    });
+  }
 
   awardRankPoints(points: number): void {
     this._profile.update((p) => ({ ...p, rankPoints: p.rankPoints + points }));

@@ -9,6 +9,8 @@ import type {
   TenseId,
 } from '@shared/types';
 import { StorageService } from '@shared/api/storage.service';
+import { SUPABASE_CLIENT } from '@shared/api/supabase.client';
+import { AuthService } from '@shared/api/auth.service';
 
 /**
  * GameSessionStore — CQRS signal store for a single play session.
@@ -23,6 +25,8 @@ import { StorageService } from '@shared/api/storage.service';
 @Injectable({ providedIn: 'root' })
 export class GameSessionStore {
   private readonly storage = inject(StorageService);
+  private readonly supabase = inject(SUPABASE_CLIENT);
+  private readonly auth = inject(AuthService);
 
   // ---- state (private writable signals) ----
   private readonly _status = signal<SessionStatus>('idle');
@@ -190,6 +194,36 @@ export class GameSessionStore {
       bestStreak: this.bestStreak(),
       at: this._startedAt(),
     });
+    this.postSessionToCloud(config);
+  }
+
+  private async postSessionToCloud(config: SessionConfig): Promise<void> {
+    const user = this.auth.currentUser();
+    if (!user) return;
+
+    const { data: session } = await this.supabase
+      .from('sessions')
+      .insert({
+        user_id: user.id,
+        mode: config.mode as 'normal' | 'rank' | 'squad' | 'daily',
+        score: this.score(),
+        accuracy: this.accuracy(),
+        duration_ms: Date.now() - this._startedAt(),
+      })
+      .select('id')
+      .single();
+
+    if (!session) return;
+
+    const answers = this._answers().map(a => ({
+      session_id: session.id,
+      question_id: null as string | null,
+      is_correct: a.correct,
+      response_ms: Math.round(a.responseMs),
+      points: a.points,
+    }));
+
+    await this.supabase.from('session_answers').insert(answers);
   }
 
   static aspectOf(id: TenseId) {

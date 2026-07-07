@@ -1,11 +1,16 @@
+import { inject } from '@angular/core';
 import type { CanActivateFn } from '@angular/router';
+import { Router } from '@angular/router';
+import { AuthService } from '@shared/api/auth.service';
 
-/**
- * Gate for the admin panel.
- *
- * TODO(phase-11): enforce a real check here once auth lands (Phase 8) — verify
- * the Supabase session carries an admin/moderator/support role. Server-side
- * Row-Level Security remains the source of truth; this guard is only UX.
- * Until then the prototype build leaves the panel open.
- */
-export const adminGuard: CanActivateFn = () => true;
+const ROLE_HIERARCHY = { user: 0, support: 1, moderator: 2, admin: 3 } as const;
+
+// RLS is the source of truth — this guard is UX only.
+export const adminGuard: CanActivateFn = () => {
+  const auth = inject(AuthService);
+  const router = inject(Router);
+
+  const role = auth.currentUser()?.appRole ?? 'user';
+  if (ROLE_HIERARCHY[role] >= ROLE_HIERARCHY['support']) return true;
+  return router.parseUrl('/home');
+};
