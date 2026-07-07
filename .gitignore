@@ -54,6 +54,10 @@ Thumbs.db
 .env.*.local
 !.env.example
 
+# Generated environment files — run `pnpm set-env:dev` to regenerate
+src/environments/environment.ts
+src/environments/environment.prod.ts
+
 # Playwright
 /playwright-report/
 /test-results/
