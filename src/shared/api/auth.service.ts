@@ -72,10 +72,11 @@ export class AuthService {
     });
   }
 
-  async signInWithGoogle(): Promise<void> {
+  async signInWithGoogle(returnUrl = '/home'): Promise<void> {
+    const redirectTo = `${window.location.origin}/login?returnUrl=${encodeURIComponent(returnUrl)}`;
     await this.supabase.auth.signInWithOAuth({
       provider: 'google',
-      options: { redirectTo: `${window.location.origin}/home` },
+      options: { redirectTo },
     });
   }
 

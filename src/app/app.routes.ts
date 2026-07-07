@@ -59,6 +59,12 @@ export const ROUTES: Routes = [
     ],
   },
   {
+    path: 'login',
+    title: 'Sign In | Tenserium',
+    loadComponent: () =>
+      import('@pages/login').then((m) => m.LoginPageComponent),
+  },
+  {
     path: 'game',
     title: 'Game | Tenserium',
     loadComponent: () =>

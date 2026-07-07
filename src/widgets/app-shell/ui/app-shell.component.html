@@ -58,9 +58,7 @@
             <app-avatar [name]="user.nickname ?? user.email" [hue]="210" [size]="34" />
           </a>
         } @else {
-          <button type="button" class="btn-login" (click)="openLogin()" [disabled]="auth.isLoading()">
-            Войти
-          </button>
+          <a class="btn-login" routerLink="/login">Войти</a>
         }
       </div>
     </header>
@@ -70,5 +68,3 @@
     </main>
   </div>
 </div>
-
-<app-login-modal [open]="loginOpen()" (dismissed)="loginOpen.set(false)" />
