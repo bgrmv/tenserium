@@ -335,85 +335,52 @@
 
 ### Supabase
 
-- [ ] Инициализировать Supabase CLI: `supabase init`
-- [ ] Создать первую миграцию `supabase/migrations/001_init_schema.sql`
-  - [ ] `users` (id, nickname, is_premium, is_admin, league, rank_tier, rank_points, daily_rank_matches, last_active_at, is_banned, suspended_until, ban_reason, created_at)
-    - `league`: elementary | intermediate | advanced
-    - `rank_tier`: iron | bronze | silver | gold | platinum (внутри лиги)
-  - [ ] `questions` (id, tense_id, type, prompt, difficulty, status, accuracy_rate, flagged_count, created_at)
-    - `status`: active | draft | pending_review | archived
-  - [ ] `sessions` (id, user_id, mode, score, duration_ms, created_at)
-  - [ ] `session_answers` (session_id, question_id, is_correct, response_ms)
-  - [ ] `daily_challenge` (date PK, question_ids[])
-  - [ ] `error_reports` (id, question_id, user_id, description, status, resolved_by, created_at)
-    - `status`: open | resolved | dismissed
-  - [ ] `matches` (id, player_ids[], league, state, scores, created_at)
-  - [ ] `match_answers` (match_id, player_id, ticket_idx, sentence_idx, tense_id, is_correct, response_ms, points)
-  - [ ] `feedback` (id, category, description, email, admin_reply, created_at)
-  - [ ] `admin_audit_log` (id, admin_id, target_user_id, action, reason, created_at)
-  - [ ] `announcements` (id, text, active, expires_at, created_at)
-  - [ ] Materialized view `leaderboard`
-- [ ] Row Level Security на всех таблицах
-- [ ] `supabase gen types` → TypeScript-типы
-- [ ] Обновить `StorageService` — новая реализация через Supabase клиент
+- [x] Инициализировать Supabase CLI: `supabase init`
+- [x] Создать миграции `supabase/migrations/`
+  - [x] `users` + enums (app_role, league, rank_tier, session_mode, question_status, error_status…)
+  - [x] `questions`, `sessions`, `session_answers`, `daily_challenge`
+  - [x] `matches`, `match_answers`, `match_queue`
+  - [x] `error_reports`, `feedback`, `admin_audit_log`, `announcements`
+  - [x] `user_data` (ключ-значение хранилище для StorageService)
+  - [ ] Materialized view `leaderboard` (Phase 10)
+- [x] Row Level Security на всех таблицах (migration 006)
+- [x] Trigger `handle_new_user` — авто-создание профиля при регистрации
+- [x] `supabase gen types` → `src/shared/types/supabase.types.ts`
+- [x] Обновить `StorageService` — dual-mode: localStorage + фоновый Supabase sync
 - [x] Добавить env variables в Netlify UI (`SUPABASE_URL`, `SUPABASE_ANON_KEY`)
+- [x] Вынести `environment.ts` из git: генерируется из `.env.local` через `set-env.js --dev`
 
 ### Auth
 
-> Последовательность обязательна: сначала конфигурация внешнего провайдера и схема БД,
-> затем Angular-код (guard'ы зависят от структуры профиля/токена).
+#### Шаг 1 — Google OAuth
 
-#### Шаг 1 — Настройка Google OAuth (конфиг, не код)
-
-- [ ] Google Cloud Console: создать OAuth 2.0 Client ID
-  - [ ] Разрешённые redirect URI: `https://<supabase-project>.supabase.co/auth/v1/callback`
-  - [ ] Разрешённые origins: `https://<netlify-domain>`, `http://localhost:4200`
-- [ ] Supabase Dashboard → Authentication → Providers → Google
-  - [ ] Вставить Client ID + Client Secret
-  - [ ] Включить провайдер
+- [x] Google Cloud Console: OAuth 2.0 Client ID создан
+- [x] Supabase Dashboard → Authentication → Providers → Google включён
+- [ ] Добавить `https://tenserium.netlify.app` в Authorized origins (после первого деплоя на Netlify)
 
 #### Шаг 2 — Роли в БД
 
-Четыре роли по функции (что человек делает, а не уровень доступа):
+- [x] enum `app_role`: `user | support | moderator | admin`
+- [x] Колонка `role` в таблице `users` (DEFAULT 'user')
+- [x] RLS-политики по всем ролям
+- [ ] Передавать роль в JWT custom claims через Supabase auth hook (опционально — сейчас роль читается запросом к `users`)
 
-- `admin` — владелец: полный доступ, назначение ролей, аудит
-- `moderator` — команда контента: вопросы, репорты, анонсы, пользователи
-- `support` — поддержка: только обращения пользователей и репорты ошибок
-- `user` — игрок: только свои данные
+#### Шаг 3 — Angular
 
----
-
-- [ ] Добавить enum `app_role` в миграцию: `user | support | moderator | admin`
-- [ ] Колонка `role app_role NOT NULL DEFAULT 'user'` в таблице `users`
-  - `is_admin` не нужен — заменяется `role = 'admin'`
-- [ ] RLS-политики (Supabase `auth.jwt() ->> 'app_role'`):
-  - [ ] `user` — только свои строки во всех таблицах
-  - [ ] `support` — SELECT на `feedback`, `error_reports`; UPDATE `error_reports.status`
-  - [ ] `moderator` — всё что `support` + full CRUD на `questions`; SELECT/UPDATE `users` (без изменения `role`); INSERT `announcements`
-  - [ ] `admin` — SECURITY DEFINER функция `is_admin()` → bypass всех политик; единственная роль которая может менять `role` другим пользователям
-- [ ] Передавать роль в JWT custom claims через Supabase `auth hook` (Database webhook на `users.role`)
-- [ ] `supabase gen types` → обновить TypeScript-типы
-
-#### Шаг 3 — Angular: auth + guards
-
-- [ ] `features/auth/` — Supabase Auth
-  - [ ] `auth.service.ts` — `signInWithGoogle()`, `signOut()`, `currentUser` сигнал
-  - [ ] `features/auth/ui/login-modal/` — модалка с кнопкой «Войти через Google»
-  - [ ] Redirect после login → туда откуда пришёл (`returnUrl` query param)
-- [ ] `shared/lib/auth.guard.ts` — `AuthGuard`: редирект на `/home` если не залогинен
-- [ ] `shared/lib/role.guard.ts` — `RoleGuard(minRole)`: редирект если роль ниже требуемой
-  - Иерархия: `user < support < moderator < admin`
-  - Пример: `canActivate: [RoleGuard('support')]` на `/admin`
-- [ ] `UserStore` — добавить `role` сигнал; загружать из JWT custom claims при login
+- [x] `shared/api/auth.service.ts` — `signInWithGoogle()`, `signOut()`, `currentUser` signal
+- [x] `features/auth/ui/login-modal/` — модалка «Войти через Google»
+- [x] `shared/lib/auth.guard.ts` — `AuthGuard`
+- [x] `shared/lib/role.guard.ts` — `RoleGuard(minRole)`
+- [x] `UserStore` — добавлен `role` signal; профиль загружается из Supabase при login
+- [ ] Подключить `LoginModalComponent` в `AppShell` (кнопка «Войти» в навигации)
+- [ ] Redirect после login → `returnUrl` query param
 
 ### Cloud Sync
 
-- [ ] `UserStore` — загрузка профиля из Supabase при login
-- [ ] При первом login: one-time merge localStorage → Supabase
-  - [ ] Сессии, стрик, error_reports-очередь
-  - [ ] Очистить localStorage после успешного merge
-- [ ] POST сессий в `sessions` + `session_answers` при завершении
-- [ ] Профиль (`pages/profile/`) — ник, ранг, total points, статистика
+- [x] `UserStore` — загрузка профиля из Supabase при login (`loadFromCloud`)
+- [x] При первом login: one-time merge localStorage → Supabase (`mergeLocalToCloud`)
+- [x] POST сессий в `sessions` + `session_answers` при завершении игры
+- [ ] Профиль (`pages/profile/`) — уже есть страница, нужно подключить реальные данные из Supabase
 
 ---
 
